@@ -1,10 +1,10 @@
 {
   "engines": {
-    "node": ">=20"
+    "node": "22.x"
   },
   "scripts": {
-    "install:all": "npm install --prefix backend && npm install --prefix frontend",
-    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend && npm run build --prefix backend",
+    "install:all": "npm install --include=dev --prefix backend && npm install --include=dev --prefix frontend",
+    "build": "npm install --include=dev --prefix backend && npm install --include=dev --prefix frontend && npm run build --prefix frontend && npm run build --prefix backend",
     "start": "node backend/dist/startProduction.js",
     "dev": "concurrently -n BACKEND,FRONTEND -c green,blue \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
   },
