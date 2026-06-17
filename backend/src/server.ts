@@ -131,6 +131,10 @@ function shoppingStateKey(planId: string, range: ShoppingRange, itemKey: string)
   return `${planId}:${range}:${itemKey}`;
 }
 
+function singleShoppingStateKey(recipeId: string, itemKey: string) {
+  return `single:${recipeId}:${itemKey}`;
+}
+
 async function readShoppingState() {
   return readJson<ShoppingState>("shoppingState.json", { checked: {} });
 }
@@ -662,6 +666,11 @@ type NormalizedShoppingItem = {
   source: ShoppingSource;
 };
 
+type ShoppingListSlot = {
+  recipe: Recipe;
+  recipeName?: string;
+};
+
 const FLEISCH_REGEX =
   /(hähnchen|chicken|rind|steak|hack|hackfleisch|bacon|schwein|schnitzel|bratwurst|köfte|koefte|pulled chicken)/i;
 
@@ -911,12 +920,13 @@ function formatAmount(amount: number, unit: string) {
   return `${rounded} ${unit}`;
 }
 
-function buildShoppingList(
-  plan: WeekPlan,
+function buildShoppingListForSlots(
+  slots: ShoppingListSlot[],
   settings: Settings,
-  range: ShoppingRange = "all",
+  checkedKeyForItem: (itemKey: string) => string,
   pantry: PantryState = { items: {} },
   shoppingState: ShoppingState = { checked: {} },
+  extraItems: NormalizedShoppingItem[] = [],
 ) {
   const totals = new Map<
     string,
@@ -945,37 +955,19 @@ function buildShoppingList(
     totals.set(key, existing);
   }
 
-  const allowedDays = daysForRange(range);
-  for (const day of plan.days.filter((d) => allowedDays.has(d.day))) {
-    for (const meal of day.meals) {
-      for (const item of getRecipeShoppingItems(meal.recipe, settings)) add(item);
-    }
-    for (const shake of day.shakes) {
+  for (const slot of slots) {
+    for (const item of getRecipeShoppingItems(slot.recipe, settings)) {
       add({
-        name: "ESN Proteinpulver",
-        amount: 30,
-        unit: "g",
-        category: "Shakes",
-        recipeName: `${day.day} Shake`,
-        source: "shake",
+        ...item,
+        recipeName: slot.recipeName || item.recipeName,
       });
-      if (shake === "Milch") {
-        add({
-          name: "Milch 3,5 %",
-          amount: 500,
-          unit: "ml",
-          category: "Milchprodukte",
-          recipeName: `${day.day} Shake`,
-          source: "shake",
-        });
-      }
     }
   }
+  for (const item of extraItems) add(item);
 
   return [...totals.values()]
     .map((v) => {
       const itemKey = shoppingKeyForName(v.name);
-      const checkedKey = shoppingStateKey(plan.id, range, itemKey);
       const amountText = formatAmount(v.amount, v.unit);
       const numericAmount = v.unit === "prüfen"
         ? 1
@@ -988,7 +980,7 @@ function buildShoppingList(
         unit: v.unit,
         recipes: [...v.recipes].slice(0, 12),
         category: v.category,
-        checked: Boolean(shoppingState.checked[checkedKey]),
+        checked: Boolean(shoppingState.checked[checkedKeyForItem(itemKey)]),
         inPantry: Boolean(pantry.items[itemKey]),
         estimatedCost: estimateShoppingItemCost(v.name, numericAmount, v.unit),
         priceNote: priceNoteForShoppingItem(v.name),
@@ -1000,6 +992,78 @@ function buildShoppingList(
         a.category.localeCompare(b.category, "de") ||
         a.name.localeCompare(b.name, "de"),
     );
+}
+
+function buildShoppingList(
+  plan: WeekPlan,
+  settings: Settings,
+  range: ShoppingRange = "all",
+  pantry: PantryState = { items: {} },
+  shoppingState: ShoppingState = { checked: {} },
+) {
+  const slots: ShoppingListSlot[] = [];
+  const extraItems: NormalizedShoppingItem[] = [];
+  const allowedDays = daysForRange(range);
+  for (const day of plan.days.filter((d) => allowedDays.has(d.day))) {
+    for (const meal of day.meals) {
+      slots.push({ recipe: meal.recipe });
+    }
+    for (const shake of day.shakes) {
+      extraItems.push({
+        name: "ESN Proteinpulver",
+        amount: 30,
+        unit: "g",
+        category: "Shakes",
+        recipeName: `${day.day} Shake`,
+        source: "shake",
+      });
+      if (shake === "Milch") {
+        extraItems.push({
+          name: "Milch 3,5 %",
+          amount: 500,
+          unit: "ml",
+          category: "Milchprodukte",
+          recipeName: `${day.day} Shake`,
+          source: "shake",
+        });
+      }
+    }
+  }
+
+  return buildShoppingListForSlots(
+    slots,
+    settings,
+    (itemKey) => shoppingStateKey(plan.id, range, itemKey),
+    pantry,
+    shoppingState,
+    extraItems,
+  );
+}
+
+function totalEstimatedCost(items: { estimatedCost?: number }[]) {
+  return (
+    Math.round(
+      items.reduce((sum, item) => sum + (item.estimatedCost || 0), 0) * 100,
+    ) / 100
+  );
+}
+
+function pantryCatalogFromState(pantry: PantryState) {
+  return Object.keys(pantry.items || {}).map((key) => ({
+    key,
+    name: pantry.names?.[key] || key,
+    category: pantry.categories?.[key] || "Zuhause",
+    inPantry: Boolean(pantry.items[key]),
+  }));
+}
+
+function groupShoppingItems(items: ReturnType<typeof buildShoppingListForSlots>) {
+  return items.reduce<Record<string, typeof items>>((groups, item) => {
+    const category = item.category || "Sonstiges";
+    groups[category] = groups[category] || [];
+    groups[category].push(item);
+    return groups;
+  }, {});
 }
 
 function estimateShoppingItemCost(name: string, amount: number, unit: string) {
@@ -1587,6 +1651,62 @@ app.get("/api/recipes", async (_req, res) => {
   res.json(recipes.map(enrichRecipe));
 });
 
+app.get("/api/recipes/:recipeId/shopping-list", async (req, res) => {
+  const recipes = await readJson<Recipe[]>("recipes.json", []);
+  const recipe = recipes.find((r) => r.id === req.params.recipeId);
+  if (!recipe) return res.status(404).json({ error: "Rezept nicht gefunden." });
+
+  const settings = await readSettings();
+  const pantry = await readPantryState();
+  const shoppingState = await readShoppingState();
+  const items = buildShoppingListForSlots(
+    [{ recipe }],
+    settings,
+    (itemKey) => singleShoppingStateKey(recipe.id, itemKey),
+    pantry,
+    shoppingState,
+  );
+
+  res.json({
+    recipe: enrichRecipe(recipe),
+    factor: 1 + settings.girlfriendPortionFactor,
+    range: "single",
+    rangeLabel: recipe.name,
+    totalEstimatedCost: totalEstimatedCost(items),
+    estimatedTotal: totalEstimatedCost(items),
+    pantryItems: pantry.items,
+    pantryStatus: pantry.items,
+    checkedStatus: Object.fromEntries(
+      items.map((item) => [
+        item.key,
+        Boolean(shoppingState.checked[singleShoppingStateKey(recipe.id, item.key)]),
+      ]),
+    ),
+    pantryCatalog: pantryCatalogFromState(pantry),
+    categories: groupShoppingItems(items),
+    grouped: groupShoppingItems(items),
+    items,
+  });
+});
+
+app.post("/api/recipes/:recipeId/shopping-check", async (req, res) => {
+  const { itemKey, checked } = req.body as {
+    itemKey: string;
+    checked: boolean;
+  };
+  if (!itemKey) return res.status(400).json({ error: "itemKey fehlt." });
+
+  const recipes = await readJson<Recipe[]>("recipes.json", []);
+  const recipe = recipes.find((r) => r.id === req.params.recipeId);
+  if (!recipe) return res.status(404).json({ error: "Rezept nicht gefunden." });
+
+  const state = await readShoppingState();
+  state.checked[singleShoppingStateKey(req.params.recipeId, itemKey)] =
+    Boolean(checked);
+  await writeShoppingState(state);
+  res.json({ ok: true });
+});
+
 app.get("/api/recipes/:id", async (req, res) => {
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const recipe = recipes.find((r) => r.id === req.params.id);
@@ -1959,23 +2079,13 @@ app.get("/api/plans/:planId/shopping-list", async (req, res) => {
   const range: ShoppingRange =
     requested === "mon-thu" || requested === "fri-sun" ? requested : "all";
   const items = buildShoppingList(entry.plan, settings, range, pantry, shoppingState);
-  const totalEstimatedCost =
-    Math.round(
-      items.reduce((sum, item: any) => sum + (item.estimatedCost || 0), 0) *
-        100,
-    ) / 100;
   res.json({
     factor: 1 + settings.girlfriendPortionFactor,
     range,
     rangeLabel: rangeLabel(range),
-    totalEstimatedCost,
+    totalEstimatedCost: totalEstimatedCost(items),
     pantryItems: pantry.items,
-    pantryCatalog: Object.keys(pantry.items || {}).map((key) => ({
-      key,
-      name: pantry.names?.[key] || key,
-      category: pantry.categories?.[key] || "Zuhause",
-      inPantry: Boolean(pantry.items[key]),
-    })),
+    pantryCatalog: pantryCatalogFromState(pantry),
     items,
   });
 });

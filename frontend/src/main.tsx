@@ -12,7 +12,9 @@ import {
   DownloadCloud,
   Layout,
   LockKeyhole,
+  Search,
   SlidersHorizontal,
+  X,
 } from "lucide-react";
 import "./styles.css";
 
@@ -85,6 +87,15 @@ type ShoppingPayload = {
   pantryCatalog?: { key: string; name: string; category?: string; inPantry: boolean }[];
   items: ShoppingItem[];
 };
+type SingleShoppingPayload = Omit<ShoppingPayload, "range"> & {
+  recipe: Recipe;
+  range: "single";
+  estimatedTotal?: number;
+  grouped?: Record<string, ShoppingItem[]>;
+  categories?: Record<string, ShoppingItem[]>;
+  pantryStatus?: Record<string, boolean>;
+  checkedStatus?: Record<string, boolean>;
+};
 
 type ArchiveEntry = {
   id: string;
@@ -94,7 +105,8 @@ type ArchiveEntry = {
   days: { day: string; meals: { mealIndex: 1 | 2; name: string; kcal: number; protein: number }[] }[];
 };
 type PrintOrientation = "portrait" | "landscape";
-type View = "home" | "plan" | "shopping" | "print" | "recipe" | "history" | "settings";
+type View = "home" | "plan" | "shopping" | "print" | "recipe" | "history" | "settings" | "single";
+type SingleSort = "rating" | "protein-desc" | "kcal-asc" | "kcal-desc" | "duration-asc" | "name-asc";
 
 const dayKeys: DayKey[] = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
 const defaultDailyMealCounts: DailyMealCounts = {
@@ -106,6 +118,50 @@ const defaultDailyMealCounts: DailyMealCounts = {
   Sa: 2,
   So: 2,
 };
+
+const tierFilters = [
+  "alle",
+  "Himmel auf Erden",
+  "Henkersmahlzeit",
+  "Mamas Klassiker",
+  "Mc Donalds",
+];
+
+const shoppingCategoryOrder = [
+  "Protein",
+  "Kohlenhydrate",
+  "Gemüse & Obst",
+  "Gemüse",
+  "Milchprodukte",
+  "Saucen, Gewürze & Vorrat",
+  "Saucen & Vorrat",
+  "Shakes",
+  "Sonstiges",
+];
+
+function tierRank(tier: string): number {
+  const value = tier.toLowerCase();
+  if (value.includes("himmel")) return 4;
+  if (value.includes("henker")) return 3;
+  if (value.includes("mamas")) return 2;
+  if (value.includes("mcdonald") || value.includes("mc donald")) return 1;
+  return 0;
+}
+
+function groupShoppingItems(items: ShoppingItem[]) {
+  const map = new Map<string, ShoppingItem[]>();
+  for (const item of items) {
+    const key = item.category || "Sonstiges";
+    if (!map.has(key)) map.set(key, []);
+    map.get(key)!.push(item);
+  }
+  return [...map.entries()].sort((a, b) => {
+    const indexA = shoppingCategoryOrder.indexOf(a[0]);
+    const indexB = shoppingCategoryOrder.indexOf(b[0]);
+    if (indexA !== indexB) return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
+    return a[0].localeCompare(b[0], "de");
+  });
+}
 
 async function api<T>(url: string, options?: RequestInit): Promise<T> {
   const res = await fetch(url, {
@@ -138,7 +194,12 @@ function App() {
     ShoppingPayload
   > | null>(null);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
+  const [recipeBackView, setRecipeBackView] = useState<View>("plan");
   const [allRecipes, setAllRecipes] = useState<Recipe[]>([]);
+  const [singleDishRecipe, setSingleDishRecipe] = useState<Recipe | null>(null);
+  const [singleShoppingData, setSingleShoppingData] = useState<SingleShoppingPayload | null>(null);
+  const [singleShoppingLoading, setSingleShoppingLoading] = useState(false);
+  const [singleShoppingError, setSingleShoppingError] = useState<string | null>(null);
   const [changeTarget, setChangeTarget] = useState<MealSlot | null>(null);
   const [archive, setArchive] = useState<ArchiveEntry[]>([]);
   const [settings, setSettings] = useState<AppSettings | null>(null);
@@ -430,6 +491,41 @@ function App() {
     if (data) setView("shopping");
   }
 
+  async function openSingleDish() {
+    if (allRecipes.length === 0) await loadRecipes();
+    setSingleShoppingError(null);
+    setView("single");
+  }
+
+  async function loadSingleShoppingData(recipe: Recipe, showLoading = true) {
+    setSingleDishRecipe(recipe);
+    setSingleShoppingError(null);
+    if (showLoading) setSingleShoppingLoading(true);
+    try {
+      const data = await api<SingleShoppingPayload>(
+        `/api/recipes/${recipe.id}/shopping-list`,
+      );
+      setSingleShoppingData(data);
+      setSingleDishRecipe(data.recipe);
+      return data;
+    } catch (e) {
+      setSingleShoppingError(
+        e instanceof Error
+          ? e.message
+          : "Einkaufsliste konnte nicht erstellt werden",
+      );
+      return null;
+    } finally {
+      if (showLoading) setSingleShoppingLoading(false);
+    }
+  }
+
+  function resetSingleDishSelection() {
+    setSingleDishRecipe(null);
+    setSingleShoppingData(null);
+    setSingleShoppingError(null);
+  }
+
   async function setShoppingChecked(range: ShoppingRange, itemKey: string, checked: boolean) {
     if (!plan) return;
     setShoppingData((current) => {
@@ -455,6 +551,28 @@ function App() {
     }
   }
 
+  async function setSingleShoppingChecked(recipeId: string, itemKey: string, checked: boolean) {
+    setSingleShoppingData((current) => {
+      if (!current) return current;
+      return {
+        ...current,
+        checkedStatus: { ...(current.checkedStatus || {}), [itemKey]: checked },
+        items: current.items.map((item) =>
+          item.key === itemKey ? { ...item, checked } : item,
+        ),
+      };
+    });
+    try {
+      await api(`/api/recipes/${recipeId}/shopping-check`, {
+        method: "POST",
+        body: JSON.stringify({ itemKey, checked }),
+      });
+    } catch (e) {
+      setSingleShoppingError(e instanceof Error ? e.message : "Checkbox konnte nicht gespeichert werden");
+      if (singleDishRecipe) await loadSingleShoppingData(singleDishRecipe, false);
+    }
+  }
+
   async function setPantryItem(itemKey: string, inPantry: boolean, name?: string, category?: string) {
     setShoppingData((current) => {
       if (!current) return current;
@@ -477,18 +595,38 @@ function App() {
       }
       return next;
     });
+    setSingleShoppingData((current) => {
+      if (!current) return current;
+      const existingCatalog = current.pantryCatalog || [];
+      const hasCatalogItem = existingCatalog.some((entry) => entry.key === itemKey);
+      return {
+        ...current,
+        pantryItems: { ...(current.pantryItems || {}), [itemKey]: inPantry },
+        pantryStatus: { ...(current.pantryStatus || {}), [itemKey]: inPantry },
+        pantryCatalog: hasCatalogItem
+          ? existingCatalog.map((entry) =>
+              entry.key === itemKey ? { ...entry, inPantry, name: name || entry.name, category: category || entry.category } : entry,
+            )
+          : [...existingCatalog, { key: itemKey, name: name || itemKey, category, inPantry }],
+        items: current.items.map((item) =>
+          item.key === itemKey ? { ...item, inPantry } : item,
+        ),
+      };
+    });
     try {
       await api("/api/pantry", {
         method: "POST",
         body: JSON.stringify({ itemKey, inPantry, name, category }),
       });
       await loadShoppingData(false);
+      if (singleDishRecipe) await loadSingleShoppingData(singleDishRecipe, false);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Zuhause-Liste konnte nicht gespeichert werden");
     }
   }
 
   async function openRecipe(recipe: Recipe) {
+    setRecipeBackView(view === "recipe" ? "plan" : view);
     setLoading(true);
     setLoadingText("Rezept wird geöffnet...");
     setError(null);
@@ -586,6 +724,9 @@ function App() {
             <button disabled={!plan} onClick={openShopping}>
               <ShoppingBasket size={18} /> Einkauf
             </button>
+            <button onClick={openSingleDish}>
+              <Search size={18} /> Einzelgericht
+            </button>
             <button onClick={openHistory}>
               <History size={18} /> Verlauf
             </button>
@@ -634,6 +775,20 @@ function App() {
           onPantryChange={setPantryItem}
         />
       )}
+      {view === "single" && (
+        <SingleDishView
+          recipes={allRecipes}
+          selectedRecipe={singleDishRecipe}
+          shoppingData={singleShoppingData}
+          loading={singleShoppingLoading}
+          error={singleShoppingError}
+          onSelectRecipe={loadSingleShoppingData}
+          onReset={resetSingleDishSelection}
+          onOpenRecipe={openRecipe}
+          onCheckedChange={setSingleShoppingChecked}
+          onPantryChange={setPantryItem}
+        />
+      )}
       {view === "history" && (
         <HistoryView archive={archive} activatePlan={activateHistoryPlan} />
       )}
@@ -649,7 +804,7 @@ function App() {
       {view === "recipe" && selectedRecipe && (
         <RecipeDetail
           recipe={selectedRecipe}
-          back={() => setView("plan")}
+          back={() => setView(recipeBackView === "recipe" ? "plan" : recipeBackView)}
           importRecipe={importRecipe}
         />
       )}
@@ -1180,6 +1335,219 @@ function ChangeRecipeModal({
   );
 }
 
+function SingleDishView({
+  recipes,
+  selectedRecipe,
+  shoppingData,
+  loading,
+  error,
+  onSelectRecipe,
+  onReset,
+  onOpenRecipe,
+  onCheckedChange,
+  onPantryChange,
+}: {
+  recipes: Recipe[];
+  selectedRecipe: Recipe | null;
+  shoppingData: SingleShoppingPayload | null;
+  loading: boolean;
+  error: string | null;
+  onSelectRecipe: (recipe: Recipe) => void;
+  onReset: () => void;
+  onOpenRecipe: (recipe: Recipe) => void;
+  onCheckedChange: (recipeId: string, itemKey: string, checked: boolean) => void;
+  onPantryChange: (itemKey: string, inPantry: boolean, name?: string, category?: string) => void;
+}) {
+  const [query, setQuery] = useState("");
+  const [sort, setSort] = useState<SingleSort>("rating");
+  const [tierFilter, setTierFilter] = useState("alle");
+
+  const filteredRecipes = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return recipes
+      .filter((recipe) => tierFilter === "alle" || recipe.tier === tierFilter)
+      .filter((recipe) => {
+        if (!q) return true;
+        const haystack = [
+          recipe.name,
+          recipe.tier,
+          ...(recipe.tags || []),
+          ...(recipe.ingredients || []),
+        ]
+          .join(" ")
+          .toLowerCase();
+        return haystack.includes(q);
+      })
+      .sort((a, b) => {
+        if (sort === "rating") return tierRank(b.tier) - tierRank(a.tier) || a.name.localeCompare(b.name, "de");
+        if (sort === "protein-desc") return b.protein - a.protein || a.name.localeCompare(b.name, "de");
+        if (sort === "kcal-asc") return a.kcal - b.kcal || a.name.localeCompare(b.name, "de");
+        if (sort === "kcal-desc") return b.kcal - a.kcal || a.name.localeCompare(b.name, "de");
+        if (sort === "duration-asc") return a.durationMinutes - b.durationMinutes || a.name.localeCompare(b.name, "de");
+        return a.name.localeCompare(b.name, "de");
+      });
+  }, [query, recipes, sort, tierFilter]);
+
+  const grouped = useMemo(
+    () => groupShoppingItems(shoppingData?.items || []),
+    [shoppingData],
+  );
+
+  return (
+    <main className="page-wrap single-dish-wrap">
+      <section className="page-head single-dish-head">
+        <div>
+          <p className="eyebrow">Schnelle Einkaufsliste</p>
+          <h1>Einzelgericht</h1>
+          <p>Wähle ein Gericht aus, um nur dafür eine Einkaufsliste zu erstellen.</p>
+        </div>
+      </section>
+
+      <section className="single-search-panel">
+        <div className="recipe-filters single-filters">
+          <label>
+            <span>Suche</span>
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Nach Rezept, Zutat oder Tag suchen"
+            />
+          </label>
+          <label>
+            <span>Sortierung</span>
+            <select value={sort} onChange={(e) => setSort(e.target.value as SingleSort)}>
+              <option value="rating">Beste Bewertung</option>
+              <option value="protein-desc">Protein hoch</option>
+              <option value="kcal-asc">Kalorien niedrig</option>
+              <option value="kcal-desc">Kalorien hoch</option>
+              <option value="duration-asc">Dauer kurz</option>
+              <option value="name-asc">Name A-Z</option>
+            </select>
+          </label>
+          <label>
+            <span>Bewertung</span>
+            <select value={tierFilter} onChange={(e) => setTierFilter(e.target.value)}>
+              {tierFilters.map((tier) => (
+                <option key={tier} value={tier}>
+                  {tier === "alle" ? "Alle Bewertungen" : tier}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+      </section>
+
+      {selectedRecipe && (
+        <section className="single-selected">
+          <img src={selectedRecipe.imageUrl} alt={selectedRecipe.name} />
+          <div>
+            <p className="eyebrow">Ausgewähltes Gericht</p>
+            <h2>{selectedRecipe.name}</h2>
+            <p>
+              {selectedRecipe.kcal} kcal · {selectedRecipe.protein} g Protein ·{" "}
+              {selectedRecipe.durationMinutes} Min. · {selectedRecipe.tier}
+            </p>
+          </div>
+          <div className="single-selected-actions">
+            <button className="secondary" onClick={() => onOpenRecipe(selectedRecipe)}>
+              <BookOpen size={18} /> Kochansicht öffnen
+            </button>
+            <button className="secondary" onClick={onReset}>
+              <X size={18} /> Auswahl zurücksetzen
+            </button>
+          </div>
+        </section>
+      )}
+
+      {loading && <div className="inline-status">Einkaufsliste wird erstellt...</div>}
+      {error && <div className="inline-error">{error}</div>}
+
+      {shoppingData && selectedRecipe && (
+        <section className="single-shopping-section">
+          <div className="shopping-summary single-shopping-summary">
+            <strong>{formatEuro(shoppingData.totalEstimatedCost)}</strong>
+            <span>geschätzt für dieses Gericht</span>
+          </div>
+          <section className="shopping-board pretty-shopping single-shopping-board">
+            {grouped.map(([category, categoryItems]) => (
+              <article className="shopping-category" key={category}>
+                <div className="shopping-category-title">
+                  <h2>{category}</h2>
+                  <span>{categoryItems.length} Positionen</span>
+                </div>
+                <div className="shopping-category-list">
+                  {categoryItems.map((item) => (
+                    <div className={`shopping-row ${item.checked ? "is-checked" : ""} ${item.inPantry ? "is-pantry" : ""}`} key={item.key}>
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked={Boolean(item.checked)}
+                          onChange={(e) => onCheckedChange(selectedRecipe.id, item.key, e.target.checked)}
+                        />
+                        <strong>{item.name}</strong>
+                      </label>
+                      <span>{item.amountText || `${item.amount} ${item.unit}`}</span>
+                      <em>{formatEuro(item.estimatedCost)}</em>
+                      <div className="shopping-row-actions">
+                        <button
+                          type="button"
+                          className="tiny"
+                          onClick={() => onPantryChange(item.key, !item.inPantry, item.name, item.category)}
+                          title={item.inPantry ? "Nicht mehr als zuhause markieren" : "Dauerhaft als zuhause vorhanden merken"}
+                        >
+                          {item.inPantry ? "Zuhause ✓" : "Zuhause"}
+                        </button>
+                      </div>
+                      <small>
+                        {item.source ? `${item.source} · ` : ""}
+                        {item.recipes.join(", ")}
+                      </small>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </section>
+        </section>
+      )}
+
+      {!selectedRecipe && !loading && (
+        <div className="empty-picker single-empty">
+          Wähle ein Gericht aus, um nur dafür eine Einkaufsliste zu erstellen.
+        </div>
+      )}
+
+      <section className="single-recipe-grid">
+        {filteredRecipes.map((recipe) => (
+          <article className="single-recipe-card" key={recipe.id}>
+            <img src={recipe.imageUrl} alt={recipe.name} />
+            <div className="single-recipe-body">
+              <span className="tier">{recipe.tier}</span>
+              <h2>{recipe.name}</h2>
+              <p>
+                {recipe.kcal} kcal · {recipe.protein} g Protein ·{" "}
+                {recipe.durationMinutes} Min.
+              </p>
+              <small>≈ {formatEuro(recipe.estimatedCost)}</small>
+              <div className="single-card-actions">
+                <button className="primary" onClick={() => onSelectRecipe(recipe)}>
+                  <ShoppingBasket size={18} /> Einkaufsliste anzeigen
+                </button>
+                <button className="secondary" onClick={() => onOpenRecipe(recipe)}>
+                  <BookOpen size={18} /> Kochansicht öffnen
+                </button>
+              </div>
+            </div>
+          </article>
+        ))}
+        {filteredRecipes.length === 0 && (
+          <div className="empty-picker single-empty">Keine passenden Rezepte gefunden.</div>
+        )}
+      </section>
+    </main>
+  );
+}
+
 function formatEuro(value?: number) {
   if (typeof value !== "number" || Number.isNaN(value)) return "– €";
   return value.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
@@ -1200,26 +1568,7 @@ function ShoppingView({
   const items = current.items;
   const factor = current.factor;
   const grouped = useMemo(() => {
-    const map = new Map<string, ShoppingItem[]>();
-    for (const item of items) {
-      const key = item.category || "Sonstiges";
-      if (!map.has(key)) map.set(key, []);
-      map.get(key)!.push(item);
-    }
-    const order = [
-      "Protein",
-      "Kohlenhydrate",
-      "Gemüse & Obst",
-      "Gemüse",
-      "Milchprodukte",
-      "Saucen, Gewürze & Vorrat",
-      "Saucen & Vorrat",
-      "Shakes",
-      "Sonstiges",
-    ];
-    return [...map.entries()].sort(
-      (a, b) => order.indexOf(a[0]) - order.indexOf(b[0]),
-    );
+    return groupShoppingItems(items);
   }, [items]);
 
   const allVisibleItems = useMemo(() => {
