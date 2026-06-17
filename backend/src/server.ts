@@ -52,10 +52,13 @@ type Recipe = {
   lastUsed?: string | null;
 };
 
+type DayKey = "Mo" | "Di" | "Mi" | "Do" | "Fr" | "Sa" | "So";
+
 type Settings = {
   targetKcal: number;
   targetProtein: number;
   mealsPerDay: number;
+  dailyMealCounts: Record<DayKey, number>;
   shakeProteinWater: number;
   shakeProteinMilk: number;
   shakeKcalWater: number;
@@ -102,7 +105,10 @@ type PantryState = {
   categories?: Record<string, string>;
 };
 
-const days = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+const days: DayKey[] = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+const defaultDailyMealCounts = Object.fromEntries(
+  days.map((day) => [day, 2]),
+) as Settings["dailyMealCounts"];
 
 async function readJson<T>(file: string, fallback: T): Promise<T> {
   return readStore<T>(file, fallback);
@@ -153,6 +159,7 @@ function settingsFallback(): Settings {
     targetKcal: 2300,
     targetProtein: 180,
     mealsPerDay: 2,
+    dailyMealCounts: { ...defaultDailyMealCounts },
     shakeProteinWater: 24,
     shakeProteinMilk: 41,
     shakeKcalWater: 120,
@@ -160,6 +167,46 @@ function settingsFallback(): Settings {
     girlfriendPortionFactor: 0.6,
     avoidRepeatDays: 21,
   };
+}
+
+function sanitizeMealCount(value: unknown, fallback = 2) {
+  const numeric = Number(value);
+  if (numeric === 0 || numeric === 1 || numeric === 2) return numeric;
+  return fallback === 0 || fallback === 1 || fallback === 2 ? fallback : 2;
+}
+
+function normalizeDailyMealCounts(
+  value: unknown,
+  mealsPerDayFallback = 2,
+): Settings["dailyMealCounts"] {
+  const source =
+    value && typeof value === "object"
+      ? (value as Record<string, unknown>)
+      : {};
+  const fallback = sanitizeMealCount(mealsPerDayFallback, 2);
+  return Object.fromEntries(
+    days.map((day) => [
+      day,
+      sanitizeMealCount(source[day], fallback),
+    ]),
+  ) as Settings["dailyMealCounts"];
+}
+
+function normalizeSettings(value: Partial<Settings> | null | undefined): Settings {
+  const fallback = settingsFallback();
+  const next = { ...fallback, ...(value || {}) };
+  next.mealsPerDay = sanitizeMealCount(next.mealsPerDay, fallback.mealsPerDay);
+  next.dailyMealCounts = normalizeDailyMealCounts(
+    (value as Partial<Settings> | undefined)?.dailyMealCounts,
+    next.mealsPerDay,
+  );
+  return next;
+}
+
+async function readSettings() {
+  return normalizeSettings(
+    await readJson<Partial<Settings>>("settings.json", settingsFallback()),
+  );
 }
 
 function estimateRecipeCost(recipe: Recipe): {
@@ -463,6 +510,23 @@ function buildWeekPlan(
   history: HistoryEntry[],
   settings: Settings,
 ): WeekPlan {
+  const dailyMealCounts = normalizeDailyMealCounts(
+    settings.dailyMealCounts,
+    settings.mealsPerDay,
+  );
+  const plannedMealCount = days.reduce(
+    (sum, day) => sum + dailyMealCounts[day],
+    0,
+  );
+  if (plannedMealCount < 1) {
+    throw new Error("Bitte mindestens ein Gericht pro Woche einplanen.");
+  }
+  if (recipes.length < plannedMealCount) {
+    throw new Error(
+      `Zu wenige Rezepte vorhanden. Für diese Einstellungen werden mindestens ${plannedMealCount} Rezepte benötigt.`,
+    );
+  }
+
   const selected: Recipe[] = [];
   const recentIds = getRecentIds(history, settings);
   const dayPlans: DayPlan[] = [];
@@ -479,7 +543,12 @@ function buildWeekPlan(
 
   for (const day of days) {
     const currentDayMeals: Recipe[] = [];
-    for (const mealIndex of [1, 2] as const) {
+    const mealCount = dailyMealCounts[day];
+    const mealIndexes = Array.from(
+      { length: mealCount },
+      (_, index) => (index + 1) as 1 | 2,
+    );
+    for (const mealIndex of mealIndexes) {
       const ranked = [...recipes].sort(
         (a, b) =>
           scoreRecipe(b, {
@@ -505,7 +574,10 @@ function buildWeekPlan(
     }
     const mealKcal = currentDayMeals.reduce((sum, r) => sum + r.kcal, 0);
     const mealProtein = currentDayMeals.reduce((sum, r) => sum + r.protein, 0);
-    const shakes = chooseShakes(mealKcal, mealProtein, settings);
+    const shakes =
+      currentDayMeals.length > 0
+        ? chooseShakes(mealKcal, mealProtein, settings)
+        : [];
     const totalKcalWithShakes =
       mealKcal +
       shakes.reduce(
@@ -1564,7 +1636,44 @@ app.post("/api/recipes/import-all", async (_req, res) => {
 });
 
 app.get("/api/settings", async (_req, res) => {
-  res.json(await readJson<Settings>("settings.json", settingsFallback()));
+  res.json(await readSettings());
+});
+
+app.patch("/api/settings", async (req, res) => {
+  const current = await readSettings();
+  const body = req.body as Partial<Settings>;
+  const allowed: Partial<Settings> = {};
+  const numericFields: (keyof Omit<Settings, "dailyMealCounts">)[] = [
+    "targetKcal",
+    "targetProtein",
+    "mealsPerDay",
+    "shakeProteinWater",
+    "shakeProteinMilk",
+    "shakeKcalWater",
+    "shakeKcalMilk",
+    "girlfriendPortionFactor",
+    "avoidRepeatDays",
+  ];
+
+  for (const field of numericFields) {
+    if (typeof body[field] === "number" && Number.isFinite(body[field])) {
+      (allowed[field] as number) = body[field] as number;
+    }
+  }
+
+  const next = normalizeSettings({
+    ...current,
+    ...allowed,
+    dailyMealCounts:
+      body.dailyMealCounts === undefined
+        ? current.dailyMealCounts
+        : normalizeDailyMealCounts(
+            body.dailyMealCounts,
+            allowed.mealsPerDay ?? current.mealsPerDay,
+          ),
+  });
+  await writeJson("settings.json", next);
+  res.json(next);
 });
 
 app.get("/api/history", async (_req, res) => {
@@ -1603,18 +1712,18 @@ app.post("/api/history/:planId/activate", async (req, res) => {
 app.post("/api/plans/generate", async (_req, res) => {
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const settings = await readJson<Settings>(
-    "settings.json",
-    settingsFallback(),
-  );
-  if (recipes.length < 14)
-    return res
-      .status(400)
-      .json({
-        error:
-          "Zu wenige Rezepte in recipes.json. Mindestens 14 werden benötigt.",
-      });
-  const plan = buildWeekPlan(recipes, history, settings);
+  const settings = await readSettings();
+  let plan: WeekPlan;
+  try {
+    plan = buildWeekPlan(recipes, history, settings);
+  } catch (error) {
+    return res.status(400).json({
+      error:
+        error instanceof Error
+          ? error.message
+          : "Wochenplan konnte nicht erstellt werden.",
+    });
+  }
   const entry: HistoryEntry = {
     id: plan.id,
     createdAt: plan.createdAt,
@@ -1637,10 +1746,7 @@ app.post("/api/plans/:planId/remix", async (req, res) => {
   const { day, mealIndex } = req.body as { day: string; mealIndex: 1 | 2 };
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const settings = await readJson<Settings>(
-    "settings.json",
-    settingsFallback(),
-  );
+  const settings = await readSettings();
   const idx = history.findIndex((h) => h.id === req.params.planId && h.plan);
   if (idx < 0 || !history[idx].plan)
     return res.status(404).json({ error: "Plan nicht gefunden." });
@@ -1733,10 +1839,7 @@ app.post("/api/plans/:planId/replace", async (req, res) => {
   };
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const settings = await readJson<Settings>(
-    "settings.json",
-    settingsFallback(),
-  );
+  const settings = await readSettings();
 
   const idx = history.findIndex((h) => h.id === req.params.planId && h.plan);
   if (idx < 0 || !history[idx].plan)
@@ -1795,10 +1898,7 @@ app.post("/api/plans/:planId/move-meal", async (req, res) => {
   };
 
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const settings = await readJson<Settings>(
-    "settings.json",
-    settingsFallback(),
-  );
+  const settings = await readSettings();
 
   const idx = history.findIndex((h) => h.id === req.params.planId && h.plan);
   if (idx < 0 || !history[idx].plan)
@@ -1849,10 +1949,7 @@ app.post("/api/plans/:planId/move-meal", async (req, res) => {
 
 app.get("/api/plans/:planId/shopping-list", async (req, res) => {
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const settings = await readJson<Settings>(
-    "settings.json",
-    settingsFallback(),
-  );
+  const settings = await readSettings();
   const pantry = await readPantryState();
   const shoppingState = await readShoppingState();
   const entry = history.find((h) => h.id === req.params.planId && h.plan);

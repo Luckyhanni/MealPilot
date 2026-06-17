@@ -97,6 +97,20 @@ h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 5.2rem); line-height: .95; letter-
 .meals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .meal-card { text-align: left; cursor: pointer; display: grid; grid-template-columns: 144px 1fr; min-height: 118px; overflow: hidden; border-radius: 19px; background: #fff; border: 1px solid #e1ead8; box-shadow: 0 10px 24px rgba(35, 69, 32, .075); padding: 0; }
 .meal-card img { width: 100%; height: 100%; object-fit: cover; background: #eef4e4; }
+.day-card.meal-count-0 .meals,
+.day-card.meal-count-1 .meals {
+  grid-template-columns: 1fr;
+}
+.no-meals {
+  min-height: 118px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed #cddfc0;
+  border-radius: 19px;
+  background: #f7fbf1;
+  color: #5d765f;
+  font-weight: 900;
+}
 .meal-content { padding: 10px 12px; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
 .tier { font-size: .64rem; color: #69855c; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
 .meal-content h3 { margin: 4px 0 5px; font-size: 1rem; line-height: 1.08; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -166,6 +180,10 @@ h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 5.2rem); line-height: .95; letter-
 .print-landscape .print-week { gap: 3.5mm; }
 .print-row { display: grid; grid-template-columns: 16mm 1fr 1fr 25mm; gap: 3.5mm; min-height: 25mm; align-items: stretch; }
 .print-landscape .print-row { grid-template-columns: 16mm 1fr 1fr 30mm; min-height: 19mm; }
+.print-row.print-meal-count-0 { grid-template-columns: 16mm 1fr 25mm; }
+.print-row.print-meal-count-1 { grid-template-columns: 16mm 1fr 25mm; }
+.print-landscape .print-row.print-meal-count-0 { grid-template-columns: 16mm 1fr 30mm; }
+.print-landscape .print-row.print-meal-count-1 { grid-template-columns: 16mm 1fr 30mm; }
 .print-day { display: grid; place-items: center; background: #e6f2d4; color: #154c20; border-radius: 10px; font-size: 25px; font-weight: 950; }
 .print-landscape .print-day { font-size: 22px; }
 .print-meal { display: grid; grid-template-columns: 27mm 1fr; gap: 3mm; background: #fff; border: 1px solid #dce8cf; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 18px rgba(24,55,28,.1); }
@@ -175,6 +193,7 @@ h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 5.2rem); line-height: .95; letter-
 .print-meal h2 { margin: 0 0 1.8mm; font-size: 12px; line-height: 1.08; }
 .print-landscape .print-meal h2 { font-size: 12.5px; }
 .print-meal p { margin: 0; font-size: 8.8px; color: #435943; font-weight: 750; }
+.print-empty-meal { display: grid; place-items: center; background: #f4f8ed; border: 1px dashed #cddfc0; border-radius: 12px; color: #5d765f; font-weight: 850; font-size: 11px; }
 .print-shake { background: #f1f8e9; border: 1px solid #d9e9ca; border-radius: 12px; display: grid; place-items: center; text-align: center; padding: 2.4mm; font-size: 8.8px; }
 .print-shake span { font-size: 16px; }
 .print-shake small { font-weight: 750; color: #405840; }
@@ -463,6 +482,10 @@ h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 5.2rem); line-height: .95; letter-
 .compact-week .meal-card {
   grid-template-columns: 1fr 74px;
 }
+.compact-week .no-meals {
+  min-height: 82px;
+  border-radius: 15px;
+}
 .compact-week .meal-open-area {
   grid-template-columns: 126px 1fr;
   min-height: 82px;
@@ -727,6 +750,81 @@ button.tiny {
   color: var(--text);
 }
 
+.settings-wrap {
+  width: min(980px, 100%);
+}
+
+.settings-section {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 1.2rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.settings-section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.settings-section-head h2 {
+  margin: 0;
+  color: var(--green);
+}
+
+.settings-section-head p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+.daily-settings-grid {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.daily-setting-row {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  border-top: 1px solid #edf2e6;
+  padding-top: 0.65rem;
+}
+
+.daily-setting-row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.daily-setting-row span {
+  color: var(--green);
+  font-weight: 950;
+}
+
+.daily-setting-row select {
+  width: min(240px, 100%);
+  border: 1px solid #dce8cf;
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: #fff;
+  color: #17351f;
+}
+
+.settings-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.settings-actions span {
+  color: var(--green);
+  font-weight: 850;
+}
+
 @media (max-width: 1100px) {
   .pantry-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -738,6 +836,12 @@ button.tiny {
 
   .history-card-head .secondary {
     white-space: normal;
+  }
+
+  .settings-section-head,
+  .settings-actions {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 

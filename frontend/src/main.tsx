@@ -12,6 +12,7 @@ import {
   DownloadCloud,
   Layout,
   LockKeyhole,
+  SlidersHorizontal,
 } from "lucide-react";
 import "./styles.css";
 
@@ -31,6 +32,21 @@ type Recipe = {
   estimatedCost?: number;
   priceNote?: string;
   importedAt?: string | null;
+};
+
+type DayKey = "Mo" | "Di" | "Mi" | "Do" | "Fr" | "Sa" | "So";
+type DailyMealCounts = Record<DayKey, number>;
+type AppSettings = {
+  targetKcal: number;
+  targetProtein: number;
+  mealsPerDay: number;
+  dailyMealCounts: DailyMealCounts;
+  shakeProteinWater: number;
+  shakeProteinMilk: number;
+  shakeKcalWater: number;
+  shakeKcalMilk: number;
+  girlfriendPortionFactor: number;
+  avoidRepeatDays: number;
 };
 
 type MealSlot = { day: string; mealIndex: 1 | 2; recipe: Recipe };
@@ -78,7 +94,18 @@ type ArchiveEntry = {
   days: { day: string; meals: { mealIndex: 1 | 2; name: string; kcal: number; protein: number }[] }[];
 };
 type PrintOrientation = "portrait" | "landscape";
-type View = "home" | "plan" | "shopping" | "print" | "recipe" | "history";
+type View = "home" | "plan" | "shopping" | "print" | "recipe" | "history" | "settings";
+
+const dayKeys: DayKey[] = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+const defaultDailyMealCounts: DailyMealCounts = {
+  Mo: 2,
+  Di: 2,
+  Mi: 2,
+  Do: 2,
+  Fr: 2,
+  Sa: 2,
+  So: 2,
+};
 
 async function api<T>(url: string, options?: RequestInit): Promise<T> {
   const res = await fetch(url, {
@@ -114,6 +141,8 @@ function App() {
   const [allRecipes, setAllRecipes] = useState<Recipe[]>([]);
   const [changeTarget, setChangeTarget] = useState<MealSlot | null>(null);
   const [archive, setArchive] = useState<ArchiveEntry[]>([]);
+  const [settings, setSettings] = useState<AppSettings | null>(null);
+  const [settingsSaved, setSettingsSaved] = useState(false);
   const [draggingSlot, setDraggingSlot] = useState<{ day: string; mealIndex: 1 | 2 } | null>(null);
 
   useEffect(() => {
@@ -191,6 +220,64 @@ function App() {
       setView("history");
     } catch (e) {
       setError(e instanceof Error ? e.message : "Verlauf konnte nicht geladen werden");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function openSettings() {
+    setLoading(true);
+    setLoadingText("Einstellungen werden geladen...");
+    setError(null);
+    setSettingsSaved(false);
+    try {
+      const data = await api<AppSettings>("/api/settings");
+      setSettings(data);
+      setView("settings");
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Einstellungen konnten nicht geladen werden");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  function setDailyMealCount(day: DayKey, count: number) {
+    setSettings((current) => {
+      if (!current) return current;
+      return {
+        ...current,
+        dailyMealCounts: {
+          ...current.dailyMealCounts,
+          [day]: count,
+        },
+      };
+    });
+    setSettingsSaved(false);
+  }
+
+  function resetDailyMealCounts() {
+    setSettings((current) =>
+      current
+        ? { ...current, dailyMealCounts: { ...defaultDailyMealCounts } }
+        : current,
+    );
+    setSettingsSaved(false);
+  }
+
+  async function saveSettings() {
+    if (!settings) return;
+    setLoading(true);
+    setLoadingText("Einstellungen werden gespeichert...");
+    setError(null);
+    try {
+      const next = await api<AppSettings>("/api/settings", {
+        method: "PATCH",
+        body: JSON.stringify({ dailyMealCounts: settings.dailyMealCounts }),
+      });
+      setSettings(next);
+      setSettingsSaved(true);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Einstellungen konnten nicht gespeichert werden");
     } finally {
       setLoading(false);
     }
@@ -502,6 +589,9 @@ function App() {
             <button onClick={openHistory}>
               <History size={18} /> Verlauf
             </button>
+            <button onClick={openSettings}>
+              <SlidersHorizontal size={18} /> Einstellungen
+            </button>
             <button disabled={!plan} onClick={() => setView("print")}>
               <Printer size={18} /> Druckansicht
             </button>
@@ -546,6 +636,15 @@ function App() {
       )}
       {view === "history" && (
         <HistoryView archive={archive} activatePlan={activateHistoryPlan} />
+      )}
+      {view === "settings" && settings && (
+        <SettingsView
+          settings={settings}
+          saved={settingsSaved}
+          setDailyMealCount={setDailyMealCount}
+          resetDailyMealCounts={resetDailyMealCounts}
+          saveSettings={saveSettings}
+        />
       )}
       {view === "recipe" && selectedRecipe && (
         <RecipeDetail
@@ -624,6 +723,77 @@ function PinGate({
           </>
         )}
       </form>
+    </main>
+  );
+}
+
+function SettingsView({
+  settings,
+  saved,
+  setDailyMealCount,
+  resetDailyMealCounts,
+  saveSettings,
+}: {
+  settings: AppSettings;
+  saved: boolean;
+  setDailyMealCount: (day: DayKey, count: number) => void;
+  resetDailyMealCounts: () => void;
+  saveSettings: () => void;
+}) {
+  const totalMeals = dayKeys.reduce(
+    (sum, day) => sum + settings.dailyMealCounts[day],
+    0,
+  );
+
+  return (
+    <main className="page-wrap settings-wrap">
+      <section className="page-head">
+        <div>
+          <p className="eyebrow">Planung</p>
+          <h1>Einstellungen</h1>
+          <p>
+            Lege fest, wie viele Gerichte MealPilot pro Wochentag einplanen
+            soll.
+          </p>
+        </div>
+      </section>
+
+      <section className="settings-section">
+        <div className="settings-section-head">
+          <div>
+            <h2>Gerichte pro Tag</h2>
+            <p>{totalMeals} Gerichte pro Woche</p>
+          </div>
+          <button className="secondary" onClick={resetDailyMealCounts}>
+            Standard: jeden Tag 2
+          </button>
+        </div>
+
+        <div className="daily-settings-grid">
+          {dayKeys.map((day) => (
+            <label className="daily-setting-row" key={day}>
+              <span>{day}</span>
+              <select
+                value={settings.dailyMealCounts[day]}
+                onChange={(e) =>
+                  setDailyMealCount(day, Number(e.target.value))
+                }
+              >
+                <option value={0}>0 Gerichte</option>
+                <option value={1}>1 Gericht</option>
+                <option value={2}>2 Gerichte</option>
+              </select>
+            </label>
+          ))}
+        </div>
+
+        <div className="settings-actions">
+          <button className="primary" onClick={saveSettings}>
+            Speichern
+          </button>
+          {saved && <span>Einstellungen gespeichert</span>}
+        </div>
+      </section>
     </main>
   );
 }
@@ -781,9 +951,12 @@ function DayCard({
   moveMeal: (fromDay: string, fromMealIndex: 1 | 2, toDay: string, toMealIndex: 1 | 2) => void;
 }) {
   return (
-    <article className="day-card">
+    <article className={`day-card meal-count-${day.meals.length}`}>
       <div className="day-label">{day.day}</div>
       <div className="meals">
+        {day.meals.length === 0 && (
+          <div className="no-meals">Kein Gericht geplant</div>
+        )}
         {day.meals.map((slot) => (
           <MealCard
             key={`${day.day}-${slot.mealIndex}`}
@@ -1389,29 +1562,36 @@ function PrintView({ plan, back }: { plan: WeekPlan; back: () => void }) {
         <div className="leaf right">✦</div>
         <h1>Wochenplan</h1>
         <p className="print-subtitle">
-          2 Mahlzeiten pro Tag • Ziel: ca. 2300 kcal / 180 g Protein •
+          Flexible Tagesplanung • Ziel: ca. 2300 kcal / 180 g Protein •
           zusätzlich täglich ESN-Shakes
         </p>
         <p className="print-note">Mahlzeitenwerte ohne Shakes</p>
         <div className="print-week">
           {plan.days.map((day) => (
-            <div className="print-row" key={day.day}>
+            <div
+              className={`print-row print-meal-count-${day.meals.length}`}
+              key={day.day}
+            >
               <div className="print-day">{day.day}</div>
-              {day.meals.map((slot) => (
-                <div
-                  className="print-meal"
-                  key={`${day.day}-${slot.mealIndex}`}
-                >
-                  <img src={slot.recipe.imageUrl} alt="" />
-                  <div>
-                    <h2>{slot.recipe.name}</h2>
-                    <p>
-                      {slot.recipe.kcal} kcal • {slot.recipe.protein} g Protein
-                      • {slot.recipe.durationMinutes} Min.
-                    </p>
+              {day.meals.length === 0 ? (
+                <div className="print-empty-meal">Kein Gericht geplant</div>
+              ) : (
+                day.meals.map((slot) => (
+                  <div
+                    className="print-meal"
+                    key={`${day.day}-${slot.mealIndex}`}
+                  >
+                    <img src={slot.recipe.imageUrl} alt="" />
+                    <div>
+                      <h2>{slot.recipe.name}</h2>
+                      <p>
+                        {slot.recipe.kcal} kcal • {slot.recipe.protein} g
+                        Protein • {slot.recipe.durationMinutes} Min.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))
+              )}
               <div className="print-shake">
                 <span>🥤</span>
                 <strong>Shakes:</strong>
