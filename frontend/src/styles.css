@@ -399,6 +399,25 @@ h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 5.2rem); line-height: .95; letter-
 .pretty-shopping .shopping-row span {
   font-size: .85rem;
 }
+.shopping-amount {
+  display: grid;
+  justify-items: end;
+  gap: 2px;
+  max-width: 260px;
+  white-space: normal;
+  text-align: right;
+  line-height: 1.24;
+}
+.shopping-amount b {
+  font-size: .85rem;
+  font-weight: 950;
+  color: #255b2e;
+}
+.shopping-amount small {
+  color: #6b7a61;
+  font-size: .72rem;
+  font-weight: 750;
+}
 .pretty-shopping .shopping-row em {
   color: #174d21;
   font-style: normal;
@@ -700,6 +719,70 @@ h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 5.2rem); line-height: .95; letter-
   display: grid;
   gap: 14px;
   margin-bottom: 20px;
+}
+
+.single-shopping-options {
+  display: grid;
+  gap: 10px;
+  border: 1px solid #dce8cf;
+  background: #fff;
+  border-radius: 20px;
+  padding: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 12px 28px rgba(35,69,32,.07);
+}
+
+.single-shopping-options p {
+  margin: 0;
+  color: #526b52;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.single-mode-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.single-mode-tabs button {
+  justify-content: center;
+  border: 1px solid #dce8cf;
+  background: #f8fbf4;
+  color: #255b2e;
+  border-radius: 14px;
+  padding: 10px 8px;
+  font-weight: 900;
+}
+
+.single-mode-tabs button.active {
+  background: #174d21;
+  color: white;
+  border-color: #174d21;
+}
+
+.single-factor-select {
+  display: grid;
+  gap: 5px;
+  max-width: 230px;
+}
+
+.single-factor-select span {
+  color: #617461;
+  font-size: .78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.single-factor-select select {
+  border: 1px solid #dce8cf;
+  border-radius: 12px;
+  background: white;
+  color: #173c1c;
+  min-height: 42px;
+  padding: 0 10px;
+  font: inherit;
+  font-weight: 850;
 }
 
 .single-shopping-summary {
@@ -1475,6 +1558,13 @@ button.tiny {
     line-height: 1.25;
   }
 
+  .shopping-amount {
+    grid-column: 1 / -1;
+    justify-items: start;
+    text-align: left;
+    max-width: none;
+  }
+
   .pretty-shopping .shopping-row em {
     grid-column: 2;
     font-size: .86rem;
@@ -1699,6 +1789,14 @@ button.tiny {
     min-height: 44px;
   }
 
+  .single-mode-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .single-factor-select {
+    max-width: none;
+  }
+
   .single-selected {
     grid-template-columns: 84px minmax(0, 1fr);
     gap: 10px;
@@ -1918,6 +2016,11 @@ button.tiny {
   .pretty-shopping .shopping-row em {
     grid-column: 1;
     text-align: left;
+  }
+
+  .shopping-amount {
+    justify-items: start;
+    max-width: none;
   }
 
   .shopping-row-actions {

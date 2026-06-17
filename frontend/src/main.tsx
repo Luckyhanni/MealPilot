@@ -68,6 +68,18 @@ type ShoppingItem = {
   amount: number;
   amountText?: string;
   unit: string;
+  neededQuantity?: number;
+  neededUnit?: string;
+  neededText?: string;
+  purchaseQuantity?: number;
+  purchaseUnit?: string;
+  purchaseLabel?: string;
+  purchaseText?: string;
+  remainderQuantity?: number;
+  remainderUnit?: string;
+  remainderText?: string;
+  packageAdjusted?: boolean;
+  packageNote?: string;
   recipes: string[];
   category?: string;
   checked?: boolean;
@@ -77,6 +89,7 @@ type ShoppingItem = {
   source?: string;
 };
 type ShoppingRange = "all" | "mon-thu" | "fri-sun";
+type SingleShoppingMode = "exact" | "package" | "mealprep";
 type AuthState = "checking" | "locked" | "open";
 type ShoppingPayload = {
   factor: number;
@@ -90,6 +103,8 @@ type ShoppingPayload = {
 type SingleShoppingPayload = Omit<ShoppingPayload, "range"> & {
   recipe: Recipe;
   range: "single";
+  mode?: SingleShoppingMode;
+  requestedFactor?: number;
   estimatedTotal?: number;
   grouped?: Record<string, ShoppingItem[]>;
   categories?: Record<string, ShoppingItem[]>;
@@ -200,6 +215,8 @@ function App() {
   const [singleShoppingData, setSingleShoppingData] = useState<SingleShoppingPayload | null>(null);
   const [singleShoppingLoading, setSingleShoppingLoading] = useState(false);
   const [singleShoppingError, setSingleShoppingError] = useState<string | null>(null);
+  const [singleShoppingMode, setSingleShoppingMode] = useState<SingleShoppingMode>("package");
+  const [singleMealFactor, setSingleMealFactor] = useState(1);
   const [changeTarget, setChangeTarget] = useState<MealSlot | null>(null);
   const [archive, setArchive] = useState<ArchiveEntry[]>([]);
   const [settings, setSettings] = useState<AppSettings | null>(null);
@@ -497,13 +514,20 @@ function App() {
     setView("single");
   }
 
-  async function loadSingleShoppingData(recipe: Recipe, showLoading = true) {
+  async function loadSingleShoppingData(
+    recipe: Recipe,
+    showLoading = true,
+    mode: SingleShoppingMode = singleShoppingMode,
+    factor = singleMealFactor,
+  ) {
     setSingleDishRecipe(recipe);
     setSingleShoppingError(null);
     if (showLoading) setSingleShoppingLoading(true);
     try {
+      const params = new URLSearchParams({ mode });
+      if (mode === "mealprep") params.set("factor", String(factor));
       const data = await api<SingleShoppingPayload>(
-        `/api/recipes/${recipe.id}/shopping-list`,
+        `/api/recipes/${recipe.id}/shopping-list?${params.toString()}`,
       );
       setSingleShoppingData(data);
       setSingleDishRecipe(data.recipe);
@@ -517,6 +541,24 @@ function App() {
       return null;
     } finally {
       if (showLoading) setSingleShoppingLoading(false);
+    }
+  }
+
+  async function changeSingleShoppingMode(mode: SingleShoppingMode) {
+    const nextFactor = mode === "mealprep" && singleMealFactor === 1 ? 2 : singleMealFactor;
+    setSingleShoppingMode(mode);
+    if (mode === "mealprep" && nextFactor !== singleMealFactor) {
+      setSingleMealFactor(nextFactor);
+    }
+    if (singleDishRecipe) await loadSingleShoppingData(singleDishRecipe, true, mode, nextFactor);
+  }
+
+  async function changeSingleMealFactor(factor: number) {
+    setSingleMealFactor(factor);
+    if (singleDishRecipe) {
+      const mode = singleShoppingMode === "mealprep" ? singleShoppingMode : "mealprep";
+      if (mode !== singleShoppingMode) setSingleShoppingMode(mode);
+      await loadSingleShoppingData(singleDishRecipe, true, mode, factor);
     }
   }
 
@@ -787,6 +829,10 @@ function App() {
           onOpenRecipe={openRecipe}
           onCheckedChange={setSingleShoppingChecked}
           onPantryChange={setPantryItem}
+          shoppingMode={singleShoppingMode}
+          mealFactor={singleMealFactor}
+          onShoppingModeChange={changeSingleShoppingMode}
+          onMealFactorChange={changeSingleMealFactor}
         />
       )}
       {view === "history" && (
@@ -1346,6 +1392,10 @@ function SingleDishView({
   onOpenRecipe,
   onCheckedChange,
   onPantryChange,
+  shoppingMode,
+  mealFactor,
+  onShoppingModeChange,
+  onMealFactorChange,
 }: {
   recipes: Recipe[];
   selectedRecipe: Recipe | null;
@@ -1357,6 +1407,10 @@ function SingleDishView({
   onOpenRecipe: (recipe: Recipe) => void;
   onCheckedChange: (recipeId: string, itemKey: string, checked: boolean) => void;
   onPantryChange: (itemKey: string, inPantry: boolean, name?: string, category?: string) => void;
+  shoppingMode: SingleShoppingMode;
+  mealFactor: number;
+  onShoppingModeChange: (mode: SingleShoppingMode) => void;
+  onMealFactorChange: (factor: number) => void;
 }) {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState<SingleSort>("rating");
@@ -1459,6 +1513,42 @@ function SingleDishView({
         </section>
       )}
 
+      {selectedRecipe && (
+        <section className="single-shopping-options">
+          <div className="single-mode-tabs">
+            {[
+              { key: "exact", label: "Rezeptmenge" },
+              { key: "mealprep", label: "Mehr kochen" },
+              { key: "package", label: "Packungsoptimiert" },
+            ].map((mode) => (
+              <button
+                type="button"
+                key={mode.key}
+                className={shoppingMode === mode.key ? "active" : ""}
+                onClick={() => onShoppingModeChange(mode.key as SingleShoppingMode)}
+              >
+                {mode.label}
+              </button>
+            ))}
+          </div>
+          <p>
+            Packungsoptimiert zeigt dir die realistische Kaufmenge im Laden, z. B.
+            250 g Joghurt statt 60 g.
+          </p>
+          <label className="single-factor-select">
+            <span>Portionen/Faktor</span>
+            <select
+              value={mealFactor}
+              onChange={(e) => onMealFactorChange(Number(e.target.value))}
+            >
+              <option value={1}>1x Rezept</option>
+              <option value={1.5}>1,5x Rezept</option>
+              <option value={2}>2x Rezept</option>
+            </select>
+          </label>
+        </section>
+      )}
+
       {loading && <div className="inline-status">Einkaufsliste wird erstellt...</div>}
       {error && <div className="inline-error">{error}</div>}
 
@@ -1486,7 +1576,7 @@ function SingleDishView({
                         />
                         <strong>{item.name}</strong>
                       </label>
-                      <span>{item.amountText || `${item.amount} ${item.unit}`}</span>
+                      <ShoppingAmountDetails item={item} />
                       <em>{formatEuro(item.estimatedCost)}</em>
                       <div className="shopping-row-actions">
                         <button
@@ -1545,6 +1635,33 @@ function SingleDishView({
         )}
       </section>
     </main>
+  );
+}
+
+function ShoppingAmountDetails({ item }: { item: ShoppingItem }) {
+  if (item.purchaseText === "Vorrat prüfen" || item.unit === "prüfen") {
+    return (
+      <span className="shopping-amount">
+        <b>Vorrat prüfen</b>
+      </span>
+    );
+  }
+
+  if (item.packageAdjusted && item.neededText && item.purchaseText) {
+    return (
+      <span className="shopping-amount">
+        <b>
+          {item.neededText} benötigt · {item.purchaseText} kaufen
+        </b>
+        {item.remainderText && <small>Rest ca. {item.remainderText}</small>}
+      </span>
+    );
+  }
+
+  return (
+    <span className="shopping-amount">
+      <b>{item.neededText || item.amountText || `${item.amount} ${item.unit}`}</b>
+    </span>
   );
 }
 
@@ -1663,7 +1780,7 @@ function ShoppingView({
                         />
                         <strong>{item.name}</strong>
                       </label>
-                      <span>{item.amountText || `${item.amount} ${item.unit}`}</span>
+                      <ShoppingAmountDetails item={item} />
                       <em>{formatEuro(item.estimatedCost)}</em>
                       <div className="shopping-row-actions">
                         <button

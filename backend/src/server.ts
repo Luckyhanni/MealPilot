@@ -671,6 +671,32 @@ type ShoppingListSlot = {
   recipeName?: string;
 };
 
+type ShoppingListMode = "exact" | "package" | "mealprep";
+
+type ShoppingListOptions = {
+  packageAdjusted?: boolean;
+  recipeMultiplier?: number;
+};
+
+type AggregatedShoppingItem = {
+  name: string;
+  amount: number;
+  unit: string;
+  recipes: Set<string>;
+  category: string;
+  sources: Set<ShoppingSource>;
+};
+
+type PurchaseAmount = {
+  purchaseQuantity: number;
+  purchaseUnit: string;
+  purchaseLabel?: string;
+  remainderQuantity?: number;
+  remainderUnit?: string;
+  packageAdjusted: boolean;
+  packageNote?: string;
+};
+
 const FLEISCH_REGEX =
   /(hähnchen|chicken|rind|steak|hack|hackfleisch|bacon|schwein|schnitzel|bratwurst|köfte|koefte|pulled chicken)/i;
 
@@ -724,7 +750,7 @@ function parseIngredientAmount(line: string):
     return { amount: 1, unit: "prüfen", name: cleanIngredientName(original), source: "hellofresh" };
   }
 
-  const pantryNames = /(honig|salz|pfeffer|öl|oel|olivenöl|butter|essig|senf|sojasauce|sojasoße|hoisin|gochujang|teriyaki|gewürz|gewuerz|brühe|bruehe|tomatenmark|sesam|zucker|mehl|paniermehl|semmelbrösel|ingwerpaste|mayonnaise|ketchup)/i;
+  const pantryNames = /(honig|salz|pfeffer|öl|oel|olivenöl|essig|senf|sojasauce|sojasoße|hoisin|gochujang|teriyaki|gewürz|gewuerz|brühe|bruehe|tomatenmark|sesam|zucker|mehl|paniermehl|semmelbrösel|ingwerpaste|mayonnaise|ketchup)/i;
   const possibleName = cleanIngredientName(match[3] || "");
   if (pantryNames.test(possibleName)) {
     return { amount: 1, unit: "prüfen", name: possibleName, source: "hellofresh" };
@@ -830,7 +856,11 @@ function fallbackItemsForRecipe(recipe: Recipe): NormalizedShoppingItem[] {
   }));
 }
 
-function getRecipeShoppingItems(recipe: Recipe, settings: Settings): NormalizedShoppingItem[] {
+function getRecipeShoppingItems(
+  recipe: Recipe,
+  settings: Settings,
+  recipeMultiplier = 1,
+): NormalizedShoppingItem[] {
   const peopleFactor = 1 + settings.girlfriendPortionFactor;
   const parsed: NormalizedShoppingItem[] = [];
 
@@ -842,7 +872,7 @@ function getRecipeShoppingItems(recipe: Recipe, settings: Settings): NormalizedS
       if (!parsedLine) continue;
       parsed.push({
         name: parsedLine.name,
-        amount: parsedLine.amount * hfMultiplier,
+        amount: parsedLine.amount * hfMultiplier * recipeMultiplier,
         unit: parsedLine.unit,
         category: categoryForItem(parsedLine.name),
         recipeName: recipe.name,
@@ -854,7 +884,10 @@ function getRecipeShoppingItems(recipe: Recipe, settings: Settings): NormalizedS
 
   return fallbackItemsForRecipe(recipe).map((item) => ({
     ...item,
-    amount: item.unit === "prüfen" ? item.amount : item.amount * peopleFactor,
+    amount:
+      item.unit === "prüfen"
+        ? item.amount
+        : item.amount * peopleFactor * recipeMultiplier,
   }));
 }
 
@@ -920,6 +953,138 @@ function formatAmount(amount: number, unit: string) {
   return `${rounded} ${unit}`;
 }
 
+function roundUpToPackage(amount: number, packageSize: number) {
+  if (amount <= 0) return packageSize;
+  return Math.ceil(amount / packageSize) * packageSize;
+}
+
+function packageLabel(quantity: number, unit: string, noun?: string) {
+  const amount = formatAmount(quantity, unit);
+  return noun ? `${amount} ${noun}` : amount;
+}
+
+function isPantryStaple(name: string) {
+  return /(öl|oel|olivenöl|salz|pfeffer|honig|senf|essig|sojasauce|sojasoße|sojasosse|hoisin|gochujang|teriyaki|gewürz|gewuerz|brühe|bruehe|tomatenmark|sesam|zucker|mehl|paniermehl|semmelbrösel|ingwerpaste|mayonnaise|ketchup)/i.test(name);
+}
+
+function applyPackageRounding(item: AggregatedShoppingItem): PurchaseAmount {
+  const name = item.name.toLowerCase();
+  const unit = item.unit;
+  const amount = item.amount;
+  const exact: PurchaseAmount = {
+    purchaseQuantity: amount,
+    purchaseUnit: unit,
+    packageAdjusted: false,
+  };
+
+  if (FLEISCH_REGEX.test(name) || /(garnelen|fisch|seelachs|lachs)/i.test(name)) {
+    return exact;
+  }
+
+  if (unit === "prüfen" || isPantryStaple(item.name)) {
+    return {
+      purchaseQuantity: 1,
+      purchaseUnit: "prüfen",
+      purchaseLabel: "Vorrat prüfen",
+      packageAdjusted: true,
+      packageNote: "Vorratsprodukt: Bestand prüfen statt exakte Kleinstmenge kaufen.",
+    };
+  }
+
+  const withPackage = (
+    packageSize: number,
+    packageUnit = unit,
+    labelNoun?: string,
+    note?: string,
+  ): PurchaseAmount => {
+    const purchaseQuantity = roundUpToPackage(amount, packageSize);
+    return {
+      purchaseQuantity,
+      purchaseUnit: packageUnit,
+      purchaseLabel: packageLabel(purchaseQuantity, packageUnit, labelNoun),
+      remainderQuantity:
+        packageUnit === unit ? Math.max(0, purchaseQuantity - amount) : undefined,
+      remainderUnit: packageUnit === unit ? packageUnit : undefined,
+      packageAdjusted: purchaseQuantity !== amount || Boolean(labelNoun),
+      packageNote: note,
+    };
+  };
+
+  if (/(naturjoghurt|joghurt)/i.test(item.name) && unit === "g") {
+    return withPackage(250, "g", "Becher", "Joghurt wird als 250-g-Becher gerechnet.");
+  }
+  if (/(sahne|kochsahne|cremefine)/i.test(item.name) && (unit === "ml" || unit === "g")) {
+    return withPackage(200, unit, unit === "ml" ? "Becher" : "Packung", "Sahne wird als 200er-Packung gerechnet.");
+  }
+  if (/(schmand|crème fraîche|creme fraiche)/i.test(item.name) && unit === "g") {
+    return withPackage(200, "g", "Becher", "Schmand/Crème fraîche wird als 200-g-Becher gerechnet.");
+  }
+  if (/(frischkäse|frischkaese)/i.test(item.name) && unit === "g") {
+    return withPackage(200, "g", "Packung", "Frischkäse wird als 200-g-Packung gerechnet.");
+  }
+  if (/butter/i.test(item.name) && unit === "g") {
+    return withPackage(250, "g", "Packung", "Butter wird als 250-g-Packung gerechnet.");
+  }
+  if (/(käse|kaese|gerieben|gouda|parmesan|mozzarella|hirtenkäse|grillkäse|ricotta)/i.test(item.name) && unit === "g") {
+    return amount <= 100
+      ? withPackage(100, "g", "Packung", "Käse wird auf eine realistische Packung gerundet.")
+      : withPackage(150, "g", "Packung", "Käse wird auf 150-g-Packungen gerundet.");
+  }
+
+  if (/(reis|pasta|nudel|rigatoni|conchiglie|tortellini|gnocchi)/i.test(item.name) && (unit === "g" || unit.includes("trocken"))) {
+    return withPackage(500, unit, "Packung", "Kohlenhydrate werden als 500-g-Packung gerechnet.");
+  }
+  if (/(kartoffel|süßkartoffel|suesskartoffel)/i.test(item.name)) {
+    if (unit === "g") return withPackage(1000, "g", "Netz", "Kartoffeln werden mindestens als 1-kg-Einkauf gerechnet.");
+    if (/stück/i.test(unit)) {
+      const purchaseQuantity = Math.max(1, Math.ceil(amount));
+      return {
+        purchaseQuantity,
+        purchaseUnit: unit,
+        packageAdjusted: purchaseQuantity !== amount,
+      };
+    }
+  }
+  if (/(burgerbrötchen|burgerbroetchen|brioche|bun|brötchen|broetchen)/i.test(item.name)) {
+    const neededPieces = /stück/i.test(unit)
+      ? amount
+      : unit === "g"
+        ? Math.max(1, Math.ceil(amount / 80))
+        : amount;
+    const purchaseQuantity = roundUpToPackage(neededPieces, 4);
+    return {
+      purchaseQuantity,
+      purchaseUnit: "Stück",
+      purchaseLabel: `${purchaseQuantity}er-Pack`,
+      remainderQuantity: Math.max(0, purchaseQuantity - neededPieces),
+      remainderUnit: "Stück",
+      packageAdjusted: true,
+      packageNote: "Burger Buns werden als 4er-Pack gerechnet.",
+    };
+  }
+
+  if (/(kräuter|kraeuter|petersilie|schnittlauch|basilikum)/i.test(item.name)) {
+    return {
+      purchaseQuantity: 1,
+      purchaseUnit: "Bund",
+      purchaseLabel: "1 Bund/Packung",
+      packageAdjusted: true,
+      packageNote: "Frische Kräuter werden als Bund oder Packung gekauft.",
+    };
+  }
+
+  if (/(stück|stk|zehe|bund|kopf\/packung|packung|dose)/i.test(unit)) {
+    const purchaseQuantity = Math.max(1, Math.ceil(amount));
+    return {
+      purchaseQuantity,
+      purchaseUnit: unit,
+      packageAdjusted: purchaseQuantity !== amount,
+    };
+  }
+
+  return exact;
+}
+
 function buildShoppingListForSlots(
   slots: ShoppingListSlot[],
   settings: Settings,
@@ -927,11 +1092,9 @@ function buildShoppingListForSlots(
   pantry: PantryState = { items: {} },
   shoppingState: ShoppingState = { checked: {} },
   extraItems: NormalizedShoppingItem[] = [],
+  options: ShoppingListOptions = {},
 ) {
-  const totals = new Map<
-    string,
-    { name: string; amount: number; unit: string; recipes: Set<string>; category: string; sources: Set<ShoppingSource> }
-  >();
+  const totals = new Map<string, AggregatedShoppingItem>();
 
   function add(item: NormalizedShoppingItem) {
     if (!item.name || /lieferung enthalten/i.test(item.name)) return;
@@ -956,7 +1119,11 @@ function buildShoppingListForSlots(
   }
 
   for (const slot of slots) {
-    for (const item of getRecipeShoppingItems(slot.recipe, settings)) {
+    for (const item of getRecipeShoppingItems(
+      slot.recipe,
+      settings,
+      options.recipeMultiplier || 1,
+    )) {
       add({
         ...item,
         recipeName: slot.recipeName || item.recipeName,
@@ -968,21 +1135,50 @@ function buildShoppingListForSlots(
   return [...totals.values()]
     .map((v) => {
       const itemKey = shoppingKeyForName(v.name);
-      const amountText = formatAmount(v.amount, v.unit);
-      const numericAmount = v.unit === "prüfen"
+      const neededText = formatAmount(v.amount, v.unit);
+      const purchase = options.packageAdjusted
+        ? applyPackageRounding(v)
+        : {
+            purchaseQuantity: v.amount,
+            purchaseUnit: v.unit,
+            packageAdjusted: false,
+          };
+      const purchaseText = purchase.purchaseLabel || formatAmount(
+        purchase.purchaseQuantity,
+        purchase.purchaseUnit,
+      );
+      const remainderText =
+        typeof purchase.remainderQuantity === "number" &&
+        purchase.remainderQuantity > 0 &&
+        purchase.remainderUnit
+          ? formatAmount(purchase.remainderQuantity, purchase.remainderUnit)
+          : undefined;
+      const numericAmount = purchase.purchaseUnit === "prüfen"
         ? 1
-        : Math.max(1, Math.round(v.amount));
+        : Math.max(1, Math.round(purchase.purchaseQuantity));
       return {
         key: itemKey,
         name: v.name,
         amount: numericAmount,
-        amountText,
-        unit: v.unit,
+        amountText: options.packageAdjusted ? purchaseText : neededText,
+        unit: purchase.purchaseUnit,
+        neededQuantity: v.unit === "prüfen" ? undefined : v.amount,
+        neededUnit: v.unit,
+        neededText,
+        purchaseQuantity: purchase.purchaseUnit === "prüfen" ? undefined : purchase.purchaseQuantity,
+        purchaseUnit: purchase.purchaseUnit,
+        purchaseLabel: purchase.purchaseLabel,
+        purchaseText,
+        remainderQuantity: purchase.remainderQuantity,
+        remainderUnit: purchase.remainderUnit,
+        remainderText,
+        packageAdjusted: purchase.packageAdjusted,
+        packageNote: purchase.packageNote,
         recipes: [...v.recipes].slice(0, 12),
         category: v.category,
         checked: Boolean(shoppingState.checked[checkedKeyForItem(itemKey)]),
         inPantry: Boolean(pantry.items[itemKey]),
-        estimatedCost: estimateShoppingItemCost(v.name, numericAmount, v.unit),
+        estimatedCost: estimateShoppingItemCost(v.name, numericAmount, purchase.purchaseUnit),
         priceNote: priceNoteForShoppingItem(v.name),
         source: v.sources.has("hellofresh") ? "HelloFresh-Zutaten" : v.sources.has("fallback") ? "geschätzt" : "Shake",
       };
@@ -1037,6 +1233,7 @@ function buildShoppingList(
     pantry,
     shoppingState,
     extraItems,
+    { packageAdjusted: true },
   );
 }
 
@@ -1074,10 +1271,14 @@ function estimateShoppingItemCost(name: string, amount: number, unit: string) {
     return Math.round((amount / 1000) * 1.25 * 100) / 100;
   if (n.includes("esn")) return Math.round((amount / 30) * 0.9 * 100) / 100;
   if (n.includes("reis")) return Math.round((amount / 1000) * 2.99 * 100) / 100;
+  if (n.includes("kartoffel") && /stück/.test(u))
+    return Math.round(amount * 0.79 * 100) / 100;
   if (n.includes("kartoffel"))
     return Math.round((amount / 1000) * 1.79 * 100) / 100;
-  if (n.includes("burgerbrötchen"))
-    return Math.round((Math.ceil(amount) / 4) * 1.79 * 100) / 100;
+  if (/(burgerbrötchen|burgerbroetchen|brioche|bun|brötchen|broetchen)/.test(n)) {
+    if (/stück/.test(u)) return Math.round((Math.ceil(amount) / 4) * 1.79 * 100) / 100;
+    return Math.round((amount / 320) * 1.79 * 100) / 100;
+  }
   if (n.includes("wrap") || n.includes("tortilla"))
     return Math.round((Math.ceil(amount) / 6) * 1.99 * 100) / 100;
   if (n.includes("spätzle"))
@@ -1651,11 +1852,26 @@ app.get("/api/recipes", async (_req, res) => {
   res.json(recipes.map(enrichRecipe));
 });
 
+function parseShoppingListMode(value: unknown): ShoppingListMode {
+  const mode = String(value || "package");
+  return mode === "exact" || mode === "mealprep" ? mode : "package";
+}
+
+function parseMealprepFactor(value: unknown, mode: ShoppingListMode) {
+  const fallback = mode === "mealprep" ? 2 : 1;
+  const parsed = Number(String(value || fallback).replace(",", "."));
+  if ([1, 1.5, 2].includes(parsed)) return parsed;
+  return fallback;
+}
+
 app.get("/api/recipes/:recipeId/shopping-list", async (req, res) => {
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const recipe = recipes.find((r) => r.id === req.params.recipeId);
   if (!recipe) return res.status(404).json({ error: "Rezept nicht gefunden." });
 
+  const mode = parseShoppingListMode(req.query.mode);
+  const requestedFactor = parseMealprepFactor(req.query.factor, mode);
+  const recipeMultiplier = mode === "mealprep" ? requestedFactor : 1;
   const settings = await readSettings();
   const pantry = await readPantryState();
   const shoppingState = await readShoppingState();
@@ -1665,11 +1881,18 @@ app.get("/api/recipes/:recipeId/shopping-list", async (req, res) => {
     (itemKey) => singleShoppingStateKey(recipe.id, itemKey),
     pantry,
     shoppingState,
+    [],
+    {
+      packageAdjusted: mode !== "exact",
+      recipeMultiplier,
+    },
   );
 
   res.json({
     recipe: enrichRecipe(recipe),
-    factor: 1 + settings.girlfriendPortionFactor,
+    factor: (1 + settings.girlfriendPortionFactor) * recipeMultiplier,
+    requestedFactor,
+    mode,
     range: "single",
     rangeLabel: recipe.name,
     totalEstimatedCost: totalEstimatedCost(items),
