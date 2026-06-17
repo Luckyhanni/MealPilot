@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "scripts": {
     "install:all": "npm install --include=dev --prefix backend && npm install --include=dev --prefix frontend",
