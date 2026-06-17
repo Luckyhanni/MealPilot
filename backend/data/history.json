@@ -1,0 +1,1109 @@
+[
+  {
+    "id": "bmfAvdXOjT",
+    "createdAt": "2026-05-29T10:38:02.414Z",
+    "recipeIds": [
+      "hackbaellchen-mit-bio-rinderhack-in-senfsosse",
+      "knusprige-blumenkohl-nuggets",
+      "saftiges-schweinefilet-mit-senfrahm",
+      "tomatige-conchiglie-mit-rinderhackfleisch",
+      "schweinefilet-in-aprikosen-sosse",
+      "teriyaki-burger-mit-bio-rindfleisch",
+      "grillhaehnchen-burger-mit-kartoffelspalten",
+      "american-bbq-paprika-haehnchenkeule",
+      "pollo-asado-mit-kidneybohnen-mais-salat",
+      "honig-senf-garnelensalat-mit-avocado",
+      "wuerzig-feurige-grillkaese-tacos",
+      "thueringer-bratwurst-sandwich",
+      "gnocchi-pfanne-mit-brokkoli",
+      "herzhafte-gnocchi-pfanne"
+    ],
+    "plan": {
+      "id": "bmfAvdXOjT",
+      "createdAt": "2026-05-29T10:38:02.414Z",
+      "days": [
+        {
+          "day": "Mo",
+          "meals": [
+            {
+              "day": "Mo",
+              "mealIndex": 1,
+              "recipe": {
+                "id": "hackbaellchen-mit-bio-rinderhack-in-senfsosse",
+                "name": "Hackbällchen mit Bio Rinderhack in Senfsoße",
+                "tier": "Henkersmahlzeit",
+                "kcal": 930,
+                "protein": 52,
+                "durationMinutes": 35,
+                "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/hackballchen-mit-bio-rinderhack-in-senfsosse-68c139bd9f91a82a63bf0bfa",
+                "tags": [
+                  "rind",
+                  "hackfleisch"
+                ],
+                "ingredients": [
+                  "250 g Bio Rinderhackfleischzubereitung",
+                  "150 g Basmatireis",
+                  "1 Stück Karotte",
+                  "1 Stück Porree",
+                  "1 Stück Zwiebel",
+                  "10 g Petersilie glatt/Schnittlauch",
+                  "150 g Kochsahne leicht",
+                  "25 g Semmelbrösel",
+                  "17 g körniger Senf",
+                  "10 ml mittelscharfer Senf",
+                  "4 g Rinderbrühe",
+                  "nach Geschmack Salz",
+                  "1 Esslöffel Öl",
+                  "350 ml Wasser",
+                  "nach Geschmack Pfeffer",
+                  "1 Teelöffel Honig",
+                  "½ Esslöffel Butter"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Erhitze 300 ml [450 ml | 600 ml] Wasser im Wasserkocher. Karotte schälen und grob raspeln. Porree längs halbieren, gründlich auswaschen und in 0,5 cm Halbmonde schneiden. Zwiebel fein würfeln. Petersilie fein hacken und Schnittlauch in feine Röllchen schneiden.",
+                    "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "In einen großen Topf 300 ml [450 ml | 600 ml] heißes Wasser* füllen, leicht salzen* und aufkochen lassen. Reis, Porree und Karottenraspel darin bei niedriger Hitze ca. 10 Min. abgedeckt köcheln lassen. Dann Topf vom Herd nehmen und mindestens 10 Min. abgedeckt ziehen lassen.",
+                    "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "In einem hohen Rührgefäß 50 ml [75 ml | 100 ml] Wasser*, Sahne, Rinderbrühe, körnigen Senf und 1 TL [1,5 TL | 2 TL] Honig* gut verrühren, sodass keine Klümpchen mehr vorhanden sind.",
+                    "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "In einer großen Schüssel Hackfleisch, Zwiebelwürfel, Semmelbrösel, Petersilie, mittelscharfen Senf, Salz* und Pfeffer* gut mit den Händen vermengen und aus der Hackfleischmasse ca. 10 [15 | 20] Bällchen formen. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* bei hoher Hitze erwärmen und Hackbällchen 2 – 3 Min. rundherum scharf anbraten. Anschließend Hackbällchen aus der Pfanne nehmen und das Fett abgießen.",
+                    "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "Pfanne auswischen und den Sahnemix hineingeben. Soße einmal aufkochen lassen und mit Salz* und Pfeffer* abschmecken. Angebratene Hackbällchen in die Soße geben, Hitze reduzieren und alles 5 – 8 Min. gar ziehen lassen. Tipp: Falls die Soße zu dick wird, gib einen Schluck Wasser dazu.",
+                    "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Gemüsereis mit einer Gabel auflockern. Nach Belieben noch 0,5 EL [1 EL | 1 EL] Butter* untermischen. Reis auf Teller verteilen. Hackbällchen und Senfsoße dazu anrichten. Mit Schnittlauch bestreuen und genießen.",
+                    "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:36:02.657Z"
+              }
+            },
+            {
+              "day": "Mo",
+              "mealIndex": 2,
+              "recipe": {
+                "id": "knusprige-blumenkohl-nuggets",
+                "name": "Knusprige Blumenkohl Nuggets",
+                "tier": "Himmel auf Erden",
+                "kcal": 760,
+                "protein": 22,
+                "durationMinutes": 35,
+                "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/knusprige-blumenkohl-nuggets-66262398cae59979d908d8d3",
+                "tags": [
+                  "gemischt"
+                ],
+                "ingredients": [
+                  "¾ Stück Blumenkohl",
+                  "600 g Kartoffeln (Drillinge)",
+                  "75 g Blattsalatmischung",
+                  "10 g Petersilie glatt/Zitronenthymian",
+                  "50 g Senfsoße mit Frühlingszwiebeln",
+                  "100 g Naturjoghurt",
+                  "50 g Mayonnaise",
+                  "25 g Pankomehl",
+                  "4 g Gewürzmischung „Hello Patatas“",
+                  "nach Geschmack Pfeffer",
+                  "nach Geschmack Salz",
+                  "2.5 Esslöffel Öl",
+                  "1 Teelöffel Weißweinessig",
+                  "1 Teelöffel Honig"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Heize den Backofen auf 230 °C Ober-/Unterhitze (210 °C Umluft) vor. Zitronenthymianblätter hacken. Gewaschene Kartoffeln je nach Größe halbieren und auf einer Hälfte eines mit Backpapier belegten Backblechs verteilen. Kartoffeln mit Zitronenthymianblättern, 1 EL [1,5 EL | 2 EL] Öl* und Salz* vermengen. Tipp: Für 3 und 4 Pers. verwende 2 separate Bleche für die Kartoffeln und den Blumenkohl.",
+                    "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "Blumenkohl in mundgerechte Röschen teilen. In einer großen Schüssel Mayonnaise, „Hello Patatas“ und 1 TL [1,5 TL | 2 TL] Öl* verrühren. Blumenkohlröschen hinzufügen und gründlich mit der Mayo-Mischung vermengen.",
+                    "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Mithilfe eines Messerrückens oder einer Flasche vorsichtig auf die Packung Panko-Mehl klopfen, sodass die Brösel etwas feiner werden. Panko zum Blumenkohl in die große Schüssel geben und alles gut miteinander vermengen. Blumenkohlröschen neben die Kartoffeln auf das Backblech (oder auf ein zweites, mit Backpapier belegtes Backblech) geben. Es ist nicht schlimm, wenn dabei etwas Panko in der Schüssel zurückbleibt.",
+                    "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "Blumenkohl und Kartoffeln im Ofen ca. 25 – 28 Min. goldbraun backen. Tipp: Für 3 und 4 Pers. schiebe das Blumenkohl-Blech mittig in den Ofen und das K artoffel-Blech darunter. Währenddessen in einer kleinen Schüssel Joghurt, Senfsoße mit Frühlingszwiebel, Salz* und Pfeffer* zu einem Dip verrühren. Tipp: Wenn Du den Dip etwas kräftiger magst, schmecke ihn mit etwas Essig* ab.",
+                    "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "In einer zweiten großen Schüssel 1 EL [1,5 EL | 2 EL] Joghurtdip, 1 EL [1,5 EL | 2 EL] Öl*, 2 EL [3 EL | 4 EL] Wasser*, 1 TL [1,5 TL | 2 TL] Essig* und 1 TL [1,5 TL | 2 TL] Honig* zu einem Dressing vermengen. Mit Salz* und Pfeffer* abschmecken. Salat zu dem Dressing geben und kurz vor dem Servieren unterheben. Petersilienblätter grob hacken.",
+                    "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Blumenkohl nach der Garzeit nach Belieben mit Salz* würzen. Drillinge und Salat auf Teller verteilen. Blumenkohl Nuggets daneben anrichten, mit Petersilie bestreuen und mit Joghurtdip servieren.",
+                    "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:35:57.910Z"
+              }
+            }
+          ],
+          "mealKcal": 1690,
+          "mealProtein": 74,
+          "shakes": [
+            "Milch",
+            "Wasser",
+            "Wasser"
+          ],
+          "totalKcalWithShakes": 2370,
+          "totalProteinWithShakes": 163
+        },
+        {
+          "day": "Di",
+          "meals": [
+            {
+              "day": "Di",
+              "mealIndex": 1,
+              "recipe": {
+                "id": "saftiges-schweinefilet-mit-senfrahm",
+                "name": "Saftiges Schweinefilet mit Senfrahm",
+                "tier": "Henkersmahlzeit",
+                "kcal": 1080,
+                "protein": 54,
+                "durationMinutes": 35,
+                "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/saftiges-schweinefilet-mit-senfrahm-64190895cc96bbe9f40cada7",
+                "tags": [
+                  "gemischt"
+                ],
+                "ingredients": [
+                  "250 g Schweinefilet",
+                  "600 g Kartoffeln (Drillinge)",
+                  "4 Stück Karotte",
+                  "10 g Petersilie glatt/Rosmarin",
+                  "150 g Kochsahne",
+                  "15 ml süßer Senf",
+                  "4 g Hühnerbrühe",
+                  "3 Esslöffel Öl",
+                  "nach Geschmack Salz",
+                  "nach Geschmack Pfeffer",
+                  "50 ml Wasser"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Karotten schälen und schräg in 0,5 cm Scheiben schneiden. Karottenscheiben auf einem mit Backpapier belegten Backblech verteilen (etwas Platz für die Kartoffeln lassen) und mit 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* würzen.",
+                    "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "Rosmarinnadeln abzupfen und fein hacken. Petersilienblätter fein hacken. Gewaschene Kartoffeln ungeschält je nach Größe vierteln oder halbieren. Kartoffeln in einer großen Schüssel zusammen mit 1 EL [1,5 EL | 2 EL] Öl* und Rosmarin vermengen und auf dem Backblech verteilen. Karotten und Kartoffeln 25 – 30 Min. goldbraun backen.",
+                    "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Fleisch mit 1 EL [1,5 EL | 2 EL] Öl* einreiben und mit Salz* und Pfeffer* würzen. Eine große Pfanne bei starker Hitze erwärmen und die Filets ohne zusätzliches Öl darin 3 – 4 Min. rundherum scharf anbraten.",
+                    "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "Schweinefilets aus der Pfanne nehmen und für die letzten 10 Min. der Kartoffel-Garzeit mit auf das Backblech geben und im Backofen 10 – 12 Min. fertig backen, bis das Fleisch innen noch leicht rosa ist. Aus der Hühnerbrühe und 50 ml [75 ml | 100 ml] heißem Wasser* eine Brühe zubereiten.",
+                    "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "Kochsahne, vorbereitete Brühe und Senf in die Pfanne geben. Aufkochen und 1 – 2 Min. einköcheln lassen, bis die Soße ein bisschen eingedickt ist. Nach Geschmack mit Salz* und Pfeffer* würzen.",
+                    "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Rezepte für mehr Abwechslung beim Kochen Karotten Rezepte",
+                    "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:36:03.096Z"
+              }
+            },
+            {
+              "day": "Di",
+              "mealIndex": 2,
+              "recipe": {
+                "id": "tomatige-conchiglie-mit-rinderhackfleisch",
+                "name": "Tomatige Conchiglie mit Rinderhackfleisch",
+                "tier": "Henkersmahlzeit",
+                "kcal": 930,
+                "protein": 52,
+                "durationMinutes": 35,
+                "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/tomatige-conchiglie-mit-rinderhackfleisch-66388425a1cdc8933c576841",
+                "tags": [
+                  "rind",
+                  "hackfleisch"
+                ],
+                "ingredients": [
+                  "200 g Hackfleischzubereitung vom Weiderind",
+                  "1 Stück Zwiebel",
+                  "1 Stück Knoblauchzehe",
+                  "10 g Basilikum/Oregano",
+                  "150 g Kochsahne",
+                  "25 g Tomatenpesto",
+                  "40 g Hartkäse ital. Art, geraspelt",
+                  "4 g Gewürzmischung „Hello Harissa“",
+                  "6 g Hühnerbrühe",
+                  "250 g Conchiglie",
+                  "1 Esslöffel Öl",
+                  "nach Geschmack Salz",
+                  "nach Geschmack Pfeffer",
+                  "500 ml Wasser"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Erhitze 5 00 ml [750 ml | 1.000 ml] Wasser im Wasserkocher. Oreganoblätter fein hacken. Zwiebel fein hacken. Knoblauchzehe abziehen.",
+                    "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "In einem großen Topf mit Deckel 1 EL [1,5 EL | 2 EL] Öl* bei mittlerer Temperatur erhitzen. Knoblauch hineinpressen, Rinderhackfleisch und gehackte Zwiebel dazugeben und alles 2 – 3 Min. anbraten. Dabei das Hackfleisch gut zerkleinern.",
+                    "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Topfinhalt mit Kochsahne und 500 ml [750 ml | 1.000 ml] heißem Wasser* ablöschen. Hühnerbrühe, „Hello Harissa “ und nach Geschmack etwas gehackten Oregano dazugeben. Conchiglie unterrühren, a ufkochen und abgedeckt ca. 10 – 12 Min. köcheln lassen, bis die Nudeln bissfest sind. Zwischendurch mehrmals umrühren. Besonders zum Schluss, wenn das Wasser fast verkocht ist, musst Du öfter umrühren, damit die Nudeln nicht ansetzen!",
+                    "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "Tomatenpesto unter die fertig gegarten Conchiglie rühren.",
+                    "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "Die Hälfte vom geraspelten Hartkäse hinzugeben und gut vermengen, bis der Käse geschmolzen ist. Mit Salz* und Pfeffer* abschmecken.",
+                    "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Pasta auf tiefen Tellern anrichten, mit Basilikum und restlichem Hartkäse toppen und genießen.",
+                    "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:36:03.925Z"
+              }
+            }
+          ],
+          "mealKcal": 2010,
+          "mealProtein": 106,
+          "shakes": [
+            "Wasser",
+            "Wasser"
+          ],
+          "totalKcalWithShakes": 2250,
+          "totalProteinWithShakes": 154
+        },
+        {
+          "day": "Mi",
+          "meals": [
+            {
+              "day": "Mi",
+              "mealIndex": 1,
+              "recipe": {
+                "id": "schweinefilet-in-aprikosen-sosse",
+                "name": "Schweinefilet in Aprikosen Soße",
+                "tier": "Henkersmahlzeit",
+                "kcal": 950,
+                "protein": 50,
+                "durationMinutes": 35,
+                "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/schweinefilet-in-aprikosen-sosse-6564689e53b95b70f9991263",
+                "tags": [
+                  "gemischt"
+                ],
+                "ingredients": [
+                  "250 g Schweinefilet",
+                  "3 Stück Karotte",
+                  "50 g Aprikosenkonfitüre",
+                  "4 g Maisstärke",
+                  "1 Stück rote Zwiebel",
+                  "120 g Salatherz (Romana)",
+                  "5 ml mittelscharfer Senf",
+                  "6 g Gewürzmischung „Hello Patatas“",
+                  "1 Stück Ofenkartoffel",
+                  "1 Stück Knoblauchzehe",
+                  "4 g Gemüsebrühpulver",
+                  "100 ml Wasser",
+                  "2 Teelöffel Balsamicoessig",
+                  "nach Geschmack Salz",
+                  "nach Geschmack Pfeffer",
+                  "½ Teelöffel Honig",
+                  "4 Esslöffel Olivenöl",
+                  "1 Teelöffel Butter"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Karotten schälen und in 1 cm Scheiben schneiden. Kartoffel schälen, längs halbieren und in 0,5 cm Scheiben schneiden. Hälfte der Zwiebel in 1 cm Spalten schneiden. Karotten, Kartoffel und Zwiebelspalten auf ein mit Backpapier belegtes Backblech geben, dabei Platz für das Fleisch lassen. Gemüse mit 1 EL [1,5 EL | 2 EL] Olivenöl*, „Hello Patatas“, Salz* und Pfeffer* vermengen und 20 – 25 Min. goldbraun backen.",
+                    "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "Romanasalat in 1 cm Streifen schneiden. In einer großen Schüssel die Hälfte [drei Viertel | alles] vom Senf, 1 EL [1,5 EL | 2 EL] Olivenöl*, 0,5 TL [0,5 TL | 1 TL] Honig*, 1 TL [1,5 TL | 2 TL] Balsamicoessig*, 1 EL [1,5 EL | 2 EL] Wasser*, Salz* und Pfeffer* zu einem Dressing vermengen. Salatstreifen zugeben, aber noch nicht vermengen.",
+                    "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Aus 100 ml [150 ml | 200 ml] Wasser*, Brühepulver und Maisstärke eine Brühe vorbereiten. Schweinefilet in 4 [6 | 8] Medaillons schneiden und rundum salzen*.",
+                    "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Schweinemedaillons darin 2 – 3 Min. je Seite braten. Medaillons auf das Backblech geben und 8 – 10 Min. im Ofen garen, bis das Fleisch innen nicht mehr rosa ist. Restliche Zwiebel fein würfeln. Knoblauch abziehen.",
+                    "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "In derselben Pfanne erneut 1 EL [1,5 EL | 2 EL] Olivenöl* bei mittlerer Temperatur erhitzen. Zwiebelwürfel hineingeben, Knoblauch dazu pressen und beides 1 – 2 Min. glasig anschwitzen. Aprikosenmarmelade und 1 TL [1,5 TL | 2 TL] Balsamicoessig* hineinrühren. Pfanneninhalt mit vorbereiteter Brühe ablöschen und 1 – 2 Min. köcheln lassen, bis die Soße eindickt. TL [1,5 TL | 2 TL] Butter*einrühren und mit Salz* und Pfeffer* abschmecken.",
+                    "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Ofengemüse, Salat und Schweinefilet auf Teller verteilen und mit der Aprikosen-Soße servieren.",
+                    "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:36:03.498Z"
+              }
+            },
+            {
+              "day": "Mi",
+              "mealIndex": 2,
+              "recipe": {
+                "id": "teriyaki-burger-mit-bio-rindfleisch",
+                "name": "Teriyaki Burger mit Bio Rindfleisch",
+                "tier": "Himmel auf Erden",
+                "kcal": 1130,
+                "protein": 57,
+                "durationMinutes": 40,
+                "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/teriyaki-burger-mit-bio-rindfleisch-65d48953ebca12e27305330a",
+                "tags": [
+                  "rind",
+                  "burger",
+                  "asiatisch"
+                ],
+                "ingredients": [
+                  "200 g Bio Rinderhackfleischzubereitung",
+                  "160 g Brioche Bun, natur",
+                  "1 Stück Süßkartoffel",
+                  "50 g junger Gouda, gerieben",
+                  "50 ml Teriyakisoße",
+                  "8 ml Sriracha Sauce",
+                  "25 g Mayonnaise",
+                  "75 g Naturjoghurt",
+                  "1 Stück Limette, gewachst",
+                  "1 Stück Karotte",
+                  "1 Stück Salatherz (Romana)",
+                  "10 g Sesamsamen",
+                  "2 Esslöffel Öl",
+                  "nach Geschmack Salz",
+                  "1 Teelöffel Honig",
+                  "nach Geschmack Pfeffer"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Süßkartoffel schälen und in 2 cm dicke Spalten schneiden. Süßkartoffelspalten auf einem mit Backpapier belegten Backblech verteilen, mit 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Sesam mischen und im vorgeheizten Ofen 20 – 25 Min. goldbraun backen.",
+                    "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "In einer kleinen Schüssel Mayonnaise, Joghurt und (je nachdem, wie scharf Du es magst) Sriracha hinzufügen und alles gut vermengen. Limette in 6 Spalten schneiden. In einer zweiten kleinen Schüssel Teriyakisauce, 1 TL [1,5 TL | 2 TL] Honig*, Saft von 1 [1,5 | 2] Limettenspalte und 1 EL [1,5 EL | 2 EL] Wasser* verrühren.",
+                    "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Salat in feine Streifen schneiden. Karotte schälen und in eine große Schüssel grob raspeln. Salat zu den Karottenraspeln geben und mit 1 EL [1,5 EL | 2 EL] Sriracha-Dip vermengen. Mit Salz*, Pfeffer* und Saft von 2 [3 | 4] Limettenspalten abschmecken.",
+                    "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "Aus dem Hackfleisch 2 [3 | 4] ca. 1 cm dicke Patties formen. In einer großen Pfanne mit Deckel 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Patties je Seite 2 – 3 Min. scharf anbraten. Herdplatte ausstellen, Bratfett vorsichtig abgießen und Pfanne zurückstellen. Pfanneninhalt mit angerührter Teriyaki-Soße ablöschen und Patties einmal wenden. Jungen Gouda auf die Hackfleischpatties geben, Pfannendeckel aufsetzen und Käse 1 Min. schmelzen lassen.",
+                    "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "Burgerbrötchen aufschneiden und ca. 2 – 5 Min. vor Ende der Süßkartoffel-Backzeit zum Aufbacken zu den Süßkartoffelwedges in den Backofen geben.",
+                    "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Brötchenunterseiten mit einem Klecks Sriracha-Dip bestreichen. Zuerst mit den Patties belegen, dann mit etwas Salat toppen. Fertige Burger zusammen mit Süßkartoffelwedges, restlichem Salat und restlichem Dip genießen.",
+                    "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:35:57.463Z"
+              }
+            }
+          ],
+          "mealKcal": 2080,
+          "mealProtein": 107,
+          "shakes": [
+            "Wasser",
+            "Wasser"
+          ],
+          "totalKcalWithShakes": 2320,
+          "totalProteinWithShakes": 155
+        },
+        {
+          "day": "Do",
+          "meals": [
+            {
+              "day": "Do",
+              "mealIndex": 1,
+              "recipe": {
+                "id": "grillhaehnchen-burger-mit-kartoffelspalten",
+                "name": "Grillhähnchen Burger mit Kartoffelspalten",
+                "tier": "Henkersmahlzeit",
+                "kcal": 1080,
+                "protein": 60,
+                "durationMinutes": 40,
+                "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/grillhahnchen-burger-mit-kartoffelspalten-664360ebc72b4f891e542dd5",
+                "tags": [
+                  "hähnchen",
+                  "kartoffeln",
+                  "burger"
+                ],
+                "ingredients": [
+                  "250 g Hähnchenbrustfilet in Lake",
+                  "350 g Ofenkartoffel",
+                  "150 g Salatherz (Romana)",
+                  "50 g Mayonnaise",
+                  "25 g Sweet Chili Soße",
+                  "6 g Gewürzmischung „Hello Paprika“",
+                  "160 g Brioche Bun, natur",
+                  "nach Geschmack Pfeffer",
+                  "nach Geschmack Salz",
+                  "3 Esslöffel Öl",
+                  "1 Teelöffel Weißweinessig",
+                  "1 Esslöffel Butter"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Kartoffeln in 4 oder 6 Spalten schneiden. Kartoffeln auf ein mit Backpapier belegtes Backblech geben, mit 1 EL [1,5 EL | 2 EL] Öl*, Hälfte „Hello Paprika“, Salz* und Pfeffer* vermengen und im Ofen 25 – 30 Min. goldbraun backen.",
+                    "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "In einer kleinen Schüssel Mayonnaise, Sweet Chili Soße, Salz* und Pfeffer* zu einem Dip vermengen. In einer großen Schüssel 1 EL [1,5 EL | 2 EL] Dip, 1 EL [1,5 EL | 2 EL] Öl*, 1 TL [1,5 TL | 2 TL] Essig*, Salz* und Pfeffer* zu einem Dressing verrühren.",
+                    "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Romanasalat in sehr feine Streifen schneiden und in die Schüssel mit dem Dressing geben. Brioche Buns waagerecht halbieren.",
+                    "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Butter* erhitzen. Brioche Buns darin 1 – 2 Min. auf der Schnittseite toasten, bis sie goldbraun sind.",
+                    "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "Hähnchenbrust waagerecht aufschneiden, aber nicht durchschneiden und wie ein Buch aufklappen. Filets auf beiden Seiten mit restlichem „Hello Paprika“, Salz* und Pfeffer* würzen. In derselben Pfanne erneut 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Hähnchenbrustfilets darin 2 – 3 Min. pro Seite anbraten, bis das Fleisch innen nicht mehr rosa ist.",
+                    "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Etwas Sweet-Chili-Mayonnaise auf den Schnittseiten der Brioche Buns verteilen. Romanasalat darauf verteilen und mit dem Grilled Chicken toppen. Kartoffeln daneben anrichten und mit restlichem Salat und restlichem Dip servieren.",
+                    "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:36:00.038Z"
+              }
+            },
+            {
+              "day": "Do",
+              "mealIndex": 2,
+              "recipe": {
+                "id": "american-bbq-paprika-haehnchenkeule",
+                "name": "American BBQ Paprika Hähnchenkeule",
+                "tier": "Henkersmahlzeit",
+                "kcal": 960,
+                "protein": 48,
+                "durationMinutes": 35,
+                "imageUrl": "/images/hellofresh/american-bbq-paprika-haehnchenkeule-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/american-bbq-paprika-hahnchenkeule-65d48bda6c4f2239898764e6",
+                "tags": [
+                  "hähnchen"
+                ],
+                "ingredients": [
+                  "500 g Hähnchenkeule in Kräutermarinade",
+                  "3 Stück Ofenkartoffel",
+                  "50 g Ketchup",
+                  "16 ml Sriracha Sauce",
+                  "16 ml Worcester Sauce",
+                  "4 g Gewürzmischung „Hello Paprika“",
+                  "50 g Mayonnaise",
+                  "10 ml mittelscharfer Senf",
+                  "1 Stück Salatherz (Romana)",
+                  "3 g Gewürzmischung „Hello Smoky Paprika“",
+                  "40 g Hartkäse ital. Art, gerieben",
+                  "2 Esslöffel Butter",
+                  "1 Esslöffel Weißweinessig",
+                  "2 Teelöffel Zucker",
+                  "nach Geschmack Salz",
+                  "nach Geschmack Pfeffer"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Tipp: Alternativ kannst Du auch den Grill vorheizen. Kartoffeln längs halbieren und mehrfach mit einer Gabel einstechen. Tipp: Wenn Du grillen möchtest, wickle die Kartoffeln ganz in Alufolie ein und gare sie 30 – 40 Min. in der heißen Glut. In einer großen Schüssel Hähnchenschenkel in Kräutermarinade mit „Hello Paprika“, Salz* und Pfeffer* vermengen.",
+                    "imageUrl": "/images/hellofresh/american-bbq-paprika-haehnchenkeule-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "Hähnchenschenkel auf ein Rost geben und im oberen Teil des Backofens 30 – 35 Min. garen, bis das Fleisch innen nicht mehr rosa ist. In den letzten 3 – 5 Min. der Garzeit auf die Grillfunktion umstellen. Kartoffeln mit der Schnittseite nach unten auf ein mit Backpapier belegtes Backblech geben, unterhalb der Hähnchenschenkel in den Ofen geben und ebenfalls für 30 – 35 Min. garen. Tipp: Du kannst die Hähnchenschenkel auch für 30 – 40 Min. unter Wenden auf dem Grill anbraten.",
+                    "imageUrl": "/images/hellofresh/american-bbq-paprika-haehnchenkeule-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Salatherz halbieren und in mundgerechte Stücke schneiden.",
+                    "imageUrl": "/images/hellofresh/american-bbq-paprika-haehnchenkeule-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "In einer großen Schüssel Mayonnaise, Senf, geriebenen Hartkäse, Hälfte Worcestersauce, 1 EL [1,5 EL | 2 EL] Essig*, 1 TL [1,5 TL | 2 TL] Zucker*, Salz* und Pfeffer* zu einem Dressing vermengen. Salat dazugeben und vermengen.",
+                    "imageUrl": "/images/hellofresh/american-bbq-paprika-haehnchenkeule-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "In einen kleinen Topf Ketchup, Sriracha (Achtung: scharf!), „Hello Smoky Paprika“, restliche Worcestersauce, 1 TL [1,5 TL | 2 TL] Zucker*, Salz* und Pfeffer* geben und 1 – 2 Min. darin aufkochen. Hitze reduzieren und 2 EL [3 EL | 4 EL] kalte Butter* unterrühren. Ggf. warm halten.",
+                    "imageUrl": "/images/hellofresh/american-bbq-paprika-haehnchenkeule-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Caesar-Salad, Hähnchenkeule und Kartoffeln nach Belieben auf Teller verteilen und mit der BBQ Buffalo Sauce toppen.",
+                    "imageUrl": "/images/hellofresh/american-bbq-paprika-haehnchenkeule-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:36:00.481Z"
+              }
+            }
+          ],
+          "mealKcal": 2040,
+          "mealProtein": 108,
+          "shakes": [
+            "Wasser",
+            "Wasser"
+          ],
+          "totalKcalWithShakes": 2280,
+          "totalProteinWithShakes": 156
+        },
+        {
+          "day": "Fr",
+          "meals": [
+            {
+              "day": "Fr",
+              "mealIndex": 1,
+              "recipe": {
+                "id": "pollo-asado-mit-kidneybohnen-mais-salat",
+                "name": "Pollo asado mit Kidneybohnen Mais Salat",
+                "tier": "Henkersmahlzeit",
+                "kcal": 700,
+                "protein": 55,
+                "durationMinutes": 20,
+                "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/pollo-asado-mit-kidneybohnen-mais-salat-6656ef3c3c6f6706517a04ab",
+                "tags": [
+                  "hähnchen",
+                  "salat"
+                ],
+                "ingredients": [
+                  "250 g Hähnchenbrustfilet in Lake",
+                  "390 g Kidneybohnen",
+                  "150 g Mais",
+                  "1 Stück Salatherz (Romana)",
+                  "1 Stück Tomate",
+                  "1 Stück Limette, gewachst",
+                  "75 g Naturjoghurt",
+                  "50 g Sweet Chili Soße",
+                  "3 g Gewürzmischung „Hello Smoky Paprika“",
+                  "2 Esslöffel Olivenöl"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Limette vierteln. Hähnchenbrust waagerecht aufschneiden, aber nicht durchschneiden und wie ein Buch aufklappen. In einer großen Schüssel Hähnchenbrust mit „Hello Smokey Paprika“, Saft von 1 [2 | 2] Limettenviertel etwas Öl, Salz* und Pfeffer* mischen und marinieren lassen.",
+                    "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "Tomate in 1 cm Würfel schneiden. Salatherz in feine Streifen schneiden. Kidneybohnen durch ein Sieb abgießen und mit Wasser abspülen. Mais öffnen, aber nicht abgießen.",
+                    "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "In einer großen Schüssel Tomatenwürfel, Kidneybohnen, Mais, Sweet Chili Soße, Saft von 1 [2 | 2] Limettenspalte, 1 EL [1,5 EL | 2 EL] Olivenöl*, etwas Essig*, Salz* und Pfeffer* vermengen und abschmecken. Salat in die Schüssel geben und am Ende des Rezepts unterheben.",
+                    "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "In einer kleinen Schüssel Joghurt mit Salz* und Pfeffer* zu einem Dip verrühren.",
+                    "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "Eine große Pfanne bei hoher Temperatur erhitzen. Wenn sie heiß ist, 1 EL [1,5 EL | 2 EL] Öl* hinzufügen. Hähnchen ca. 2 Min je Seite scharf anbraten, bis das Fleisch innen nicht mehr rosa ist. Tipp: Um zu testen, ob die Pfanne heiß genug ist bevor Du Öl* hineingibst, spritze etwas Wasser hinein. Wenn sich kleine springende Tröpfchen bilden, ist die Pfanne heiß genug.",
+                    "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Hähnchen in Streifen schneiden. Bohnen-Mais-Salat auf tiefen Tellern anrichten. Mit Hähnchen toppen, mit Joghurtsoße beträufeln und mit restlichen Limettenspalten genießen.",
+                    "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:35:58.801Z"
+              }
+            },
+            {
+              "day": "Fr",
+              "mealIndex": 2,
+              "recipe": {
+                "id": "honig-senf-garnelensalat-mit-avocado",
+                "name": "Honig Senf Garnelensalat mit Avocado",
+                "tier": "Henkersmahlzeit",
+                "kcal": 640,
+                "protein": 42,
+                "durationMinutes": 20,
+                "imageUrl": "/images/hellofresh/honig-senf-garnelensalat-mit-avocado-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/honig-senf-garnelensalat-mit-avocado-689589b9464ec79ed47087b4",
+                "tags": [
+                  "garnelen",
+                  "salat"
+                ],
+                "ingredients": [
+                  "150 g Großgarnelen",
+                  "1 Stück Avocado",
+                  "150 g Salatherz (Romana)",
+                  "1 Stück rote Zwiebel",
+                  "150 g Naturjoghurt",
+                  "20 g Sonnenblumenkerne",
+                  "17 g süßer Senf",
+                  "17 g körniger Senf",
+                  "10 ml mittelscharfer Senf",
+                  "1 Stück Tomate",
+                  "1 Esslöffel Olivenöl",
+                  "1 Esslöffel Honig",
+                  "nach Geschmack Pfeffer",
+                  "1 Esslöffel Öl",
+                  "nach Geschmack Salz",
+                  "1 Teelöffel Weißweinessig"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Zwiebel halbieren und in feine Streifen schneiden. In einer großen Pfanne ohne Fettzugabe Sonnenblumenkerne 1 – 2 Min. rösten. Herausnehmen. In der Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Garnelen und Zwiebelstreifen darin 3 – 4 Min. anbraten. Mit Salz* und Pfeffer* würzen. Ggf. warm halten.",
+                    "imageUrl": "/images/hellofresh/honig-senf-garnelensalat-mit-avocado-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "In einer großen Schüssel körnigen Senf, mittelscharfen Senf, süßen Senf, Joghurt, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 EL [1,5 EL | 2 EL] Honig*, 1 TL [1,5 TL | 2 TL] Essig*, Salz* und Pfeffer* zu einem Dressing vermengen. Tomate halbieren und in feine Halbmonde schneiden. Romanasalat in 2 cm Streifen schneiden. Avocado halbieren, entkernen und in feine Streifen schneiden.",
+                    "imageUrl": "/images/hellofresh/honig-senf-garnelensalat-mit-avocado-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Tomate, Salat und Garnelen in der Schüssel mit dem Dressing gut vermengen. Salat auf tiefe Teller verteilen, mit Avocado und Sonnenblumenkernen toppen.",
+                    "imageUrl": "/images/hellofresh/honig-senf-garnelensalat-mit-avocado-step-3.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:36:01.343Z"
+              }
+            }
+          ],
+          "mealKcal": 1340,
+          "mealProtein": 97,
+          "shakes": [
+            "Milch",
+            "Milch"
+          ],
+          "totalKcalWithShakes": 2220,
+          "totalProteinWithShakes": 179
+        },
+        {
+          "day": "Sa",
+          "meals": [
+            {
+              "day": "Sa",
+              "mealIndex": 1,
+              "recipe": {
+                "id": "wuerzig-feurige-grillkaese-tacos",
+                "name": "Würzig Feurige Grillkäse Tacos",
+                "tier": "Henkersmahlzeit",
+                "kcal": 900,
+                "protein": 36,
+                "durationMinutes": 35,
+                "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/wurzig-feurige-grillkase-tacos-63a02e6f5c2d3bbdc3087ce4",
+                "tags": [
+                  "käse"
+                ],
+                "ingredients": [
+                  "8 Stück Tortilla-Wraps",
+                  "200 g Grillkäse",
+                  "1 Stück rote Zwiebel",
+                  "1 Stück Gurke",
+                  "½ Stück rote Chilischote",
+                  "1 Stück Knoblauchzehe",
+                  "34 ml Mayonnaise",
+                  "2 g gerebelter Oregano",
+                  "1 Stück Zitrone, gewachst",
+                  "50 g Rucola",
+                  "2 Esslöffel Öl",
+                  "nach Geschmack Pfeffer",
+                  "nach Geschmack Zucker",
+                  "nach Geschmack Salz",
+                  "1 Teelöffel Balsamicoessig"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Zwiebel abziehen, halbieren und in dünne Streifen schneiden. Zwiebelstreifen und 10 g [15 g | 20 g] Öl* in den Mixtopf geben und 10 Min./100 °C/Reverse/Stufe 1 dünsten. Währenddessen mit dem Rezept fortfahren.",
+                    "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "EL [1,5 EL | 2 EL] Öl* und Oregano in eine große Schüssel geben und vermengen. Grillkäse in 8 [12 | 16] gleich große Sticks schneiden, in die Schüssel zugeben, vorsichtig mit dem Kräuteröl vermengen und zum Marinieren zur Seite stellen.",
+                    "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Knoblauch abziehen, hacken und mit 1 Prise Salz* vermengen. Mit der Seitenfläche der Messerklinge zu einer Paste zerdrücken. Zitrone längs in 4 Spalten schneiden. Enden der Gurke abschneiden und Gurke in 1 cm große Würfel schneiden. Chili längs halbieren und in feine Streifen schneiden (Achtung: scharf!).",
+                    "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "In einer kleinen Schüssel Mayonnaise mit der Hälfte der Knoblauchpaste, nach Belieben Zitronensaft, Salz* und Pfeffer* verrühren. Nach Ende der Zwiebel-Garzeit 10 g [15 g | 20 g] Wasser*, 1 Prise Zucker* und 1 TL [1,5 TL | 2 TL] Balsamicoessig* in den Mixtopf zugeben und 5 Min./90 °C/Reverse/Stufe 1 karamellisieren. Währenddessen fortfahren.",
+                    "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "Eine große Pfanne bei mittlerer Hitze erwärmen, Grillkäsesticks ohne Fettzugabe 3 – 4 Min. rundherum goldbraun anbraten. Nach Geschmack die restliche Knoblauchpaste und Chilistreifen (Achtung: scharf!) zugeben. Anschließend gebratenen Grillkäse kurz aus der Pfanne nehmen.",
+                    "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Rezepte für mehr Abwechslung beim Kochen Zitronen Rezepte",
+                    "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:36:00.948Z"
+              }
+            },
+            {
+              "day": "Sa",
+              "mealIndex": 2,
+              "recipe": {
+                "id": "thueringer-bratwurst-sandwich",
+                "name": "Thüringer Bratwurst Sandwich",
+                "tier": "Henkersmahlzeit",
+                "kcal": 1090,
+                "protein": 55,
+                "durationMinutes": 35,
+                "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/thuringer-bratwurst-sandwich-65f867bd473c4f42771ce544",
+                "tags": [
+                  "gemischt"
+                ],
+                "ingredients": [
+                  "200 g Thüringer Rostbratwurst",
+                  "250 g Ciabatta-Brot",
+                  "2 Stück Ofenkartoffel",
+                  "4 g Gewürzmischung „Hello Patatas“",
+                  "1 Stück Tomate",
+                  "100 g Mayonnaise",
+                  "30 ml süßer Senf",
+                  "1 Stück Zwiebel",
+                  "20 g Hartkäse ital. Art, gerieben",
+                  "50 g Ketchup",
+                  "nach Geschmack Pfeffer",
+                  "2 Esslöffel Öl",
+                  "nach Geschmack Salz"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Gewaschene Kartoffeln in 0,5 cm Scheiben schneiden. Kartoffelscheiben auf einem mit Backpapier belegten Backblech verteilen, mit drei Viertel „Hello Patatas“, 1 EL [1,5 EL | 2 EL] Öl* und Pfeffer* vermengen und im Ofen 25 – 30 Min. backen, bis sie außen knusprig sind.",
+                    "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "Zwiebel in 6 [9 | 12] Ringe schneiden. Zwiebelringe auf ein zweites , mit Backpapier belegtes Backblech geben, mit 0,5 EL [0,75 EL | 1 EL] Öl*, restlichem „Hello Patatas“, Salz* und Pfeffer* vermengen. Mit geriebenem Hartkäse toppen. Bratwürste neben die Zwiebelringe legen und mit 0,5 EL [0,75 EL | 1 EL] Öl* einreiben. Backblech in den letzten 15 Min. unter den Kartoffeln in den Ofen schieben. Bratwürste nach der Hälfte der Garzeit einmal wenden.",
+                    "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Tomate in 0.5 cm Scheiben schneiden. Leicht salzen*.",
+                    "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "In einer kleinen Schüssel Ketchup, Mayonnaise, süßen Senf, Salz* und Pfeffer* zu einem Dip verrühren.",
+                    "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "Ciabatta zuerst quer, dann längs halbieren. Ciabatta in den letzten 7 Min. der Garzeit mit auf das Backblech geben.",
+                    "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Thüringer Rostbratwürste nach der Garzeit längs halbieren. Ciabattahälften mit etwas Dip bestreichen. Auf den unteren Hälften Tomaten verteilen, Rostbratwürste darüber geben und mit den Käsezwiebeln toppen. Sandwichs mit oberen Hälften schließen. Röstkartoffeln daneben anrichten und mit restlichem Dip servieren.",
+                    "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:36:01.785Z"
+              }
+            }
+          ],
+          "mealKcal": 1990,
+          "mealProtein": 91,
+          "shakes": [
+            "Milch",
+            "Wasser",
+            "Wasser"
+          ],
+          "totalKcalWithShakes": 2670,
+          "totalProteinWithShakes": 180
+        },
+        {
+          "day": "So",
+          "meals": [
+            {
+              "day": "So",
+              "mealIndex": 1,
+              "recipe": {
+                "id": "gnocchi-pfanne-mit-brokkoli",
+                "name": "Gnocchi Pfanne mit Brokkoli",
+                "tier": "Henkersmahlzeit",
+                "kcal": 820,
+                "protein": 30,
+                "durationMinutes": 35,
+                "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/gnocchi-pfanne-mit-brokkoli-67b4a76a381832d770715e33",
+                "tags": [
+                  "gnocchi"
+                ],
+                "ingredients": [
+                  "400 g frische Gnocchi, vorgekocht",
+                  "1 Stück Brokkoli",
+                  "125 g Champignons",
+                  "1 Stück Knoblauchzehe",
+                  "10 g Basilikum",
+                  "150 g Kochsahne leicht",
+                  "25 g Tomatenpesto",
+                  "40 g Hartkäse ital. Art, geraspelt",
+                  "4 g Gemüsebrühpulver",
+                  "nach Geschmack Pfeffer",
+                  "200 ml Wasser",
+                  "2 Esslöffel Olivenöl",
+                  "nach Geschmack Salz"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "Brokkoli in mundgerechte Röschen teilen. Champignons in Scheiben schneiden. Knoblauch abziehen. Basilikum in feine Streifen schneiden.",
+                    "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "In einem hohen Rührgefäß 100 ml [150 ml | 200 ml] Wasser*, Kochsahne, Gemüsebrühe und Tomatenpesto miteinander vermengen.",
+                    "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* bei mittlerer Hitze erwärmen. Gnocchi darin 6 – 8 Min. anbraten und gelegentlich umrühren, bis sie knusprig und leicht gebräunt sind. In der Zwischenzeit mit dem Rezept fortfahren.",
+                    "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "In einer zweiten großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Brokkoli und Champignons darin 5 – 6 Min. anbraten. Mit 100 ml [150 ml | 200 ml] Wasser* ablöschen, salzen* und 3 – 5 Min. köcheln lassen, bis der Brokkoli gar und das Wasser verdampft ist. Knoblauch dazu pressen und 1 weitere Minute anbraten.",
+                    "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "Hitze reduzieren, Gnocchi in die Pfanne mit Gemüse geben und mit der vorbereiteten Soße ablöschen. Soße 1 – 2 Min. einköcheln lassen. Hälfte der Basilikumstreifen unterrühren und mit Salz* und Pfeffer* abschmecken.",
+                    "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Gnocchi auf tiefe Teller verteilen. Restliches Basilikum darüberstreuen und mit Hartkäse toppen.",
+                    "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:35:59.218Z"
+              }
+            },
+            {
+              "day": "So",
+              "mealIndex": 2,
+              "recipe": {
+                "id": "herzhafte-gnocchi-pfanne",
+                "name": "Herzhafte Gnocchi Pfanne",
+                "tier": "Henkersmahlzeit",
+                "kcal": 820,
+                "protein": 31,
+                "durationMinutes": 35,
+                "imageUrl": "/images/hellofresh/herzhafte-gnocchi-pfanne-hero.jpg",
+                "sourceUrl": "https://www.hellofresh.de/recipes/herzhafte-gnocchi-pfanne-65fc59ee09492af87e815367",
+                "tags": [
+                  "gnocchi"
+                ],
+                "ingredients": [
+                  "600 g frische Gnocchi, vorgekocht",
+                  "75 g Babyspinat",
+                  "2 Stück Knoblauchzehe",
+                  "150 g Kochsahne",
+                  "20 g Hartkäse ital. Art, geraspelt",
+                  "50 g würziger Gouda, gerieben",
+                  "15 ml Basilikumpaste",
+                  "20 g Sonnenblumenkerne",
+                  "5 g Gewürzmischung „Hello Muskat“",
+                  "nach Geschmack Pfeffer",
+                  "1 Teelöffel Weißweinessig",
+                  "nach Geschmack Salz",
+                  "100 ml Wasser",
+                  "2.5 Esslöffel Öl"
+                ],
+                "lastUsed": null,
+                "instructions": [
+                  {
+                    "title": "Schritt 1",
+                    "text": "In einer großen Pfanne Sonnenblumenkerne ohne Fettzugabe bei mittlerer Hitze rösten, bis sie fein duften. Dann herausnehmen und beiseitestellen. Knoblauch abziehen und fein hacken.",
+                    "imageUrl": "/images/hellofresh/herzhafte-gnocchi-pfanne-step-1.jpg"
+                  },
+                  {
+                    "title": "Schritt 2",
+                    "text": "In der Pfanne 1,5 EL [2 EL | 3 EL] Öl* bei mittlerer Hitze erwärmen, Gnocchi darin 8 – 9 Min. anbraten, gelegentlich umrühren, bis sie knusprig und leicht gebräunt sind. Anschließend aus der Pfanne nehmen. Tipp: Benutze für 4 Personen 2 Pfannen.",
+                    "imageUrl": "/images/hellofresh/herzhafte-gnocchi-pfanne-step-2.jpg"
+                  },
+                  {
+                    "title": "Schritt 3",
+                    "text": "Währenddessen in einer großen Schüssel Basilikumpaste, 1 TL [1,5 TL | 2 TL] Weißweinessig* und 0,5 EL [0,75 EL | 1 EL] Olivenöl* zu einem Dressing verrühren und mit Salz* und Pfeffer* abschmecken. Spinat zum Dressing geben und gut vermischen.",
+                    "imageUrl": "/images/hellofresh/herzhafte-gnocchi-pfanne-step-3.jpg"
+                  },
+                  {
+                    "title": "Schritt 4",
+                    "text": "Große Pfanne auswischen, bei mittlerer Hitze 1 EL [1,5 EL | 2 EL] Öl* erwärmen und Knoblauch darin 1 Min. anbraten. Hitze reduzieren, 100 ml [150 ml | 200 ml] Wasser*, Gewürzmischung „Hello Muskat“ und Crème fraîche zugeben und alles gut vermischen.",
+                    "imageUrl": "/images/hellofresh/herzhafte-gnocchi-pfanne-step-4.jpg"
+                  },
+                  {
+                    "title": "Schritt 5",
+                    "text": "Reibekäse unter die Soße rühren und mit Pfeffer* und Salz* würzen. Gebratene Gnocchi in die Soße geben und vorsichtig unterrühren. Kurz vor dem Anrichten portionsweise zwei Drittel des Babyspinats zufügen und leicht zusammenfallen lassen.",
+                    "imageUrl": "/images/hellofresh/herzhafte-gnocchi-pfanne-step-5.jpg"
+                  },
+                  {
+                    "title": "Schritt 6",
+                    "text": "Gnocchi auf Teller verteilen und mit restlichem Spinat, geraspeltem Hartkäse und Sonnenblumenkernen toppen.",
+                    "imageUrl": "/images/hellofresh/herzhafte-gnocchi-pfanne-step-6.jpg"
+                  }
+                ],
+                "importedAt": "2026-05-29T10:35:59.622Z"
+              }
+            }
+          ],
+          "mealKcal": 1640,
+          "mealProtein": 61,
+          "shakes": [
+            "Milch",
+            "Wasser",
+            "Wasser"
+          ],
+          "totalKcalWithShakes": 2320,
+          "totalProteinWithShakes": 150
+        }
+      ],
+      "settingsSnapshot": {
+        "targetKcal": 2300,
+        "targetProtein": 180,
+        "mealsPerDay": 2,
+        "shakeProteinWater": 24,
+        "shakeProteinMilk": 41,
+        "shakeKcalWater": 120,
+        "shakeKcalMilk": 440,
+        "girlfriendPortionFactor": 0.6,
+        "avoidRepeatDays": 21
+      },
+      "remixMemory": {
+        "Mo-1": [
+          "hackbaellchen-mit-bio-rinderhack-in-senfsosse"
+        ],
+        "Mo-2": [
+          "herzhafte-gnocchi-pfanne",
+          "knusprige-blumenkohl-nuggets"
+        ],
+        "Di-1": [
+          "saftiges-schweinefilet-mit-senfrahm"
+        ],
+        "Di-2": [
+          "tomatige-conchiglie-mit-rinderhackfleisch"
+        ],
+        "Mi-1": [
+          "schweinefilet-in-aprikosen-sosse"
+        ],
+        "Do-1": [
+          "grillhaehnchen-burger-mit-kartoffelspalten"
+        ],
+        "Do-2": [
+          "american-bbq-paprika-haehnchenkeule"
+        ],
+        "Fr-1": [
+          "pollo-asado-mit-kidneybohnen-mais-salat"
+        ],
+        "Fr-2": [
+          "honig-senf-garnelensalat-mit-avocado"
+        ],
+        "Sa-1": [
+          "wuerzig-feurige-grillkaese-tacos"
+        ],
+        "Sa-2": [
+          "thueringer-bratwurst-sandwich"
+        ],
+        "So-1": [
+          "gnocchi-pfanne-mit-brokkoli"
+        ],
+        "So-2": [
+          "herzhafte-gnocchi-pfanne"
+        ]
+      }
+    }
+  }
+]

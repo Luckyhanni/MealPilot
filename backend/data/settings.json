@@ -1,0 +1,11 @@
+{
+  "targetKcal": 2300,
+  "targetProtein": 180,
+  "mealsPerDay": 2,
+  "shakeProteinWater": 24,
+  "shakeProteinMilk": 41,
+  "shakeKcalWater": 120,
+  "shakeKcalMilk": 440,
+  "girlfriendPortionFactor": 0.6,
+  "avoidRepeatDays": 21
+}

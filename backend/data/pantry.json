@@ -1,0 +1,47 @@
+{
+  "items": {
+    "balsamicoessig": true,
+    "honig": true,
+    "ol": true,
+    "pfeffer": true,
+    "salz": true,
+    "sweet-chili-so-e": true,
+    "esn-proteinpulver": true,
+    "gewurzmischung-hello-patatas": true,
+    "gewurzmischung-hello-muskat": true,
+    "ketchup": true,
+    "mayonnaise": true,
+    "wasser": true,
+    "zucker": true
+  },
+  "names": {
+    "balsamicoessig": "Balsamicoessig",
+    "honig": "Honig",
+    "ol": "Öl",
+    "pfeffer": "Pfeffer",
+    "salz": "Salz",
+    "sweet-chili-so-e": "Sweet Chili Soße",
+    "esn-proteinpulver": "ESN Proteinpulver",
+    "gewurzmischung-hello-patatas": "Gewürzmischung „Hello Patatas“",
+    "gewurzmischung-hello-muskat": "Gewürzmischung „Hello Muskat“",
+    "ketchup": "Ketchup",
+    "mayonnaise": "Mayonnaise",
+    "wasser": "Wasser",
+    "zucker": "Zucker"
+  },
+  "categories": {
+    "balsamicoessig": "Saucen, Gewürze & Vorrat",
+    "honig": "Saucen, Gewürze & Vorrat",
+    "ol": "Saucen, Gewürze & Vorrat",
+    "pfeffer": "Saucen, Gewürze & Vorrat",
+    "salz": "Saucen, Gewürze & Vorrat",
+    "sweet-chili-so-e": "Saucen, Gewürze & Vorrat",
+    "esn-proteinpulver": "Shakes",
+    "gewurzmischung-hello-patatas": "Saucen, Gewürze & Vorrat",
+    "gewurzmischung-hello-muskat": "Saucen, Gewürze & Vorrat",
+    "ketchup": "Sonstiges",
+    "mayonnaise": "Sonstiges",
+    "wasser": "Sonstiges",
+    "zucker": "Sonstiges"
+  }
+}
