@@ -4,16 +4,19 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 import { nanoid } from "nanoid";
+import { readStore, writeStore } from "./store.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, "..", "..");
-const dataDir = path.resolve(__dirname, "..", "data");
 const frontendPublicDir = path.resolve(projectRoot, "frontend", "public");
+const frontendDistDir = path.resolve(projectRoot, "frontend", "dist");
+const frontendIndexPath = path.join(frontendDistDir, "index.html");
 const hfImageDir = path.resolve(frontendPublicDir, "images", "hellofresh");
 
 const app = express();
 const PORT = Number(process.env.PORT || 3001);
+const isProduction = process.env.NODE_ENV === "production";
 
 app.use(cors());
 app.use(express.json({ limit: "3mb" }));
@@ -102,20 +105,11 @@ type PantryState = {
 const days = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
 
 async function readJson<T>(file: string, fallback: T): Promise<T> {
-  try {
-    const raw = await fs.readFile(path.join(dataDir, file), "utf-8");
-    return JSON.parse(raw) as T;
-  } catch {
-    return fallback;
-  }
+  return readStore<T>(file, fallback);
 }
 
 async function writeJson(file: string, data: unknown) {
-  await fs.writeFile(
-    path.join(dataDir, file),
-    JSON.stringify(data, null, 2),
-    "utf-8",
-  );
+  await writeStore(file, data);
 }
 
 function shoppingKeyForName(name: string) {
@@ -1323,8 +1317,12 @@ function extractImagesFromNextData(nextData: any) {
 }
 
 async function downloadImage(url: string, basename: string) {
-  await fs.mkdir(hfImageDir, { recursive: true });
   const cleanUrl = htmlDecode(url);
+  if (process.env.USE_LOCAL_IMAGE_DOWNLOAD !== "true") {
+    return cleanUrl;
+  }
+
+  await fs.mkdir(hfImageDir, { recursive: true });
   const urlWithoutQuery = cleanUrl.split("?")[0];
   let ext = "jpg";
   const extMatch = urlWithoutQuery.match(/\.(jpg|jpeg|png|webp)$/i);
@@ -1501,6 +1499,16 @@ async function importHelloFreshData(recipe: Recipe) {
 }
 
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
+
+app.post("/api/auth/check-pin", (req, res) => {
+  const expectedPin = process.env.MEALPILOT_ADMIN_PIN?.trim();
+  if (!expectedPin) return res.json({ enabled: false, ok: true });
+
+  const pin = String((req.body as { pin?: unknown })?.pin || "");
+  if (pin === expectedPin) return res.json({ enabled: true, ok: true });
+
+  return res.status(401).json({ enabled: true, ok: false });
+});
 
 app.get("/api/recipes", async (_req, res) => {
   const recipes = await readJson<Recipe[]>("recipes.json", []);
@@ -1905,6 +1913,20 @@ app.get("/api/plans/archive", async (_req, res) => {
     }));
   res.json(archive);
 });
+
+if (isProduction) {
+  app.use(express.static(frontendDistDir));
+
+  app.get("*", async (req, res, next) => {
+    if (req.path.startsWith("/api/")) return next();
+    try {
+      await fs.access(frontendIndexPath);
+      return res.sendFile(frontendIndexPath);
+    } catch {
+      return next();
+    }
+  });
+}
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`MealPilot Backend läuft auf http://localhost:${PORT}`);

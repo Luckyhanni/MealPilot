@@ -13,6 +13,51 @@ button { color: inherit; }
 img { max-width: 100%; }
 
 .app { min-height: 100vh; }
+.pin-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f5f8ef;
+}
+.pin-panel {
+  width: min(380px, 100%);
+  display: grid;
+  gap: 14px;
+  padding: 30px;
+  border: 1px solid #dce8cf;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 18px 48px rgba(35, 69, 32, .12);
+}
+.pin-panel h1 {
+  font-size: 2.5rem;
+}
+.pin-panel input {
+  width: 100%;
+  border: 1px solid #ccdbc0;
+  border-radius: 14px;
+  padding: 13px 14px;
+  outline: none;
+}
+.pin-panel input:focus {
+  border-color: #245b2d;
+  box-shadow: 0 0 0 3px rgba(36, 91, 45, .12);
+}
+.pin-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e6f2d4;
+  color: #174d21;
+}
+.pin-error {
+  margin: 0;
+  color: #842222;
+  font-weight: 800;
+}
 .topbar {
   position: sticky; top: 0; z-index: 20;
   display: flex; justify-content: space-between; align-items: center;

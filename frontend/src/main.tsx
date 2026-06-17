@@ -11,6 +11,7 @@ import {
   BookOpen,
   DownloadCloud,
   Layout,
+  LockKeyhole,
 } from "lucide-react";
 import "./styles.css";
 
@@ -58,6 +59,7 @@ type ShoppingItem = {
   source?: string;
 };
 type ShoppingRange = "all" | "mon-thu" | "fri-sun";
+type AuthState = "checking" | "locked" | "open";
 type ShoppingPayload = {
   factor: number;
   range: ShoppingRange;
@@ -95,6 +97,9 @@ async function api<T>(url: string, options?: RequestInit): Promise<T> {
 }
 
 function App() {
+  const [authState, setAuthState] = useState<AuthState>("checking");
+  const [pinInput, setPinInput] = useState("");
+  const [authError, setAuthError] = useState<string | null>(null);
   const [plan, setPlan] = useState<WeekPlan | null>(null);
   const [view, setView] = useState<View>("home");
   const [loading, setLoading] = useState(false);
@@ -111,11 +116,60 @@ function App() {
   const [draggingSlot, setDraggingSlot] = useState<{ day: string; mealIndex: 1 | 2 } | null>(null);
 
   useEffect(() => {
+    checkAuthStatus();
+  }, []);
+
+  useEffect(() => {
+    if (authState !== "open") return;
     api<WeekPlan>("/api/plans/latest")
       .then((p) => setPlan(p))
       .catch(() => undefined);
     loadRecipes();
-  }, []);
+  }, [authState]);
+
+  async function checkAuthStatus() {
+    try {
+      const res = await fetch("/api/auth/check-pin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: "{}",
+      });
+      if (res.status === 401) {
+        setAuthState(
+          localStorage.getItem("mealpilot_pin_ok") === "true"
+            ? "open"
+            : "locked",
+        );
+        return;
+      }
+      const data = (await res.json()) as { enabled: boolean; ok: boolean };
+      if (!data.enabled) localStorage.removeItem("mealpilot_pin_ok");
+      setAuthState(data.ok ? "open" : "locked");
+    } catch {
+      setAuthError("PIN-Status konnte nicht geprüft werden.");
+      setAuthState("locked");
+    }
+  }
+
+  async function submitPin(e: React.FormEvent) {
+    e.preventDefault();
+    setAuthError(null);
+    try {
+      const res = await fetch("/api/auth/check-pin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ pin: pinInput }),
+      });
+      if (!res.ok) {
+        setAuthError("PIN ist falsch.");
+        return;
+      }
+      localStorage.setItem("mealpilot_pin_ok", "true");
+      setAuthState("open");
+    } catch {
+      setAuthError("PIN konnte nicht geprüft werden.");
+    }
+  }
 
   async function loadRecipes() {
     try {
@@ -389,6 +443,18 @@ function App() {
     }
   }
 
+  if (authState !== "open") {
+    return (
+      <PinGate
+        checking={authState === "checking"}
+        pin={pinInput}
+        error={authError}
+        onPinChange={setPinInput}
+        onSubmit={submitPin}
+      />
+    );
+  }
+
   return (
     <div className={`app view-${view}`}>
       {view !== "print" && (
@@ -487,6 +553,50 @@ function App() {
         />
       )}
     </div>
+  );
+}
+
+function PinGate({
+  checking,
+  pin,
+  error,
+  onPinChange,
+  onSubmit,
+}: {
+  checking: boolean;
+  pin: string;
+  error: string | null;
+  onPinChange: (pin: string) => void;
+  onSubmit: (e: React.FormEvent) => void;
+}) {
+  return (
+    <main className="pin-screen">
+      <form className="pin-panel" onSubmit={onSubmit}>
+        <div className="pin-icon">
+          <LockKeyhole size={28} />
+        </div>
+        <p className="eyebrow">MealPilot</p>
+        <h1>PIN</h1>
+        {checking ? (
+          <p className="hint">Zugriff wird geprüft...</p>
+        ) : (
+          <>
+            <input
+              value={pin}
+              onChange={(e) => onPinChange(e.target.value)}
+              inputMode="numeric"
+              type="password"
+              placeholder="PIN eingeben"
+              autoFocus
+            />
+            {error && <p className="pin-error">{error}</p>}
+            <button className="primary" type="submit">
+              <LockKeyhole size={18} /> Öffnen
+            </button>
+          </>
+        )}
+      </form>
+    </main>
   );
 }
 

@@ -1,12 +1,19 @@
 # MealPilot
 
-Lokale Web-App für deinen HelloFresh-/Essens-Wochenplan.
+Lokale Web-App für deinen HelloFresh-/Essens-Wochenplan. In der lokalen Entwicklung nutzt MealPilot JSON-Dateien unter `backend/data/`. Online kann dieselbe App auf Render laufen und ihre Daten in Supabase speichern.
 
 ## Start
 
 1. ZIP entpacken.
 2. `Start.bat` doppelklicken.
 3. Browser öffnen: `http://localhost:5173`
+
+Alternativ:
+
+```bash
+npm run install:all
+npm run dev
+```
 
 Beim ersten Start werden die Node-Abhängigkeiten installiert. Dafür brauchst du einmal Internet und Node.js LTS.
 
@@ -21,50 +28,85 @@ Beim ersten Start werden die Node-Abhängigkeiten installiert. Dafür brauchst d
 ## Funktionen
 
 - Wochenplan mit 7 Tagen und 2 Mahlzeiten pro Tag
-- kompaktere Ansicht, damit möglichst alle Tage auf eine Seite passen
-- verbesserter Remix pro Gericht mit Slot-Historie, damit nicht immer dieselben zwei Gerichte kommen
+- Remix pro Gericht mit Slot-Historie
 - gezielt ändern: eigenes Rezept aus der Datenbank suchen und in einen Slot einsetzen
+- Gerichte per Drag-and-drop tauschen
 - Rezept anklicken und Kochansicht öffnen
-- Import von HelloFresh-Bildern und, wenn auslesbar, Kochschritten
-- Thermomix-/TM-Schritte werden beim Import bewusst herausgefiltert
-- Einkaufsliste als Gesamtwoche, Mo–Do und Fr–So
+- Import von HelloFresh-Bildern, Zutaten und Kochschritten
+- Einkaufsliste als Gesamtwoche, Mo-Do und Fr-So
 - Einkaufsliste mit groben Preis-Schätzungen
-- Fleischkosten werden mit 0 € gerechnet, weil Fleisch über die Metzgerei der Eltern kommt
-- Rezeptkarten zeigen grobe Kosten pro Portion für dich
+- Habe-ich-zuhause-Liste
+- gespeicherter Verlauf
 - Druckansicht mit Hochkant-/Querformat-Umschalter
 
 ## Daten
 
-Die lokalen Daten liegen in:
+Ohne Supabase-Environment-Variablen nutzt das Backend lokale Dateien:
 
 ```txt
 backend/data/recipes.json
 backend/data/history.json
 backend/data/settings.json
+backend/data/pantry.json
+backend/data/shoppingState.json
 ```
 
-Bilder liegen in:
+Wenn `SUPABASE_URL` und `SUPABASE_SERVICE_ROLE_KEY` gesetzt sind, nutzt das Backend die Supabase-Tabelle `mealpilot_data`. Der Service Role Key bleibt ausschließlich im Backend/Render-Environment und darf nicht ins Frontend.
+
+HelloFresh-Bilder werden standardmäßig als externe URLs gespeichert. Nur wenn `USE_LOCAL_IMAGE_DOWNLOAD=true` gesetzt ist, lädt das Backend importierte Bilder lokal nach `frontend/public/images/hellofresh/`.
+
+## Produktion lokal testen
+
+```bash
+npm run build
+npm start
+```
+
+Danach läuft das Express-Backend auf `http://localhost:3001` und liefert das gebaute Frontend aus `frontend/dist` aus.
+
+## Online Hosting auf Render + Supabase
+
+1. Supabase Projekt erstellen.
+2. In Supabase den SQL Editor öffnen.
+3. SQL aus `docs/supabase-schema.sql` ausführen.
+4. In Supabase die Project URL und den Service Role Key holen.
+5. Lokale Daten migrieren:
+
+```bash
+npm install --prefix backend
+npm run migrate --prefix backend
+```
+
+Dabei müssen `SUPABASE_URL` und `SUPABASE_SERVICE_ROLE_KEY` in deiner Shell gesetzt sein. Keine echten Keys in Dateien committen.
+
+6. GitHub Repo pushen.
+7. In Render einen Web Service für dieses Repo erstellen.
+8. Render Einstellungen:
 
 ```txt
-frontend/public/images/
-frontend/public/images/hellofresh/
+Build Command: npm run build
+Start Command: npm start
 ```
+
+9. Render Environment Variables:
+
+```env
+SUPABASE_URL=<deine Supabase Project URL>
+SUPABASE_SERVICE_ROLE_KEY=<dein Service Role Key>
+NODE_ENV=production
+USE_LOCAL_IMAGE_DOWNLOAD=false
+MEALPILOT_ADMIN_PIN=
+```
+
+`MEALPILOT_ADMIN_PIN` ist optional. Wenn ein Wert gesetzt ist, zeigt das Frontend beim ersten Öffnen eine einfache PIN-Abfrage. Erfolgreiche Prüfung wird im Browser per `localStorage` gemerkt. Das ist kein komplexes Login-System.
+
+Hinweise:
+
+- Render Free kann nach Inaktivität schlafen.
+- Lokale Dateiänderungen auf Render Free sind kein dauerhafter Speicher.
+- MealPilot speichert Online-Daten deshalb in Supabase.
+- Der Supabase Service Role Key darf niemals ins Frontend oder ins Repository.
 
 ## Wichtig
 
-Die Preise sind grobe Standard-/REWE-Schätzwerte, keine Live-Preise. Fleisch wird in der Kostenlogik auf 0 € gesetzt. HelloFresh-Seiten können ihren Aufbau ändern; falls ein Import für ein Rezept scheitert, bleibt der Original-Link in der Kochansicht verfügbar.
-
-
-
-
-
-
-
-## Neu in v9
-
-- Gerichte können jetzt per Drag-and-drop verschoben werden.
-- Ziehe eine Rezeptkarte auf einen anderen Slot, dann werden die beiden Gerichte getauscht.
-- Die Änderung wird serverseitig im aktuellen Wochenplan gespeichert.
-- Nach dem Tausch werden Tageskalorien, Protein und Shake-Empfehlung automatisch neu berechnet.
-
-Hinweis: Auf Touch-Geräten kann Browser-Drag-and-drop je nach iPad/Browser unterschiedlich reagieren. Am PC funktioniert es am zuverlässigsten. Für iPad bleibt weiterhin „Ändern“ als sichere Alternative.
+Die Preise sind grobe Standard-/REWE-Schätzwerte, keine Live-Preise. Fleisch wird in der Kostenlogik auf 0 EUR gesetzt. HelloFresh-Seiten können ihren Aufbau ändern; falls ein Import für ein Rezept scheitert, bleibt der Original-Link in der Kochansicht verfügbar.
