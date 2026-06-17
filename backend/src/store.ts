@@ -1,5 +1,4 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
-import WebSocket from "ws";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -45,9 +44,6 @@ function getSupabaseClient(): SupabaseClient {
         auth: {
           persistSession: false,
           autoRefreshToken: false,
-        },
-        realtime: {
-          transport: WebSocket,
         },
       },
     );
