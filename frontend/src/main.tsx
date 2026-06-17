@@ -74,6 +74,7 @@ type ArchiveEntry = {
   id: string;
   createdAt: string;
   recipeCount: number;
+  hasPlan?: boolean;
   days: { day: string; meals: { mealIndex: 1 | 2; name: string; kcal: number; protein: number }[] }[];
 };
 type PrintOrientation = "portrait" | "landscape";
@@ -190,6 +191,31 @@ function App() {
       setView("history");
     } catch (e) {
       setError(e instanceof Error ? e.message : "Verlauf konnte nicht geladen werden");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function activateHistoryPlan(planId: string) {
+    setLoading(true);
+    setLoadingText("Wochenplan wird geöffnet...");
+    setError(null);
+    try {
+      const next = await api<WeekPlan>(`/api/history/${planId}/activate`, {
+        method: "POST",
+        body: "{}",
+      });
+      setPlan(next);
+      setShoppingData(null);
+      setSelectedRecipe(null);
+      setChangeTarget(null);
+      setView("plan");
+    } catch (e) {
+      setError(
+        e instanceof Error
+          ? e.message
+          : "Wochenplan konnte nicht geöffnet werden",
+      );
     } finally {
       setLoading(false);
     }
@@ -518,7 +544,9 @@ function App() {
           onPantryChange={setPantryItem}
         />
       )}
-      {view === "history" && <HistoryView archive={archive} />}
+      {view === "history" && (
+        <HistoryView archive={archive} activatePlan={activateHistoryPlan} />
+      )}
       {view === "recipe" && selectedRecipe && (
         <RecipeDetail
           recipe={selectedRecipe}
@@ -1164,7 +1192,13 @@ function ShoppingView({
   );
 }
 
-function HistoryView({ archive }: { archive: ArchiveEntry[] }) {
+function HistoryView({
+  archive,
+  activatePlan,
+}: {
+  archive: ArchiveEntry[];
+  activatePlan: (planId: string) => void;
+}) {
   return (
     <main className="page-wrap history-wrap">
       <section className="page-head">
@@ -1179,16 +1213,25 @@ function HistoryView({ archive }: { archive: ArchiveEntry[] }) {
         {archive.length === 0 && <p>Noch kein Verlauf vorhanden.</p>}
         {archive.map((entry) => (
           <article className="history-card" key={entry.id}>
-            <div>
-              <h2>
-                Woche vom{" "}
-                {new Date(entry.createdAt).toLocaleDateString("de-DE", {
-                  day: "2-digit",
-                  month: "2-digit",
-                  year: "numeric",
-                })}
-              </h2>
-              <p>{entry.recipeCount} Mahlzeiten</p>
+            <div className="history-card-head">
+              <div>
+                <h2>
+                  Woche vom{" "}
+                  {new Date(entry.createdAt).toLocaleDateString("de-DE", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric",
+                  })}
+                </h2>
+                <p>{entry.recipeCount} Mahlzeiten</p>
+              </div>
+              <button
+                className="secondary"
+                disabled={entry.hasPlan === false}
+                onClick={() => activatePlan(entry.id)}
+              >
+                Als aktuellen Plan öffnen
+              </button>
             </div>
             <div className="history-days">
               {entry.days.map((day) => (

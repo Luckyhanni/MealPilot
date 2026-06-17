@@ -1571,6 +1571,35 @@ app.get("/api/history", async (_req, res) => {
   res.json(await readJson<HistoryEntry[]>("history.json", []));
 });
 
+app.post("/api/history/:planId/activate", async (req, res) => {
+  const history = await readJson<HistoryEntry[]>("history.json", []);
+  const entry = history.find((item) => item.id === req.params.planId);
+  if (!entry?.plan) {
+    return res.status(404).json({
+      error: "Wochenplan im Verlauf nicht gefunden.",
+    });
+  }
+
+  const now = new Date().toISOString();
+  const nextId = nanoid(10);
+  const activatedPlan: WeekPlan = {
+    ...(JSON.parse(JSON.stringify(entry.plan)) as WeekPlan),
+    id: nextId,
+    createdAt: now,
+  };
+  const activatedEntry: HistoryEntry = {
+    id: nextId,
+    createdAt: now,
+    recipeIds: activatedPlan.days.flatMap((day) =>
+      day.meals.map((meal) => meal.recipe.id),
+    ),
+    plan: activatedPlan,
+  };
+
+  await writeJson("history.json", [activatedEntry, ...history].slice(0, 30));
+  res.json(enrichPlan(activatedPlan));
+});
+
 app.post("/api/plans/generate", async (_req, res) => {
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const history = await readJson<HistoryEntry[]>("history.json", []);
@@ -1899,6 +1928,7 @@ app.get("/api/plans/archive", async (_req, res) => {
     .map((entry) => ({
       id: entry.id,
       createdAt: entry.createdAt,
+      hasPlan: Boolean(entry.plan),
       days: entry.plan!.days.map((day) => ({
         day: day.day,
         meals: day.meals.map((meal) => ({
