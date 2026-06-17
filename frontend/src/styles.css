@@ -888,3 +888,792 @@ button.tiny {
 .meal-card.draggable-meal {
   transition: transform 0.12s ease, opacity 0.12s ease, outline 0.12s ease;
 }
+
+@media (min-width: 761px) and (max-width: 820px) {
+  .remix,
+  .change-meal,
+  button.tiny {
+    min-height: 40px;
+  }
+
+  .remix,
+  .change-meal {
+    padding-block: 8px;
+  }
+
+  .print-shell {
+    padding: 16px;
+    overflow-x: hidden;
+  }
+
+  .print-page,
+  .print-landscape .print-page {
+    width: 100%;
+    min-height: 0;
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .print-page h1,
+  .print-landscape .print-page h1 {
+    font-size: 2.7rem;
+    letter-spacing: 0;
+  }
+
+  .print-row,
+  .print-landscape .print-row,
+  .print-row.print-meal-count-0,
+  .print-row.print-meal-count-1,
+  .print-landscape .print-row.print-meal-count-0,
+  .print-landscape .print-row.print-meal-count-1 {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 10px;
+    min-height: 0;
+  }
+
+  .print-meal,
+  .print-empty-meal,
+  .print-shake {
+    grid-column: 2;
+  }
+
+  .print-meal {
+    grid-template-columns: 104px minmax(0, 1fr);
+  }
+}
+
+/* Mobile usability pass for phone shopping and planning workflows */
+@media (max-width: 760px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    overflow-wrap: anywhere;
+  }
+
+  button,
+  .secondary,
+  .primary,
+  .remix,
+  .change-meal,
+  .print-actions button,
+  .link-button {
+    min-height: 40px;
+  }
+
+  .topbar {
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px 12px 8px;
+  }
+
+  .brand {
+    width: fit-content;
+    font-size: 1rem;
+    padding: 6px 0;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding: 2px 2px 8px;
+    scrollbar-width: thin;
+  }
+
+  nav button {
+    flex: 0 0 auto;
+    padding: 8px 10px;
+    font-size: .86rem;
+    white-space: nowrap;
+  }
+
+  nav button svg,
+  .primary svg,
+  .secondary svg,
+  .link-button svg {
+    flex: 0 0 auto;
+  }
+
+  .error,
+  .loading {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    max-width: none;
+    border-radius: 14px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 14px 12px 28px;
+    place-items: stretch;
+  }
+
+  .hero-card {
+    width: 100%;
+    padding: 28px 18px;
+    border-radius: 22px;
+  }
+
+  h1,
+  .page-head h1,
+  .compact-head h1,
+  .recipe-hero-card h1 {
+    font-size: 2rem;
+    line-height: 1.02;
+    letter-spacing: 0;
+  }
+
+  .lead {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .hero-actions,
+  .actions,
+  .recipe-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hero-actions button,
+  .hero-actions .secondary,
+  .hero-actions .primary,
+  .actions button,
+  .recipe-actions button,
+  .recipe-actions .link-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mini-info {
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .mini-info span {
+    padding: 7px 10px;
+    font-size: .82rem;
+  }
+
+  .page-wrap,
+  .page-wrap.compact-plan,
+  .recipe-detail-wrap {
+    width: 100%;
+    padding: 14px 10px 28px;
+  }
+
+  .page-head,
+  .compact-head,
+  .shopping-head {
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .page-head p,
+  .compact-head p,
+  .shopping-head p {
+    font-size: .94rem;
+    line-height: 1.4;
+  }
+
+  .drag-hint {
+    display: none;
+  }
+
+  .week-grid,
+  .compact-week {
+    gap: 12px;
+  }
+
+  .day-card,
+  .compact-week .day-card {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 9px;
+    border-radius: 16px;
+  }
+
+  .day-label,
+  .compact-week .day-label {
+    min-height: 40px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+  }
+
+  .meals,
+  .compact-week .meals {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .meal-card,
+  .compact-week .meal-card {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    border-radius: 15px;
+  }
+
+  .meal-open-area,
+  .compact-week .meal-open-area {
+    grid-template-columns: 96px minmax(0, 1fr);
+    min-height: 96px;
+  }
+
+  .meal-open-area img {
+    min-height: 96px;
+  }
+
+  .meal-content,
+  .compact-week .meal-content {
+    padding: 9px 10px;
+  }
+
+  .meal-content h3,
+  .compact-week .meal-content h3 {
+    font-size: .95rem;
+    line-height: 1.12;
+    letter-spacing: 0;
+    -webkit-line-clamp: 3;
+  }
+
+  .meal-content p,
+  .compact-week .meal-content p {
+    font-size: .78rem;
+    line-height: 1.25;
+  }
+
+  .price-pill {
+    font-size: .72rem;
+  }
+
+  .meal-actions,
+  .compact-week .meal-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 0 9px 9px;
+    min-width: 0;
+  }
+
+  .remix,
+  .change-meal,
+  .compact-week .remix,
+  .compact-week .change-meal {
+    width: 100%;
+    justify-content: center;
+    padding: 8px 10px;
+    font-size: .82rem;
+  }
+
+  .day-stats,
+  .compact-week .day-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3px;
+    padding: 9px 10px;
+    border-radius: 13px;
+    text-align: left;
+  }
+
+  .day-stats strong,
+  .compact-week .day-stats strong {
+    font-size: .95rem;
+  }
+
+  .day-stats small,
+  .day-stats span,
+  .compact-week .day-stats small,
+  .compact-week .day-stats span {
+    font-size: .8rem;
+  }
+
+  .no-meals,
+  .compact-week .no-meals {
+    min-height: 82px;
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .shopping-summary {
+    min-width: 0;
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 18px;
+  }
+
+  .shopping-summary strong {
+    font-size: 1.35rem;
+  }
+
+  .range-tabs,
+  .range-tabs.two-level {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 8px;
+    margin: 10px 0 14px;
+    scrollbar-width: thin;
+  }
+
+  .range-tabs button {
+    flex: 0 0 auto;
+    min-width: 112px;
+    min-height: 48px;
+    padding: 9px 12px;
+    border-radius: 16px;
+  }
+
+  .range-tabs.two-level button {
+    min-width: 148px;
+  }
+
+  .shopping-board,
+  .pretty-shopping {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .shopping-category,
+  .pretty-shopping .shopping-category {
+    padding: 12px;
+    border-radius: 18px;
+  }
+
+  .shopping-category-title {
+    align-items: start;
+  }
+
+  .shopping-category-title h2 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .shopping-category-title span {
+    text-align: right;
+  }
+
+  .shopping-row,
+  .pretty-shopping .shopping-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 6px 10px;
+    padding: 10px 0;
+  }
+
+  .shopping-row label {
+    align-items: flex-start;
+    min-width: 0;
+  }
+
+  .shopping-row input {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 auto;
+    margin-top: 1px;
+  }
+
+  .shopping-row label strong {
+    min-width: 0;
+    line-height: 1.28;
+  }
+
+  .shopping-row span,
+  .pretty-shopping .shopping-row span {
+    white-space: normal;
+    text-align: right;
+    font-size: .82rem;
+    line-height: 1.25;
+  }
+
+  .pretty-shopping .shopping-row em {
+    grid-column: 2;
+    font-size: .86rem;
+  }
+
+  .shopping-row-actions {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+
+button.tiny {
+    min-height: 40px;
+    padding: 0.42rem 0.7rem;
+  }
+
+  .shopping-row small {
+    grid-column: 1 / -1;
+    font-size: .76rem;
+  }
+
+  .pantry-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .pantry-item {
+    padding: 0.8rem;
+  }
+
+  .pantry-item input {
+    width: 22px;
+    height: 22px;
+  }
+
+  .history-card {
+    padding: 0.95rem;
+    border-radius: 18px;
+  }
+
+  .history-card-head {
+    gap: .75rem;
+  }
+
+  .history-card-head .secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .history-card h2 {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+
+  .history-days div {
+    grid-template-columns: 2.25rem minmax(0, 1fr);
+    gap: 0.45rem;
+  }
+
+  .history-days span {
+    line-height: 1.35;
+  }
+
+  .recipe-hero {
+    border-radius: 20px;
+  }
+
+  .recipe-hero-image {
+    min-height: 210px;
+    max-height: 280px;
+  }
+
+  .recipe-hero-card {
+    padding: 20px;
+  }
+
+  .recipe-hero-card p {
+    font-size: .95rem;
+    line-height: 1.4;
+  }
+
+  .recipe-two-col {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .ingredients-card,
+  .nutrition-card,
+  .steps-section {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .ingredients-card h2,
+  .nutrition-card h2,
+  .steps-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .ingredients-card ul {
+    columns: 1;
+  }
+
+  .step-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .step-card img,
+  .step-placeholder {
+    height: auto;
+    min-height: 190px;
+    max-height: 260px;
+  }
+
+  .step-text {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .step-text span {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .step-text p {
+    line-height: 1.5;
+  }
+
+  .empty-steps {
+    display: grid;
+    gap: 12px;
+  }
+
+  .settings-section {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+
+  .daily-setting-row {
+    grid-template-columns: 3.5rem minmax(0, 1fr);
+    gap: .7rem;
+  }
+
+  .daily-setting-row select {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  .settings-actions .primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .change-modal {
+    width: 100%;
+    max-height: calc(100vh - 24px);
+    border-radius: 18px;
+  }
+
+  .modal-backdrop {
+    padding: 12px;
+  }
+
+  .modal-head {
+    padding: 16px 16px 12px;
+  }
+
+  .modal-head h2 {
+    font-size: 1.55rem;
+    letter-spacing: 0;
+  }
+
+  .recipe-filters {
+    grid-template-columns: 1fr;
+    padding: 0 16px 12px;
+  }
+
+  .recipe-picker-list {
+    padding: 0 16px 16px;
+  }
+
+  .recipe-picker-item {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .recipe-picker-item img {
+    width: 72px;
+    height: 58px;
+  }
+
+  .recipe-picker-item h3 {
+    overflow-wrap: anywhere;
+  }
+
+  .recipe-picker-item .primary {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  .print-shell {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  .print-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .print-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .print-page,
+  .print-landscape .print-page {
+    width: 100%;
+    min-height: 0;
+    padding: 14px 10px;
+    border-radius: 14px;
+  }
+
+  .print-page h1,
+  .print-landscape .print-page h1 {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+
+  .print-subtitle,
+  .print-note {
+    font-size: .82rem;
+    line-height: 1.3;
+  }
+
+  .print-week,
+  .print-landscape .print-week {
+    gap: 10px;
+  }
+
+  .print-row,
+  .print-landscape .print-row,
+  .print-row.print-meal-count-0,
+  .print-row.print-meal-count-1,
+  .print-landscape .print-row.print-meal-count-0,
+  .print-landscape .print-row.print-meal-count-1 {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 8px;
+    min-height: 0;
+  }
+
+  .print-day {
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  .print-meal {
+    grid-column: 2;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 8px;
+    min-height: 72px;
+  }
+
+  .print-empty-meal {
+    grid-column: 2;
+    min-height: 54px;
+  }
+
+  .print-meal div {
+    padding: 8px;
+  }
+
+  .print-meal h2,
+  .print-landscape .print-meal h2 {
+    font-size: .84rem;
+    line-height: 1.15;
+  }
+
+  .print-meal p {
+    font-size: .72rem;
+  }
+
+  .print-shake {
+    grid-column: 2;
+    padding: 8px;
+    font-size: .72rem;
+  }
+
+  .leaf {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding-inline: 10px;
+  }
+
+  nav button {
+    padding: 8px 9px;
+    font-size: .8rem;
+  }
+
+  .brand span {
+    font-size: .95rem;
+  }
+
+  .hero-card {
+    padding: 24px 14px;
+  }
+
+  h1,
+  .page-head h1,
+  .compact-head h1,
+  .recipe-hero-card h1 {
+    font-size: 1.75rem;
+  }
+
+  .page-wrap,
+  .page-wrap.compact-plan,
+  .recipe-detail-wrap {
+    padding-inline: 8px;
+  }
+
+  .meal-open-area,
+  .compact-week .meal-open-area {
+    grid-template-columns: 82px minmax(0, 1fr);
+    min-height: 88px;
+  }
+
+  .meal-open-area img {
+    min-height: 88px;
+  }
+
+  .meal-actions,
+  .compact-week .meal-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .shopping-row,
+  .pretty-shopping .shopping-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .shopping-row span,
+  .pretty-shopping .shopping-row em {
+    grid-column: 1;
+    text-align: left;
+  }
+
+  .shopping-row-actions {
+    grid-column: 1;
+  }
+
+  .daily-setting-row {
+    grid-template-columns: 1fr;
+    gap: .35rem;
+  }
+
+  .history-days div {
+    grid-template-columns: 1fr;
+  }
+
+  .history-days strong {
+    font-size: .9rem;
+  }
+
+  .recipe-hero-image {
+    min-height: 180px;
+  }
+
+  .step-card img,
+  .step-placeholder {
+    min-height: 170px;
+  }
+}
