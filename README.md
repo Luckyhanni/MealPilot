@@ -64,6 +64,8 @@ npm start
 
 Danach läuft das Express-Backend auf `http://localhost:3001` und liefert das gebaute Frontend aus `frontend/dist` aus.
 
+Hinweis: Browser und mobile Homescreen-Verknüpfungen können App-Icons cachen. Nach Icon-Änderungen zum Testen ggf. die Homescreen-Verknüpfung löschen und neu hinzufügen oder den Browser-Cache leeren.
+
 ## Online Hosting auf Render + Supabase
 
 1. Supabase Projekt erstellen.
