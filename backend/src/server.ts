@@ -13,6 +13,9 @@ const frontendPublicDir = path.resolve(projectRoot, "frontend", "public");
 const frontendDistDir = path.resolve(projectRoot, "frontend", "dist");
 const frontendIndexPath = path.join(frontendDistDir, "index.html");
 const hfImageDir = path.resolve(frontendPublicDir, "images", "hellofresh");
+const freshSpaetzleBaconId = "frische-eierspaetzle-mit-bacon";
+const freshSpaetzleBaconSourceUrl =
+  "https://www.hellofresh.de/recipes/one-pan-frische-eierspatzle-mit-bacon-and-doppelt-bacon-69e8809b4af8f3547a659dd8";
 
 const app = express();
 const PORT = Number(process.env.PORT || 3001);
@@ -51,6 +54,56 @@ type Recipe = {
   importedAt?: string | null;
   lastUsed?: string | null;
 };
+
+const freshSpaetzleBaconIngredients = [
+  "200 g Bacon (Scheiben)",
+  "400 g frische Eierspätzle",
+  "1 Stück Porree",
+  "1 Stück Knoblauchzehe",
+  "25 g Tomatenpesto",
+  "40 g Hartkäse ital. Art, gerieben",
+  "100 g Crème fraîche, Bio",
+  "4 g Hühnerbrühe",
+  "1 Stück Karotte",
+  "1 Stück Zwiebel",
+  "nach Geschmack Salz",
+  "1 Esslöffel Olivenöl",
+  "nach Geschmack Pfeffer",
+  "3 Esslöffel Wasser",
+];
+
+const freshSpaetzleBaconInstructions: RecipeStep[] = [
+  {
+    title: "Schritt 1",
+    text: "Zwiebel fein würfeln. Knoblauch fein hacken. Porree längs halbieren, gründlich auswaschen und in 0,5 cm Halbmonde schneiden. Karotte nach Belieben schälen, längs halbieren und in dünne Halbmonde schneiden. Bacon in ca. 1 cm Streifen schneiden.",
+    imageUrl: "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-1.jpg",
+  },
+  {
+    title: "Schritt 2",
+    text: "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* bei mittlerer Hitze erwärmen. Spätzle darin 4 – 6 Min. anbraten und gelegentlich umrühren, bis sie knusprig und leicht gebräunt sind. Spätzle anschließend aus der Pfanne nehmen, in eine große Schüssel umfüllen und beiseitestellen.",
+    imageUrl: "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-2.jpg",
+  },
+  {
+    title: "Schritt 3",
+    text: "Dieselbe große Pfanne ohne weitere Fettzugabe erneut bei mittlerer Hitze erwärmen. Baconstreifen darin 4 – 5 Min. anbraten, bis sie schön knusprig sind. Karotten, Porree und Zwiebelwürfel hinzugeben und weitere 5 – 6 Min. braten.",
+    imageUrl: "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-3.jpg",
+  },
+  {
+    title: "Schritt 4",
+    text: "Hitze reduzieren, Knoblauch zum Bacon geben, leicht pfeffern* und ca. 1 Min. weiterköcheln lassen. Crème fraîche, Brühepulver, Tomatenpesto und 3 EL [4,5 EL | 6 EL] Wasser* zugeben und alles gut vermengen.",
+    imageUrl: "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-4.jpg",
+  },
+  {
+    title: "Schritt 5",
+    text: "Gebratene Spätzle in die Soße geben und vorsichtig unterheben. Soße 1 Min. weiterköcheln lassen.",
+    imageUrl: "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-5.jpg",
+  },
+  {
+    title: "Schritt 6",
+    text: "Spätzle auf Teller verteilen, Hartkäse darüberstreuen und genießen.",
+    imageUrl: "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-6.jpg",
+  },
+];
 
 type DayKey = "Mo" | "Di" | "Mi" | "Do" | "Fr" | "Sa" | "So";
 
@@ -111,11 +164,50 @@ const defaultDailyMealCounts = Object.fromEntries(
 ) as Settings["dailyMealCounts"];
 
 async function readJson<T>(file: string, fallback: T): Promise<T> {
-  return readStore<T>(file, fallback);
+  const value = await readStore<T>(file, fallback);
+  if (file === "recipes.json" && Array.isArray(value)) {
+    return value.map(normalizeRecipeOverrides) as T;
+  }
+  return value;
 }
 
 async function writeJson(file: string, data: unknown) {
   await writeStore(file, data);
+}
+
+function isFreshSpaetzleBaconRecipe(recipe: Recipe) {
+  return recipe.id === freshSpaetzleBaconId;
+}
+
+function normalizeRecipeOverrides(recipe: Recipe): Recipe {
+  if (!isFreshSpaetzleBaconRecipe(recipe)) return recipe;
+
+  const ingredientText = (recipe.ingredients || []).join(" ").toLowerCase();
+  const instructionText = (recipe.instructions || [])
+    .map((step) => step.text)
+    .join(" ")
+    .toLowerCase();
+  const needsCanonicalData =
+    recipe.sourceUrl !== freshSpaetzleBaconSourceUrl ||
+    ingredientText.includes("100 g bacon") ||
+    ingredientText.includes("tomate") ||
+    ingredientText.includes("schalotte") ||
+    instructionText.includes("schalotten") ||
+    !ingredientText.includes("tomatenpesto") ||
+    !ingredientText.includes("karotte") ||
+    !ingredientText.includes("200 g bacon");
+
+  return {
+    ...recipe,
+    sourceUrl: freshSpaetzleBaconSourceUrl,
+    imageUrl: "/images/hellofresh/frische-eierspaetzle-mit-bacon-hero.jpg",
+    ingredients: needsCanonicalData
+      ? [...freshSpaetzleBaconIngredients]
+      : recipe.ingredients,
+    instructions: needsCanonicalData
+      ? freshSpaetzleBaconInstructions.map((step) => ({ ...step }))
+      : recipe.instructions,
+  };
 }
 
 function shoppingKeyForName(name: string) {
@@ -706,11 +798,13 @@ function categoryForItem(name: string) {
     return "Protein";
   if (/(reis|kartoffel|brötchen|brot|spätzle|spaetzle|gnocchi|pasta|nudel|rigatoni|conchiglie|tortellini|wrap|tortilla|bulgur|couscous)/.test(n))
     return "Kohlenhydrate";
+  if (/pesto/.test(n))
+    return "Saucen, Gewürze & Vorrat";
   if (/(salat|gurke|tomate|avocado|kohlrabi|paprika|brokkoli|pak choi|gemüse|mais|kidneybohnen|bohnen|karotte|porree|zwiebel|frühlingszwiebel|knoblauch|birne|zitrone|limette|blumenkohl|wirsing|kraut|sultaninen|kräuter|petersilie|schnittlauch|basilikum)/.test(n))
     return "Gemüse & Obst";
-  if (/(milch|käse|mozzarella|parmesan|joghurt|sahne|ricotta|hirtenkäse|grillkäse|butter)/.test(n))
+  if (/(milch|käse|mozzarella|parmesan|joghurt|sahne|crème fraîche|creme fraiche|ricotta|hirtenkäse|grillkäse|butter)/.test(n))
     return "Milchprodukte";
-  if (/(sauce|soße|sosse|saucen|curry|gewürz|senf|soja|hoisin|gochujang|teriyaki|sesam|honig|brühe|bruehe|öl|essig|salz|pfeffer|paprikapulver|paniermehl|semmelbrösel|ingwerpaste|tomatenmark)/.test(n))
+  if (/(sauce|soße|sosse|saucen|pesto|curry|gewürz|senf|soja|hoisin|gochujang|teriyaki|sesam|honig|brühe|bruehe|öl|essig|salz|pfeffer|paprikapulver|paniermehl|semmelbrösel|ingwerpaste|tomatenmark)/.test(n))
     return "Saucen, Gewürze & Vorrat";
   if (/(esn|proteinpulver|shake)/.test(n)) return "Shakes";
   return "Sonstiges";
@@ -724,6 +818,7 @@ function cleanIngredientName(raw: string) {
     .replace(/\bmulticolor\b/gi, "")
     .replace(/\bglatt\/Schnittlauch\b/gi, "Petersilie/Schnittlauch")
     .replace(/\s+/g, " ")
+    .replace(/\s*,\s*$/g, "")
     .trim();
 }
 
@@ -733,6 +828,8 @@ function parseIngredientAmount(line: string):
   const original = stripTags(String(line || "")).replace(/\s+/g, " ").trim();
   if (!original) return null;
   if (/kann spuren|allergene|nicht in deiner lieferung|utensilien/i.test(original))
+    return null;
+  if (/^(?:\d+(?:[,.]\d+)?|½|¼|¾|⅓|⅔)?\s*(?:ml|l|el|esslöffel|tl|teelöffel)?\s*wass?er$/i.test(original))
     return null;
 
   const pantryMatch = original.match(/^(nach Geschmack|etwas|ein wenig)\s+(.+)$/i);
@@ -916,6 +1013,7 @@ function normalizeShoppingKey(name: string, unit: string) {
     [/sojasoße|sojasosse|sojasauce/i, "Sojasauce"],
     [/kochsa(h|h)ne|sahne/i, "Sahne/ Kochsahne"],
     [/semmelbrösel|semmelbroesel|paniermehl/i, "Paniermehl/Semmelbrösel"],
+    [/tomatenpesto|pesto/i, "Tomatenpesto"],
     [/paprika.*/i, "Paprika"],
     [/tomaten.*/i, "Tomaten"],
     [/knoblauch.*/i, "Knoblauch"],
@@ -1018,6 +1116,9 @@ function applyPackageRounding(item: AggregatedShoppingItem): PurchaseAmount {
   }
   if (/(schmand|crème fraîche|creme fraiche)/i.test(item.name) && unit === "g") {
     return withPackage(200, "g", "Becher", "Schmand/Crème fraîche wird als 200-g-Becher gerechnet.");
+  }
+  if (/pesto/i.test(item.name) && unit === "g") {
+    return withPackage(190, "g", "Glas", "Pesto wird als kleines Glas gerechnet.");
   }
   if (/(frischkäse|frischkaese)/i.test(item.name) && unit === "g") {
     return withPackage(200, "g", "Packung", "Frischkäse wird als 200-g-Packung gerechnet.");
@@ -1690,8 +1791,9 @@ function looksLikeHeaderLogo(url: string) {
 }
 
 async function importHelloFreshData(recipe: Recipe) {
-  if (!recipe.sourceUrl) throw new Error("Dieses Rezept hat keine sourceUrl.");
-  const response = await fetch(recipe.sourceUrl, {
+  const baseRecipe = normalizeRecipeOverrides(recipe);
+  if (!baseRecipe.sourceUrl) throw new Error("Dieses Rezept hat keine sourceUrl.");
+  const response = await fetch(baseRecipe.sourceUrl, {
     headers: {
       "user-agent":
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 MealPilot/1.0",
@@ -1719,14 +1821,14 @@ async function importHelloFreshData(recipe: Recipe) {
     ...allImages,
   ].filter((url): url is string => Boolean(url && isUsefulFoodImage(url, "hero") && !looksLikeHeaderLogo(url)));
 
-  const next: Recipe = { ...recipe };
+  const next: Recipe = { ...baseRecipe };
   const heroImage = heroCandidates[0];
 
   if (heroImage) {
     try {
-      next.imageUrl = await downloadImage(heroImage, `${recipe.id}-hero`);
+      next.imageUrl = await downloadImage(heroImage, `${baseRecipe.id}-hero`);
     } catch (err) {
-      console.warn(`Hero-Bild für ${recipe.name} konnte nicht lokal gespeichert werden:`, err);
+      console.warn(`Hero-Bild für ${baseRecipe.name} konnte nicht lokal gespeichert werden:`, err);
       next.imageUrl = heroImage;
     }
   }
@@ -1818,10 +1920,10 @@ async function importHelloFreshData(recipe: Recipe) {
       try {
         next.instructions[i].imageUrl = await downloadImage(
           url,
-          `${recipe.id}-step-${i + 1}`,
+          `${baseRecipe.id}-step-${i + 1}`,
         );
       } catch (err) {
-        console.warn(`Schrittbild ${i + 1} für ${recipe.name} konnte nicht gespeichert werden:`, err);
+        console.warn(`Schrittbild ${i + 1} für ${baseRecipe.name} konnte nicht gespeichert werden:`, err);
         if (isUsefulFoodImage(url, "step") && !looksLikeHeaderLogo(url)) {
           next.instructions[i].imageUrl = url;
         } else {
@@ -1832,7 +1934,7 @@ async function importHelloFreshData(recipe: Recipe) {
   }
 
   next.importedAt = new Date().toISOString();
-  return next;
+  return normalizeRecipeOverrides(next);
 }
 
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
