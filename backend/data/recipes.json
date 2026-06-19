@@ -1980,52 +1980,52 @@
     "protein": 34,
     "durationMinutes": 35,
     "imageUrl": "/images/hellofresh/frische-eierspaetzle-mit-bacon-hero.jpg",
-    "sourceUrl": "https://www.hellofresh.de/recipes/frische-eierspatzle-mit-bacon-66292415214e347da5716891",
+    "sourceUrl": "https://www.hellofresh.de/recipes/one-pan-frische-eierspatzle-mit-bacon-and-doppelt-bacon-69e8809b4af8f3547a659dd8",
     "tags": [
       "bacon",
       "spätzle"
     ],
     "ingredients": [
+      "200 g Bacon (Scheiben)",
       "400 g frische Eierspätzle",
-      "100 g Bacon (Scheiben)",
       "1 Stück Porree",
-      "1 Stück Tomate",
       "1 Stück Knoblauchzehe",
-      "100 g Crème fraîche, Bio",
+      "25 g Tomatenpesto",
       "40 g Hartkäse ital. Art, gerieben",
+      "100 g Crème fraîche, Bio",
       "4 g Hühnerbrühe",
-      "1 Stück Schalotte",
+      "1 Stück Karotte",
+      "1 Stück Zwiebel",
       "nach Geschmack Salz",
-      "20 g Wasser",
-      "nach Geschmack Pfeffer",
       "1 Esslöffel Olivenöl",
-      "10 g Öl"
+      "nach Geschmack Pfeffer",
+      "3 Esslöffel Wasser"
     ],
     "lastUsed": null,
     "instructions": [
       {
         "title": "Schritt 1",
-        "text": "Porree längs halbieren, gut waschen und in 0,5 cm Halbmonde schneiden. Tomaten grob würfeln. Bacon in ca. 1 cm Streifen schneiden. Schalotte und Knoblauch abziehen, Schalotte halbieren. Knoblauch in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und mit dem Spatel nach unten schieben.",
+        "text": "Zwiebel fein würfeln. Knoblauch fein hacken. Porree längs halbieren, gründlich auswaschen und in 0,5 cm Halbmonde schneiden. Karotte nach Belieben schälen, längs halbieren und in dünne Halbmonde schneiden. Bacon in ca. 1 cm Streifen schneiden.",
         "imageUrl": "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-1.jpg"
       },
       {
         "title": "Schritt 2",
-        "text": "Baconstreifen und 10 g [15 g | 20 g] Öl* in den Mixtopf zugeben und 5 Min./120 °C/Reverse/Stufe 1 dünsten. Porreehalbmonde zugeben und weitere 10 Min./100 °C/Reverse/Stufe 1 dünsten.",
+        "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* bei mittlerer Hitze erwärmen. Spätzle darin 4 – 6 Min. anbraten und gelegentlich umrühren, bis sie knusprig und leicht gebräunt sind. Spätzle anschließend aus der Pfanne nehmen, in eine große Schüssel umfüllen und beiseitestellen.",
         "imageUrl": "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-2.jpg"
       },
       {
         "title": "Schritt 3",
-        "text": "Crème fraîche, Hühnerbrühpulver, Tomaten, 20 g [30 g | 40 g] Wasser*, Salz* und Pfeffer* in den Mixtopf zugeben. Anstelle des Messbechers Gareinsatz als Spritzschutz auf den Mixtopfdeckel stellen und 5 Min./95 °C/Reverse/Stufe 1 garen. Währenddessen die Spätzle braten.",
+        "text": "Dieselbe große Pfanne ohne weitere Fettzugabe erneut bei mittlerer Hitze erwärmen. Baconstreifen darin 4 – 5 Min. anbraten, bis sie schön knusprig sind. Karotten, Porree und Schalottenwürfel hinzugeben und weitere 5 – 6 Min. braten.",
         "imageUrl": "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-3.jpg"
       },
       {
         "title": "Schritt 4",
-        "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* bei mittlerer Hitze erwärmen, Spätzle darin 4 – 6 Min. braten und gelegentlich umrühren, bis sie knusprig und leicht gebräunt sind.",
+        "text": "Hitze reduzieren, Knoblauch zum Bacon geben, leicht pfeffern* und ca. 1 Min. weiterköcheln lassen. Crème fraîche, Brühepulver, Tomatenpesto und 3 EL [4,5 EL | 6 EL] Wasser* zugeben und alles gut vermengen.",
         "imageUrl": "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-4.jpg"
       },
       {
         "title": "Schritt 5",
-        "text": "Nach der Garzeit Porreesoße aus dem Mixtopf über die Spätzle in die Pfanne zugeben, alles vermengen und ca. 1 Min. weiterköcheln lassen. Mit Salz* und Pfeffer* abschmecken.",
+        "text": "Gebratene Spätzle in die Soße geben und vorsichtig unterheben. Soße 1 Min. weiterköcheln lassen.",
         "imageUrl": "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-5.jpg"
       },
       {
@@ -2034,7 +2034,7 @@
         "imageUrl": "/images/hellofresh/frische-eierspaetzle-mit-bacon-step-6.jpg"
       }
     ],
-    "importedAt": "2026-05-29T10:36:05.712Z"
+    "importedAt": "2026-06-19T09:50:18.191Z"
   },
   {
     "id": "bio-rindfleisch-koefte-auf-goldenem-sultaninen-reis",
