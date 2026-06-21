@@ -11,6 +11,8 @@ const storeKeys: Record<string, string> = {
   "recipes.json": "recipes",
   "history.json": "history",
   "settings.json": "settings",
+  "users.json": "users",
+  "recipeHistory.json": "recipeHistory",
   "pantry.json": "pantry",
   "shoppingState.json": "shoppingState",
 };

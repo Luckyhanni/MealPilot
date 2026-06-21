@@ -11,6 +11,8 @@ const files = [
   "recipes.json",
   "history.json",
   "settings.json",
+  "users.json",
+  "recipeHistory.json",
   "pantry.json",
   "shoppingState.json",
 ];

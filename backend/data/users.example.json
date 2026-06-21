@@ -1,0 +1,12 @@
+[
+  {
+    "id": "example-family",
+    "name": "Example Family",
+    "pin": "0000"
+  },
+  {
+    "id": "example-user",
+    "name": "Example User",
+    "pin": "1111"
+  }
+]

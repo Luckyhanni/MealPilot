@@ -50,6 +50,9 @@ backend/data/history.json
 backend/data/pantry.json
 backend/data/shoppingState.json
 backend/data/settings.local.json
+backend/data/users.json
+backend/data/users.local.json
+backend/data/recipeHistory.json
 
 # Optional: ignore local imported HelloFresh images
 # because online hosting should store image URLs or use Supabase Storage.

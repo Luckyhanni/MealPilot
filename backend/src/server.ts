@@ -5,6 +5,11 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { nanoid } from "nanoid";
 import { readStore, writeStore } from "./store.js";
+import {
+  findIngredientPrice,
+  resolveIngredientPrice,
+  type ResolvedPrice,
+} from "./ingredientPrices.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -144,8 +149,34 @@ type WeekPlan = {
 type HistoryEntry = {
   id: string;
   createdAt: string;
+  userId?: string;
   recipeIds: string[];
   plan?: WeekPlan;
+};
+
+type MealPilotUser = {
+  id: string;
+  name: string;
+  createdAt: string;
+  settings: Settings;
+};
+
+type AccountConfig = {
+  id: string;
+  name: string;
+  pin: string;
+};
+
+type PublicUser = Pick<MealPilotUser, "id" | "name">;
+
+type SingleRecipeHistoryEntry = {
+  id: string;
+  userId?: string;
+  recipeId: string;
+  recipeName: string;
+  imageUrl?: string;
+  viewedAt: string;
+  action: "viewed" | "shopping-list";
 };
 
 type ShoppingState = {
@@ -158,7 +189,13 @@ type PantryState = {
   categories?: Record<string, string>;
 };
 
+type PantryStore = PantryState & {
+  users?: Record<string, PantryState>;
+};
+
 const days: DayKey[] = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+const defaultUserId = "johannes-sophie";
+const accountConfigPath = path.resolve(projectRoot, "backend", "data", "users.local.json");
 const defaultDailyMealCounts = Object.fromEntries(
   days.map((day) => [day, 2]),
 ) as Settings["dailyMealCounts"];
@@ -219,12 +256,21 @@ function shoppingKeyForName(name: string) {
     .replace(/^-|-$/g, "");
 }
 
-function shoppingStateKey(planId: string, range: ShoppingRange, itemKey: string) {
-  return `${planId}:${range}:${itemKey}`;
+function userScopedKey(userId: string, key: string) {
+  return userId === defaultUserId ? key : `${userId}:${key}`;
 }
 
-function singleShoppingStateKey(recipeId: string, itemKey: string) {
-  return `single:${recipeId}:${itemKey}`;
+function shoppingStateKey(
+  userId: string,
+  planId: string,
+  range: ShoppingRange,
+  itemKey: string,
+) {
+  return userScopedKey(userId, `${planId}:${range}:${itemKey}`);
+}
+
+function singleShoppingStateKey(userId: string, recipeId: string, itemKey: string) {
+  return userScopedKey(userId, `single:${recipeId}:${itemKey}`);
 }
 
 async function readShoppingState() {
@@ -248,6 +294,54 @@ async function readPantryState() {
 
 async function writePantryState(data: PantryState) {
   await writeJson("pantry.json", data);
+}
+
+function normalizePantryState(value: Partial<PantryState> | null | undefined): PantryState {
+  return {
+    items: value?.items || {},
+    names: value?.names || {},
+    categories: value?.categories || {},
+  };
+}
+
+async function readPantryStore(): Promise<PantryStore> {
+  const store = await readJson<PantryStore>("pantry.json", {
+    items: {},
+    names: {},
+    categories: {},
+    users: {},
+  });
+  return {
+    ...normalizePantryState(store),
+    users: store.users || {},
+  };
+}
+
+async function readPantryStateForUser(userId: string) {
+  const normalizedId = normalizeUserId(userId);
+  if (normalizedId === defaultUserId) return readPantryState();
+  const store = await readPantryStore();
+  return normalizePantryState(store.users?.[normalizedId]);
+}
+
+async function writePantryStateForUser(userId: string, data: PantryState) {
+  const normalizedId = normalizeUserId(userId);
+  if (normalizedId === defaultUserId) {
+    const store = await readPantryStore();
+    await writeJson("pantry.json", {
+      ...store,
+      ...normalizePantryState(data),
+    });
+    return;
+  }
+  const store = await readPantryStore();
+  await writeJson("pantry.json", {
+    ...store,
+    users: {
+      ...(store.users || {}),
+      [normalizedId]: normalizePantryState(data),
+    },
+  });
 }
 
 function settingsFallback(): Settings {
@@ -305,79 +399,227 @@ async function readSettings() {
   );
 }
 
+function normalizeUserId(value: unknown) {
+  const raw = String(value || "").trim();
+  if (!raw) return defaultUserId;
+  if (raw === "default") return defaultUserId;
+  const normalized = raw
+    .toLowerCase()
+    .replace(/[^a-z0-9_-]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 48);
+  return normalized || defaultUserId;
+}
+
+function currentUserId(req: express.Request) {
+  const header = req.header("x-mealpilot-user") || req.header("x-mealpilot-user-id");
+  return normalizeUserId(header);
+}
+
+function publicUser(user: MealPilotUser): PublicUser {
+  return { id: user.id, name: user.name };
+}
+
+async function readAccountConfig(): Promise<AccountConfig[]> {
+  try {
+    const raw = await fs.readFile(accountConfigPath, "utf-8");
+    const parsed = JSON.parse(raw) as Partial<AccountConfig>[];
+    if (!Array.isArray(parsed)) return [];
+    return parsed
+      .filter(
+        (account): account is AccountConfig =>
+          typeof account.id === "string" &&
+          typeof account.name === "string" &&
+          typeof account.pin === "string" &&
+          Boolean(account.id.trim()) &&
+          Boolean(account.name.trim()) &&
+          Boolean(account.pin.trim()),
+      )
+      .map((account) => ({
+        id: normalizeUserId(account.id),
+        name: account.name.trim(),
+        pin: account.pin.trim(),
+      }));
+  } catch {
+    return [];
+  }
+}
+
+async function accountForPin(pin: string): Promise<AccountConfig | null> {
+  const accounts = await readAccountConfig();
+  return accounts.find((account) => account.pin === pin) || null;
+}
+
+async function readUsers(): Promise<MealPilotUser[]> {
+  const globalSettings = await readSettings();
+  const rawUsers = await readJson<Partial<MealPilotUser>[]>("users.json", []);
+  return rawUsers
+    .filter((user) => user && typeof user === "object")
+    .map((user) => ({
+      id: normalizeUserId(user.id),
+      name:
+        typeof user.name === "string" && user.name.trim()
+          ? user.name.trim()
+          : "Dein MealPilot Konto",
+      createdAt:
+        typeof user.createdAt === "string" && user.createdAt
+          ? user.createdAt
+          : new Date().toISOString(),
+      settings: normalizeSettings(user.settings || globalSettings),
+    }));
+}
+
+async function writeUsers(users: MealPilotUser[]) {
+  await writeJson("users.json", users);
+}
+
+async function ensureUser(userId: string): Promise<MealPilotUser> {
+  const normalizedId = normalizeUserId(userId);
+  const users = await readUsers();
+  const account = (await readAccountConfig()).find(
+    (candidate) => candidate.id === normalizedId,
+  );
+  const existing = users.find((user) => user.id === normalizedId);
+  if (existing) {
+    if (account && existing.name !== account.name) {
+      const updated = { ...existing, name: account.name };
+      await writeUsers(
+        users.map((user) => (user.id === normalizedId ? updated : user)),
+      );
+      return updated;
+    }
+    return existing;
+  }
+
+  const defaultSettings =
+    normalizedId === defaultUserId
+      ? await readSettings()
+      : users.find((user) => user.id === defaultUserId)?.settings || settingsFallback();
+  const user: MealPilotUser = {
+    id: normalizedId,
+    name:
+      account?.name ||
+      (normalizedId === defaultUserId ? "Johannes & Sophie" : "MealPilot Profil"),
+    createdAt: new Date().toISOString(),
+    settings: normalizeSettings(defaultSettings),
+  };
+  await writeUsers([...users, user]);
+  return user;
+}
+
+async function readSettingsForUser(userId: string) {
+  return (await ensureUser(userId)).settings;
+}
+
+async function writeSettingsForUser(userId: string, settings: Settings) {
+  const normalizedId = normalizeUserId(userId);
+  const users = await readUsers();
+  const index = users.findIndex((user) => user.id === normalizedId);
+  const nextUser: MealPilotUser =
+    index >= 0
+      ? { ...users[index], settings: normalizeSettings(settings) }
+      : {
+          id: normalizedId,
+          name: normalizedId === defaultUserId ? "Dein MealPilot Konto" : "MealPilot Profil",
+          createdAt: new Date().toISOString(),
+          settings: normalizeSettings(settings),
+        };
+  const nextUsers =
+    index >= 0
+      ? users.map((user, userIndex) => (userIndex === index ? nextUser : user))
+      : [...users, nextUser];
+  await writeUsers(nextUsers);
+  if (normalizedId === defaultUserId) {
+    await writeJson("settings.json", nextUser.settings);
+  }
+  return nextUser.settings;
+}
+
+function historyEntryBelongsToUser(entry: HistoryEntry, userId: string) {
+  return normalizeUserId(entry.userId) === normalizeUserId(userId);
+}
+
+function historyForUser(history: HistoryEntry[], userId: string) {
+  return history.filter((entry) => historyEntryBelongsToUser(entry, userId));
+}
+
+function prependHistoryForUser(
+  history: HistoryEntry[],
+  entry: HistoryEntry,
+  userId: string,
+) {
+  const userEntries = historyForUser(history, userId);
+  const otherEntries = history.filter(
+    (item) => !historyEntryBelongsToUser(item, userId),
+  );
+  return [entry, ...userEntries].slice(0, 30).concat(otherEntries);
+}
+
+function recipeHistoryEntryBelongsToUser(
+  entry: SingleRecipeHistoryEntry,
+  userId: string,
+) {
+  return normalizeUserId(entry.userId) === normalizeUserId(userId);
+}
+
+async function recordRecipeHistory(
+  userId: string,
+  recipe: Recipe,
+  action: SingleRecipeHistoryEntry["action"],
+  viewedAt = new Date().toISOString(),
+) {
+  const history = await readJson<SingleRecipeHistoryEntry[]>(
+    "recipeHistory.json",
+    [],
+  );
+  const entry: SingleRecipeHistoryEntry = {
+    id: nanoid(10),
+    userId: normalizeUserId(userId),
+    recipeId: recipe.id,
+    recipeName: recipe.name,
+    imageUrl: recipe.imageUrl,
+    viewedAt,
+    action,
+  };
+  const userEntries = history.filter((item) =>
+    recipeHistoryEntryBelongsToUser(item, userId),
+  );
+  const otherEntries = history.filter(
+    (item) => !recipeHistoryEntryBelongsToUser(item, userId),
+  );
+  await writeJson(
+    "recipeHistory.json",
+    [entry, ...userEntries].slice(0, 100).concat(otherEntries),
+  );
+  return entry;
+}
+
 function estimateRecipeCost(recipe: Recipe): {
   estimatedCost: number;
   priceNote: string;
 } {
-  const tags = (recipe.tags || []).map((t) => t.toLowerCase());
-  const ingredients = (recipe.ingredients || []).join(" ").toLowerCase();
-  let cost = 1.15; // Basis für Öl, Gewürze, kleine Saucen, Vorrat
-
-  // Fleisch aus der Metzgerei der Eltern wird mit 0 € angesetzt.
-  const freeMeatTags = [
-    "hähnchen",
-    "chicken",
-    "rind",
-    "steak",
-    "hackfleisch",
-    "bacon",
-    "schwein",
-  ];
-  const hasFreeMeat =
-    tags.some((t) => freeMeatTags.includes(t)) ||
-    /(hähnchen|chicken|rind|steak|hack|bacon|schwein|schnitzel)/.test(
-      ingredients,
-    );
-
-  if (tags.includes("reis") || ingredients.includes("reis")) cost += 0.45;
-  if (tags.includes("kartoffeln") || ingredients.includes("kartoffel"))
-    cost += 0.75;
-  if (tags.includes("burger") || ingredients.includes("brötchen")) cost += 0.85;
-  if (tags.includes("spätzle") || ingredients.includes("spätzle")) cost += 1.15;
-  if (tags.includes("gnocchi") || ingredients.includes("gnocchi")) cost += 1.25;
-  if (
-    tags.includes("pasta") ||
-    ingredients.includes("pasta") ||
-    ingredients.includes("nudel")
-  )
-    cost += 0.75;
-  if (
-    tags.includes("salat") ||
-    /(salat|gurke|tomate|avocado|kohlrabi|paprika|brokkoli|pak choi|gemüse)/.test(
-      ingredients,
-    )
-  )
-    cost += 1.95;
-  if (
-    tags.includes("käse") ||
-    /(käse|mozzarella|parmesan|joghurt|sahne|ricotta)/.test(ingredients)
-  )
-    cost += 1.35;
-  if (
-    tags.includes("asiatisch") ||
-    /(hoisin|gochujang|soja|teriyaki|sesam|curry)/.test(ingredients)
-  )
-    cost += 0.9;
-  if (tags.includes("garnelen") || ingredients.includes("garnelen"))
-    cost += 3.2;
-  if (
-    tags.includes("fisch") ||
-    ingredients.includes("fisch") ||
-    ingredients.includes("seelachs")
-  )
-    cost += 2.6;
-  if (
-    !hasFreeMeat &&
-    /(tofu|hirtenkäse|grillkäse|blumenkohl)/.test(ingredients)
-  )
-    cost += 1.4;
-
-  const rounded = Math.max(0.5, Math.round(cost * 10) / 10);
+  const items = hasDetailedIngredients(recipe)
+    ? (recipe.ingredients || [])
+        .map(parseIngredientAmount)
+        .filter((item): item is NonNullable<ReturnType<typeof parseIngredientAmount>> =>
+          Boolean(item),
+        )
+    : fallbackItemsForRecipe(recipe);
+  const total = items.reduce((sum, item) => {
+    const price = resolveIngredientPrice({
+      name: item.name,
+      amount: item.amount,
+      unit: item.unit,
+      category: categoryForItem(item.name),
+    });
+    return sum + price.estimatedCost;
+  }, 0);
+  const divisor = hasDetailedIngredients(recipe) ? 2 : 1;
+  const rounded = Math.max(0.5, Math.round((total / divisor) * 10) / 10);
   return {
     estimatedCost: rounded,
-    priceNote: hasFreeMeat
-      ? "Schätzung pro Portion, Fleisch mit 0 € gerechnet."
-      : "Schätzung pro Portion nach groben REWE-Standardpreisen.",
+    priceNote:
+      "Schätzung pro Portion nach Zutatenpreisen; Vorrat prüfen zählt nicht in die Summe.",
   };
 }
 
@@ -794,17 +1036,17 @@ const FLEISCH_REGEX =
 
 function categoryForItem(name: string) {
   const n = name.toLowerCase();
-  if (FLEISCH_REGEX.test(n) || /(garnelen|fisch|seelachs|lachs)/.test(n))
+  if (FLEISCH_REGEX.test(n) || /(garnelen|fisch|seelachs|lachs|ribs|spareribs|\bei\b|eier)/.test(n))
     return "Protein";
-  if (/(reis|kartoffel|brötchen|brot|spätzle|spaetzle|gnocchi|pasta|nudel|rigatoni|conchiglie|tortellini|wrap|tortilla|bulgur|couscous)/.test(n))
+  if (/(reis|kartoffel|brötchen|broetchen|brot|spätzle|spaetzle|gnocchi|pasta|nudel|rigatoni|conchiglie|tortellini|wrap|tortilla|bulgur|couscous|pommes|fettuccine)/.test(n))
     return "Kohlenhydrate";
-  if (/pesto/.test(n))
+  if (/(gewürz|gewuerz|hello |brühe|bruehe|sauce|soße|sosse|saucen|pesto|curry|senf|soja|hoisin|gochujang|teriyaki|sesam|honig|öl|oel|essig|\bsalz\b|pfeffer|tomatenmark|miso|ketchup|mayonnaise|aioli|dressing)/.test(n))
     return "Saucen, Gewürze & Vorrat";
-  if (/(salat|gurke|tomate|avocado|kohlrabi|paprika|brokkoli|pak choi|gemüse|mais|kidneybohnen|bohnen|karotte|porree|zwiebel|frühlingszwiebel|knoblauch|birne|zitrone|limette|blumenkohl|wirsing|kraut|sultaninen|kräuter|petersilie|schnittlauch|basilikum)/.test(n))
+  if (/(salat|gurke|tomate|avocado|kohlrabi|paprika|brokkoli|pak choi|gemüse|mais|kidneybohnen|bohnen|linsen|karotte|porree|zwiebel|frühlingszwiebel|knoblauch|birne|zitrone|limette|blumenkohl|wirsing|kraut|sultaninen|aprikose|erdnuss|sonnenblumenkerne|spinat|rucola|champignon|kräuter|petersilie|schnittlauch|basilikum|dill|minze|thymian|salbei)/.test(n))
     return "Gemüse & Obst";
   if (/(milch|käse|mozzarella|parmesan|joghurt|sahne|crème fraîche|creme fraiche|ricotta|hirtenkäse|grillkäse|butter)/.test(n))
     return "Milchprodukte";
-  if (/(sauce|soße|sosse|saucen|pesto|curry|gewürz|senf|soja|hoisin|gochujang|teriyaki|sesam|honig|brühe|bruehe|öl|essig|salz|pfeffer|paprikapulver|paniermehl|semmelbrösel|ingwerpaste|tomatenmark)/.test(n))
+  if (/(paniermehl|semmelbrösel|ingwerpaste|mehl|zucker)/.test(n))
     return "Saucen, Gewürze & Vorrat";
   if (/(esn|proteinpulver|shake)/.test(n)) return "Shakes";
   return "Sonstiges";
@@ -816,7 +1058,8 @@ function cleanIngredientName(raw: string) {
     .replace(/\[[^\]]*\]/g, " ")
     .replace(/\bBio\b/gi, "")
     .replace(/\bmulticolor\b/gi, "")
-    .replace(/\bglatt\/Schnittlauch\b/gi, "Petersilie/Schnittlauch")
+    .replace(/\bPetersilie\s+glatt\/Schnittlauch\b/gi, "Petersilie/Schnittlauch")
+    .replace(/\bglatt\/Schnittlauch\b/gi, "Schnittlauch")
     .replace(/\s+/g, " ")
     .replace(/\s*,\s*$/g, "")
     .trim();
@@ -847,11 +1090,8 @@ function parseIngredientAmount(line: string):
     return { amount: 1, unit: "prüfen", name: cleanIngredientName(original), source: "hellofresh" };
   }
 
-  const pantryNames = /(honig|salz|pfeffer|öl|oel|olivenöl|essig|senf|sojasauce|sojasoße|hoisin|gochujang|teriyaki|gewürz|gewuerz|brühe|bruehe|tomatenmark|sesam|zucker|mehl|paniermehl|semmelbrösel|ingwerpaste|mayonnaise|ketchup)/i;
   const possibleName = cleanIngredientName(match[3] || "");
-  if (pantryNames.test(possibleName)) {
-    return { amount: 1, unit: "prüfen", name: possibleName, source: "hellofresh" };
-  }
+  if (/wasser/i.test(possibleName)) return null;
 
   const rawAmount = match[1]
     .replace("½", "0.5")
@@ -1075,10 +1315,6 @@ function applyPackageRounding(item: AggregatedShoppingItem): PurchaseAmount {
     packageAdjusted: false,
   };
 
-  if (FLEISCH_REGEX.test(name) || /(garnelen|fisch|seelachs|lachs)/i.test(name)) {
-    return exact;
-  }
-
   if (unit === "prüfen" || isPantryStaple(item.name)) {
     return {
       purchaseQuantity: 1,
@@ -1174,6 +1410,24 @@ function applyPackageRounding(item: AggregatedShoppingItem): PurchaseAmount {
     };
   }
 
+  const priceEntry = findIngredientPrice(item.name);
+  if (
+    priceEntry &&
+    !priceEntry.pantryDefault &&
+    (unit === priceEntry.baseUnit ||
+      (priceEntry.baseUnit === "g" && unit.includes("trocken")) ||
+      (priceEntry.baseUnit === "Stück" && /(stück|stk|zehe|scheibe|kugel)/i.test(unit)))
+  ) {
+    return withPackage(
+      priceEntry.packageSize,
+      priceEntry.baseUnit,
+      priceEntry.baseUnit === "Stück" && priceEntry.packageSize > 1
+        ? "Packung"
+        : undefined,
+      "Kaufmenge nach zentraler Zutatenpreis-Datenbank gerundet.",
+    );
+  }
+
   if (/(stück|stk|zehe|bund|kopf\/packung|packung|dose)/i.test(unit)) {
     const purchaseQuantity = Math.max(1, Math.ceil(amount));
     return {
@@ -1257,6 +1511,17 @@ function buildShoppingListForSlots(
       const numericAmount = purchase.purchaseUnit === "prüfen"
         ? 1
         : Math.max(1, Math.round(purchase.purchaseQuantity));
+      const inPantry = Boolean(pantry.items[itemKey]);
+      const price = resolveIngredientPrice({
+        name: v.name,
+        amount:
+          purchase.purchaseUnit === "prüfen"
+            ? 1
+            : purchase.purchaseQuantity,
+        unit: purchase.purchaseUnit,
+        category: v.category,
+        inPantry,
+      });
       return {
         key: itemKey,
         name: v.name,
@@ -1278,9 +1543,13 @@ function buildShoppingListForSlots(
         recipes: [...v.recipes].slice(0, 12),
         category: v.category,
         checked: Boolean(shoppingState.checked[checkedKeyForItem(itemKey)]),
-        inPantry: Boolean(pantry.items[itemKey]),
-        estimatedCost: estimateShoppingItemCost(v.name, numericAmount, purchase.purchaseUnit),
-        priceNote: priceNoteForShoppingItem(v.name),
+        inPantry,
+        estimatedCost: price.estimatedCost,
+        priceNote: priceNoteForShoppingItem(v.name, price),
+        priceType: price.priceType,
+        priceEstimatedFallback: price.fallback,
+        priceEntryKey: price.entryKey,
+        pantryDefault: price.pantryDefault,
         source: v.sources.has("hellofresh") ? "HelloFresh-Zutaten" : v.sources.has("fallback") ? "geschätzt" : "Shake",
       };
     })
@@ -1294,6 +1563,7 @@ function buildShoppingListForSlots(
 function buildShoppingList(
   plan: WeekPlan,
   settings: Settings,
+  userId: string,
   range: ShoppingRange = "all",
   pantry: PantryState = { items: {} },
   shoppingState: ShoppingState = { checked: {} },
@@ -1330,7 +1600,7 @@ function buildShoppingList(
   return buildShoppingListForSlots(
     slots,
     settings,
-    (itemKey) => shoppingStateKey(plan.id, range, itemKey),
+    (itemKey) => shoppingStateKey(userId, plan.id, range, itemKey),
     pantry,
     shoppingState,
     extraItems,
@@ -1364,53 +1634,11 @@ function groupShoppingItems(items: ReturnType<typeof buildShoppingListForSlots>)
   }, {});
 }
 
-function estimateShoppingItemCost(name: string, amount: number, unit: string) {
-  const n = name.toLowerCase();
-  const u = unit.toLowerCase();
-  if (FLEISCH_REGEX.test(n)) return 0;
-  if (n.includes("milch"))
-    return Math.round((amount / 1000) * 1.25 * 100) / 100;
-  if (n.includes("esn")) return Math.round((amount / 30) * 0.9 * 100) / 100;
-  if (n.includes("reis")) return Math.round((amount / 1000) * 2.99 * 100) / 100;
-  if (n.includes("kartoffel") && /stück/.test(u))
-    return Math.round(amount * 0.79 * 100) / 100;
-  if (n.includes("kartoffel"))
-    return Math.round((amount / 1000) * 1.79 * 100) / 100;
-  if (/(burgerbrötchen|burgerbroetchen|brioche|bun|brötchen|broetchen)/.test(n)) {
-    if (/stück/.test(u)) return Math.round((Math.ceil(amount) / 4) * 1.79 * 100) / 100;
-    return Math.round((amount / 320) * 1.79 * 100) / 100;
-  }
-  if (n.includes("wrap") || n.includes("tortilla"))
-    return Math.round((Math.ceil(amount) / 6) * 1.99 * 100) / 100;
-  if (n.includes("spätzle"))
-    return Math.round((amount / 500) * 1.99 * 100) / 100;
-  if (n.includes("gnocchi"))
-    return Math.round((amount / 500) * 1.99 * 100) / 100;
-  if (/(pasta|nudel|rigatoni|conchiglie|tortellini)/.test(n))
-    return Math.round((amount / 500) * 1.49 * 100) / 100;
-  if (/(käse|mozzarella|parmesan|hirtenkäse|grillkäse|ricotta)/.test(n))
-    return Math.round((amount / 250) * 2.49 * 100) / 100;
-  if (/(joghurt|sahne|kokosmilch)/.test(n))
-    return Math.round((amount / 500) * 1.49 * 100) / 100;
-  if (n.includes("garnelen"))
-    return Math.round((amount / 250) * 4.99 * 100) / 100;
-  if (/(fisch|seelachs|lachs)/.test(n)) return Math.round((amount / 400) * 4.49 * 100) / 100;
-  if (
-    /(salat|gemüse|paprika|brokkoli|kohlrabi|tomaten|gurke|avocado|pak choi|karotte|porree|zwiebel|frühlingszwiebel|knoblauch|birne|blumenkohl|wirsing|mais|bohnen|zitrone|limette)/.test(n)
-  ) {
-    if (/(avocado)/.test(n)) return Math.round(amount * 1.19 * 100) / 100;
-    if (/(dose|dosen)/.test(u)) return Math.round(amount * 0.99 * 100) / 100;
-    if (/(stück|bund|zehe|kopf)/.test(u)) return Math.round(amount * 0.79 * 100) / 100;
-    return Math.round((amount / 1000) * 4.5 * 100) / 100;
-  }
-  if (u.includes("prüfen")) return 1.5;
-  return Math.round((amount / 1000) * 3.0 * 100) / 100;
-}
-
-function priceNoteForShoppingItem(name: string) {
-  return FLEISCH_REGEX.test(name)
-    ? "Fleischkosten auf 0 € gesetzt."
-    : "Grobe REWE-Schätzung.";
+function priceNoteForShoppingItem(name: string, price: ResolvedPrice) {
+  if (price.note) return price.note;
+  if (price.fallback) return "Geschätzt über Kategorie-Fallback.";
+  if (price.pantryDefault) return "Vorratszutat mit realistischem Verbrauchspreis.";
+  return `Preis über Zutatenpreis-Datenbank${price.entryKey ? ` (${price.entryKey})` : ""}.`;
 }
 
 function htmlDecode(value: string) {
@@ -1939,19 +2167,91 @@ async function importHelloFreshData(recipe: Recipe) {
 
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
 
-app.post("/api/auth/check-pin", (req, res) => {
-  const expectedPin = process.env.MEALPILOT_ADMIN_PIN?.trim();
-  if (!expectedPin) return res.json({ enabled: false, ok: true });
+app.post("/api/auth/check-pin", async (req, res) => {
+  const pin = String((req.body as { pin?: unknown })?.pin || "").trim();
+  const account = pin ? await accountForPin(pin) : null;
+  if (account) {
+    const user = await ensureUser(account.id);
+    return res.json({ enabled: true, ok: true, user: publicUser(user) });
+  }
 
-  const pin = String((req.body as { pin?: unknown })?.pin || "");
-  if (pin === expectedPin) return res.json({ enabled: true, ok: true });
+  const accounts = await readAccountConfig();
+  if (accounts.length > 0) {
+    return res.status(401).json({ enabled: true, ok: false });
+  }
+
+  const expectedPin = process.env.MEALPILOT_ADMIN_PIN?.trim();
+  if (!expectedPin) {
+    const user = await ensureUser(defaultUserId);
+    return res.json({ enabled: false, ok: true, user: publicUser(user) });
+  }
+
+  if (pin === expectedPin) {
+    const user = await ensureUser(defaultUserId);
+    return res.json({ enabled: true, ok: true, user: publicUser(user) });
+  }
 
   return res.status(401).json({ enabled: true, ok: false });
 });
 
-app.get("/api/recipes", async (_req, res) => {
-  const recipes = await readJson<Recipe[]>("recipes.json", []);
-  res.json(recipes.map(enrichRecipe));
+app.get("/api/users/current", async (req, res) => {
+  const user = await ensureUser(currentUserId(req));
+  res.json(publicUser(user));
+});
+
+app.get("/api/recipes", async (req, res) => {
+  const all = (await readJson<Recipe[]>("recipes.json", [])).map(enrichRecipe);
+
+  // Abwärtskompatibel: ohne limit/offset weiterhin das volle Array zurückgeben.
+  const hasPagination =
+    req.query.limit !== undefined || req.query.offset !== undefined;
+  if (!hasPagination) {
+    res.json(all);
+    return;
+  }
+
+  const query = String(req.query.query ?? "").trim().toLowerCase();
+  const tier = String(req.query.tier ?? "alle");
+  const sort = String(req.query.sort ?? "name-asc");
+  const limit = Math.max(1, Math.min(50, Number(req.query.limit) || 5));
+  const offset = Math.max(0, Number(req.query.offset) || 0);
+
+  const filtered = all
+    .filter((recipe) => tier === "alle" || recipe.tier === tier)
+    .filter((recipe) => {
+      if (!query) return true;
+      const haystack = [
+        recipe.name,
+        recipe.tier,
+        ...(recipe.tags || []),
+        ...(recipe.ingredients || []),
+      ]
+        .join(" ")
+        .toLowerCase();
+      return haystack.includes(query);
+    })
+    .sort((a, b) => {
+      if (sort === "rating")
+        return tierScore(b.tier) - tierScore(a.tier) || a.name.localeCompare(b.name, "de");
+      if (sort === "protein-desc")
+        return b.protein - a.protein || a.name.localeCompare(b.name, "de");
+      if (sort === "kcal-asc")
+        return a.kcal - b.kcal || a.name.localeCompare(b.name, "de");
+      if (sort === "kcal-desc")
+        return b.kcal - a.kcal || a.name.localeCompare(b.name, "de");
+      if (sort === "duration-asc")
+        return a.durationMinutes - b.durationMinutes || a.name.localeCompare(b.name, "de");
+      return a.name.localeCompare(b.name, "de");
+    });
+
+  const items = filtered.slice(offset, offset + limit);
+  const nextOffset = offset + items.length;
+  res.json({
+    items,
+    total: filtered.length,
+    hasMore: nextOffset < filtered.length,
+    nextOffset,
+  });
 });
 
 function parseShoppingListMode(value: unknown): ShoppingListMode {
@@ -1962,11 +2262,12 @@ function parseShoppingListMode(value: unknown): ShoppingListMode {
 function parseMealprepFactor(value: unknown, mode: ShoppingListMode) {
   const fallback = mode === "mealprep" ? 2 : 1;
   const parsed = Number(String(value || fallback).replace(",", "."));
-  if ([1, 1.5, 2].includes(parsed)) return parsed;
+  if ([1, 2, 3, 4].includes(parsed)) return parsed;
   return fallback;
 }
 
 app.get("/api/recipes/:recipeId/shopping-list", async (req, res) => {
+  const userId = currentUserId(req);
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const recipe = recipes.find((r) => r.id === req.params.recipeId);
   if (!recipe) return res.status(404).json({ error: "Rezept nicht gefunden." });
@@ -1974,13 +2275,13 @@ app.get("/api/recipes/:recipeId/shopping-list", async (req, res) => {
   const mode = parseShoppingListMode(req.query.mode);
   const requestedFactor = parseMealprepFactor(req.query.factor, mode);
   const recipeMultiplier = mode === "mealprep" ? requestedFactor : 1;
-  const settings = await readSettings();
-  const pantry = await readPantryState();
+  const settings = await readSettingsForUser(userId);
+  const pantry = await readPantryStateForUser(userId);
   const shoppingState = await readShoppingState();
   const items = buildShoppingListForSlots(
     [{ recipe }],
     settings,
-    (itemKey) => singleShoppingStateKey(recipe.id, itemKey),
+    (itemKey) => singleShoppingStateKey(userId, recipe.id, itemKey),
     pantry,
     shoppingState,
     [],
@@ -1990,6 +2291,7 @@ app.get("/api/recipes/:recipeId/shopping-list", async (req, res) => {
     },
   );
 
+  await recordRecipeHistory(userId, recipe, "shopping-list");
   res.json({
     recipe: enrichRecipe(recipe),
     factor: (1 + settings.girlfriendPortionFactor) * recipeMultiplier,
@@ -2004,7 +2306,7 @@ app.get("/api/recipes/:recipeId/shopping-list", async (req, res) => {
     checkedStatus: Object.fromEntries(
       items.map((item) => [
         item.key,
-        Boolean(shoppingState.checked[singleShoppingStateKey(recipe.id, item.key)]),
+        Boolean(shoppingState.checked[singleShoppingStateKey(userId, recipe.id, item.key)]),
       ]),
     ),
     pantryCatalog: pantryCatalogFromState(pantry),
@@ -2015,6 +2317,7 @@ app.get("/api/recipes/:recipeId/shopping-list", async (req, res) => {
 });
 
 app.post("/api/recipes/:recipeId/shopping-check", async (req, res) => {
+  const userId = currentUserId(req);
   const { itemKey, checked } = req.body as {
     itemKey: string;
     checked: boolean;
@@ -2026,16 +2329,18 @@ app.post("/api/recipes/:recipeId/shopping-check", async (req, res) => {
   if (!recipe) return res.status(404).json({ error: "Rezept nicht gefunden." });
 
   const state = await readShoppingState();
-  state.checked[singleShoppingStateKey(req.params.recipeId, itemKey)] =
+  state.checked[singleShoppingStateKey(userId, req.params.recipeId, itemKey)] =
     Boolean(checked);
   await writeShoppingState(state);
   res.json({ ok: true });
 });
 
 app.get("/api/recipes/:id", async (req, res) => {
+  const userId = currentUserId(req);
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const recipe = recipes.find((r) => r.id === req.params.id);
   if (!recipe) return res.status(404).json({ error: "Rezept nicht gefunden." });
+  await recordRecipeHistory(userId, recipe, "viewed");
   res.json(enrichRecipe(recipe));
 });
 
@@ -2080,12 +2385,13 @@ app.post("/api/recipes/import-all", async (_req, res) => {
   res.json({ imported, errors });
 });
 
-app.get("/api/settings", async (_req, res) => {
-  res.json(await readSettings());
+app.get("/api/settings", async (req, res) => {
+  res.json(await readSettingsForUser(currentUserId(req)));
 });
 
 app.patch("/api/settings", async (req, res) => {
-  const current = await readSettings();
+  const userId = currentUserId(req);
+  const current = await readSettingsForUser(userId);
   const body = req.body as Partial<Settings>;
   const allowed: Partial<Settings> = {};
   const numericFields: (keyof Omit<Settings, "dailyMealCounts">)[] = [
@@ -2117,17 +2423,54 @@ app.patch("/api/settings", async (req, res) => {
             allowed.mealsPerDay ?? current.mealsPerDay,
           ),
   });
-  await writeJson("settings.json", next);
+  await writeSettingsForUser(userId, next);
   res.json(next);
 });
 
-app.get("/api/history", async (_req, res) => {
-  res.json(await readJson<HistoryEntry[]>("history.json", []));
+app.get("/api/history/recipes", async (req, res) => {
+  const userId = currentUserId(req);
+  const history = await readJson<SingleRecipeHistoryEntry[]>(
+    "recipeHistory.json",
+    [],
+  );
+  res.json(
+    history.filter((entry) => recipeHistoryEntryBelongsToUser(entry, userId)),
+  );
+});
+
+app.post("/api/history/recipes", async (req, res) => {
+  const userId = currentUserId(req);
+  const { recipeId, action, viewedAt } = req.body as {
+    recipeId?: string;
+    action?: SingleRecipeHistoryEntry["action"];
+    viewedAt?: string;
+  };
+  if (!recipeId) return res.status(400).json({ error: "recipeId fehlt." });
+  const normalizedAction =
+    action === "shopping-list" || action === "viewed" ? action : "viewed";
+  const recipes = await readJson<Recipe[]>("recipes.json", []);
+  const recipe = recipes.find((item) => item.id === recipeId);
+  if (!recipe) return res.status(404).json({ error: "Rezept nicht gefunden." });
+  const timestamp =
+    viewedAt && !Number.isNaN(Date.parse(viewedAt))
+      ? new Date(viewedAt).toISOString()
+      : undefined;
+  const entry = await recordRecipeHistory(userId, recipe, normalizedAction, timestamp);
+  res.json(entry);
+});
+
+app.get("/api/history", async (req, res) => {
+  const history = await readJson<HistoryEntry[]>("history.json", []);
+  res.json(historyForUser(history, currentUserId(req)));
 });
 
 app.post("/api/history/:planId/activate", async (req, res) => {
+  const userId = currentUserId(req);
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const entry = history.find((item) => item.id === req.params.planId);
+  const entry = history.find(
+    (item) =>
+      item.id === req.params.planId && historyEntryBelongsToUser(item, userId),
+  );
   if (!entry?.plan) {
     return res.status(404).json({
       error: "Wochenplan im Verlauf nicht gefunden.",
@@ -2143,6 +2486,7 @@ app.post("/api/history/:planId/activate", async (req, res) => {
   };
   const activatedEntry: HistoryEntry = {
     id: nextId,
+    userId,
     createdAt: now,
     recipeIds: activatedPlan.days.flatMap((day) =>
       day.meals.map((meal) => meal.recipe.id),
@@ -2150,17 +2494,19 @@ app.post("/api/history/:planId/activate", async (req, res) => {
     plan: activatedPlan,
   };
 
-  await writeJson("history.json", [activatedEntry, ...history].slice(0, 30));
+  await writeJson("history.json", prependHistoryForUser(history, activatedEntry, userId));
   res.json(enrichPlan(activatedPlan));
 });
 
-app.post("/api/plans/generate", async (_req, res) => {
+app.post("/api/plans/generate", async (req, res) => {
+  const userId = currentUserId(req);
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const settings = await readSettings();
+  const userHistory = historyForUser(history, userId);
+  const settings = await readSettingsForUser(userId);
   let plan: WeekPlan;
   try {
-    plan = buildWeekPlan(recipes, history, settings);
+    plan = buildWeekPlan(recipes, userHistory, settings);
   } catch (error) {
     return res.status(400).json({
       error:
@@ -2171,28 +2517,39 @@ app.post("/api/plans/generate", async (_req, res) => {
   }
   const entry: HistoryEntry = {
     id: plan.id,
+    userId,
     createdAt: plan.createdAt,
     recipeIds: plan.days.flatMap((d) => d.meals.map((m) => m.recipe.id)),
     plan,
   };
-  await writeJson("history.json", [entry, ...history].slice(0, 30));
+  await writeJson("history.json", prependHistoryForUser(history, entry, userId));
   res.json(enrichPlan(plan));
 });
 
-app.get("/api/plans/latest", async (_req, res) => {
+app.get("/api/plans/latest", async (req, res) => {
+  const userId = currentUserId(req);
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const latest = history.find((h) => h.plan);
+  const latest = history.find(
+    (h) => h.plan && historyEntryBelongsToUser(h, userId),
+  );
   if (!latest?.plan)
     return res.status(404).json({ error: "Noch kein Wochenplan vorhanden." });
   res.json(enrichPlan(latest.plan));
 });
 
 app.post("/api/plans/:planId/remix", async (req, res) => {
+  const userId = currentUserId(req);
   const { day, mealIndex } = req.body as { day: string; mealIndex: 1 | 2 };
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const settings = await readSettings();
-  const idx = history.findIndex((h) => h.id === req.params.planId && h.plan);
+  const userHistory = historyForUser(history, userId);
+  const settings = await readSettingsForUser(userId);
+  const idx = history.findIndex(
+    (h) =>
+      h.id === req.params.planId &&
+      h.plan &&
+      historyEntryBelongsToUser(h, userId),
+  );
   if (idx < 0 || !history[idx].plan)
     return res.status(404).json({ error: "Plan nicht gefunden." });
   const plan = history[idx].plan!;
@@ -2210,7 +2567,7 @@ app.post("/api/plans/:planId/remix", async (req, res) => {
     .flatMap((d) => d.meals.map((m) => m.recipe))
     .filter((r) => r.id !== oldRecipe.id);
   const recentIds = getRecentIds(
-    history.filter((_, i) => i !== idx),
+    userHistory.filter((entry) => entry.id !== req.params.planId),
     settings,
   );
   const currentDayMeals = plan.days[dayPlanIndex].meals
@@ -2277,6 +2634,7 @@ app.post("/api/plans/:planId/remix", async (req, res) => {
 
 
 app.post("/api/plans/:planId/replace", async (req, res) => {
+  const userId = currentUserId(req);
   const { day, mealIndex, recipeId } = req.body as {
     day: string;
     mealIndex: 1 | 2;
@@ -2284,9 +2642,14 @@ app.post("/api/plans/:planId/replace", async (req, res) => {
   };
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const settings = await readSettings();
+  const settings = await readSettingsForUser(userId);
 
-  const idx = history.findIndex((h) => h.id === req.params.planId && h.plan);
+  const idx = history.findIndex(
+    (h) =>
+      h.id === req.params.planId &&
+      h.plan &&
+      historyEntryBelongsToUser(h, userId),
+  );
   if (idx < 0 || !history[idx].plan)
     return res.status(404).json({ error: "Plan nicht gefunden." });
 
@@ -2335,6 +2698,7 @@ app.post("/api/plans/:planId/replace", async (req, res) => {
 
 
 app.post("/api/plans/:planId/move-meal", async (req, res) => {
+  const userId = currentUserId(req);
   const { fromDay, fromMealIndex, toDay, toMealIndex } = req.body as {
     fromDay: string;
     fromMealIndex: 1 | 2;
@@ -2343,9 +2707,14 @@ app.post("/api/plans/:planId/move-meal", async (req, res) => {
   };
 
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const settings = await readSettings();
+  const settings = await readSettingsForUser(userId);
 
-  const idx = history.findIndex((h) => h.id === req.params.planId && h.plan);
+  const idx = history.findIndex(
+    (h) =>
+      h.id === req.params.planId &&
+      h.plan &&
+      historyEntryBelongsToUser(h, userId),
+  );
   if (idx < 0 || !history[idx].plan)
     return res.status(404).json({ error: "Plan nicht gefunden." });
 
@@ -2393,17 +2762,30 @@ app.post("/api/plans/:planId/move-meal", async (req, res) => {
 });
 
 app.get("/api/plans/:planId/shopping-list", async (req, res) => {
+  const userId = currentUserId(req);
   const history = await readJson<HistoryEntry[]>("history.json", []);
-  const settings = await readSettings();
-  const pantry = await readPantryState();
+  const settings = await readSettingsForUser(userId);
+  const pantry = await readPantryStateForUser(userId);
   const shoppingState = await readShoppingState();
-  const entry = history.find((h) => h.id === req.params.planId && h.plan);
+  const entry = history.find(
+    (h) =>
+      h.id === req.params.planId &&
+      h.plan &&
+      historyEntryBelongsToUser(h, userId),
+  );
   if (!entry?.plan)
     return res.status(404).json({ error: "Plan nicht gefunden." });
   const requested = String(req.query.range || "all");
   const range: ShoppingRange =
     requested === "mon-thu" || requested === "fri-sun" ? requested : "all";
-  const items = buildShoppingList(entry.plan, settings, range, pantry, shoppingState);
+  const items = buildShoppingList(
+    entry.plan,
+    settings,
+    userId,
+    range,
+    pantry,
+    shoppingState,
+  );
   res.json({
     factor: 1 + settings.girlfriendPortionFactor,
     range,
@@ -2416,6 +2798,7 @@ app.get("/api/plans/:planId/shopping-list", async (req, res) => {
 });
 
 app.post("/api/plans/:planId/shopping-check", async (req, res) => {
+  const userId = currentUserId(req);
   const { range, itemKey, checked } = req.body as {
     range: ShoppingRange;
     itemKey: string;
@@ -2425,17 +2808,18 @@ app.post("/api/plans/:planId/shopping-check", async (req, res) => {
   const normalizedRange: ShoppingRange =
     range === "mon-thu" || range === "fri-sun" ? range : "all";
   const state = await readShoppingState();
-  state.checked[shoppingStateKey(req.params.planId, normalizedRange, itemKey)] =
+  state.checked[shoppingStateKey(userId, req.params.planId, normalizedRange, itemKey)] =
     Boolean(checked);
   await writeShoppingState(state);
   res.json({ ok: true });
 });
 
-app.get("/api/pantry", async (_req, res) => {
-  res.json(await readPantryState());
+app.get("/api/pantry", async (req, res) => {
+  res.json(await readPantryStateForUser(currentUserId(req)));
 });
 
 app.post("/api/pantry", async (req, res) => {
+  const userId = currentUserId(req);
   const { itemKey, inPantry, name, category } = req.body as {
     itemKey: string;
     inPantry: boolean;
@@ -2443,20 +2827,21 @@ app.post("/api/pantry", async (req, res) => {
     category?: string;
   };
   if (!itemKey) return res.status(400).json({ error: "itemKey fehlt." });
-  const pantry = await readPantryState();
+  const pantry = await readPantryStateForUser(userId);
   pantry.items[itemKey] = Boolean(inPantry);
   pantry.names = pantry.names || {};
   pantry.categories = pantry.categories || {};
   if (name) pantry.names[itemKey] = name;
   if (category) pantry.categories[itemKey] = category;
-  await writePantryState(pantry);
+  await writePantryStateForUser(userId, pantry);
   res.json(pantry);
 });
 
-app.get("/api/plans/archive", async (_req, res) => {
+app.get("/api/plans/archive", async (req, res) => {
+  const userId = currentUserId(req);
   const history = await readJson<HistoryEntry[]>("history.json", []);
   const archive = history
-    .filter((h) => h.plan)
+    .filter((h) => h.plan && historyEntryBelongsToUser(h, userId))
     .map((entry) => ({
       id: entry.id,
       createdAt: entry.createdAt,
