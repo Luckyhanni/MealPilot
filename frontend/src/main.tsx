@@ -1167,15 +1167,16 @@ function App() {
               <span>MealPilot</span>
             </button>
             <DesktopNavigation
-              plan={plan}
-              openHome={() => setView("home")}
-              openSingleDish={() => openSingleDish()}
-              openShopping={openShoppingTab}
-              openPlan={() => setView("plan")}
-              openHistory={openHistory}
-              openSettings={openSettings}
-              openPrint={() => setView("print")}
-            />
+  plan={plan}
+  openHome={() => setView("home")}
+  openSingleDish={() => openSingleDish()}
+  openShopping={openShoppingTab}
+  openPlan={() => setView("plan")}
+  openHistory={openHistory}
+  openSettings={openSettings}
+  openPrint={() => setView("print")}
+  openProfile={() => setView("profile")}
+/>
             {currentUser && (
               <span className="header-user-greeting">Hallo {currentUser.name}</span>
             )}
@@ -1205,19 +1206,27 @@ function App() {
           openRecipe={openRecipe}
         />
       )}
-      {view === "plan" && plan && (
-        <PlanView
-          plan={plan}
-          remix={remix}
-          openRecipe={openRecipe}
-          openChange={openChange}
-          openPrint={() => setView("print")}
-          openShopping={openShopping}
-          draggingSlot={draggingSlot}
-          setDraggingSlot={setDraggingSlot}
-          moveMeal={moveMeal}
-        />
-      )}
+      {view === "plan" && (
+  plan ? (
+    <PlanView
+      plan={plan}
+      remix={remix}
+      openRecipe={openRecipe}
+      openChange={openChange}
+      openPrint={() => setView("print")}
+      openShopping={openShopping}
+      draggingSlot={draggingSlot}
+      setDraggingSlot={setDraggingSlot}
+      moveMeal={moveMeal}
+    />
+  ) : (
+    <PlanEmptyState
+      generatePlan={generatePlan}
+      openSettings={openSettings}
+      currentUser={currentUser}
+    />
+  )
+)}
       {view === "shopping" && (
         <ShoppingView
           context={shoppingContext}
@@ -1315,6 +1324,45 @@ function App() {
   );
 }
 
+function PlanEmptyState({
+  generatePlan,
+  openSettings,
+  currentUser,
+}: {
+  generatePlan: () => void;
+  openSettings: () => void;
+  currentUser: MealPilotUser | null;
+}) {
+  return (
+    <main className="page-wrap plan-empty-page">
+      <section className="plan-empty-card">
+        <div className="plan-empty-icon">
+          <CalendarDays size={28} />
+        </div>
+
+        <p className="eyebrow">Wochenplan</p>
+        <h1>Dein Wochenplan</h1>
+
+        <p>
+          Du hast für {currentUser?.name || "dieses Profil"} noch keinen
+          Wochenplan erstellt. Erstelle deinen ersten Wochenplan basierend auf
+          deinen persönlichen Einstellungen.
+        </p>
+
+        <div className="plan-empty-actions">
+          <button className="primary" onClick={generatePlan}>
+            <CalendarDays size={18} /> Wochenplan erstellen
+          </button>
+
+          <button className="secondary" onClick={openSettings}>
+            <SlidersHorizontal size={18} /> Plan-Einstellungen öffnen
+          </button>
+        </div>
+      </section>
+    </main>
+  );
+}
+
 function PinGate({
   checking,
   pin,
@@ -1368,6 +1416,7 @@ function DesktopNavigation({
   openHistory,
   openSettings,
   openPrint,
+  openProfile,
 }: {
   plan: WeekPlan | null;
   openHome: () => void;
@@ -1377,6 +1426,7 @@ function DesktopNavigation({
   openHistory: () => void;
   openSettings: () => void;
   openPrint: () => void;
+  openProfile: () => void;
 }) {
   return (
     <nav className="desktop-nav" aria-label="Hauptnavigation">
@@ -1389,12 +1439,15 @@ function DesktopNavigation({
       <button onClick={openShopping}>
         <ShoppingBasket size={18} /> Einkauf
       </button>
-      <button disabled={!plan} onClick={openPlan}>
-        <CalendarDays size={18} /> Wochenplan
-      </button>
+      <button onClick={openPlan}>
+  <CalendarDays size={18} /> Wochenplan
+</button>
       <button onClick={openHistory}>
         <History size={18} /> Verlauf
       </button>
+      <button onClick={openProfile}>
+  <UserRound size={18} /> Profil
+</button>
       <button onClick={openSettings}>
         <SlidersHorizontal size={18} /> Einstellungen
       </button>
@@ -1447,10 +1500,10 @@ function BottomNavigation({
         <ShoppingBasket size={21} />
         <span>Einkauf</span>
       </button>
-      <button className={activeTab === "plan" ? "active" : ""} disabled={!plan} onClick={openPlan}>
-        <CalendarDays size={21} />
-        <span>Wochenplan</span>
-      </button>
+      <button className={activeTab === "plan" ? "active" : ""} onClick={openPlan}>
+  <CalendarDays size={21} />
+  <span>Wochenplan</span>
+</button>
       <button className={activeTab === "profile" ? "active" : ""} onClick={openProfile}>
         <UserRound size={21} />
         <span>Profil</span>

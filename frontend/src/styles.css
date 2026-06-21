@@ -5453,3 +5453,60 @@ button.tiny {
     z-index: 5;
   }
 }
+/* Weekly plan empty state for new user profiles */
+.plan-empty-page {
+  width: min(920px, 100%);
+  padding-top: 22px;
+}
+
+.plan-empty-card {
+  display: grid;
+  gap: 14px;
+  padding: 28px 22px;
+  border: 1px solid #dce8cf;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 18px 48px rgba(35, 69, 32, 0.1);
+}
+
+.plan-empty-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  background: #e7f1dc;
+  color: #174d21;
+}
+
+.plan-empty-card h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 7vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.plan-empty-card p:not(.eyebrow) {
+  margin: 0;
+  color: #516451;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.plan-empty-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.plan-empty-actions button {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .plan-empty-actions {
+    grid-template-columns: 1fr;
+  }
+}
