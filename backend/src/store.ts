@@ -6,6 +6,8 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const dataDir = path.resolve(__dirname, "..", "data");
+const defaultUserId = "johannes-sophie";
+const historyTimeZone = "Europe/Berlin";
 
 const storeKeys: Record<string, string> = {
   "recipes.json": "recipes",
@@ -53,10 +55,70 @@ function getSupabaseClient(): SupabaseClient {
   return supabaseClient;
 }
 
+function normalizeHistoryUserId(value: unknown): string {
+  const normalized = String(value || defaultUserId).trim();
+  return normalized || defaultUserId;
+}
+
+function recipeHistoryDayKey(value: unknown): string {
+  const date = new Date(String(value || new Date().toISOString()));
+  if (Number.isNaN(date.getTime())) return "unknown-date";
+
+  try {
+    return new Intl.DateTimeFormat("sv-SE", {
+      timeZone: historyTimeZone,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(date);
+  } catch {
+    return date.toISOString().slice(0, 10);
+  }
+}
+
+function dedupeRecipeHistory(value: unknown): unknown {
+  if (!Array.isArray(value)) return value;
+
+  const seen = new Set<string>();
+  const deduped: unknown[] = [];
+
+  for (const entry of value) {
+    if (!entry || typeof entry !== "object") {
+      deduped.push(entry);
+      continue;
+    }
+
+    const item = entry as {
+      id?: unknown;
+      userId?: unknown;
+      recipeId?: unknown;
+      viewedAt?: unknown;
+    };
+    const recipeId = String(item.recipeId || "").trim();
+    if (!recipeId) {
+      deduped.push(entry);
+      continue;
+    }
+
+    const key = `${normalizeHistoryUserId(item.userId)}:${recipeId}:${recipeHistoryDayKey(item.viewedAt)}`;
+    if (seen.has(key)) continue;
+
+    seen.add(key);
+    deduped.push(entry);
+  }
+
+  return deduped;
+}
+
+function normalizeStoreValue(file: string, value: unknown): unknown {
+  if (file === "recipeHistory.json") return dedupeRecipeHistory(value);
+  return value;
+}
+
 async function readLocalStore<T>(file: string, fallback: T): Promise<T> {
   try {
     const raw = await fs.readFile(path.join(dataDir, file), "utf-8");
-    return JSON.parse(raw) as T;
+    return normalizeStoreValue(file, JSON.parse(raw)) as T;
   } catch (error) {
     console.warn(
       `Lokaler Store ${file} konnte nicht gelesen werden, nutze Fallback:`,
@@ -70,7 +132,7 @@ async function writeLocalStore(file: string, value: unknown): Promise<void> {
   await fs.mkdir(dataDir, { recursive: true });
   await fs.writeFile(
     path.join(dataDir, file),
-    JSON.stringify(value, null, 2),
+    JSON.stringify(normalizeStoreValue(file, value), null, 2),
     "utf-8",
   );
 }
@@ -100,7 +162,7 @@ export async function readStore<T>(file: string, fallback: T): Promise<T> {
       return fallback;
     }
     if (!data) return fallback;
-    return data.value as T;
+    return normalizeStoreValue(file, data.value) as T;
   } catch (error) {
     console.error(`Supabase Store ${key} konnte nicht gelesen werden:`, error);
     return fallback;
@@ -108,15 +170,17 @@ export async function readStore<T>(file: string, fallback: T): Promise<T> {
 }
 
 export async function writeStore(file: string, value: unknown): Promise<void> {
+  const normalizedValue = normalizeStoreValue(file, value);
+
   // Keep the deployed recipe catalog file-based. User/runtime data can still
   // use Supabase; recipes are rebuilt from committed recipe JSON files.
   if (file === "recipes.json") {
-    await writeLocalStore(file, value);
+    await writeLocalStore(file, normalizedValue);
     return;
   }
 
   if (!isSupabaseEnabled()) {
-    await writeLocalStore(file, value);
+    await writeLocalStore(file, normalizedValue);
     return;
   }
 
@@ -126,7 +190,7 @@ export async function writeStore(file: string, value: unknown): Promise<void> {
     .upsert(
       {
         key,
-        value,
+        value: normalizedValue,
         updated_at: new Date().toISOString(),
       },
       { onConflict: "key" },
