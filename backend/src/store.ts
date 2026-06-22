@@ -76,6 +76,11 @@ function recipeHistoryDayKey(value: unknown): string {
   }
 }
 
+function safeHistoryTime(value: unknown): number {
+  const time = new Date(String(value || "")).getTime();
+  return Number.isNaN(time) ? Number.NEGATIVE_INFINITY : time;
+}
+
 function dedupeRecipeHistory(value: unknown): unknown {
   if (!Array.isArray(value)) return value;
 
@@ -104,18 +109,16 @@ function dedupeRecipeHistory(value: unknown): unknown {
     // If the same recipe is opened several times on the same day, the latest entry wins.
     const key = `${normalizeHistoryUserId(item.userId)}:${recipeId}:${recipeHistoryDayKey(item.viewedAt)}`;
     const current = newestByKey.get(key) as { viewedAt?: unknown } | undefined;
-    const currentTime = current ? new Date(String(current.viewedAt || "")).getTime() : Number.NEGATIVE_INFINITY;
-    const nextTime = new Date(String(item.viewedAt || "")).getTime();
-
-    if (!current || nextTime >= currentTime || Number.isNaN(currentTime)) {
+    if (!current || safeHistoryTime(item.viewedAt) >= safeHistoryTime(current.viewedAt)) {
       newestByKey.set(key, entry);
     }
   }
 
   const deduped = [...newestByKey.values()].sort((a, b) => {
-    const aTime = new Date(String((a as { viewedAt?: unknown }).viewedAt || "")).getTime();
-    const bTime = new Date(String((b as { viewedAt?: unknown }).viewedAt || "")).getTime();
-    return (Number.isNaN(bTime) ? 0 : bTime) - (Number.isNaN(aTime) ? 0 : aTime);
+    return (
+      safeHistoryTime((b as { viewedAt?: unknown }).viewedAt) -
+      safeHistoryTime((a as { viewedAt?: unknown }).viewedAt)
+    );
   });
 
   return [...deduped, ...passthrough];
