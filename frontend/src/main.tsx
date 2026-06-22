@@ -3119,10 +3119,14 @@ function ShoppingTitle({
   subtitle,
   checked,
   total,
+  estimatedCost,
+  priceLabel,
 }: {
   subtitle: string;
   checked: number;
   total: number;
+  estimatedCost?: number;
+  priceLabel: string;
 }) {
   return (
     <section className="shopping-title-row">
@@ -3130,7 +3134,14 @@ function ShoppingTitle({
         <h1>Einkaufsliste</h1>
         <p>{subtitle}</p>
       </div>
-      <ShoppingProgress checked={checked} total={total} />
+      <div className="shopping-summary-stats">
+        <ShoppingProgress checked={checked} total={total} />
+        <div className="shopping-price-summary-card" aria-label={`Ungefährer Preis ${formatEuro(estimatedCost)}`}>
+          <small>Ungefährer Preis</small>
+          <strong>{formatEuro(estimatedCost)}</strong>
+          <span>{priceLabel}</span>
+        </div>
+      </div>
     </section>
   );
 }
@@ -3189,16 +3200,6 @@ function ShoppingItemRow({
         </span>
       </label>
       <div className="shopping-item-side">
-        <span className="shopping-item-price">{formatEuro(item.estimatedCost)}</span>
-        {(item.inPantry || item.priceEstimatedFallback || item.pantryDefault) && (
-          <span className="shopping-price-note">
-            {item.inPantry
-              ? "Zuhause"
-              : item.priceEstimatedFallback
-                ? "geschätzt"
-                : "Vorrat"}
-          </span>
-        )}
         <button
           type="button"
           className={`shopping-pantry-toggle ${item.inPantry ? "active" : ""}`}
@@ -3403,6 +3404,8 @@ function SingleShoppingBody({
         subtitle="Zutatenliste für dein ausgewähltes Gericht."
         checked={checkedCount}
         total={total}
+        estimatedCost={data?.totalEstimatedCost ?? data?.estimatedTotal}
+        priceLabel={`geschätzt für ${label}`}
       />
 
       <section className="shopping-summary-card">
@@ -3420,11 +3423,6 @@ function SingleShoppingBody({
               <Utensils size={15} aria-hidden="true" />
               {label}
             </span>
-          </div>
-          <div className="shopping-summary-divider" />
-          <div className="shopping-summary-price">
-            <strong>{formatEuro(data?.totalEstimatedCost)}</strong>
-            <small>geschätzt für {label}</small>
           </div>
         </div>
       </section>
@@ -3563,6 +3561,8 @@ function WeekShoppingBody({
         subtitle="Zutatenliste für deinen Wochenplan."
         checked={checkedCount}
         total={total}
+        estimatedCost={current.totalEstimatedCost}
+        priceLabel="geschätzt für den Wochenplan"
       />
 
       <section className="shopping-summary-card week">
@@ -3577,11 +3577,6 @@ function WeekShoppingBody({
               <Utensils size={15} aria-hidden="true" />
               ca. {current.factor.toFixed(1).replace(".", ",")} Portionen
             </span>
-          </div>
-          <div className="shopping-summary-divider" />
-          <div className="shopping-summary-price">
-            <strong>{formatEuro(current.totalEstimatedCost)}</strong>
-            <small>geschätzt für {current.rangeLabel}</small>
           </div>
         </div>
       </section>

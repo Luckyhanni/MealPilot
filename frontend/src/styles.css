@@ -4292,7 +4292,7 @@ button.tiny {
   box-shadow: 0 10px 24px rgba(36, 91, 45, .22);
 }
 
-/* Titel + Fortschritt */
+/* Titel + Fortschritt/Preis */
 .shopping-title-row {
   display: flex;
   align-items: center;
@@ -4314,15 +4314,55 @@ button.tiny {
   font-weight: 650;
 }
 
+.shopping-summary-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 10px;
+  width: min(420px, 100%);
+}
+
 .shopping-progress-card {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 16px 10px 12px;
+  min-width: 0;
+  padding: 10px 12px;
   border: 1px solid var(--border);
   border-radius: 20px;
   background: var(--surface);
   box-shadow: var(--shadow-soft);
+}
+
+.shopping-price-summary-card {
+  display: grid;
+  align-content: center;
+  gap: 2px;
+  min-width: 0;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  line-height: 1.1;
+}
+
+.shopping-price-summary-card small,
+.shopping-price-summary-card span {
+  color: var(--muted);
+  font-weight: 750;
+}
+
+.shopping-price-summary-card small {
+  font-size: .72rem;
+}
+
+.shopping-price-summary-card strong {
+  color: var(--green-strong);
+  font-size: 1.28rem;
+}
+
+.shopping-price-summary-card span {
+  font-size: .78rem;
 }
 
 .shopping-progress-ring {
@@ -4429,26 +4469,6 @@ button.tiny {
   width: 16px;
   height: 16px;
   flex: 0 0 auto;
-}
-
-.shopping-summary-divider {
-  height: 1px;
-  background: var(--border);
-}
-
-.shopping-summary-price {
-  display: grid;
-  line-height: 1.1;
-}
-
-.shopping-summary-price strong {
-  color: var(--green-strong);
-  font-size: 1.5rem;
-}
-
-.shopping-summary-price small {
-  color: var(--muted);
-  font-weight: 700;
 }
 
 /* Modus-Card */
@@ -4669,24 +4689,10 @@ button.tiny {
 }
 
 .shopping-item-side {
-  display: grid;
-  justify-items: end;
-  gap: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   flex: 0 0 auto;
-}
-
-.shopping-item-price {
-  color: var(--green-strong);
-  font-weight: 850;
-  white-space: nowrap;
-}
-
-.shopping-price-note {
-  color: var(--muted);
-  font-size: .68rem;
-  font-weight: 800;
-  line-height: 1;
-  white-space: nowrap;
 }
 
 .shopping-pantry-toggle {
@@ -5425,6 +5431,14 @@ button.tiny {
 }
 
 @media (max-width: 560px) {
+  .shopping-title-row {
+    align-items: stretch;
+  }
+
+  .shopping-summary-stats {
+    width: 100%;
+  }
+
   .shopping-summary-card {
     grid-template-columns: 96px minmax(0, 1fr);
   }
@@ -5434,6 +5448,10 @@ button.tiny {
 }
 
 @media (max-width: 400px) {
+  .shopping-summary-stats {
+    grid-template-columns: 1fr;
+  }
+
   .shopping-summary-card {
     grid-template-columns: 1fr;
   }
