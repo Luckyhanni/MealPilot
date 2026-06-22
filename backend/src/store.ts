@@ -76,20 +76,15 @@ function recipeHistoryDayKey(value: unknown): string {
   }
 }
 
-function safeHistoryTime(value: unknown): number {
-  const time = new Date(String(value || "")).getTime();
-  return Number.isFinite(time) ? time : Number.NEGATIVE_INFINITY;
-}
-
 function dedupeRecipeHistory(value: unknown): unknown {
   if (!Array.isArray(value)) return value;
 
-  const newestByKey = new Map<string, unknown>();
-  const passthrough: unknown[] = [];
+  const seen = new Set<string>();
+  const deduped: unknown[] = [];
 
   for (const entry of value) {
     if (!entry || typeof entry !== "object") {
-      passthrough.push(entry);
+      deduped.push(entry);
       continue;
     }
 
@@ -100,27 +95,20 @@ function dedupeRecipeHistory(value: unknown): unknown {
     };
     const recipeId = String(item.recipeId || "").trim();
     if (!recipeId) {
-      passthrough.push(entry);
+      deduped.push(entry);
       continue;
     }
 
-    // Keep only one visible entry per user, recipe and local day.
-    // If the same recipe is opened several times on the same day, the latest entry wins.
+    // The history writer puts the newest entry first. Keep only the first entry
+    // for the same user, recipe and local day.
     const key = `${normalizeHistoryUserId(item.userId)}:${recipeId}:${recipeHistoryDayKey(item.viewedAt)}`;
-    const current = newestByKey.get(key) as { viewedAt?: unknown } | undefined;
-    if (!current || safeHistoryTime(item.viewedAt) >= safeHistoryTime(current.viewedAt)) {
-      newestByKey.set(key, entry);
-    }
+    if (seen.has(key)) continue;
+
+    seen.add(key);
+    deduped.push(entry);
   }
 
-  const deduped = [...newestByKey.values()].sort((a, b) => {
-    const diff =
-      safeHistoryTime((b as { viewedAt?: unknown }).viewedAt) -
-      safeHistoryTime((a as { viewedAt?: unknown }).viewedAt);
-    return Number.isFinite(diff) ? diff : 0;
-  });
-
-  return [...deduped, ...passthrough];
+  return deduped;
 }
 
 function normalizeStoreValue(file: string, value: unknown): unknown {
