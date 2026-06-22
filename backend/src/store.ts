@@ -94,7 +94,6 @@ function dedupeRecipeHistory(value: unknown): unknown {
     }
 
     const item = entry as {
-      id?: unknown;
       userId?: unknown;
       recipeId?: unknown;
       viewedAt?: unknown;
