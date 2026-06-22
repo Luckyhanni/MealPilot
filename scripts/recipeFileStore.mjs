@@ -55,6 +55,16 @@ export async function listRecipeFiles() {
   }
 }
 
+export async function recipesDirectoryExists() {
+  try {
+    const stat = await fs.stat(recipesDir);
+    return stat.isDirectory();
+  } catch (error) {
+    if (error?.code === "ENOENT") return false;
+    throw error;
+  }
+}
+
 export async function readRecipeFiles() {
   const files = await listRecipeFiles();
   const recipes = [];
@@ -121,9 +131,36 @@ export function sortRecipesStable(recipes) {
 }
 
 export async function buildRecipesBundle() {
+  const hasRecipesDirectory = await recipesDirectoryExists();
   const { recipes: fileItems, errors } = await readRecipeFiles();
   const recipes = fileItems.map((item) => item.recipe);
   const duplicateIds = findDuplicateIds(recipes);
+
+  if (!hasRecipesDirectory && fileItems.length === 0) {
+    try {
+      const existingBundle = await readRecipesBundle();
+      return {
+        ok: true,
+        filesRead: 0,
+        recipesWritten: existingBundle.length,
+        duplicateIds: findDuplicateIds(existingBundle),
+        errors: [],
+        source: "existing-bundle",
+      };
+    } catch (error) {
+      errors.push(
+        `backend/data/recipes/ fehlt und backend/data/recipes.json konnte nicht gelesen werden: ${
+          error instanceof Error ? error.message : String(error)
+        }`,
+      );
+    }
+  }
+
+  if (hasRecipesDirectory && fileItems.length === 0) {
+    errors.push(
+      "backend/data/recipes/ existiert, enthält aber keine JSON-Rezeptdateien. Bundle wird nicht geleert.",
+    );
+  }
 
   if (duplicateIds.length > 0) {
     errors.push(
@@ -152,5 +189,6 @@ export async function buildRecipesBundle() {
     recipesWritten: sorted.length,
     duplicateIds,
     errors: [],
+    source: "recipe-files",
   };
 }
