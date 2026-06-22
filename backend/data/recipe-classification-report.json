@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T10:15:26.416Z",
+  "generatedAt": "2026-06-22T10:25:23.486Z",
   "thresholds": {
     "fastMaxMinutes": 30,
     "highProteinMinGrams": 35,
@@ -12,11 +12,11 @@
     "schnell": 6,
     "high-protein": 39,
     "low-cal": 2,
-    "vegetarisch": 7,
+    "vegetarisch": 6,
     "vegan": 0,
-    "omnivore": 41,
-    "vegetarian": 7,
-    "needsReview": 2
+    "omnivore": 42,
+    "vegetarian": 6,
+    "needsReview": 3
   },
   "recipes": [
     {
@@ -31,26 +31,29 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 38 g Protein, 4.7 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack).",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch).",
         "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
       ],
       "matches": {
         "meatOrFish": [
           "fleisch",
-          "hack",
           "hackfleisch",
           "rind",
-          "rinderhack"
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
         ],
         "animalProducts": [
           "fleisch",
           "gouda",
-          "hack",
           "hackfleisch",
+          "kochsahne",
           "mozzarella",
           "rind",
+          "rinder",
           "rinderbruehe",
           "rinderhack",
+          "rinderhackfleisch",
           "sahne"
         ],
         "explicitVegetarian": [
@@ -72,19 +75,25 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 52 g Protein, 5.3 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, rind, schwein, steak)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bulgogi, lachs, schwein, schweine, schweinelachs, steak)."
       ],
       "matches": {
         "meatOrFish": [
+          "bulgogi",
           "lachs",
-          "rind",
           "schwein",
+          "schweine",
+          "schweinelachs",
           "steak"
         ],
         "animalProducts": [
+          "bulgogi",
           "lachs",
-          "rind",
+          "mayo",
+          "mayonnaise",
           "schwein",
+          "schweine",
+          "schweinelachs",
           "steak"
         ],
         "explicitVegetarian": [],
@@ -101,19 +110,21 @@
       "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon, rind)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon, rind, rinder)."
       ],
       "matches": {
         "meatOrFish": [
           "bacon",
-          "rind"
+          "rind",
+          "rinder"
         ],
         "animalProducts": [
           "bacon",
           "eier",
           "gouda",
-          "kaese",
+          "kochsahne",
           "rind",
+          "rinder",
           "rinderbruehe",
           "sahne"
         ],
@@ -143,6 +154,7 @@
           "gouda",
           "hartkaese",
           "kaese",
+          "kochsahne",
           "sahne"
         ],
         "explicitVegetarian": [],
@@ -162,18 +174,18 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 55 g Protein, 6.3 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (chicken, haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
       ],
       "matches": {
         "meatOrFish": [
-          "chicken",
           "haehnchen"
         ],
         "animalProducts": [
           "butter",
-          "chicken",
           "haehnchen",
-          "honig"
+          "honig",
+          "mayo",
+          "mayonnaise"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -192,19 +204,19 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 47 g Protein, 5.2 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fisch, lachs, seelachs)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
       ],
       "matches": {
         "meatOrFish": [
-          "fisch",
           "lachs",
           "seelachs"
         ],
         "animalProducts": [
           "butter",
-          "fisch",
           "joghurt",
           "lachs",
+          "mayo",
+          "mayonnaise",
           "milch",
           "seelachs"
         ],
@@ -225,18 +237,16 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 56 g Protein, 5.7 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, fleischbaellchen, hack, hackfleisch)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {
         "meatOrFish": [
           "fleisch",
-          "fleischbaellchen",
           "hack",
           "hackfleisch"
         ],
         "animalProducts": [
           "fleisch",
-          "fleischbaellchen",
           "hack",
           "hackfleisch",
           "honig"
@@ -260,16 +270,16 @@
       "reasons": [
         "Schnell: 30 Minuten <= 30.",
         "High Protein: 55 g Protein, 6.1 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (chicken, haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "chicken",
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
-          "chicken",
           "haehnchen",
+          "haehnchenbrust",
           "honig",
           "huehnerbruehe"
         ],
@@ -290,15 +300,17 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 55 g Protein, 6.7 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "butter",
           "haehnchen",
+          "haehnchenbrust",
           "huehnerbruehe",
           "milch"
         ],
@@ -319,22 +331,26 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 50 g Protein, 4.7 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schnitzel, schwein, steak)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
       ],
       "matches": {
         "meatOrFish": [
           "lachs",
-          "schnitzel",
           "schwein",
+          "schweine",
+          "schweinelachs",
           "steak"
         ],
         "animalProducts": [
           "ei",
           "joghurt",
           "lachs",
+          "mayo",
+          "mayonnaise",
           "sahne",
-          "schnitzel",
           "schwein",
+          "schweine",
+          "schweinelachs",
           "steak"
         ],
         "explicitVegetarian": [],
@@ -354,22 +370,26 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 57 g Protein, 5.3 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
       ],
       "matches": {
         "meatOrFish": [
           "fleisch",
-          "hack",
           "hackfleisch",
           "rind",
-          "rinderhack"
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
         ],
         "animalProducts": [
           "fleisch",
-          "hack",
           "hackfleisch",
+          "mayo",
+          "mayonnaise",
           "rind",
-          "rinderhack"
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -417,14 +437,16 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 57 g Protein, 5.0 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinderhack)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
       ],
       "matches": {
         "meatOrFish": [
           "fleisch",
           "hackfleisch",
           "rind",
-          "rinderhack"
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
         ],
         "animalProducts": [
           "fleisch",
@@ -432,8 +454,12 @@
           "hackfleisch",
           "honig",
           "joghurt",
+          "mayo",
+          "mayonnaise",
           "rind",
-          "rinderhack"
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -451,13 +477,15 @@
       ],
       "dietaryType": "vegetarian",
       "reasons": [
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (honig, joghurt)."
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (honig, joghurt, mayo, mayonnaise)."
       ],
       "matches": {
         "meatOrFish": [],
         "animalProducts": [
           "honig",
-          "joghurt"
+          "joghurt",
+          "mayo",
+          "mayonnaise"
         ],
         "explicitVegetarian": [
           "vegetarisch"
@@ -478,16 +506,19 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 48 g Protein, 5.3 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "butter",
           "haehnchen",
+          "haehnchenbrust",
           "huehnerbruehe",
+          "kochsahne",
           "sahne"
         ],
         "explicitVegetarian": [],
@@ -509,14 +540,16 @@
       "reasons": [
         "Schnell: 20 Minuten <= 30.",
         "High Protein: 55 g Protein, 7.9 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "haehnchen",
+          "haehnchenbrust",
           "joghurt"
         ],
         "explicitVegetarian": [],
@@ -535,13 +568,14 @@
       ],
       "dietaryType": "vegetarian",
       "reasons": [
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hartkaese, kaese, sahne)."
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hartkaese, kaese, kochsahne, sahne)."
       ],
       "matches": {
         "meatOrFish": [],
         "animalProducts": [
           "hartkaese",
           "kaese",
+          "kochsahne",
           "sahne"
         ],
         "explicitVegetarian": [
@@ -562,7 +596,7 @@
       ],
       "dietaryType": "vegetarian",
       "reasons": [
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, hartkaese, kaese, sahne)."
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, hartkaese, kaese, kochsahne, sahne)."
       ],
       "matches": {
         "meatOrFish": [],
@@ -570,6 +604,7 @@
           "gouda",
           "hartkaese",
           "kaese",
+          "kochsahne",
           "sahne"
         ],
         "explicitVegetarian": [
@@ -591,15 +626,19 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 60 g Protein, 5.6 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "butter",
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust",
+          "mayo",
+          "mayonnaise"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -628,7 +667,9 @@
           "butter",
           "haehnchen",
           "hartkaese",
-          "kaese"
+          "kaese",
+          "mayo",
+          "mayonnaise"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -648,13 +689,15 @@
       "dietaryType": "vegetarian",
       "reasons": [
         "High Protein: 36 g Protein, 4.0 g/100 kcal.",
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (grillkaese, kaese)."
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (grillkaese, kaese, mayo, mayonnaise)."
       ],
       "matches": {
         "meatOrFish": [],
         "animalProducts": [
           "grillkaese",
-          "kaese"
+          "kaese",
+          "mayo",
+          "mayonnaise"
         ],
         "explicitVegetarian": [
           "vegetarisch"
@@ -709,15 +752,19 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 55 g Protein, 5.0 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (wurst)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bratwurst, wurst)."
       ],
       "matches": {
         "meatOrFish": [
+          "bratwurst",
           "wurst"
         ],
         "animalProducts": [
+          "bratwurst",
           "hartkaese",
           "kaese",
+          "mayo",
+          "mayonnaise",
           "wurst"
         ],
         "explicitVegetarian": [],
@@ -737,14 +784,15 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 52 g Protein, 5.6 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinder)."
       ],
       "matches": {
         "meatOrFish": [
           "fleisch",
           "hack",
           "hackfleisch",
-          "rind"
+          "rind",
+          "rinder"
         ],
         "animalProducts": [
           "butter",
@@ -754,6 +802,7 @@
           "hackfleisch",
           "joghurt",
           "rind",
+          "rinder",
           "rinderbruehe",
           "sahne"
         ],
@@ -774,25 +823,28 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 52 g Protein, 5.6 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
       ],
       "matches": {
         "meatOrFish": [
           "fleisch",
-          "hack",
           "hackfleisch",
           "rind",
-          "rinderhack"
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
         ],
         "animalProducts": [
           "butter",
           "fleisch",
-          "hack",
           "hackfleisch",
           "honig",
+          "kochsahne",
           "rind",
+          "rinder",
           "rinderbruehe",
           "rinderhack",
+          "rinderhackfleisch",
           "sahne"
         ],
         "explicitVegetarian": [],
@@ -812,16 +864,21 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 54 g Protein, 5.0 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
       ],
       "matches": {
         "meatOrFish": [
-          "schwein"
+          "schwein",
+          "schweine",
+          "schweinefilet"
         ],
         "animalProducts": [
           "huehnerbruehe",
+          "kochsahne",
           "sahne",
-          "schwein"
+          "schwein",
+          "schweine",
+          "schweinefilet"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -840,16 +897,20 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 50 g Protein, 5.3 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
       ],
       "matches": {
         "meatOrFish": [
-          "schwein"
+          "schwein",
+          "schweine",
+          "schweinefilet"
         ],
         "animalProducts": [
           "butter",
           "honig",
-          "schwein"
+          "schwein",
+          "schweine",
+          "schweinefilet"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -868,15 +929,13 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 52 g Protein, 5.6 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {
         "meatOrFish": [
           "fleisch",
           "hack",
-          "hackfleisch",
-          "rind",
-          "rinderhack"
+          "hackfleisch"
         ],
         "animalProducts": [
           "fleisch",
@@ -885,8 +944,7 @@
           "hartkaese",
           "huehnerbruehe",
           "kaese",
-          "rind",
-          "rinderhack",
+          "kochsahne",
           "sahne"
         ],
         "explicitVegetarian": [],
@@ -937,15 +995,17 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 48 g Protein, 5.0 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "butter",
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -964,15 +1024,18 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 55 g Protein, 6.7 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "haehnchen",
+          "haehnchenbrust",
           "huehnerbruehe",
+          "kochsahne",
           "sahne"
         ],
         "explicitVegetarian": [],
@@ -1022,21 +1085,25 @@
       "reasons": [
         "Schnell: 30 Minuten <= 30.",
         "High Protein: 52 g Protein, 5.1 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinderhack)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
       ],
       "matches": {
         "meatOrFish": [
           "fleisch",
           "hackfleisch",
           "rind",
-          "rinderhack"
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
         ],
         "animalProducts": [
           "fleisch",
           "hackfleisch",
           "joghurt",
           "rind",
-          "rinderhack"
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1064,6 +1131,8 @@
         "animalProducts": [
           "bacon",
           "butter",
+          "mayo",
+          "mayonnaise",
           "milch"
         ],
         "explicitVegetarian": [],
@@ -1085,15 +1154,13 @@
       "reasons": [
         "Schnell: 30 Minuten <= 30.",
         "High Protein: 52 g Protein, 5.1 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {
         "meatOrFish": [
           "fleisch",
           "hack",
-          "hackfleisch",
-          "rind",
-          "rinderhack"
+          "hackfleisch"
         ],
         "animalProducts": [
           "fleisch",
@@ -1101,9 +1168,7 @@
           "hackfleisch",
           "hirtenkaese",
           "joghurt",
-          "kaese",
-          "rind",
-          "rinderhack"
+          "kaese"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1122,16 +1187,19 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 52 g Protein, 5.0 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "butter",
           "haehnchen",
+          "haehnchenbrust",
           "huehnerbruehe",
+          "kochsahne",
           "sahne"
         ],
         "explicitVegetarian": [],
@@ -1151,22 +1219,18 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 50 g Protein, 5.0 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (ribs, spareribs).",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (spareribs).",
         "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
       ],
       "matches": {
         "meatOrFish": [
-          "ribs",
           "spareribs"
         ],
         "animalProducts": [
           "butter",
-          "ribs",
           "spareribs"
         ],
-        "explicitVegetarian": [
-          "vegetarisch"
-        ],
+        "explicitVegetarian": [],
         "explicitVegan": [
           "vegan",
           "vegane"
@@ -1186,14 +1250,16 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 55 g Protein, 6.7 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "haehnchen",
+          "haehnchenbrust",
           "honig",
           "joghurt",
           "sahne"
@@ -1247,18 +1313,20 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 55 g Protein, 6.3 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, schnitzel)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
           "haehnchen",
-          "schnitzel"
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "haehnchen",
+          "haehnchenbrust",
           "honig",
           "joghurt",
-          "schnitzel"
+          "mayo",
+          "mayonnaise"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1277,17 +1345,21 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 55 g Protein, 6.7 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "haehnchen",
+          "haehnchenbrust",
           "hartkaese",
           "huehnerbruehe",
-          "kaese"
+          "kaese",
+          "mayo",
+          "mayonnaise"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1306,15 +1378,17 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 58 g Protein, 6.8 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "ei",
           "haehnchen",
+          "haehnchenbrust",
           "hartkaese",
           "kaese"
         ],
@@ -1363,20 +1437,22 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 50 g Protein, 5.3 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, rind, schwein, steak)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
       ],
       "matches": {
         "meatOrFish": [
           "lachs",
-          "rind",
           "schwein",
+          "schweine",
+          "schweinelachs",
           "steak"
         ],
         "animalProducts": [
           "butter",
           "lachs",
-          "rind",
           "schwein",
+          "schweine",
+          "schweinelachs",
           "steak"
         ],
         "explicitVegetarian": [],
@@ -1390,19 +1466,22 @@
       "kcal": 950,
       "protein": 34,
       "durationMinutes": 35,
-      "categories": [
-        "vegetarisch"
-      ],
-      "dietaryType": "vegetarian",
+      "categories": [],
+      "dietaryType": "omnivore",
       "reasons": [
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hartkaese, huehnerbruehe, kaese, ricotta, sahne)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (prosciutto).",
+        "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
       ],
       "matches": {
-        "meatOrFish": [],
+        "meatOrFish": [
+          "prosciutto"
+        ],
         "animalProducts": [
           "hartkaese",
           "huehnerbruehe",
           "kaese",
+          "kochsahne",
+          "prosciutto",
           "ricotta",
           "sahne"
         ],
@@ -1411,7 +1490,7 @@
         ],
         "explicitVegan": []
       },
-      "needsReview": false
+      "needsReview": true
     },
     {
       "id": "grillen-auf-griechisch-hirtenkaese-schiffchen",
@@ -1453,23 +1532,19 @@
       "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 52 g Protein, 5.6 g/100 kcal.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {
         "meatOrFish": [
           "fleisch",
           "hack",
-          "hackfleisch",
-          "rind",
-          "rinderhack"
+          "hackfleisch"
         ],
         "animalProducts": [
           "butter",
           "fleisch",
           "hack",
-          "hackfleisch",
-          "rind",
-          "rinderhack"
+          "hackfleisch"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1490,14 +1565,16 @@
       "reasons": [
         "Schnell: 30 Minuten <= 30.",
         "Low Cal: 557 kcal <= 650.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "haehnchen"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "haehnchen",
+          "haehnchenbrust",
           "honig",
           "milch"
         ],

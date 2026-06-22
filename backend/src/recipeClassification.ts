@@ -59,47 +59,84 @@ const categoryTagLabels: Record<RecipeCategory, string> = {
 };
 
 const meatOrFishTerms = [
-  "hähnchen",
-  "haehnchen",
-  "chicken",
-  "pute",
-  "turkey",
+  "fleisch",
+  "meat",
   "rind",
+  "rinder",
+  "rinderhack",
+  "rinderhackfleisch",
+  "hack",
+  "hackfleisch",
   "beef",
   "steak",
-  "rinderhack",
-  "hackfleisch",
-  "hack",
+  "bulgogi",
   "schwein",
+  "schweine",
+  "schweinefleisch",
+  "schweinefilet",
+  "schweinelachs",
   "pork",
-  "speck",
+  "hähnchen",
+  "haehnchen",
+  "hähnchenbrust",
+  "haehnchenbrust",
+  "chicken",
+  "pute",
+  "putenbrust",
+  "turkey",
+  "entenbrust",
+  "duck",
+  "prosciutto",
+  "schinken",
+  "kochschinken",
+  "roher schinken",
+  "parmaschinken",
+  "serrano",
   "bacon",
+  "speck",
+  "pancetta",
+  "guanciale",
+  "coppa",
+  "salami",
+  "chorizo",
+  "sucuk",
+  "wurst",
+  "bratwurst",
+  "fleischbällchen",
+  "fleischbaellchen",
+  "hackbällchen",
+  "hackbaellchen",
+  "rib",
   "ribs",
+  "spare ribs",
   "spareribs",
+  "smoky ribs",
   "rippe",
   "rippen",
   "rippchen",
+  "schweinerippchen",
   "schweinerippe",
   "schweinerippen",
-  "wurst",
-  "salami",
-  "chorizo",
-  "fleisch",
-  "fleischbällchen",
-  "fleischbaellchen",
+  "bbq ribs",
+  "pulled pork",
   "schnitzel",
+  "fisch",
+  "fish",
   "lachs",
   "salmon",
   "thunfisch",
   "tuna",
-  "fisch",
   "seelachs",
+  "kabeljau",
+  "cod",
   "garnele",
   "garnelen",
   "shrimp",
   "prawns",
   "meeresfrüchte",
   "meeresfruechte",
+  "muscheln",
+  "scampi",
 ];
 
 const animalProductTerms = [
@@ -121,6 +158,7 @@ const animalProductTerms = [
   "milch",
   "milk",
   "sahne",
+  "kochsahne",
   "cream",
   "crème fraîche",
   "creme fraiche",
@@ -135,10 +173,14 @@ const animalProductTerms = [
   "egg",
   "honig",
   "honey",
+  "mayonnaise",
+  "mayo",
   "hühnerbrühe",
   "huehnerbruehe",
   "rinderbrühe",
   "rinderbruehe",
+  "fleischbrühe",
+  "fleischbruehe",
 ];
 
 const vegetarianTerms = ["vegetarisch", "vegetarian", "veggie", "fleischlos"];
@@ -162,7 +204,7 @@ export function normalizeText(value: unknown): string {
     .trim();
 }
 
-function stripParentheticalHints(value: string): string {
+export function stripParentheticalDietHints(value: string): string {
   return value.replace(/\([^)]*\)/g, " ");
 }
 
@@ -213,17 +255,15 @@ function recipeIngredients(recipe: RecipeLike): string[] {
     : [];
 }
 
-function textForBlockers(recipe: RecipeLike): string {
-  return [
-    recipe.name,
-    ...recipeIngredients(recipe),
-    ...recipeTags(recipe),
-  ].join(" ");
+function textForPrimaryBlockers(recipe: RecipeLike): string {
+  const ingredients = recipeIngredients(recipe);
+  if (ingredients.length > 0) return ingredients.join(" ");
+  return [recipe.name, ...recipeTags(recipe)].join(" ");
 }
 
 function textForExplicitDietaryHints(recipe: RecipeLike): string {
   const ingredientsWithoutParentheses = recipeIngredients(recipe).map(
-    stripParentheticalHints,
+    stripParentheticalDietHints,
   );
   return [recipe.name, ...recipeTags(recipe), ...ingredientsWithoutParentheses].join(
     " ",
@@ -253,7 +293,8 @@ export function classifyRecipe(recipe: RecipeLike): RecipeClassification {
   const durationMinutes = Number(recipe.durationMinutes);
   const proteinDensity =
     nutrition.kcal > 0 ? (nutrition.protein / nutrition.kcal) * 100 : 0;
-  const blockerText = textForBlockers(recipe);
+  const hasIngredients = recipeIngredients(recipe).length > 0;
+  const blockerText = textForPrimaryBlockers(recipe);
   const explicitHintText = textForExplicitDietaryHints(recipe);
   const allExplicitText = textForAllExplicitDietaryWords(recipe);
   const meatOrFish = findTerms(blockerText, meatOrFishTerms);
@@ -292,7 +333,13 @@ export function classifyRecipe(recipe: RecipeLike): RecipeClassification {
     );
   }
 
-  if (meatOrFish.length > 0) {
+  if (!hasIngredients && meatOrFish.length === 0) {
+    dietaryType = "needs-review";
+    needsReview = true;
+    reasons.push(
+      "Review: keine Zutatenliste vorhanden; vegetarisch/vegan wird konservativ nicht gesetzt.",
+    );
+  } else if (meatOrFish.length > 0) {
     dietaryType = "omnivore";
     reasons.push(
       `Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (${meatOrFish.join(", ")}).`,
