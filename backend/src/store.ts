@@ -114,10 +114,10 @@ function dedupeRecipeHistory(value: unknown): unknown {
   }
 
   const deduped = [...newestByKey.values()].sort((a, b) => {
-    return (
+    const diff =
       safeHistoryTime((b as { viewedAt?: unknown }).viewedAt) -
-      safeHistoryTime((a as { viewedAt?: unknown }).viewedAt)
-    );
+      safeHistoryTime((a as { viewedAt?: unknown }).viewedAt);
+    return Number.isFinite(diff) ? diff : 0;
   });
 
   return [...deduped, ...passthrough];
