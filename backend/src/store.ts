@@ -76,10 +76,6 @@ function recipeHistoryDayKey(value: unknown): string {
   }
 }
 
-function normalizeHistoryAction(value: unknown): string {
-  return String(value || "viewed").trim() || "viewed";
-}
-
 function dedupeRecipeHistory(value: unknown): unknown {
   if (!Array.isArray(value)) return value;
 
@@ -97,7 +93,6 @@ function dedupeRecipeHistory(value: unknown): unknown {
       userId?: unknown;
       recipeId?: unknown;
       viewedAt?: unknown;
-      action?: unknown;
     };
     const recipeId = String(item.recipeId || "").trim();
     if (!recipeId) {
@@ -105,7 +100,7 @@ function dedupeRecipeHistory(value: unknown): unknown {
       continue;
     }
 
-    const key = `${normalizeHistoryUserId(item.userId)}:${recipeId}:${recipeHistoryDayKey(item.viewedAt)}:${normalizeHistoryAction(item.action)}`;
+    const key = `${normalizeHistoryUserId(item.userId)}:${recipeId}:${recipeHistoryDayKey(item.viewedAt)}`;
     if (seen.has(key)) continue;
 
     seen.add(key);
