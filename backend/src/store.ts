@@ -79,12 +79,12 @@ function recipeHistoryDayKey(value: unknown): string {
 function dedupeRecipeHistory(value: unknown): unknown {
   if (!Array.isArray(value)) return value;
 
-  const seen = new Set<string>();
-  const deduped: unknown[] = [];
+  const newestByKey = new Map<string, unknown>();
+  const passthrough: unknown[] = [];
 
   for (const entry of value) {
     if (!entry || typeof entry !== "object") {
-      deduped.push(entry);
+      passthrough.push(entry);
       continue;
     }
 
@@ -96,20 +96,29 @@ function dedupeRecipeHistory(value: unknown): unknown {
     };
     const recipeId = String(item.recipeId || "").trim();
     if (!recipeId) {
-      deduped.push(entry);
+      passthrough.push(entry);
       continue;
     }
 
-    // Keep only the newest existing entry for the same user, recipe and local day.
-    // This prevents opening the same recipe repeatedly from filling the recipe history.
+    // Keep only one visible entry per user, recipe and local day.
+    // If the same recipe is opened several times on the same day, the latest entry wins.
     const key = `${normalizeHistoryUserId(item.userId)}:${recipeId}:${recipeHistoryDayKey(item.viewedAt)}`;
-    if (seen.has(key)) continue;
+    const current = newestByKey.get(key) as { viewedAt?: unknown } | undefined;
+    const currentTime = current ? new Date(String(current.viewedAt || "")).getTime() : Number.NEGATIVE_INFINITY;
+    const nextTime = new Date(String(item.viewedAt || "")).getTime();
 
-    seen.add(key);
-    deduped.push(entry);
+    if (!current || nextTime >= currentTime || Number.isNaN(currentTime)) {
+      newestByKey.set(key, entry);
+    }
   }
 
-  return deduped;
+  const deduped = [...newestByKey.values()].sort((a, b) => {
+    const aTime = new Date(String((a as { viewedAt?: unknown }).viewedAt || "")).getTime();
+    const bTime = new Date(String((b as { viewedAt?: unknown }).viewedAt || "")).getTime();
+    return (Number.isNaN(bTime) ? 0 : bTime) - (Number.isNaN(aTime) ? 0 : aTime);
+  });
+
+  return [...deduped, ...passthrough];
 }
 
 function normalizeStoreValue(file: string, value: unknown): unknown {
