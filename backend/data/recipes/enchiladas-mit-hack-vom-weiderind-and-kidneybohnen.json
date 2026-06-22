@@ -5,15 +5,42 @@
   "kcal": 863,
   "protein": 47.3,
   "durationMinutes": 35,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-69c257d8814691069108fbab",
   "tags": [],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "6 g Gewürzmischung „Hello Fiesta“",
+    "75 g junger Gouda, gerieben",
+    "75 g Naturjoghurt",
+    "380 g Kidneybohnen",
+    "75 g Tomate (Roma)",
+    "10 g Petersilie, glatt",
+    "200 g Hackfleischzubereitung vom Weiderind",
+    "160 g Weizentortillas",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Bohnen durch ein Sieb abgießen. In einer großen Pfanne ohne Fettzugabe Hackfleisch 2 – 3 Min. anbraten, bis es leicht bräunt. Bohnen dazugeben und 2 – 3 Min. mitbraten. Backofen währenddessen auf Grillfunktion schalten.",
+      "imageUrl": "/images/hellofresh/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Tomate würfeln. Tomatenwürfel in die Pfanne geben und mit „Hello Fiesta“, Salz* und Pfeffer* würzen und 1 Min. mitbraten lassen. Tortillas mit Bohnen-Hack-Mischung füllen, aufrollen und in eine Auflaufform geben und mit Käse toppen.",
+      "imageUrl": "/images/hellofresh/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Enchiladas in der Auflaufform im Ofen 3 – 5 Min. unter dem Grill überbacken, bis der Käse geschmolzen ist. Petersilie hacken. Enchiladas auf Teller verteilen, mit Petersilie bestreuen und mit Joghurt genießen.",
+      "imageUrl": "/images/hellofresh/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-step-3.jpg"
+    }
+  ],
   "categories": [],
   "sourceProvider": "HelloFresh",
   "sourceCollection": "proteinreiche-rezepte",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "servings": 2,
   "nutritionPerServing": {
@@ -23,7 +50,8 @@
   "nutritionSource": "per-serving",
   "dietaryType": "omnivore",
   "classificationReasons": [
-    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (hack)."
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
   ],
-  "classificationNeedsReview": false
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-22T13:15:26.015Z"
 }

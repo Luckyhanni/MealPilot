@@ -14,6 +14,7 @@ import {
   applyRecipeClassification,
   type DietaryType,
 } from "./recipeClassification.js";
+import { enrichRecipeFromSourceUrl } from "./hellofreshImporter.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -2428,7 +2429,7 @@ app.post("/api/recipes/:id/import-source", async (req, res) => {
   if (index < 0)
     return res.status(404).json({ error: "Rezept nicht gefunden." });
   try {
-    const imported = await importHelloFreshData(recipes[index]);
+    const imported = await enrichRecipeFromSourceUrl(recipes[index]);
     recipes[index] = imported;
     await writeJson("recipes.json", recipes);
     res.json(enrichRecipe(imported));
@@ -2449,7 +2450,7 @@ app.post("/api/recipes/import-all", async (_req, res) => {
   for (let i = 0; i < recipes.length; i += 1) {
     if (!recipes[i].sourceUrl) continue;
     try {
-      recipes[i] = await importHelloFreshData(recipes[i]);
+      recipes[i] = await enrichRecipeFromSourceUrl(recipes[i]);
       imported += 1;
       await writeJson("recipes.json", recipes);
     } catch (error) {

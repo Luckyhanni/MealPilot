@@ -5,21 +5,51 @@
   "kcal": 609,
   "protein": 45.2,
   "durationMinutes": 15,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/hahnchen-souflaki-bites-auf-griechischem-salat-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-souflaki-bites-auf-griechischem-salat-69c25822d795c2c9e4ffdb10",
   "tags": [
     "schnell",
     "low cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Hähnchengeschnetzeltes",
+    "25 g Pankomehl",
+    "20 g Aioli",
+    "4 g Gewürzmischung „Hello Souflaki“",
+    "150 g Salatherz (Romana)",
+    "1 Stück rote Spitzpaprika",
+    "1 Stück kleine Salatgurke",
+    "390 g Kichererbsen",
+    "50 ml Buttermilch-Zitronen-Dressing",
+    "1 Esslöffel Öl",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Weißweinessig"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Spitzpaprika in 0,5 cm Ringe schneiden. Kichererbsen durch ein Sieb abgießen. In einer großen Schüssel Hähnchengeschnetzeltes mit Aioli und Hälfte „Hello Souflaki“ vermengen. Pankomehl in die Schüssel geben und durchmischen, sodass das Hähnchen damit gut ummantelt ist.",
+      "imageUrl": "/images/hellofresh/hahnchen-souflaki-bites-auf-griechischem-salat-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Paniertes Hähnchen, Kichererbsen, Spitzpaprika und restliches „Hello Souflaki“ darin 3 – 4 Min. braten, bis das Fleisch innen nicht mehr rosa ist. Gurke längs halbieren und in 0,5 cm Halbmonde schneiden. Salat in 2 cm Streifen schneiden. In einer zweiten großen Schüssel Buttermilch-Zitronen-Dressing mit Gurke und Salat vermengen. Mit Salz*, Pfeffer* und etwas Essig* abschmecken.",
+      "imageUrl": "/images/hellofresh/hahnchen-souflaki-bites-auf-griechischem-salat-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Salat auf Teller verteilen. Chicken Bites, Kichererbsen und Spitzpaprika darauf anrichten.",
+      "imageUrl": "/images/hellofresh/hahnchen-souflaki-bites-auf-griechischem-salat-step-3.jpg"
+    }
+  ],
   "categories": [
     "schnell",
     "low-cal"
   ],
   "sourceProvider": "HelloFresh",
   "sourceCollection": "proteinreiche-rezepte",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "servings": 2,
   "nutritionPerServing": {
@@ -33,5 +63,6 @@
     "Low Cal: 609 kcal <= 650.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
   ],
-  "classificationNeedsReview": false
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-22T13:15:28.339Z"
 }

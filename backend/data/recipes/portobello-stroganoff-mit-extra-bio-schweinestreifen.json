@@ -5,7 +5,7 @@
   "kcal": 1075,
   "protein": 54.1,
   "durationMinutes": 25,
-  "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R32_W28_DE_R4786-3_edit_Main__2low-69d480d2.jpg",
+  "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/portobello-stroganoff-mit-extra-bio-schweinestreifen-69d8a2026bb16e39e1b7be8f",
   "tags": [
     "schnell"
@@ -18,20 +18,56 @@
     "2 Stück Knoblauchzehe",
     "10 g Petersilie glatt/Thymian",
     "1 g milder Chili-Mix",
-    "1 Stück Zitrone gewachst",
+    "1 Stück Zitrone, gewachst",
     "250 ml Oatly Bio Cuisine",
     "25 g Pilzbrühepaste",
-    "10 g Kürbiskerne geröstet",
+    "10 g Kürbiskerne, geröstet",
     "8 g Worcester Sauce",
-    "250 g Bio-Schweinefleischstreifen mariniert"
+    "250 g Bio-Schweinefleischstreifen mariniert",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "1 Esslöffel Öl",
+    "100 ml Wasser",
+    "2 Esslöffel pflanzliche Margarine"
   ],
-  "instructions": [],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Zitrone in 6 Spalten schneiden. Zwiebel grob würfeln. Portobello in 0,5 cm Scheiben schneiden. Champignons halbieren oder vierteln. Petersilien- und Thymianblätter getrennt voneinander grob hacken.",
+      "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einen großen Topf ca. 2 l heißes Wasser* füllen, 1 EL [1,5 EL | 2 EL] Salz* hinzufügen und aufkochen lassen. Pasta hinzugeben und ca. 11 Min. bissfest garen. Pasta nach der Garzeit durch ein Sieb abgießen und dabei 100 ml [150 ml | 200 ml] Kochwasser auffangen. Pasta zurück in den Topf geben und mit 1 EL [1,5 EL | 2 EL] Margarine* verrühren, ggf. warmhalten.",
+      "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne ohne Fettzugabe Kürbiskerne und Chili-Mix (Achtung: scharf!) 2 – 3 Min. rösten, bis sie bräunen. Herausnehmen und beiseite stellen.",
+      "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Große Pfanne auswischen, 1 EL [1,5 EL | 2 EL] Öl* und 1 EL [1,5 EL | 2 EL] Margarine* erhitzen. Zwiebel, Portobello und Champignons darin 4 – 6 Min. kräftig anbraten. Knoblauch hineinpressen. Thymian und die Hälfte der Petersilie in die Pfanne geben und alles 2 – 3 Min. mitbraten.",
+      "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Pfanneninhalt mit abgenommenem Kochwasser, Hafer Cuisine, Pilz-Brühe-Paste, Senf, Saft von 1 [2 | 2] Zitronenspalte, 0,25 TL [0,25 TL | 0,5 TL] Salz* verrühren und weitere 2 – 3 Min. köcheln lassen.",
+      "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Schweinestreifen darin 4 – 6 Min. anbraten, bis das Fleisch innen nicht mehr rosa ist. Fusilli auf tiefe Teller verteilen, Pilz-Stroganoff daneben anrichten und mit Kürbis-Chili Topping, restlicher Petersilie und Zitronenspalten garnieren.",
+      "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-6.jpg"
+    }
+  ],
   "categories": [
     "schnell"
   ],
   "sourceProvider": "HelloFresh",
   "sourceCollection": "proteinreiche-rezepte",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "servings": 2,
   "nutritionPerServing": {
@@ -44,5 +80,6 @@
     "Schnell: 25 Minuten <= 30.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, schwein, schweine, schweinefleisch)."
   ],
-  "classificationNeedsReview": false
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-22T13:15:46.076Z"
 }

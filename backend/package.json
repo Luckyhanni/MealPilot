@@ -10,7 +10,8 @@
     "start": "node dist/server.js",
     "build": "tsc",
     "migrate": "tsx src/migrateLocalJsonToSupabase.ts",
-    "audit:prices": "tsx scripts/auditIngredientPrices.ts"
+    "audit:prices": "tsx scripts/auditIngredientPrices.ts",
+    "recipes:enrich:missing": "tsx scripts/enrichMissingRecipeDetails.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",

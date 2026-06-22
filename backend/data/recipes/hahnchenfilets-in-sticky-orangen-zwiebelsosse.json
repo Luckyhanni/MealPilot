@@ -5,19 +5,65 @@
   "kcal": 688,
   "protein": 42.5,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenfilets-in-sticky-orangen-zwiebelsosse-69c25818814691069108fe04",
   "tags": [
     "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Hähncheninnenbrustfilet",
+    "1 Stück Brokkoli",
+    "1 Stück Orange",
+    "600 g vorw. festk. Kartoffeln",
+    "1 Stück Zwiebel",
+    "80 g Würziges Zwiebel-Chutney",
+    "2 g Hühnerbrühe",
+    "10 ml mittelscharfer Senf",
+    "2 g Rosmarin, getrocknet",
+    "2 Esslöffel Öl",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Honig",
+    "1 Esslöffel Butter"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Kartoffeln halbieren und in 1 cm Spalten schneiden. Kartoffeln auf einem mit Backpapier belegten Backblech verteilen, mit 1 EL [1,5 EL | 2 EL] Öl*, Rosmarin, Salz* und Pfeffer* vermengen und im Ofen 25 – 30 Min. goldbraun backen.",
+      "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Zwiebel halbieren und in feine Streifen schneiden. Brokkoli in kleine Röschen teilen. In einen großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen lassen. Brokkoli zugeben und 4 – 6 Min. garen, bis er weich ist.",
+      "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Orange halbieren und in ein hohes Rührgefäß auspressen. Orangensaft mit Senf, Zwiebel-Chutney, Brühepulver und 1 TL [1,5 TL | 2 TL] Honig* verrühren. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Hähncheninnenfilets salzen*. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Innenfilets rundum 4 – 5 Min. braten, bis das Fleisch innen nicht mehr rosa ist. Herausnehmen.",
+      "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In der großen Pfanne 1 EL [1,5 EL | 2 EL] Butter* zerlassen. Zwiebel darin 3 – 4 Min. anschwitzen. Mit der vorbereiteten Soße ablöschen und weitere 2 – 3 Min. köcheln lassen, bis die Soße leicht eindickt. Zum Schluss Hähnchen zurück in die Pfanne geben.",
+      "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Kartoffelspalten auf Teller verteilen. Sticky Hähnchen mit Soße und Brokkoli daneben anrichten.",
+      "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-6.jpg"
+    }
+  ],
   "categories": [
     "schnell"
   ],
   "sourceProvider": "HelloFresh",
   "sourceCollection": "proteinreiche-rezepte",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "servings": 2,
   "nutritionPerServing": {
@@ -30,5 +76,6 @@
     "Schnell: 25 Minuten <= 30.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
   ],
-  "classificationNeedsReview": false
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-22T13:15:33.031Z"
 }

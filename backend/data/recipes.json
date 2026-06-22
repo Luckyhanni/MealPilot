@@ -161,7 +161,7 @@
     "kcal": 1414,
     "protein": 113.7,
     "durationMinutes": 30,
-    "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R10_W37_DE_PM24846-12_Main_high-292cd557.jpeg",
+    "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/bayerische-schweinshaxe-mit-bratensosse-69d4c4d9defeabaeea84f11f",
     "tags": [
       "schnell",
@@ -191,32 +191,32 @@
       {
         "title": "Schritt 1",
         "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Erhitze reichlich Wasser im Wasserkocher. Grillhaxe aus der Folie nehmen und mitsamt der Flüssigkeit in eine Auflaufform geben und im Ofen 30 – 35 Min. garen.",
-        "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-f96e1200.jpg"
+        "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-1.jpg"
       },
       {
         "title": "Schritt 2",
         "text": "In einen großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen. Kartoffeln schälen und in 2 cm Würfel schneiden. Kartoffeln in den großen Topf geben und 12 – 14 Min. weich garen. Danach durch ein Sieb abgießen.",
-        "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-0fbc1410.jpg"
+        "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-2.jpg"
       },
       {
         "title": "Schritt 3",
         "text": "Kräuter fein hacken. Gurken in feine Scheiben schneiden oder hobeln. In einer großen Schüssel saure Sahne, süßen Senf, drei Viertel der Kräuter, 1 TL [1,5 TL | 2 TL] Essig*, 1 TL [1,5 TL | 2 TL] Zucker*, Salz* und Pfeffer* zu einem Dressing vermengen. Gurke hinzugeben und vermengen.",
-        "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-4105f720.jpg"
+        "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-3.jpg"
       },
       {
         "title": "Schritt 4",
         "text": "Schalotten fein würfeln. In einer kleinen Schüssel Maisstärke mit 50 ml [75 ml | 100 ml] kaltem Wasser* glatt rühren Kartoffeln nach der Garzeit zusammen mit 100 ml [150 ml | 200 ml] Milch*, 2 EL [3 EL | 4 EL] Butter*, „Hello Muskat“, Salz* und Pfeffer* zurück in den großen Topf geben und mithilfe eines Kartoffelstampfers zu einem Stampf verarbeiten. Ggfs. warm halten.",
-        "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-c8cbef30.jpg"
+        "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-4.jpg"
       },
       {
         "title": "Schritt 5",
         "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* über mittlerer Temperatur erhitzen. Schalotten darin 4 – 10 Min. glasig anschwitzen. Schweinshaxe nach der Garzeit aus der Auflaufform nehmen und kurz ruhen lassen. Pfanneninhalt mit der restlichen Flüssigkeit aus der Auflaufform ablöschen und aufkochen lassen. Maisstärke-Mischung hinzugeben und 1 Min. köcheln lassen, bis die Soße eindickt. Mit Salz* und Pfeffer* abschmecken.",
-        "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-2d7dc440.jpg"
+        "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-5.jpg"
       },
       {
         "title": "Schritt 6",
         "text": "Kartoffelstampf auf Tellern anrichten und die Soße darum verteilen. Schweinshaxe neben dem Stampf anrichten und Gurkensalat separat servieren. Kartoffelstampf mit restlichen Kräutern toppen.",
-        "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-0a29d750.jpeg"
+        "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-6.jpg"
       }
     ],
     "categories": [
@@ -226,7 +226,7 @@
     ],
     "sourceProvider": "HelloFresh",
     "sourceCollection": "proteinreiche-rezepte",
-    "needsDetailImport": true,
+    "needsDetailImport": false,
     "needsNutritionImport": false,
     "servings": 2,
     "nutritionPerServing": {
@@ -241,7 +241,7 @@
       "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter, milch, sahne)."
     ],
     "classificationNeedsReview": false,
-    "importedAt": "2026-06-22T12:30:45.618Z"
+    "importedAt": "2026-06-22T13:15:19.549Z"
   },
   {
     "id": "bbq-burritos-mit-hackfleisch",
@@ -605,15 +605,42 @@
     "kcal": 863,
     "protein": 47.3,
     "durationMinutes": 35,
-    "imageUrl": "",
+    "imageUrl": "/images/hellofresh/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-69c257d8814691069108fbab",
     "tags": [],
-    "ingredients": [],
-    "instructions": [],
+    "ingredients": [
+      "6 g Gewürzmischung „Hello Fiesta“",
+      "75 g junger Gouda, gerieben",
+      "75 g Naturjoghurt",
+      "380 g Kidneybohnen",
+      "75 g Tomate (Roma)",
+      "10 g Petersilie, glatt",
+      "200 g Hackfleischzubereitung vom Weiderind",
+      "160 g Weizentortillas",
+      "nach Geschmack Salz",
+      "nach Geschmack Pfeffer"
+    ],
+    "instructions": [
+      {
+        "title": "Schritt 1",
+        "text": "Bohnen durch ein Sieb abgießen. In einer großen Pfanne ohne Fettzugabe Hackfleisch 2 – 3 Min. anbraten, bis es leicht bräunt. Bohnen dazugeben und 2 – 3 Min. mitbraten. Backofen währenddessen auf Grillfunktion schalten.",
+        "imageUrl": "/images/hellofresh/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-step-1.jpg"
+      },
+      {
+        "title": "Schritt 2",
+        "text": "Tomate würfeln. Tomatenwürfel in die Pfanne geben und mit „Hello Fiesta“, Salz* und Pfeffer* würzen und 1 Min. mitbraten lassen. Tortillas mit Bohnen-Hack-Mischung füllen, aufrollen und in eine Auflaufform geben und mit Käse toppen.",
+        "imageUrl": "/images/hellofresh/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-step-2.jpg"
+      },
+      {
+        "title": "Schritt 3",
+        "text": "Enchiladas in der Auflaufform im Ofen 3 – 5 Min. unter dem Grill überbacken, bis der Käse geschmolzen ist. Petersilie hacken. Enchiladas auf Teller verteilen, mit Petersilie bestreuen und mit Joghurt genießen.",
+        "imageUrl": "/images/hellofresh/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-step-3.jpg"
+      }
+    ],
     "categories": [],
     "sourceProvider": "HelloFresh",
     "sourceCollection": "proteinreiche-rezepte",
-    "needsDetailImport": true,
+    "needsDetailImport": false,
     "needsNutritionImport": false,
     "servings": 2,
     "nutritionPerServing": {
@@ -623,9 +650,10 @@
     "nutritionSource": "per-serving",
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (hack)."
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
     ],
-    "classificationNeedsReview": false
+    "classificationNeedsReview": false,
+    "importedAt": "2026-06-22T13:15:26.015Z"
   },
   {
     "id": "ecuador-encocado-de-pescado-fisch-in-kokosmilch",
@@ -634,19 +662,68 @@
     "kcal": 709,
     "protein": 34.8,
     "durationMinutes": 25,
-    "imageUrl": "",
+    "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/ecuador-encocado-de-pescado-fisch-in-kokosmilch-69c258088c3045e676b3688f",
     "tags": [
       "schnell"
     ],
-    "ingredients": [],
-    "instructions": [],
+    "ingredients": [
+      "1 Stück Orange",
+      "1 Stück Zitrone, gewachst",
+      "2 g Gewürzmischung „Hello Kokos Curry“",
+      "2 g Gewürzmischung „Hello Curry“",
+      "150 g Basmatireis",
+      "1 Stück Tomate",
+      "1 Stück Paprika multicolor",
+      "1 Stück Zwiebel",
+      "1 Stück Knoblauchzehe",
+      "180 ml Kokosmilch",
+      "1 Stück Frühlingszwiebel",
+      "2 g milder Chili-Mix",
+      "250 g Seelachs ohne Haut",
+      "nach Geschmack Salz",
+      "nach Geschmack Pfeffer",
+      "1 Esslöffel Öl",
+      "300 ml Wasser"
+    ],
+    "instructions": [
+      {
+        "title": "Schritt 1",
+        "text": "Orange heiß waschen und 1 TL [1,5 TL | 2 TL] der Schale fein abreiben. Orange halbieren, eine dünne Scheibe für die Deko abschneiden und halbieren. Dann die Hälften auspressen. Zitrone halbieren und eine Hälfte auspressen. In einer großen Schüssel „Hello Kokos Curry“, „Hello Curry“, Orangen- und Zitronensaft verrühren und salzen*. Fischfilets in 4 cm Stücke schneiden, in die Schüssel geben und vorsichtig mit der Marinade vermengen.",
+        "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-1.jpg"
+      },
+      {
+        "title": "Schritt 2",
+        "text": "In einen kleinen Topf mit Deckel 300 ml [450 ml | 600 ml] heißes Wasser* füllen. 0,25 TL [0,5 TL | 0,5 TL] Salz* dazugeben und aufkochen lassen. Reis zugeben und bei niedriger Hitze 10 Min. abgedeckt köcheln lassen. Danach vom Herd nehmen und abgedeckt 10 Min. ziehen lassen.",
+        "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-2.jpg"
+      },
+      {
+        "title": "Schritt 3",
+        "text": "Paprika halbieren, entkernen und in 2 cm Würfel schneiden. Tomate in 2 cm Würfel schneiden. Zwiebel halbieren und in feine Streifen schneiden. Knoblauch fein hacken.",
+        "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-3.jpg"
+      },
+      {
+        "title": "Schritt 4",
+        "text": "In einem großen Topf mit Deckel 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Zwiebel, Paprika. Knoblauch und Tomate 4 – 5 Min. anschwitzen. Mit Kokosmilch ablöschen und 2 Min. einköcheln lassen. Fisch mitsamt der Marinade dazugeben und abgedeckt 2 – 3 Min. köcheln lassen, bis der Fisch innen nicht mehr glasig ist. Mit Salz*, Pfeffer* und eventuell Zitronensaft abschmecken.",
+        "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-4.jpg"
+      },
+      {
+        "title": "Schritt 5",
+        "text": "Frühlingszwiebel in feine Ringe schneiden.",
+        "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-5.jpg"
+      },
+      {
+        "title": "Schritt 6",
+        "text": "Wenn der Reis gar ist, Orangenabrieb unterrühren und Reis auf tiefe Teller verteilen. Fischcurry daneben anrichten. Mit mildem Chili-Mix (Achtung: scharf!) und Frühlingszwiebelringen bestreuen und mit Orangenscheibe garnieren. Buen Provecho!",
+        "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-6.jpg"
+      }
+    ],
     "categories": [
       "schnell"
     ],
     "sourceProvider": "HelloFresh",
     "sourceCollection": "proteinreiche-rezepte",
-    "needsDetailImport": true,
+    "needsDetailImport": false,
     "needsNutritionImport": false,
     "servings": 2,
     "nutritionPerServing": {
@@ -657,9 +734,10 @@
     "dietaryType": "omnivore",
     "classificationReasons": [
       "Schnell: 25 Minuten <= 30.",
-      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fisch, lachs, seelachs)."
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
     ],
-    "classificationNeedsReview": false
+    "classificationNeedsReview": false,
+    "importedAt": "2026-06-22T13:15:23.832Z"
   },
   {
     "id": "fish-and-chips-seelachs-burger-mit-gruenem-salat",
@@ -1530,21 +1608,51 @@
     "kcal": 609,
     "protein": 45.2,
     "durationMinutes": 15,
-    "imageUrl": "",
+    "imageUrl": "/images/hellofresh/hahnchen-souflaki-bites-auf-griechischem-salat-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-souflaki-bites-auf-griechischem-salat-69c25822d795c2c9e4ffdb10",
     "tags": [
       "schnell",
       "low cal"
     ],
-    "ingredients": [],
-    "instructions": [],
+    "ingredients": [
+      "250 g Hähnchengeschnetzeltes",
+      "25 g Pankomehl",
+      "20 g Aioli",
+      "4 g Gewürzmischung „Hello Souflaki“",
+      "150 g Salatherz (Romana)",
+      "1 Stück rote Spitzpaprika",
+      "1 Stück kleine Salatgurke",
+      "390 g Kichererbsen",
+      "50 ml Buttermilch-Zitronen-Dressing",
+      "1 Esslöffel Öl",
+      "nach Geschmack Salz",
+      "nach Geschmack Pfeffer",
+      "nach Geschmack Weißweinessig"
+    ],
+    "instructions": [
+      {
+        "title": "Schritt 1",
+        "text": "Spitzpaprika in 0,5 cm Ringe schneiden. Kichererbsen durch ein Sieb abgießen. In einer großen Schüssel Hähnchengeschnetzeltes mit Aioli und Hälfte „Hello Souflaki“ vermengen. Pankomehl in die Schüssel geben und durchmischen, sodass das Hähnchen damit gut ummantelt ist.",
+        "imageUrl": "/images/hellofresh/hahnchen-souflaki-bites-auf-griechischem-salat-step-1.jpg"
+      },
+      {
+        "title": "Schritt 2",
+        "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Paniertes Hähnchen, Kichererbsen, Spitzpaprika und restliches „Hello Souflaki“ darin 3 – 4 Min. braten, bis das Fleisch innen nicht mehr rosa ist. Gurke längs halbieren und in 0,5 cm Halbmonde schneiden. Salat in 2 cm Streifen schneiden. In einer zweiten großen Schüssel Buttermilch-Zitronen-Dressing mit Gurke und Salat vermengen. Mit Salz*, Pfeffer* und etwas Essig* abschmecken.",
+        "imageUrl": "/images/hellofresh/hahnchen-souflaki-bites-auf-griechischem-salat-step-2.jpg"
+      },
+      {
+        "title": "Schritt 3",
+        "text": "Salat auf Teller verteilen. Chicken Bites, Kichererbsen und Spitzpaprika darauf anrichten.",
+        "imageUrl": "/images/hellofresh/hahnchen-souflaki-bites-auf-griechischem-salat-step-3.jpg"
+      }
+    ],
     "categories": [
       "schnell",
       "low-cal"
     ],
     "sourceProvider": "HelloFresh",
     "sourceCollection": "proteinreiche-rezepte",
-    "needsDetailImport": true,
+    "needsDetailImport": false,
     "needsNutritionImport": false,
     "servings": 2,
     "nutritionPerServing": {
@@ -1558,7 +1666,8 @@
       "Low Cal: 609 kcal <= 650.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
     ],
-    "classificationNeedsReview": false
+    "classificationNeedsReview": false,
+    "importedAt": "2026-06-22T13:15:28.339Z"
   },
   {
     "id": "haehnchenfilet-in-honig-zitronen-marinade",
@@ -1719,19 +1828,65 @@
     "kcal": 688,
     "protein": 42.5,
     "durationMinutes": 25,
-    "imageUrl": "",
+    "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenfilets-in-sticky-orangen-zwiebelsosse-69c25818814691069108fe04",
     "tags": [
       "schnell"
     ],
-    "ingredients": [],
-    "instructions": [],
+    "ingredients": [
+      "250 g Hähncheninnenbrustfilet",
+      "1 Stück Brokkoli",
+      "1 Stück Orange",
+      "600 g vorw. festk. Kartoffeln",
+      "1 Stück Zwiebel",
+      "80 g Würziges Zwiebel-Chutney",
+      "2 g Hühnerbrühe",
+      "10 ml mittelscharfer Senf",
+      "2 g Rosmarin, getrocknet",
+      "2 Esslöffel Öl",
+      "nach Geschmack Salz",
+      "nach Geschmack Pfeffer",
+      "1 Teelöffel Honig",
+      "1 Esslöffel Butter"
+    ],
+    "instructions": [
+      {
+        "title": "Schritt 1",
+        "text": "Kartoffeln halbieren und in 1 cm Spalten schneiden. Kartoffeln auf einem mit Backpapier belegten Backblech verteilen, mit 1 EL [1,5 EL | 2 EL] Öl*, Rosmarin, Salz* und Pfeffer* vermengen und im Ofen 25 – 30 Min. goldbraun backen.",
+        "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-1.jpg"
+      },
+      {
+        "title": "Schritt 2",
+        "text": "Zwiebel halbieren und in feine Streifen schneiden. Brokkoli in kleine Röschen teilen. In einen großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen lassen. Brokkoli zugeben und 4 – 6 Min. garen, bis er weich ist.",
+        "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-2.jpg"
+      },
+      {
+        "title": "Schritt 3",
+        "text": "Orange halbieren und in ein hohes Rührgefäß auspressen. Orangensaft mit Senf, Zwiebel-Chutney, Brühepulver und 1 TL [1,5 TL | 2 TL] Honig* verrühren. Mit Salz* und Pfeffer* abschmecken.",
+        "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-3.jpg"
+      },
+      {
+        "title": "Schritt 4",
+        "text": "Hähncheninnenfilets salzen*. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Innenfilets rundum 4 – 5 Min. braten, bis das Fleisch innen nicht mehr rosa ist. Herausnehmen.",
+        "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-4.jpg"
+      },
+      {
+        "title": "Schritt 5",
+        "text": "In der großen Pfanne 1 EL [1,5 EL | 2 EL] Butter* zerlassen. Zwiebel darin 3 – 4 Min. anschwitzen. Mit der vorbereiteten Soße ablöschen und weitere 2 – 3 Min. köcheln lassen, bis die Soße leicht eindickt. Zum Schluss Hähnchen zurück in die Pfanne geben.",
+        "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-5.jpg"
+      },
+      {
+        "title": "Schritt 6",
+        "text": "Kartoffelspalten auf Teller verteilen. Sticky Hähnchen mit Soße und Brokkoli daneben anrichten.",
+        "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-step-6.jpg"
+      }
+    ],
     "categories": [
       "schnell"
     ],
     "sourceProvider": "HelloFresh",
     "sourceCollection": "proteinreiche-rezepte",
-    "needsDetailImport": true,
+    "needsDetailImport": false,
     "needsNutritionImport": false,
     "servings": 2,
     "nutritionPerServing": {
@@ -1744,7 +1899,8 @@
       "Schnell: 25 Minuten <= 30.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
     ],
-    "classificationNeedsReview": false
+    "classificationNeedsReview": false,
+    "importedAt": "2026-06-22T13:15:33.031Z"
   },
   {
     "id": "haehnchengeschnetzeltes-in-tomaten-sahne-sosse",
@@ -2056,19 +2212,66 @@
     "kcal": 776,
     "protein": 39.8,
     "durationMinutes": 30,
-    "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R7441_W46_DE_R4706-2_Main_low-4ff7e680.jpg",
+    "imageUrl": "/images/hellofresh/omas-klassiker-kase-lauch-suppe-mit-hackfleisch-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/omas-klassiker-kase-lauch-suppe-mit-hackfleisch-69d7c6746bb16e39e1b774ab",
     "tags": [
       "schnell"
     ],
-    "ingredients": [],
-    "instructions": [],
+    "ingredients": [
+      "1 Stück Porree",
+      "1 Stück Zwiebel",
+      "50 g gereifter Gouda, geraspelt",
+      "6 g Hühnerbrühe",
+      "5 g Gewürzmischung „Hello Muskat“",
+      "1 Stück Knoblauchzehe",
+      "200 g mehligk. Kartoffeln",
+      "10 g Petersilie glatt/Schnittlauch",
+      "150 g Kochsahne leicht",
+      "25 g Pankomehl",
+      "250 g gemischte Hackfleischzubereitung",
+      "nach Geschmack Pfeffer",
+      "1 Esslöffel Öl",
+      "450 ml Wasser",
+      "nach Geschmack Salz"
+    ],
+    "instructions": [
+      {
+        "title": "Schritt 1",
+        "text": "Porree längs halbieren, auswaschen und in 0,5 cm dicke Stücke schneiden. Zwiebel grob würfeln Knoblauch grob hacken. Kartoffeln schälen und in 2 cm Würfel schneiden.",
+        "imageUrl": "/images/hellofresh/omas-klassiker-kase-lauch-suppe-mit-hackfleisch-step-1.jpg"
+      },
+      {
+        "title": "Schritt 2",
+        "text": "In einem großen Topf mit Deckel 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Kartoffelwürfel, Porree, Zwiebel und Knoblauch darin 2 Min. farblos anschwitzen. Topfinhalt mit 450 ml [675ml | 900 ml] Wasser*, Hühnerbrühpulver und „Hello Muskat“ ablöschen und 15 Min. abgedeckt köcheln.",
+        "imageUrl": "/images/hellofresh/omas-klassiker-kase-lauch-suppe-mit-hackfleisch-step-2.jpg"
+      },
+      {
+        "title": "Schritt 3",
+        "text": "Eine große Pfanne ohne Fettzugabe erhitzen. Gemischtes Hackfleisch darin 4 – 6 Min. krümelig anbraten. Aus der Pfanne nehmen. Die große Pfanne mit dem übrigen Fett erneut erhitzen. Pankomehl darin 2 –3 Min. goldbraun anbraten. Aus der Pfanne nehmen und in eine kleine Schüssel geben.",
+        "imageUrl": "/images/hellofresh/omas-klassiker-kase-lauch-suppe-mit-hackfleisch-step-3.jpg"
+      },
+      {
+        "title": "Schritt 4",
+        "text": "Kräuter grob hacken. Kräuter in die kleine Schüssel mit dem Pankomehl geben, vermengen und mit Salz und Pfeffer* abschmecken.",
+        "imageUrl": "/images/hellofresh/omas-klassiker-kase-lauch-suppe-mit-hackfleisch-step-4.jpg"
+      },
+      {
+        "title": "Schritt 5",
+        "text": "Kochsahne und Käse zu der Suppe geben und im Topf mit einem Pürierstab nach Belieben grob oder cremig pürieren. Tipp: Es macht nichts, wenn noch ein paar Stücke vorhanden sind. Dadurch wirkt es rustikaler! Die Hälfte Hackfleisch zugeben und nach Belieben mit Salz* und Pfeffer* abschmecken.",
+        "imageUrl": "/images/hellofresh/omas-klassiker-kase-lauch-suppe-mit-hackfleisch-step-5.jpg"
+      },
+      {
+        "title": "Schritt 6",
+        "text": "Suppe in tiefen Tellern oder Schüsseln anrichten und mit restlichem Hackfleisch und Kräuter-Topping garnieren.",
+        "imageUrl": "/images/hellofresh/omas-klassiker-kase-lauch-suppe-mit-hackfleisch-step-6.jpg"
+      }
+    ],
     "categories": [
       "schnell"
     ],
     "sourceProvider": "HelloFresh",
     "sourceCollection": "proteinreiche-rezepte",
-    "needsDetailImport": true,
+    "needsDetailImport": false,
     "needsNutritionImport": false,
     "servings": 2,
     "nutritionPerServing": {
@@ -2081,7 +2284,8 @@
       "Schnell: 30 Minuten <= 30.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
     ],
-    "classificationNeedsReview": false
+    "classificationNeedsReview": false,
+    "importedAt": "2026-06-22T13:15:40.906Z"
   },
   {
     "id": "kaesespaetzle-mit-bacon-und-wirsing",
@@ -2408,23 +2612,67 @@
     "kcal": 827,
     "protein": 40.3,
     "durationMinutes": 20,
-    "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R7441_W45_DE_R3801-SP-2_Main_low-2a177af5.jpg",
+    "imageUrl": "/images/hellofresh/lachsfilet-and-chips-mit-remoulade-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/lachsfilet-and-chips-mit-remoulade-69d7d4e1defeabaeea859fee",
     "tags": [
       "schnell"
     ],
     "ingredients": [
       "300 g Lachsfilet",
-      "600 g Kartoffeln",
-      "1 Stück Zitrone"
+      "525 g Ofenkartoffel",
+      "50 g Blattsalatmischung",
+      "1 Stück Tomate",
+      "1 Stück Karotte",
+      "1 Stück Schalotte",
+      "1 Stück Zitrone, gewachst",
+      "100 g veganes cremiges Sojaprodukt",
+      "10 g Dill/Schnittlauch",
+      "25 g vegane Mayonnaise",
+      "10 ml mittelscharfer Senf",
+      "2 g Gewürzmischung „Hello Paprika“",
+      "nach Geschmack Salz",
+      "nach Geschmack Pfeffer",
+      "2 Esslöffel Öl",
+      "1 Esslöffel Olivenöl"
     ],
-    "instructions": [],
+    "instructions": [
+      {
+        "title": "Schritt 1",
+        "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Gewaschene Kartoffeln in ca. 1 – 2 cm Spalten schneiden. Kartoffelspalten auf eine Hälfte eines mit Backpapier belegten Backblechs geben. Kartoffeln mit „Hello Paprika“, 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* vermengen und im Ofen 25 – 30 Min. backen.",
+        "imageUrl": "/images/hellofresh/lachsfilet-and-chips-mit-remoulade-step-1.jpg"
+      },
+      {
+        "title": "Schritt 2",
+        "text": "Schalotte fein hacken. Schalottenwürfel in einer kleinen Schüssel mit heißem Wasser bedeckt beiseitestellen. Tipp: Durch das Einweichen werden die Schalottenwürfel milder im Geschmack. Währenddessen mit dem Rezept fortfahren. Dill fein hacken. Schnittlauch in feine Röllchen schneiden.",
+        "imageUrl": "/images/hellofresh/lachsfilet-and-chips-mit-remoulade-step-2.jpg"
+      },
+      {
+        "title": "Schritt 3",
+        "text": "Zitrone in 6 Spalten schneiden. In einer großen Schüssel Saft aus 1 [1 | 2] Zitronenspalte, Schnittlauch, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 EL [1,5 EL | 2 EL] Wasser* zu einem Dressing vermengen. Mit Salz* und Pfeffer* abschmecken. Karotte schälen und grob in die große Schüssel zu dem Dressing raspeln. Tomate in ca. 1 cm Spalten schneiden und ebenfalls zu dem Dressing geben.",
+        "imageUrl": "/images/hellofresh/lachsfilet-and-chips-mit-remoulade-step-3.jpg"
+      },
+      {
+        "title": "Schritt 4",
+        "text": "Schalottenwürfel durch ein Sieb abgießen und zurück in die kleine Schüssel geben. Schalottenwürfel mit Sojaprodukt, veganer Mayonnaise, Senf, gehacktem Dill und Saft aus 1 [1 | 2] Zitronenspalte vermengen. Remoulade mit Salz* und Pfeffer* abschmecken.",
+        "imageUrl": "/images/hellofresh/lachsfilet-and-chips-mit-remoulade-step-4.jpg"
+      },
+      {
+        "title": "Schritt 5",
+        "text": "Lachsfilets mit etwas Zitronensaft beträufeln und salzen*. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Lachs darin auf der Hautseite 2 Min. anbraten, dann wenden und weitere 2 – 3 Min. braten, bis der Fisch innen nicht mehr glasig ist. Lachs herausnehmen und nach Belieben die Haut abziehen.",
+        "imageUrl": "/images/hellofresh/lachsfilet-and-chips-mit-remoulade-step-5.jpg"
+      },
+      {
+        "title": "Schritt 6",
+        "text": "Kurz vor dem Servieren Pflücksalat unter den Karotten-Tomaten-Salat heben und auf Teller verteilen. Kartoffelspalten und Lachs daneben anrichten. Zusammen mit der Remoulade genießen und restliche Zitronenspalten dazu reichen.",
+        "imageUrl": "/images/hellofresh/lachsfilet-and-chips-mit-remoulade-step-6.jpg"
+      }
+    ],
     "categories": [
       "schnell"
     ],
     "sourceProvider": "HelloFresh",
     "sourceCollection": "proteinreiche-rezepte",
-    "needsDetailImport": true,
+    "needsDetailImport": false,
     "needsNutritionImport": false,
     "servings": 2,
     "nutritionPerServing": {
@@ -2435,9 +2683,11 @@
     "dietaryType": "omnivore",
     "classificationReasons": [
       "Schnell: 20 Minuten <= 30.",
-      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs)."
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs).",
+      "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
     ],
-    "classificationNeedsReview": false
+    "classificationNeedsReview": true,
+    "importedAt": "2026-06-22T13:15:37.588Z"
   },
   {
     "id": "mezze-rinderhackpfanne-auf-tomatenreis",
@@ -2685,7 +2935,7 @@
     "kcal": 1075,
     "protein": 54.1,
     "durationMinutes": 25,
-    "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R32_W28_DE_R4786-3_edit_Main__2low-69d480d2.jpg",
+    "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/portobello-stroganoff-mit-extra-bio-schweinestreifen-69d8a2026bb16e39e1b7be8f",
     "tags": [
       "schnell"
@@ -2698,20 +2948,56 @@
       "2 Stück Knoblauchzehe",
       "10 g Petersilie glatt/Thymian",
       "1 g milder Chili-Mix",
-      "1 Stück Zitrone gewachst",
+      "1 Stück Zitrone, gewachst",
       "250 ml Oatly Bio Cuisine",
       "25 g Pilzbrühepaste",
-      "10 g Kürbiskerne geröstet",
+      "10 g Kürbiskerne, geröstet",
       "8 g Worcester Sauce",
-      "250 g Bio-Schweinefleischstreifen mariniert"
+      "250 g Bio-Schweinefleischstreifen mariniert",
+      "nach Geschmack Pfeffer",
+      "nach Geschmack Salz",
+      "1 Esslöffel Öl",
+      "100 ml Wasser",
+      "2 Esslöffel pflanzliche Margarine"
     ],
-    "instructions": [],
+    "instructions": [
+      {
+        "title": "Schritt 1",
+        "text": "Erhitze reichlich Wasser im Wasserkocher. Zitrone in 6 Spalten schneiden. Zwiebel grob würfeln. Portobello in 0,5 cm Scheiben schneiden. Champignons halbieren oder vierteln. Petersilien- und Thymianblätter getrennt voneinander grob hacken.",
+        "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-1.jpg"
+      },
+      {
+        "title": "Schritt 2",
+        "text": "In einen großen Topf ca. 2 l heißes Wasser* füllen, 1 EL [1,5 EL | 2 EL] Salz* hinzufügen und aufkochen lassen. Pasta hinzugeben und ca. 11 Min. bissfest garen. Pasta nach der Garzeit durch ein Sieb abgießen und dabei 100 ml [150 ml | 200 ml] Kochwasser auffangen. Pasta zurück in den Topf geben und mit 1 EL [1,5 EL | 2 EL] Margarine* verrühren, ggf. warmhalten.",
+        "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-2.jpg"
+      },
+      {
+        "title": "Schritt 3",
+        "text": "In einer großen Pfanne ohne Fettzugabe Kürbiskerne und Chili-Mix (Achtung: scharf!) 2 – 3 Min. rösten, bis sie bräunen. Herausnehmen und beiseite stellen.",
+        "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-3.jpg"
+      },
+      {
+        "title": "Schritt 4",
+        "text": "Große Pfanne auswischen, 1 EL [1,5 EL | 2 EL] Öl* und 1 EL [1,5 EL | 2 EL] Margarine* erhitzen. Zwiebel, Portobello und Champignons darin 4 – 6 Min. kräftig anbraten. Knoblauch hineinpressen. Thymian und die Hälfte der Petersilie in die Pfanne geben und alles 2 – 3 Min. mitbraten.",
+        "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-4.jpg"
+      },
+      {
+        "title": "Schritt 5",
+        "text": "Pfanneninhalt mit abgenommenem Kochwasser, Hafer Cuisine, Pilz-Brühe-Paste, Senf, Saft von 1 [2 | 2] Zitronenspalte, 0,25 TL [0,25 TL | 0,5 TL] Salz* verrühren und weitere 2 – 3 Min. köcheln lassen.",
+        "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-5.jpg"
+      },
+      {
+        "title": "Schritt 6",
+        "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Schweinestreifen darin 4 – 6 Min. anbraten, bis das Fleisch innen nicht mehr rosa ist. Fusilli auf tiefe Teller verteilen, Pilz-Stroganoff daneben anrichten und mit Kürbis-Chili Topping, restlicher Petersilie und Zitronenspalten garnieren.",
+        "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-step-6.jpg"
+      }
+    ],
     "categories": [
       "schnell"
     ],
     "sourceProvider": "HelloFresh",
     "sourceCollection": "proteinreiche-rezepte",
-    "needsDetailImport": true,
+    "needsDetailImport": false,
     "needsNutritionImport": false,
     "servings": 2,
     "nutritionPerServing": {
@@ -2724,7 +3010,8 @@
       "Schnell: 25 Minuten <= 30.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, schwein, schweine, schweinefleisch)."
     ],
-    "classificationNeedsReview": false
+    "classificationNeedsReview": false,
+    "importedAt": "2026-06-22T13:15:46.076Z"
   },
   {
     "id": "putenschnitzel-mit-currydip",
@@ -2733,21 +3020,67 @@
     "kcal": 628,
     "protein": 46.1,
     "durationMinutes": 30,
-    "imageUrl": "",
+    "imageUrl": "/images/hellofresh/putenschnitzel-mit-currydip-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/putenschnitzel-mit-currydip-69c257fcd795c2c9e4ffd97e",
     "tags": [
       "schnell",
       "low cal"
     ],
-    "ingredients": [],
-    "instructions": [],
+    "ingredients": [
+      "250 g Putenbrust",
+      "600 g vorw. festk. Kartoffeln",
+      "2 Stück Karotte",
+      "10 g Dill",
+      "150 g Naturjoghurt",
+      "68 ml Mayonnaise",
+      "50 g Pankomehl",
+      "2 g Gewürzmischung „Hello Paprika“",
+      "4 g Gewürzmischung „Hello Curry“",
+      "nach Geschmack Salz",
+      "nach Geschmack Pfeffer",
+      "25 g Mehl",
+      "3 Esslöffel Öl",
+      "1 Esslöffel Honig"
+    ],
+    "instructions": [
+      {
+        "title": "Schritt 1",
+        "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Kartoffeln nach Belieben schälen und vierteln. Kartoffeln auf einem mit Backpapier belegten Backblech verteilen, mit 1 EL [1,5 EL | 2 EL] Öl* und etwas Salz* vermengen und 25 – 30 Min. goldbraun backen.",
+        "imageUrl": "/images/hellofresh/putenschnitzel-mit-currydip-step-1.jpg"
+      },
+      {
+        "title": "Schritt 2",
+        "text": "Putenbrust etwas flacher klopfen. tiefe Teller vorbereiten: Auf dem 1. Teller 25 g Mehl* verteilen. Auf dem 2. Teller „Hello Paprika“ und die Hälfte der Mayonnaise miteinander vermengen. Auf den 3. Teller das Pankomehl geben.",
+        "imageUrl": "/images/hellofresh/putenschnitzel-mit-currydip-step-2.jpg"
+      },
+      {
+        "title": "Schritt 3",
+        "text": "Putenbrust zuerst im Mehl* wenden, sodass diese mit dem Mehl* bestäubt sind. Dann gründlich mit der Mayonnaise vermengen, sodass die Putenbrust gut damit benetzt sind. Zuletzt rundherum mit Pankomehl panieren (dieses gut andrücken).",
+        "imageUrl": "/images/hellofresh/putenschnitzel-mit-currydip-step-3.jpg"
+      },
+      {
+        "title": "Schritt 4",
+        "text": "In einer großen Pfanne 2 EL [3 EL | 4 EL] Öl* erhitzen und panierte Putenbrust 1 – 2 Min. je Seite goldbraun braten. Danach neben die Kartoffeln auf das Backblech legen und 12 – 14 Min. backen, bis das Fleisch innen nicht mehr rosa ist.",
+        "imageUrl": "/images/hellofresh/putenschnitzel-mit-currydip-step-4.jpg"
+      },
+      {
+        "title": "Schritt 5",
+        "text": "Dill fein hacken. In einer großen Schüssel 1 EL [1,5 EL | 2 EL] Honig*, gehackten Dill und die Hälfte vom Joghurt miteinander vermengen. Karotten schälen und in die große Schüssel raspeln. Alles gut vermengen und mit Salz* und Pfeffer* abschmecken. In einer kleinen Schüssel restlichen Joghurt, restliche Mayonnaise und „Hello Curry“ miteinander verrühren und mit Salz* und Pfeffer* abschmecken.",
+        "imageUrl": "/images/hellofresh/putenschnitzel-mit-currydip-step-5.jpg"
+      },
+      {
+        "title": "Schritt 6",
+        "text": "Nach dem Ende der Backzeit Kartoffeln und Putenschnitzel auf Tellern anrichten. Salat und Dip dazureichen und genießen.",
+        "imageUrl": "/images/hellofresh/putenschnitzel-mit-currydip-step-6.jpg"
+      }
+    ],
     "categories": [
       "schnell",
       "low-cal"
     ],
     "sourceProvider": "HelloFresh",
     "sourceCollection": "proteinreiche-rezepte",
-    "needsDetailImport": true,
+    "needsDetailImport": false,
     "needsNutritionImport": false,
     "servings": 2,
     "nutritionPerServing": {
@@ -2759,9 +3092,10 @@
     "classificationReasons": [
       "Schnell: 30 Minuten <= 30.",
       "Low Cal: 628 kcal <= 650.",
-      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (pute, schnitzel)."
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (pute, putenbrust)."
     ],
-    "classificationNeedsReview": false
+    "classificationNeedsReview": false,
+    "importedAt": "2026-06-22T13:15:50.358Z"
   },
   {
     "id": "reisbowl-mit-pulled-chicken-hoisin",
@@ -3386,21 +3720,65 @@
     "kcal": 475,
     "protein": 43.8,
     "durationMinutes": 15,
-    "imageUrl": "",
+    "imageUrl": "/images/hellofresh/seelachs-auf-sahnigem-linsengemuse-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/seelachs-auf-sahnigem-linsengemuse-69c25804814691069108fd16",
     "tags": [
       "schnell",
       "low cal"
     ],
-    "ingredients": [],
-    "instructions": [],
+    "ingredients": [
+      "250 g Seelachs ohne Haut",
+      "390 g braune Linsen",
+      "250 g Brokkoli",
+      "2 Stück Knoblauchzehe",
+      "4 g Knoblauch-Kräuter Mix",
+      "15 ml Basilikumpaste",
+      "20 g Hartkäse ital. Art, gerieben",
+      "75 g Kochsahne leicht",
+      "nach Geschmack Olivenöl",
+      "nach Geschmack Salz",
+      "nach Geschmack Pfeffer",
+      "50 ml Wasser"
+    ],
+    "instructions": [
+      {
+        "title": "Schritt 1",
+        "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Brokkoli in kleine Röschen teilen. Brokkoli in einer großen Schüssel mit etwas Olivenöl*, Salz* und Pfeffer* würzen. Knoblauch dazupressen und vermengen.",
+        "imageUrl": "/images/hellofresh/seelachs-auf-sahnigem-linsengemuse-step-1.jpg"
+      },
+      {
+        "title": "Schritt 2",
+        "text": "Brokkoli auf einem mit Backpapier belegten Backblech gleichmäßig verteilen. Im Ofen 12 – 15 Min. rösten, bis der Brokkoli leicht gebräunt und weich ist.",
+        "imageUrl": "/images/hellofresh/seelachs-auf-sahnigem-linsengemuse-step-2.jpg"
+      },
+      {
+        "title": "Schritt 3",
+        "text": "Fisch salzen* und pfeffern*. Nach 2 – 3 Min. Fisch ebenfalls auf das Backblech geben und zusammen weiterrösten, bis der Fisch gar und der Brokkoli leicht gebräunt sind.",
+        "imageUrl": "/images/hellofresh/seelachs-auf-sahnigem-linsengemuse-step-3.jpg"
+      },
+      {
+        "title": "Schritt 4",
+        "text": "In einer großen Pfanne Linsen, die Hälfte [drei Viertel | gesamte] Kochsahne, Basilikumpaste, Hartkäse und Knoblauch-Kräuter-Mix vermengen und 3 – 4 Min. durchwärmen lassen.",
+        "imageUrl": "/images/hellofresh/seelachs-auf-sahnigem-linsengemuse-step-4.jpg"
+      },
+      {
+        "title": "Schritt 5",
+        "text": "Linsenpfanne mit Salz* und Pfeffer* abschmecken.",
+        "imageUrl": "/images/hellofresh/seelachs-auf-sahnigem-linsengemuse-step-5.jpg"
+      },
+      {
+        "title": "Schritt 6",
+        "text": "Linsen auf tiefe Teller verteilen. Seelachs darauf anrichten und Brokkoli daneben servieren.",
+        "imageUrl": "/images/hellofresh/seelachs-auf-sahnigem-linsengemuse-step-6.jpg"
+      }
+    ],
     "categories": [
       "schnell",
       "low-cal"
     ],
     "sourceProvider": "HelloFresh",
     "sourceCollection": "proteinreiche-rezepte",
-    "needsDetailImport": true,
+    "needsDetailImport": false,
     "needsNutritionImport": false,
     "servings": 2,
     "nutritionPerServing": {
@@ -3414,7 +3792,8 @@
       "Low Cal: 475 kcal <= 650.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
     ],
-    "classificationNeedsReview": false
+    "classificationNeedsReview": false,
+    "importedAt": "2026-06-22T13:15:51.520Z"
   },
   {
     "id": "sloppy-joe-burger-mit-rinderhackfleischsosse",

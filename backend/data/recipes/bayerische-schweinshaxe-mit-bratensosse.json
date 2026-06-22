@@ -5,7 +5,7 @@
   "kcal": 1414,
   "protein": 113.7,
   "durationMinutes": 30,
-  "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R10_W37_DE_PM24846-12_Main_high-292cd557.jpeg",
+  "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/bayerische-schweinshaxe-mit-bratensosse-69d4c4d9defeabaeea84f11f",
   "tags": [
     "schnell",
@@ -35,32 +35,32 @@
     {
       "title": "Schritt 1",
       "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Erhitze reichlich Wasser im Wasserkocher. Grillhaxe aus der Folie nehmen und mitsamt der Flüssigkeit in eine Auflaufform geben und im Ofen 30 – 35 Min. garen.",
-      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-f96e1200.jpg"
+      "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-1.jpg"
     },
     {
       "title": "Schritt 2",
       "text": "In einen großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen. Kartoffeln schälen und in 2 cm Würfel schneiden. Kartoffeln in den großen Topf geben und 12 – 14 Min. weich garen. Danach durch ein Sieb abgießen.",
-      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-0fbc1410.jpg"
+      "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-2.jpg"
     },
     {
       "title": "Schritt 3",
       "text": "Kräuter fein hacken. Gurken in feine Scheiben schneiden oder hobeln. In einer großen Schüssel saure Sahne, süßen Senf, drei Viertel der Kräuter, 1 TL [1,5 TL | 2 TL] Essig*, 1 TL [1,5 TL | 2 TL] Zucker*, Salz* und Pfeffer* zu einem Dressing vermengen. Gurke hinzugeben und vermengen.",
-      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-4105f720.jpg"
+      "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-3.jpg"
     },
     {
       "title": "Schritt 4",
       "text": "Schalotten fein würfeln. In einer kleinen Schüssel Maisstärke mit 50 ml [75 ml | 100 ml] kaltem Wasser* glatt rühren Kartoffeln nach der Garzeit zusammen mit 100 ml [150 ml | 200 ml] Milch*, 2 EL [3 EL | 4 EL] Butter*, „Hello Muskat“, Salz* und Pfeffer* zurück in den großen Topf geben und mithilfe eines Kartoffelstampfers zu einem Stampf verarbeiten. Ggfs. warm halten.",
-      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-c8cbef30.jpg"
+      "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-4.jpg"
     },
     {
       "title": "Schritt 5",
       "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* über mittlerer Temperatur erhitzen. Schalotten darin 4 – 10 Min. glasig anschwitzen. Schweinshaxe nach der Garzeit aus der Auflaufform nehmen und kurz ruhen lassen. Pfanneninhalt mit der restlichen Flüssigkeit aus der Auflaufform ablöschen und aufkochen lassen. Maisstärke-Mischung hinzugeben und 1 Min. köcheln lassen, bis die Soße eindickt. Mit Salz* und Pfeffer* abschmecken.",
-      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-2d7dc440.jpg"
+      "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-5.jpg"
     },
     {
       "title": "Schritt 6",
       "text": "Kartoffelstampf auf Tellern anrichten und die Soße darum verteilen. Schweinshaxe neben dem Stampf anrichten und Gurkensalat separat servieren. Kartoffelstampf mit restlichen Kräutern toppen.",
-      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-0a29d750.jpeg"
+      "imageUrl": "/images/hellofresh/bayerische-schweinshaxe-mit-bratensosse-step-6.jpg"
     }
   ],
   "categories": [
@@ -70,7 +70,7 @@
   ],
   "sourceProvider": "HelloFresh",
   "sourceCollection": "proteinreiche-rezepte",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "servings": 2,
   "nutritionPerServing": {
@@ -85,5 +85,5 @@
     "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter, milch, sahne)."
   ],
   "classificationNeedsReview": false,
-  "importedAt": "2026-06-22T12:30:45.618Z"
+  "importedAt": "2026-06-22T13:15:19.549Z"
 }

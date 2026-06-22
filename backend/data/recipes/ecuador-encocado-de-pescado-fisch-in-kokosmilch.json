@@ -5,19 +5,68 @@
   "kcal": 709,
   "protein": 34.8,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/ecuador-encocado-de-pescado-fisch-in-kokosmilch-69c258088c3045e676b3688f",
   "tags": [
     "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "1 Stück Orange",
+    "1 Stück Zitrone, gewachst",
+    "2 g Gewürzmischung „Hello Kokos Curry“",
+    "2 g Gewürzmischung „Hello Curry“",
+    "150 g Basmatireis",
+    "1 Stück Tomate",
+    "1 Stück Paprika multicolor",
+    "1 Stück Zwiebel",
+    "1 Stück Knoblauchzehe",
+    "180 ml Kokosmilch",
+    "1 Stück Frühlingszwiebel",
+    "2 g milder Chili-Mix",
+    "250 g Seelachs ohne Haut",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Esslöffel Öl",
+    "300 ml Wasser"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Orange heiß waschen und 1 TL [1,5 TL | 2 TL] der Schale fein abreiben. Orange halbieren, eine dünne Scheibe für die Deko abschneiden und halbieren. Dann die Hälften auspressen. Zitrone halbieren und eine Hälfte auspressen. In einer großen Schüssel „Hello Kokos Curry“, „Hello Curry“, Orangen- und Zitronensaft verrühren und salzen*. Fischfilets in 4 cm Stücke schneiden, in die Schüssel geben und vorsichtig mit der Marinade vermengen.",
+      "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einen kleinen Topf mit Deckel 300 ml [450 ml | 600 ml] heißes Wasser* füllen. 0,25 TL [0,5 TL | 0,5 TL] Salz* dazugeben und aufkochen lassen. Reis zugeben und bei niedriger Hitze 10 Min. abgedeckt köcheln lassen. Danach vom Herd nehmen und abgedeckt 10 Min. ziehen lassen.",
+      "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Paprika halbieren, entkernen und in 2 cm Würfel schneiden. Tomate in 2 cm Würfel schneiden. Zwiebel halbieren und in feine Streifen schneiden. Knoblauch fein hacken.",
+      "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einem großen Topf mit Deckel 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Zwiebel, Paprika. Knoblauch und Tomate 4 – 5 Min. anschwitzen. Mit Kokosmilch ablöschen und 2 Min. einköcheln lassen. Fisch mitsamt der Marinade dazugeben und abgedeckt 2 – 3 Min. köcheln lassen, bis der Fisch innen nicht mehr glasig ist. Mit Salz*, Pfeffer* und eventuell Zitronensaft abschmecken.",
+      "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Frühlingszwiebel in feine Ringe schneiden.",
+      "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Wenn der Reis gar ist, Orangenabrieb unterrühren und Reis auf tiefe Teller verteilen. Fischcurry daneben anrichten. Mit mildem Chili-Mix (Achtung: scharf!) und Frühlingszwiebelringen bestreuen und mit Orangenscheibe garnieren. Buen Provecho!",
+      "imageUrl": "/images/hellofresh/ecuador-encocado-de-pescado-fisch-in-kokosmilch-step-6.jpg"
+    }
+  ],
   "categories": [
     "schnell"
   ],
   "sourceProvider": "HelloFresh",
   "sourceCollection": "proteinreiche-rezepte",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "servings": 2,
   "nutritionPerServing": {
@@ -28,7 +77,8 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 25 Minuten <= 30.",
-    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fisch, lachs, seelachs)."
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
   ],
-  "classificationNeedsReview": false
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-22T13:15:23.832Z"
 }
