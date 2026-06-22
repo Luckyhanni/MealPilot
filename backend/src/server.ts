@@ -10,6 +10,10 @@ import {
   resolveIngredientPrice,
   type ResolvedPrice,
 } from "./ingredientPrices.js";
+import {
+  applyRecipeClassification,
+  type DietaryType,
+} from "./recipeClassification.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -60,6 +64,9 @@ type Recipe = {
   sourceUrl?: string;
   tags: string[];
   categories?: string[];
+  dietaryType?: DietaryType;
+  classificationReasons?: string[];
+  classificationNeedsReview?: boolean;
   ingredients: string[];
   instructions?: RecipeStep[];
   estimatedCost?: number;
@@ -217,6 +224,13 @@ async function readJson<T>(file: string, fallback: T): Promise<T> {
 }
 
 async function writeJson(file: string, data: unknown) {
+  if (file === "recipes.json" && Array.isArray(data)) {
+    await writeStore(
+      file,
+      data.map((recipe) => applyRecipeClassification(recipe as Recipe)),
+    );
+    return;
+  }
   await writeStore(file, data);
 }
 
@@ -659,7 +673,11 @@ function getRecipeNutritionPerServing(recipe: Recipe) {
 function enrichRecipe(recipe: Recipe): Recipe {
   const price = estimateRecipeCost(recipe);
   const nutritionPerServing = getRecipeNutritionPerServing(recipe);
-  return { ...recipe, nutritionPerServing, ...price };
+  return {
+    ...applyRecipeClassification({ ...recipe, nutritionPerServing }),
+    nutritionPerServing,
+    ...price,
+  };
 }
 
 function enrichPlan(plan: WeekPlan): WeekPlan {
@@ -2210,7 +2228,7 @@ async function importHelloFreshData(recipe: Recipe) {
   }
 
   next.importedAt = new Date().toISOString();
-  return normalizeRecipeOverrides(next);
+  return applyRecipeClassification(normalizeRecipeOverrides(next));
 }
 
 app.get("/api/health", (_req, res) => res.json({ ok: true }));

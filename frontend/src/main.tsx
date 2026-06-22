@@ -52,6 +52,9 @@ type Recipe = {
   sourceUrl?: string;
   tags: string[];
   categories?: string[];
+  dietaryType?: "omnivore" | "vegetarian" | "vegan" | "needs-review";
+  classificationReasons?: string[];
+  classificationNeedsReview?: boolean;
   ingredients: string[];
   instructions?: RecipeStep[];
   estimatedCost?: number;
@@ -265,17 +268,134 @@ function hashString(value: string): number {
   return hash >>> 0;
 }
 
-function normalizedRecipeText(recipe: Recipe): string {
-  return [recipe.name, recipe.tier, ...(recipe.tags || []), ...(recipe.ingredients || [])]
-    .join(" ")
-    .toLowerCase();
-}
-
 function getRecipeNutritionPerServing(recipe: Recipe) {
   return {
     kcal: recipe.nutritionPerServing?.kcal ?? recipe.kcal,
     protein: recipe.nutritionPerServing?.protein ?? recipe.protein,
   };
+}
+
+const fallbackMeatOrFishTerms = [
+  "haehnchen",
+  "chicken",
+  "pute",
+  "turkey",
+  "rind",
+  "beef",
+  "steak",
+  "rinderhack",
+  "hackfleisch",
+  "hack",
+  "schwein",
+  "pork",
+  "speck",
+  "bacon",
+  "wurst",
+  "salami",
+  "chorizo",
+  "fleisch",
+  "fleischbaellchen",
+  "schnitzel",
+  "lachs",
+  "salmon",
+  "thunfisch",
+  "tuna",
+  "fisch",
+  "seelachs",
+  "garnele",
+  "garnelen",
+  "shrimp",
+  "prawns",
+  "meeresfruechte",
+];
+
+const fallbackAnimalProductTerms = [
+  ...fallbackMeatOrFishTerms,
+  "kaese",
+  "gouda",
+  "mozzarella",
+  "parmesan",
+  "feta",
+  "hirtenkaese",
+  "grillkaese",
+  "hartkaese",
+  "ricotta",
+  "cheddar",
+  "milch",
+  "milk",
+  "sahne",
+  "cream",
+  "creme",
+  "schmand",
+  "joghurt",
+  "yogurt",
+  "quark",
+  "skyr",
+  "butter",
+  "ei",
+  "eier",
+  "egg",
+  "honig",
+  "honey",
+  "huehnerbruehe",
+  "rinderbruehe",
+];
+
+function normalizeDiscoveryText(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function recipeDiscoveryText(recipe: Recipe): string {
+  return normalizeDiscoveryText(
+    [recipe.name, recipe.tier, ...(recipe.tags || []), ...(recipe.ingredients || [])].join(" "),
+  );
+}
+
+function discoveryTextHasTerm(text: string, terms: string[]): boolean {
+  const tokens = text.match(/[a-z0-9]+/g) || [];
+  return terms.some((term) =>
+    tokens.some((token) => {
+      if (token === term) return true;
+      if (term.length <= 3) return false;
+      if (token.startsWith(term)) return true;
+      return term.length >= 5 && token.includes(term);
+    }),
+  );
+}
+
+function fallbackRecipeMatchesDiscoveryCategory(
+  recipe: Recipe,
+  categoryKey: DailyDiscoveryCategoryKey,
+): boolean {
+  const nutrition = getRecipeNutritionPerServing(recipe);
+  if (categoryKey === "fast") return recipe.durationMinutes <= 30;
+  if (categoryKey === "high-protein") {
+    const proteinDensity =
+      nutrition.kcal > 0 ? (nutrition.protein / nutrition.kcal) * 100 : 0;
+    return nutrition.protein >= 35 || (nutrition.protein >= 25 && proteinDensity >= 4.5);
+  }
+  if (categoryKey === "low-cal") return nutrition.kcal > 0 && nutrition.kcal <= 650;
+
+  const text = recipeDiscoveryText(recipe);
+  const hasIngredients = Array.isArray(recipe.ingredients) && recipe.ingredients.length > 0;
+  if (!hasIngredients) return false;
+  if (categoryKey === "vegetarian") {
+    return !discoveryTextHasTerm(text, fallbackMeatOrFishTerms);
+  }
+  if (categoryKey === "vegan") {
+    return !discoveryTextHasTerm(text, fallbackAnimalProductTerms);
+  }
+  return false;
 }
 
 function recipeCategoryForDiscovery(categoryKey: DailyDiscoveryCategoryKey): RecipeCategory | null {
@@ -308,37 +428,7 @@ function getDailyCategoryRecipes(
       return recipe.categories.includes(recipeCategory);
     }
 
-    const text = normalizedRecipeText(recipe);
-    const nutrition = getRecipeNutritionPerServing(recipe);
-    if (categoryKey === "fast") {
-      return recipe.durationMinutes <= 30 || text.includes("schnell");
-    }
-    if (categoryKey === "high-protein") {
-      return (
-        nutrition.protein >= 30 ||
-        text.includes("high protein") ||
-        text.includes("protein")
-      );
-    }
-    if (categoryKey === "low-cal") {
-      return (
-        nutrition.kcal <= 650 ||
-        text.includes("low cal") ||
-        text.includes("kalorienarm")
-      );
-    }
-    const meatTerms =
-      /hähnchen|haehnchen|chicken|rind|beef|hack|schwein|pork|speck|bacon|wurst|salami|pute|turkey|lachs|salmon|thunfisch|tuna|fisch|shrimp|garnele|garnelen|meat|fleisch/;
-    if (categoryKey === "vegan") {
-      const animalTerms =
-        /hähnchen|haehnchen|chicken|rind|beef|hack|schwein|pork|speck|bacon|wurst|salami|pute|turkey|lachs|salmon|thunfisch|tuna|fisch|shrimp|garnele|garnelen|meat|fleisch|käse|kaese|cheese|milch|milk|sahne|cream|butter|joghurt|yogurt|quark|ricotta|mozzarella|parmesan|feta|ei|egg|eier|honig|honey/;
-      return text.includes("vegan") || !animalTerms.test(text);
-    }
-    return (
-      text.includes("vegetarisch") ||
-      text.includes("vegetarian") ||
-      !meatTerms.test(text)
-    );
+    return fallbackRecipeMatchesDiscoveryCategory(recipe, categoryKey);
   });
 
   return filtered;

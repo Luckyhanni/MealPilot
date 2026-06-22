@@ -72,7 +72,14 @@
       "protein": 38
     },
     "nutritionSource": "recipe-total",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 38 g Protein, 4.7 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack).",
+      "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+    ],
+    "classificationNeedsReview": true
   },
   {
     "id": "koreanisches-bbq-mit-bulgogi-steak",
@@ -147,7 +154,13 @@
       "protein": 52
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 52 g Protein, 5.3 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, rind, schwein, steak)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "kaesespaetzle-mit-bacon-und-wirsing",
@@ -220,7 +233,12 @@
       "protein": 34
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon, rind)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "alpine-kaesespaetzlepfanne-mit-birne-und-bacon",
@@ -292,7 +310,12 @@
       "protein": 34
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "korean-fried-chicken-in-gochujang-marinade",
@@ -374,7 +397,13 @@
       "protein": 55
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 55 g Protein, 6.3 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (chicken, haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "fish-and-chips-seelachs-burger-mit-gruenem-salat",
@@ -449,7 +478,13 @@
       "protein": 47
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 47 g Protein, 5.2 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fisch, lachs, seelachs)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "glasierte-koreanische-fleischbaellchen",
@@ -524,7 +559,13 @@
       "protein": 56
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 56 g Protein, 5.7 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, fleischbaellchen, hack, hackfleisch)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "reisbowl-mit-pulled-chicken-hoisin",
@@ -603,7 +644,14 @@
       "protein": 55
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 30 Minuten <= 30.",
+      "High Protein: 55 g Protein, 6.1 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (chicken, haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "paprika-haehnchenbrust-mit-kohlrabi-kartoffel-stampf",
@@ -681,7 +729,13 @@
       "protein": 55
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 55 g Protein, 6.7 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "schnitzel-mit-ofenkartoffeln",
@@ -757,7 +811,13 @@
       "protein": 50
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 50 g Protein, 4.7 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schnitzel, schwein, steak)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "sloppy-joe-burger-mit-rinderhackfleischsosse",
@@ -835,7 +895,13 @@
       "protein": 57
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 57 g Protein, 5.3 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "caesar-salad-mit-bacon-dazu-eine-limo",
@@ -913,7 +979,13 @@
       "protein": 42
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 42 g Protein, 4.6 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "teriyaki-burger-mit-bio-rindfleisch",
@@ -991,7 +1063,13 @@
       "protein": 57
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 57 g Protein, 5.0 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinderhack)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "knusprige-blumenkohl-nuggets",
@@ -1065,7 +1143,12 @@
       "protein": 22
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "vegetarian",
+    "classificationReasons": [
+      "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (honig, joghurt)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "haehnchen-unter-senfbroesel-haube",
@@ -1140,7 +1223,13 @@
       "protein": 48
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 48 g Protein, 5.3 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "pollo-asado-mit-kidneybohnen-mais-salat",
@@ -1213,7 +1302,14 @@
       "protein": 55
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 20 Minuten <= 30.",
+      "High Protein: 55 g Protein, 7.9 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "gnocchi-pfanne-mit-brokkoli",
@@ -1286,7 +1382,12 @@
       "protein": 30
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "vegetarian",
+    "classificationReasons": [
+      "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hartkaese, kaese, sahne)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "herzhafte-gnocchi-pfanne",
@@ -1360,7 +1461,12 @@
       "protein": 31
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "vegetarian",
+    "classificationReasons": [
+      "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, hartkaese, kaese, sahne)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "grillhaehnchen-burger-mit-kartoffelspalten",
@@ -1434,7 +1540,13 @@
       "protein": 60
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 60 g Protein, 5.6 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "american-bbq-paprika-haehnchenkeule",
@@ -1510,7 +1622,13 @@
       "protein": 48
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 48 g Protein, 5.0 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "wuerzig-feurige-grillkaese-tacos",
@@ -1587,7 +1705,13 @@
       "protein": 36
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "vegetarian",
+    "classificationReasons": [
+      "High Protein: 36 g Protein, 4.0 g/100 kcal.",
+      "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (grillkaese, kaese)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "honig-senf-garnelensalat-mit-avocado",
@@ -1653,7 +1777,15 @@
       "protein": 42
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 20 Minuten <= 30.",
+      "High Protein: 42 g Protein, 6.6 g/100 kcal.",
+      "Low Cal: 640 kcal <= 650.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "thueringer-bratwurst-sandwich",
@@ -1726,7 +1858,13 @@
       "protein": 55
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 55 g Protein, 5.0 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (wurst)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "frische-spaetzle-in-hackfleisch-bratensosse",
@@ -1802,7 +1940,13 @@
       "protein": 52
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 52 g Protein, 5.6 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "hackbaellchen-mit-bio-rinderhack-in-senfsosse",
@@ -1880,7 +2024,13 @@
       "protein": 52
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 52 g Protein, 5.6 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "saftiges-schweinefilet-mit-senfrahm",
@@ -1951,7 +2101,13 @@
       "protein": 54
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 54 g Protein, 5.0 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "schweinefilet-in-aprikosen-sosse",
@@ -2029,7 +2185,13 @@
       "protein": 50
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 50 g Protein, 5.3 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "tomatige-conchiglie-mit-rinderhackfleisch",
@@ -2104,7 +2266,13 @@
       "protein": 52
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 52 g Protein, 5.6 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "sloppy-joes-vom-nahen-osten",
@@ -2162,7 +2330,13 @@
       "protein": 38
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 38 g Protein, 4.9 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "haehnchen-mit-aprikosen-curry-sosse",
@@ -2240,7 +2414,13 @@
       "protein": 48
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 48 g Protein, 5.0 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "bio-haehnchenbrust-in-salbei-thymian-marinade",
@@ -2315,7 +2495,13 @@
       "protein": 55
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 55 g Protein, 6.7 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "frische-eierspaetzle-mit-bacon",
@@ -2387,7 +2573,12 @@
       "protein": 34
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "bio-rindfleisch-koefte-auf-goldenem-sultaninen-reis",
@@ -2468,7 +2659,14 @@
       "protein": 52
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 30 Minuten <= 30.",
+      "High Protein: 52 g Protein, 5.1 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinderhack)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "blt-wrap-mit-karamellisiertem-bacon",
@@ -2521,7 +2719,13 @@
       "protein": 47
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 47 g Protein, 4.5 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "mezze-rinderhackpfanne-auf-tomatenreis",
@@ -2599,7 +2803,14 @@
       "protein": 52
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 30 Minuten <= 30.",
+      "High Protein: 52 g Protein, 5.1 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "haehnchengeschnetzeltes-in-tomaten-sahne-sosse",
@@ -2672,7 +2883,13 @@
       "protein": 52
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 52 g Protein, 5.0 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "tokyo-grill-smoky-ribs-mit-teriyaki-glaze",
@@ -2685,7 +2902,8 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-663896f11a88dd466abaae30",
     "tags": [
       "asiatisch",
-      "high protein"
+      "high protein",
+      "vegetarisch"
     ],
     "ingredients": [
       "500 g Spareribs",
@@ -2740,7 +2958,8 @@
     ],
     "importedAt": "2026-05-29T10:36:07.855Z",
     "categories": [
-      "high-protein"
+      "high-protein",
+      "vegetarisch"
     ],
     "servings": 1,
     "nutritionPerServing": {
@@ -2748,7 +2967,14 @@
       "protein": 50
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "vegetarian",
+    "classificationReasons": [
+      "High Protein: 50 g Protein, 5.0 g/100 kcal.",
+      "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter).",
+      "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+    ],
+    "classificationNeedsReview": true
   },
   {
     "id": "haehnchenfilet-in-honig-zitronen-marinade",
@@ -2820,7 +3046,13 @@
       "protein": 55
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 55 g Protein, 6.7 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "bbq-burritos-mit-hackfleisch",
@@ -2876,7 +3108,13 @@
       "protein": 57
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 57 g Protein, 5.0 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "haehnchenschnitzel-mit-currydip",
@@ -2952,7 +3190,13 @@
       "protein": 55
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 55 g Protein, 6.3 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, schnitzel)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "haehnchenfilets-in-kraeuterpanade",
@@ -3028,7 +3272,13 @@
       "protein": 55
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 55 g Protein, 6.7 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "ueberbackene-haehnchenbrust-parmigiana",
@@ -3103,7 +3353,13 @@
       "protein": 58
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 58 g Protein, 6.8 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "flautas-knusprige-tortillarollen",
@@ -3181,7 +3437,13 @@
       "protein": 43
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "vegetarian",
+    "classificationReasons": [
+      "High Protein: 43 g Protein, 4.7 g/100 kcal.",
+      "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, sahne)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "schweinelachssteak-mit-bohnengemuese",
@@ -3252,7 +3514,13 @@
       "protein": 50
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 50 g Protein, 5.3 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, rind, schwein, steak)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "ricotta-tortellini-alla-panna",
@@ -3264,7 +3532,8 @@
     "imageUrl": "/images/hellofresh/ricotta-tortellini-alla-panna-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/ricotta-tortellini-alla-panna-65f8675e4690e3c09047109c",
     "tags": [
-      "gemischt"
+      "gemischt",
+      "vegetarisch"
     ],
     "ingredients": [
       "400 g frische Tortellini mit Ricottafüllung",
@@ -3313,14 +3582,21 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:11.502Z",
-    "categories": [],
+    "categories": [
+      "vegetarisch"
+    ],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 950,
       "protein": 34
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "vegetarian",
+    "classificationReasons": [
+      "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hartkaese, huehnerbruehe, kaese, ricotta, sahne)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "grillen-auf-griechisch-hirtenkaese-schiffchen",
@@ -3396,7 +3672,12 @@
       "protein": 34
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "vegetarian",
+    "classificationReasons": [
+      "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hirtenkaese, honig, joghurt, kaese)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "rinderhackbaellchen-mit-senf-fruehlingszwiebel-sosse",
@@ -3472,7 +3753,13 @@
       "protein": 52
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "High Protein: 52 g Protein, 5.6 g/100 kcal.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinderhack)."
+    ],
+    "classificationNeedsReview": false
   },
   {
     "id": "teriyaki-bio-haehnchenpfanne-mit-pak-choi",
@@ -3551,6 +3838,13 @@
       "protein": 13.3
     },
     "nutritionSource": "per-serving",
-    "nutritionNeedsReview": false
+    "nutritionNeedsReview": false,
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 30 Minuten <= 30.",
+      "Low Cal: 557 kcal <= 650.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
   }
 ]
