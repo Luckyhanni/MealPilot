@@ -100,6 +100,8 @@ function dedupeRecipeHistory(value: unknown): unknown {
       continue;
     }
 
+    // Keep only the newest existing entry for the same user, recipe and local day.
+    // This prevents opening the same recipe repeatedly from filling the recipe history.
     const key = `${normalizeHistoryUserId(item.userId)}:${recipeId}:${recipeHistoryDayKey(item.viewedAt)}`;
     if (seen.has(key)) continue;
 
