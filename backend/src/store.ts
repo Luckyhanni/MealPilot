@@ -78,7 +78,7 @@ function recipeHistoryDayKey(value: unknown): string {
 
 function safeHistoryTime(value: unknown): number {
   const time = new Date(String(value || "")).getTime();
-  return Number.isNaN(time) ? Number.NEGATIVE_INFINITY : time;
+  return Number.isFinite(time) ? time : Number.NEGATIVE_INFINITY;
 }
 
 function dedupeRecipeHistory(value: unknown): unknown {
