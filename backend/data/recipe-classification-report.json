@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T10:06:31.378Z",
+  "generatedAt": "2026-06-22T10:15:26.416Z",
   "thresholds": {
     "fastMaxMinutes": 30,
     "highProteinMinGrams": 35,
@@ -12,10 +12,10 @@
     "schnell": 6,
     "high-protein": 39,
     "low-cal": 2,
-    "vegetarisch": 8,
+    "vegetarisch": 7,
     "vegan": 0,
-    "omnivore": 40,
-    "vegetarian": 8,
+    "omnivore": 41,
+    "vegetarian": 7,
     "needsReview": 2
   },
   "recipes": [
@@ -1146,21 +1146,27 @@
       "protein": 50,
       "durationMinutes": 35,
       "categories": [
-        "high-protein",
-        "vegetarisch"
+        "high-protein"
       ],
-      "dietaryType": "vegetarian",
+      "dietaryType": "omnivore",
       "reasons": [
         "High Protein: 50 g Protein, 5.0 g/100 kcal.",
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter).",
-        "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (ribs, spareribs).",
+        "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
       ],
       "matches": {
-        "meatOrFish": [],
-        "animalProducts": [
-          "butter"
+        "meatOrFish": [
+          "ribs",
+          "spareribs"
         ],
-        "explicitVegetarian": [],
+        "animalProducts": [
+          "butter",
+          "ribs",
+          "spareribs"
+        ],
+        "explicitVegetarian": [
+          "vegetarisch"
+        ],
         "explicitVegan": [
           "vegan",
           "vegane"
@@ -1400,7 +1406,9 @@
           "ricotta",
           "sahne"
         ],
-        "explicitVegetarian": [],
+        "explicitVegetarian": [
+          "vegetarisch"
+        ],
         "explicitVegan": []
       },
       "needsReview": false

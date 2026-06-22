@@ -2902,8 +2902,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-663896f11a88dd466abaae30",
     "tags": [
       "asiatisch",
-      "high protein",
-      "vegetarisch"
+      "high protein"
     ],
     "ingredients": [
       "500 g Spareribs",
@@ -2958,8 +2957,7 @@
     ],
     "importedAt": "2026-05-29T10:36:07.855Z",
     "categories": [
-      "high-protein",
-      "vegetarisch"
+      "high-protein"
     ],
     "servings": 1,
     "nutritionPerServing": {
@@ -2968,11 +2966,11 @@
     },
     "nutritionSource": "per-serving",
     "nutritionNeedsReview": false,
-    "dietaryType": "vegetarian",
+    "dietaryType": "omnivore",
     "classificationReasons": [
       "High Protein: 50 g Protein, 5.0 g/100 kcal.",
-      "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter).",
-      "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (ribs, spareribs).",
+      "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
     ],
     "classificationNeedsReview": true
   },
