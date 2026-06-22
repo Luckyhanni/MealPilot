@@ -11,7 +11,7 @@
     "build": "tsc",
     "migrate": "tsx src/migrateLocalJsonToSupabase.ts",
     "audit:prices": "tsx scripts/auditIngredientPrices.ts",
-    "recipes:enrich:missing": "tsx scripts/enrichMissingRecipeDetails.ts"
+    "recipes:enrich:missing": "node ./node_modules/tsx/dist/cli.mjs scripts/enrichMissingRecipeDetails.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",
@@ -22,8 +22,8 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
-    "@types/node": "^20.11.30",
     "tsx": "^4.7.1",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "@types/node": "^20.11.30"
   }
 }
