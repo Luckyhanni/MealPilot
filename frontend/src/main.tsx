@@ -40,10 +40,18 @@ type Recipe = {
   tier: string;
   kcal: number;
   protein: number;
+  servings?: number;
+  nutritionPerServing?: {
+    kcal: number;
+    protein: number;
+  };
+  nutritionSource?: "per-serving" | "recipe-total" | "estimated" | "unknown";
+  nutritionNeedsReview?: boolean;
   durationMinutes: number;
   imageUrl: string;
   sourceUrl?: string;
   tags: string[];
+  categories?: string[];
   ingredients: string[];
   instructions?: RecipeStep[];
   estimatedCost?: number;
@@ -183,6 +191,7 @@ const tierFilters = [
 ];
 
 type DailyDiscoveryCategoryKey = "all" | "fast" | "high-protein" | "low-cal" | "vegetarian" | "vegan";
+type RecipeCategory = "schnell" | "high-protein" | "low-cal" | "vegetarisch" | "vegan";
 
 const dailyDiscoveryCategories: {
   key: DailyDiscoveryCategoryKey;
@@ -262,6 +271,22 @@ function normalizedRecipeText(recipe: Recipe): string {
     .toLowerCase();
 }
 
+function getRecipeNutritionPerServing(recipe: Recipe) {
+  return {
+    kcal: recipe.nutritionPerServing?.kcal ?? recipe.kcal,
+    protein: recipe.nutritionPerServing?.protein ?? recipe.protein,
+  };
+}
+
+function recipeCategoryForDiscovery(categoryKey: DailyDiscoveryCategoryKey): RecipeCategory | null {
+  if (categoryKey === "fast") return "schnell";
+  if (categoryKey === "high-protein") return "high-protein";
+  if (categoryKey === "low-cal") return "low-cal";
+  if (categoryKey === "vegetarian") return "vegetarisch";
+  if (categoryKey === "vegan") return "vegan";
+  return null;
+}
+
 function sortRecipesForDailyDiscovery(recipes: Recipe[]): Recipe[] {
   return [...recipes].sort(
     (a, b) =>
@@ -276,22 +301,28 @@ function getDailyCategoryRecipes(
 ): Recipe[] {
   const sortedRecipes = sortRecipesForDailyDiscovery(recipes);
   if (categoryKey === "all") return sortedRecipes;
+  const recipeCategory = recipeCategoryForDiscovery(categoryKey);
 
   const filtered = sortedRecipes.filter((recipe) => {
+    if (recipeCategory && Array.isArray(recipe.categories)) {
+      return recipe.categories.includes(recipeCategory);
+    }
+
     const text = normalizedRecipeText(recipe);
+    const nutrition = getRecipeNutritionPerServing(recipe);
     if (categoryKey === "fast") {
       return recipe.durationMinutes <= 30 || text.includes("schnell");
     }
     if (categoryKey === "high-protein") {
       return (
-        recipe.protein >= 30 ||
+        nutrition.protein >= 30 ||
         text.includes("high protein") ||
         text.includes("protein")
       );
     }
     if (categoryKey === "low-cal") {
       return (
-        recipe.kcal <= 550 ||
+        nutrition.kcal <= 650 ||
         text.includes("low cal") ||
         text.includes("kalorienarm")
       );
@@ -310,7 +341,7 @@ function getDailyCategoryRecipes(
     );
   });
 
-  return filtered.length ? filtered : sortedRecipes;
+  return filtered;
 }
 
 function getDailyOverrideStorageKey(
@@ -1918,7 +1949,7 @@ function RecipeMeta({
         />
         <span className="recipe-meta-copy">
           <strong>{kcal} kcal</strong>
-          {detailed && <small>Kalorien</small>}
+          {detailed && <small>pro Portion</small>}
         </span>
       </span>
       <span className="recipe-meta-item">
@@ -2044,6 +2075,7 @@ function DailyRecipeCard({
   recipe: Recipe;
   openRecipe: (recipe: Recipe) => void;
 }) {
+  const nutrition = getRecipeNutritionPerServing(recipe);
   return (
     <article className="daily-recipe-card">
       <div className="daily-recipe-image">
@@ -2060,8 +2092,8 @@ function DailyRecipeCard({
         <RecipeMeta
           detailed
           durationMinutes={recipe.durationMinutes}
-          kcal={recipe.kcal}
-          protein={recipe.protein}
+          kcal={nutrition.kcal}
+          protein={nutrition.protein}
         />
         <button
           className="daily-recipe-action"
@@ -2235,6 +2267,7 @@ function PlanMealCard({
   onOpen: () => void;
 }) {
   const recipe = slot.recipe;
+  const nutrition = getRecipeNutritionPerServing(recipe);
   return (
     <article className="plan-meal-card">
       <button type="button" className="plan-meal-image-button" onClick={onOpen}>
@@ -2251,12 +2284,12 @@ function PlanMealCard({
           />
           <PlanMealMetaItem
             icon={<img src="/assets/meal-meta-icons/calories-flame.svg" alt="" aria-hidden="true" />}
-            value={`${recipe.kcal} kcal`}
-            label="Kalorien"
+            value={`${nutrition.kcal} kcal`}
+            label="pro Portion"
           />
           <PlanMealMetaItem
             icon={<Dumbbell size={16} aria-hidden="true" />}
-            value={`${recipe.protein} g`}
+            value={`${nutrition.protein} g`}
             label="Protein"
           />
         </div>
@@ -2360,6 +2393,7 @@ function MealCard({
   moveMeal: (fromDay: string, fromMealIndex: 1 | 2, toDay: string, toMealIndex: 1 | 2) => void;
 }) {
   const r = slot.recipe;
+  const nutrition = getRecipeNutritionPerServing(r);
   const isDragging =
     draggingSlot?.day === slot.day && draggingSlot?.mealIndex === slot.mealIndex;
 
@@ -2404,8 +2438,8 @@ function MealCard({
           <RecipeMeta
             compact
             durationMinutes={r.durationMinutes}
-            kcal={r.kcal}
-            protein={r.protein}
+            kcal={nutrition.kcal}
+            protein={nutrition.protein}
           />
           <span className="price-pill">
             ≈ {formatEuro(r.estimatedCost)} für dich
@@ -2514,6 +2548,7 @@ function ChangeRecipeModal({
         <div className="recipe-picker-list">
           {filtered.map((recipe) => {
             const used = usedRecipeIds.has(recipe.id);
+            const nutrition = getRecipeNutritionPerServing(recipe);
             return (
               <article className={`recipe-picker-item ${used ? "used" : ""}`} key={recipe.id}>
                 <img src={recipe.imageUrl} alt={recipe.name} />
@@ -2523,8 +2558,8 @@ function ChangeRecipeModal({
                   <RecipeMeta
                     compact
                     durationMinutes={recipe.durationMinutes}
-                    kcal={recipe.kcal}
-                    protein={recipe.protein}
+                    kcal={nutrition.kcal}
+                    protein={nutrition.protein}
                   />
                   <p>≈ {formatEuro(recipe.estimatedCost)}</p>
                   {used && <small>Schon in dieser Woche eingeplant</small>}
@@ -2700,6 +2735,7 @@ function SingleDishView({
           <section className="recipes-list">
             {items.map((recipe) => {
               const tags = (recipe.tags || []).filter(Boolean).slice(0, 3);
+              const nutrition = getRecipeNutritionPerServing(recipe);
               return (
                 <article className="recipe-list-card" key={recipe.id}>
                   <div className="recipe-list-card-image">
@@ -2711,8 +2747,8 @@ function SingleDishView({
                     <RecipeMeta
                       compact
                       durationMinutes={recipe.durationMinutes}
-                      kcal={recipe.kcal}
-                      protein={recipe.protein}
+                      kcal={nutrition.kcal}
+                      protein={nutrition.protein}
                     />
                     {tags.length > 0 && (
                       <div className="recipe-list-card-tags">
@@ -3588,6 +3624,7 @@ function RecipeDetail({
   back: () => void;
   importRecipe: (recipe: Recipe) => void;
 }) {
+  const nutrition = getRecipeNutritionPerServing(recipe);
   return (
     <main className="recipe-detail-wrap">
       <section className="recipe-hero">
@@ -3599,8 +3636,8 @@ function RecipeDetail({
           <h1>{recipe.name}</h1>
           <RecipeMeta
             durationMinutes={recipe.durationMinutes}
-            kcal={recipe.kcal}
-            protein={recipe.protein}
+            kcal={nutrition.kcal}
+            protein={nutrition.protein}
           />
           <p className="recipe-tier-note">{recipe.tier}</p>
           <div className="recipe-actions">
@@ -3642,15 +3679,15 @@ function RecipeDetail({
           </ul>
         </article>
         <article className="nutrition-card">
-          <h2>Nährwerte</h2>
+          <h2>Nährwerte pro Portion</h2>
           <dl>
             <div>
               <dt>Kalorien</dt>
-              <dd>{recipe.kcal} kcal</dd>
+              <dd>{nutrition.kcal} kcal</dd>
             </div>
             <div>
               <dt>Protein</dt>
-              <dd>{recipe.protein} g</dd>
+              <dd>{nutrition.protein} g</dd>
             </div>
             <div>
               <dt>Dauer</dt>
@@ -3736,21 +3773,24 @@ function PrintView({ plan, back }: { plan: WeekPlan; back: () => void }) {
               {day.meals.length === 0 ? (
                 <div className="print-empty-meal">Kein Gericht geplant</div>
               ) : (
-                day.meals.map((slot) => (
-                  <div
-                    className="print-meal"
-                    key={`${day.day}-${slot.mealIndex}`}
-                  >
-                    <img src={slot.recipe.imageUrl} alt="" />
-                    <div>
-                      <h2>{slot.recipe.name}</h2>
-                      <p>
-                        {slot.recipe.kcal} kcal • {slot.recipe.protein} g
-                        Protein • {slot.recipe.durationMinutes} Min.
-                      </p>
+                day.meals.map((slot) => {
+                  const nutrition = getRecipeNutritionPerServing(slot.recipe);
+                  return (
+                    <div
+                      className="print-meal"
+                      key={`${day.day}-${slot.mealIndex}`}
+                    >
+                      <img src={slot.recipe.imageUrl} alt="" />
+                      <div>
+                        <h2>{slot.recipe.name}</h2>
+                        <p>
+                          {nutrition.kcal} kcal • {nutrition.protein} g
+                          Protein • {slot.recipe.durationMinutes} Min.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                ))
+                  );
+                })
               )}
               <div className="print-shake">
                 <span>🥤</span>

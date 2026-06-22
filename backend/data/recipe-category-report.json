@@ -1,0 +1,1649 @@
+{
+  "generatedAt": "2026-06-22T09:36:49.773Z",
+  "thresholds": {
+    "fastMaxMinutes": 30,
+    "highProteinMinGrams": 35,
+    "highProteinDensityMinPer100Kcal": 5,
+    "lowCalMaxKcal": 650
+  },
+  "summary": {
+    "totalRecipes": 48,
+    "schnell": 6,
+    "highProtein": 39,
+    "lowCal": 2,
+    "vegetarisch": 6,
+    "vegan": 0,
+    "withoutCategoryExceptAll": 4,
+    "needsReview": 1
+  },
+  "recipes": [
+    {
+      "id": "rigatoni-auflauf-mit-bio-rinderhack",
+      "name": "Rigatoni Auflauf mit Bio Rinderhack",
+      "kcal": 815,
+      "protein": 38,
+      "durationMinutes": 40,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 38 g Protein oder 4.7 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": true,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "rind",
+          "rinderbruehe"
+        ],
+        "animalProductMatches": [
+          "fleisch",
+          "gouda",
+          "hack",
+          "hackfleisch",
+          "kochsahne",
+          "mozzarella",
+          "rind",
+          "rinderbruehe",
+          "sahne"
+        ],
+        "proteinDensity": 4.66
+      },
+      "needsReview": true,
+      "reviewNotes": [
+        "Enthaelt vegetarischen Hinweis, aber auch Fleisch/Fisch. Der vegetarische Hinweis wurde nicht als Rezeptkategorie gewertet."
+      ]
+    },
+    {
+      "id": "koreanisches-bbq-mit-bulgogi-steak",
+      "name": "Koreanisches BBQ mit Bulgogi Steak",
+      "kcal": 990,
+      "protein": 52,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 52 g Protein oder 5.3 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "lachs",
+          "rind",
+          "schwein",
+          "steak"
+        ],
+        "animalProductMatches": [
+          "lachs",
+          "mayo",
+          "mayonnaise",
+          "rind",
+          "schwein",
+          "steak"
+        ],
+        "proteinDensity": 5.25
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "kaesespaetzle-mit-bacon-und-wirsing",
+      "name": "Käsespätzle mit Bacon und Wirsing",
+      "kcal": 950,
+      "protein": 34,
+      "durationMinutes": 35,
+      "categories": [],
+      "reasons": [],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "bacon",
+          "rind",
+          "rinderbruehe"
+        ],
+        "animalProductMatches": [
+          "bacon",
+          "eier",
+          "eierspaetzle",
+          "gouda",
+          "kaese",
+          "kochsahne",
+          "rind",
+          "rinderbruehe",
+          "sahne"
+        ],
+        "proteinDensity": 3.58
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "alpine-kaesespaetzlepfanne-mit-birne-und-bacon",
+      "name": "Alpine Käsespätzlepfanne mit Birne und Bacon",
+      "kcal": 950,
+      "protein": 34,
+      "durationMinutes": 35,
+      "categories": [],
+      "reasons": [],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "bacon"
+        ],
+        "animalProductMatches": [
+          "bacon",
+          "eier",
+          "eierspaetzle",
+          "gouda",
+          "hartkaese",
+          "kaese",
+          "kochsahne",
+          "sahne"
+        ],
+        "proteinDensity": 3.58
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "korean-fried-chicken-in-gochujang-marinade",
+      "name": "Korean Fried Chicken in Gochujang Marinade",
+      "kcal": 880,
+      "protein": 55,
+      "durationMinutes": 40,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 55 g Protein oder 6.3 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "chicken",
+          "haehnchen"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "chicken",
+          "haehnchen",
+          "honig",
+          "mayo",
+          "mayonnaise"
+        ],
+        "proteinDensity": 6.25
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "fish-and-chips-seelachs-burger-mit-gruenem-salat",
+      "name": "Fish and Chips Seelachs Burger mit grünem Salat",
+      "kcal": 900,
+      "protein": 47,
+      "durationMinutes": 40,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 47 g Protein oder 5.2 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fisch",
+          "lachs",
+          "seelachs"
+        ],
+        "animalProductMatches": [
+          "brioche",
+          "butter",
+          "buttermilch",
+          "fisch",
+          "joghurt",
+          "lachs",
+          "mayo",
+          "mayonnaise",
+          "milch",
+          "naturjoghurt",
+          "seelachs"
+        ],
+        "proteinDensity": 5.22
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "glasierte-koreanische-fleischbaellchen",
+      "name": "Glasierte Koreanische Fleischbällchen",
+      "kcal": 990,
+      "protein": 56,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 56 g Protein oder 5.7 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch"
+        ],
+        "animalProductMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "honig"
+        ],
+        "proteinDensity": 5.66
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "reisbowl-mit-pulled-chicken-hoisin",
+      "name": "Reisbowl mit Pulled Chicken Hoisin",
+      "kcal": 900,
+      "protein": 55,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell",
+        "high-protein"
+      ],
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "High Protein: 55 g Protein oder 6.1 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "chicken",
+          "haehnchen",
+          "huehnerbruehe"
+        ],
+        "animalProductMatches": [
+          "chicken",
+          "haehnchen",
+          "honig",
+          "huehnerbruehe"
+        ],
+        "proteinDensity": 6.11
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "paprika-haehnchenbrust-mit-kohlrabi-kartoffel-stampf",
+      "name": "Paprika Hähnchenbrust mit Kohlrabi-Kartoffel-Stampf",
+      "kcal": 820,
+      "protein": 55,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 55 g Protein oder 6.7 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen",
+          "huehnerbruehe"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "creme",
+          "haehnchen",
+          "huehnerbruehe",
+          "milch"
+        ],
+        "proteinDensity": 6.71
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "schnitzel-mit-ofenkartoffeln",
+      "name": "Schnitzel mit Ofenkartoffeln",
+      "kcal": 1070,
+      "protein": 50,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 50 g Protein oder 4.7 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "lachs",
+          "schnitzel",
+          "schwein",
+          "steak"
+        ],
+        "animalProductMatches": [
+          "ei",
+          "joghurt",
+          "lachs",
+          "mayo",
+          "mayonnaise",
+          "sahne",
+          "sahnejoghurt",
+          "schnitzel",
+          "schwein",
+          "steak"
+        ],
+        "proteinDensity": 4.67
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "sloppy-joe-burger-mit-rinderhackfleischsosse",
+      "name": "Sloppy Joe Burger mit Rinderhackfleischsosse",
+      "kcal": 1070,
+      "protein": 57,
+      "durationMinutes": 40,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 57 g Protein oder 5.3 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "rind"
+        ],
+        "animalProductMatches": [
+          "brioche",
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "mayo",
+          "mayonnaise",
+          "rind"
+        ],
+        "proteinDensity": 5.33
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "caesar-salad-mit-bacon-dazu-eine-limo",
+      "name": "Caesar Salad mit Bacon dazu Eine Limo",
+      "kcal": 910,
+      "protein": 42,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 42 g Protein oder 4.6 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "bacon"
+        ],
+        "animalProductMatches": [
+          "bacon",
+          "hartkaese",
+          "joghurt",
+          "kaese",
+          "naturjoghurt"
+        ],
+        "proteinDensity": 4.62
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "teriyaki-burger-mit-bio-rindfleisch",
+      "name": "Teriyaki Burger mit Bio Rindfleisch",
+      "kcal": 1130,
+      "protein": 57,
+      "durationMinutes": 40,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 57 g Protein oder 5.0 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hackfleisch",
+          "rind"
+        ],
+        "animalProductMatches": [
+          "brioche",
+          "fleisch",
+          "gouda",
+          "hackfleisch",
+          "honig",
+          "joghurt",
+          "mayo",
+          "mayonnaise",
+          "naturjoghurt",
+          "rind"
+        ],
+        "proteinDensity": 5.04
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "knusprige-blumenkohl-nuggets",
+      "name": "Knusprige Blumenkohl Nuggets",
+      "kcal": 760,
+      "protein": 22,
+      "durationMinutes": 35,
+      "categories": [
+        "vegetarisch"
+      ],
+      "reasons": [
+        "Vegetarisch: keine Fleisch-, Fisch- oder Meeresfruechte-Begriffe erkannt."
+      ],
+      "hints": {
+        "containsMeatOrFish": false,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [],
+        "animalProductMatches": [
+          "honig",
+          "joghurt",
+          "mayo",
+          "mayonnaise",
+          "naturjoghurt"
+        ],
+        "proteinDensity": 2.89
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "haehnchen-unter-senfbroesel-haube",
+      "name": "Hähnchen Unter Senfbrösel Haube",
+      "kcal": 900,
+      "protein": 48,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 48 g Protein oder 5.3 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen",
+          "huehnerbruehe"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "haehnchen",
+          "huehnerbruehe",
+          "kochsahne",
+          "sahne"
+        ],
+        "proteinDensity": 5.33
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "pollo-asado-mit-kidneybohnen-mais-salat",
+      "name": "Pollo asado mit Kidneybohnen Mais Salat",
+      "kcal": 700,
+      "protein": 55,
+      "durationMinutes": 20,
+      "categories": [
+        "schnell",
+        "high-protein"
+      ],
+      "reasons": [
+        "Schnell: 20 Minuten <= 30.",
+        "High Protein: 55 g Protein oder 7.9 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen"
+        ],
+        "animalProductMatches": [
+          "haehnchen",
+          "joghurt",
+          "naturjoghurt"
+        ],
+        "proteinDensity": 7.86
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "gnocchi-pfanne-mit-brokkoli",
+      "name": "Gnocchi Pfanne mit Brokkoli",
+      "kcal": 820,
+      "protein": 30,
+      "durationMinutes": 35,
+      "categories": [
+        "vegetarisch"
+      ],
+      "reasons": [
+        "Vegetarisch: keine Fleisch-, Fisch- oder Meeresfruechte-Begriffe erkannt."
+      ],
+      "hints": {
+        "containsMeatOrFish": false,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [],
+        "animalProductMatches": [
+          "hartkaese",
+          "kaese",
+          "kochsahne",
+          "sahne"
+        ],
+        "proteinDensity": 3.66
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "herzhafte-gnocchi-pfanne",
+      "name": "Herzhafte Gnocchi Pfanne",
+      "kcal": 820,
+      "protein": 31,
+      "durationMinutes": 35,
+      "categories": [
+        "vegetarisch"
+      ],
+      "reasons": [
+        "Vegetarisch: keine Fleisch-, Fisch- oder Meeresfruechte-Begriffe erkannt."
+      ],
+      "hints": {
+        "containsMeatOrFish": false,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [],
+        "animalProductMatches": [
+          "gouda",
+          "hartkaese",
+          "kaese",
+          "kochsahne",
+          "sahne"
+        ],
+        "proteinDensity": 3.78
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "grillhaehnchen-burger-mit-kartoffelspalten",
+      "name": "Grillhähnchen Burger mit Kartoffelspalten",
+      "kcal": 1080,
+      "protein": 60,
+      "durationMinutes": 40,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 60 g Protein oder 5.6 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen"
+        ],
+        "animalProductMatches": [
+          "brioche",
+          "butter",
+          "haehnchen",
+          "mayo",
+          "mayonnaise"
+        ],
+        "proteinDensity": 5.56
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "american-bbq-paprika-haehnchenkeule",
+      "name": "American BBQ Paprika Hähnchenkeule",
+      "kcal": 960,
+      "protein": 48,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 48 g Protein oder 5.0 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "haehnchen",
+          "hartkaese",
+          "kaese",
+          "mayo",
+          "mayonnaise"
+        ],
+        "proteinDensity": 5
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "wuerzig-feurige-grillkaese-tacos",
+      "name": "Würzig Feurige Grillkäse Tacos",
+      "kcal": 900,
+      "protein": 36,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein",
+        "vegetarisch"
+      ],
+      "reasons": [
+        "High Protein: 36 g Protein oder 4.0 g/100 kcal.",
+        "Vegetarisch: keine Fleisch-, Fisch- oder Meeresfruechte-Begriffe erkannt."
+      ],
+      "hints": {
+        "containsMeatOrFish": false,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [],
+        "animalProductMatches": [
+          "grillkaese",
+          "kaese",
+          "mayo",
+          "mayonnaise"
+        ],
+        "proteinDensity": 4
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "honig-senf-garnelensalat-mit-avocado",
+      "name": "Honig Senf Garnelensalat mit Avocado",
+      "kcal": 640,
+      "protein": 42,
+      "durationMinutes": 20,
+      "categories": [
+        "schnell",
+        "high-protein",
+        "low-cal"
+      ],
+      "reasons": [
+        "Schnell: 20 Minuten <= 30.",
+        "High Protein: 42 g Protein oder 6.6 g/100 kcal.",
+        "Low Cal: 640 kcal <= 650."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "garnele",
+          "garnelen",
+          "grossgarnelen"
+        ],
+        "animalProductMatches": [
+          "garnele",
+          "garnelen",
+          "grossgarnelen",
+          "honig",
+          "joghurt",
+          "naturjoghurt"
+        ],
+        "proteinDensity": 6.56
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "thueringer-bratwurst-sandwich",
+      "name": "Thüringer Bratwurst Sandwich",
+      "kcal": 1090,
+      "protein": 55,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 55 g Protein oder 5.0 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "bratwurst",
+          "wurst"
+        ],
+        "animalProductMatches": [
+          "bratwurst",
+          "hartkaese",
+          "kaese",
+          "mayo",
+          "mayonnaise",
+          "wurst"
+        ],
+        "proteinDensity": 5.05
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "frische-spaetzle-in-hackfleisch-bratensosse",
+      "name": "Frische Spätzle in Hackfleisch Bratensoße",
+      "kcal": 930,
+      "protein": 52,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 52 g Protein oder 5.6 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "rind",
+          "rinderbruehe"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "eier",
+          "eierspaetzle",
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "joghurt",
+          "rind",
+          "rinderbruehe",
+          "sahne",
+          "sahnejoghurt"
+        ],
+        "proteinDensity": 5.59
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "hackbaellchen-mit-bio-rinderhack-in-senfsosse",
+      "name": "Hackbällchen mit Bio Rinderhack in Senfsoße",
+      "kcal": 930,
+      "protein": 52,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 52 g Protein oder 5.6 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "rind",
+          "rinderbruehe"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "honig",
+          "kochsahne",
+          "rind",
+          "rinderbruehe",
+          "sahne"
+        ],
+        "proteinDensity": 5.59
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "saftiges-schweinefilet-mit-senfrahm",
+      "name": "Saftiges Schweinefilet mit Senfrahm",
+      "kcal": 1080,
+      "protein": 54,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 54 g Protein oder 5.0 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "huehnerbruehe",
+          "schwein"
+        ],
+        "animalProductMatches": [
+          "huehnerbruehe",
+          "kochsahne",
+          "sahne",
+          "schwein"
+        ],
+        "proteinDensity": 5
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "schweinefilet-in-aprikosen-sosse",
+      "name": "Schweinefilet in Aprikosen Soße",
+      "kcal": 950,
+      "protein": 50,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 50 g Protein oder 5.3 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "schwein"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "honig",
+          "schwein"
+        ],
+        "proteinDensity": 5.26
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "tomatige-conchiglie-mit-rinderhackfleisch",
+      "name": "Tomatige Conchiglie mit Rinderhackfleisch",
+      "kcal": 930,
+      "protein": 52,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 52 g Protein oder 5.6 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "huehnerbruehe",
+          "rind"
+        ],
+        "animalProductMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "hartkaese",
+          "huehnerbruehe",
+          "kaese",
+          "kochsahne",
+          "rind",
+          "sahne"
+        ],
+        "proteinDensity": 5.59
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "sloppy-joes-vom-nahen-osten",
+      "name": "Sloppy Joes vom Nahen Osten",
+      "kcal": 780,
+      "protein": 38,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 38 g Protein oder 4.9 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch"
+        ],
+        "animalProductMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "joghurt",
+          "naturjoghurt"
+        ],
+        "proteinDensity": 4.87
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "haehnchen-mit-aprikosen-curry-sosse",
+      "name": "Hähnchen mit Aprikosen Curry Soße",
+      "kcal": 960,
+      "protein": 48,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 48 g Protein oder 5.0 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "haehnchen"
+        ],
+        "proteinDensity": 5
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "bio-haehnchenbrust-in-salbei-thymian-marinade",
+      "name": "Bio Hähnchenbrust in Salbei Thymian Marinade",
+      "kcal": 820,
+      "protein": 55,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 55 g Protein oder 6.7 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen",
+          "huehnerbruehe"
+        ],
+        "animalProductMatches": [
+          "haehnchen",
+          "huehnerbruehe",
+          "kochsahne",
+          "sahne"
+        ],
+        "proteinDensity": 6.71
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "frische-eierspaetzle-mit-bacon",
+      "name": "Frische Eierspätzle mit Bacon",
+      "kcal": 950,
+      "protein": 34,
+      "durationMinutes": 35,
+      "categories": [],
+      "reasons": [],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "bacon",
+          "huehnerbruehe"
+        ],
+        "animalProductMatches": [
+          "bacon",
+          "creme",
+          "eier",
+          "eierspaetzle",
+          "hartkaese",
+          "huehnerbruehe",
+          "kaese"
+        ],
+        "proteinDensity": 3.58
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "bio-rindfleisch-koefte-auf-goldenem-sultaninen-reis",
+      "name": "Bio Rindfleisch Köfte auf Goldenem Sultaninen-Reis",
+      "kcal": 1010,
+      "protein": 52,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell",
+        "high-protein"
+      ],
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "High Protein: 52 g Protein oder 5.1 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hackfleisch",
+          "rind"
+        ],
+        "animalProductMatches": [
+          "fleisch",
+          "hackfleisch",
+          "joghurt",
+          "naturjoghurt",
+          "rind"
+        ],
+        "proteinDensity": 5.15
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "blt-wrap-mit-karamellisiertem-bacon",
+      "name": "BLT Wrap mit Karamellisiertem Bacon",
+      "kcal": 1050,
+      "protein": 47,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 47 g Protein oder 4.5 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "bacon"
+        ],
+        "animalProductMatches": [
+          "bacon",
+          "butter",
+          "buttermilch",
+          "mayo",
+          "mayonnaise",
+          "milch"
+        ],
+        "proteinDensity": 4.48
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "mezze-rinderhackpfanne-auf-tomatenreis",
+      "name": "Mezze Rinderhackpfanne auf Tomatenreis",
+      "kcal": 1010,
+      "protein": 52,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell",
+        "high-protein"
+      ],
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "High Protein: 52 g Protein oder 5.1 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "rind"
+        ],
+        "animalProductMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "hirtenkaese",
+          "joghurt",
+          "kaese",
+          "naturjoghurt",
+          "rind"
+        ],
+        "proteinDensity": 5.15
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "haehnchengeschnetzeltes-in-tomaten-sahne-sosse",
+      "name": "Hähnchengeschnetzeltes in Tomaten-Sahne-Soße",
+      "kcal": 1030,
+      "protein": 52,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 52 g Protein oder 5.0 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen",
+          "huehnerbruehe"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "haehnchen",
+          "huehnerbruehe",
+          "kochsahne",
+          "sahne"
+        ],
+        "proteinDensity": 5.05
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "tokyo-grill-smoky-ribs-mit-teriyaki-glaze",
+      "name": "Tokyo Grill Smoky Ribs mit Teriyaki Glaze",
+      "kcal": 1010,
+      "protein": 50,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 50 g Protein oder 5.0 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "ribs",
+          "spareribs"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "ribs",
+          "spareribs"
+        ],
+        "proteinDensity": 4.95
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "haehnchenfilet-in-honig-zitronen-marinade",
+      "name": "Hähnchenfilet in Honig-Zitronen-Marinade",
+      "kcal": 820,
+      "protein": 55,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 55 g Protein oder 6.7 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen"
+        ],
+        "animalProductMatches": [
+          "haehnchen",
+          "honig",
+          "joghurt",
+          "sahne",
+          "sahnejoghurt"
+        ],
+        "proteinDensity": 6.71
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "bbq-burritos-mit-hackfleisch",
+      "name": "BBQ Burritos mit Hackfleisch",
+      "kcal": 1130,
+      "protein": 57,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 57 g Protein oder 5.0 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "buttermilch",
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "milch"
+        ],
+        "proteinDensity": 5.04
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "haehnchenschnitzel-mit-currydip",
+      "name": "Hähnchenschnitzel mit Currydip",
+      "kcal": 880,
+      "protein": 55,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 55 g Protein oder 6.3 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen",
+          "schnitzel"
+        ],
+        "animalProductMatches": [
+          "haehnchen",
+          "honig",
+          "joghurt",
+          "mayo",
+          "mayonnaise",
+          "schnitzel"
+        ],
+        "proteinDensity": 6.25
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "haehnchenfilets-in-kraeuterpanade",
+      "name": "Hähnchenfilets in Kräuterpanade",
+      "kcal": 820,
+      "protein": 55,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 55 g Protein oder 6.7 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen",
+          "huehnerbruehe"
+        ],
+        "animalProductMatches": [
+          "haehnchen",
+          "hartkaese",
+          "huehnerbruehe",
+          "kaese",
+          "mayo",
+          "mayonnaise"
+        ],
+        "proteinDensity": 6.71
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "ueberbackene-haehnchenbrust-parmigiana",
+      "name": "Überbackene Hähnchenbrust Parmigiana",
+      "kcal": 850,
+      "protein": 58,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 58 g Protein oder 6.8 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen"
+        ],
+        "animalProductMatches": [
+          "ei",
+          "haehnchen",
+          "hartkaese",
+          "kaese"
+        ],
+        "proteinDensity": 6.82
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "flautas-knusprige-tortillarollen",
+      "name": "Flautas Knusprige Tortillarollen",
+      "kcal": 920,
+      "protein": 43,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein",
+        "vegetarisch"
+      ],
+      "reasons": [
+        "High Protein: 43 g Protein oder 4.7 g/100 kcal.",
+        "Vegetarisch: keine Fleisch-, Fisch- oder Meeresfruechte-Begriffe erkannt."
+      ],
+      "hints": {
+        "containsMeatOrFish": false,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [],
+        "animalProductMatches": [
+          "gouda",
+          "sahne"
+        ],
+        "proteinDensity": 4.67
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "schweinelachssteak-mit-bohnengemuese",
+      "name": "Schweinelachssteak mit Bohnengemüse",
+      "kcal": 950,
+      "protein": 50,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 50 g Protein oder 5.3 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "lachs",
+          "rind",
+          "schwein",
+          "steak"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "lachs",
+          "rind",
+          "schwein",
+          "steak"
+        ],
+        "proteinDensity": 5.26
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "ricotta-tortellini-alla-panna",
+      "name": "Ricotta Tortellini alla Panna",
+      "kcal": 950,
+      "protein": 34,
+      "durationMinutes": 35,
+      "categories": [],
+      "reasons": [],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "huehnerbruehe"
+        ],
+        "animalProductMatches": [
+          "hartkaese",
+          "huehnerbruehe",
+          "kaese",
+          "kochsahne",
+          "ricotta",
+          "sahne"
+        ],
+        "proteinDensity": 3.58
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "grillen-auf-griechisch-hirtenkaese-schiffchen",
+      "name": "Grillen auf Griechisch Hirtenkäse Schiffchen",
+      "kcal": 950,
+      "protein": 34,
+      "durationMinutes": 35,
+      "categories": [
+        "vegetarisch"
+      ],
+      "reasons": [
+        "Vegetarisch: keine Fleisch-, Fisch- oder Meeresfruechte-Begriffe erkannt."
+      ],
+      "hints": {
+        "containsMeatOrFish": false,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [],
+        "animalProductMatches": [
+          "hirtenkaese",
+          "honig",
+          "joghurt",
+          "kaese",
+          "naturjoghurt"
+        ],
+        "proteinDensity": 3.58
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "rinderhackbaellchen-mit-senf-fruehlingszwiebel-sosse",
+      "name": "Rinderhackbällchen mit Senf-Frühlingszwiebel-Soße",
+      "kcal": 930,
+      "protein": 52,
+      "durationMinutes": 35,
+      "categories": [
+        "high-protein"
+      ],
+      "reasons": [
+        "High Protein: 52 g Protein oder 5.6 g/100 kcal."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "rind"
+        ],
+        "animalProductMatches": [
+          "butter",
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "rind"
+        ],
+        "proteinDensity": 5.59
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    },
+    {
+      "id": "teriyaki-bio-haehnchenpfanne-mit-pak-choi",
+      "name": "Teriyaki Bio Hähnchenpfanne mit Pak Choi",
+      "kcal": 557,
+      "protein": 13.3,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell",
+        "low-cal"
+      ],
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "Low Cal: 557 kcal <= 650."
+      ],
+      "hints": {
+        "containsMeatOrFish": true,
+        "containsAnimalProducts": true,
+        "explicitVegetarian": false,
+        "explicitVegan": false,
+        "meatOrFishMatches": [
+          "haehnchen"
+        ],
+        "animalProductMatches": [
+          "haehnchen",
+          "honig",
+          "milch"
+        ],
+        "proteinDensity": 2.39
+      },
+      "needsReview": false,
+      "reviewNotes": []
+    }
+  ]
+}

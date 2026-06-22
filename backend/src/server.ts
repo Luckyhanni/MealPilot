@@ -48,10 +48,18 @@ type Recipe = {
   tier: Tier;
   kcal: number;
   protein: number;
+  servings?: number;
+  nutritionPerServing?: {
+    kcal: number;
+    protein: number;
+  };
+  nutritionSource?: "per-serving" | "recipe-total" | "estimated" | "unknown";
+  nutritionNeedsReview?: boolean;
   durationMinutes: number;
   imageUrl: string;
   sourceUrl?: string;
   tags: string[];
+  categories?: string[];
   ingredients: string[];
   instructions?: RecipeStep[];
   estimatedCost?: number;
@@ -641,9 +649,17 @@ function estimateRecipeCost(recipe: Recipe): {
   };
 }
 
+function getRecipeNutritionPerServing(recipe: Recipe) {
+  return {
+    kcal: recipe.nutritionPerServing?.kcal ?? recipe.kcal,
+    protein: recipe.nutritionPerServing?.protein ?? recipe.protein,
+  };
+}
+
 function enrichRecipe(recipe: Recipe): Recipe {
   const price = estimateRecipeCost(recipe);
-  return { ...recipe, ...price };
+  const nutritionPerServing = getRecipeNutritionPerServing(recipe);
+  return { ...recipe, nutritionPerServing, ...price };
 }
 
 function enrichPlan(plan: WeekPlan): WeekPlan {
@@ -706,8 +722,9 @@ function scoreRecipe(
   },
 ) {
   let score = tierScore(recipe.tier);
-  const kcalDiff = Math.abs(recipe.kcal - context.targetMealKcal);
-  const proteinDiff = Math.abs(recipe.protein - context.targetMealProtein);
+  const nutrition = getRecipeNutritionPerServing(recipe);
+  const kcalDiff = Math.abs(nutrition.kcal - context.targetMealKcal);
+  const proteinDiff = Math.abs(nutrition.protein - context.targetMealProtein);
   score -= kcalDiff * 0.05;
   score -= proteinDiff * 0.9;
 
@@ -737,6 +754,7 @@ function scoreRecipe(
   }
 
   if (context.remixOldRecipe) {
+    const remixOldNutrition = getRecipeNutritionPerServing(context.remixOldRecipe);
     score +=
       commonCount(recipe.tags || [], context.remixOldRecipe.tags || []) * 16;
     score +=
@@ -744,8 +762,8 @@ function scoreRecipe(
         recipe.ingredients || [],
         context.remixOldRecipe.ingredients || [],
       ) * 8;
-    score -= Math.abs(recipe.kcal - context.remixOldRecipe.kcal) * 0.04;
-    score -= Math.abs(recipe.protein - context.remixOldRecipe.protein) * 0.5;
+    score -= Math.abs(nutrition.kcal - remixOldNutrition.kcal) * 0.04;
+    score -= Math.abs(nutrition.protein - remixOldNutrition.protein) * 0.5;
   }
 
   score += Math.random() * 18;
@@ -928,8 +946,14 @@ function buildWeekPlan(
       selected.push(picked);
       currentDayMeals.push(picked);
     }
-    const mealKcal = currentDayMeals.reduce((sum, r) => sum + r.kcal, 0);
-    const mealProtein = currentDayMeals.reduce((sum, r) => sum + r.protein, 0);
+    const mealKcal = currentDayMeals.reduce(
+      (sum, r) => sum + getRecipeNutritionPerServing(r).kcal,
+      0,
+    );
+    const mealProtein = currentDayMeals.reduce(
+      (sum, r) => sum + getRecipeNutritionPerServing(r).protein,
+      0,
+    );
     const shakes =
       currentDayMeals.length > 0
         ? chooseShakes(mealKcal, mealProtein, settings)
@@ -977,8 +1001,14 @@ function buildWeekPlan(
 }
 
 function updateDayTotals(day: DayPlan, settings: Settings): DayPlan {
-  const mealKcal = day.meals.reduce((sum, m) => sum + m.recipe.kcal, 0);
-  const mealProtein = day.meals.reduce((sum, m) => sum + m.recipe.protein, 0);
+  const mealKcal = day.meals.reduce(
+    (sum, m) => sum + getRecipeNutritionPerServing(m.recipe).kcal,
+    0,
+  );
+  const mealProtein = day.meals.reduce(
+    (sum, m) => sum + getRecipeNutritionPerServing(m.recipe).protein,
+    0,
+  );
   const shakes = chooseShakes(mealKcal, mealProtein, settings);
   return {
     ...day,
@@ -2252,11 +2282,23 @@ app.get("/api/recipes", async (req, res) => {
       if (sort === "rating")
         return tierScore(b.tier) - tierScore(a.tier) || a.name.localeCompare(b.name, "de");
       if (sort === "protein-desc")
-        return b.protein - a.protein || a.name.localeCompare(b.name, "de");
+        return (
+          getRecipeNutritionPerServing(b).protein -
+            getRecipeNutritionPerServing(a).protein ||
+          a.name.localeCompare(b.name, "de")
+        );
       if (sort === "kcal-asc")
-        return a.kcal - b.kcal || a.name.localeCompare(b.name, "de");
+        return (
+          getRecipeNutritionPerServing(a).kcal -
+            getRecipeNutritionPerServing(b).kcal ||
+          a.name.localeCompare(b.name, "de")
+        );
       if (sort === "kcal-desc")
-        return b.kcal - a.kcal || a.name.localeCompare(b.name, "de");
+        return (
+          getRecipeNutritionPerServing(b).kcal -
+            getRecipeNutritionPerServing(a).kcal ||
+          a.name.localeCompare(b.name, "de")
+        );
       if (sort === "duration-asc")
         return a.durationMinutes - b.durationMinutes || a.name.localeCompare(b.name, "de");
       return a.name.localeCompare(b.name, "de");
@@ -2611,8 +2653,8 @@ app.post("/api/plans/:planId/remix", async (req, res) => {
           recentIds,
           settings,
           currentDayMeals,
-          targetMealKcal: oldRecipe.kcal,
-          targetMealProtein: oldRecipe.protein,
+          targetMealKcal: getRecipeNutritionPerServing(oldRecipe).kcal,
+          targetMealProtein: getRecipeNutritionPerServing(oldRecipe).protein,
           avoidSameIds: avoid,
           remixOldRecipe: oldRecipe,
         }),
@@ -2866,13 +2908,16 @@ app.get("/api/plans/archive", async (req, res) => {
       hasPlan: Boolean(entry.plan),
       days: entry.plan!.days.map((day) => ({
         day: day.day,
-        meals: day.meals.map((meal) => ({
-          mealIndex: meal.mealIndex,
-          recipeId: meal.recipe.id,
-          name: meal.recipe.name,
-          kcal: meal.recipe.kcal,
-          protein: meal.recipe.protein,
-        })),
+        meals: day.meals.map((meal) => {
+          const nutrition = getRecipeNutritionPerServing(meal.recipe);
+          return {
+            mealIndex: meal.mealIndex,
+            recipeId: meal.recipe.id,
+            name: meal.recipe.name,
+            kcal: nutrition.kcal,
+            protein: nutrition.protein,
+          };
+        }),
       })),
       recipeCount: entry.recipeIds.length,
     }));
