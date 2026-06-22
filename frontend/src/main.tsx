@@ -423,9 +423,7 @@ function fallbackRecipeMatchesDiscoveryCategory(
   const nutrition = getRecipeNutritionPerServing(recipe);
   if (categoryKey === "fast") return recipe.durationMinutes <= 30;
   if (categoryKey === "high-protein") {
-    const proteinDensity =
-      nutrition.kcal > 0 ? (nutrition.protein / nutrition.kcal) * 100 : 0;
-    return nutrition.protein >= 35 || (nutrition.protein >= 25 && proteinDensity >= 4.5);
+    return nutrition.protein > 60;
   }
   if (categoryKey === "low-cal") return nutrition.kcal > 0 && nutrition.kcal <= 650;
 
@@ -2186,7 +2184,11 @@ function HomeView({
       {dailyRecipe ? (
         <DailyRecipeCard recipe={dailyRecipe} openRecipe={openRecipe} />
       ) : (
-        <section className="daily-empty">Rezepte werden geladen...</section>
+        <section className="daily-empty">
+          {allRecipes.length > 0
+            ? "Keine Rezepte in dieser Kategorie."
+            : "Rezepte werden geladen..."}
+        </section>
       )}
 
       <button

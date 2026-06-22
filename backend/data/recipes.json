@@ -10,8 +10,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/rigatoni-auflauf-mit-bio-rinderhack-65fc4ee8a302a46b20a9a95c",
     "tags": [
       "rind",
-      "hackfleisch",
-      "high protein"
+      "hackfleisch"
     ],
     "ingredients": [
       "300 g Bio Rinderhackfleischzubereitung",
@@ -63,9 +62,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:51.983Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 2,
     "nutritionPerServing": {
       "kcal": 815,
@@ -75,7 +72,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 38 g Protein, 4.7 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch).",
       "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
     ],
@@ -93,8 +89,7 @@
     "tags": [
       "rind",
       "reis",
-      "asiatisch",
-      "high protein"
+      "asiatisch"
     ],
     "ingredients": [
       "250 g Schweinelachssteaks",
@@ -145,9 +140,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:52.457Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 990,
@@ -157,7 +150,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 52 g Protein, 5.3 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bulgogi, lachs, schwein, schweine, schweinelachs, steak)."
     ],
     "classificationNeedsReview": false
@@ -328,8 +320,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/korean-fried-chicken-in-gochujang-marinade-66222a935c9ad41013c107a4",
     "tags": [
       "hähnchen",
-      "asiatisch",
-      "high protein"
+      "asiatisch"
     ],
     "ingredients": [
       "250 g Hähnchengeschnetzeltes",
@@ -388,9 +379,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:53.816Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 880,
@@ -400,7 +389,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 55 g Protein, 6.3 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
     ],
     "classificationNeedsReview": false
@@ -417,8 +405,7 @@
     "tags": [
       "fisch",
       "burger",
-      "salat",
-      "high protein"
+      "salat"
     ],
     "ingredients": [
       "250 g Seelachs ohne Haut",
@@ -469,9 +456,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:54.274Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 900,
@@ -481,7 +466,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 47 g Protein, 5.2 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
     ],
     "classificationNeedsReview": false
@@ -497,8 +481,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/glasierte-koreanische-fleischballchen-65cf727852f6e2fd05cce0e2",
     "tags": [
       "hackfleisch",
-      "asiatisch",
-      "high protein"
+      "asiatisch"
     ],
     "ingredients": [
       "250 g gemischte Hackfleischzubereitung",
@@ -550,9 +533,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:54.766Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 990,
@@ -562,7 +543,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 56 g Protein, 5.7 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
     ],
     "classificationNeedsReview": false
@@ -580,8 +560,7 @@
       "hähnchen",
       "reis",
       "asiatisch",
-      "schnell",
-      "high protein"
+      "schnell"
     ],
     "ingredients": [
       "250 g Hähnchenbrustfilet in Lake",
@@ -635,8 +614,7 @@
     ],
     "importedAt": "2026-05-29T10:35:55.210Z",
     "categories": [
-      "schnell",
-      "high-protein"
+      "schnell"
     ],
     "servings": 1,
     "nutritionPerServing": {
@@ -648,7 +626,6 @@
     "dietaryType": "omnivore",
     "classificationReasons": [
       "Schnell: 30 Minuten <= 30.",
-      "High Protein: 55 g Protein, 6.1 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -664,8 +641,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/paprika-hahnchenbrust-mit-kohlrabi-kartoffel-stampf-669f78a744e4fbb9d21318f5",
     "tags": [
       "hähnchen",
-      "kartoffeln",
-      "high protein"
+      "kartoffeln"
     ],
     "ingredients": [
       "250 g Hähnchenbrustfilet in Lake",
@@ -720,9 +696,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:55.688Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 820,
@@ -732,7 +706,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 55 g Protein, 6.7 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -747,8 +720,7 @@
     "imageUrl": "/images/hellofresh/schnitzel-mit-ofenkartoffeln-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/schnitzel-mit-ofenkartoffeln-62d69f0ec939fdc11508de11",
     "tags": [
-      "kartoffeln",
-      "high protein"
+      "kartoffeln"
     ],
     "ingredients": [
       "250 g Schweinelachssteaks",
@@ -802,9 +774,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:56.138Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 1070,
@@ -814,7 +784,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 50 g Protein, 4.7 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
     ],
     "classificationNeedsReview": false
@@ -831,8 +800,7 @@
     "tags": [
       "rind",
       "hackfleisch",
-      "burger",
-      "high protein"
+      "burger"
     ],
     "ingredients": [
       "200 g Rinderhackfleisch",
@@ -886,9 +854,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:56.588Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 1070,
@@ -898,7 +864,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 57 g Protein, 5.3 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
     ],
     "classificationNeedsReview": false
@@ -914,8 +879,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/caesar-salad-mit-bacon-dazu-eine-limo-67d807643a0a3d1cca034557",
     "tags": [
       "bacon",
-      "salat",
-      "high protein"
+      "salat"
     ],
     "ingredients": [
       "100 g Bacon (Scheiben)",
@@ -970,9 +934,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:57.025Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 910,
@@ -982,7 +944,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 42 g Protein, 4.6 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
     ],
     "classificationNeedsReview": false
@@ -999,8 +960,7 @@
     "tags": [
       "rind",
       "burger",
-      "asiatisch",
-      "high protein"
+      "asiatisch"
     ],
     "ingredients": [
       "200 g Bio Rinderhackfleischzubereitung",
@@ -1054,9 +1014,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:57.463Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 1130,
@@ -1066,7 +1024,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 57 g Protein, 5.0 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
     ],
     "classificationNeedsReview": false
@@ -1160,8 +1117,7 @@
     "imageUrl": "/images/hellofresh/haehnchen-unter-senfbroesel-haube-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-unter-senfbrosel-haube-6446bdd2973c4790e704cb60",
     "tags": [
-      "hähnchen",
-      "high protein"
+      "hähnchen"
     ],
     "ingredients": [
       "250 g Hähnchenbrustfilet",
@@ -1214,9 +1170,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:35:58.356Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 900,
@@ -1226,7 +1180,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 48 g Protein, 5.3 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -1243,8 +1196,7 @@
     "tags": [
       "hähnchen",
       "salat",
-      "schnell",
-      "high protein"
+      "schnell"
     ],
     "ingredients": [
       "250 g Hähnchenbrustfilet in Lake",
@@ -1293,8 +1245,7 @@
     ],
     "importedAt": "2026-05-29T10:35:58.801Z",
     "categories": [
-      "schnell",
-      "high-protein"
+      "schnell"
     ],
     "servings": 1,
     "nutritionPerServing": {
@@ -1306,7 +1257,6 @@
     "dietaryType": "omnivore",
     "classificationReasons": [
       "Schnell: 20 Minuten <= 30.",
-      "High Protein: 55 g Protein, 7.9 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -1480,8 +1430,7 @@
     "tags": [
       "hähnchen",
       "kartoffeln",
-      "burger",
-      "high protein"
+      "burger"
     ],
     "ingredients": [
       "250 g Hähnchenbrustfilet in Lake",
@@ -1531,9 +1480,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:00.038Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 1080,
@@ -1543,7 +1490,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 60 g Protein, 5.6 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -1558,8 +1504,7 @@
     "imageUrl": "/images/hellofresh/american-bbq-paprika-haehnchenkeule-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/american-bbq-paprika-hahnchenkeule-65d48bda6c4f2239898764e6",
     "tags": [
-      "hähnchen",
-      "high protein"
+      "hähnchen"
     ],
     "ingredients": [
       "500 g Hähnchenkeule in Kräutermarinade",
@@ -1613,9 +1558,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:00.481Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 960,
@@ -1625,7 +1568,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 48 g Protein, 5.0 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
     ],
     "classificationNeedsReview": false
@@ -1641,7 +1583,6 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/wurzig-feurige-grillkase-tacos-63a02e6f5c2d3bbdc3087ce4",
     "tags": [
       "käse",
-      "high protein",
       "vegetarisch"
     ],
     "ingredients": [
@@ -1696,7 +1637,6 @@
     ],
     "importedAt": "2026-05-29T10:36:00.948Z",
     "categories": [
-      "high-protein",
       "vegetarisch"
     ],
     "servings": 1,
@@ -1708,7 +1648,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "vegetarian",
     "classificationReasons": [
-      "High Protein: 36 g Protein, 4.0 g/100 kcal.",
       "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (grillkaese, kaese, mayo, mayonnaise)."
     ],
     "classificationNeedsReview": false
@@ -1726,7 +1665,6 @@
       "garnelen",
       "salat",
       "schnell",
-      "high protein",
       "low cal"
     ],
     "ingredients": [
@@ -1768,7 +1706,6 @@
     "importedAt": "2026-05-29T10:36:01.343Z",
     "categories": [
       "schnell",
-      "high-protein",
       "low-cal"
     ],
     "servings": 1,
@@ -1781,7 +1718,6 @@
     "dietaryType": "omnivore",
     "classificationReasons": [
       "Schnell: 20 Minuten <= 30.",
-      "High Protein: 42 g Protein, 6.6 g/100 kcal.",
       "Low Cal: 640 kcal <= 650.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
     ],
@@ -1797,8 +1733,7 @@
     "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/thuringer-bratwurst-sandwich-65f867bd473c4f42771ce544",
     "tags": [
-      "gemischt",
-      "high protein"
+      "gemischt"
     ],
     "ingredients": [
       "200 g Thüringer Rostbratwurst",
@@ -1849,9 +1784,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:01.785Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 1090,
@@ -1861,7 +1794,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 55 g Protein, 5.0 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bratwurst, wurst)."
     ],
     "classificationNeedsReview": false
@@ -1877,8 +1809,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/frische-spatzle-in-hackfleisch-bratensosse-64998cd152d3f4d7ab0ac67a",
     "tags": [
       "hackfleisch",
-      "spätzle",
-      "high protein"
+      "spätzle"
     ],
     "ingredients": [
       "250 g gemischte Hackfleischzubereitung",
@@ -1931,9 +1862,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:02.247Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 930,
@@ -1943,7 +1872,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 52 g Protein, 5.6 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinder)."
     ],
     "classificationNeedsReview": false
@@ -1959,8 +1887,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/hackballchen-mit-bio-rinderhack-in-senfsosse-68c139bd9f91a82a63bf0bfa",
     "tags": [
       "rind",
-      "hackfleisch",
-      "high protein"
+      "hackfleisch"
     ],
     "ingredients": [
       "250 g Bio Rinderhackfleischzubereitung",
@@ -2015,9 +1942,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:02.657Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 930,
@@ -2027,7 +1952,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 52 g Protein, 5.6 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
     ],
     "classificationNeedsReview": false
@@ -2042,8 +1966,7 @@
     "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/saftiges-schweinefilet-mit-senfrahm-64190895cc96bbe9f40cada7",
     "tags": [
-      "gemischt",
-      "high protein"
+      "gemischt"
     ],
     "ingredients": [
       "250 g Schweinefilet",
@@ -2092,9 +2015,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:03.096Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 1080,
@@ -2104,7 +2025,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 54 g Protein, 5.0 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
     ],
     "classificationNeedsReview": false
@@ -2119,8 +2039,7 @@
     "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/schweinefilet-in-aprikosen-sosse-6564689e53b95b70f9991263",
     "tags": [
-      "gemischt",
-      "high protein"
+      "gemischt"
     ],
     "ingredients": [
       "250 g Schweinefilet",
@@ -2176,9 +2095,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:03.498Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 950,
@@ -2188,7 +2105,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 50 g Protein, 5.3 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
     ],
     "classificationNeedsReview": false
@@ -2204,8 +2120,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/tomatige-conchiglie-mit-rinderhackfleisch-66388425a1cdc8933c576841",
     "tags": [
       "rind",
-      "hackfleisch",
-      "high protein"
+      "hackfleisch"
     ],
     "ingredients": [
       "200 g Hackfleischzubereitung vom Weiderind",
@@ -2257,9 +2172,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:03.925Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 930,
@@ -2269,7 +2182,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 52 g Protein, 5.6 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
     ],
     "classificationNeedsReview": false
@@ -2284,8 +2196,7 @@
     "imageUrl": "/images/hellofresh/sloppy-joes-vom-nahen-osten-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/sloppy-joes-vom-nahen-osten-65e72fc7d454825432f190ea",
     "tags": [
-      "hackfleisch",
-      "high protein"
+      "hackfleisch"
     ],
     "ingredients": [
       "200 g Hackfleischzubereitung vom Weiderind",
@@ -2321,9 +2232,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:04.359Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 780,
@@ -2333,7 +2242,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 38 g Protein, 4.9 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
     ],
     "classificationNeedsReview": false
@@ -2350,8 +2258,7 @@
     "tags": [
       "hähnchen",
       "reis",
-      "curry",
-      "high protein"
+      "curry"
     ],
     "ingredients": [
       "250 g Hähnchenbrustfilet in Lake",
@@ -2405,9 +2312,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:04.756Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 960,
@@ -2417,7 +2322,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 48 g Protein, 5.0 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -2432,8 +2336,7 @@
     "imageUrl": "/images/hellofresh/bio-haehnchenbrust-in-salbei-thymian-marinade-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/bio-hahnchenbrust-in-salbei-thymian-marinade-688cbc0fb6ffa7a20c3c928a",
     "tags": [
-      "hähnchen",
-      "high protein"
+      "hähnchen"
     ],
     "ingredients": [
       "250 g Bio Hähnchenbrustfilet",
@@ -2486,9 +2389,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:05.187Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 820,
@@ -2498,7 +2399,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 55 g Protein, 6.7 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -2592,8 +2492,7 @@
     "tags": [
       "rind",
       "reis",
-      "schnell",
-      "high protein"
+      "schnell"
     ],
     "ingredients": [
       "250 g Bio Rinderhackfleischzubereitung",
@@ -2650,8 +2549,7 @@
     ],
     "importedAt": "2026-05-29T10:36:06.151Z",
     "categories": [
-      "schnell",
-      "high-protein"
+      "schnell"
     ],
     "servings": 1,
     "nutritionPerServing": {
@@ -2663,7 +2561,6 @@
     "dietaryType": "omnivore",
     "classificationReasons": [
       "Schnell: 30 Minuten <= 30.",
-      "High Protein: 52 g Protein, 5.1 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
     ],
     "classificationNeedsReview": false
@@ -2678,8 +2575,7 @@
     "imageUrl": "/images/hellofresh/blt-wrap-mit-karamellisiertem-bacon-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/blt-wrap-mit-karamellisiertem-bacon-640ff0d7c1138d186f0ab7c4",
     "tags": [
-      "bacon",
-      "high protein"
+      "bacon"
     ],
     "ingredients": [
       "4 Stück Weizentortillas",
@@ -2710,9 +2606,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:06.545Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 1050,
@@ -2722,7 +2616,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 47 g Protein, 4.5 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
     ],
     "classificationNeedsReview": false
@@ -2740,8 +2633,7 @@
       "rind",
       "hackfleisch",
       "reis",
-      "schnell",
-      "high protein"
+      "schnell"
     ],
     "ingredients": [
       "200 g Hackfleischzubereitung vom Weiderind",
@@ -2794,8 +2686,7 @@
     ],
     "importedAt": "2026-05-29T10:36:06.970Z",
     "categories": [
-      "schnell",
-      "high-protein"
+      "schnell"
     ],
     "servings": 1,
     "nutritionPerServing": {
@@ -2807,7 +2698,6 @@
     "dietaryType": "omnivore",
     "classificationReasons": [
       "Schnell: 30 Minuten <= 30.",
-      "High Protein: 52 g Protein, 5.1 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
     ],
     "classificationNeedsReview": false
@@ -2822,8 +2712,7 @@
     "imageUrl": "/images/hellofresh/haehnchengeschnetzeltes-in-tomaten-sahne-sosse-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/hahnchengeschnetzeltes-in-tomaten-sahne-sosse-64881f9bf39ee0e603098697",
     "tags": [
-      "hähnchen",
-      "high protein"
+      "hähnchen"
     ],
     "ingredients": [
       "250 g Hähnchenbrustfilet",
@@ -2874,9 +2763,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:07.428Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 1030,
@@ -2886,7 +2773,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 52 g Protein, 5.0 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -2901,8 +2787,7 @@
     "imageUrl": "/images/hellofresh/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-663896f11a88dd466abaae30",
     "tags": [
-      "asiatisch",
-      "high protein"
+      "asiatisch"
     ],
     "ingredients": [
       "500 g Spareribs",
@@ -2956,9 +2841,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:07.855Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 1010,
@@ -2968,7 +2851,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 50 g Protein, 5.0 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (spareribs).",
       "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
     ],
@@ -2984,8 +2866,7 @@
     "imageUrl": "/images/hellofresh/haehnchenfilet-in-honig-zitronen-marinade-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenfilet-in-honig-zitronen-marinade-618a3df9bf4792051764f60a",
     "tags": [
-      "hähnchen",
-      "high protein"
+      "hähnchen"
     ],
     "ingredients": [
       "250 g Hähnchenbrustfilet",
@@ -3035,9 +2916,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:08.258Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 820,
@@ -3047,7 +2926,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 55 g Protein, 6.7 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -3062,8 +2940,7 @@
     "imageUrl": "/images/hellofresh/bbq-burritos-mit-hackfleisch-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/bbq-burritos-mit-hackfleisch-6405c82435f29dadab0c25ea",
     "tags": [
-      "hackfleisch",
-      "high protein"
+      "hackfleisch"
     ],
     "ingredients": [
       "250 g gemischtes Hackfleisch",
@@ -3097,9 +2974,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:08.653Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 1130,
@@ -3109,7 +2984,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 57 g Protein, 5.0 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
     ],
     "classificationNeedsReview": false
@@ -3126,8 +3000,7 @@
     "tags": [
       "hähnchen",
       "reis",
-      "curry",
-      "high protein"
+      "curry"
     ],
     "ingredients": [
       "250 g Hähnchenbrustfilet",
@@ -3179,9 +3052,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:09.180Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 880,
@@ -3191,7 +3062,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 55 g Protein, 6.3 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -3206,8 +3076,7 @@
     "imageUrl": "/images/hellofresh/haehnchenfilets-in-kraeuterpanade-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenfilets-in-krauterpanade-64e860fc40ec4203972fae04",
     "tags": [
-      "hähnchen",
-      "high protein"
+      "hähnchen"
     ],
     "ingredients": [
       "250 g Hähnchenbrustfilet in Lake",
@@ -3261,9 +3130,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:09.641Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 820,
@@ -3273,7 +3140,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 55 g Protein, 6.7 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -3289,8 +3155,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/uberbackene-hahnchenbrust-parmigiana-628b9d63249e4e752606e925",
     "tags": [
       "hähnchen",
-      "käse",
-      "high protein"
+      "käse"
     ],
     "ingredients": [
       "1 Stück Zwiebel",
@@ -3342,9 +3207,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:10.074Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 850,
@@ -3354,7 +3217,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 58 g Protein, 6.8 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
@@ -3370,7 +3232,6 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/flautas-knusprige-tortillarollen-thermomix-64f5a3067048962116ef69fc",
     "tags": [
       "gemischt",
-      "high protein",
       "vegetarisch"
     ],
     "ingredients": [
@@ -3426,7 +3287,6 @@
     ],
     "importedAt": "2026-05-29T10:36:10.488Z",
     "categories": [
-      "high-protein",
       "vegetarisch"
     ],
     "servings": 1,
@@ -3438,7 +3298,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "vegetarian",
     "classificationReasons": [
-      "High Protein: 43 g Protein, 4.7 g/100 kcal.",
       "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, sahne)."
     ],
     "classificationNeedsReview": false
@@ -3453,8 +3312,7 @@
     "imageUrl": "/images/hellofresh/schweinelachssteak-mit-bohnengemuese-hero.jpg",
     "sourceUrl": "https://www.hellofresh.de/recipes/schweinelachssteak-mit-bohnengemuse-6434bfb6aa36bb296a08c440",
     "tags": [
-      "rind",
-      "high protein"
+      "rind"
     ],
     "ingredients": [
       "250 g Schweinelachssteaks",
@@ -3503,9 +3361,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:10.946Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 950,
@@ -3515,7 +3371,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 50 g Protein, 5.3 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
     ],
     "classificationNeedsReview": false
@@ -3589,10 +3444,9 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (prosciutto).",
-      "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (prosciutto)."
     ],
-    "classificationNeedsReview": true
+    "classificationNeedsReview": false
   },
   {
     "id": "grillen-auf-griechisch-hirtenkaese-schiffchen",
@@ -3686,8 +3540,7 @@
     "sourceUrl": "https://www.hellofresh.de/recipes/rinderhackballchen-mit-senf-fruhlingszwiebel-sosse-668e67ed018283f1f439b95c",
     "tags": [
       "rind",
-      "hackfleisch",
-      "high protein"
+      "hackfleisch"
     ],
     "ingredients": [
       "200 g Hackfleischzubereitung vom Weiderind",
@@ -3740,9 +3593,7 @@
       }
     ],
     "importedAt": "2026-05-29T10:36:12.402Z",
-    "categories": [
-      "high-protein"
-    ],
+    "categories": [],
     "servings": 1,
     "nutritionPerServing": {
       "kcal": 930,
@@ -3752,7 +3603,6 @@
     "nutritionNeedsReview": false,
     "dietaryType": "omnivore",
     "classificationReasons": [
-      "High Protein: 52 g Protein, 5.6 g/100 kcal.",
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
     ],
     "classificationNeedsReview": false

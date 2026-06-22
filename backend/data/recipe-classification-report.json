@@ -1,22 +1,20 @@
 {
-  "generatedAt": "2026-06-22T10:25:23.486Z",
+  "generatedAt": "2026-06-22T11:32:09.838Z",
   "thresholds": {
     "fastMaxMinutes": 30,
-    "highProteinMinGrams": 35,
-    "highProteinDensityMinGrams": 25,
-    "highProteinDensityMinPer100Kcal": 4.5,
+    "highProteinMinProteinPerServingExclusive": 60,
     "lowCalMaxKcal": 650
   },
   "summary": {
     "total": 48,
     "schnell": 6,
-    "high-protein": 39,
+    "high-protein": 0,
     "low-cal": 2,
     "vegetarisch": 6,
     "vegan": 0,
     "omnivore": 42,
     "vegetarian": 6,
-    "needsReview": 3
+    "needsReview": 2
   },
   "recipes": [
     {
@@ -25,12 +23,9 @@
       "kcal": 815,
       "protein": 38,
       "durationMinutes": 40,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 38 g Protein, 4.7 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch).",
         "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
       ],
@@ -69,12 +64,9 @@
       "kcal": 990,
       "protein": 52,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 52 g Protein, 5.3 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bulgogi, lachs, schwein, schweine, schweinelachs, steak)."
       ],
       "matches": {
@@ -168,12 +160,9 @@
       "kcal": 880,
       "protein": 55,
       "durationMinutes": 40,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 55 g Protein, 6.3 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
       ],
       "matches": {
@@ -198,12 +187,9 @@
       "kcal": 900,
       "protein": 47,
       "durationMinutes": 40,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 47 g Protein, 5.2 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
       ],
       "matches": {
@@ -231,12 +217,9 @@
       "kcal": 990,
       "protein": 56,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 56 g Protein, 5.7 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {
@@ -263,13 +246,11 @@
       "protein": 55,
       "durationMinutes": 30,
       "categories": [
-        "schnell",
-        "high-protein"
+        "schnell"
       ],
       "dietaryType": "omnivore",
       "reasons": [
         "Schnell: 30 Minuten <= 30.",
-        "High Protein: 55 g Protein, 6.1 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -294,12 +275,9 @@
       "kcal": 820,
       "protein": 55,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 55 g Protein, 6.7 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -325,12 +303,9 @@
       "kcal": 1070,
       "protein": 50,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 50 g Protein, 4.7 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
       ],
       "matches": {
@@ -364,12 +339,9 @@
       "kcal": 1070,
       "protein": 57,
       "durationMinutes": 40,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 57 g Protein, 5.3 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
       ],
       "matches": {
@@ -402,12 +374,9 @@
       "kcal": 910,
       "protein": 42,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 42 g Protein, 4.6 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
       ],
       "matches": {
@@ -431,12 +400,9 @@
       "kcal": 1130,
       "protein": 57,
       "durationMinutes": 40,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 57 g Protein, 5.0 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
       ],
       "matches": {
@@ -500,12 +466,9 @@
       "kcal": 900,
       "protein": 48,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 48 g Protein, 5.3 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -533,13 +496,11 @@
       "protein": 55,
       "durationMinutes": 20,
       "categories": [
-        "schnell",
-        "high-protein"
+        "schnell"
       ],
       "dietaryType": "omnivore",
       "reasons": [
         "Schnell: 20 Minuten <= 30.",
-        "High Protein: 55 g Protein, 7.9 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -620,12 +581,9 @@
       "kcal": 1080,
       "protein": 60,
       "durationMinutes": 40,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 60 g Protein, 5.6 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -651,12 +609,9 @@
       "kcal": 960,
       "protein": 48,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 48 g Protein, 5.0 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
       ],
       "matches": {
@@ -683,12 +638,10 @@
       "protein": 36,
       "durationMinutes": 35,
       "categories": [
-        "high-protein",
         "vegetarisch"
       ],
       "dietaryType": "vegetarian",
       "reasons": [
-        "High Protein: 36 g Protein, 4.0 g/100 kcal.",
         "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (grillkaese, kaese, mayo, mayonnaise)."
       ],
       "matches": {
@@ -714,13 +667,11 @@
       "durationMinutes": 20,
       "categories": [
         "schnell",
-        "high-protein",
         "low-cal"
       ],
       "dietaryType": "omnivore",
       "reasons": [
         "Schnell: 20 Minuten <= 30.",
-        "High Protein: 42 g Protein, 6.6 g/100 kcal.",
         "Low Cal: 640 kcal <= 650.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
       ],
@@ -746,12 +697,9 @@
       "kcal": 1090,
       "protein": 55,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 55 g Protein, 5.0 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bratwurst, wurst)."
       ],
       "matches": {
@@ -778,12 +726,9 @@
       "kcal": 930,
       "protein": 52,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 52 g Protein, 5.6 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinder)."
       ],
       "matches": {
@@ -817,12 +762,9 @@
       "kcal": 930,
       "protein": 52,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 52 g Protein, 5.6 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
       ],
       "matches": {
@@ -858,12 +800,9 @@
       "kcal": 1080,
       "protein": 54,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 54 g Protein, 5.0 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
       ],
       "matches": {
@@ -891,12 +830,9 @@
       "kcal": 950,
       "protein": 50,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 50 g Protein, 5.3 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
       ],
       "matches": {
@@ -923,12 +859,9 @@
       "kcal": 930,
       "protein": 52,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 52 g Protein, 5.6 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {
@@ -958,12 +891,9 @@
       "kcal": 780,
       "protein": 38,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 38 g Protein, 4.9 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {
@@ -989,12 +919,9 @@
       "kcal": 960,
       "protein": 48,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 48 g Protein, 5.0 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -1018,12 +945,9 @@
       "kcal": 820,
       "protein": 55,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 55 g Protein, 6.7 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -1078,13 +1002,11 @@
       "protein": 52,
       "durationMinutes": 30,
       "categories": [
-        "schnell",
-        "high-protein"
+        "schnell"
       ],
       "dietaryType": "omnivore",
       "reasons": [
         "Schnell: 30 Minuten <= 30.",
-        "High Protein: 52 g Protein, 5.1 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
       ],
       "matches": {
@@ -1116,12 +1038,9 @@
       "kcal": 1050,
       "protein": 47,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 47 g Protein, 4.5 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
       ],
       "matches": {
@@ -1147,13 +1066,11 @@
       "protein": 52,
       "durationMinutes": 30,
       "categories": [
-        "schnell",
-        "high-protein"
+        "schnell"
       ],
       "dietaryType": "omnivore",
       "reasons": [
         "Schnell: 30 Minuten <= 30.",
-        "High Protein: 52 g Protein, 5.1 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {
@@ -1181,12 +1098,9 @@
       "kcal": 1030,
       "protein": 52,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 52 g Protein, 5.0 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -1213,12 +1127,9 @@
       "kcal": 1010,
       "protein": 50,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 50 g Protein, 5.0 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (spareribs).",
         "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
       ],
@@ -1244,12 +1155,9 @@
       "kcal": 820,
       "protein": 55,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 55 g Protein, 6.7 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -1275,12 +1183,9 @@
       "kcal": 1130,
       "protein": 57,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 57 g Protein, 5.0 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {
@@ -1307,12 +1212,9 @@
       "kcal": 880,
       "protein": 55,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 55 g Protein, 6.3 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -1339,12 +1241,9 @@
       "kcal": 820,
       "protein": 55,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 55 g Protein, 6.7 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -1372,12 +1271,9 @@
       "kcal": 850,
       "protein": 58,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 58 g Protein, 6.8 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -1404,12 +1300,10 @@
       "protein": 43,
       "durationMinutes": 35,
       "categories": [
-        "high-protein",
         "vegetarisch"
       ],
       "dietaryType": "vegetarian",
       "reasons": [
-        "High Protein: 43 g Protein, 4.7 g/100 kcal.",
         "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, sahne)."
       ],
       "matches": {
@@ -1431,12 +1325,9 @@
       "kcal": 950,
       "protein": 50,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 50 g Protein, 5.3 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
       ],
       "matches": {
@@ -1469,8 +1360,7 @@
       "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (prosciutto).",
-        "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (prosciutto)."
       ],
       "matches": {
         "meatOrFish": [
@@ -1485,12 +1375,10 @@
           "ricotta",
           "sahne"
         ],
-        "explicitVegetarian": [
-          "vegetarisch"
-        ],
+        "explicitVegetarian": [],
         "explicitVegan": []
       },
-      "needsReview": true
+      "needsReview": false
     },
     {
       "id": "grillen-auf-griechisch-hirtenkaese-schiffchen",
@@ -1526,12 +1414,9 @@
       "kcal": 930,
       "protein": 52,
       "durationMinutes": 35,
-      "categories": [
-        "high-protein"
-      ],
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "High Protein: 52 g Protein, 5.6 g/100 kcal.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {

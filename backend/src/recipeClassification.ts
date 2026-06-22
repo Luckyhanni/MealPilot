@@ -36,9 +36,7 @@ type RecipeLike = {
 
 export const recipeClassificationThresholds = {
   fastMaxMinutes: 30,
-  highProteinMinGrams: 35,
-  highProteinDensityMinGrams: 25,
-  highProteinDensityMinPer100Kcal: 4.5,
+  highProteinMinProteinPerServingExclusive: 60,
   lowCalMaxKcal: 650,
 } as const;
 
@@ -291,8 +289,6 @@ function orderedCategories(categories: RecipeCategory[]): RecipeCategory[] {
 export function classifyRecipe(recipe: RecipeLike): RecipeClassification {
   const nutrition = nutritionPerServing(recipe);
   const durationMinutes = Number(recipe.durationMinutes);
-  const proteinDensity =
-    nutrition.kcal > 0 ? (nutrition.protein / nutrition.kcal) * 100 : 0;
   const hasIngredients = recipeIngredients(recipe).length > 0;
   const blockerText = textForPrimaryBlockers(recipe);
   const explicitHintText = textForExplicitDietaryHints(recipe);
@@ -315,14 +311,10 @@ export function classifyRecipe(recipe: RecipeLike): RecipeClassification {
     );
   }
 
-  if (
-    nutrition.protein >= recipeClassificationThresholds.highProteinMinGrams ||
-    (nutrition.protein >= recipeClassificationThresholds.highProteinDensityMinGrams &&
-      proteinDensity >= recipeClassificationThresholds.highProteinDensityMinPer100Kcal)
-  ) {
+  if (nutrition.protein > recipeClassificationThresholds.highProteinMinProteinPerServingExclusive) {
     categories.push("high-protein");
     reasons.push(
-      `High Protein: ${nutrition.protein} g Protein, ${proteinDensity.toFixed(1)} g/100 kcal.`,
+      `High Protein: ${nutrition.protein} g Protein pro Portion > ${recipeClassificationThresholds.highProteinMinProteinPerServingExclusive} g.`,
     );
   }
 
