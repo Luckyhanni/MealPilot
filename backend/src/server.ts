@@ -420,26 +420,44 @@ function publicUser(user: MealPilotUser): PublicUser {
   return { id: user.id, name: user.name };
 }
 
+function parseAccountConfig(value: unknown): AccountConfig[] {
+  if (!Array.isArray(value)) return [];
+
+  return value
+    .filter((account): account is Record<keyof AccountConfig, string> => {
+      if (!account || typeof account !== "object") return false;
+      const candidate = account as Record<string, unknown>;
+      return (
+        typeof candidate.id === "string" &&
+        typeof candidate.name === "string" &&
+        typeof candidate.pin === "string" &&
+        Boolean(candidate.id.trim()) &&
+        Boolean(candidate.name.trim()) &&
+        Boolean(candidate.pin.trim())
+      );
+    })
+    .map((account) => ({
+      id: normalizeUserId(account.id),
+      name: account.name.trim(),
+      pin: account.pin.trim(),
+    }));
+}
+
 async function readAccountConfig(): Promise<AccountConfig[]> {
+  const envUsersJson = process.env.MEALPILOT_USERS_JSON?.trim();
+
+  if (envUsersJson) {
+    try {
+      return parseAccountConfig(JSON.parse(envUsersJson));
+    } catch {
+      console.warn("MEALPILOT_USERS_JSON konnte nicht gelesen werden.");
+      return [];
+    }
+  }
+
   try {
     const raw = await fs.readFile(accountConfigPath, "utf-8");
-    const parsed = JSON.parse(raw) as Partial<AccountConfig>[];
-    if (!Array.isArray(parsed)) return [];
-    return parsed
-      .filter(
-        (account): account is AccountConfig =>
-          typeof account.id === "string" &&
-          typeof account.name === "string" &&
-          typeof account.pin === "string" &&
-          Boolean(account.id.trim()) &&
-          Boolean(account.name.trim()) &&
-          Boolean(account.pin.trim()),
-      )
-      .map((account) => ({
-        id: normalizeUserId(account.id),
-        name: account.name.trim(),
-        pin: account.pin.trim(),
-      }));
+    return parseAccountConfig(JSON.parse(raw));
   } catch {
     return [];
   }

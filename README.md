@@ -102,6 +102,19 @@ MEALPILOT_ADMIN_PIN=
 
 `MEALPILOT_ADMIN_PIN` ist optional. Wenn ein Wert gesetzt ist, zeigt das Frontend beim ersten Öffnen eine einfache PIN-Abfrage. Erfolgreiche Prüfung wird im Browser per `localStorage` gemerkt. Das ist kein komplexes Login-System.
 
+Für mehrere PIN-Profile kann stattdessen `MEALPILOT_USERS_JSON` als Environment Variable beim Hoster gesetzt werden. Echte Werte gehören als Secret/Env-Var in Render oder den jeweiligen Hoster, nicht in committete Dateien und nicht ins Frontend.
+
+Format:
+
+```json
+[
+  { "id": "demo-family", "name": "Demo Familie", "pin": "0000" },
+  { "id": "demo-user", "name": "Demo User", "pin": "1111" }
+]
+```
+
+Lokale Entwicklung kann weiterhin `backend/data/users.local.json` verwenden. Eine Vorlage mit Fake-PINs liegt in `backend/data/users.example.json`.
+
 Hinweise:
 
 - Render Free kann nach Inaktivität schlafen.
