@@ -3692,5 +3692,370 @@
       "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
     ],
     "classificationNeedsReview": false
+  },
+  {
+    "id": "portobello-stroganoff-mit-extra-bio-schweinestreifen",
+    "name": "Portobello-Stroganoff mit extra Bio-Schweinestreifen",
+    "tier": "High Protein",
+    "kcal": 1075,
+    "protein": 54.1,
+    "durationMinutes": 25,
+    "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R32_W28_DE_R4786-3_edit_Main__2low-69d480d2.jpg",
+    "sourceUrl": "https://www.hellofresh.de/recipes/portobello-stroganoff-mit-extra-bio-schweinestreifen-69d8a2026bb16e39e1b7be8f",
+    "tags": [
+      "schnell"
+    ],
+    "ingredients": [
+      "270 g Fusilli",
+      "2 Stück Portobello-Pilze",
+      "200 g Champignons",
+      "1 Stück Zwiebel",
+      "2 Stück Knoblauchzehe",
+      "10 g Petersilie glatt/Thymian",
+      "1 g milder Chili-Mix",
+      "1 Stück Zitrone gewachst",
+      "250 ml Oatly Bio Cuisine",
+      "25 g Pilzbrühepaste",
+      "10 g Kürbiskerne geröstet",
+      "8 g Worcester Sauce",
+      "250 g Bio-Schweinefleischstreifen mariniert"
+    ],
+    "instructions": [],
+    "categories": [
+      "schnell"
+    ],
+    "sourceProvider": "HelloFresh",
+    "sourceCollection": "proteinreiche-rezepte",
+    "needsDetailImport": true,
+    "needsNutritionImport": false,
+    "servings": 2,
+    "nutritionPerServing": {
+      "kcal": 1075,
+      "protein": 54.1
+    },
+    "nutritionSource": "per-serving",
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 25 Minuten <= 30.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, schwein, schweine, schweinefleisch)."
+    ],
+    "classificationNeedsReview": false
+  },
+  {
+    "id": "lachsfilet-and-chips-mit-remoulade",
+    "name": "Lachsfilet & Chips mit Remoulade",
+    "tier": "High Protein",
+    "kcal": 827,
+    "protein": 40.3,
+    "durationMinutes": 20,
+    "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R7441_W45_DE_R3801-SP-2_Main_low-2a177af5.jpg",
+    "sourceUrl": "https://www.hellofresh.de/recipes/lachsfilet-and-chips-mit-remoulade-69d7d4e1defeabaeea859fee",
+    "tags": [
+      "schnell"
+    ],
+    "ingredients": [
+      "300 g Lachsfilet",
+      "600 g Kartoffeln",
+      "1 Stück Zitrone"
+    ],
+    "instructions": [],
+    "categories": [
+      "schnell"
+    ],
+    "sourceProvider": "HelloFresh",
+    "sourceCollection": "proteinreiche-rezepte",
+    "needsDetailImport": true,
+    "needsNutritionImport": false,
+    "servings": 2,
+    "nutritionPerServing": {
+      "kcal": 827,
+      "protein": 40.3
+    },
+    "nutritionSource": "per-serving",
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 20 Minuten <= 30.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs)."
+    ],
+    "classificationNeedsReview": false
+  },
+  {
+    "id": "omas-klassiker-kase-lauch-suppe-mit-hackfleisch",
+    "name": "Käse-Lauch-Suppe mit Hackfleisch",
+    "tier": "High Protein",
+    "kcal": 776,
+    "protein": 39.8,
+    "durationMinutes": 30,
+    "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R7441_W46_DE_R4706-2_Main_low-4ff7e680.jpg",
+    "sourceUrl": "https://www.hellofresh.de/recipes/omas-klassiker-kase-lauch-suppe-mit-hackfleisch-69d7c6746bb16e39e1b774ab",
+    "tags": [
+      "schnell"
+    ],
+    "ingredients": [],
+    "instructions": [],
+    "categories": [
+      "schnell"
+    ],
+    "sourceProvider": "HelloFresh",
+    "sourceCollection": "proteinreiche-rezepte",
+    "needsDetailImport": true,
+    "needsNutritionImport": false,
+    "servings": 2,
+    "nutritionPerServing": {
+      "kcal": 776,
+      "protein": 39.8
+    },
+    "nutritionSource": "per-serving",
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 30 Minuten <= 30.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+    ],
+    "classificationNeedsReview": false
+  },
+  {
+    "id": "bayerische-schweinshaxe-mit-bratensosse",
+    "name": "Bayerische Schweinshaxe mit Bratensoße",
+    "tier": "High Protein",
+    "kcal": 1414,
+    "protein": 113.7,
+    "durationMinutes": 30,
+    "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R32_W29_DE_R1060-3_Main_low-fa9c2617.jpg",
+    "sourceUrl": "https://www.hellofresh.de/recipes/bayerische-schweinshaxe-mit-bratensosse-69d4c4d9defeabaeea84f11f",
+    "tags": [
+      "schnell",
+      "high protein"
+    ],
+    "ingredients": [],
+    "instructions": [],
+    "categories": [
+      "schnell",
+      "high-protein"
+    ],
+    "sourceProvider": "HelloFresh",
+    "sourceCollection": "proteinreiche-rezepte",
+    "needsDetailImport": true,
+    "needsNutritionImport": false,
+    "servings": 2,
+    "nutritionPerServing": {
+      "kcal": 1414,
+      "protein": 113.7
+    },
+    "nutritionSource": "per-serving",
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 30 Minuten <= 30.",
+      "High Protein: 113.7 g Protein pro Portion > 60 g.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein)."
+    ],
+    "classificationNeedsReview": false
+  },
+  {
+    "id": "hahnchen-souflaki-bites-auf-griechischem-salat",
+    "name": "Hähnchen-Souflaki-Bites auf buntem Salat",
+    "tier": "High Protein",
+    "kcal": 609,
+    "protein": 45.2,
+    "durationMinutes": 15,
+    "imageUrl": "",
+    "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-souflaki-bites-auf-griechischem-salat-69c25822d795c2c9e4ffdb10",
+    "tags": [
+      "schnell",
+      "low cal"
+    ],
+    "ingredients": [],
+    "instructions": [],
+    "categories": [
+      "schnell",
+      "low-cal"
+    ],
+    "sourceProvider": "HelloFresh",
+    "sourceCollection": "proteinreiche-rezepte",
+    "needsDetailImport": true,
+    "needsNutritionImport": false,
+    "servings": 2,
+    "nutritionPerServing": {
+      "kcal": 609,
+      "protein": 45.2
+    },
+    "nutritionSource": "per-serving",
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 15 Minuten <= 30.",
+      "Low Cal: 609 kcal <= 650.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
+  },
+  {
+    "id": "hahnchenfilets-in-sticky-orangen-zwiebelsosse",
+    "name": "Hähnchenfilets in sticky Orangen-Zwiebelsoße",
+    "tier": "High Protein",
+    "kcal": 688,
+    "protein": 42.5,
+    "durationMinutes": 25,
+    "imageUrl": "",
+    "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenfilets-in-sticky-orangen-zwiebelsosse-69c25818814691069108fe04",
+    "tags": [
+      "schnell"
+    ],
+    "ingredients": [],
+    "instructions": [],
+    "categories": [
+      "schnell"
+    ],
+    "sourceProvider": "HelloFresh",
+    "sourceCollection": "proteinreiche-rezepte",
+    "needsDetailImport": true,
+    "needsNutritionImport": false,
+    "servings": 2,
+    "nutritionPerServing": {
+      "kcal": 688,
+      "protein": 42.5
+    },
+    "nutritionSource": "per-serving",
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 25 Minuten <= 30.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+    ],
+    "classificationNeedsReview": false
+  },
+  {
+    "id": "ecuador-encocado-de-pescado-fisch-in-kokosmilch",
+    "name": "Fischragout mit Seelachs und Kokosmilch",
+    "tier": "High Protein",
+    "kcal": 709,
+    "protein": 34.8,
+    "durationMinutes": 25,
+    "imageUrl": "",
+    "sourceUrl": "https://www.hellofresh.de/recipes/ecuador-encocado-de-pescado-fisch-in-kokosmilch-69c258088c3045e676b3688f",
+    "tags": [
+      "schnell"
+    ],
+    "ingredients": [],
+    "instructions": [],
+    "categories": [
+      "schnell"
+    ],
+    "sourceProvider": "HelloFresh",
+    "sourceCollection": "proteinreiche-rezepte",
+    "needsDetailImport": true,
+    "needsNutritionImport": false,
+    "servings": 2,
+    "nutritionPerServing": {
+      "kcal": 709,
+      "protein": 34.8
+    },
+    "nutritionSource": "per-serving",
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 25 Minuten <= 30.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fisch, lachs, seelachs)."
+    ],
+    "classificationNeedsReview": false
+  },
+  {
+    "id": "seelachs-auf-sahnigem-linsengemuse",
+    "name": "Seelachs auf sahnigem Linsengemüse",
+    "tier": "High Protein",
+    "kcal": 475,
+    "protein": 43.8,
+    "durationMinutes": 15,
+    "imageUrl": "",
+    "sourceUrl": "https://www.hellofresh.de/recipes/seelachs-auf-sahnigem-linsengemuse-69c25804814691069108fd16",
+    "tags": [
+      "schnell",
+      "low cal"
+    ],
+    "ingredients": [],
+    "instructions": [],
+    "categories": [
+      "schnell",
+      "low-cal"
+    ],
+    "sourceProvider": "HelloFresh",
+    "sourceCollection": "proteinreiche-rezepte",
+    "needsDetailImport": true,
+    "needsNutritionImport": false,
+    "servings": 2,
+    "nutritionPerServing": {
+      "kcal": 475,
+      "protein": 43.8
+    },
+    "nutritionSource": "per-serving",
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 15 Minuten <= 30.",
+      "Low Cal: 475 kcal <= 650.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
+    ],
+    "classificationNeedsReview": false
+  },
+  {
+    "id": "putenschnitzel-mit-currydip",
+    "name": "Putenschnitzel mit Currydip",
+    "tier": "High Protein",
+    "kcal": 628,
+    "protein": 46.1,
+    "durationMinutes": 30,
+    "imageUrl": "",
+    "sourceUrl": "https://www.hellofresh.de/recipes/putenschnitzel-mit-currydip-69c257fcd795c2c9e4ffd97e",
+    "tags": [
+      "schnell",
+      "low cal"
+    ],
+    "ingredients": [],
+    "instructions": [],
+    "categories": [
+      "schnell",
+      "low-cal"
+    ],
+    "sourceProvider": "HelloFresh",
+    "sourceCollection": "proteinreiche-rezepte",
+    "needsDetailImport": true,
+    "needsNutritionImport": false,
+    "servings": 2,
+    "nutritionPerServing": {
+      "kcal": 628,
+      "protein": 46.1
+    },
+    "nutritionSource": "per-serving",
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Schnell: 30 Minuten <= 30.",
+      "Low Cal: 628 kcal <= 650.",
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (pute, schnitzel)."
+    ],
+    "classificationNeedsReview": false
+  },
+  {
+    "id": "enchiladas-mit-hack-vom-weiderind-and-kidneybohnen",
+    "name": "Enchiladas mit Hack vom Weiderind",
+    "tier": "High Protein",
+    "kcal": 863,
+    "protein": 47.3,
+    "durationMinutes": 35,
+    "imageUrl": "",
+    "sourceUrl": "https://www.hellofresh.de/recipes/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-69c257d8814691069108fbab",
+    "tags": [],
+    "ingredients": [],
+    "instructions": [],
+    "categories": [],
+    "sourceProvider": "HelloFresh",
+    "sourceCollection": "proteinreiche-rezepte",
+    "needsDetailImport": true,
+    "needsNutritionImport": false,
+    "servings": 2,
+    "nutritionPerServing": {
+      "kcal": 863,
+      "protein": 47.3
+    },
+    "nutritionSource": "per-serving",
+    "dietaryType": "omnivore",
+    "classificationReasons": [
+      "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (hack)."
+    ],
+    "classificationNeedsReview": false
   }
 ]

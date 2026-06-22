@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-22T11:32:09.838Z",
+  "generatedAt": "2026-06-22T12:24:04.821Z",
   "thresholds": {
     "fastMaxMinutes": 30,
     "highProteinMinProteinPerServingExclusive": 60,
     "lowCalMaxKcal": 650
   },
   "summary": {
-    "total": 48,
-    "schnell": 6,
-    "high-protein": 0,
-    "low-cal": 2,
+    "total": 58,
+    "schnell": 15,
+    "high-protein": 1,
+    "low-cal": 5,
     "vegetarisch": 6,
     "vegan": 0,
-    "omnivore": 42,
+    "omnivore": 52,
     "vegetarian": 6,
     "needsReview": 2
   },
@@ -1462,6 +1462,291 @@
           "haehnchenbrust",
           "honig",
           "milch"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "portobello-stroganoff-mit-extra-bio-schweinestreifen",
+      "name": "Portobello-Stroganoff mit extra Bio-Schweinestreifen",
+      "kcal": 1075,
+      "protein": 54.1,
+      "durationMinutes": 25,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 25 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, schwein, schweine, schweinefleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "schwein",
+          "schweine",
+          "schweinefleisch"
+        ],
+        "animalProducts": [
+          "fleisch",
+          "schwein",
+          "schweine",
+          "schweinefleisch"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "lachsfilet-and-chips-mit-remoulade",
+      "name": "Lachsfilet & Chips mit Remoulade",
+      "kcal": 827,
+      "protein": 40.3,
+      "durationMinutes": 20,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 20 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "lachs"
+        ],
+        "animalProducts": [
+          "lachs"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "omas-klassiker-kase-lauch-suppe-mit-hackfleisch",
+      "name": "Käse-Lauch-Suppe mit Hackfleisch",
+      "kcal": 776,
+      "protein": 39.8,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hack",
+          "hackfleisch"
+        ],
+        "animalProducts": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "kaese"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "bayerische-schweinshaxe-mit-bratensosse",
+      "name": "Bayerische Schweinshaxe mit Bratensoße",
+      "kcal": 1414,
+      "protein": 113.7,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell",
+        "high-protein"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "High Protein: 113.7 g Protein pro Portion > 60 g.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "schwein"
+        ],
+        "animalProducts": [
+          "schwein"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "hahnchen-souflaki-bites-auf-griechischem-salat",
+      "name": "Hähnchen-Souflaki-Bites auf buntem Salat",
+      "kcal": 609,
+      "protein": 45.2,
+      "durationMinutes": 15,
+      "categories": [
+        "schnell",
+        "low-cal"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 15 Minuten <= 30.",
+        "Low Cal: 609 kcal <= 650.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "haehnchen"
+        ],
+        "animalProducts": [
+          "haehnchen"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "hahnchenfilets-in-sticky-orangen-zwiebelsosse",
+      "name": "Hähnchenfilets in sticky Orangen-Zwiebelsoße",
+      "kcal": 688,
+      "protein": 42.5,
+      "durationMinutes": 25,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 25 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "haehnchen"
+        ],
+        "animalProducts": [
+          "haehnchen"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "ecuador-encocado-de-pescado-fisch-in-kokosmilch",
+      "name": "Fischragout mit Seelachs und Kokosmilch",
+      "kcal": 709,
+      "protein": 34.8,
+      "durationMinutes": 25,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 25 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fisch, lachs, seelachs)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fisch",
+          "lachs",
+          "seelachs"
+        ],
+        "animalProducts": [
+          "fisch",
+          "lachs",
+          "milch",
+          "seelachs"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "seelachs-auf-sahnigem-linsengemuse",
+      "name": "Seelachs auf sahnigem Linsengemüse",
+      "kcal": 475,
+      "protein": 43.8,
+      "durationMinutes": 15,
+      "categories": [
+        "schnell",
+        "low-cal"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 15 Minuten <= 30.",
+        "Low Cal: 475 kcal <= 650.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "lachs",
+          "seelachs"
+        ],
+        "animalProducts": [
+          "lachs",
+          "seelachs"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "putenschnitzel-mit-currydip",
+      "name": "Putenschnitzel mit Currydip",
+      "kcal": 628,
+      "protein": 46.1,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell",
+        "low-cal"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "Low Cal: 628 kcal <= 650.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (pute, schnitzel)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "pute",
+          "schnitzel"
+        ],
+        "animalProducts": [
+          "pute",
+          "schnitzel"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "enchiladas-mit-hack-vom-weiderind-and-kidneybohnen",
+      "name": "Enchiladas mit Hack vom Weiderind",
+      "kcal": 863,
+      "protein": 47.3,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (hack)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "hack"
+        ],
+        "animalProducts": [
+          "hack"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
