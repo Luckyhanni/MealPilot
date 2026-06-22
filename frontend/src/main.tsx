@@ -165,6 +165,7 @@ type SingleRecipeHistoryEntry = {
 };
 type PrintOrientation = "portrait" | "landscape";
 type View = "home" | "plan" | "shopping" | "print" | "recipe" | "history" | "settings" | "single" | "profile";
+type RecipeDetailTab = "overview" | "ingredients" | "instructions";
 type SingleSort = "rating" | "protein-desc" | "kcal-asc" | "kcal-desc" | "duration-asc" | "name-asc";
 type HistoryMode = "plans" | "recipes";
 type RecipesPage = {
@@ -1455,6 +1456,7 @@ function App() {
           recipe={selectedRecipe}
           back={() => setView(recipeBackView === "recipe" ? "plan" : recipeBackView)}
           importRecipe={importRecipe}
+          openSingleShopping={openSingleShopping}
         />
       )}
       {view === "print" && plan && (
@@ -3751,114 +3753,220 @@ function RecipeDetail({
   recipe,
   back,
   importRecipe,
+  openSingleShopping,
 }: {
   recipe: Recipe;
   back: () => void;
   importRecipe: (recipe: Recipe) => void;
+  openSingleShopping: (recipe: Recipe) => void;
 }) {
+  const [activeTab, setActiveTab] = useState<RecipeDetailTab>("overview");
   const nutrition = getRecipeNutritionPerServing(recipe);
+  const ingredients = recipe.ingredients || [];
+  const instructions = recipe.instructions || [];
+  const servingsLabel = recipe.servings
+    ? `${recipe.servings} ${recipe.servings === 1 ? "Portion" : "Portionen"}`
+    : "pro Rezept";
+
+  useEffect(() => {
+    setActiveTab("overview");
+  }, [recipe.id]);
+
   return (
-    <main className="recipe-detail-wrap">
-      <section className="recipe-hero">
-        <div className="recipe-hero-image">
+    <main className="recipe-detail-page recipe-detail-wrap">
+      <section className="recipe-detail-shell">
+        <figure className="recipe-hero-image">
           <img src={recipe.imageUrl} alt={recipe.name} />
-        </div>
-        <div className="recipe-hero-card">
-          <p className="eyebrow">Kochansicht</p>
-          <h1>{recipe.name}</h1>
-          <RecipeMeta
-            durationMinutes={recipe.durationMinutes}
-            kcal={nutrition.kcal}
-            protein={nutrition.protein}
-          />
-          <p className="recipe-tier-note">{recipe.tier}</p>
-          <div className="recipe-actions">
-            <button className="secondary" onClick={back}>
-              Zurück
-            </button>
-            {recipe.sourceUrl && (
-              <a
-                className="secondary link-button"
-                href={recipe.sourceUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Original öffnen
-              </a>
-            )}
-            {recipe.sourceUrl && (
-              <button className="primary" onClick={() => importRecipe(recipe)}>
-                <DownloadCloud size={18} /> Bilder/Zutaten/Anleitung neu importieren
-              </button>
-            )}
+        </figure>
+
+        <section className="recipe-detail-header-card" aria-labelledby="recipe-detail-title">
+          <span className="recipe-detail-badge">
+            <Utensils size={14} /> Kochansicht
+          </span>
+          <h1 id="recipe-detail-title" className="recipe-detail-title">
+            {recipe.name}
+          </h1>
+          <p className="recipe-detail-tier">{recipe.tier}</p>
+
+          <div className="recipe-meta-grid" aria-label="Rezeptwerte pro Portion">
+            <div className="recipe-meta-pill">
+              <img src="/assets/meal-meta-icons/clock-time.svg" alt="" aria-hidden="true" />
+              <strong>{recipe.durationMinutes} Min.</strong>
+              <span>Dauer</span>
+            </div>
+            <div className="recipe-meta-pill">
+              <img src="/assets/meal-meta-icons/calories-flame.svg" alt="" aria-hidden="true" />
+              <strong>{nutrition.kcal} kcal</strong>
+              <span>Kalorien</span>
+            </div>
+            <div className="recipe-meta-pill">
+              <Dumbbell size={18} />
+              <strong>{nutrition.protein} g</strong>
+              <span>Protein</span>
+            </div>
           </div>
-          {recipe.importedAt && (
-            <small className="import-note">
-              Zuletzt importiert:{" "}
-              {new Date(recipe.importedAt).toLocaleString("de-DE")}
-            </small>
-          )}
+        </section>
+
+        <div className="recipe-tabs" role="tablist" aria-label="Rezeptdetailbereiche">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeTab === "overview"}
+            className={`recipe-tab ${activeTab === "overview" ? "active" : ""}`}
+            onClick={() => setActiveTab("overview")}
+          >
+            <BookOpen size={16} /> Übersicht
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeTab === "ingredients"}
+            className={`recipe-tab ${activeTab === "ingredients" ? "active" : ""}`}
+            onClick={() => setActiveTab("ingredients")}
+          >
+            <ShoppingBasket size={16} /> Zutaten
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeTab === "instructions"}
+            className={`recipe-tab ${activeTab === "instructions" ? "active" : ""}`}
+            onClick={() => setActiveTab("instructions")}
+          >
+            <CalendarDays size={16} /> Anleitung
+          </button>
         </div>
-      </section>
 
-      <section className="recipe-two-col">
-        <article className="ingredients-card">
-          <h2>Zutaten</h2>
-          <ul>
-            {(recipe.ingredients || []).slice(0, 28).map((ingredient, i) => (
-              <li key={`${ingredient}-${i}`}>{ingredient}</li>
-            ))}
-          </ul>
-        </article>
-        <article className="nutrition-card">
-          <h2>Nährwerte pro Portion</h2>
-          <dl>
-            <div>
-              <dt>Kalorien</dt>
-              <dd>{nutrition.kcal} kcal</dd>
-            </div>
-            <div>
-              <dt>Protein</dt>
-              <dd>{nutrition.protein} g</dd>
-            </div>
-            <div>
-              <dt>Dauer</dt>
-              <dd>{recipe.durationMinutes} Min.</dd>
-            </div>
-          </dl>
-        </article>
-      </section>
-
-      <section className="steps-section">
-        <h2>Zubereitung</h2>
-        {recipe.instructions && recipe.instructions.length > 0 ? (
-          <div className="steps-list">
-            {recipe.instructions.map((step, index) => (
-              <article className="step-card" key={`${step.title}-${index}`}>
-                {step.imageUrl ? (
-                  <img src={step.imageUrl} alt="" />
-                ) : (
-                  <div className="step-placeholder">{index + 1}</div>
-                )}
-                <div className="step-text">
-                  <span>{index + 1}</span>
-                  <p>{step.text}</p>
+        {activeTab === "overview" && (
+          <section className="recipe-overview-grid">
+            <article className="recipe-info-card recipe-nutrition-card">
+              <div className="recipe-card-header">
+                <span className="recipe-card-icon">
+                  <CheckCheck size={22} />
+                </span>
+                <h2>Nährwerte pro Portion</h2>
+                <span className="recipe-card-badge">pro Portion</span>
+              </div>
+              <div className="recipe-nutrition-grid">
+                <div>
+                  <strong>{nutrition.kcal} kcal</strong>
+                  <span>Kalorien</span>
                 </div>
-              </article>
-            ))}
-          </div>
-        ) : (
-          <div className="empty-steps">
-            <p>
-              Für dieses Rezept ist noch keine lokale
-              Schritt-für-Schritt-Anleitung importiert.
-            </p>
-            {recipe.sourceUrl && (
-              <button className="primary" onClick={() => importRecipe(recipe)}>
-                <DownloadCloud size={18} /> Von HelloFresh importieren
+                <div>
+                  <strong>{nutrition.protein} g</strong>
+                  <span>Protein</span>
+                </div>
+                <div>
+                  <strong>{recipe.durationMinutes} Min.</strong>
+                  <span>Dauer</span>
+                </div>
+              </div>
+            </article>
+
+            <article className="recipe-shopping-action-card">
+              <div className="recipe-card-header">
+                <span className="recipe-card-icon">
+                  <ShoppingBasket size={22} />
+                </span>
+                <h2>Einkaufsliste</h2>
+              </div>
+              <p>Zutaten für dieses Rezept planen und direkt abhaken.</p>
+              <button
+                type="button"
+                className="recipe-shopping-button"
+                onClick={() => openSingleShopping(recipe)}
+              >
+                <ShoppingBasket size={20} /> Einkaufsliste öffnen
               </button>
+            </article>
+
+            <article className="recipe-actions-card recipe-secondary-actions">
+              <div className="recipe-card-header">
+                <span className="recipe-card-icon">
+                  <DownloadCloud size={22} />
+                </span>
+                <h2>Weitere Optionen</h2>
+              </div>
+              <div className="recipe-actions-grid">
+                <button type="button" className="recipe-secondary-action" onClick={back}>
+                  Zurück
+                </button>
+                {recipe.sourceUrl && (
+                  <a
+                    className="recipe-secondary-action link-button"
+                    href={recipe.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Original öffnen
+                  </a>
+                )}
+                {recipe.sourceUrl && (
+                  <button type="button" className="recipe-secondary-action" onClick={() => importRecipe(recipe)}>
+                    <DownloadCloud size={18} /> Neu importieren
+                  </button>
+                )}
+              </div>
+              {recipe.importedAt && (
+                <small className="import-note">
+                  Zuletzt importiert:{" "}
+                  {new Date(recipe.importedAt).toLocaleString("de-DE")}
+                </small>
+              )}
+            </article>
+          </section>
+        )}
+
+        {activeTab === "ingredients" && (
+          <section className="recipe-ingredients-card">
+            <div className="recipe-card-header">
+              <span className="recipe-card-icon">
+                <ShoppingBasket size={22} />
+              </span>
+              <h2>Zutaten</h2>
+              <span className="recipe-card-badge">{servingsLabel}</span>
+            </div>
+            <ul className="recipe-ingredient-list">
+              {ingredients.map((ingredient, index) => (
+                <li key={`${ingredient}-${index}`}>{ingredient}</li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {activeTab === "instructions" && (
+          <section className="recipe-instructions-list" aria-label="Anleitung">
+            {instructions.length > 0 ? (
+              instructions.map((step, index) => (
+                <article className="recipe-step-card" key={`${step.title || "step"}-${index}`}>
+                  {step.imageUrl && (
+                    <img className="recipe-step-image" src={step.imageUrl} alt="" loading="lazy" />
+                  )}
+                  <div className="recipe-step-body">
+                    <span className="recipe-step-number">{index + 1}</span>
+                    <p className="recipe-step-text">{step.text}</p>
+                  </div>
+                </article>
+              ))
+            ) : (
+              <article className="recipe-actions-card">
+                <div className="recipe-card-header">
+                  <span className="recipe-card-icon">
+                    <CalendarDays size={22} />
+                  </span>
+                  <h2>Anleitung</h2>
+                </div>
+                <p className="recipe-empty-copy">
+                  Für dieses Rezept ist noch keine lokale Schritt-für-Schritt-Anleitung importiert.
+                </p>
+                {recipe.sourceUrl && (
+                  <button type="button" className="primary" onClick={() => importRecipe(recipe)}>
+                    <DownloadCloud size={18} /> Von HelloFresh importieren
+                  </button>
+                )}
+              </article>
             )}
-          </div>
+          </section>
         )}
       </section>
     </main>
