@@ -1,0 +1,37 @@
+{
+  "id": "scharfer-sriracha-blumenkohl-mit-dalsosse",
+  "name": "Scharfer Sriracha-Blumenkohl mit Dalsoße",
+  "tier": "Vegan",
+  "kcal": 860,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/scharfer-sriracha-blumenkohl-mit-dalsosse-695b7f252a2e2effad184c4c",
+  "tags": [
+    "viel gemüse",
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 860,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach",
+  "subtitle": "dazu Kokos-Mandel-Reis",
+  "sectionNames": [
+    "Schnelle Vegane Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

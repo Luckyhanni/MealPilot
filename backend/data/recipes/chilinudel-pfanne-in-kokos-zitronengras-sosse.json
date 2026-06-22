@@ -1,0 +1,37 @@
+{
+  "id": "chilinudel-pfanne-in-kokos-zitronengras-sosse",
+  "name": "Chilinudel-Pfanne in Kokos-Zitronengras-Soße",
+  "tier": "Vegan",
+  "kcal": 859,
+  "protein": 0,
+  "durationMinutes": 25,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/chilinudel-pfanne-in-kokos-zitronengras-sosse-696f8336384e652ce6a49a0c",
+  "tags": [
+    "schnell",
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 859,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "mit Zuckerschoten und Karotten",
+  "sectionNames": [
+    "Schnelle Vegane Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

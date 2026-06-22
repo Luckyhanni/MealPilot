@@ -1,0 +1,39 @@
+{
+  "id": "high-protein-linsensalat-mit-veganem-chick-eria-filet",
+  "name": "Bunter Linsensalat mit veganem Chick-Eria Filet",
+  "tier": "Vegan",
+  "kcal": 527,
+  "protein": 0,
+  "durationMinutes": 25,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/high-protein-linsensalat-mit-veganem-chick-eria-filet-692d767a1ca49f0d8bd36cec",
+  "tags": [
+    "viel gemüse",
+    "vegan",
+    "kalorien im blick",
+    "high protein"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 527,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach",
+  "subtitle": "knackigem Apfel und cremigem Dressing",
+  "sectionNames": [
+    "Die beliebtesten veganen HelloFresh Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

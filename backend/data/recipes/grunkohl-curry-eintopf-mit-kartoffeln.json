@@ -1,0 +1,37 @@
+{
+  "id": "grunkohl-curry-eintopf-mit-kartoffeln",
+  "name": "Grünkohl-Curry-Eintopf mit Kartoffeln",
+  "tier": "Vegan",
+  "kcal": 747,
+  "protein": 0,
+  "durationMinutes": 25,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/grunkohl-curry-eintopf-mit-kartoffeln-68e530af908d7cf716b7c4a4",
+  "tags": [
+    "vegan",
+    "schnell"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 747,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "dazu Limetten-Minz-Gremolata und Erdnuss-Topping",
+  "sectionNames": [
+    "Vegane Curry Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

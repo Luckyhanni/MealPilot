@@ -1,0 +1,38 @@
+{
+  "id": "veganes-portobello-champignon-stroganoff",
+  "name": "Veganes Portobello-Champignon-Stroganoff",
+  "tier": "Vegan",
+  "kcal": 919,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/veganes-portobello-champignon-stroganoff-695e8e055c0be345fe76d61c",
+  "tags": [
+    "viel gemüse",
+    "schnell",
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 919,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "auf Fusilli mit Kürbiskern-Chili-Topping",
+  "sectionNames": [
+    "Schnelle Vegane Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

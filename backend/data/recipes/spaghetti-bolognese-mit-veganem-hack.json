@@ -1,0 +1,38 @@
+{
+  "id": "spaghetti-bolognese-mit-veganem-hack",
+  "name": "Spaghetti Bolognese mit veganem Hack",
+  "tier": "Vegan",
+  "kcal": 849,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/spaghetti-bolognese-mit-veganem-hack-6904cc569140c7b54fef9f4d",
+  "tags": [
+    "viel gemüse",
+    "family",
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 849,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "in würziger Tomatensoße",
+  "sectionNames": [
+    "Vegane Rezepte für die Familie"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

@@ -1,0 +1,37 @@
+{
+  "id": "glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli",
+  "name": "Glasnudeln in Miso-Erdnuss-Soße mit Brokkoli",
+  "tier": "Vegan",
+  "kcal": 726,
+  "protein": 0,
+  "durationMinutes": 35,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli-692d78301ca49f0d8bd37853",
+  "tags": [
+    "vegan",
+    "viel gemüse"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 726,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Schwierig",
+  "subtitle": "Paprika und Pilzen, dazu süß-scharfes Sesam-Topping",
+  "sectionNames": [
+    "Vegane Rezepte zum Abendessen"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

@@ -1,0 +1,37 @@
+{
+  "id": "beyond-meat-vegan-burger-mit-bbq-zwiebeln",
+  "name": "Beyond Meat Vegan Burger mit BBQ-Zwiebeln",
+  "tier": "Vegan",
+  "kcal": 938,
+  "protein": 26.6,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/beyond-meat-vegan-burger-mit-bbq-zwiebeln-6904ca9d9140c7b54fef930d",
+  "tags": [
+    "vegan",
+    "wenig vorbereitung"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 938,
+    "protein": 26.6
+  },
+  "nutritionSource": "per-serving",
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach",
+  "subtitle": "Ofenkartoffeln und Tomate",
+  "sectionNames": [
+    "Vegane Burger Rezepte"
+  ],
+  "notes": "Proteinwert von der Rezeptseite übernommen."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "kartoffelstampf-mit-einem-asiatischen-twist",
+  "name": "Glasierte vegane Filetstücke auf Umami-Kartoffelstampf",
+  "tier": "Vegan",
+  "kcal": 518,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/kartoffelstampf-mit-einem-asiatischen-twist-6904cc259140c7b54fef9dbe",
+  "tags": [
+    "high protein",
+    "kalorien im blick",
+    "vegan",
+    "viel gemüse"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 518,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach",
+  "subtitle": "mit Miso-Kohl und Kokos",
+  "sectionNames": [
+    "Die beliebtesten veganen HelloFresh Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

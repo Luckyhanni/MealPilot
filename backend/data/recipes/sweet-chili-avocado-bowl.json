@@ -1,0 +1,38 @@
+{
+  "id": "sweet-chili-avocado-bowl",
+  "name": "Sweet-Chili-Avocado-Bowl",
+  "tier": "Vegan",
+  "kcal": 729,
+  "protein": 0,
+  "durationMinutes": 25,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/sweet-chili-avocado-bowl-695b7f6f5c0be345fe7676b1",
+  "tags": [
+    "viel gemüse",
+    "schnell",
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 729,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "dazu glasierter Porree und Gurkensalat",
+  "sectionNames": [
+    "Schnelle Vegane Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

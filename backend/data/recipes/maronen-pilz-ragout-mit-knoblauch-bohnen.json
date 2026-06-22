@@ -1,0 +1,38 @@
+{
+  "id": "maronen-pilz-ragout-mit-knoblauch-bohnen",
+  "name": "Maronen-Pilz-Ragout mit Knoblauch-Bohnen",
+  "tier": "Vegan",
+  "kcal": 583,
+  "protein": 15.9,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/maronen-pilz-ragout-mit-knoblauch-bohnen-69318c4024f7e56250a35591",
+  "tags": [
+    "viel gemüse",
+    "vegan",
+    "kalorien im blick"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 583,
+    "protein": 15.9
+  },
+  "nutritionSource": "per-serving",
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "dazu Kartoffelpüree, getoppt mit Petersilie",
+  "sectionNames": [
+    "Die beliebtesten veganen HelloFresh Rezepte"
+  ],
+  "notes": "Proteinwert von der Rezeptseite übernommen."
+}

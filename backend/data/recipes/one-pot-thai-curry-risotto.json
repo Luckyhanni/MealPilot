@@ -1,0 +1,36 @@
+{
+  "id": "one-pot-thai-curry-risotto",
+  "name": "One-Pot Thai-Curry-Risotto",
+  "tier": "Vegan",
+  "kcal": 743,
+  "protein": 0,
+  "durationMinutes": 35,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-thai-curry-risotto-692d774a126207051adca5ca",
+  "tags": [
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 743,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "mit Kaiserschoten und Champignons",
+  "sectionNames": [
+    "Vegane Curry Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

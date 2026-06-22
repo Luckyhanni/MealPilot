@@ -1,0 +1,37 @@
+{
+  "id": "karibischer-susskartoffel-kokos-eintopf",
+  "name": "Karibischer Süßkartoffel-Kokos-Eintopf",
+  "tier": "Vegan",
+  "kcal": 1110,
+  "protein": 0,
+  "durationMinutes": 40,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/karibischer-susskartoffel-kokos-eintopf-692d76ce114b735a00613985",
+  "tags": [
+    "viel gemüse",
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 1110,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Schwierig",
+  "subtitle": "mit Chili-Pfannkuchen, Bohnen und Avocado",
+  "sectionNames": [
+    "Vegane Rezepte zum Abendessen"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

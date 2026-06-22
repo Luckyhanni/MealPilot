@@ -1,0 +1,39 @@
+{
+  "id": "porree-schupfnudel-pfanne",
+  "name": "Porree-Schupfnudel-Pfanne",
+  "tier": "Vegan",
+  "kcal": 731,
+  "protein": 0,
+  "durationMinutes": 25,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/porree-schupfnudel-pfanne-692d786a1ca49f0d8bd37a60",
+  "tags": [
+    "schnell",
+    "viel gemüse",
+    "family",
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 731,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach",
+  "subtitle": "mit Apfel-Radieschen-Salat",
+  "sectionNames": [
+    "Vegane Rezepte für die Familie"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

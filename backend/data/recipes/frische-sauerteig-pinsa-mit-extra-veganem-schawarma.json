@@ -1,0 +1,38 @@
+{
+  "id": "frische-sauerteig-pinsa-mit-extra-veganem-schawarma",
+  "name": "Frische Sauerteig-Pinsa mit extra veganem Schawarma",
+  "tier": "Vegan",
+  "kcal": 1158,
+  "protein": 0,
+  "durationMinutes": 35,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/frische-sauerteig-pinsa-mit-extra-veganem-schawarma-6904cc2279e2c370e48f4866",
+  "tags": [
+    "vegan",
+    "viel gemüse",
+    "family"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 1158,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "mit Aubergine und Paprika, dazu frischer Salat",
+  "sectionNames": [
+    "Vegane Rezepte für die Familie"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

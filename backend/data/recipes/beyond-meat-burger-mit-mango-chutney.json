@@ -1,0 +1,37 @@
+{
+  "id": "beyond-meat-burger-mit-mango-chutney",
+  "name": "Beyond Meat Burger mit Mango-Chutney",
+  "tier": "Vegan",
+  "kcal": 1186,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/beyond-meat-burger-mit-mango-chutney-692d7723126207051adca477",
+  "tags": [
+    "vegan",
+    "viel gemüse"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 1186,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach",
+  "subtitle": "dazu Kartoffelspalten und frischer Romanasalat",
+  "sectionNames": [
+    "Vegane Burger Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

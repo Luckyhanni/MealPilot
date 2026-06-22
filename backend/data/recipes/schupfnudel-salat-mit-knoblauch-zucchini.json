@@ -1,0 +1,38 @@
+{
+  "id": "schupfnudel-salat-mit-knoblauch-zucchini",
+  "name": "Schupfnudel-Salat mit Knoblauch-Zucchini",
+  "tier": "Vegan",
+  "kcal": 712,
+  "protein": 0,
+  "durationMinutes": 20,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/schupfnudel-salat-mit-knoblauch-zucchini-695b7eeb725ffb771e0931cb",
+  "tags": [
+    "family",
+    "schnell",
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 712,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "dazu Balsamico-Aprikosen-Dressing & Pinienkerne",
+  "sectionNames": [
+    "Vegane Rezepte für die Familie"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

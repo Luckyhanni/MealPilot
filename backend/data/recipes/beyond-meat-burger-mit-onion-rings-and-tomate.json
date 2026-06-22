@@ -1,0 +1,36 @@
+{
+  "id": "beyond-meat-burger-mit-onion-rings-and-tomate",
+  "name": "Beyond Meat Burger mit Onion Rings & Tomate",
+  "tier": "Vegan",
+  "kcal": 1009,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/beyond-meat-burger-mit-onion-rings-and-tomate-68e5304b311cc828e18d48cc",
+  "tags": [
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 1009,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach",
+  "subtitle": "dazu Kartoffelwedges, Karottenslaw und Dip",
+  "sectionNames": [
+    "Vegane Burger Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "fettuccine-in-cremiger-krauterseitlingsosse",
+  "name": "Fettuccine in cremiger Kräuterseitlingsoße",
+  "tier": "Vegan",
+  "kcal": 929,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/fettuccine-in-cremiger-krauterseitlingsosse-695b7f15725ffb771e093303",
+  "tags": [
+    "family",
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 929,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "mit nussigem Pangrattato",
+  "sectionNames": [
+    "Vegane Rezepte für die Familie",
+    "Schnelle Vegane Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

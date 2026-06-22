@@ -1,0 +1,36 @@
+{
+  "id": "yaki-onigiri-reisballchen-auf-tofu-korma-curry",
+  "name": "Yaki-Onigiri: Reisbällchen auf Tofu Korma Curry",
+  "tier": "Vegan",
+  "kcal": 924,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/yaki-onigiri-reisballchen-auf-tofu-korma-curry-68e5313dd6d3e8af9dd09119",
+  "tags": [
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 924,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach",
+  "subtitle": "mit Paprika, Karotte und Cashew-Topping",
+  "sectionNames": [
+    "Vegane Curry Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

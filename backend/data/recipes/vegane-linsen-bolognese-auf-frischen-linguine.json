@@ -1,0 +1,40 @@
+{
+  "id": "vegane-linsen-bolognese-auf-frischen-linguine",
+  "name": "Vegane Linsen-Bolognese auf frischen Linguine",
+  "tier": "Vegan",
+  "kcal": 977,
+  "protein": 0,
+  "durationMinutes": 15,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/vegane-linsen-bolognese-auf-frischen-linguine-695b7f4b5c0be345fe767627",
+  "tags": [
+    "viel gemüse",
+    "family",
+    "extra schnell",
+    "vegan"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 977,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "in würziger Tomatensoße mit Basilikum-Pinien-Topping",
+  "sectionNames": [
+    "Vegane Rezepte für die Familie",
+    "Schnelle Vegane Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}

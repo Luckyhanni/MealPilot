@@ -1,0 +1,38 @@
+{
+  "id": "tropische-salat-bowl-mit-susskartoffel",
+  "name": "Tropische Salat-Bowl mit Süßkartoffel",
+  "tier": "Vegan",
+  "kcal": 808,
+  "protein": 0,
+  "durationMinutes": 25,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/tropische-salat-bowl-mit-susskartoffel-6904cc779140c7b54fefa06d",
+  "tags": [
+    "vegan",
+    "schnell",
+    "viel gemüse"
+  ],
+  "categories": [
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 808,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "vegane-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel",
+  "subtitle": "dazu Avocado und Mango",
+  "sectionNames": [
+    "Die beliebtesten veganen HelloFresh Rezepte"
+  ],
+  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+}
