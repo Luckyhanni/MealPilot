@@ -53,18 +53,38 @@ function getSupabaseClient(): SupabaseClient {
   return supabaseClient;
 }
 
+async function readLocalStore<T>(file: string, fallback: T): Promise<T> {
+  try {
+    const raw = await fs.readFile(path.join(dataDir, file), "utf-8");
+    return JSON.parse(raw) as T;
+  } catch (error) {
+    console.warn(
+      `Lokaler Store ${file} konnte nicht gelesen werden, nutze Fallback:`,
+      error,
+    );
+    return fallback;
+  }
+}
+
+async function writeLocalStore(file: string, value: unknown): Promise<void> {
+  await fs.mkdir(dataDir, { recursive: true });
+  await fs.writeFile(
+    path.join(dataDir, file),
+    JSON.stringify(value, null, 2),
+    "utf-8",
+  );
+}
+
 export async function readStore<T>(file: string, fallback: T): Promise<T> {
+  // The recipe catalog is versioned with the app and built from
+  // backend/data/recipes/*.json during deployment. Do not read recipes from
+  // Supabase here, otherwise production can silently serve an old catalog.
+  if (file === "recipes.json") {
+    return readLocalStore<T>(file, fallback);
+  }
+
   if (!isSupabaseEnabled()) {
-    try {
-      const raw = await fs.readFile(path.join(dataDir, file), "utf-8");
-      return JSON.parse(raw) as T;
-    } catch (error) {
-      console.warn(
-        `Lokaler Store ${file} konnte nicht gelesen werden, nutze Fallback:`,
-        error,
-      );
-      return fallback;
-    }
+    return readLocalStore<T>(file, fallback);
   }
 
   const key = storeKeyForFile(file);
@@ -88,13 +108,15 @@ export async function readStore<T>(file: string, fallback: T): Promise<T> {
 }
 
 export async function writeStore(file: string, value: unknown): Promise<void> {
+  // Keep the deployed recipe catalog file-based. User/runtime data can still
+  // use Supabase; recipes are rebuilt from committed recipe JSON files.
+  if (file === "recipes.json") {
+    await writeLocalStore(file, value);
+    return;
+  }
+
   if (!isSupabaseEnabled()) {
-    await fs.mkdir(dataDir, { recursive: true });
-    await fs.writeFile(
-      path.join(dataDir, file),
-      JSON.stringify(value, null, 2),
-      "utf-8",
-    );
+    await writeLocalStore(file, value);
     return;
   }
 
