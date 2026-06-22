@@ -1,0 +1,73 @@
+{
+  "id": "saftiges-schweinefilet-mit-senfrahm",
+  "name": "Saftiges Schweinefilet mit Senfrahm",
+  "tier": "Henkersmahlzeit",
+  "kcal": 1080,
+  "protein": 54,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/saftiges-schweinefilet-mit-senfrahm-64190895cc96bbe9f40cada7",
+  "tags": [
+    "gemischt"
+  ],
+  "ingredients": [
+    "250 g Schweinefilet",
+    "600 g Kartoffeln (Drillinge)",
+    "4 Stück Karotte",
+    "10 g Petersilie glatt/Rosmarin",
+    "150 g Kochsahne",
+    "15 ml süßer Senf",
+    "4 g Hühnerbrühe",
+    "3 Esslöffel Öl",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "50 ml Wasser"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Karotten schälen und schräg in 0,5 cm Scheiben schneiden. Karottenscheiben auf einem mit Backpapier belegten Backblech verteilen (etwas Platz für die Kartoffeln lassen) und mit 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* würzen.",
+      "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Rosmarinnadeln abzupfen und fein hacken. Petersilienblätter fein hacken. Gewaschene Kartoffeln ungeschält je nach Größe vierteln oder halbieren. Kartoffeln in einer großen Schüssel zusammen mit 1 EL [1,5 EL | 2 EL] Öl* und Rosmarin vermengen und auf dem Backblech verteilen. Karotten und Kartoffeln 25 – 30 Min. goldbraun backen.",
+      "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Fleisch mit 1 EL [1,5 EL | 2 EL] Öl* einreiben und mit Salz* und Pfeffer* würzen. Eine große Pfanne bei starker Hitze erwärmen und die Filets ohne zusätzliches Öl darin 3 – 4 Min. rundherum scharf anbraten.",
+      "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Schweinefilets aus der Pfanne nehmen und für die letzten 10 Min. der Kartoffel-Garzeit mit auf das Backblech geben und im Backofen 10 – 12 Min. fertig backen, bis das Fleisch innen noch leicht rosa ist. Aus der Hühnerbrühe und 50 ml [75 ml | 100 ml] heißem Wasser* eine Brühe zubereiten.",
+      "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Kochsahne, vorbereitete Brühe und Senf in die Pfanne geben. Aufkochen und 1 – 2 Min. einköcheln lassen, bis die Soße ein bisschen eingedickt ist. Nach Geschmack mit Salz* und Pfeffer* würzen.",
+      "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Karotten Rezepte",
+      "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:03.096Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 1080,
+    "protein": 54
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
+  ],
+  "classificationNeedsReview": false
+}

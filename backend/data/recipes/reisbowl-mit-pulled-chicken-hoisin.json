@@ -1,0 +1,83 @@
+{
+  "id": "reisbowl-mit-pulled-chicken-hoisin",
+  "name": "Reisbowl mit Pulled Chicken Hoisin",
+  "tier": "Himmel auf Erden",
+  "kcal": 900,
+  "protein": 55,
+  "durationMinutes": 30,
+  "imageUrl": "/images/hellofresh/reisbowl-mit-pulled-chicken-hoisin-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/reisbowl-mit-pulled-chicken-hoisin-692d7912114b735a0061497f",
+  "tags": [
+    "hähnchen",
+    "reis",
+    "asiatisch",
+    "schnell"
+  ],
+  "ingredients": [
+    "250 g Hähnchenbrustfilet in Lake",
+    "150 g Jasminreis",
+    "1 Stück Brokkoli",
+    "2 Stück Karotte",
+    "1 Stück Knoblauchzehe",
+    "30 g Hoisinsoße",
+    "25 g Sweet Chili Soße",
+    "20 ml Sojasoße",
+    "4 g Hühnerbrühe",
+    "4 g Maisstärke",
+    "550 ml Wasser",
+    "nach Geschmack Salz",
+    "1.5 Esslöffel Öl",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Honig"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 300 ml [450 ml | 600 ml] Wasser im Wasserkocher. Brokkoli in Röschen teilen, die Stiele in Scheiben schneiden. Karotten schälen und schräg in 0,5 cm Scheiben schneiden. Knoblauch fein hacken.",
+      "imageUrl": "/images/hellofresh/reisbowl-mit-pulled-chicken-hoisin-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einen kleinen Topf mit Deckel 300 ml [450 ml | 600 ml] heißes Wasser* füllen. 0,25 TL [0,5 TL | 0,5 TL] Salz* dazugeben und aufkochen lassen. Reis hineinrühren und bei niedriger Hitze ca. 10 Min. abgedeckt köcheln lassen. Dann Topf vom Herd nehmen und mindestens 10 Min. abgedeckt ziehen lassen.",
+      "imageUrl": "/images/hellofresh/reisbowl-mit-pulled-chicken-hoisin-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Hähnchenbrustfilets quer halbieren. In einem großen Topf mit Deckel 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Hähnchenfleisch darin 4 – 5 Min. rundherum anbraten. Hitze reduzieren, 200 ml [300 ml | 400 ml] Wasser* und Brühepulver zugeben und abgedeckt 8 – 10 Min. köcheln lassen, bis das Fleisch innen nicht mehr rosa ist. Evtl. etwas Wasser* nachgießen.",
+      "imageUrl": "/images/hellofresh/reisbowl-mit-pulled-chicken-hoisin-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 0,5 EL [0,75 EL | 1 EL] Öl* erhitzen. Brokkoli, Karotte und gehackten Knoblauch darin 5 – 6 Min. anbraten. Mit 150 ml [225 ml | 300 ml] Wasser* ablöschen und 3 – 5 Min. weiterköcheln lassen, bis das Gemüse gar ist. Hälfte der Sweet-Chili-Soße unter das Gemüse mischen.",
+      "imageUrl": "/images/hellofresh/reisbowl-mit-pulled-chicken-hoisin-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Hähnchen aus der Brühe nehmen und mit 2 Gabeln auseinander zupfen. Von der Brühe 100 ml [150 ml | 200 ml] abmessen, Rest weggießen. Abgemessene Brühe und das Hähnchenfleisch zurück in den Topf geben. Hoisinsoße, Sojasoße, Stärke und 1 TL [1,5 TL | 2 TL] Honig* verrühren, in den Topf geben und 3 – 4 Min. einkochen, bis die Soße etwas andickt. Mit Salz* und Pfeffer* würzen. Tipp: Wenn die Soße zu dick wird, gib' noch esslöffelweise Wasser* dazu.",
+      "imageUrl": "/images/hellofresh/reisbowl-mit-pulled-chicken-hoisin-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Am Ende der Garzeit Reis mit einer Gabel auflockern und mit Brokkoli-Karotten-Gemüse und Pulled Chicken in Bowls oder tiefen Tellern anrichten. Mit restlicher Sweet-Chili-Soße genießen.",
+      "imageUrl": "/images/hellofresh/reisbowl-mit-pulled-chicken-hoisin-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:55.210Z",
+  "categories": [
+    "schnell"
+  ],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 900,
+    "protein": 55
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false
+}

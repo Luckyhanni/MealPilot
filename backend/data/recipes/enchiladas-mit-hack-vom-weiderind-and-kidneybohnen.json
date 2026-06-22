@@ -1,0 +1,29 @@
+{
+  "id": "enchiladas-mit-hack-vom-weiderind-and-kidneybohnen",
+  "name": "Enchiladas mit Hack vom Weiderind",
+  "tier": "High Protein",
+  "kcal": 863,
+  "protein": 47.3,
+  "durationMinutes": 35,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-69c257d8814691069108fbab",
+  "tags": [],
+  "ingredients": [],
+  "instructions": [],
+  "categories": [],
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "proteinreiche-rezepte",
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 863,
+    "protein": 47.3
+  },
+  "nutritionSource": "per-serving",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (hack)."
+  ],
+  "classificationNeedsReview": false
+}

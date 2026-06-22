@@ -1,0 +1,75 @@
+{
+  "id": "thueringer-bratwurst-sandwich",
+  "name": "Thüringer Bratwurst Sandwich",
+  "tier": "Henkersmahlzeit",
+  "kcal": 1090,
+  "protein": 55,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/thuringer-bratwurst-sandwich-65f867bd473c4f42771ce544",
+  "tags": [
+    "gemischt"
+  ],
+  "ingredients": [
+    "200 g Thüringer Rostbratwurst",
+    "250 g Ciabatta-Brot",
+    "2 Stück Ofenkartoffel",
+    "4 g Gewürzmischung „Hello Patatas“",
+    "1 Stück Tomate",
+    "100 g Mayonnaise",
+    "30 ml süßer Senf",
+    "1 Stück Zwiebel",
+    "20 g Hartkäse ital. Art, gerieben",
+    "50 g Ketchup",
+    "nach Geschmack Pfeffer",
+    "2 Esslöffel Öl",
+    "nach Geschmack Salz"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Gewaschene Kartoffeln in 0,5 cm Scheiben schneiden. Kartoffelscheiben auf einem mit Backpapier belegten Backblech verteilen, mit drei Viertel „Hello Patatas“, 1 EL [1,5 EL | 2 EL] Öl* und Pfeffer* vermengen und im Ofen 25 – 30 Min. backen, bis sie außen knusprig sind.",
+      "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Zwiebel in 6 [9 | 12] Ringe schneiden. Zwiebelringe auf ein zweites , mit Backpapier belegtes Backblech geben, mit 0,5 EL [0,75 EL | 1 EL] Öl*, restlichem „Hello Patatas“, Salz* und Pfeffer* vermengen. Mit geriebenem Hartkäse toppen. Bratwürste neben die Zwiebelringe legen und mit 0,5 EL [0,75 EL | 1 EL] Öl* einreiben. Backblech in den letzten 15 Min. unter den Kartoffeln in den Ofen schieben. Bratwürste nach der Hälfte der Garzeit einmal wenden.",
+      "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Tomate in 0.5 cm Scheiben schneiden. Leicht salzen*.",
+      "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer kleinen Schüssel Ketchup, Mayonnaise, süßen Senf, Salz* und Pfeffer* zu einem Dip verrühren.",
+      "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Ciabatta zuerst quer, dann längs halbieren. Ciabatta in den letzten 7 Min. der Garzeit mit auf das Backblech geben.",
+      "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Thüringer Rostbratwürste nach der Garzeit längs halbieren. Ciabattahälften mit etwas Dip bestreichen. Auf den unteren Hälften Tomaten verteilen, Rostbratwürste darüber geben und mit den Käsezwiebeln toppen. Sandwichs mit oberen Hälften schließen. Röstkartoffeln daneben anrichten und mit restlichem Dip servieren.",
+      "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:01.785Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 1090,
+    "protein": 55
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bratwurst, wurst)."
+  ],
+  "classificationNeedsReview": false
+}

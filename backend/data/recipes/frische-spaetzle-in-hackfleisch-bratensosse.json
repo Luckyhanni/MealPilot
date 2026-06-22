@@ -1,0 +1,78 @@
+{
+  "id": "frische-spaetzle-in-hackfleisch-bratensosse",
+  "name": "Frische Spätzle in Hackfleisch Bratensoße",
+  "tier": "Henkersmahlzeit",
+  "kcal": 930,
+  "protein": 52,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/frische-spaetzle-in-hackfleisch-bratensosse-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/frische-spatzle-in-hackfleisch-bratensosse-64998cd152d3f4d7ab0ac67a",
+  "tags": [
+    "hackfleisch",
+    "spätzle"
+  ],
+  "ingredients": [
+    "250 g gemischte Hackfleischzubereitung",
+    "400 g frische Eierspätzle",
+    "1 Stück Zwiebel",
+    "35 g Tomatenmark",
+    "12.5 ml Sojasoße",
+    "4 g Rinderbrühe",
+    "4 g Gewürzmischung „Hello Paprika“",
+    "1 Stück Karotte",
+    "75 g Sahnejoghurt",
+    "1 Stück kleine Salatgurke",
+    "15 ml süßer Senf",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Esslöffel Butter",
+    "100 ml Wasser"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Gurke längs halbieren und quer in dünne Halbmonde schneiden. In einer großen Schüssel ein Drittel des Joghurts, süßer Senf, Salz* und Pfeffer* zu einem Dressing verrühren. Gurken hinzugeben und marinieren lassen.",
+      "imageUrl": "/images/hellofresh/frische-spaetzle-in-hackfleisch-bratensosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Zwiebel grob hacken. Karotte grob raspeln.",
+      "imageUrl": "/images/hellofresh/frische-spaetzle-in-hackfleisch-bratensosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Butter* erhitzen. Spätzle darin 6 – 8 Min. goldbraun anbraten. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/frische-spaetzle-in-hackfleisch-bratensosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer zweiten großen Pfanne ohne Fettzugabe gemischtes Hackfleisch, Karotte und Zwiebel 5 – 6 Min. scharf anbraten. Tomatenmark und „Hello Paprika“ hinzugeben und 1 weitere Min. anbraten.",
+      "imageUrl": "/images/hellofresh/frische-spaetzle-in-hackfleisch-bratensosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Pfanneninhalt mit Hälfte [drei Viertel | gesamter] Sojasoße, Rinderbrühe und 100 ml [150 ml | 200 ml] Wasser ablöschen und 1 – 2 Min. köcheln lassen, bis die Soße eindickt. Restlichen Joghurt unterrühren und mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/frische-spaetzle-in-hackfleisch-bratensosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Spätzle mit Soße auf Teller verteilen. Gurkensalat daneben anrichten und genießen.",
+      "imageUrl": "/images/hellofresh/frische-spaetzle-in-hackfleisch-bratensosse-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:02.247Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 930,
+    "protein": 52
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinder)."
+  ],
+  "classificationNeedsReview": false
+}

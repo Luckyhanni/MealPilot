@@ -1,0 +1,76 @@
+{
+  "id": "grillhaehnchen-burger-mit-kartoffelspalten",
+  "name": "Grillhähnchen Burger mit Kartoffelspalten",
+  "tier": "Henkersmahlzeit",
+  "kcal": 1080,
+  "protein": 60,
+  "durationMinutes": 40,
+  "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/grillhahnchen-burger-mit-kartoffelspalten-664360ebc72b4f891e542dd5",
+  "tags": [
+    "hähnchen",
+    "kartoffeln",
+    "burger"
+  ],
+  "ingredients": [
+    "250 g Hähnchenbrustfilet in Lake",
+    "350 g Ofenkartoffel",
+    "150 g Salatherz (Romana)",
+    "50 g Mayonnaise",
+    "25 g Sweet Chili Soße",
+    "6 g Gewürzmischung „Hello Paprika“",
+    "160 g Brioche Bun, natur",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "3 Esslöffel Öl",
+    "1 Teelöffel Weißweinessig",
+    "1 Esslöffel Butter"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Kartoffeln in 4 oder 6 Spalten schneiden. Kartoffeln auf ein mit Backpapier belegtes Backblech geben, mit 1 EL [1,5 EL | 2 EL] Öl*, Hälfte „Hello Paprika“, Salz* und Pfeffer* vermengen und im Ofen 25 – 30 Min. goldbraun backen.",
+      "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer kleinen Schüssel Mayonnaise, Sweet Chili Soße, Salz* und Pfeffer* zu einem Dip vermengen. In einer großen Schüssel 1 EL [1,5 EL | 2 EL] Dip, 1 EL [1,5 EL | 2 EL] Öl*, 1 TL [1,5 TL | 2 TL] Essig*, Salz* und Pfeffer* zu einem Dressing verrühren.",
+      "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Romanasalat in sehr feine Streifen schneiden und in die Schüssel mit dem Dressing geben. Brioche Buns waagerecht halbieren.",
+      "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Butter* erhitzen. Brioche Buns darin 1 – 2 Min. auf der Schnittseite toasten, bis sie goldbraun sind.",
+      "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Hähnchenbrust waagerecht aufschneiden, aber nicht durchschneiden und wie ein Buch aufklappen. Filets auf beiden Seiten mit restlichem „Hello Paprika“, Salz* und Pfeffer* würzen. In derselben Pfanne erneut 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Hähnchenbrustfilets darin 2 – 3 Min. pro Seite anbraten, bis das Fleisch innen nicht mehr rosa ist.",
+      "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Etwas Sweet-Chili-Mayonnaise auf den Schnittseiten der Brioche Buns verteilen. Romanasalat darauf verteilen und mit dem Grilled Chicken toppen. Kartoffeln daneben anrichten und mit restlichem Salat und restlichem Dip servieren.",
+      "imageUrl": "/images/hellofresh/grillhaehnchen-burger-mit-kartoffelspalten-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:00.038Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 1080,
+    "protein": 60
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false
+}

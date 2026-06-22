@@ -1,0 +1,80 @@
+{
+  "id": "teriyaki-burger-mit-bio-rindfleisch",
+  "name": "Teriyaki Burger mit Bio Rindfleisch",
+  "tier": "Himmel auf Erden",
+  "kcal": 1130,
+  "protein": 57,
+  "durationMinutes": 40,
+  "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/teriyaki-burger-mit-bio-rindfleisch-65d48953ebca12e27305330a",
+  "tags": [
+    "rind",
+    "burger",
+    "asiatisch"
+  ],
+  "ingredients": [
+    "200 g Bio Rinderhackfleischzubereitung",
+    "160 g Brioche Bun, natur",
+    "1 Stück Süßkartoffel",
+    "50 g junger Gouda, gerieben",
+    "50 ml Teriyakisoße",
+    "8 ml Sriracha Sauce",
+    "25 g Mayonnaise",
+    "75 g Naturjoghurt",
+    "1 Stück Limette, gewachst",
+    "1 Stück Karotte",
+    "1 Stück Salatherz (Romana)",
+    "10 g Sesamsamen",
+    "2 Esslöffel Öl",
+    "nach Geschmack Salz",
+    "1 Teelöffel Honig",
+    "nach Geschmack Pfeffer"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Süßkartoffel schälen und in 2 cm dicke Spalten schneiden. Süßkartoffelspalten auf einem mit Backpapier belegten Backblech verteilen, mit 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Sesam mischen und im vorgeheizten Ofen 20 – 25 Min. goldbraun backen.",
+      "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer kleinen Schüssel Mayonnaise, Joghurt und (je nachdem, wie scharf Du es magst) Sriracha hinzufügen und alles gut vermengen. Limette in 6 Spalten schneiden. In einer zweiten kleinen Schüssel Teriyakisauce, 1 TL [1,5 TL | 2 TL] Honig*, Saft von 1 [1,5 | 2] Limettenspalte und 1 EL [1,5 EL | 2 EL] Wasser* verrühren.",
+      "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Salat in feine Streifen schneiden. Karotte schälen und in eine große Schüssel grob raspeln. Salat zu den Karottenraspeln geben und mit 1 EL [1,5 EL | 2 EL] Sriracha-Dip vermengen. Mit Salz*, Pfeffer* und Saft von 2 [3 | 4] Limettenspalten abschmecken.",
+      "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Aus dem Hackfleisch 2 [3 | 4] ca. 1 cm dicke Patties formen. In einer großen Pfanne mit Deckel 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Patties je Seite 2 – 3 Min. scharf anbraten. Herdplatte ausstellen, Bratfett vorsichtig abgießen und Pfanne zurückstellen. Pfanneninhalt mit angerührter Teriyaki-Soße ablöschen und Patties einmal wenden. Jungen Gouda auf die Hackfleischpatties geben, Pfannendeckel aufsetzen und Käse 1 Min. schmelzen lassen.",
+      "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Burgerbrötchen aufschneiden und ca. 2 – 5 Min. vor Ende der Süßkartoffel-Backzeit zum Aufbacken zu den Süßkartoffelwedges in den Backofen geben.",
+      "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Brötchenunterseiten mit einem Klecks Sriracha-Dip bestreichen. Zuerst mit den Patties belegen, dann mit etwas Salat toppen. Fertige Burger zusammen mit Süßkartoffelwedges, restlichem Salat und restlichem Dip genießen.",
+      "imageUrl": "/images/hellofresh/teriyaki-burger-mit-bio-rindfleisch-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:57.463Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 1130,
+    "protein": 57
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
+  ],
+  "classificationNeedsReview": false
+}

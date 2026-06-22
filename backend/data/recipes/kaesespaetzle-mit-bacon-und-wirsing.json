@@ -1,0 +1,78 @@
+{
+  "id": "kaesespaetzle-mit-bacon-und-wirsing",
+  "name": "Käsespätzle mit Bacon und Wirsing",
+  "tier": "Himmel auf Erden",
+  "kcal": 950,
+  "protein": 34,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/kaesespaetzle-mit-bacon-und-wirsing-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/kasespatzle-mit-bacon-und-wirsing-66c45b6e3853f8b644ad5edc",
+  "tags": [
+    "bacon",
+    "spätzle",
+    "käse"
+  ],
+  "ingredients": [
+    "400 g frische Eierspätzle",
+    "80 g Bacon (Streifen)",
+    "200 g Wirsing, geschnitten",
+    "10 g Petersilie glatt/Schnittlauch",
+    "75 g würziger Gouda, gerieben",
+    "150 g Kochsahne",
+    "4 g Rinderbrühe",
+    "5 g Gewürzmischung „Hello Muskat“",
+    "1 Stück Knoblauchzehe",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "10 g Öl",
+    "50 g Wasser",
+    "1 Esslöffel Öl"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Knoblauch abziehen. Petersilie in grobe Stücke schneiden, in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und in eine kleine Schüssel umfüllen.",
+      "imageUrl": "/images/hellofresh/kaesespaetzle-mit-bacon-und-wirsing-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Knoblauch in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und mit dem Spatel nach unten schieben. g [15 g | 15 g] Öl* zugeben und 3 Min./120 °C/Stufe 1 dünsten. Währenddessen Schnittlauch in feine Röllchen schneiden.",
+      "imageUrl": "/images/hellofresh/kaesespaetzle-mit-bacon-und-wirsing-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Kochsahne, geschnittenen Wirsing, „Hello Muskat“, Rinderbrühe und 50 g [75 g | 75 g] ml] Wasser* in den Mixtopf zugeben, einmal mit dem Spatel unterheben und 10 Min./100 °C/Reverse/Stufe 1 garen. Währenddessen fortfahren.",
+      "imageUrl": "/images/hellofresh/kaesespaetzle-mit-bacon-und-wirsing-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* bei mittlerer Hitze erwärmen, Spätzle und Bacon darin 4 – 6 Min. braten und gelegentlich umrühren, bis die Spätzle leicht gebräunt sind.",
+      "imageUrl": "/images/hellofresh/kaesespaetzle-mit-bacon-und-wirsing-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Wirsing mit Soße zu den Spätzlen in die Pfanne geben und vermischen. Geriebenen Käse unterrühren und mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/kaesespaetzle-mit-bacon-und-wirsing-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Spätzle mit Wirsing auf tiefe Teller verteilen, mit Kräutern bestreuen und genießen.",
+      "imageUrl": "/images/hellofresh/kaesespaetzle-mit-bacon-und-wirsing-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:52.950Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 950,
+    "protein": 34
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon, rind, rinder)."
+  ],
+  "classificationNeedsReview": false
+}

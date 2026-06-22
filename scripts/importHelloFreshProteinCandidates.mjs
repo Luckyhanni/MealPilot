@@ -2,6 +2,11 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import {
+  buildRecipesBundle,
+  readRecipesSource,
+  writeRecipeFile,
+} from "./recipeFileStore.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,7 +17,6 @@ const candidatesPath = path.join(
   "data",
   "hellofresh-protein-import-candidates.json",
 );
-const recipesPath = path.join(projectRoot, "backend", "data", "recipes.json");
 
 const categoryTagLabels = new Set([
   "schnell",
@@ -228,10 +232,6 @@ async function readJson(filePath) {
   return JSON.parse(await fs.readFile(filePath, "utf8"));
 }
 
-async function writeJson(filePath, value) {
-  await fs.writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, "utf8");
-}
-
 function runOptionalScript(relativePath) {
   const scriptPath = path.join(projectRoot, relativePath);
   return fs
@@ -253,7 +253,7 @@ function runOptionalScript(relativePath) {
 }
 
 const candidateData = await readJson(candidatesPath);
-const recipes = await readJson(recipesPath);
+const recipes = await readRecipesSource();
 const candidates = candidateList(candidateData);
 const sourceCollection =
   candidateData?.sourceCollection || candidateData?.collection || "proteinreiche-rezepte";
@@ -297,6 +297,7 @@ for (const candidate of candidates) {
       const { recipe, changed } = mergeExistingRecipe(recipes[existingIndex], incoming);
       if (changed) {
         recipes[existingIndex] = recipe;
+        await writeRecipeFile(recipe);
         summary.updated += 1;
       }
     }
@@ -305,13 +306,18 @@ for (const candidate of candidates) {
   }
 
   recipes.push(incoming);
+  await writeRecipeFile(incoming);
   idToIndex.set(incoming.id, recipes.length - 1);
   const normalizedUrl = normalizeSourceUrl(incoming.sourceUrl);
   if (normalizedUrl) sourceUrlToIndex.set(normalizedUrl, recipes.length - 1);
   summary.imported += 1;
 }
 
-await writeJson(recipesPath, recipes);
+const bundleResult = await buildRecipesBundle();
+if (!bundleResult.ok) {
+  console.error(bundleResult.errors.join("\n"));
+  process.exit(1);
+}
 
 console.log(JSON.stringify(summary, null, 2));
 console.log("Running recipe classification...");

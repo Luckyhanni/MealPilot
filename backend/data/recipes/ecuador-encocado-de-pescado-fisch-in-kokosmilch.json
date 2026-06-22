@@ -1,0 +1,34 @@
+{
+  "id": "ecuador-encocado-de-pescado-fisch-in-kokosmilch",
+  "name": "Fischragout mit Seelachs und Kokosmilch",
+  "tier": "High Protein",
+  "kcal": 709,
+  "protein": 34.8,
+  "durationMinutes": 25,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/ecuador-encocado-de-pescado-fisch-in-kokosmilch-69c258088c3045e676b3688f",
+  "tags": [
+    "schnell"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "categories": [
+    "schnell"
+  ],
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "proteinreiche-rezepte",
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 709,
+    "protein": 34.8
+  },
+  "nutritionSource": "per-serving",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fisch, lachs, seelachs)."
+  ],
+  "classificationNeedsReview": false
+}

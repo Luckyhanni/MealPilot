@@ -1,0 +1,77 @@
+{
+  "id": "alpine-kaesespaetzlepfanne-mit-birne-und-bacon",
+  "name": "Alpine Käsespätzlepfanne mit Birne und Bacon",
+  "tier": "Himmel auf Erden",
+  "kcal": 950,
+  "protein": 34,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/alpine-kaesespaetzlepfanne-mit-birne-und-bacon-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/alpine-kasespatzlepfanne-mit-birne-und-bacon-63f470d2b1143aa10b07183b",
+  "tags": [
+    "bacon",
+    "spätzle",
+    "käse"
+  ],
+  "ingredients": [
+    "400 g frische Eierspätzle",
+    "80 g Bacon (Streifen)",
+    "1 Stück Birne",
+    "50 g Babyspinat",
+    "50 g geriebener würziger Gouda",
+    "20 g Hartkäse geraspelt",
+    "150 g Kochsahne",
+    "10 g Petersilie glatt/Schnittlauch",
+    "1 Stück Zwiebel",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "1 Esslöffel Öl",
+    "50 ml heißes Wasser*"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Blätter der Petersilie abzupfen, in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und mit dem Spatel nach unten schieben. Zwiebel abziehen, halbieren, zugeben und 5 Sek./Stufe 5 zerkleinern. Birne schälen, vierteln, entkernen, zugeben, 3 Sek./Stufe 4,5 zerkleinern und alles mit dem Spatel nach unten schieben.",
+      "imageUrl": "/images/hellofresh/alpine-kaesespaetzlepfanne-mit-birne-und-bacon-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "g [15 g | 20 g] Öl* in den Mixtopf zugeben und 6 Min./120 °C/Reverse/Stufe 1 dünsten. Währenddessen Schnittlauch in Röllchen schneiden und die Spätzle braten.",
+      "imageUrl": "/images/hellofresh/alpine-kaesespaetzlepfanne-mit-birne-und-bacon-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* auf mittlerer Stufe erhitzen. Baconstreifen und Spätzle zugeben und ca. 7 Min. unter Wenden goldbraun anbraten.",
+      "imageUrl": "/images/hellofresh/alpine-kaesespaetzlepfanne-mit-birne-und-bacon-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Nach der Birnen-Zwiebel-Dünstzeit Babyspinat in den Mixtopf zugeben und 1 Min./Reverse/Stufe 1 mischen.",
+      "imageUrl": "/images/hellofresh/alpine-kaesespaetzlepfanne-mit-birne-und-bacon-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Spätzle mit Sahne und 50 ml [75 ml | 100 ml] Wasser* ablöschen. Birne-Spinat-Mischung aus dem Mixtopf und Gouda zugeben, gut mischen und ca. 2 Min. köcheln lassen, sodass die Soße etwas andickt. Spätzlepfanne mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/alpine-kaesespaetzlepfanne-mit-birne-und-bacon-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Spinat Rezepte",
+      "imageUrl": "/images/hellofresh/alpine-kaesespaetzlepfanne-mit-birne-und-bacon-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:53.397Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 950,
+    "protein": 34
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
+  ],
+  "classificationNeedsReview": false
+}

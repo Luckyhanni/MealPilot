@@ -1,0 +1,77 @@
+{
+  "id": "pollo-asado-mit-kidneybohnen-mais-salat",
+  "name": "Pollo asado mit Kidneybohnen Mais Salat",
+  "tier": "Henkersmahlzeit",
+  "kcal": 700,
+  "protein": 55,
+  "durationMinutes": 20,
+  "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/pollo-asado-mit-kidneybohnen-mais-salat-6656ef3c3c6f6706517a04ab",
+  "tags": [
+    "hähnchen",
+    "salat",
+    "schnell"
+  ],
+  "ingredients": [
+    "250 g Hähnchenbrustfilet in Lake",
+    "390 g Kidneybohnen",
+    "150 g Mais",
+    "1 Stück Salatherz (Romana)",
+    "1 Stück Tomate",
+    "1 Stück Limette, gewachst",
+    "75 g Naturjoghurt",
+    "50 g Sweet Chili Soße",
+    "3 g Gewürzmischung „Hello Smoky Paprika“",
+    "2 Esslöffel Olivenöl"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Limette vierteln. Hähnchenbrust waagerecht aufschneiden, aber nicht durchschneiden und wie ein Buch aufklappen. In einer großen Schüssel Hähnchenbrust mit „Hello Smokey Paprika“, Saft von 1 [2 | 2] Limettenviertel etwas Öl, Salz* und Pfeffer* mischen und marinieren lassen.",
+      "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Tomate in 1 cm Würfel schneiden. Salatherz in feine Streifen schneiden. Kidneybohnen durch ein Sieb abgießen und mit Wasser abspülen. Mais öffnen, aber nicht abgießen.",
+      "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Schüssel Tomatenwürfel, Kidneybohnen, Mais, Sweet Chili Soße, Saft von 1 [2 | 2] Limettenspalte, 1 EL [1,5 EL | 2 EL] Olivenöl*, etwas Essig*, Salz* und Pfeffer* vermengen und abschmecken. Salat in die Schüssel geben und am Ende des Rezepts unterheben.",
+      "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer kleinen Schüssel Joghurt mit Salz* und Pfeffer* zu einem Dip verrühren.",
+      "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Eine große Pfanne bei hoher Temperatur erhitzen. Wenn sie heiß ist, 1 EL [1,5 EL | 2 EL] Öl* hinzufügen. Hähnchen ca. 2 Min je Seite scharf anbraten, bis das Fleisch innen nicht mehr rosa ist. Tipp: Um zu testen, ob die Pfanne heiß genug ist bevor Du Öl* hineingibst, spritze etwas Wasser hinein. Wenn sich kleine springende Tröpfchen bilden, ist die Pfanne heiß genug.",
+      "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Hähnchen in Streifen schneiden. Bohnen-Mais-Salat auf tiefen Tellern anrichten. Mit Hähnchen toppen, mit Joghurtsoße beträufeln und mit restlichen Limettenspalten genießen.",
+      "imageUrl": "/images/hellofresh/pollo-asado-mit-kidneybohnen-mais-salat-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:58.801Z",
+  "categories": [
+    "schnell"
+  ],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 700,
+    "protein": 55
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 20 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false
+}

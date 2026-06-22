@@ -1,0 +1,37 @@
+{
+  "id": "hahnchen-souflaki-bites-auf-griechischem-salat",
+  "name": "Hähnchen-Souflaki-Bites auf buntem Salat",
+  "tier": "High Protein",
+  "kcal": 609,
+  "protein": 45.2,
+  "durationMinutes": 15,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-souflaki-bites-auf-griechischem-salat-69c25822d795c2c9e4ffdb10",
+  "tags": [
+    "schnell",
+    "low cal"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "categories": [
+    "schnell",
+    "low-cal"
+  ],
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "proteinreiche-rezepte",
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 609,
+    "protein": 45.2
+  },
+  "nutritionSource": "per-serving",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 15 Minuten <= 30.",
+    "Low Cal: 609 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+  ],
+  "classificationNeedsReview": false
+}

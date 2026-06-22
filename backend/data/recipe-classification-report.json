@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T12:24:04.821Z",
+  "generatedAt": "2026-06-22T12:39:21.229Z",
   "thresholds": {
     "fastMaxMinutes": 30,
     "highProteinMinProteinPerServingExclusive": 60,
@@ -10,121 +10,13 @@
     "schnell": 15,
     "high-protein": 1,
     "low-cal": 5,
-    "vegetarisch": 6,
+    "vegetarisch": 7,
     "vegan": 0,
-    "omnivore": 52,
-    "vegetarian": 6,
+    "omnivore": 51,
+    "vegetarian": 7,
     "needsReview": 2
   },
   "recipes": [
-    {
-      "id": "rigatoni-auflauf-mit-bio-rinderhack",
-      "name": "Rigatoni Auflauf mit Bio Rinderhack",
-      "kcal": 815,
-      "protein": 38,
-      "durationMinutes": 40,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch).",
-        "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "fleisch",
-          "hackfleisch",
-          "rind",
-          "rinder",
-          "rinderhack",
-          "rinderhackfleisch"
-        ],
-        "animalProducts": [
-          "fleisch",
-          "gouda",
-          "hackfleisch",
-          "kochsahne",
-          "mozzarella",
-          "rind",
-          "rinder",
-          "rinderbruehe",
-          "rinderhack",
-          "rinderhackfleisch",
-          "sahne"
-        ],
-        "explicitVegetarian": [
-          "vegetarisch"
-        ],
-        "explicitVegan": []
-      },
-      "needsReview": true
-    },
-    {
-      "id": "koreanisches-bbq-mit-bulgogi-steak",
-      "name": "Koreanisches BBQ mit Bulgogi Steak",
-      "kcal": 990,
-      "protein": 52,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bulgogi, lachs, schwein, schweine, schweinelachs, steak)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "bulgogi",
-          "lachs",
-          "schwein",
-          "schweine",
-          "schweinelachs",
-          "steak"
-        ],
-        "animalProducts": [
-          "bulgogi",
-          "lachs",
-          "mayo",
-          "mayonnaise",
-          "schwein",
-          "schweine",
-          "schweinelachs",
-          "steak"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "kaesespaetzle-mit-bacon-und-wirsing",
-      "name": "Käsespätzle mit Bacon und Wirsing",
-      "kcal": 950,
-      "protein": 34,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon, rind, rinder)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "bacon",
-          "rind",
-          "rinder"
-        ],
-        "animalProducts": [
-          "bacon",
-          "eier",
-          "gouda",
-          "kochsahne",
-          "rind",
-          "rinder",
-          "rinderbruehe",
-          "sahne"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
     {
       "id": "alpine-kaesespaetzlepfanne-mit-birne-und-bacon",
       "name": "Alpine Käsespätzlepfanne mit Birne und Bacon",
@@ -148,455 +40,6 @@
           "kaese",
           "kochsahne",
           "sahne"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "korean-fried-chicken-in-gochujang-marinade",
-      "name": "Korean Fried Chicken in Gochujang Marinade",
-      "kcal": 880,
-      "protein": 55,
-      "durationMinutes": 40,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "haehnchen"
-        ],
-        "animalProducts": [
-          "butter",
-          "haehnchen",
-          "honig",
-          "mayo",
-          "mayonnaise"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "fish-and-chips-seelachs-burger-mit-gruenem-salat",
-      "name": "Fish and Chips Seelachs Burger mit grünem Salat",
-      "kcal": 900,
-      "protein": 47,
-      "durationMinutes": 40,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "lachs",
-          "seelachs"
-        ],
-        "animalProducts": [
-          "butter",
-          "joghurt",
-          "lachs",
-          "mayo",
-          "mayonnaise",
-          "milch",
-          "seelachs"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "glasierte-koreanische-fleischbaellchen",
-      "name": "Glasierte Koreanische Fleischbällchen",
-      "kcal": 990,
-      "protein": 56,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "fleisch",
-          "hack",
-          "hackfleisch"
-        ],
-        "animalProducts": [
-          "fleisch",
-          "hack",
-          "hackfleisch",
-          "honig"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "reisbowl-mit-pulled-chicken-hoisin",
-      "name": "Reisbowl mit Pulled Chicken Hoisin",
-      "kcal": 900,
-      "protein": 55,
-      "durationMinutes": 30,
-      "categories": [
-        "schnell"
-      ],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Schnell: 30 Minuten <= 30.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "haehnchen",
-          "haehnchenbrust"
-        ],
-        "animalProducts": [
-          "haehnchen",
-          "haehnchenbrust",
-          "honig",
-          "huehnerbruehe"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "paprika-haehnchenbrust-mit-kohlrabi-kartoffel-stampf",
-      "name": "Paprika Hähnchenbrust mit Kohlrabi-Kartoffel-Stampf",
-      "kcal": 820,
-      "protein": 55,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "haehnchen",
-          "haehnchenbrust"
-        ],
-        "animalProducts": [
-          "butter",
-          "haehnchen",
-          "haehnchenbrust",
-          "huehnerbruehe",
-          "milch"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "schnitzel-mit-ofenkartoffeln",
-      "name": "Schnitzel mit Ofenkartoffeln",
-      "kcal": 1070,
-      "protein": 50,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "lachs",
-          "schwein",
-          "schweine",
-          "schweinelachs",
-          "steak"
-        ],
-        "animalProducts": [
-          "ei",
-          "joghurt",
-          "lachs",
-          "mayo",
-          "mayonnaise",
-          "sahne",
-          "schwein",
-          "schweine",
-          "schweinelachs",
-          "steak"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "sloppy-joe-burger-mit-rinderhackfleischsosse",
-      "name": "Sloppy Joe Burger mit Rinderhackfleischsosse",
-      "kcal": 1070,
-      "protein": 57,
-      "durationMinutes": 40,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "fleisch",
-          "hackfleisch",
-          "rind",
-          "rinder",
-          "rinderhack",
-          "rinderhackfleisch"
-        ],
-        "animalProducts": [
-          "fleisch",
-          "hackfleisch",
-          "mayo",
-          "mayonnaise",
-          "rind",
-          "rinder",
-          "rinderhack",
-          "rinderhackfleisch"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "caesar-salad-mit-bacon-dazu-eine-limo",
-      "name": "Caesar Salad mit Bacon dazu Eine Limo",
-      "kcal": 910,
-      "protein": 42,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "bacon"
-        ],
-        "animalProducts": [
-          "bacon",
-          "hartkaese",
-          "joghurt",
-          "kaese"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "teriyaki-burger-mit-bio-rindfleisch",
-      "name": "Teriyaki Burger mit Bio Rindfleisch",
-      "kcal": 1130,
-      "protein": 57,
-      "durationMinutes": 40,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "fleisch",
-          "hackfleisch",
-          "rind",
-          "rinder",
-          "rinderhack",
-          "rinderhackfleisch"
-        ],
-        "animalProducts": [
-          "fleisch",
-          "gouda",
-          "hackfleisch",
-          "honig",
-          "joghurt",
-          "mayo",
-          "mayonnaise",
-          "rind",
-          "rinder",
-          "rinderhack",
-          "rinderhackfleisch"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "knusprige-blumenkohl-nuggets",
-      "name": "Knusprige Blumenkohl Nuggets",
-      "kcal": 760,
-      "protein": 22,
-      "durationMinutes": 35,
-      "categories": [
-        "vegetarisch"
-      ],
-      "dietaryType": "vegetarian",
-      "reasons": [
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (honig, joghurt, mayo, mayonnaise)."
-      ],
-      "matches": {
-        "meatOrFish": [],
-        "animalProducts": [
-          "honig",
-          "joghurt",
-          "mayo",
-          "mayonnaise"
-        ],
-        "explicitVegetarian": [
-          "vegetarisch"
-        ],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "haehnchen-unter-senfbroesel-haube",
-      "name": "Hähnchen Unter Senfbrösel Haube",
-      "kcal": 900,
-      "protein": 48,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "haehnchen",
-          "haehnchenbrust"
-        ],
-        "animalProducts": [
-          "butter",
-          "haehnchen",
-          "haehnchenbrust",
-          "huehnerbruehe",
-          "kochsahne",
-          "sahne"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "pollo-asado-mit-kidneybohnen-mais-salat",
-      "name": "Pollo asado mit Kidneybohnen Mais Salat",
-      "kcal": 700,
-      "protein": 55,
-      "durationMinutes": 20,
-      "categories": [
-        "schnell"
-      ],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Schnell: 20 Minuten <= 30.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "haehnchen",
-          "haehnchenbrust"
-        ],
-        "animalProducts": [
-          "haehnchen",
-          "haehnchenbrust",
-          "joghurt"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "gnocchi-pfanne-mit-brokkoli",
-      "name": "Gnocchi Pfanne mit Brokkoli",
-      "kcal": 820,
-      "protein": 30,
-      "durationMinutes": 35,
-      "categories": [
-        "vegetarisch"
-      ],
-      "dietaryType": "vegetarian",
-      "reasons": [
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hartkaese, kaese, kochsahne, sahne)."
-      ],
-      "matches": {
-        "meatOrFish": [],
-        "animalProducts": [
-          "hartkaese",
-          "kaese",
-          "kochsahne",
-          "sahne"
-        ],
-        "explicitVegetarian": [
-          "vegetarisch"
-        ],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "herzhafte-gnocchi-pfanne",
-      "name": "Herzhafte Gnocchi Pfanne",
-      "kcal": 820,
-      "protein": 31,
-      "durationMinutes": 35,
-      "categories": [
-        "vegetarisch"
-      ],
-      "dietaryType": "vegetarian",
-      "reasons": [
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, hartkaese, kaese, kochsahne, sahne)."
-      ],
-      "matches": {
-        "meatOrFish": [],
-        "animalProducts": [
-          "gouda",
-          "hartkaese",
-          "kaese",
-          "kochsahne",
-          "sahne"
-        ],
-        "explicitVegetarian": [
-          "vegetarisch"
-        ],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "grillhaehnchen-burger-mit-kartoffelspalten",
-      "name": "Grillhähnchen Burger mit Kartoffelspalten",
-      "kcal": 1080,
-      "protein": 60,
-      "durationMinutes": 40,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "haehnchen",
-          "haehnchenbrust"
-        ],
-        "animalProducts": [
-          "butter",
-          "haehnchen",
-          "haehnchenbrust",
-          "mayo",
-          "mayonnaise"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -632,25 +75,28 @@
       "needsReview": false
     },
     {
-      "id": "wuerzig-feurige-grillkaese-tacos",
-      "name": "Würzig Feurige Grillkäse Tacos",
-      "kcal": 900,
-      "protein": 36,
-      "durationMinutes": 35,
+      "id": "bayerische-schweinshaxe-mit-bratensosse",
+      "name": "Bayerische Schweinshaxe mit Bratensoße",
+      "kcal": 1414,
+      "protein": 113.7,
+      "durationMinutes": 30,
       "categories": [
+        "schnell",
+        "high-protein",
         "vegetarisch"
       ],
       "dietaryType": "vegetarian",
       "reasons": [
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (grillkaese, kaese, mayo, mayonnaise)."
+        "Schnell: 30 Minuten <= 30.",
+        "High Protein: 113.7 g Protein pro Portion > 60 g.",
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter, milch, sahne)."
       ],
       "matches": {
         "meatOrFish": [],
         "animalProducts": [
-          "grillkaese",
-          "kaese",
-          "mayo",
-          "mayonnaise"
+          "butter",
+          "milch",
+          "sahne"
         ],
         "explicitVegetarian": [
           "vegetarisch"
@@ -660,204 +106,10 @@
       "needsReview": false
     },
     {
-      "id": "honig-senf-garnelensalat-mit-avocado",
-      "name": "Honig Senf Garnelensalat mit Avocado",
-      "kcal": 640,
-      "protein": 42,
-      "durationMinutes": 20,
-      "categories": [
-        "schnell",
-        "low-cal"
-      ],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Schnell: 20 Minuten <= 30.",
-        "Low Cal: 640 kcal <= 650.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "garnele",
-          "garnelen"
-        ],
-        "animalProducts": [
-          "garnele",
-          "garnelen",
-          "honig",
-          "joghurt"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "thueringer-bratwurst-sandwich",
-      "name": "Thüringer Bratwurst Sandwich",
-      "kcal": 1090,
-      "protein": 55,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bratwurst, wurst)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "bratwurst",
-          "wurst"
-        ],
-        "animalProducts": [
-          "bratwurst",
-          "hartkaese",
-          "kaese",
-          "mayo",
-          "mayonnaise",
-          "wurst"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "frische-spaetzle-in-hackfleisch-bratensosse",
-      "name": "Frische Spätzle in Hackfleisch Bratensoße",
-      "kcal": 930,
-      "protein": 52,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinder)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "fleisch",
-          "hack",
-          "hackfleisch",
-          "rind",
-          "rinder"
-        ],
-        "animalProducts": [
-          "butter",
-          "eier",
-          "fleisch",
-          "hack",
-          "hackfleisch",
-          "joghurt",
-          "rind",
-          "rinder",
-          "rinderbruehe",
-          "sahne"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "hackbaellchen-mit-bio-rinderhack-in-senfsosse",
-      "name": "Hackbällchen mit Bio Rinderhack in Senfsoße",
-      "kcal": 930,
-      "protein": 52,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "fleisch",
-          "hackfleisch",
-          "rind",
-          "rinder",
-          "rinderhack",
-          "rinderhackfleisch"
-        ],
-        "animalProducts": [
-          "butter",
-          "fleisch",
-          "hackfleisch",
-          "honig",
-          "kochsahne",
-          "rind",
-          "rinder",
-          "rinderbruehe",
-          "rinderhack",
-          "rinderhackfleisch",
-          "sahne"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "saftiges-schweinefilet-mit-senfrahm",
-      "name": "Saftiges Schweinefilet mit Senfrahm",
-      "kcal": 1080,
-      "protein": 54,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "schwein",
-          "schweine",
-          "schweinefilet"
-        ],
-        "animalProducts": [
-          "huehnerbruehe",
-          "kochsahne",
-          "sahne",
-          "schwein",
-          "schweine",
-          "schweinefilet"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "schweinefilet-in-aprikosen-sosse",
-      "name": "Schweinefilet in Aprikosen Soße",
-      "kcal": 950,
-      "protein": 50,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "schwein",
-          "schweine",
-          "schweinefilet"
-        ],
-        "animalProducts": [
-          "butter",
-          "honig",
-          "schwein",
-          "schweine",
-          "schweinefilet"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "tomatige-conchiglie-mit-rinderhackfleisch",
-      "name": "Tomatige Conchiglie mit Rinderhackfleisch",
-      "kcal": 930,
-      "protein": 52,
+      "id": "bbq-burritos-mit-hackfleisch",
+      "name": "BBQ Burritos mit Hackfleisch",
+      "kcal": 1130,
+      "protein": 57,
       "durationMinutes": 35,
       "categories": [],
       "dietaryType": "omnivore",
@@ -871,68 +123,11 @@
           "hackfleisch"
         ],
         "animalProducts": [
-          "fleisch",
-          "hack",
-          "hackfleisch",
-          "hartkaese",
-          "huehnerbruehe",
-          "kaese",
-          "kochsahne",
-          "sahne"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "sloppy-joes-vom-nahen-osten",
-      "name": "Sloppy Joes vom Nahen Osten",
-      "kcal": 780,
-      "protein": 38,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "fleisch",
-          "hack",
-          "hackfleisch"
-        ],
-        "animalProducts": [
-          "fleisch",
-          "hack",
-          "hackfleisch",
-          "joghurt"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "haehnchen-mit-aprikosen-curry-sosse",
-      "name": "Hähnchen mit Aprikosen Curry Soße",
-      "kcal": 960,
-      "protein": 48,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "haehnchen",
-          "haehnchenbrust"
-        ],
-        "animalProducts": [
           "butter",
-          "haehnchen",
-          "haehnchenbrust"
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "milch"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -961,34 +156,6 @@
           "huehnerbruehe",
           "kochsahne",
           "sahne"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "frische-eierspaetzle-mit-bacon",
-      "name": "Frische Eierspätzle mit Bacon",
-      "kcal": 950,
-      "protein": 34,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "bacon"
-        ],
-        "animalProducts": [
-          "bacon",
-          "creme fraiche",
-          "eier",
-          "hartkaese",
-          "huehnerbruehe",
-          "kaese"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1060,17 +227,214 @@
       "needsReview": false
     },
     {
-      "id": "mezze-rinderhackpfanne-auf-tomatenreis",
-      "name": "Mezze Rinderhackpfanne auf Tomatenreis",
-      "kcal": 1010,
-      "protein": 52,
-      "durationMinutes": 30,
+      "id": "caesar-salad-mit-bacon-dazu-eine-limo",
+      "name": "Caesar Salad mit Bacon dazu Eine Limo",
+      "kcal": 910,
+      "protein": 42,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "bacon"
+        ],
+        "animalProducts": [
+          "bacon",
+          "hartkaese",
+          "joghurt",
+          "kaese"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "ecuador-encocado-de-pescado-fisch-in-kokosmilch",
+      "name": "Fischragout mit Seelachs und Kokosmilch",
+      "kcal": 709,
+      "protein": 34.8,
+      "durationMinutes": 25,
       "categories": [
         "schnell"
       ],
       "dietaryType": "omnivore",
       "reasons": [
-        "Schnell: 30 Minuten <= 30.",
+        "Schnell: 25 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fisch, lachs, seelachs)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fisch",
+          "lachs",
+          "seelachs"
+        ],
+        "animalProducts": [
+          "fisch",
+          "lachs",
+          "milch",
+          "seelachs"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "enchiladas-mit-hack-vom-weiderind-and-kidneybohnen",
+      "name": "Enchiladas mit Hack vom Weiderind",
+      "kcal": 863,
+      "protein": 47.3,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (hack)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "hack"
+        ],
+        "animalProducts": [
+          "hack"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "fish-and-chips-seelachs-burger-mit-gruenem-salat",
+      "name": "Fish and Chips Seelachs Burger mit grünem Salat",
+      "kcal": 900,
+      "protein": 47,
+      "durationMinutes": 40,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "lachs",
+          "seelachs"
+        ],
+        "animalProducts": [
+          "butter",
+          "joghurt",
+          "lachs",
+          "mayo",
+          "mayonnaise",
+          "milch",
+          "seelachs"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "flautas-knusprige-tortillarollen",
+      "name": "Flautas Knusprige Tortillarollen",
+      "kcal": 920,
+      "protein": 43,
+      "durationMinutes": 35,
+      "categories": [
+        "vegetarisch"
+      ],
+      "dietaryType": "vegetarian",
+      "reasons": [
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, sahne)."
+      ],
+      "matches": {
+        "meatOrFish": [],
+        "animalProducts": [
+          "gouda",
+          "sahne"
+        ],
+        "explicitVegetarian": [
+          "vegetarisch"
+        ],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "frische-eierspaetzle-mit-bacon",
+      "name": "Frische Eierspätzle mit Bacon",
+      "kcal": 950,
+      "protein": 34,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "bacon"
+        ],
+        "animalProducts": [
+          "bacon",
+          "creme fraiche",
+          "eier",
+          "hartkaese",
+          "huehnerbruehe",
+          "kaese"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "frische-spaetzle-in-hackfleisch-bratensosse",
+      "name": "Frische Spätzle in Hackfleisch Bratensoße",
+      "kcal": 930,
+      "protein": 52,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch, rind, rinder)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "rind",
+          "rinder"
+        ],
+        "animalProducts": [
+          "butter",
+          "eier",
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "joghurt",
+          "rind",
+          "rinder",
+          "rinderbruehe",
+          "sahne"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "glasierte-koreanische-fleischbaellchen",
+      "name": "Glasierte Koreanische Fleischbällchen",
+      "kcal": 990,
+      "protein": 56,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
       ],
       "matches": {
@@ -1083,9 +447,7 @@
           "fleisch",
           "hack",
           "hackfleisch",
-          "hirtenkaese",
-          "joghurt",
-          "kaese"
+          "honig"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1093,10 +455,158 @@
       "needsReview": false
     },
     {
-      "id": "haehnchengeschnetzeltes-in-tomaten-sahne-sosse",
-      "name": "Hähnchengeschnetzeltes in Tomaten-Sahne-Soße",
-      "kcal": 1030,
+      "id": "gnocchi-pfanne-mit-brokkoli",
+      "name": "Gnocchi Pfanne mit Brokkoli",
+      "kcal": 820,
+      "protein": 30,
+      "durationMinutes": 35,
+      "categories": [
+        "vegetarisch"
+      ],
+      "dietaryType": "vegetarian",
+      "reasons": [
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hartkaese, kaese, kochsahne, sahne)."
+      ],
+      "matches": {
+        "meatOrFish": [],
+        "animalProducts": [
+          "hartkaese",
+          "kaese",
+          "kochsahne",
+          "sahne"
+        ],
+        "explicitVegetarian": [
+          "vegetarisch"
+        ],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "grillen-auf-griechisch-hirtenkaese-schiffchen",
+      "name": "Grillen auf Griechisch Hirtenkäse Schiffchen",
+      "kcal": 950,
+      "protein": 34,
+      "durationMinutes": 35,
+      "categories": [
+        "vegetarisch"
+      ],
+      "dietaryType": "vegetarian",
+      "reasons": [
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hirtenkaese, honig, joghurt, kaese)."
+      ],
+      "matches": {
+        "meatOrFish": [],
+        "animalProducts": [
+          "hirtenkaese",
+          "honig",
+          "joghurt",
+          "kaese"
+        ],
+        "explicitVegetarian": [
+          "vegetarisch"
+        ],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "grillhaehnchen-burger-mit-kartoffelspalten",
+      "name": "Grillhähnchen Burger mit Kartoffelspalten",
+      "kcal": 1080,
+      "protein": 60,
+      "durationMinutes": 40,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "haehnchen",
+          "haehnchenbrust"
+        ],
+        "animalProducts": [
+          "butter",
+          "haehnchen",
+          "haehnchenbrust",
+          "mayo",
+          "mayonnaise"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "hackbaellchen-mit-bio-rinderhack-in-senfsosse",
+      "name": "Hackbällchen mit Bio Rinderhack in Senfsoße",
+      "kcal": 930,
       "protein": 52,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hackfleisch",
+          "rind",
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
+        ],
+        "animalProducts": [
+          "butter",
+          "fleisch",
+          "hackfleisch",
+          "honig",
+          "kochsahne",
+          "rind",
+          "rinder",
+          "rinderbruehe",
+          "rinderhack",
+          "rinderhackfleisch",
+          "sahne"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "haehnchen-mit-aprikosen-curry-sosse",
+      "name": "Hähnchen mit Aprikosen Curry Soße",
+      "kcal": 960,
+      "protein": 48,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "haehnchen",
+          "haehnchenbrust"
+        ],
+        "animalProducts": [
+          "butter",
+          "haehnchen",
+          "haehnchenbrust"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "haehnchen-unter-senfbroesel-haube",
+      "name": "Hähnchen Unter Senfbrösel Haube",
+      "kcal": 900,
+      "protein": 48,
       "durationMinutes": 35,
       "categories": [],
       "dietaryType": "omnivore",
@@ -1122,34 +632,6 @@
       "needsReview": false
     },
     {
-      "id": "tokyo-grill-smoky-ribs-mit-teriyaki-glaze",
-      "name": "Tokyo Grill Smoky Ribs mit Teriyaki Glaze",
-      "kcal": 1010,
-      "protein": 50,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (spareribs).",
-        "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "spareribs"
-        ],
-        "animalProducts": [
-          "butter",
-          "spareribs"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": [
-          "vegan",
-          "vegane"
-        ]
-      },
-      "needsReview": true
-    },
-    {
       "id": "haehnchenfilet-in-honig-zitronen-marinade",
       "name": "Hähnchenfilet in Honig-Zitronen-Marinade",
       "kcal": 820,
@@ -1171,64 +653,6 @@
           "honig",
           "joghurt",
           "sahne"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "bbq-burritos-mit-hackfleisch",
-      "name": "BBQ Burritos mit Hackfleisch",
-      "kcal": 1130,
-      "protein": 57,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "fleisch",
-          "hack",
-          "hackfleisch"
-        ],
-        "animalProducts": [
-          "butter",
-          "fleisch",
-          "hack",
-          "hackfleisch",
-          "milch"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "haehnchenschnitzel-mit-currydip",
-      "name": "Hähnchenschnitzel mit Currydip",
-      "kcal": 880,
-      "protein": 55,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "haehnchen",
-          "haehnchenbrust"
-        ],
-        "animalProducts": [
-          "haehnchen",
-          "haehnchenbrust",
-          "honig",
-          "joghurt",
-          "mayo",
-          "mayonnaise"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1266,170 +690,28 @@
       "needsReview": false
     },
     {
-      "id": "ueberbackene-haehnchenbrust-parmigiana",
-      "name": "Überbackene Hähnchenbrust Parmigiana",
-      "kcal": 850,
-      "protein": 58,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "haehnchen",
-          "haehnchenbrust"
-        ],
-        "animalProducts": [
-          "ei",
-          "haehnchen",
-          "haehnchenbrust",
-          "hartkaese",
-          "kaese"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "flautas-knusprige-tortillarollen",
-      "name": "Flautas Knusprige Tortillarollen",
-      "kcal": 920,
-      "protein": 43,
-      "durationMinutes": 35,
-      "categories": [
-        "vegetarisch"
-      ],
-      "dietaryType": "vegetarian",
-      "reasons": [
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, sahne)."
-      ],
-      "matches": {
-        "meatOrFish": [],
-        "animalProducts": [
-          "gouda",
-          "sahne"
-        ],
-        "explicitVegetarian": [
-          "vegetarisch"
-        ],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "schweinelachssteak-mit-bohnengemuese",
-      "name": "Schweinelachssteak mit Bohnengemüse",
-      "kcal": 950,
-      "protein": 50,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "lachs",
-          "schwein",
-          "schweine",
-          "schweinelachs",
-          "steak"
-        ],
-        "animalProducts": [
-          "butter",
-          "lachs",
-          "schwein",
-          "schweine",
-          "schweinelachs",
-          "steak"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "ricotta-tortellini-alla-panna",
-      "name": "Ricotta Tortellini alla Panna",
-      "kcal": 950,
-      "protein": 34,
-      "durationMinutes": 35,
-      "categories": [],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (prosciutto)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "prosciutto"
-        ],
-        "animalProducts": [
-          "hartkaese",
-          "huehnerbruehe",
-          "kaese",
-          "kochsahne",
-          "prosciutto",
-          "ricotta",
-          "sahne"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "grillen-auf-griechisch-hirtenkaese-schiffchen",
-      "name": "Grillen auf Griechisch Hirtenkäse Schiffchen",
-      "kcal": 950,
-      "protein": 34,
-      "durationMinutes": 35,
-      "categories": [
-        "vegetarisch"
-      ],
-      "dietaryType": "vegetarian",
-      "reasons": [
-        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hirtenkaese, honig, joghurt, kaese)."
-      ],
-      "matches": {
-        "meatOrFish": [],
-        "animalProducts": [
-          "hirtenkaese",
-          "honig",
-          "joghurt",
-          "kaese"
-        ],
-        "explicitVegetarian": [
-          "vegetarisch"
-        ],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "rinderhackbaellchen-mit-senf-fruehlingszwiebel-sosse",
-      "name": "Rinderhackbällchen mit Senf-Frühlingszwiebel-Soße",
-      "kcal": 930,
+      "id": "haehnchengeschnetzeltes-in-tomaten-sahne-sosse",
+      "name": "Hähnchengeschnetzeltes in Tomaten-Sahne-Soße",
+      "kcal": 1030,
       "protein": 52,
       "durationMinutes": 35,
       "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
         "meatOrFish": [
-          "fleisch",
-          "hack",
-          "hackfleisch"
+          "haehnchen",
+          "haehnchenbrust"
         ],
         "animalProducts": [
           "butter",
-          "fleisch",
-          "hack",
-          "hackfleisch"
+          "haehnchen",
+          "haehnchenbrust",
+          "huehnerbruehe",
+          "kochsahne",
+          "sahne"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1437,19 +719,14 @@
       "needsReview": false
     },
     {
-      "id": "teriyaki-bio-haehnchenpfanne-mit-pak-choi",
-      "name": "Teriyaki Bio Hähnchenpfanne mit Pak Choi",
-      "kcal": 557,
-      "protein": 13.3,
-      "durationMinutes": 30,
-      "categories": [
-        "schnell",
-        "low-cal"
-      ],
+      "id": "haehnchenschnitzel-mit-currydip",
+      "name": "Hähnchenschnitzel mit Currydip",
+      "kcal": 880,
+      "protein": 55,
+      "durationMinutes": 35,
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "Schnell: 30 Minuten <= 30.",
-        "Low Cal: 557 kcal <= 650.",
         "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
       ],
       "matches": {
@@ -1461,124 +738,9 @@
           "haehnchen",
           "haehnchenbrust",
           "honig",
-          "milch"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "portobello-stroganoff-mit-extra-bio-schweinestreifen",
-      "name": "Portobello-Stroganoff mit extra Bio-Schweinestreifen",
-      "kcal": 1075,
-      "protein": 54.1,
-      "durationMinutes": 25,
-      "categories": [
-        "schnell"
-      ],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Schnell: 25 Minuten <= 30.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, schwein, schweine, schweinefleisch)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "fleisch",
-          "schwein",
-          "schweine",
-          "schweinefleisch"
-        ],
-        "animalProducts": [
-          "fleisch",
-          "schwein",
-          "schweine",
-          "schweinefleisch"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "lachsfilet-and-chips-mit-remoulade",
-      "name": "Lachsfilet & Chips mit Remoulade",
-      "kcal": 827,
-      "protein": 40.3,
-      "durationMinutes": 20,
-      "categories": [
-        "schnell"
-      ],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Schnell: 20 Minuten <= 30.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "lachs"
-        ],
-        "animalProducts": [
-          "lachs"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "omas-klassiker-kase-lauch-suppe-mit-hackfleisch",
-      "name": "Käse-Lauch-Suppe mit Hackfleisch",
-      "kcal": 776,
-      "protein": 39.8,
-      "durationMinutes": 30,
-      "categories": [
-        "schnell"
-      ],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Schnell: 30 Minuten <= 30.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "fleisch",
-          "hack",
-          "hackfleisch"
-        ],
-        "animalProducts": [
-          "fleisch",
-          "hack",
-          "hackfleisch",
-          "kaese"
-        ],
-        "explicitVegetarian": [],
-        "explicitVegan": []
-      },
-      "needsReview": false
-    },
-    {
-      "id": "bayerische-schweinshaxe-mit-bratensosse",
-      "name": "Bayerische Schweinshaxe mit Bratensoße",
-      "kcal": 1414,
-      "protein": 113.7,
-      "durationMinutes": 30,
-      "categories": [
-        "schnell",
-        "high-protein"
-      ],
-      "dietaryType": "omnivore",
-      "reasons": [
-        "Schnell: 30 Minuten <= 30.",
-        "High Protein: 113.7 g Protein pro Portion > 60 g.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein)."
-      ],
-      "matches": {
-        "meatOrFish": [
-          "schwein"
-        ],
-        "animalProducts": [
-          "schwein"
+          "joghurt",
+          "mayo",
+          "mayonnaise"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1640,30 +802,60 @@
       "needsReview": false
     },
     {
-      "id": "ecuador-encocado-de-pescado-fisch-in-kokosmilch",
-      "name": "Fischragout mit Seelachs und Kokosmilch",
-      "kcal": 709,
-      "protein": 34.8,
-      "durationMinutes": 25,
+      "id": "herzhafte-gnocchi-pfanne",
+      "name": "Herzhafte Gnocchi Pfanne",
+      "kcal": 820,
+      "protein": 31,
+      "durationMinutes": 35,
       "categories": [
-        "schnell"
+        "vegetarisch"
+      ],
+      "dietaryType": "vegetarian",
+      "reasons": [
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, hartkaese, kaese, kochsahne, sahne)."
+      ],
+      "matches": {
+        "meatOrFish": [],
+        "animalProducts": [
+          "gouda",
+          "hartkaese",
+          "kaese",
+          "kochsahne",
+          "sahne"
+        ],
+        "explicitVegetarian": [
+          "vegetarisch"
+        ],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "honig-senf-garnelensalat-mit-avocado",
+      "name": "Honig Senf Garnelensalat mit Avocado",
+      "kcal": 640,
+      "protein": 42,
+      "durationMinutes": 20,
+      "categories": [
+        "schnell",
+        "low-cal"
       ],
       "dietaryType": "omnivore",
       "reasons": [
-        "Schnell: 25 Minuten <= 30.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fisch, lachs, seelachs)."
+        "Schnell: 20 Minuten <= 30.",
+        "Low Cal: 640 kcal <= 650.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
       ],
       "matches": {
         "meatOrFish": [
-          "fisch",
-          "lachs",
-          "seelachs"
+          "garnele",
+          "garnelen"
         ],
         "animalProducts": [
-          "fisch",
-          "lachs",
-          "milch",
-          "seelachs"
+          "garnele",
+          "garnelen",
+          "honig",
+          "joghurt"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1671,29 +863,300 @@
       "needsReview": false
     },
     {
-      "id": "seelachs-auf-sahnigem-linsengemuse",
-      "name": "Seelachs auf sahnigem Linsengemüse",
-      "kcal": 475,
-      "protein": 43.8,
-      "durationMinutes": 15,
-      "categories": [
-        "schnell",
-        "low-cal"
-      ],
+      "id": "kaesespaetzle-mit-bacon-und-wirsing",
+      "name": "Käsespätzle mit Bacon und Wirsing",
+      "kcal": 950,
+      "protein": 34,
+      "durationMinutes": 35,
+      "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "Schnell: 15 Minuten <= 30.",
-        "Low Cal: 475 kcal <= 650.",
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon, rind, rinder)."
       ],
       "matches": {
         "meatOrFish": [
-          "lachs",
-          "seelachs"
+          "bacon",
+          "rind",
+          "rinder"
         ],
         "animalProducts": [
+          "bacon",
+          "eier",
+          "gouda",
+          "kochsahne",
+          "rind",
+          "rinder",
+          "rinderbruehe",
+          "sahne"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "knusprige-blumenkohl-nuggets",
+      "name": "Knusprige Blumenkohl Nuggets",
+      "kcal": 760,
+      "protein": 22,
+      "durationMinutes": 35,
+      "categories": [
+        "vegetarisch"
+      ],
+      "dietaryType": "vegetarian",
+      "reasons": [
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (honig, joghurt, mayo, mayonnaise)."
+      ],
+      "matches": {
+        "meatOrFish": [],
+        "animalProducts": [
+          "honig",
+          "joghurt",
+          "mayo",
+          "mayonnaise"
+        ],
+        "explicitVegetarian": [
+          "vegetarisch"
+        ],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "korean-fried-chicken-in-gochujang-marinade",
+      "name": "Korean Fried Chicken in Gochujang Marinade",
+      "kcal": 880,
+      "protein": 55,
+      "durationMinutes": 40,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "haehnchen"
+        ],
+        "animalProducts": [
+          "butter",
+          "haehnchen",
+          "honig",
+          "mayo",
+          "mayonnaise"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "koreanisches-bbq-mit-bulgogi-steak",
+      "name": "Koreanisches BBQ mit Bulgogi Steak",
+      "kcal": 990,
+      "protein": 52,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bulgogi, lachs, schwein, schweine, schweinelachs, steak)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "bulgogi",
           "lachs",
-          "seelachs"
+          "schwein",
+          "schweine",
+          "schweinelachs",
+          "steak"
+        ],
+        "animalProducts": [
+          "bulgogi",
+          "lachs",
+          "mayo",
+          "mayonnaise",
+          "schwein",
+          "schweine",
+          "schweinelachs",
+          "steak"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "lachsfilet-and-chips-mit-remoulade",
+      "name": "Lachsfilet & Chips mit Remoulade",
+      "kcal": 827,
+      "protein": 40.3,
+      "durationMinutes": 20,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 20 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "lachs"
+        ],
+        "animalProducts": [
+          "lachs"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "mezze-rinderhackpfanne-auf-tomatenreis",
+      "name": "Mezze Rinderhackpfanne auf Tomatenreis",
+      "kcal": 1010,
+      "protein": 52,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hack",
+          "hackfleisch"
+        ],
+        "animalProducts": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "hirtenkaese",
+          "joghurt",
+          "kaese"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "omas-klassiker-kase-lauch-suppe-mit-hackfleisch",
+      "name": "Käse-Lauch-Suppe mit Hackfleisch",
+      "kcal": 776,
+      "protein": 39.8,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hack",
+          "hackfleisch"
+        ],
+        "animalProducts": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "kaese"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "paprika-haehnchenbrust-mit-kohlrabi-kartoffel-stampf",
+      "name": "Paprika Hähnchenbrust mit Kohlrabi-Kartoffel-Stampf",
+      "kcal": 820,
+      "protein": 55,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "haehnchen",
+          "haehnchenbrust"
+        ],
+        "animalProducts": [
+          "butter",
+          "haehnchen",
+          "haehnchenbrust",
+          "huehnerbruehe",
+          "milch"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "pollo-asado-mit-kidneybohnen-mais-salat",
+      "name": "Pollo asado mit Kidneybohnen Mais Salat",
+      "kcal": 700,
+      "protein": 55,
+      "durationMinutes": 20,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 20 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "haehnchen",
+          "haehnchenbrust"
+        ],
+        "animalProducts": [
+          "haehnchen",
+          "haehnchenbrust",
+          "joghurt"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "portobello-stroganoff-mit-extra-bio-schweinestreifen",
+      "name": "Portobello-Stroganoff mit extra Bio-Schweinestreifen",
+      "kcal": 1075,
+      "protein": 54.1,
+      "durationMinutes": 25,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 25 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, schwein, schweine, schweinefleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "schwein",
+          "schweine",
+          "schweinefleisch"
+        ],
+        "animalProducts": [
+          "fleisch",
+          "schwein",
+          "schweine",
+          "schweinefleisch"
         ],
         "explicitVegetarian": [],
         "explicitVegan": []
@@ -1731,24 +1194,564 @@
       "needsReview": false
     },
     {
-      "id": "enchiladas-mit-hack-vom-weiderind-and-kidneybohnen",
-      "name": "Enchiladas mit Hack vom Weiderind",
-      "kcal": 863,
-      "protein": 47.3,
+      "id": "reisbowl-mit-pulled-chicken-hoisin",
+      "name": "Reisbowl mit Pulled Chicken Hoisin",
+      "kcal": 900,
+      "protein": 55,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "haehnchen",
+          "haehnchenbrust"
+        ],
+        "animalProducts": [
+          "haehnchen",
+          "haehnchenbrust",
+          "honig",
+          "huehnerbruehe"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "ricotta-tortellini-alla-panna",
+      "name": "Ricotta Tortellini alla Panna",
+      "kcal": 950,
+      "protein": 34,
       "durationMinutes": 35,
       "categories": [],
       "dietaryType": "omnivore",
       "reasons": [
-        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (hack)."
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (prosciutto)."
       ],
       "matches": {
         "meatOrFish": [
-          "hack"
+          "prosciutto"
         ],
         "animalProducts": [
-          "hack"
+          "hartkaese",
+          "huehnerbruehe",
+          "kaese",
+          "kochsahne",
+          "prosciutto",
+          "ricotta",
+          "sahne"
         ],
         "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "rigatoni-auflauf-mit-bio-rinderhack",
+      "name": "Rigatoni Auflauf mit Bio Rinderhack",
+      "kcal": 815,
+      "protein": 38,
+      "durationMinutes": 40,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch).",
+        "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hackfleisch",
+          "rind",
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
+        ],
+        "animalProducts": [
+          "fleisch",
+          "gouda",
+          "hackfleisch",
+          "kochsahne",
+          "mozzarella",
+          "rind",
+          "rinder",
+          "rinderbruehe",
+          "rinderhack",
+          "rinderhackfleisch",
+          "sahne"
+        ],
+        "explicitVegetarian": [
+          "vegetarisch"
+        ],
+        "explicitVegan": []
+      },
+      "needsReview": true
+    },
+    {
+      "id": "rinderhackbaellchen-mit-senf-fruehlingszwiebel-sosse",
+      "name": "Rinderhackbällchen mit Senf-Frühlingszwiebel-Soße",
+      "kcal": 930,
+      "protein": 52,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hack",
+          "hackfleisch"
+        ],
+        "animalProducts": [
+          "butter",
+          "fleisch",
+          "hack",
+          "hackfleisch"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "saftiges-schweinefilet-mit-senfrahm",
+      "name": "Saftiges Schweinefilet mit Senfrahm",
+      "kcal": 1080,
+      "protein": 54,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "schwein",
+          "schweine",
+          "schweinefilet"
+        ],
+        "animalProducts": [
+          "huehnerbruehe",
+          "kochsahne",
+          "sahne",
+          "schwein",
+          "schweine",
+          "schweinefilet"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "schnitzel-mit-ofenkartoffeln",
+      "name": "Schnitzel mit Ofenkartoffeln",
+      "kcal": 1070,
+      "protein": 50,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "lachs",
+          "schwein",
+          "schweine",
+          "schweinelachs",
+          "steak"
+        ],
+        "animalProducts": [
+          "ei",
+          "joghurt",
+          "lachs",
+          "mayo",
+          "mayonnaise",
+          "sahne",
+          "schwein",
+          "schweine",
+          "schweinelachs",
+          "steak"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "schweinefilet-in-aprikosen-sosse",
+      "name": "Schweinefilet in Aprikosen Soße",
+      "kcal": 950,
+      "protein": 50,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "schwein",
+          "schweine",
+          "schweinefilet"
+        ],
+        "animalProducts": [
+          "butter",
+          "honig",
+          "schwein",
+          "schweine",
+          "schweinefilet"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "schweinelachssteak-mit-bohnengemuese",
+      "name": "Schweinelachssteak mit Bohnengemüse",
+      "kcal": 950,
+      "protein": 50,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "lachs",
+          "schwein",
+          "schweine",
+          "schweinelachs",
+          "steak"
+        ],
+        "animalProducts": [
+          "butter",
+          "lachs",
+          "schwein",
+          "schweine",
+          "schweinelachs",
+          "steak"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "seelachs-auf-sahnigem-linsengemuse",
+      "name": "Seelachs auf sahnigem Linsengemüse",
+      "kcal": 475,
+      "protein": 43.8,
+      "durationMinutes": 15,
+      "categories": [
+        "schnell",
+        "low-cal"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 15 Minuten <= 30.",
+        "Low Cal: 475 kcal <= 650.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "lachs",
+          "seelachs"
+        ],
+        "animalProducts": [
+          "lachs",
+          "seelachs"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "sloppy-joe-burger-mit-rinderhackfleischsosse",
+      "name": "Sloppy Joe Burger mit Rinderhackfleischsosse",
+      "kcal": 1070,
+      "protein": 57,
+      "durationMinutes": 40,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hackfleisch",
+          "rind",
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
+        ],
+        "animalProducts": [
+          "fleisch",
+          "hackfleisch",
+          "mayo",
+          "mayonnaise",
+          "rind",
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "sloppy-joes-vom-nahen-osten",
+      "name": "Sloppy Joes vom Nahen Osten",
+      "kcal": 780,
+      "protein": 38,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hack",
+          "hackfleisch"
+        ],
+        "animalProducts": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "joghurt"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "teriyaki-bio-haehnchenpfanne-mit-pak-choi",
+      "name": "Teriyaki Bio Hähnchenpfanne mit Pak Choi",
+      "kcal": 557,
+      "protein": 13.3,
+      "durationMinutes": 30,
+      "categories": [
+        "schnell",
+        "low-cal"
+      ],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Schnell: 30 Minuten <= 30.",
+        "Low Cal: 557 kcal <= 650.",
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "haehnchen",
+          "haehnchenbrust"
+        ],
+        "animalProducts": [
+          "haehnchen",
+          "haehnchenbrust",
+          "honig",
+          "milch"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "teriyaki-burger-mit-bio-rindfleisch",
+      "name": "Teriyaki Burger mit Bio Rindfleisch",
+      "kcal": 1130,
+      "protein": 57,
+      "durationMinutes": 40,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hackfleisch",
+          "rind",
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
+        ],
+        "animalProducts": [
+          "fleisch",
+          "gouda",
+          "hackfleisch",
+          "honig",
+          "joghurt",
+          "mayo",
+          "mayonnaise",
+          "rind",
+          "rinder",
+          "rinderhack",
+          "rinderhackfleisch"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "thueringer-bratwurst-sandwich",
+      "name": "Thüringer Bratwurst Sandwich",
+      "kcal": 1090,
+      "protein": 55,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bratwurst, wurst)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "bratwurst",
+          "wurst"
+        ],
+        "animalProducts": [
+          "bratwurst",
+          "hartkaese",
+          "kaese",
+          "mayo",
+          "mayonnaise",
+          "wurst"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "tokyo-grill-smoky-ribs-mit-teriyaki-glaze",
+      "name": "Tokyo Grill Smoky Ribs mit Teriyaki Glaze",
+      "kcal": 1010,
+      "protein": 50,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (spareribs).",
+        "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "spareribs"
+        ],
+        "animalProducts": [
+          "butter",
+          "spareribs"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": [
+          "vegan",
+          "vegane"
+        ]
+      },
+      "needsReview": true
+    },
+    {
+      "id": "tomatige-conchiglie-mit-rinderhackfleisch",
+      "name": "Tomatige Conchiglie mit Rinderhackfleisch",
+      "kcal": 930,
+      "protein": 52,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "fleisch",
+          "hack",
+          "hackfleisch"
+        ],
+        "animalProducts": [
+          "fleisch",
+          "hack",
+          "hackfleisch",
+          "hartkaese",
+          "huehnerbruehe",
+          "kaese",
+          "kochsahne",
+          "sahne"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "ueberbackene-haehnchenbrust-parmigiana",
+      "name": "Überbackene Hähnchenbrust Parmigiana",
+      "kcal": 850,
+      "protein": 58,
+      "durationMinutes": 35,
+      "categories": [],
+      "dietaryType": "omnivore",
+      "reasons": [
+        "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+      ],
+      "matches": {
+        "meatOrFish": [
+          "haehnchen",
+          "haehnchenbrust"
+        ],
+        "animalProducts": [
+          "ei",
+          "haehnchen",
+          "haehnchenbrust",
+          "hartkaese",
+          "kaese"
+        ],
+        "explicitVegetarian": [],
+        "explicitVegan": []
+      },
+      "needsReview": false
+    },
+    {
+      "id": "wuerzig-feurige-grillkaese-tacos",
+      "name": "Würzig Feurige Grillkäse Tacos",
+      "kcal": 900,
+      "protein": 36,
+      "durationMinutes": 35,
+      "categories": [
+        "vegetarisch"
+      ],
+      "dietaryType": "vegetarian",
+      "reasons": [
+        "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (grillkaese, kaese, mayo, mayonnaise)."
+      ],
+      "matches": {
+        "meatOrFish": [],
+        "animalProducts": [
+          "grillkaese",
+          "kaese",
+          "mayo",
+          "mayonnaise"
+        ],
+        "explicitVegetarian": [
+          "vegetarisch"
+        ],
         "explicitVegan": []
       },
       "needsReview": false

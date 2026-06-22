@@ -1,0 +1,77 @@
+{
+  "id": "koreanisches-bbq-mit-bulgogi-steak",
+  "name": "Koreanisches BBQ mit Bulgogi Steak",
+  "tier": "Himmel auf Erden",
+  "kcal": 990,
+  "protein": 52,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/koreanisches-bbq-mit-bulgogi-steak-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/koreanisches-bbq-mit-bulgogi-steak-65d5b24c2fd93ee7e59edef0",
+  "tags": [
+    "rind",
+    "reis",
+    "asiatisch"
+  ],
+  "ingredients": [
+    "250 g Schweinelachssteaks",
+    "150 g Jasminreis",
+    "400 g Pak Choi",
+    "1 Stück Knoblauchzehe",
+    "1 Stück Frühlingszwiebel",
+    "100 ml Bulgogisoße",
+    "25 ml Sojasoße",
+    "50 g Mayonnaise",
+    "8 ml Sriracha Sauce",
+    "10 g Sesamsamen",
+    "3 Esslöffel Öl",
+    "nach Geschmack Pfeffer",
+    "300 ml Wasser"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 300 ml [450 ml | 600 ml] Wasser im Wasserkocher. Tipp: Falls Du grillen möchtest, kannst Du den Grill vorheizen und in Schritt 5 verwenden. Knoblauch grob hacken. Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in feine Ringe schneiden.",
+      "imageUrl": "/images/hellofresh/koreanisches-bbq-mit-bulgogi-steak-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einem kleinen Topf mit Deckel 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Knoblauch und weißen Teil der Frühlingszwiebel darin 30 Sek. anschwitzen. Reis und 300 ml [450 ml | 600 ml] heißes Wasser* zugeben, aufkochen und bei niedriger Hitze 10 Min. abgedeckt köcheln lassen. Anschließend vom Herd nehmen und abgedeckt 10 Min. ziehen lassen.",
+      "imageUrl": "/images/hellofresh/koreanisches-bbq-mit-bulgogi-steak-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Schweinelachssteaks zusammen mit Bulgogisoße, 2 EL [3 EL | 4 EL] Öl* und Pfeffer* in eine große Schüssel geben und kurz marinieren lassen. In einer kleinen Schüssel Mayonnaise, Sriracha Sauce (Achtung: scharf!), Sesamsamen und die Hälfte der Sojasoße zu einem Dip vermengen. Pak Choi längs halbieren und die Schnittseite mit 1 EL [1,5 EL | 2 EL] des Dips einreiben.",
+      "imageUrl": "/images/hellofresh/koreanisches-bbq-mit-bulgogi-steak-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Eine große Pfanne erhitzen. Pak Choi darin rundum 3 – 4 Min. anbraten. Aus der Pfanne nehmen und Pfanne auswischen. Die große Pfanne erneut erhitzen. Schweinelachssteaks darin 2 – 4 Min. je Seite anbraten.",
+      "imageUrl": "/images/hellofresh/koreanisches-bbq-mit-bulgogi-steak-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Pak Choi mit der Schnittseite nach unten auf den Grill geben und 3 – 6 Min. grillen, bis er leicht anbrennt. Wenden und weitere 1 – 2 Min. grillen. Schweinelachssteaks 2 – 5 Min. je Seite grillen, bis das Fleisch innen nicht mehr rosa ist.",
+      "imageUrl": "/images/hellofresh/koreanisches-bbq-mit-bulgogi-steak-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Restliche Sojasoße zum Reis geben, unterrühren und mit einer Gabel auflockern. Schweinelachssteaks nach Belieben schneiden. Umami-Reis, Pak Choi und Bulgogi-Steaks auf tiefen Tellern anrichten, mit dem grünem Teil der Frühlingszwiebel toppen und mit dem Dip genießen.",
+      "imageUrl": "/images/hellofresh/koreanisches-bbq-mit-bulgogi-steak-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:52.457Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 990,
+    "protein": 52
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bulgogi, lachs, schwein, schweine, schweinelachs, steak)."
+  ],
+  "classificationNeedsReview": false
+}

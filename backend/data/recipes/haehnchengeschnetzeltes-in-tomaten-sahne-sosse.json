@@ -1,0 +1,75 @@
+{
+  "id": "haehnchengeschnetzeltes-in-tomaten-sahne-sosse",
+  "name": "Hähnchengeschnetzeltes in Tomaten-Sahne-Soße",
+  "tier": "Mamas Klassiker",
+  "kcal": 1030,
+  "protein": 52,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/haehnchengeschnetzeltes-in-tomaten-sahne-sosse-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/hahnchengeschnetzeltes-in-tomaten-sahne-sosse-64881f9bf39ee0e603098697",
+  "tags": [
+    "hähnchen"
+  ],
+  "ingredients": [
+    "250 g Hähnchenbrustfilet",
+    "150 g Basmati-Wildreis-Mischung",
+    "1 Stück Porree",
+    "150 g Kochsahne",
+    "1 Stück Karotte",
+    "10 g Petersilie",
+    "70 g Tomatenmark",
+    "4 g Gewürzmischung „Hello Paprika“",
+    "4 g Hühnerbrühe",
+    "400 ml Wasser",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "2 Esslöffel Butter"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 300 ml [450 ml | 600 ml] Wasser im Wasserkocher. In einen kleinen Topf mit Deckel 300 ml [450 ml | 600 ml] heißes Wasser* füllen. Wasser salzen* und aufkochen lassen. Reis zugeben und bei niedriger Hitze 10 Min. abgedeckt köcheln lassen. Anschließend vom Herd nehmen und abgedeckt 10 Min. ziehen lassen.",
+      "imageUrl": "/images/hellofresh/haehnchengeschnetzeltes-in-tomaten-sahne-sosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Karotte nach Belieben schälen, längs halbieren und in 0,5 cm Halbmonde schneiden. Porree längs halbieren, gründlich auswaschen und in 0,5 cm Halbmonde schneiden. Hähnchenbrust in 2 cm Stücke schneiden. Petersilie hacken.",
+      "imageUrl": "/images/hellofresh/haehnchengeschnetzeltes-in-tomaten-sahne-sosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne 2 EL [3 EL | 4 EL] Butter* erhitzen und Hähnchen, Karotte sowie Porree darin 5 – 6 Min. goldbraun braten, bis alles ein wenig Farbe bekommt. Mit Salz* und Pfeffer* würzen.",
+      "imageUrl": "/images/hellofresh/haehnchengeschnetzeltes-in-tomaten-sahne-sosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Tomatenmark, Hühnerbrühe und „Hello Paprika\" in die große Pfanne geben und 1 Min. anbraten. Hitze reduzieren, 100 ml [150 ml | 200 ml] Wasser* und Kochsahne hinzufügen und abgedeckt 6 – 8 Min. köcheln lassen, dabei gelegentlich umrühren. Evtl. mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/haehnchengeschnetzeltes-in-tomaten-sahne-sosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Kurz vor dem Servieren Petersilie unter den Reis heben.",
+      "imageUrl": "/images/hellofresh/haehnchengeschnetzeltes-in-tomaten-sahne-sosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Karotten Rezepte Paprika Rezepte",
+      "imageUrl": "/images/hellofresh/haehnchengeschnetzeltes-in-tomaten-sahne-sosse-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:07.428Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 1030,
+    "protein": 52
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "ricotta-tortellini-alla-panna",
+  "name": "Ricotta Tortellini alla Panna",
+  "tier": "Mc Donalds",
+  "kcal": 950,
+  "protein": 34,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/ricotta-tortellini-alla-panna-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/ricotta-tortellini-alla-panna-65f8675e4690e3c09047109c",
+  "tags": [
+    "gemischt"
+  ],
+  "ingredients": [
+    "400 g frische Tortellini mit Ricottafüllung",
+    "150 g Kochsahne",
+    "6 g Hühnerbrühe",
+    "40 g Hartkäse ital. Art, gerieben",
+    "100 g Buschbohnen",
+    "1 Stück Knoblauchzehe",
+    "70 g Prosciutto",
+    "nach Geschmack Salz",
+    "1 Esslöffel Öl",
+    "100 ml Wasser",
+    "nach Geschmack Pfeffer"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Reichlich heißes Wasser in einen großen Topf füllen, salzen* und aufkochen lassen.",
+      "imageUrl": "/images/hellofresh/ricotta-tortellini-alla-panna-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Enden der Buschbohnen entfernen und Buschbohnen in 1 cm Stücke schneiden. Buschbohnen in den großen Topf geben und 6 – 7 Min. weich garen. Tortellini in den letzten 3 – 4 Min. der Garzeit in den Topf geben. Beides durch ein Sieb abschütten und dabei 100 ml [150 ml | 200 ml] Kochwasser auffangen.",
+      "imageUrl": "/images/hellofresh/ricotta-tortellini-alla-panna-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Prosciutto in 1 cm Streifen schneiden. Knoblauch fein hacken.",
+      "imageUrl": "/images/hellofresh/ricotta-tortellini-alla-panna-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Prosciutto und Knoblauch darin 2 – 3 Min. anbraten, bis der Prosciutto etwas Farbe bekommt. Pfanneninhalt mit Kochsahne, Kochwasser und Hühnerbrühe ablöschen. Hitze reduzieren und geriebenen Hartkäse unterrühren.",
+      "imageUrl": "/images/hellofresh/ricotta-tortellini-alla-panna-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Tortellini und Bohnen nach der Garzeit in die Pfanne geben und vermengen, bis eine sämige Soße entsteht. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/ricotta-tortellini-alla-panna-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Tortellini auf tiefen Tellern anrichten und genießen.",
+      "imageUrl": "/images/hellofresh/ricotta-tortellini-alla-panna-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:11.502Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 950,
+    "protein": 34
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (prosciutto)."
+  ],
+  "classificationNeedsReview": false
+}

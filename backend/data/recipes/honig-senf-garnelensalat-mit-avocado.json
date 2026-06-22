@@ -1,0 +1,71 @@
+{
+  "id": "honig-senf-garnelensalat-mit-avocado",
+  "name": "Honig Senf Garnelensalat mit Avocado",
+  "tier": "Henkersmahlzeit",
+  "kcal": 640,
+  "protein": 42,
+  "durationMinutes": 20,
+  "imageUrl": "/images/hellofresh/honig-senf-garnelensalat-mit-avocado-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/honig-senf-garnelensalat-mit-avocado-689589b9464ec79ed47087b4",
+  "tags": [
+    "garnelen",
+    "salat",
+    "schnell",
+    "low cal"
+  ],
+  "ingredients": [
+    "150 g Großgarnelen",
+    "1 Stück Avocado",
+    "150 g Salatherz (Romana)",
+    "1 Stück rote Zwiebel",
+    "150 g Naturjoghurt",
+    "20 g Sonnenblumenkerne",
+    "17 g süßer Senf",
+    "17 g körniger Senf",
+    "10 ml mittelscharfer Senf",
+    "1 Stück Tomate",
+    "1 Esslöffel Olivenöl",
+    "1 Esslöffel Honig",
+    "nach Geschmack Pfeffer",
+    "1 Esslöffel Öl",
+    "nach Geschmack Salz",
+    "1 Teelöffel Weißweinessig"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Zwiebel halbieren und in feine Streifen schneiden. In einer großen Pfanne ohne Fettzugabe Sonnenblumenkerne 1 – 2 Min. rösten. Herausnehmen. In der Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Garnelen und Zwiebelstreifen darin 3 – 4 Min. anbraten. Mit Salz* und Pfeffer* würzen. Ggf. warm halten.",
+      "imageUrl": "/images/hellofresh/honig-senf-garnelensalat-mit-avocado-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Schüssel körnigen Senf, mittelscharfen Senf, süßen Senf, Joghurt, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 EL [1,5 EL | 2 EL] Honig*, 1 TL [1,5 TL | 2 TL] Essig*, Salz* und Pfeffer* zu einem Dressing vermengen. Tomate halbieren und in feine Halbmonde schneiden. Romanasalat in 2 cm Streifen schneiden. Avocado halbieren, entkernen und in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/honig-senf-garnelensalat-mit-avocado-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Tomate, Salat und Garnelen in der Schüssel mit dem Dressing gut vermengen. Salat auf tiefe Teller verteilen, mit Avocado und Sonnenblumenkernen toppen.",
+      "imageUrl": "/images/hellofresh/honig-senf-garnelensalat-mit-avocado-step-3.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:01.343Z",
+  "categories": [
+    "schnell",
+    "low-cal"
+  ],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 640,
+    "protein": 42
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 20 Minuten <= 30.",
+    "Low Cal: 640 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
+  ],
+  "classificationNeedsReview": false
+}

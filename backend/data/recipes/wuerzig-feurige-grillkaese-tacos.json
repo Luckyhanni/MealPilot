@@ -1,0 +1,80 @@
+{
+  "id": "wuerzig-feurige-grillkaese-tacos",
+  "name": "Würzig Feurige Grillkäse Tacos",
+  "tier": "Henkersmahlzeit",
+  "kcal": 900,
+  "protein": 36,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/wurzig-feurige-grillkase-tacos-63a02e6f5c2d3bbdc3087ce4",
+  "tags": [
+    "käse",
+    "vegetarisch"
+  ],
+  "ingredients": [
+    "8 Stück Tortilla-Wraps",
+    "200 g Grillkäse",
+    "1 Stück rote Zwiebel",
+    "1 Stück Gurke",
+    "½ Stück rote Chilischote",
+    "1 Stück Knoblauchzehe",
+    "34 ml Mayonnaise",
+    "2 g gerebelter Oregano",
+    "1 Stück Zitrone, gewachst",
+    "50 g Rucola",
+    "2 Esslöffel Öl",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Zucker",
+    "nach Geschmack Salz",
+    "1 Teelöffel Balsamicoessig"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Zwiebel abziehen, halbieren und in dünne Streifen schneiden. Zwiebelstreifen und 10 g [15 g | 20 g] Öl* in den Mixtopf geben und 10 Min./100 °C/Reverse/Stufe 1 dünsten. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "EL [1,5 EL | 2 EL] Öl* und Oregano in eine große Schüssel geben und vermengen. Grillkäse in 8 [12 | 16] gleich große Sticks schneiden, in die Schüssel zugeben, vorsichtig mit dem Kräuteröl vermengen und zum Marinieren zur Seite stellen.",
+      "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Knoblauch abziehen, hacken und mit 1 Prise Salz* vermengen. Mit der Seitenfläche der Messerklinge zu einer Paste zerdrücken. Zitrone längs in 4 Spalten schneiden. Enden der Gurke abschneiden und Gurke in 1 cm große Würfel schneiden. Chili längs halbieren und in feine Streifen schneiden (Achtung: scharf!).",
+      "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer kleinen Schüssel Mayonnaise mit der Hälfte der Knoblauchpaste, nach Belieben Zitronensaft, Salz* und Pfeffer* verrühren. Nach Ende der Zwiebel-Garzeit 10 g [15 g | 20 g] Wasser*, 1 Prise Zucker* und 1 TL [1,5 TL | 2 TL] Balsamicoessig* in den Mixtopf zugeben und 5 Min./90 °C/Reverse/Stufe 1 karamellisieren. Währenddessen fortfahren.",
+      "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Eine große Pfanne bei mittlerer Hitze erwärmen, Grillkäsesticks ohne Fettzugabe 3 – 4 Min. rundherum goldbraun anbraten. Nach Geschmack die restliche Knoblauchpaste und Chilistreifen (Achtung: scharf!) zugeben. Anschließend gebratenen Grillkäse kurz aus der Pfanne nehmen.",
+      "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Zitronen Rezepte",
+      "imageUrl": "/images/hellofresh/wuerzig-feurige-grillkaese-tacos-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:00.948Z",
+  "categories": [
+    "vegetarisch"
+  ],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 900,
+    "protein": 36
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (grillkaese, kaese, mayo, mayonnaise)."
+  ],
+  "classificationNeedsReview": false
+}

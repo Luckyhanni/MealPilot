@@ -1,0 +1,78 @@
+{
+  "id": "haehnchenfilets-in-kraeuterpanade",
+  "name": "Hähnchenfilets in Kräuterpanade",
+  "tier": "Mamas Klassiker",
+  "kcal": 820,
+  "protein": 55,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/haehnchenfilets-in-kraeuterpanade-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenfilets-in-krauterpanade-64e860fc40ec4203972fae04",
+  "tags": [
+    "hähnchen"
+  ],
+  "ingredients": [
+    "250 g Hähnchenbrustfilet in Lake",
+    "270 g Fettuccine",
+    "1 Stück Knoblauchzehe",
+    "10 g Basilikum/Oregano",
+    "24 ml Basilikumpaste",
+    "20 g Sonnenblumenkerne",
+    "40 g Hartkäse ital. Art, gerieben",
+    "25 g Mayonnaise",
+    "25 g Semmelbrösel",
+    "10 ml mittelscharfer Senf",
+    "4 g Hühnerbrühe",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "1 Teelöffel Weißweinessig",
+    "1 Esslöffel Öl",
+    "3 Esslöffel Olivenöl"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. In einen großen Topf reichlich heißes Wasser* füllen, gut salzen* und aufkochen lassen. Knoblauch abziehen. Oreganoblätter abzupfen und fein hacken.",
+      "imageUrl": "/images/hellofresh/haehnchenfilets-in-kraeuterpanade-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Fettuccine in den Topf mit kochendem Wasser* geben und 11 – 12 Min. bissfest garen. Pasta anschließend durch ein Sieb abgießen, dabei 100 ml [150 ml | 200 ml] Kochwasser auffangen. Fettuccine zurück in den Topf geben. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/haehnchenfilets-in-kraeuterpanade-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Hähnchenbrustfilets in je 3 Streifen schneiden. I n einer großen Schüssel Hähnchenfleisch mit Senf, Mayonnaise, Salz* und Pfeffer* vermengen. Semmelbrösel und gehackten Oregano dazugeben und Hähnchenfleisch damit rundherum panieren. In einer großen Pfanne Sonnenblumenkerne 1 – 2 Min. rösten, dann in ein hohes Rührgefäß geben.",
+      "imageUrl": "/images/hellofresh/haehnchenfilets-in-kraeuterpanade-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In das hohe Rührgefäß zu den Sonnenblumenkernen Basilikum mit Stielen, Basilikumpaste, Knoblauch, geriebenen Hartkäse, Hühnerbrühe, 3 EL [4,5 EL | 6 EL] Olivenöl*, 1 TL [1,5 TL | 2 TL] Essig* und die Hälfte vom aufgefangenen Kochwasser hinzufügen und mit einem Pürierstab zu einem Pesto mixen. Mit Salz* und Pfeffer* abschmecken. Pesto zur Pasta geben und gut vermischen. Tipp: Wenn das Pesto nicht cremig genug ist, gib' mehr Kochwasser dazu.",
+      "imageUrl": "/images/hellofresh/haehnchenfilets-in-kraeuterpanade-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In der Pfanne aus Schritt 3 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Panierte Hähnchenstreifen darin 3 – 4 Min. auf jeder Seite bei mittlerer Hitze braten, bis sie knusprig und innen nicht mehr rosa sind.",
+      "imageUrl": "/images/hellofresh/haehnchenfilets-in-kraeuterpanade-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Fettuccine mit Pesto auf tiefe Teller verteilen, gebratene Hähnchenfilets darauf anrichten und genießen.",
+      "imageUrl": "/images/hellofresh/haehnchenfilets-in-kraeuterpanade-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:09.641Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 820,
+    "protein": 55
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false
+}

@@ -1,0 +1,79 @@
+{
+  "id": "knusprige-blumenkohl-nuggets",
+  "name": "Knusprige Blumenkohl Nuggets",
+  "tier": "Himmel auf Erden",
+  "kcal": 760,
+  "protein": 22,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/knusprige-blumenkohl-nuggets-66262398cae59979d908d8d3",
+  "tags": [
+    "gemischt",
+    "vegetarisch"
+  ],
+  "ingredients": [
+    "¾ Stück Blumenkohl",
+    "600 g Kartoffeln (Drillinge)",
+    "75 g Blattsalatmischung",
+    "10 g Petersilie glatt/Zitronenthymian",
+    "50 g Senfsoße mit Frühlingszwiebeln",
+    "100 g Naturjoghurt",
+    "50 g Mayonnaise",
+    "25 g Pankomehl",
+    "4 g Gewürzmischung „Hello Patatas“",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "2.5 Esslöffel Öl",
+    "1 Teelöffel Weißweinessig",
+    "1 Teelöffel Honig"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 230 °C Ober-/Unterhitze (210 °C Umluft) vor. Zitronenthymianblätter hacken. Gewaschene Kartoffeln je nach Größe halbieren und auf einer Hälfte eines mit Backpapier belegten Backblechs verteilen. Kartoffeln mit Zitronenthymianblättern, 1 EL [1,5 EL | 2 EL] Öl* und Salz* vermengen. Tipp: Für 3 und 4 Pers. verwende 2 separate Bleche für die Kartoffeln und den Blumenkohl.",
+      "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Blumenkohl in mundgerechte Röschen teilen. In einer großen Schüssel Mayonnaise, „Hello Patatas“ und 1 TL [1,5 TL | 2 TL] Öl* verrühren. Blumenkohlröschen hinzufügen und gründlich mit der Mayo-Mischung vermengen.",
+      "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Mithilfe eines Messerrückens oder einer Flasche vorsichtig auf die Packung Panko-Mehl klopfen, sodass die Brösel etwas feiner werden. Panko zum Blumenkohl in die große Schüssel geben und alles gut miteinander vermengen. Blumenkohlröschen neben die Kartoffeln auf das Backblech (oder auf ein zweites, mit Backpapier belegtes Backblech) geben. Es ist nicht schlimm, wenn dabei etwas Panko in der Schüssel zurückbleibt.",
+      "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Blumenkohl und Kartoffeln im Ofen ca. 25 – 28 Min. goldbraun backen. Tipp: Für 3 und 4 Pers. schiebe das Blumenkohl-Blech mittig in den Ofen und das K artoffel-Blech darunter. Währenddessen in einer kleinen Schüssel Joghurt, Senfsoße mit Frühlingszwiebel, Salz* und Pfeffer* zu einem Dip verrühren. Tipp: Wenn Du den Dip etwas kräftiger magst, schmecke ihn mit etwas Essig* ab.",
+      "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer zweiten großen Schüssel 1 EL [1,5 EL | 2 EL] Joghurtdip, 1 EL [1,5 EL | 2 EL] Öl*, 2 EL [3 EL | 4 EL] Wasser*, 1 TL [1,5 TL | 2 TL] Essig* und 1 TL [1,5 TL | 2 TL] Honig* zu einem Dressing vermengen. Mit Salz* und Pfeffer* abschmecken. Salat zu dem Dressing geben und kurz vor dem Servieren unterheben. Petersilienblätter grob hacken.",
+      "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Blumenkohl nach der Garzeit nach Belieben mit Salz* würzen. Drillinge und Salat auf Teller verteilen. Blumenkohl Nuggets daneben anrichten, mit Petersilie bestreuen und mit Joghurtdip servieren.",
+      "imageUrl": "/images/hellofresh/knusprige-blumenkohl-nuggets-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:57.910Z",
+  "categories": [
+    "vegetarisch"
+  ],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 760,
+    "protein": 22
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (honig, joghurt, mayo, mayonnaise)."
+  ],
+  "classificationNeedsReview": false
+}

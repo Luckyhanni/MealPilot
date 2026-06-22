@@ -1,0 +1,78 @@
+{
+  "id": "schnitzel-mit-ofenkartoffeln",
+  "name": "Schnitzel mit Ofenkartoffeln",
+  "tier": "Himmel auf Erden",
+  "kcal": 1070,
+  "protein": 50,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/schnitzel-mit-ofenkartoffeln-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/schnitzel-mit-ofenkartoffeln-62d69f0ec939fdc11508de11",
+  "tags": [
+    "kartoffeln"
+  ],
+  "ingredients": [
+    "250 g Schweinelachssteaks",
+    "25 g Weizenmehl",
+    "100 g Semmelbrösel",
+    "4 g Gewürzmischung „Hello Paprika“",
+    "34 ml Mayonnaise",
+    "50 g Sahnejoghurt",
+    "1 Stück Tomate",
+    "400 g vorw. festk. Kartoffeln",
+    "12 ml Rotweinessig",
+    "1 Stück Gurke",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Zucker",
+    "120 ml Öl",
+    "1 Stück Ei*",
+    "10 g Dill"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Kartoffeln in 1,5 cm breite Spalten (Wedges) schneiden. In einer großen Schüssel mit 1 EL [1,5 EL | 2 EL] Öl*, Gewürzmischung „Paprikagewürz“ und etwas Salz* und Pfeffer* mischen.",
+      "imageUrl": "/images/hellofresh/schnitzel-mit-ofenkartoffeln-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Kartoffeln gleichmäßig auf einem mit Backpapier belegten Backblech verteilen und auf der mittleren Schiene im Backofen 25 – 30 Min. backen. Tipp: Die Kartoffeln werden knuspriger, wenn Du sie in dieser Zeit ein paarmal wendest.",
+      "imageUrl": "/images/hellofresh/schnitzel-mit-ofenkartoffeln-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Mayonnaise zusammen mit Sahnejoghurt in eine kleine Schüssel geben und die Tomate hineinreiben. Danach umrühren und ggf. mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/schnitzel-mit-ofenkartoffeln-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Enden der Gurke abschneiden und Gurke in feine Scheiben schneiden. Dill fein hacken. In einer großen Schüssel Rotweinessig zusammen mit 1 EL [1,5 EL | 2 EL] Öl* Salz*, Pfeffer* und 1 Prise Zucker* zu einem Dressing verrühren. Gurkenscheiben und Dill hinzugeben und gut vermengen.",
+      "imageUrl": "/images/hellofresh/schnitzel-mit-ofenkartoffeln-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Fleisch zwischen 2 Bögen Frischhaltefolie legen und ein wenig flacher klopfen. 3 tiefe Teller vorbereiten: Auf dem 1. Teller Mehl verteilen. Im 2. Teller 1 [2 | 2] Ei* mit Salz* und Pfeffer* verquirlen. Auf den 3. Teller Semmelbrösel geben. Schnitzel zuerst im Mehl wenden, dann durch das Ei* ziehen und zuletzt rundherum mit Semmelbröseln panieren (diese gut andrücken).",
+      "imageUrl": "/images/hellofresh/schnitzel-mit-ofenkartoffeln-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Paprika Rezepte Tomaten Rezepte",
+      "imageUrl": "/images/hellofresh/schnitzel-mit-ofenkartoffeln-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:56.138Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 1070,
+    "protein": 50
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
+  ],
+  "classificationNeedsReview": false
+}

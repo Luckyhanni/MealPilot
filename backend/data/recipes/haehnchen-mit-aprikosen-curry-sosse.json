@@ -1,0 +1,80 @@
+{
+  "id": "haehnchen-mit-aprikosen-curry-sosse",
+  "name": "Hähnchen mit Aprikosen Curry Soße",
+  "tier": "Mamas Klassiker",
+  "kcal": 960,
+  "protein": 48,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/haehnchen-mit-aprikosen-curry-sosse-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-mit-aprikosen-curry-sosse-6800c5515886e6cfbf37689e",
+  "tags": [
+    "hähnchen",
+    "reis",
+    "curry"
+  ],
+  "ingredients": [
+    "250 g Hähnchenbrustfilet in Lake",
+    "150 g Basmatireis",
+    "4 Stück Karotte",
+    "1 Stück Knoblauchzehe",
+    "1 Stück Zwiebel",
+    "10 g Petersilie, glatt",
+    "20 g getrocknete Aprikosen",
+    "50 g Aprikosenchutney",
+    "4 g Gewürzmischung „Hello Curry“",
+    "2 g Gewürzmischung „Hello Paprika“",
+    "4 g Gemüsebrühpulver",
+    "2 Esslöffel Butter",
+    "3 Esslöffel Öl",
+    "450 ml Wasser",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Erhitze 300 ml [450 ml | 600 ml] Wasser* im Wasserkocher. In einen kleinen Topf mit Deckel 300 ml [450 ml | 600 ml] heißes Wasser* füllen. 0,25 TL [0,5 TL | 0,5 TL] Salz* dazugeben und aufkochen lassen. Reis zugeben und bei niedriger Hitze 10 Min. abgedeckt köcheln lassen. Anschließend vom Herd nehmen und abgedeckt 10 Min. ziehen lassen.",
+      "imageUrl": "/images/hellofresh/haehnchen-mit-aprikosen-curry-sosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Karotten schälen, quer halbieren, dann längs in Stifte schneiden. Karottenstifte auf einem mit Backpapier belegten Backblech verteilen (etwas Platz für das Hähnchen lassen), mit „Hello Paprika“, 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* vermengen. Karotten 20 – 25 Min. im Ofen backen, bis sie weich sind.",
+      "imageUrl": "/images/hellofresh/haehnchen-mit-aprikosen-curry-sosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Hähnchenbrustfilets von beiden Seiten mit Salz* und Pfeffer* würzen. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* auf hoher Stufe erhitzen. Hähnchenbrust auf jeder Seite 2 Min. goldbraun anbraten. Fleisch aus der Pfanne nehmen und in den letzten 10 Min. der Karottengarzeit mit in den Ofen geben und fertig backen, bis das Fleisch innen nicht mehr rosa ist.",
+      "imageUrl": "/images/hellofresh/haehnchen-mit-aprikosen-curry-sosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Zwiebel und Knoblauch fein würfeln. Getrocknete Aprikosen fein würfeln. Petersilienblätter fein hacken.",
+      "imageUrl": "/images/hellofresh/haehnchen-mit-aprikosen-curry-sosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In der großen Pfanne erneut 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Zwiebel und Knoblauch darin 2 Min. anbraten. Mit 150 ml [225 ml | 300 ml] Wasser* ablöschen. Brühe, Aprikosenchutney, getrocknete Aprikosen und „Hello Curry“ dazugeben und ca. 3 Min. einköcheln lassen. Zum Schluss 1 EL [1,5 EL | 2 EL] Butter* unterrühren und köcheln lassen, bis die Soße etwas eingedickt ist. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/haehnchen-mit-aprikosen-curry-sosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Reis mit einer Gabel auflockern und 1 EL [1,5 EL | 2 EL] Butter* unterrühren. Reis auf Teller verteilen, Karotten und Hähnchenbrust dazu anrichten. Hähnchen mit Petersilie toppen und alles zusammen mit der Aprikosen-Curry-Soße genießen.",
+      "imageUrl": "/images/hellofresh/haehnchen-mit-aprikosen-curry-sosse-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:04.756Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 960,
+    "protein": 48
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false
+}

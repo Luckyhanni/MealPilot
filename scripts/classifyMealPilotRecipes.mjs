@@ -2,12 +2,16 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import {
+  buildRecipesBundle,
+  readRecipesSource,
+  writeRecipeFiles,
+} from "./recipeFileStore.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, "..");
 const backendRoot = path.join(projectRoot, "backend");
-const recipesPath = path.join(backendRoot, "data", "recipes.json");
 const reportPath = path.join(
   backendRoot,
   "data",
@@ -18,15 +22,6 @@ const classificationSourcePath = path.join(
   "src",
   "recipeClassification.ts",
 );
-
-async function readJson(filePath, fallback) {
-  try {
-    return JSON.parse(await fs.readFile(filePath, "utf8"));
-  } catch (error) {
-    if (error?.code === "ENOENT") return fallback;
-    throw error;
-  }
-}
 
 async function writeJson(filePath, value) {
   await fs.writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, "utf8");
@@ -74,7 +69,7 @@ const {
   recipeClassificationThresholds,
 } = await loadClassificationModule();
 
-const recipes = await readJson(recipesPath, []);
+const recipes = await readRecipesSource();
 const reportItems = recipes.map((recipe) => {
   const classification = classifyRecipe(recipe);
   return {
@@ -99,7 +94,12 @@ const report = {
   recipes: reportItems,
 };
 
-await writeJson(recipesPath, classifiedRecipes);
+await writeRecipeFiles(classifiedRecipes);
+const bundleResult = await buildRecipesBundle();
+if (!bundleResult.ok) {
+  console.error(bundleResult.errors.join("\n"));
+  process.exit(1);
+}
 await writeJson(reportPath, report);
 
 console.log(JSON.stringify(report.summary, null, 2));

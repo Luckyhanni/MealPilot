@@ -1,0 +1,80 @@
+{
+  "id": "caesar-salad-mit-bacon-dazu-eine-limo",
+  "name": "Caesar Salad mit Bacon dazu Eine Limo",
+  "tier": "Himmel auf Erden",
+  "kcal": 910,
+  "protein": 42,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/caesar-salad-mit-bacon-dazu-eine-limo-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/caesar-salad-mit-bacon-dazu-eine-limo-67d807643a0a3d1cca034557",
+  "tags": [
+    "bacon",
+    "salat"
+  ],
+  "ingredients": [
+    "100 g Bacon (Scheiben)",
+    "400 g vorgegarte Kartoffelwürfel",
+    "150 g Salatherz (Romana)",
+    "150 g Tomate (Roma)",
+    "1 Stück kleine Salatgurke",
+    "1 Stück Zitrone, gewachst",
+    "60 g Aioli",
+    "20 g Hartkäse ital. Art, gerieben",
+    "75 g Naturjoghurt",
+    "10 ml mittelscharfer Senf",
+    "8 g Worcester Sauce",
+    "500 ml Wasser",
+    "2 Esslöffel Zucker",
+    "3.5 Esslöffel Olivenöl",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Weißweinessig"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Zwei [drei | vier] dünne Scheiben von der Zitrone abschneiden. Restliche Zitrone in 6 Spalten schneiden. Gurke längs halbieren und in 0,5 cm Halbmonde schneiden. Tomaten halbieren und in 1 cm Spalten schneiden. Romanasalat in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-bacon-dazu-eine-limo-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einem hohen Rührgefäß Saft von 6 [9 | 12] Zitronenspalten, 500 ml [750 ml | 1000 ml] Wasser* und 2 EL [3 EL | 4 EL] Zucker* mithilfe eines Pürierstabs 30 Sek. mixen, bis sich der Zucker* aufgelöst hat. Mit Zucker* abschmecken. Bis zum Ende des Rezepts in den Kühlschrank stellen.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-bacon-dazu-eine-limo-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne 1,5 EL [2,25 EL | 3 EL] Öl* erhitzen. Kartoffelwürfel darin 7 – 8 Min. rundum goldbraun anbraten. Mit Salz* und Pfeffer* abschmecken. Herausnehmen.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-bacon-dazu-eine-limo-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer kleinen Schüssel Senf, Aioli, Joghurt, Worcester Sauce, Hartkäse, 2 EL [3 EL | 4 EL] Olivenöl*, Salz*, Pfeffer* und Essig* zu einem Dressing verrühren.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-bacon-dazu-eine-limo-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In derselben Pfanne ohne weitere Fettzugabe Bacon 1 – 2 Min. je Seite scharf anbraten, bis er kross wird.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-bacon-dazu-eine-limo-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Gekühlte Limonade in Gläser füllen. Mit den dünnen Zitronenscheiben garnieren. Salat auf tiefe Teller verteilen. Kartoffelwürfel auf dem Salat verteilen und mit Dressing beträufeln. Gurkenhalbmonde und Tomatenscheiben darauf anrichten und leicht salzen* und pfeffern*. Mit krossem Bacon toppen.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-bacon-dazu-eine-limo-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:57.025Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 910,
+    "protein": 42
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
+  ],
+  "classificationNeedsReview": false
+}

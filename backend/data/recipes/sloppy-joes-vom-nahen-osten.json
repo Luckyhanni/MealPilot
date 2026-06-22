@@ -1,0 +1,60 @@
+{
+  "id": "sloppy-joes-vom-nahen-osten",
+  "name": "Sloppy Joes vom Nahen Osten",
+  "tier": "Henkersmahlzeit",
+  "kcal": 780,
+  "protein": 38,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/sloppy-joes-vom-nahen-osten-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/sloppy-joes-vom-nahen-osten-65e72fc7d454825432f190ea",
+  "tags": [
+    "hackfleisch"
+  ],
+  "ingredients": [
+    "200 g Hackfleischzubereitung vom Weiderind",
+    "150 g Ciabattabrötchen",
+    "50 g Blattsalatmischung",
+    "2 Stück Frühlingszwiebel",
+    "10 g Minze/Petersilie",
+    "200 g Tomatensugo",
+    "100 g Naturjoghurt",
+    "4 g Gewürzmischung „Hello Harissa“",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Zucker",
+    "nach Geschmack Weißweinessig",
+    "50 ml Wasser"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in feine Ringe schneiden. Eine große Pfanne ohne Fettzugabe erhitzen. Hackfleisch, weiße Frühlingszwiebelringe, „Hello Harissa“, Salz* und Pfeffer* zusammen 3 – 4 Min. braten, bis das Fleisch nicht mehr rosa ist. Währenddessen Kräuter fein hacken. Brötchen waagerecht halbieren.",
+      "imageUrl": "/images/hellofresh/sloppy-joes-vom-nahen-osten-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Pfanne mit Tomatensugo und 50 ml [75 ml | 100 ml] Wasser* ablöschen. Soße 2 – 3 Min. kochen lassen. Mit Salz*, Pfeffer* und Zucker* würzen. Ggfs. warmhalten. In einer kleinen Schüssel Joghurt, grüne Frühlingszwiebelringe, die Hälfte Kräuter, Salz*, Pfeffer*und Essig* zu einem Dip verrühren. In einer großen Schüssel Blattsalat mit 2 EL [3 EL | 4 EL] Dip mischen. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/sloppy-joes-vom-nahen-osten-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Hackfleischsoße aus der Pfanne in eine große Schüssel geben. Dieselbe Pfanne ohne weitere Fettzugabe erhitzen. Brötchen 1 – 2 Min. je Seite rösten, bis sie leicht gebräunt sind. Brötchen in 4 Scheiben schneiden. Hackfleischsoße auf einer Seite eines Tellers anrichten. Salat und Brötchenhälften daneben stellen. Mit restlichen Kräutern garnieren und restlichem Dip genießen.",
+      "imageUrl": "/images/hellofresh/sloppy-joes-vom-nahen-osten-step-3.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:04.359Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 780,
+    "protein": 38
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+  ],
+  "classificationNeedsReview": false
+}

@@ -1,0 +1,80 @@
+{
+  "id": "schweinefilet-in-aprikosen-sosse",
+  "name": "Schweinefilet in Aprikosen Soße",
+  "tier": "Henkersmahlzeit",
+  "kcal": 950,
+  "protein": 50,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/schweinefilet-in-aprikosen-sosse-6564689e53b95b70f9991263",
+  "tags": [
+    "gemischt"
+  ],
+  "ingredients": [
+    "250 g Schweinefilet",
+    "3 Stück Karotte",
+    "50 g Aprikosenkonfitüre",
+    "4 g Maisstärke",
+    "1 Stück rote Zwiebel",
+    "120 g Salatherz (Romana)",
+    "5 ml mittelscharfer Senf",
+    "6 g Gewürzmischung „Hello Patatas“",
+    "1 Stück Ofenkartoffel",
+    "1 Stück Knoblauchzehe",
+    "4 g Gemüsebrühpulver",
+    "100 ml Wasser",
+    "2 Teelöffel Balsamicoessig",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "½ Teelöffel Honig",
+    "4 Esslöffel Olivenöl",
+    "1 Teelöffel Butter"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Karotten schälen und in 1 cm Scheiben schneiden. Kartoffel schälen, längs halbieren und in 0,5 cm Scheiben schneiden. Hälfte der Zwiebel in 1 cm Spalten schneiden. Karotten, Kartoffel und Zwiebelspalten auf ein mit Backpapier belegtes Backblech geben, dabei Platz für das Fleisch lassen. Gemüse mit 1 EL [1,5 EL | 2 EL] Olivenöl*, „Hello Patatas“, Salz* und Pfeffer* vermengen und 20 – 25 Min. goldbraun backen.",
+      "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Romanasalat in 1 cm Streifen schneiden. In einer großen Schüssel die Hälfte [drei Viertel | alles] vom Senf, 1 EL [1,5 EL | 2 EL] Olivenöl*, 0,5 TL [0,5 TL | 1 TL] Honig*, 1 TL [1,5 TL | 2 TL] Balsamicoessig*, 1 EL [1,5 EL | 2 EL] Wasser*, Salz* und Pfeffer* zu einem Dressing vermengen. Salatstreifen zugeben, aber noch nicht vermengen.",
+      "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Aus 100 ml [150 ml | 200 ml] Wasser*, Brühepulver und Maisstärke eine Brühe vorbereiten. Schweinefilet in 4 [6 | 8] Medaillons schneiden und rundum salzen*.",
+      "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Schweinemedaillons darin 2 – 3 Min. je Seite braten. Medaillons auf das Backblech geben und 8 – 10 Min. im Ofen garen, bis das Fleisch innen nicht mehr rosa ist. Restliche Zwiebel fein würfeln. Knoblauch abziehen.",
+      "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In derselben Pfanne erneut 1 EL [1,5 EL | 2 EL] Olivenöl* bei mittlerer Temperatur erhitzen. Zwiebelwürfel hineingeben, Knoblauch dazu pressen und beides 1 – 2 Min. glasig anschwitzen. Aprikosenmarmelade und 1 TL [1,5 TL | 2 TL] Balsamicoessig* hineinrühren. Pfanneninhalt mit vorbereiteter Brühe ablöschen und 1 – 2 Min. köcheln lassen, bis die Soße eindickt. TL [1,5 TL | 2 TL] Butter*einrühren und mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Ofengemüse, Salat und Schweinefilet auf Teller verteilen und mit der Aprikosen-Soße servieren.",
+      "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:03.498Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 950,
+    "protein": 50
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
+  ],
+  "classificationNeedsReview": false
+}

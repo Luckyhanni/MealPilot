@@ -1,0 +1,80 @@
+{
+  "id": "hackbaellchen-mit-bio-rinderhack-in-senfsosse",
+  "name": "Hackbällchen mit Bio Rinderhack in Senfsoße",
+  "tier": "Henkersmahlzeit",
+  "kcal": 930,
+  "protein": 52,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/hackballchen-mit-bio-rinderhack-in-senfsosse-68c139bd9f91a82a63bf0bfa",
+  "tags": [
+    "rind",
+    "hackfleisch"
+  ],
+  "ingredients": [
+    "250 g Bio Rinderhackfleischzubereitung",
+    "150 g Basmatireis",
+    "1 Stück Karotte",
+    "1 Stück Porree",
+    "1 Stück Zwiebel",
+    "10 g Petersilie glatt/Schnittlauch",
+    "150 g Kochsahne leicht",
+    "25 g Semmelbrösel",
+    "17 g körniger Senf",
+    "10 ml mittelscharfer Senf",
+    "4 g Rinderbrühe",
+    "nach Geschmack Salz",
+    "1 Esslöffel Öl",
+    "350 ml Wasser",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Honig",
+    "½ Esslöffel Butter"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 300 ml [450 ml | 600 ml] Wasser im Wasserkocher. Karotte schälen und grob raspeln. Porree längs halbieren, gründlich auswaschen und in 0,5 cm Halbmonde schneiden. Zwiebel fein würfeln. Petersilie fein hacken und Schnittlauch in feine Röllchen schneiden.",
+      "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einen großen Topf 300 ml [450 ml | 600 ml] heißes Wasser* füllen, leicht salzen* und aufkochen lassen. Reis, Porree und Karottenraspel darin bei niedriger Hitze ca. 10 Min. abgedeckt köcheln lassen. Dann Topf vom Herd nehmen und mindestens 10 Min. abgedeckt ziehen lassen.",
+      "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einem hohen Rührgefäß 50 ml [75 ml | 100 ml] Wasser*, Sahne, Rinderbrühe, körnigen Senf und 1 TL [1,5 TL | 2 TL] Honig* gut verrühren, sodass keine Klümpchen mehr vorhanden sind.",
+      "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Schüssel Hackfleisch, Zwiebelwürfel, Semmelbrösel, Petersilie, mittelscharfen Senf, Salz* und Pfeffer* gut mit den Händen vermengen und aus der Hackfleischmasse ca. 10 [15 | 20] Bällchen formen. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* bei hoher Hitze erwärmen und Hackbällchen 2 – 3 Min. rundherum scharf anbraten. Anschließend Hackbällchen aus der Pfanne nehmen und das Fett abgießen.",
+      "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Pfanne auswischen und den Sahnemix hineingeben. Soße einmal aufkochen lassen und mit Salz* und Pfeffer* abschmecken. Angebratene Hackbällchen in die Soße geben, Hitze reduzieren und alles 5 – 8 Min. gar ziehen lassen. Tipp: Falls die Soße zu dick wird, gib einen Schluck Wasser dazu.",
+      "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Gemüsereis mit einer Gabel auflockern. Nach Belieben noch 0,5 EL [1 EL | 1 EL] Butter* untermischen. Reis auf Teller verteilen. Hackbällchen und Senfsoße dazu anrichten. Mit Schnittlauch bestreuen und genießen.",
+      "imageUrl": "/images/hellofresh/hackbaellchen-mit-bio-rinderhack-in-senfsosse-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:02.657Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 930,
+    "protein": 52
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
+  ],
+  "classificationNeedsReview": false
+}

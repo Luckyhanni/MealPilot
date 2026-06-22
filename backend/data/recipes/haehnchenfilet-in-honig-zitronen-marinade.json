@@ -1,0 +1,74 @@
+{
+  "id": "haehnchenfilet-in-honig-zitronen-marinade",
+  "name": "Hähnchenfilet in Honig-Zitronen-Marinade",
+  "tier": "Mamas Klassiker",
+  "kcal": 820,
+  "protein": 55,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/haehnchenfilet-in-honig-zitronen-marinade-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenfilet-in-honig-zitronen-marinade-618a3df9bf4792051764f60a",
+  "tags": [
+    "hähnchen"
+  ],
+  "ingredients": [
+    "250 g Hähnchenbrustfilet",
+    "200 g Buschbohnen",
+    "½ Stück Knoblauchzehe",
+    "10 g Petersilie glatt/Rosmarin",
+    "8 g Honig",
+    "600 g Kartoffeln (Drillinge)",
+    "2 g Gewürzmischung „Hello Paprika“",
+    "½ Stück Zitrone, gewachst",
+    "100 g Sahnejoghurt",
+    "3 Esslöffel Öl",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Erhitze reichlich Wasser im Wasserkocher. Die Hälfte [drei Viertel | gesamten] Knoblauch abziehen und fein hacken. Zitrone heiß abwaschen. Schale der Zitrone abreiben und Zitrone in 6 Spalten schneiden. Nadeln vom Rosmarin abzupfen und fein hacken. 1 TL [1,5 TL | 2 TL] Zitronenabrieb, Saft von 2 [3 | 4] Zitronenspalten, gehackten Rosmarin und Knoblauch zusammen mit Honig, 0,5 EL [0,75 EL | 1 EL] Öl*, Salz* und Pfeffer* in einem tiefen Teller verrühren. Hähnchenbrust in der Marinade wenden und für ca. 5 Min. ziehen lassen.",
+      "imageUrl": "/images/hellofresh/haehnchenfilet-in-honig-zitronen-marinade-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Gewaschene Kartoffeln ungeschält in 0,5 cm breite Scheiben schneiden. Kartoffelscheiben in einer großen Schüssel mit Gewürzmischung „Hello Paprika“, 1 EL [1,5 EL | 2 EL] Öl*, Pfeffer* und Salz* vermengen. Die Kartoffeln auf einem mit Backpapier belegten Backblech verteilen, dabei etwas Platz für eine kleine Auflaufform lassen und für 20 – 25 Min. backen, bis die Kartoffeln innen weich und außen goldbraun sind.",
+      "imageUrl": "/images/hellofresh/haehnchenfilet-in-honig-zitronen-marinade-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einen großen Topf reichlich heißes Wasser* füllen, salzen*, aufkochen lassen. Enden der Buschbohnen abschneiden, in das kochende Wasser geben und ca. 8 Min. bissfest garen. Am Ende der Garzeit Bohnen durch ein Sieb abgießen und mit kaltem Wasser abschrecken.",
+      "imageUrl": "/images/hellofresh/haehnchenfilet-in-honig-zitronen-marinade-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen und marinierte Hähnchenbrust darin von jeder Seite 1 – 2 Min. goldbraun anbraten. Tipp: Mach die Pfanne nicht zu heiß, die Marinade kann schnell verbrennen. Anschließend Hähnchenbrust aus der Pfanne in eine kleine Auflaufform geben und Pfanne für den nächsten Schritt beiseitestellen. Hähnchenbrust mit in den Ofen geben und 12 – 14 Min. im Backofen garen, bis das Fleisch innen nicht mehr rosa ist.",
+      "imageUrl": "/images/hellofresh/haehnchenfilet-in-honig-zitronen-marinade-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Die Blätter der Petersilie abzupfen und fein hacken. Die Hälfte der Petersilie in einer kleinen Schüssel mit Sahnejoghurt verrühren und mit Salz*, Pfeffer* und etwas Zitronensaft abschmecken. Die Bohnen in der Pfanne aus Schritt 4 unter Zugabe von 0,5 EL [0,75 EL | 1 EL] Öl* für 2 – 3 Min anrösten.",
+      "imageUrl": "/images/hellofresh/haehnchenfilet-in-honig-zitronen-marinade-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Paprika Rezepte Zitronen Rezepte",
+      "imageUrl": "/images/hellofresh/haehnchenfilet-in-honig-zitronen-marinade-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:08.258Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 820,
+    "protein": 55
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false
+}

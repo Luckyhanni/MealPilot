@@ -1,0 +1,84 @@
+{
+  "id": "korean-fried-chicken-in-gochujang-marinade",
+  "name": "Korean Fried Chicken in Gochujang Marinade",
+  "tier": "Himmel auf Erden",
+  "kcal": 880,
+  "protein": 55,
+  "durationMinutes": 40,
+  "imageUrl": "/images/hellofresh/korean-fried-chicken-in-gochujang-marinade-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/korean-fried-chicken-in-gochujang-marinade-66222a935c9ad41013c107a4",
+  "tags": [
+    "hähnchen",
+    "asiatisch"
+  ],
+  "ingredients": [
+    "250 g Hähnchengeschnetzeltes",
+    "500 g Pommes Frites",
+    "400 g Maiskolben (vorgekocht)",
+    "1 Stück Gurke",
+    "1 Stück Frühlingszwiebel",
+    "10 g Ingwerpaste (im Kühlbeutel)",
+    "50 g Ketchup",
+    "50 g Gochujang",
+    "50 ml Sojasoße",
+    "10 ml Sesamöl",
+    "10 g Sesamsamen",
+    "50 g Mayonnaise",
+    "3.5 Esslöffel Balsamicoessig",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "3 Esslöffel Mehl",
+    "50 ml Wasser",
+    "50 ml Öl",
+    "1 Esslöffel Honig",
+    "2 Esslöffel Zucker",
+    "1 Esslöffel Butter"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220ºC Ober-/Unterhitze (200ºC Umluft) vor. Gurke längs halbieren und in 0,5 cm Halbmonde schneiden. In einer großen Schüssel 1 EL [1,5 EL | 2 EL] Sojasoße, 2 EL [3 EL | 4 EL] Essig* und 1 EL [1,5 EL | 2 EL] Zucker* verrühren. Gurke in die Schüssel geben und vermengen. In einer zweiten großen Schüssel 1,5 EL [2,25 EL | 3 EL] Essig*, Ingwerpaste und Pfeffer* vermengen. Hähnchen dazugeben und marinieren lassen.",
+      "imageUrl": "/images/hellofresh/korean-fried-chicken-in-gochujang-marinade-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Mais mit 1 EL [1,5 EL | 2 EL] Butter* bestreichen und zusammen mit den Pommes auf ein mit Backpapier belegtes Backblech geben. Beides im Ofen 13 – 16 Min. backen. Nach der Garzeit den Ofen auf Grillfunktion stellen. Pommes und Mais im oberen Drittel des Ofens 3 – 4 Min. goldbraun garen. Tipp: Zum leichteren Teilen kannst Du den Mais auch vierteln.",
+      "imageUrl": "/images/hellofresh/korean-fried-chicken-in-gochujang-marinade-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer kleinen Schüssel Ketchup, Gochujang, 1 EL [1,5 EL | 2 EL] Honig*, 1 EL [1,5 EL | 2 EL] Zucker*, restliche Sojasoße und Sesamöl zu einer Soße verrühren. In der zweiten kleinen Schüssel 2 EL [3 EL | 4 EL] der Soße mit der Mayonnaise zu einem Dip verrühren.",
+      "imageUrl": "/images/hellofresh/korean-fried-chicken-in-gochujang-marinade-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In die Schüssel mit dem Hähnchen 3 EL [4,5 EL | 6 EL] Mehl* und 50 ml [75 ml | 100 ml] Wasser* geben und vermengen. In einer großen Pfanne 100 ml Öl* bei mittelhoher Temperatur erhitzen. Hähnchengeschnetzeltes darin 4 – 5 Min. rundum goldbraun frittieren. Aus der Pfanne nehmen und auf Küchenpapier abtropfen lassen. Öl aus der Pfanne abgießen. Tipp: Du kannst das heiße Öl in einer großen Schüssel abkühlen lassen und danach im Mülleimer entsorgen.",
+      "imageUrl": "/images/hellofresh/korean-fried-chicken-in-gochujang-marinade-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Hähnchen zurück in die Pfanne geben und mit der Soße 1 – 2 Min. braten, bis die Soße eindickt. Sesam untermischen. Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in feine Ringe schneiden. Marinade von den Gurken abgießen und weiße Frühlingszwiebelringe mit den Gurken vermengen. Mit Pfeffer* abschmecken. Pommes und Mais mit Salz* und Pfeffer* würzen.",
+      "imageUrl": "/images/hellofresh/korean-fried-chicken-in-gochujang-marinade-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Pommes und Mais auf Teller verteilen. Gochujang-Hähnchen und Salat daneben anrichten. Mit grünen Frühlingszwiebelringen garnieren und mit dem Dip servieren.",
+      "imageUrl": "/images/hellofresh/korean-fried-chicken-in-gochujang-marinade-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:53.816Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 880,
+    "protein": 55
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+  ],
+  "classificationNeedsReview": false
+}

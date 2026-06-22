@@ -1,0 +1,77 @@
+{
+  "id": "tomatige-conchiglie-mit-rinderhackfleisch",
+  "name": "Tomatige Conchiglie mit Rinderhackfleisch",
+  "tier": "Henkersmahlzeit",
+  "kcal": 930,
+  "protein": 52,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/tomatige-conchiglie-mit-rinderhackfleisch-66388425a1cdc8933c576841",
+  "tags": [
+    "rind",
+    "hackfleisch"
+  ],
+  "ingredients": [
+    "200 g Hackfleischzubereitung vom Weiderind",
+    "1 Stück Zwiebel",
+    "1 Stück Knoblauchzehe",
+    "10 g Basilikum/Oregano",
+    "150 g Kochsahne",
+    "25 g Tomatenpesto",
+    "40 g Hartkäse ital. Art, geraspelt",
+    "4 g Gewürzmischung „Hello Harissa“",
+    "6 g Hühnerbrühe",
+    "250 g Conchiglie",
+    "1 Esslöffel Öl",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "500 ml Wasser"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 5 00 ml [750 ml | 1.000 ml] Wasser im Wasserkocher. Oreganoblätter fein hacken. Zwiebel fein hacken. Knoblauchzehe abziehen.",
+      "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einem großen Topf mit Deckel 1 EL [1,5 EL | 2 EL] Öl* bei mittlerer Temperatur erhitzen. Knoblauch hineinpressen, Rinderhackfleisch und gehackte Zwiebel dazugeben und alles 2 – 3 Min. anbraten. Dabei das Hackfleisch gut zerkleinern.",
+      "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Topfinhalt mit Kochsahne und 500 ml [750 ml | 1.000 ml] heißem Wasser* ablöschen. Hühnerbrühe, „Hello Harissa “ und nach Geschmack etwas gehackten Oregano dazugeben. Conchiglie unterrühren, a ufkochen und abgedeckt ca. 10 – 12 Min. köcheln lassen, bis die Nudeln bissfest sind. Zwischendurch mehrmals umrühren. Besonders zum Schluss, wenn das Wasser fast verkocht ist, musst Du öfter umrühren, damit die Nudeln nicht ansetzen!",
+      "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Tomatenpesto unter die fertig gegarten Conchiglie rühren.",
+      "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Die Hälfte vom geraspelten Hartkäse hinzugeben und gut vermengen, bis der Käse geschmolzen ist. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Pasta auf tiefen Tellern anrichten, mit Basilikum und restlichem Hartkäse toppen und genießen.",
+      "imageUrl": "/images/hellofresh/tomatige-conchiglie-mit-rinderhackfleisch-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:03.925Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 930,
+    "protein": 52
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+  ],
+  "classificationNeedsReview": false
+}

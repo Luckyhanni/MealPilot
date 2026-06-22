@@ -2,12 +2,12 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { readRecipesSource } from "./recipeFileStore.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, "..");
 const backendRoot = path.join(projectRoot, "backend");
-const recipesPath = path.join(backendRoot, "data", "recipes.json");
 const classificationSourcePath = path.join(
   backendRoot,
   "src",
@@ -56,7 +56,7 @@ function firstBlockingIngredient(recipe, terms, normalizeText) {
 }
 
 const { classifyRecipe, normalizeText } = await loadClassificationModule();
-const recipes = JSON.parse(await fs.readFile(recipesPath, "utf8"));
+const recipes = await readRecipesSource();
 const errors = [];
 
 for (const recipe of recipes) {

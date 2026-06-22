@@ -1,0 +1,77 @@
+{
+  "id": "fish-and-chips-seelachs-burger-mit-gruenem-salat",
+  "name": "Fish and Chips Seelachs Burger mit grünem Salat",
+  "tier": "Himmel auf Erden",
+  "kcal": 900,
+  "protein": 47,
+  "durationMinutes": 40,
+  "imageUrl": "/images/hellofresh/fish-and-chips-seelachs-burger-mit-gruenem-salat-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/fish-and-chips-seelachs-burger-mit-grunem-salat-66eac4d427cb7aed8b8129f5",
+  "tags": [
+    "fisch",
+    "burger",
+    "salat"
+  ],
+  "ingredients": [
+    "250 g Seelachs ohne Haut",
+    "4 g Gewürzmischung „Hello Paprika“",
+    "50 g Mayonnaise",
+    "160 g Brioche Bun, natur",
+    "400 g vorw. festk. Kartoffeln",
+    "25 g Pankomehl",
+    "50 ml Buttermilch-Zitronen-Dressing",
+    "150 g Salatherz (Romana)",
+    "75 g Naturjoghurt",
+    "1 Stück Knoblauchzehe",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "1 Esslöffel Öl"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Gewaschene Kartoffeln in je vier Spalten schneiden. Kartoffelspalten auf ein mit Backpapier belegtes Backblech verteilen. Für später auf dem Blech etwas Platz für den Fisch und die Brötchen lassen. Kartoffeln mit 1 EL [1,5 EL | 2 EL] Öl*, etwas Salz* und Pfeffer* vermengen und im Ofen für ca. 30 Min. goldbraun backen.",
+      "imageUrl": "/images/hellofresh/fish-and-chips-seelachs-burger-mit-gruenem-salat-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Schüssel Mayonnaise mit der „Hello Paprika“ Gewürzmischung vermengen. Fischfilets von beiden Seiten mit Salz* und Pfeffer* würzen, in die große Schüssel geben und gründlich mit der Mayonnaise marinieren. Danach Pankomehl in die Schüssel zu dem Fisch geben und diesen damit rundherum panieren. Pankomehl gut andrücken.",
+      "imageUrl": "/images/hellofresh/fish-and-chips-seelachs-burger-mit-gruenem-salat-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Panierte Fischfilets in den letzten 15 Min. mit auf das Backblech zu den Kartoffeln geben und mitbacken, bis die Panade außen goldbraun und der Fisch innen nicht mehr glasig ist.",
+      "imageUrl": "/images/hellofresh/fish-and-chips-seelachs-burger-mit-gruenem-salat-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Knoblauchzehe für 5 Min. mit auf das Backblech geben, danach aus dem Ofen nehmen, schälen und in eine kleine Schüssel pressen. Joghurt hinzufügen, vermengen und den Dip mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/fish-and-chips-seelachs-burger-mit-gruenem-salat-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Burgerbrötchen aufschneiden und im Ofen für die restlichen 2 – 3 Min. aufbacken. [6 |8] Salatblätter zum Belegen des Burgers abtrennen, den Rest in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/fish-and-chips-seelachs-burger-mit-gruenem-salat-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Geschnittenen Salat auf Tellern anrichten und mit 1 EL [2 EL | 3 EL ] Buttermilch-Zitronen-Dressing marinieren. Restliches Buttermilch-Zitronen-Dressing auf die Schnittseite der Burgerbrötchen verteilen und diese damit bestreichen. Unterseite mit Salatblättern belegen. Backfisch darauf anrichten. Jeweils einen kleinen Klecks Knoblauch-Dip auf den Backfisch geben und Burger mit dem Brötchendeckel abschließen. Burger mit Kartoffelecken und restlichem Knoblauch-Dip auf Tellern anrichten.",
+      "imageUrl": "/images/hellofresh/fish-and-chips-seelachs-burger-mit-gruenem-salat-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:54.274Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 900,
+    "protein": 47
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
+  ],
+  "classificationNeedsReview": false
+}

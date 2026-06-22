@@ -1,0 +1,48 @@
+{
+  "id": "portobello-stroganoff-mit-extra-bio-schweinestreifen",
+  "name": "Portobello-Stroganoff mit extra Bio-Schweinestreifen",
+  "tier": "High Protein",
+  "kcal": 1075,
+  "protein": 54.1,
+  "durationMinutes": 25,
+  "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R32_W28_DE_R4786-3_edit_Main__2low-69d480d2.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/portobello-stroganoff-mit-extra-bio-schweinestreifen-69d8a2026bb16e39e1b7be8f",
+  "tags": [
+    "schnell"
+  ],
+  "ingredients": [
+    "270 g Fusilli",
+    "2 Stück Portobello-Pilze",
+    "200 g Champignons",
+    "1 Stück Zwiebel",
+    "2 Stück Knoblauchzehe",
+    "10 g Petersilie glatt/Thymian",
+    "1 g milder Chili-Mix",
+    "1 Stück Zitrone gewachst",
+    "250 ml Oatly Bio Cuisine",
+    "25 g Pilzbrühepaste",
+    "10 g Kürbiskerne geröstet",
+    "8 g Worcester Sauce",
+    "250 g Bio-Schweinefleischstreifen mariniert"
+  ],
+  "instructions": [],
+  "categories": [
+    "schnell"
+  ],
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "proteinreiche-rezepte",
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 1075,
+    "protein": 54.1
+  },
+  "nutritionSource": "per-serving",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, schwein, schweine, schweinefleisch)."
+  ],
+  "classificationNeedsReview": false
+}

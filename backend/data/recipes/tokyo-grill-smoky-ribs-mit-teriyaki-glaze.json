@@ -1,0 +1,79 @@
+{
+  "id": "tokyo-grill-smoky-ribs-mit-teriyaki-glaze",
+  "name": "Tokyo Grill Smoky Ribs mit Teriyaki Glaze",
+  "tier": "Mamas Klassiker",
+  "kcal": 1010,
+  "protein": 50,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-663896f11a88dd466abaae30",
+  "tags": [
+    "asiatisch"
+  ],
+  "ingredients": [
+    "500 g Spareribs",
+    "50 ml Teriyakisoße",
+    "16 ml Sriracha Sauce",
+    "50 g Sweet Chili Soße",
+    "300 g geraspelter Rotkohl",
+    "2 Stück Karotte",
+    "20 g Erdnüsse, geröstet, gesalzen",
+    "1 Stück Süßkartoffel",
+    "2 Stück Frühlingszwiebel",
+    "12.5 g vegane weiße Misopaste",
+    "40 g Aioli",
+    "3 Esslöffel Butter",
+    "1 Esslöffel Öl",
+    "½ Teelöffel Weißweinessig",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "In einem Wasserkocher reichlich Wasser* erhitzen. Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Ungeschälte Süßkartoffeln längs halbieren, vorsichtig mehrmals mit einer Gabel einstechen, mit 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* würzen und mit der Schnittseite nach unten auf eine Seite eines mit Backpapier belegten Backblechs legen. Tipp: Du kannst die Süßkartoffeln auch ganz lassen, in Alufolie wickeln und ca. 40 Min. in der heißen Glut deines Grills garen.",
+      "imageUrl": "/images/hellofresh/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Rippchen aus der Verpackung nehmen und auf die freie Seite des Backblechs legen. Auf der mittleren Schiene im Backofen 30 – 35 Min. backen, bis die Süßkartoffeln weich sind. Tipp: Du kannst die Rippchen auch ca. 5 Min. je Seite auf dem Grill grillen. Nach dem Grillen ggf. in Alufolie warmhalten.",
+      "imageUrl": "/images/hellofresh/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Schüssel heißes Wasser* über den Rotkohl gießen und 3. Min. stehen lassen. Den Kohl durch ein Sieb abgießen, dann mit kaltem Wasser* abschrecken und gut ausdrücken, um das überschüssige Wasser aus dem Kohl zu pressen, zurück in die Schüssel geben und beiseitestellen. Karotten nach Belieben schälen und grob raspeln. Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in feine Ringe schneiden.",
+      "imageUrl": "/images/hellofresh/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Karotten, weiße Frühlingszwiebelringe, Erdnüsse, Aioli, die Hälfte Sweet Chili Sauce, 0,5 TL [0,75 TL | 1 TL] Essig*, Salz*, und Pfeffer* in die große Schüssel mit dem Kohl geben und gut vermengen. Mit Salz*, Pfeffer* und Essig* abschmecken.",
+      "imageUrl": "/images/hellofresh/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer kleinen Schüssel die Hälfte der Teriyakisoße, die restliche Sweet Chili Sauce und Sriracha zu einer Glasur vermengen. Tipp: Wenn Du den Teriyaki-Geschmack besonderes magst, verwende die ganze Teriyaki-Soße. In den letzten 5 Min. der Back- oder Grillzeit, mithilfe eines Kochpinsels oder Löffels, Rippchen mit drei Vierteln der Glasur bedecken. In einer zweiten kleinen Schüssel, die Hälfte der Misopaste mit 3 EL [4,5 EL | 6 EL] Butter* mischen. Tipp: Wenn die Butter noch zu fest ist, kannst Du sie für 30 Sek. in den Ofen geben.",
+      "imageUrl": "/images/hellofresh/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rippchen auf Teller verteilen. Slaw und Süßkartoffeln daneben anrichten. Süßkartoffeln mit Misobutter toppen und Rippchen mit grünen Frühlingszwiebelringen garnieren. Mit der restlichen Glasur genießen.",
+      "imageUrl": "/images/hellofresh/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:07.855Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 1010,
+    "protein": 50
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (spareribs).",
+    "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+  ],
+  "classificationNeedsReview": true
+}

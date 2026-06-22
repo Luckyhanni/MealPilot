@@ -1,0 +1,38 @@
+{
+  "id": "lachsfilet-and-chips-mit-remoulade",
+  "name": "Lachsfilet & Chips mit Remoulade",
+  "tier": "High Protein",
+  "kcal": 827,
+  "protein": 40.3,
+  "durationMinutes": 20,
+  "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R7441_W45_DE_R3801-SP-2_Main_low-2a177af5.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/lachsfilet-and-chips-mit-remoulade-69d7d4e1defeabaeea859fee",
+  "tags": [
+    "schnell"
+  ],
+  "ingredients": [
+    "300 g Lachsfilet",
+    "600 g Kartoffeln",
+    "1 Stück Zitrone"
+  ],
+  "instructions": [],
+  "categories": [
+    "schnell"
+  ],
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "proteinreiche-rezepte",
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 827,
+    "protein": 40.3
+  },
+  "nutritionSource": "per-serving",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 20 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs)."
+  ],
+  "classificationNeedsReview": false
+}

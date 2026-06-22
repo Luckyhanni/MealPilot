@@ -1,0 +1,89 @@
+{
+  "id": "bayerische-schweinshaxe-mit-bratensosse",
+  "name": "Bayerische Schweinshaxe mit Bratensoße",
+  "tier": "High Protein",
+  "kcal": 1414,
+  "protein": 113.7,
+  "durationMinutes": 30,
+  "imageUrl": "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/HF_Y25_R10_W37_DE_PM24846-12_Main_high-292cd557.jpeg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/bayerische-schweinshaxe-mit-bratensosse-69d4c4d9defeabaeea84f11f",
+  "tags": [
+    "schnell",
+    "high protein",
+    "vegetarisch"
+  ],
+  "ingredients": [
+    "1000 g Grillhaxe",
+    "600 g mehligk. Kartoffeln",
+    "1 Stück Gurke",
+    "2 Stück Schalotte",
+    "10 g Dill/Schnittlauch",
+    "100 g saure Sahne, Bio",
+    "17 g süßer Senf",
+    "5 g Gewürzmischung „Hello Muskat“",
+    "4 g Maisstärke",
+    "1 Esslöffel Öl",
+    "1 Teelöffel Weißweinessig",
+    "1 Teelöffel Zucker",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "50 ml Wasser",
+    "2 Esslöffel Butter",
+    "100 ml Milch"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Erhitze reichlich Wasser im Wasserkocher. Grillhaxe aus der Folie nehmen und mitsamt der Flüssigkeit in eine Auflaufform geben und im Ofen 30 – 35 Min. garen.",
+      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-f96e1200.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einen großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen. Kartoffeln schälen und in 2 cm Würfel schneiden. Kartoffeln in den großen Topf geben und 12 – 14 Min. weich garen. Danach durch ein Sieb abgießen.",
+      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-0fbc1410.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Kräuter fein hacken. Gurken in feine Scheiben schneiden oder hobeln. In einer großen Schüssel saure Sahne, süßen Senf, drei Viertel der Kräuter, 1 TL [1,5 TL | 2 TL] Essig*, 1 TL [1,5 TL | 2 TL] Zucker*, Salz* und Pfeffer* zu einem Dressing vermengen. Gurke hinzugeben und vermengen.",
+      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-4105f720.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Schalotten fein würfeln. In einer kleinen Schüssel Maisstärke mit 50 ml [75 ml | 100 ml] kaltem Wasser* glatt rühren Kartoffeln nach der Garzeit zusammen mit 100 ml [150 ml | 200 ml] Milch*, 2 EL [3 EL | 4 EL] Butter*, „Hello Muskat“, Salz* und Pfeffer* zurück in den großen Topf geben und mithilfe eines Kartoffelstampfers zu einem Stampf verarbeiten. Ggfs. warm halten.",
+      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-c8cbef30.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* über mittlerer Temperatur erhitzen. Schalotten darin 4 – 10 Min. glasig anschwitzen. Schweinshaxe nach der Garzeit aus der Auflaufform nehmen und kurz ruhen lassen. Pfanneninhalt mit der restlichen Flüssigkeit aus der Auflaufform ablöschen und aufkochen lassen. Maisstärke-Mischung hinzugeben und 1 Min. köcheln lassen, bis die Soße eindickt. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-2d7dc440.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Kartoffelstampf auf Tellern anrichten und die Soße darum verteilen. Schweinshaxe neben dem Stampf anrichten und Gurkensalat separat servieren. Kartoffelstampf mit restlichen Kräutern toppen.",
+      "imageUrl": "https://media.hellofresh.com/w_750,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/684fd15706685a8854e66899/step-0a29d750.jpeg"
+    }
+  ],
+  "categories": [
+    "schnell",
+    "high-protein",
+    "vegetarisch"
+  ],
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "proteinreiche-rezepte",
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 1414,
+    "protein": 113.7
+  },
+  "nutritionSource": "per-serving",
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "High Protein: 113.7 g Protein pro Portion > 60 g.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter, milch, sahne)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-22T12:30:45.618Z"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "glasierte-koreanische-fleischbaellchen",
+  "name": "Glasierte Koreanische Fleischbällchen",
+  "tier": "Himmel auf Erden",
+  "kcal": 990,
+  "protein": 56,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/glasierte-koreanische-fleischbaellchen-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/glasierte-koreanische-fleischballchen-65cf727852f6e2fd05cce0e2",
+  "tags": [
+    "hackfleisch",
+    "asiatisch"
+  ],
+  "ingredients": [
+    "250 g gemischte Hackfleischzubereitung",
+    "600 g Kartoffeln (Drillinge)",
+    "150 g Buschbohnen",
+    "2 Stück Knoblauchzehe",
+    "2 Stück Frühlingszwiebel",
+    "10 g Ingwerpaste (im Kühlbeutel)",
+    "25 ml Sojasoße",
+    "100 ml Teriyakisoße",
+    "10 g Sesamsamen",
+    "10 ml Sesamöl",
+    "2 Esslöffel Öl",
+    "1 Esslöffel Honig",
+    "nach Geschmack Pfeffer",
+    "150 ml Wasser"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 350 ml [550 ml | 700 ml] Wasser im Wasserkocher. Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Drillinge vierteln oder halbieren. Drillinge auf einem mit Backpapier belegten Backblech verteilen, mit 1 EL [1,5 EL | 2 EL] Öl* vermengen und im Backofen 25 – 30 Min. garen, bis sie goldbraun sind. Nach der Backzeit Kartoffeln mit Sojasoße, Sesamöl, 1 EL [1,5 EL | 2 EL] Honig* und Pfeffer* glasieren.",
+      "imageUrl": "/images/hellofresh/glasierte-koreanische-fleischbaellchen-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Pfanne Sesam ohne Fettzugabe 1 – 2 Min. rösten, bis er bräunt. Herausnehmen und beiseitestellen. Enden der Buschbohnen entfernen und Buschbohnen halbieren. Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in feine Ringe schneiden. Knoblauch fein hacken. In einer großen Schüssel Hackfleisch mit Ingwerpaste und der Hälfte vom Knoblauch gut vermengen, mit Pfeffer* würzen und aus der Hackfleischmasse ca. 8 [12 | 16] Bällchen formen.",
+      "imageUrl": "/images/hellofresh/glasierte-koreanische-fleischbaellchen-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einen großen Topf reichlich heißes Wasser* füllen und aufkochen lassen. Buschbohnen zugeben und 8 – 9 Min. kochen, bis die Bohnen weich sind. Danach durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/glasierte-koreanische-fleischbaellchen-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In der großen Pfanne aus Schritt 1 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Fleischbällchen darin 4 – 5 Min. rundherum anbraten. Weißen Teil der Frühlingszwiebel und restlichen Knoblauch dazugeben und 1 Min. anbraten. Anschließend aus der Pfanne nehmen.",
+      "imageUrl": "/images/hellofresh/glasierte-koreanische-fleischbaellchen-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Hitze reduzieren und den Pfanneninhalt mit 150 ml [225 ml | 300 ml] Wasser* und Teriyakisoße ablöschen. Aufkochen lassen und dann die Hitze reduzieren. Alles kurz verrühren, Fleischbällchen zurück in die Pfanne geben und 4 – 6 Min. kochen lassen, bis die Soße eingedickt ist und die Fleischbällchen glasiert und durchgegart sind. Hälfte vom Sesam und grünen Teil der Frühlingszwiebel zu den Fleischbällchen geben, mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/glasierte-koreanische-fleischbaellchen-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Kartoffeln auf Teller verteilen. Glasierte Fleischbällchen und grüne Bohnen daneben anrichten. Mit restlichem Sesam garnieren.",
+      "imageUrl": "/images/hellofresh/glasierte-koreanische-fleischbaellchen-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:54.766Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 990,
+    "protein": 56
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+  ],
+  "classificationNeedsReview": false
+}

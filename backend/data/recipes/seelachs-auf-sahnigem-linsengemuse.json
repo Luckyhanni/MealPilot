@@ -1,0 +1,37 @@
+{
+  "id": "seelachs-auf-sahnigem-linsengemuse",
+  "name": "Seelachs auf sahnigem Linsengemüse",
+  "tier": "High Protein",
+  "kcal": 475,
+  "protein": 43.8,
+  "durationMinutes": 15,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/seelachs-auf-sahnigem-linsengemuse-69c25804814691069108fd16",
+  "tags": [
+    "schnell",
+    "low cal"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "categories": [
+    "schnell",
+    "low-cal"
+  ],
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "proteinreiche-rezepte",
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 475,
+    "protein": 43.8
+  },
+  "nutritionSource": "per-serving",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 15 Minuten <= 30.",
+    "Low Cal: 475 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
+  ],
+  "classificationNeedsReview": false
+}

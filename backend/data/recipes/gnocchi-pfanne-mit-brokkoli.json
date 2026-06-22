@@ -1,0 +1,78 @@
+{
+  "id": "gnocchi-pfanne-mit-brokkoli",
+  "name": "Gnocchi Pfanne mit Brokkoli",
+  "tier": "Henkersmahlzeit",
+  "kcal": 820,
+  "protein": 30,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/gnocchi-pfanne-mit-brokkoli-67b4a76a381832d770715e33",
+  "tags": [
+    "gnocchi",
+    "vegetarisch"
+  ],
+  "ingredients": [
+    "400 g frische Gnocchi, vorgekocht",
+    "1 Stück Brokkoli",
+    "125 g Champignons",
+    "1 Stück Knoblauchzehe",
+    "10 g Basilikum",
+    "150 g Kochsahne leicht",
+    "25 g Tomatenpesto",
+    "40 g Hartkäse ital. Art, geraspelt",
+    "4 g Gemüsebrühpulver",
+    "nach Geschmack Pfeffer",
+    "200 ml Wasser",
+    "2 Esslöffel Olivenöl",
+    "nach Geschmack Salz"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Brokkoli in mundgerechte Röschen teilen. Champignons in Scheiben schneiden. Knoblauch abziehen. Basilikum in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einem hohen Rührgefäß 100 ml [150 ml | 200 ml] Wasser*, Kochsahne, Gemüsebrühe und Tomatenpesto miteinander vermengen.",
+      "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* bei mittlerer Hitze erwärmen. Gnocchi darin 6 – 8 Min. anbraten und gelegentlich umrühren, bis sie knusprig und leicht gebräunt sind. In der Zwischenzeit mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer zweiten großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Brokkoli und Champignons darin 5 – 6 Min. anbraten. Mit 100 ml [150 ml | 200 ml] Wasser* ablöschen, salzen* und 3 – 5 Min. köcheln lassen, bis der Brokkoli gar und das Wasser verdampft ist. Knoblauch dazu pressen und 1 weitere Minute anbraten.",
+      "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Hitze reduzieren, Gnocchi in die Pfanne mit Gemüse geben und mit der vorbereiteten Soße ablöschen. Soße 1 – 2 Min. einköcheln lassen. Hälfte der Basilikumstreifen unterrühren und mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Gnocchi auf tiefe Teller verteilen. Restliches Basilikum darüberstreuen und mit Hartkäse toppen.",
+      "imageUrl": "/images/hellofresh/gnocchi-pfanne-mit-brokkoli-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:59.218Z",
+  "categories": [
+    "vegetarisch"
+  ],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 820,
+    "protein": 30
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hartkaese, kaese, kochsahne, sahne)."
+  ],
+  "classificationNeedsReview": false
+}

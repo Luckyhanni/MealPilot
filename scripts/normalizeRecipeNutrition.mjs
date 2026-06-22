@@ -1,11 +1,15 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  buildRecipesBundle,
+  readRecipesSource,
+  writeRecipeFiles,
+} from "./recipeFileStore.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, "..");
-const recipesPath = path.join(projectRoot, "backend", "data", "recipes.json");
 const reportPath = path.join(projectRoot, "backend", "data", "recipe-nutrition-report.json");
 
 const reviewLimits = {
@@ -155,7 +159,7 @@ function normalizeRecipeNutrition(recipe) {
   };
 }
 
-const recipes = JSON.parse(await fs.readFile(recipesPath, "utf8"));
+const recipes = await readRecipesSource();
 const normalized = [];
 const reportRecipes = [];
 
@@ -185,7 +189,12 @@ const report = {
   recipes: reportRecipes,
 };
 
-await fs.writeFile(recipesPath, `${JSON.stringify(normalized, null, 2)}\n`, "utf8");
+await writeRecipeFiles(normalized);
+const bundleResult = await buildRecipesBundle();
+if (!bundleResult.ok) {
+  console.error(bundleResult.errors.join("\n"));
+  process.exit(1);
+}
 await fs.writeFile(reportPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 
 console.log(JSON.stringify(summary, null, 2));

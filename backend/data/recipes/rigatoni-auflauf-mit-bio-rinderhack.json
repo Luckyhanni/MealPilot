@@ -1,0 +1,78 @@
+{
+  "id": "rigatoni-auflauf-mit-bio-rinderhack",
+  "name": "Rigatoni Auflauf mit Bio Rinderhack",
+  "tier": "Himmel auf Erden",
+  "kcal": 815,
+  "protein": 38,
+  "durationMinutes": 40,
+  "imageUrl": "/images/hellofresh/rigatoni-auflauf-mit-bio-rinderhack-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/rigatoni-auflauf-mit-bio-rinderhack-65fc4ee8a302a46b20a9a95c",
+  "tags": [
+    "rind",
+    "hackfleisch"
+  ],
+  "ingredients": [
+    "300 g Bio Rinderhackfleischzubereitung",
+    "360 g Rigatoni",
+    "3 Stück Karotte",
+    "10 g Basilikum",
+    "125 g Büffelmozzarella (vegetarisch)",
+    "300 g Tomatensugo",
+    "150 g Kochsahne",
+    "75 g junger Gouda, gerieben",
+    "25 g Pankomehl",
+    "6 g Gewürzmischung „Hello Buon Appetito“",
+    "6 g Rinderbrühe",
+    "nach Geschmack Salz",
+    "200 ml Wasser",
+    "nach Geschmack Pfeffer"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Karotten nach Belieben schälen und grob raspeln. Basilikum in Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/rigatoni-auflauf-mit-bio-rinderhack-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einen großen Topf reichlich heißes Wasser* füllen, kräftig salzen* und aufkochen. Pasta hinzugeben und 10 – 11 Min. bissfest garen. Während des Kochens 200 ml [300 ml | 400 ml] Wasser* abnehmen. Pasta nach der Garzeit durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/rigatoni-auflauf-mit-bio-rinderhack-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Einen großen Topf ohne Fettzugabe erhitzen. Hackfleisch und Karotten darin 3 – 4 Min. scharf anbraten. Mit Salz* und Pfeffer* würzen.",
+      "imageUrl": "/images/hellofresh/rigatoni-auflauf-mit-bio-rinderhack-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Rinderbrühe, „Hello Buon Appetito\", 1 EL [1,5 EL | 2 EL] Balsamicoessig* hinzufügen, umrühren und 1 Min. mitbraten. Hitze reduzieren, Tomatensugo, Kochwasser* und Kochsahne hinzufügen, alles gut vermengen und 3 – 4 Min. köcheln lassen.",
+      "imageUrl": "/images/hellofresh/rigatoni-auflauf-mit-bio-rinderhack-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Pasta zu der Soße geben, vermengen und in eine große Auflaufform geben. Auflauf mit Gouda bestreuen, Büffelmozzarella darüber zupfen und Pankomehl darüber verteilen. Auflauf 15 – 20 Min. im Ofen backen, bis Panko und Käse goldbraun sind.",
+      "imageUrl": "/images/hellofresh/rigatoni-auflauf-mit-bio-rinderhack-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Nudelauflauf mit Basilikum garnieren und nach Belieben aus der Auflaufform servieren.",
+      "imageUrl": "/images/hellofresh/rigatoni-auflauf-mit-bio-rinderhack-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:51.983Z",
+  "categories": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 815,
+    "protein": 38
+  },
+  "nutritionSource": "recipe-total",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch).",
+    "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+  ],
+  "classificationNeedsReview": true
+}

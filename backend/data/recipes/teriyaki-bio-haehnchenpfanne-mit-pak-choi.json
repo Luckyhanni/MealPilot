@@ -1,0 +1,86 @@
+{
+  "id": "teriyaki-bio-haehnchenpfanne-mit-pak-choi",
+  "name": "Teriyaki Bio Hähnchenpfanne mit Pak Choi",
+  "tier": "Mc Donalds",
+  "kcal": 557,
+  "protein": 13.3,
+  "durationMinutes": 30,
+  "imageUrl": "/images/hellofresh/teriyaki-bio-haehnchenpfanne-mit-pak-choi-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/teriyaki-bio-hahnchenpfanne-mit-pak-choi-69256e777f3a68f85c8d195b",
+  "tags": [
+    "hähnchen",
+    "asiatisch",
+    "reis",
+    "gemüse",
+    "schnell",
+    "low cal"
+  ],
+  "ingredients": [
+    "5 g Ingwerpaste",
+    "150 g Basmatireis",
+    "1 Stück Paprika multicolor",
+    "40 ml Sojasoße",
+    "25 g Frühlingszwiebel",
+    "180 ml Kokosmilch",
+    "200 g Pak Choi",
+    "1 Stück Knoblauchzehe",
+    "250 g Bio Hähnchenbrustfilet",
+    "1 Esslöffel Öl",
+    "nach Geschmack Salz",
+    "200 ml Wasser",
+    "1 Teelöffel Honig",
+    "nach Geschmack Pfeffer"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 200 ml [300 ml | 400 ml] Wasser im Wasserkocher. In einen kleinen Topf mit Deckel Kokosmilch und 200 ml [300 ml | 400 ml] heißes Wasser* füllen. 0,25 TL [0,5 TL | 0,5 TL] Salz* dazugeben und aufkochen lassen. Reis zugeben und bei niedriger Hitze 10 Min. abgedeckt köcheln lassen. Anschließend vom Herd nehmen und abgedeckt 10 Min. ziehen lassen.",
+      "imageUrl": "/images/hellofresh/teriyaki-bio-haehnchenpfanne-mit-pak-choi-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Frühlingszwiebel in feine Ringe schneiden. Paprika halbieren, entkernen und in 0,5 cm breite Streifen schneiden. Strunk vom Pak Choi ca. 0,5 cm abschneiden und Pak Choi in 2 – 3 cm große Stücke schneiden.",
+      "imageUrl": "/images/hellofresh/teriyaki-bio-haehnchenpfanne-mit-pak-choi-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Knoblauch abziehen und in eine kleine Schüssel pressen. Ingwerpaste, Sojasoße, 1 TL [1,5 TL | 2 TL] Honig* und 1 EL [1,5 EL | 2 EL] Wasser* zum Knoblauch geben und vermischen.",
+      "imageUrl": "/images/hellofresh/teriyaki-bio-haehnchenpfanne-mit-pak-choi-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Hähnchenbrustfilets in mundgerechte Stücke schneiden. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* bei starker Hitze erwärmen und Hähnchenbruststücke darin 3 – 4 Min. anbraten.",
+      "imageUrl": "/images/hellofresh/teriyaki-bio-haehnchenpfanne-mit-pak-choi-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Anschließend Hitze reduzieren, Paprikastreifen und Pak Choi unterrühren und weitere 4 Min. anbraten. Angerührte Teriyakisoße dazugießen und alles 3 – 4 Min. kochen lassen, bis das Gemüse weich ist.",
+      "imageUrl": "/images/hellofresh/teriyaki-bio-haehnchenpfanne-mit-pak-choi-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Reis mit einer Gabel auflockern und auf Teller verteilen. Hähnchenpfanne darauf anrichten und mit Frühlingszwiebeln toppen.",
+      "imageUrl": "/images/hellofresh/teriyaki-bio-haehnchenpfanne-mit-pak-choi-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:12.887Z",
+  "categories": [
+    "schnell",
+    "low-cal"
+  ],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 557,
+    "protein": 13.3
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Low Cal: 557 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false
+}

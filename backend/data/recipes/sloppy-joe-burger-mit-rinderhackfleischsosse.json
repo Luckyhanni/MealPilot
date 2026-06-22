@@ -1,0 +1,80 @@
+{
+  "id": "sloppy-joe-burger-mit-rinderhackfleischsosse",
+  "name": "Sloppy Joe Burger mit Rinderhackfleischsosse",
+  "tier": "Himmel auf Erden",
+  "kcal": 1070,
+  "protein": 57,
+  "durationMinutes": 40,
+  "imageUrl": "/images/hellofresh/sloppy-joe-burger-mit-rinderhackfleischsosse-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/sloppy-joe-burger-mit-rinderhackfleischsosse-64072238d6c3cf202307df25",
+  "tags": [
+    "rind",
+    "hackfleisch",
+    "burger"
+  ],
+  "ingredients": [
+    "200 g Rinderhackfleisch",
+    "2 Stück Brioche Bun, natur",
+    "8 ml Worcester Sauce",
+    "1 Stück Zwiebel",
+    "70 g Tomatenmark",
+    "51 ml Mayonnaise",
+    "2 Stück Karotte",
+    "1 Stück Frühlingszwiebel",
+    "2 Stück Ofenkartoffel",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "2 Esslöffel Öl",
+    "100 ml Wasser",
+    "1 Teelöffel Zucker",
+    "1 Esslöffel Balsamicoessig",
+    "1 Esslöffel Weißweinessig"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Gewaschene Kartoffel in 0,5 cm dünne Scheiben schneiden. Kartoffelscheiben auf ein mit Backpapier belegtes Backblech geben und mit 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* vermengen. Kartoffelscheiben 25 – 30 Min. im Ofen backen, bis sie außen knusprig sind. Brioche Buns in den letzten 5 Min. der Backzeit hinzufügen.",
+      "imageUrl": "/images/hellofresh/sloppy-joe-burger-mit-rinderhackfleischsosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Zwiebel halbieren und fein würfeln. In einem großen Topf 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Zwiebel darin 2 – 3 Min. anschwitzen. Rinderhackfleisch hinzufügen und weitere 4 – 5 Min. mitbraten. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/sloppy-joe-burger-mit-rinderhackfleischsosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Karotten schälen und grob in eine große Schüssel reiben. Frühlingszwiebel in feine Ringe schneiden, zu der großen Schüssel geben und mit einem Drittel Mayonnaise und 1 EL [1,5 EL | 2 EL] Essig* verrühren. Abschmecken mit Zucker*, Salz* und Pfeffer*.",
+      "imageUrl": "/images/hellofresh/sloppy-joe-burger-mit-rinderhackfleischsosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Tomatenmark, Worcester Sauce, 50 ml [75 ml | 100 ml] Wasser*, 1 TL [1,5 TL | 2 TL] Zucker* und 1 TL [1,5 TL | 2 TL] Balsamicoessig* dazugeben und 5 Min. köcheln lassen. Hitze reduzieren und bis zum Anrichten weiter köcheln lassen. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/sloppy-joe-burger-mit-rinderhackfleischsosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Beide Briochehälften mit Mayonnaise bestreichen, Sloppy Joe Soße darauf verteilen und mit Karottenslaw toppen.",
+      "imageUrl": "/images/hellofresh/sloppy-joe-burger-mit-rinderhackfleischsosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Karotten Rezepte",
+      "imageUrl": "/images/hellofresh/sloppy-joe-burger-mit-rinderhackfleischsosse-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:35:56.588Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 1070,
+    "protein": 57
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
+  ],
+  "classificationNeedsReview": false
+}

@@ -1,0 +1,55 @@
+{
+  "id": "blt-wrap-mit-karamellisiertem-bacon",
+  "name": "BLT Wrap mit Karamellisiertem Bacon",
+  "tier": "Mamas Klassiker",
+  "kcal": 1050,
+  "protein": 47,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/blt-wrap-mit-karamellisiertem-bacon-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/blt-wrap-mit-karamellisiertem-bacon-640ff0d7c1138d186f0ab7c4",
+  "tags": [
+    "bacon"
+  ],
+  "ingredients": [
+    "4 Stück Weizentortillas",
+    "250 g Bacon (Scheiben)",
+    "2 Stück Tomate",
+    "2 Stück Salatherz (Romana)",
+    "50 ml Buttermilch-Zitronen-Dressing",
+    "34 ml Mayonnaise",
+    "2 Teelöffel Zucker",
+    "nach Geschmack Salz"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "In eine große Pfanne 1 TL [1,5 TL | 2 TL] Zucker geben. Baconstreifen in die Pfanne geben und erneut 1 TL [1,5 TL | 2 TL] Zucker darüber verteilen. Tipp: Nimm den Bacon zusammen aus der Verpackung und lege ihn in die Pfanne. Es ist kein Problem, wenn er am Anfang leicht überlappt, er löst sich während des Bratens. Tipp: Wenn Du für 3 oder 4 Personen kochst, benutze 2 Pfannen. Die Pfanne bei mittelhoher Temperatur erhitzen und Bacon darin 3 – 4 Min. pro Seite anbraten, bis er knusprig ist. Aus der Pfanne nehmen und auf Küchenpapier abtropfen lassen.",
+      "imageUrl": "/images/hellofresh/blt-wrap-mit-karamellisiertem-bacon-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Tomate in feine Scheiben schneiden. Leicht salzen*. Salatherz in 2 cm Streifen schneiden. In einer großen Schüssel Mayonnaise und Buttermilch-Zitronen-Dressing vermengen. Salatherz hinzugeben und vermengen.",
+      "imageUrl": "/images/hellofresh/blt-wrap-mit-karamellisiertem-bacon-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Tomaten Rezepte",
+      "imageUrl": "/images/hellofresh/blt-wrap-mit-karamellisiertem-bacon-step-3.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:06.545Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 1050,
+    "protein": 47
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
+  ],
+  "classificationNeedsReview": false
+}

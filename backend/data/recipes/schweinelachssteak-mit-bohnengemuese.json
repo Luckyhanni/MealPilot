@@ -1,0 +1,73 @@
+{
+  "id": "schweinelachssteak-mit-bohnengemuese",
+  "name": "Schweinelachssteak mit Bohnengemüse",
+  "tier": "Mc Donalds",
+  "kcal": 950,
+  "protein": 50,
+  "durationMinutes": 35,
+  "imageUrl": "/images/hellofresh/schweinelachssteak-mit-bohnengemuese-hero.jpg",
+  "sourceUrl": "https://www.hellofresh.de/recipes/schweinelachssteak-mit-bohnengemuse-6434bfb6aa36bb296a08c440",
+  "tags": [
+    "rind"
+  ],
+  "ingredients": [
+    "250 g Schweinelachssteaks",
+    "600 g Kartoffeln (Drillinge)",
+    "200 g Buschbohnen",
+    "1 Stück Tomate",
+    "10 g Petersilie glatt/Thymian",
+    "1 Stück Knoblauchzehe",
+    "4 g Gewürzmischung „Hello Patatas“",
+    "3 Esslöffel Öl",
+    "3 Esslöffel Butter",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz"
+  ],
+  "lastUsed": null,
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Erhitze reichlich Wasser im Wasserkocher. Gewaschene Kartoffeln vierteln. Kartoffeln in einer großen Schüssel zusammen mit „Hello Patatas“ und 1 EL [1,5 EL | 2 EL] Öl* vermengen, auf einem mit Backpapier belegten Backblech verteilen und 25 – 30 Min. goldbraun backen.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-mit-bohnengemuese-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einen großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen lassen. Enden der Buschbohnen abschneiden und Bohnen quer halbieren. Buschbohnen in den Topf geben und 8 – 10 Min. kochen lassen, bis die Bohnen gar, aber noch bissfest sind. Anschließend durch ein Sieb abgießen, mit kaltem Wasser spülen und abkühlen lassen.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-mit-bohnengemuese-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Petersilien- und Thymianblätter zusammen fein hacken. In einer kleinen Schüssel 3 EL [4,5 EL | 6 EL] weiche Butter* mit der Hälfte der Kräuter mischen und mit etwas Salz* und Pfeffer* würzen. Knoblauch abziehen. Tomate in ca. 2 cm Würfel schneiden.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-mit-bohnengemuese-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Schweinelachssteaks von beiden Seiten salzen* und pfeffern*. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen und Schweinelachssteaks darin bei mittlerer Hitze je Seite ca. 3 – 5 Min. braten, bis diese in der Mitte nur noch ganz leicht rosa sind.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-mit-bohnengemuese-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Währenddessen in dem großen Topf 1 EL [1,5 EL | 2 EL] Öl* bei mittlerer Hitze erwärmen. Bohnen hinzugeben und 2 Min. anbraten. Knoblauch dazupressen und 1 Min. mitbraten. Tomatenwürfel dazugeben und noch mal 1 Min. mitbraten. Restliche Kräuter unterrühren und nach Geschmack mit Salz* und Pfeffer* würzen.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-mit-bohnengemuese-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Tomaten Rezepte",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-mit-bohnengemuese-step-6.jpg"
+    }
+  ],
+  "importedAt": "2026-05-29T10:36:10.946Z",
+  "categories": [],
+  "servings": 1,
+  "nutritionPerServing": {
+    "kcal": 950,
+    "protein": 50
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
+  ],
+  "classificationNeedsReview": false
+}
