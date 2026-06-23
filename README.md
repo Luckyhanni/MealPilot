@@ -1,6 +1,6 @@
 # MealPilot
 
-Lokale Web-App für deinen HelloFresh-/Essens-Wochenplan. In der lokalen Entwicklung nutzt MealPilot JSON-Dateien unter `backend/data/`. Online kann dieselbe App auf Render laufen und ihre Daten in Supabase speichern.
+Lokale Web-App für deinen HelloFresh-/Essens-Wochenplan. In der lokalen Entwicklung nutzt MealPilot JSON-Dateien unter `backend/data/`. Online kann dieselbe App z. B. auf Railway Hobby laufen und ihre Laufzeitdaten in Supabase speichern.
 
 ## Start
 
@@ -51,7 +51,7 @@ backend/data/pantry.json
 backend/data/shoppingState.json
 ```
 
-Wenn `SUPABASE_URL` und `SUPABASE_SERVICE_ROLE_KEY` gesetzt sind, nutzt das Backend die Supabase-Tabelle `mealpilot_data`. Der Service Role Key bleibt ausschließlich im Backend/Render-Environment und darf nicht ins Frontend.
+Wenn `SUPABASE_URL` und `SUPABASE_SERVICE_ROLE_KEY` gesetzt sind, nutzt das Backend die Supabase-Tabelle `mealpilot_data`. Der Service Role Key bleibt ausschließlich im Backend/Hosting-Environment und darf nicht ins Frontend.
 
 HelloFresh-Bilder werden standardmäßig als externe URLs gespeichert. Nur wenn `USE_LOCAL_IMAGE_DOWNLOAD=true` gesetzt ist, lädt das Backend importierte Bilder lokal nach `frontend/public/images/hellofresh/`.
 
@@ -66,7 +66,9 @@ Danach läuft das Express-Backend auf `http://localhost:3001` und liefert das ge
 
 Hinweis: Browser und mobile Homescreen-Verknüpfungen können App-Icons cachen. Nach Icon-Änderungen zum Testen ggf. die Homescreen-Verknüpfung löschen und neu hinzufügen oder den Browser-Cache leeren.
 
-## Online Hosting auf Render + Supabase
+## Online Hosting auf Railway Hobby + Supabase
+
+Für dauerhaftes Hosting ist Railway Hobby die bevorzugte einfache Variante. Die STRATO-Domain kann bei STRATO bleiben und wird nur per DNS auf Railway verbunden.
 
 1. Supabase Projekt erstellen.
 2. In Supabase den SQL Editor öffnen.
@@ -82,27 +84,31 @@ npm run migrate --prefix backend
 Dabei müssen `SUPABASE_URL` und `SUPABASE_SERVICE_ROLE_KEY` in deiner Shell gesetzt sein. Keine echten Keys in Dateien committen.
 
 6. GitHub Repo pushen.
-7. In Render einen Web Service für dieses Repo erstellen.
-8. Render Einstellungen:
+7. In Railway ein neues Projekt aus dem GitHub Repo `Luckyhanni/MealPilot` erstellen.
+8. Railway Hobby als Plan nutzen.
+9. Railway nutzt die Datei `railway.json` im Repo.
+
+Aktuelle Railway-Einstellungen aus `railway.json`:
 
 ```txt
 Build Command: npm run build
 Start Command: npm start
+Healthcheck Path: /
 ```
 
-9. Render Environment Variables:
+10. Railway Environment Variables setzen:
 
 ```env
+NODE_ENV=production
 SUPABASE_URL=<deine Supabase Project URL>
 SUPABASE_SERVICE_ROLE_KEY=<dein Service Role Key>
-NODE_ENV=production
 USE_LOCAL_IMAGE_DOWNLOAD=false
 MEALPILOT_ADMIN_PIN=
 ```
 
 `MEALPILOT_ADMIN_PIN` ist optional. Wenn ein Wert gesetzt ist, zeigt das Frontend beim ersten Öffnen eine einfache PIN-Abfrage. Erfolgreiche Prüfung wird im Browser per `localStorage` gemerkt. Das ist kein komplexes Login-System.
 
-Für mehrere PIN-Profile kann stattdessen `MEALPILOT_USERS_JSON` als Environment Variable beim Hoster gesetzt werden. Echte Werte gehören als Secret/Env-Var in Render oder den jeweiligen Hoster, nicht in committete Dateien und nicht ins Frontend.
+Für mehrere PIN-Profile kann stattdessen `MEALPILOT_USERS_JSON` als Environment Variable beim Hoster gesetzt werden. Echte Werte gehören als Secret/Env-Var in Railway oder den jeweiligen Hoster, nicht in committete Dateien und nicht ins Frontend.
 
 Format:
 
@@ -115,12 +121,15 @@ Format:
 
 Lokale Entwicklung kann weiterhin `backend/data/users.local.json` verwenden. Eine Vorlage mit Fake-PINs liegt in `backend/data/users.example.json`.
 
+Weitere Details stehen in `docs/railway-hobby-deployment.md`.
+
 Hinweise:
 
-- Render Free kann nach Inaktivität schlafen.
-- Lokale Dateiänderungen auf Render Free sind kein dauerhafter Speicher.
+- Railway Hobby ist dauerhaft online, solange der Service läuft und das Projekt aktiv ist.
+- Lokale Dateiänderungen im Hosting-Container sind kein sauberer dauerhafter Speicher.
 - MealPilot speichert Online-Daten deshalb in Supabase.
 - Der Supabase Service Role Key darf niemals ins Frontend oder ins Repository.
+- Für die Domain bei STRATO am besten eine Subdomain wie `mealpilot.deine-domain.de` verwenden und die von Railway angezeigten DNS-Einträge setzen.
 
 ## Wichtig
 
