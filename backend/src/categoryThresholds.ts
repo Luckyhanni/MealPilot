@@ -6,6 +6,6 @@ export type CategoryThresholds = {
 
 export const defaultCategoryThresholds = {
   fastMaxMinutes: 30,
-  highProteinMinProteinPerServing: 40,
+  highProteinMinProteinPerServing: 50,
   lowCalMaxKcal: 650,
 } as const satisfies CategoryThresholds;
