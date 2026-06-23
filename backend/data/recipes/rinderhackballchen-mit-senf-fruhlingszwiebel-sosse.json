@@ -1,0 +1,32 @@
+{
+  "id": "rinderhackballchen-mit-senf-fruhlingszwiebel-sosse",
+  "name": "Rinderhackbällchen mit Senf-Frühlingszwiebel-Soße",
+  "tier": "Schnell",
+  "kcal": 0,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/rinderhackballchen-mit-senf-fruhlingszwiebel-sosse-668e67edda99f37bb7c068c5",
+  "tags": [
+    "schnell"
+  ],
+  "categories": [
+    "schnell"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 0,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "schnelle-gerichte",
+  "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

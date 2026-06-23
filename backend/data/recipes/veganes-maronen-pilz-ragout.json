@@ -1,0 +1,35 @@
+{
+  "id": "veganes-maronen-pilz-ragout",
+  "name": "Veganes Maronen-Pilz-Ragout",
+  "tier": "Kalorien im Blick",
+  "kcal": 486,
+  "protein": 0,
+  "durationMinutes": 35,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/veganes-maronen-pilz-ragout-60101ee68cf3fb769543ace2",
+  "tags": [
+    "vegan",
+    "kalorienreduziert"
+  ],
+  "categories": [
+    "low-cal",
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 486,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "kalorienreduzierte-rezepte",
+  "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel"
+}

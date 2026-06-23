@@ -1,0 +1,36 @@
+{
+  "id": "garnelen-auf-krauter-pastinakenstampf",
+  "name": "Garnelen auf Kräuter-Pastinakenstampf",
+  "tier": "Kalorien im Blick",
+  "kcal": 463,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/garnelen-auf-krauter-pastinakenstampf-64ad737df18420f5b30bb360",
+  "tags": [
+    "viel gemüse",
+    "kalorien im blick",
+    "low carb",
+    "kalorienreduziert"
+  ],
+  "categories": [
+    "low-cal",
+    "schnell"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 463,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "kalorienreduzierte-rezepte",
+  "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel"
+}

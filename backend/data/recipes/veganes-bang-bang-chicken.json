@@ -1,0 +1,35 @@
+{
+  "id": "veganes-bang-bang-chicken",
+  "name": "Vegetarian Butcher Chick-Eria Bang Bang Style",
+  "tier": "Schnell",
+  "kcal": 692,
+  "protein": 0,
+  "durationMinutes": 20,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/veganes-bang-bang-chicken-671664a22afd696502ede5d8",
+  "tags": [
+    "vegan",
+    "schnell"
+  ],
+  "categories": [
+    "schnell",
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 692,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "schnelle-gerichte",
+  "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

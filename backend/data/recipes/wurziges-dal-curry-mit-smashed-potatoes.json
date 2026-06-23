@@ -1,0 +1,38 @@
+{
+  "id": "wurziges-dal-curry-mit-smashed-potatoes",
+  "name": "Würziges Dal-Curry mit smashed Potatoes",
+  "tier": "Kalorien im Blick",
+  "kcal": 493,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/wurziges-dal-curry-mit-smashed-potatoes-64bf77225853e2d98809b6be",
+  "tags": [
+    "vegan",
+    "kalorien im blick",
+    "viel gemüse",
+    "kalorienreduziert"
+  ],
+  "categories": [
+    "low-cal",
+    "schnell",
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 493,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "kalorienreduzierte-rezepte",
+  "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel"
+}

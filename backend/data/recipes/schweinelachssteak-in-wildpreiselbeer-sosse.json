@@ -1,0 +1,36 @@
+{
+  "id": "schweinelachssteak-in-wildpreiselbeer-sosse",
+  "name": "Schweinelachssteak in Wildpreiselbeer-Soße",
+  "tier": "Schnell",
+  "kcal": 513,
+  "protein": 0,
+  "durationMinutes": 25,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/schweinelachssteak-in-wildpreiselbeer-sosse-6655c141d9c97d64003b2145",
+  "tags": [
+    "schnell",
+    "kalorien im blick",
+    "high protein",
+    "low carb"
+  ],
+  "categories": [
+    "schnell",
+    "low-cal"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 513,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "schnelle-gerichte",
+  "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

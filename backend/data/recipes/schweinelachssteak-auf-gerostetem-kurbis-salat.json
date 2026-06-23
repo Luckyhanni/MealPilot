@@ -1,0 +1,37 @@
+{
+  "id": "schweinelachssteak-auf-gerostetem-kurbis-salat",
+  "name": "Schweinelachssteak auf geröstetem Kürbis-Salat",
+  "tier": "Kalorien im Blick",
+  "kcal": 467,
+  "protein": 37.7,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/schweinelachssteak-auf-gerostetem-kurbis-salat-6633b6ba5811a6c936043e8a",
+  "tags": [
+    "high protein",
+    "kalorien im blick",
+    "ohne weizen",
+    "low carb",
+    "kalorienreduziert"
+  ],
+  "categories": [
+    "low-cal",
+    "schnell"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 467,
+    "protein": 37.7
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "kalorienreduzierte-rezepte",
+  "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

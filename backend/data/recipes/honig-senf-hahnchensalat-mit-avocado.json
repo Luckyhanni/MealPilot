@@ -1,0 +1,34 @@
+{
+  "id": "honig-senf-hahnchensalat-mit-avocado",
+  "name": "Honig-Senf-Hähnchensalat mit Avocado",
+  "tier": "Kalorien im Blick",
+  "kcal": 459,
+  "protein": 0,
+  "durationMinutes": 15,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/honig-senf-hahnchensalat-mit-avocado-64998c1fb65deb94af04dd68",
+  "tags": [
+    "schnell",
+    "kalorienreduziert"
+  ],
+  "categories": [
+    "low-cal",
+    "schnell"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 459,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "kalorienreduzierte-rezepte",
+  "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel"
+}

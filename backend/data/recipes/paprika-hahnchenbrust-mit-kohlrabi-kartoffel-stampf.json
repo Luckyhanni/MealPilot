@@ -1,0 +1,38 @@
+{
+  "id": "paprika-hahnchenbrust-mit-kohlrabi-kartoffel-stampf",
+  "name": "Paprika-Hähnchenbrust in Balsamico-Pilz-Soße",
+  "tier": "Schnell",
+  "kcal": 561,
+  "protein": 42.6,
+  "durationMinutes": 25,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/paprika-hahnchenbrust-mit-kohlrabi-kartoffel-stampf-669f78a744e4fbb9d21318f5",
+  "tags": [
+    "schnell",
+    "low carb",
+    "high protein",
+    "kalorien im blick",
+    "viel gemüse"
+  ],
+  "categories": [
+    "schnell",
+    "low-cal",
+    "high-protein"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 561,
+    "protein": 42.6
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "schnelle-gerichte",
+  "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

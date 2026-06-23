@@ -1,0 +1,36 @@
+{
+  "id": "korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse",
+  "name": "Korma-Curry mit Kofu auf Zucchini-Kartoffel-Gemüse",
+  "tier": "Kalorien im Blick",
+  "kcal": 486,
+  "protein": 0,
+  "durationMinutes": 45,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse-609135b3616896797f6021c6",
+  "tags": [
+    "vegan",
+    "-20% kalorien",
+    "kalorienreduziert"
+  ],
+  "categories": [
+    "low-cal",
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 486,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "kalorienreduzierte-rezepte",
+  "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Mittel"
+}

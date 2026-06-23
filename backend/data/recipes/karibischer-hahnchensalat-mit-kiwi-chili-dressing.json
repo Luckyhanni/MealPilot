@@ -1,0 +1,32 @@
+{
+  "id": "karibischer-hahnchensalat-mit-kiwi-chili-dressing",
+  "name": "Karibischer Hähnchensalat mit Kiwi-Chili-Dressing",
+  "tier": "Schnell",
+  "kcal": 0,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/karibischer-hahnchensalat-mit-kiwi-chili-dressing-669f72cf44e4fbb9d2131838",
+  "tags": [
+    "schnell"
+  ],
+  "categories": [
+    "schnell"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 0,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "schnelle-gerichte",
+  "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

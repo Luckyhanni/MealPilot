@@ -1,0 +1,37 @@
+{
+  "id": "wurzige-gemusepfanne-mit-kurbis-susskartoffel-and-blumenkohl",
+  "name": "Würzige Gemüsepfanne mit Kürbis, Süßkartoffel & Blumenkohl",
+  "tier": "Kalorien im Blick",
+  "kcal": 496,
+  "protein": 13,
+  "durationMinutes": 35,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/wurzige-gemusepfanne-mit-kurbis-susskartoffel-and-blumenkohl-63282e9dd4a75454730b8bca",
+  "tags": [
+    "vegetarisch",
+    "klimaheld",
+    "kalorien im blick",
+    "viel gemüse",
+    "kalorienreduziert"
+  ],
+  "categories": [
+    "low-cal",
+    "vegetarisch"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 496,
+    "protein": 13
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "kalorienreduzierte-rezepte",
+  "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

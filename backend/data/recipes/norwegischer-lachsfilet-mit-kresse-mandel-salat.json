@@ -1,0 +1,32 @@
+{
+  "id": "norwegischer-lachsfilet-mit-kresse-mandel-salat",
+  "name": "Norwegisches Lachsfilet mit Kresse-Mandel-Salat",
+  "tier": "Schnell",
+  "kcal": 0,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/norwegischer-lachsfilet-mit-kresse-mandel-salat-6666f95fd824d78597575ed5",
+  "tags": [
+    "schnell"
+  ],
+  "categories": [
+    "schnell"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 0,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "schnelle-gerichte",
+  "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "beyond-mumbai-burger",
+  "name": "Beyond Meat Mumbai Burger mit Mango-Chutney",
+  "tier": "Schnell",
+  "kcal": 1169,
+  "protein": 0,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/beyond-mumbai-burger-671f97824251e0dbe4bdf800",
+  "tags": [
+    "vegan",
+    "schnell"
+  ],
+  "categories": [
+    "schnell",
+    "vegetarisch",
+    "vegan"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 1169,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "schnelle-gerichte",
+  "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

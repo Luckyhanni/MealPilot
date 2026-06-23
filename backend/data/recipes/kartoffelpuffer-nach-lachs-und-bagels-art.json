@@ -1,0 +1,33 @@
+{
+  "id": "kartoffelpuffer-nach-lachs-und-bagels-art",
+  "name": "Brunch deluxe: Kartoffelpuffer mit Räucherlachs",
+  "tier": "Schnell",
+  "kcal": 999,
+  "protein": 36.5,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/kartoffelpuffer-nach-lachs-und-bagels-art-66b23b70a1293bffe8e01e52",
+  "tags": [
+    "schnell",
+    "brunch"
+  ],
+  "categories": [
+    "schnell"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 999,
+    "protein": 36.5
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "schnelle-gerichte",
+  "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

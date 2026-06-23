@@ -1,0 +1,34 @@
+{
+  "id": "seelachs-nach-hausmacher-art-mit-apfel",
+  "name": "Seelachs nach Hausmacher Art mit Apfel",
+  "tier": "Schnell",
+  "kcal": 816,
+  "protein": 32.5,
+  "durationMinutes": 30,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/seelachs-nach-hausmacher-art-mit-apfel-65fdaaaf7b309a7a47f53a4a",
+  "tags": [
+    "ohne weizen",
+    "family",
+    "schnell"
+  ],
+  "categories": [
+    "schnell"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 816,
+    "protein": 32.5
+  },
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
+  "needsDetailImport": true,
+  "needsNutritionImport": false,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "schnelle-gerichte",
+  "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}

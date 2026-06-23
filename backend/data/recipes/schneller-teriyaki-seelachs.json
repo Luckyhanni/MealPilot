@@ -1,0 +1,36 @@
+{
+  "id": "schneller-teriyaki-seelachs",
+  "name": "Schneller Teriyaki Seelachs auf Spinat-Reis mit Stir Fry Mix",
+  "tier": "Kalorien im Blick",
+  "kcal": 491,
+  "protein": 0,
+  "durationMinutes": 15,
+  "imageUrl": "",
+  "sourceUrl": "https://www.hellofresh.de/recipes/schneller-teriyaki-seelachs-65afe32b205245479062bc7b",
+  "tags": [
+    "high protein",
+    "schnell",
+    "kalorien im blick",
+    "kalorienreduziert"
+  ],
+  "categories": [
+    "low-cal",
+    "schnell"
+  ],
+  "ingredients": [],
+  "instructions": [],
+  "servings": 2,
+  "nutritionPerServing": {
+    "kcal": 491,
+    "protein": 0
+  },
+  "nutritionSource": "unknown",
+  "nutritionNeedsReview": true,
+  "needsDetailImport": true,
+  "needsNutritionImport": true,
+  "sourceProvider": "HelloFresh",
+  "sourceCollection": "kalorienreduzierte-rezepte",
+  "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
+  "importStatus": "candidate",
+  "difficulty": "Einfach"
+}
