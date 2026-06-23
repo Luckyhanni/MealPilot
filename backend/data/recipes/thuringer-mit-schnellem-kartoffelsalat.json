@@ -3,7 +3,7 @@
   "name": "Thüringer mit schnellem Kartoffelsalat",
   "tier": "Schnell",
   "kcal": 1040,
-  "protein": 0,
+  "protein": 31,
   "durationMinutes": 25,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/thuringer-mit-schnellem-kartoffelsalat-67191a62feb5bb81ef3ad50b",
@@ -18,9 +18,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1040,
-    "protein": 0
+    "protein": 31
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -28,5 +28,8 @@
   "sourceCollection": "schnelle-gerichte",
   "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

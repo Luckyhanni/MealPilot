@@ -3,7 +3,7 @@
   "name": "Kambodschanisches Kürbis-Kichererbsen-Curry",
   "tier": "Vegan",
   "kcal": 557,
-  "protein": 0,
+  "protein": 20,
   "durationMinutes": 30,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/kambodscha-kurbis-kichererbsen-curry-692d7731126207051adca4d1",
@@ -14,6 +14,8 @@
     "low carb"
   ],
   "categories": [
+    "schnell",
+    "low-cal",
     "vegetarisch",
     "vegan"
   ],
@@ -22,9 +24,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 557,
-    "protein": 0
+    "protein": 20
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -35,5 +37,9 @@
   "sectionNames": [
     "Vegane Curry Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

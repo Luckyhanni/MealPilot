@@ -3,7 +3,7 @@
   "name": "Glasnudeln in Miso-Erdnuss-Soße mit Brokkoli",
   "tier": "Vegan",
   "kcal": 726,
-  "protein": 0,
+  "protein": 24,
   "durationMinutes": 35,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli-692d78301ca49f0d8bd37853",
@@ -20,9 +20,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 726,
-    "protein": 0
+    "protein": 24
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -33,5 +33,9 @@
   "sectionNames": [
     "Vegane Rezepte zum Abendessen"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

@@ -3,7 +3,7 @@
   "name": "Frühlingseintopf mit Sauerkraut und Kräutercreme",
   "tier": "Kalorien im Blick",
   "kcal": 426,
-  "protein": 0,
+  "protein": 16,
   "durationMinutes": 25,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/fruhlingseintopf-mit-sauerkraut-und-krautercreme-6405c8acef95911f810722aa",
@@ -13,8 +13,8 @@
     "kalorienreduziert"
   ],
   "categories": [
-    "low-cal",
     "schnell",
+    "low-cal",
     "vegetarisch"
   ],
   "ingredients": [],
@@ -22,9 +22,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 426,
-    "protein": 0
+    "protein": 16
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -32,5 +32,8 @@
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

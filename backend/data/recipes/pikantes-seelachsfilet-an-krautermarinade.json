@@ -3,7 +3,7 @@
   "name": "Pikantes Seelachsfilet an Kräutermarinade",
   "tier": "Kalorien im Blick",
   "kcal": 486,
-  "protein": 0,
+  "protein": 36,
   "durationMinutes": 35,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/pikantes-seelachsfilet-an-krautermarinade-6050db7f9606d85bfb3260d0",
@@ -20,9 +20,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 486,
-    "protein": 0
+    "protein": 36
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -30,5 +30,8 @@
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

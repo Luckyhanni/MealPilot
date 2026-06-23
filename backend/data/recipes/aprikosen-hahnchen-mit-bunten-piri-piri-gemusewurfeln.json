@@ -3,7 +3,7 @@
   "name": "Aprikosen-Hähnchen mit bunten Piri-Piri-Gemüsewürfeln",
   "tier": "Kalorien im Blick",
   "kcal": 456,
-  "protein": 0,
+  "protein": 41,
   "durationMinutes": 35,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/aprikosen-hahnchen-mit-bunten-piri-piri-gemusewurfeln-63d8eedb6a79d7247402f0c7",
@@ -15,6 +15,7 @@
     "kalorienreduziert"
   ],
   "categories": [
+    "high-protein",
     "low-cal"
   ],
   "ingredients": [],
@@ -22,15 +23,18 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 456,
-    "protein": 0
+    "protein": 41
   },
-  "nutritionSource": "unknown",
-  "nutritionNeedsReview": true,
+  "nutritionSource": "per-serving",
+  "nutritionNeedsReview": false,
   "needsDetailImport": true,
-  "needsNutritionImport": true,
+  "needsNutritionImport": false,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "nutritionNotes": [
+    "Protein wurde aus HelloFresh-Seite übernommen."
+  ]
 }

@@ -3,7 +3,7 @@
   "name": "Vegane Linsen-Bolognese auf frischen Linguine",
   "tier": "Vegan",
   "kcal": 977,
-  "protein": 0,
+  "protein": 31,
   "durationMinutes": 15,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/vegane-linsen-bolognese-auf-frischen-linguine-695b7f4b5c0be345fe767627",
@@ -14,6 +14,7 @@
     "vegan"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -22,9 +23,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 977,
-    "protein": 0
+    "protein": 31
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -36,5 +37,9 @@
     "Vegane Rezepte für die Familie",
     "Schnelle Vegane Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

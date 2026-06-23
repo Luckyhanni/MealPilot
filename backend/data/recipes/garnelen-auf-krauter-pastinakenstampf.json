@@ -3,7 +3,7 @@
   "name": "Garnelen auf Kräuter-Pastinakenstampf",
   "tier": "Kalorien im Blick",
   "kcal": 463,
-  "protein": 0,
+  "protein": 31,
   "durationMinutes": 30,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/garnelen-auf-krauter-pastinakenstampf-64ad737df18420f5b30bb360",
@@ -14,17 +14,17 @@
     "kalorienreduziert"
   ],
   "categories": [
-    "low-cal",
-    "schnell"
+    "schnell",
+    "low-cal"
   ],
   "ingredients": [],
   "instructions": [],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 463,
-    "protein": 0
+    "protein": 31
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -32,5 +32,8 @@
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Mittel"
+  "difficulty": "Mittel",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

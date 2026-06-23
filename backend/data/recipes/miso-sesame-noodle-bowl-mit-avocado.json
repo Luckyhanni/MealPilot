@@ -3,7 +3,7 @@
   "name": "Miso Sesame Noodle Bowl",
   "tier": "Vegan",
   "kcal": 1082,
-  "protein": 0,
+  "protein": 24,
   "durationMinutes": 30,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/miso-sesame-noodle-bowl-mit-avocado-6904cc98ff7c91e2f5e1620d",
@@ -12,6 +12,7 @@
     "vegan"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -20,9 +21,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1082,
-    "protein": 0
+    "protein": 24
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -33,5 +34,9 @@
   "sectionNames": [
     "Die beliebtesten veganen HelloFresh Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

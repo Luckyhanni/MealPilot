@@ -3,7 +3,7 @@
   "name": "Korma-Curry mit Kofu auf Zucchini-Kartoffel-Gemüse",
   "tier": "Kalorien im Blick",
   "kcal": 486,
-  "protein": 0,
+  "protein": 26,
   "durationMinutes": 45,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse-609135b3616896797f6021c6",
@@ -22,9 +22,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 486,
-    "protein": 0
+    "protein": 26
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -32,5 +32,8 @@
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Mittel"
+  "difficulty": "Mittel",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

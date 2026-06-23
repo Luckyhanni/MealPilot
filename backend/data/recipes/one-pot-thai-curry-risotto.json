@@ -3,7 +3,7 @@
   "name": "One-Pot Thai-Curry-Risotto",
   "tier": "Vegan",
   "kcal": 743,
-  "protein": 0,
+  "protein": 20,
   "durationMinutes": 35,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-thai-curry-risotto-692d774a126207051adca5ca",
@@ -19,9 +19,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 743,
-    "protein": 0
+    "protein": 20
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -32,5 +32,9 @@
   "sectionNames": [
     "Vegane Curry Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

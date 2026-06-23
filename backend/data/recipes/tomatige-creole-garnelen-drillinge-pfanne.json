@@ -2,8 +2,8 @@
   "id": "tomatige-creole-garnelen-drillinge-pfanne",
   "name": "Kreolische Garnelen-Drillinge-Pfanne",
   "tier": "Schnell",
-  "kcal": 0,
-  "protein": 0,
+  "kcal": 630,
+  "protein": 30,
   "durationMinutes": 30,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/tomatige-creole-garnelen-drillinge-pfanne-669f7bbb44e4fbb9d2131976",
@@ -11,16 +11,17 @@
     "schnell"
   ],
   "categories": [
-    "schnell"
+    "schnell",
+    "low-cal"
   ],
   "ingredients": [],
   "instructions": [],
   "servings": 2,
   "nutritionPerServing": {
-    "kcal": 0,
-    "protein": 0
+    "kcal": 630,
+    "protein": 30
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -28,5 +29,8 @@
   "sourceCollection": "schnelle-gerichte",
   "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

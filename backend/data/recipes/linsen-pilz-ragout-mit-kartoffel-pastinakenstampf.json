@@ -3,7 +3,7 @@
   "name": "Linsen-Pilz-Ragout mit Kartoffel-Pastinakenstampf",
   "tier": "Kalorien im Blick",
   "kcal": 487,
-  "protein": 0,
+  "protein": 22,
   "durationMinutes": 40,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/linsen-pilz-ragout-mit-kartoffel-pastinakenstampf-64e3b215a2c417189e0dab00",
@@ -22,9 +22,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 487,
-    "protein": 0
+    "protein": 22
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -32,5 +32,8 @@
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Mittel"
+  "difficulty": "Mittel",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

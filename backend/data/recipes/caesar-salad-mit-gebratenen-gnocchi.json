@@ -3,7 +3,7 @@
   "name": "Caesar Salad mit gebratenen Gnocchi",
   "tier": "Kalorien im Blick",
   "kcal": 466,
-  "protein": 0,
+  "protein": 22,
   "durationMinutes": 35,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/caesar-salad-mit-gebratenen-gnocchi-6088ef6d4df0671436686b8f",
@@ -21,9 +21,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 466,
-    "protein": 0
+    "protein": 22
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -31,5 +31,8 @@
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

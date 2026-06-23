@@ -3,7 +3,7 @@
   "name": "Frische Sauerteig-Pinsa mit extra veganem Schawarma",
   "tier": "Vegan",
   "kcal": 1158,
-  "protein": 0,
+  "protein": 39,
   "durationMinutes": 35,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/frische-sauerteig-pinsa-mit-extra-veganem-schawarma-6904cc2279e2c370e48f4866",
@@ -21,9 +21,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1158,
-    "protein": 0
+    "protein": 39
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -34,5 +34,9 @@
   "sectionNames": [
     "Vegane Rezepte für die Familie"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

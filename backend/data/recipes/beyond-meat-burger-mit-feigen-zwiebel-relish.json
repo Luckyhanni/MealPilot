@@ -3,7 +3,7 @@
   "name": "Beyond Meat Burger mit Feigen-Zwiebel-Relish",
   "tier": "Vegan",
   "kcal": 1398,
-  "protein": 0,
+  "protein": 39,
   "durationMinutes": 35,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/beyond-meat-burger-mit-feigen-zwiebel-relish-68e5308e908d7cf716b7c3e5",
@@ -20,9 +20,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1398,
-    "protein": 0
+    "protein": 39
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -33,5 +33,9 @@
   "sectionNames": [
     "Vegane Burger Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

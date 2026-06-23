@@ -37,7 +37,9 @@
       "imageUrl": "/images/hellofresh/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-step-3.jpg"
     }
   ],
-  "categories": [],
+  "categories": [
+    "high-protein"
+  ],
   "sourceProvider": "HelloFresh",
   "sourceCollection": "proteinreiche-rezepte",
   "needsDetailImport": false,

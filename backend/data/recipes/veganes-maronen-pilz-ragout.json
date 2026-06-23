@@ -3,7 +3,7 @@
   "name": "Veganes Maronen-Pilz-Ragout",
   "tier": "Kalorien im Blick",
   "kcal": 486,
-  "protein": 0,
+  "protein": 18,
   "durationMinutes": 35,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/veganes-maronen-pilz-ragout-60101ee68cf3fb769543ace2",
@@ -21,9 +21,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 486,
-    "protein": 0
+    "protein": 18
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -31,5 +31,8 @@
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Mittel"
+  "difficulty": "Mittel",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

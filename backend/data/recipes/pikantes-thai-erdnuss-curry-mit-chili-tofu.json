@@ -3,7 +3,7 @@
   "name": "Pikantes Thai Erdnuss-Curry mit Chili-Tofu",
   "tier": "Vegan",
   "kcal": 750,
-  "protein": 0,
+  "protein": 30,
   "durationMinutes": 15,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/pikantes-thai-erdnuss-curry-mit-chili-tofu-692d78c9114b735a006147d3",
@@ -12,6 +12,7 @@
     "extra schnell"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -20,9 +21,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 750,
-    "protein": 0
+    "protein": 30
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -33,5 +34,9 @@
   "sectionNames": [
     "Vegane Curry Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

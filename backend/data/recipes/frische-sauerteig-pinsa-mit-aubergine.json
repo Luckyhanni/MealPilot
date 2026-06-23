@@ -3,7 +3,7 @@
   "name": "Frische Sauerteig-Pinsa mit Aubergine",
   "tier": "Vegan",
   "kcal": 1014,
-  "protein": 0,
+  "protein": 28,
   "durationMinutes": 35,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/frische-sauerteig-pinsa-mit-aubergine-6904cc2179e2c370e48f484b",
@@ -21,9 +21,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1014,
-    "protein": 0
+    "protein": 28
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -35,5 +35,9 @@
     "Die beliebtesten veganen HelloFresh Rezepte",
     "Vegane Rezepte für die Familie"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

@@ -3,7 +3,7 @@
   "name": "Schweinelachssteak mit rauchigen Kartoffeln",
   "tier": "Kalorien im Blick",
   "kcal": 497,
-  "protein": 0,
+  "protein": 45,
   "durationMinutes": 15,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/schweinelachssteak-mit-rauchigen-kartoffeln-606c3c5dee79bd729d2690b9",
@@ -13,17 +13,18 @@
     "kalorienreduziert"
   ],
   "categories": [
-    "low-cal",
-    "schnell"
+    "schnell",
+    "high-protein",
+    "low-cal"
   ],
   "ingredients": [],
   "instructions": [],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 497,
-    "protein": 0
+    "protein": 45
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -31,5 +32,8 @@
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

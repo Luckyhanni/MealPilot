@@ -3,7 +3,7 @@
   "name": "Vegan Winner Winner Crispy Burger Dinner",
   "tier": "Vegan",
   "kcal": 980,
-  "protein": 0,
+  "protein": 35,
   "durationMinutes": 30,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/vegan-winner-winner-crispy-burger-dinner-6904ca9d79e2c370e48f3bb1",
@@ -12,6 +12,7 @@
     "wenig vorbereitung"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -20,9 +21,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 980,
-    "protein": 0
+    "protein": 35
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -33,5 +34,9 @@
   "sectionNames": [
     "Vegane Burger Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

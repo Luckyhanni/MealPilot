@@ -2,8 +2,8 @@
   "id": "tex-mex-style-hackpfanne",
   "name": "Tex-Mex-Style Hackpfanne auf Kräuterreis",
   "tier": "Schnell",
-  "kcal": 0,
-  "protein": 0,
+  "kcal": 790,
+  "protein": 38,
   "durationMinutes": 30,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/tex-mex-style-hackpfanne-668e41bf018283f1f439b4dc",
@@ -17,10 +17,10 @@
   "instructions": [],
   "servings": 2,
   "nutritionPerServing": {
-    "kcal": 0,
-    "protein": 0
+    "kcal": 790,
+    "protein": 38
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -28,5 +28,8 @@
   "sourceCollection": "schnelle-gerichte",
   "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

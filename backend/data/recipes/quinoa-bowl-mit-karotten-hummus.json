@@ -3,7 +3,7 @@
   "name": "Quinoa-Bowl mit Karotten-Hummus",
   "tier": "Vegan",
   "kcal": 823,
-  "protein": 0,
+  "protein": 22,
   "durationMinutes": 30,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/quinoa-bowl-mit-karotten-hummus-6904cbbaff7c91e2f5e1590a",
@@ -12,6 +12,7 @@
     "viel gemüse"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -20,9 +21,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 823,
-    "protein": 0
+    "protein": 22
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -33,5 +34,9 @@
   "sectionNames": [
     "Die beliebtesten veganen HelloFresh Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

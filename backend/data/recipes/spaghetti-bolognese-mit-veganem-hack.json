@@ -3,7 +3,7 @@
   "name": "Spaghetti Bolognese mit veganem Hack",
   "tier": "Vegan",
   "kcal": 849,
-  "protein": 0,
+  "protein": 32,
   "durationMinutes": 30,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/spaghetti-bolognese-mit-veganem-hack-6904cc569140c7b54fef9f4d",
@@ -13,6 +13,7 @@
     "vegan"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -21,9 +22,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 849,
-    "protein": 0
+    "protein": 32
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -34,5 +35,9 @@
   "sectionNames": [
     "Vegane Rezepte für die Familie"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

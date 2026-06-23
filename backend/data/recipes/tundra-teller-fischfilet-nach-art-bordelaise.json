@@ -3,7 +3,7 @@
   "name": "Tundra-Teller: Fischfilet nach Art Bordelaise",
   "tier": "Kalorien im Blick",
   "kcal": 471,
-  "protein": 0,
+  "protein": 33,
   "durationMinutes": 35,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/tundra-teller-fischfilet-nach-art-bordelaise-6353d30aadb42b14d8019057",
@@ -20,9 +20,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 471,
-    "protein": 0
+    "protein": 33
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -30,5 +30,8 @@
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Mittel"
+  "difficulty": "Mittel",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

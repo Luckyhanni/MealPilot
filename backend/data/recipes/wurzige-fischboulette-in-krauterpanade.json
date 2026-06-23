@@ -3,7 +3,7 @@
   "name": "Würzige Fischboulette in Kräuterpanade",
   "tier": "Schnell",
   "kcal": 528,
-  "protein": 0,
+  "protein": 30,
   "durationMinutes": 20,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/wurzige-fischboulette-in-krauterpanade-671a5392d68888376c8d37aa",
@@ -20,9 +20,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 528,
-    "protein": 0
+    "protein": 30
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -30,5 +30,8 @@
   "sourceCollection": "schnelle-gerichte",
   "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

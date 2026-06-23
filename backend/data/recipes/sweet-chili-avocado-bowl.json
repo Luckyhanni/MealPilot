@@ -3,7 +3,7 @@
   "name": "Sweet-Chili-Avocado-Bowl",
   "tier": "Vegan",
   "kcal": 729,
-  "protein": 0,
+  "protein": 18,
   "durationMinutes": 25,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/sweet-chili-avocado-bowl-695b7f6f5c0be345fe7676b1",
@@ -13,6 +13,7 @@
     "vegan"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -21,9 +22,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 729,
-    "protein": 0
+    "protein": 18
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -34,5 +35,9 @@
   "sectionNames": [
     "Schnelle Vegane Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

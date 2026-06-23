@@ -3,7 +3,7 @@
   "name": "Cremiges Tikka Masala Curry mit Kräuterseitlingen",
   "tier": "Vegan",
   "kcal": 938,
-  "protein": 0,
+  "protein": 27,
   "durationMinutes": 25,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/cremiges-tikka-masala-curry-mit-krauterseitlingen-692d77d1114b735a006140a1",
@@ -13,6 +13,7 @@
     "viel gemüse"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -21,9 +22,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 938,
-    "protein": 0
+    "protein": 27
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -34,5 +35,9 @@
   "sectionNames": [
     "Vegane Curry Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

@@ -3,7 +3,7 @@
   "name": "Veganes Dal Makhani: Pikantes Bohnen-Curry",
   "tier": "Vegan",
   "kcal": 749,
-  "protein": 0,
+  "protein": 28,
   "durationMinutes": 30,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/veganes-dal-makhani-pikantes-bohnen-curry-6904ca9879e2c370e48f3b7b",
@@ -13,6 +13,7 @@
     "klassiker"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -21,9 +22,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 749,
-    "protein": 0
+    "protein": 28
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -34,5 +35,9 @@
   "sectionNames": [
     "Vegane Curry Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

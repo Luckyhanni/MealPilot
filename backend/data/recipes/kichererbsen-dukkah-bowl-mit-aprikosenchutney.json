@@ -2,8 +2,8 @@
   "id": "kichererbsen-dukkah-bowl-mit-aprikosenchutney",
   "name": "Kichererbsen-Dukkah-Bowl mit Perlencouscous",
   "tier": "Schnell",
-  "kcal": 0,
-  "protein": 0,
+  "kcal": 780,
+  "protein": 21,
   "durationMinutes": 20,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/kichererbsen-dukkah-bowl-mit-aprikosenchutney-668e5b7bda99f37bb7c06738",
@@ -22,10 +22,10 @@
   "instructions": [],
   "servings": 2,
   "nutritionPerServing": {
-    "kcal": 0,
-    "protein": 0
+    "kcal": 780,
+    "protein": 21
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
   "needsDetailImport": true,
   "needsNutritionImport": true,
@@ -33,5 +33,8 @@
   "sourceCollection": "schnelle-gerichte",
   "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
   "importStatus": "candidate",
-  "difficulty": "Mittel"
+  "difficulty": "Mittel",
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

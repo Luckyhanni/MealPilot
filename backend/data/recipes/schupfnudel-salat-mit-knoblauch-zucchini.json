@@ -3,7 +3,7 @@
   "name": "Schupfnudel-Salat mit Knoblauch-Zucchini",
   "tier": "Vegan",
   "kcal": 712,
-  "protein": 0,
+  "protein": 20,
   "durationMinutes": 20,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/schupfnudel-salat-mit-knoblauch-zucchini-695b7eeb725ffb771e0931cb",
@@ -13,6 +13,7 @@
     "vegan"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -21,9 +22,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 712,
-    "protein": 0
+    "protein": 20
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -34,5 +35,9 @@
   "sectionNames": [
     "Vegane Rezepte für die Familie"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

@@ -3,7 +3,7 @@
   "name": "Vegan Carnitas: Pulled Portobello Tacos",
   "tier": "Vegan",
   "kcal": 916,
-  "protein": 0,
+  "protein": 24,
   "durationMinutes": 25,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/vegan-carnitas-pulled-portobello-tacos-692d78891ca49f0d8bd37b23",
@@ -13,6 +13,7 @@
     "schnell"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -21,9 +22,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 916,
-    "protein": 0
+    "protein": 24
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -34,5 +35,9 @@
   "sectionNames": [
     "Vegane Rezepte zum Abendessen"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }

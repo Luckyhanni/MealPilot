@@ -61,7 +61,9 @@
     }
   ],
   "importedAt": "2026-05-29T10:36:05.187Z",
-  "categories": [],
+  "categories": [
+    "high-protein"
+  ],
   "servings": 1,
   "nutritionPerServing": {
     "kcal": 820,

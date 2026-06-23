@@ -3,7 +3,7 @@
   "name": "Fettuccine in cremiger Kräuterseitlingsoße",
   "tier": "Vegan",
   "kcal": 929,
-  "protein": 0,
+  "protein": 26,
   "durationMinutes": 30,
   "imageUrl": "",
   "sourceUrl": "https://www.hellofresh.de/recipes/fettuccine-in-cremiger-krauterseitlingsosse-695b7f15725ffb771e093303",
@@ -12,6 +12,7 @@
     "vegan"
   ],
   "categories": [
+    "schnell",
     "vegetarisch",
     "vegan"
   ],
@@ -20,9 +21,9 @@
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 929,
-    "protein": 0
+    "protein": 26
   },
-  "nutritionSource": "unknown",
+  "nutritionSource": "estimated",
   "needsDetailImport": true,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
@@ -34,5 +35,9 @@
     "Vegane Rezepte für die Familie",
     "Schnelle Vegane Rezepte"
   ],
-  "notes": "Proteinwert wird beim Enrichment nachimportiert."
+  "notes": "Proteinwert wird beim Enrichment nachimportiert.",
+  "nutritionNeedsReview": true,
+  "nutritionNotes": [
+    "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
+  ]
 }
