@@ -10,7 +10,8 @@
   "tags": [
     "hähnchen",
     "reis",
-    "curry"
+    "curry",
+    "high protein"
   ],
   "ingredients": [
     "250 g Hähnchenbrustfilet",
@@ -74,6 +75,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 55 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
   ],
   "classificationNeedsReview": false

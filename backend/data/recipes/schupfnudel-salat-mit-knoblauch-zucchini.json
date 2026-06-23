@@ -5,11 +5,12 @@
   "kcal": 712,
   "protein": 20,
   "durationMinutes": 20,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/schupfnudel-salat-mit-knoblauch-zucchini-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/schupfnudel-salat-mit-knoblauch-zucchini-695b7eeb725ffb771e0931cb",
   "tags": [
     "family",
     "schnell",
+    "vegetarisch",
     "vegan"
   ],
   "categories": [
@@ -17,15 +18,61 @@
     "vegetarisch",
     "vegan"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "400 g Schupfnudeln",
+    "125 g rote Kirschtomaten",
+    "10 g Pinienkerne",
+    "1 Stück Zucchini",
+    "100 g Blattsalatmischung",
+    "2 g Gewürzmischung „Hello Buon Appetito“",
+    "25 g Aprikosenkonfitüre",
+    "15 ml Basilikumpaste",
+    "24 g Balsamico Creme",
+    "2 Stück Knoblauchzehe",
+    "5 Esslöffel Olivenöl",
+    "nach Geschmack Pfeffer",
+    "70 ml Wasser",
+    "nach Geschmack Salz"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "In einer großen Pfanne ohne Fettzugabe Pininenkerne 2 – 3 Min. rösten, bis sie anfangen zu bräunen. Herausnehmen und beiseite stellen. In einer zweiten großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Schupfnudeln darin 6 – 7 Min. anbraten, bis sie leicht gebräunt sind. Vom Herd nehmen und abkühlen lassen. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/schupfnudel-salat-mit-knoblauch-zucchini-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Kirschtomaten halbieren. Zucchini längs halbieren und in 1 cm Halbmonde schneiden. Knoblauch fein hacken. Die Hälfte zu den Schupfnudeln geben.",
+      "imageUrl": "/images/hellofresh/schupfnudel-salat-mit-knoblauch-zucchini-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In der großen Pfanne aus Schritt 1 erneut 1 EL [1,5 EL | 2 EL] Olivenöl erhitzen. Zucchini darin 2 – 3 Min. scharf anbraten, restlichen Knoblauch und „Hello Buon Appetito“ hinzugeben und mit 50 ml [75 ml | 100 ml] Wasser* ablöschen, 2 – 3 Min. kochen lassen bis das Wasser verdunstet ist.",
+      "imageUrl": "/images/hellofresh/schupfnudel-salat-mit-knoblauch-zucchini-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Währenddessen, Balsamicocreme, Aprikosenkonfitüre, Basilikumpaste, 3 EL [4,5 EL | 6 EL] Wasser*, 3 EL [4,5 EL | 6 EL] Olivenöl*, Salz* und Pfeffer* in ein hohes Rührgefäß geben. Mithilfe eines Pürierstabs zu einer Soße pürieren.",
+      "imageUrl": "/images/hellofresh/schupfnudel-salat-mit-knoblauch-zucchini-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Schüssel die Hälfte des Dressings mit Kirschtomaten vermengen. Salatmischung unterheben.",
+      "imageUrl": "/images/hellofresh/schupfnudel-salat-mit-knoblauch-zucchini-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Salat auf Teller verteilen. Schupfnudeln und Knoblauch-Zucchini darauf garnieren und mit Pinienkernen toppen. Den Schupfnudelsalat mit restlichem Dressing servieren.",
+      "imageUrl": "/images/hellofresh/schupfnudel-salat-mit-knoblauch-zucchini-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 712,
     "protein": 20
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -39,5 +86,12 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegan",
+  "classificationReasons": [
+    "Schnell: 20 Minuten <= 30.",
+    "Vegan: keine Fleisch-/Fischbegriffe und keine tierischen Produktbegriffe erkannt."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:53.650Z"
 }

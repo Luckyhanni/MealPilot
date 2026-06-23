@@ -5,26 +5,58 @@
   "kcal": 750,
   "protein": 30,
   "durationMinutes": 15,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/pikantes-thai-erdnuss-curry-mit-chili-tofu-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/pikantes-thai-erdnuss-curry-mit-chili-tofu-692d78c9114b735a006147d3",
   "tags": [
-    "vegan",
-    "extra schnell"
+    "extra schnell",
+    "schnell",
+    "vegetarisch"
   ],
   "categories": [
     "schnell",
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "180 g süßer Chili-Grill-Tofu",
+    "150 g Basmatireis",
+    "200 g Stir Fry Mix",
+    "10 g Koriander",
+    "1 Stück Limette, vegan",
+    "25 g gelbe Currypaste",
+    "25 g Erdnussbutter",
+    "4 g Maisstärke",
+    "25 ml Sojasoße",
+    "20 ml Agavendicksaft",
+    "nach Geschmack Zucker",
+    "500 ml Wasser",
+    "1 Esslöffel Öl",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 1.000 ml [1.500 ml | 2.000 ml] Wasser* im Wasserkocher. In einen großen Topf 1.000 ml [1.500 ml | 2.000 ml] heißes Wasser* füllen. Reis einrühren und leicht salzen*. Beides zusammen zum Kochen bringen und ca. 12 Min. abgedeckt kochen, bis der Reis gar ist. Nach der Garzeit durch ein Sieb abgießen, und Limettenabrieb unterrühren.",
+      "imageUrl": "/images/hellofresh/pikantes-thai-erdnuss-curry-mit-chili-tofu-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Koriander grob hacken. Tofu in 1 cm Würfel schneiden. Limette heiß waschen und 1 TL [1,5 TL | 2 TL] der Schale fein abreiben. Anschließend in 6 Spalten schneiden. In einem hohen Rührgefäß Erdnussbutter, Sojasoße, Maisstärke 200 ml [300 ml | 400 ml] Wasser*, Agavendicksaft, Salz* und Pfeffer* verrühren. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Tofuwürfel und Currypaste darin 2 – 3 Min. anbraten. Stir Fry Mix zugeben und weitere 2 – 3 Min. braten.",
+      "imageUrl": "/images/hellofresh/pikantes-thai-erdnuss-curry-mit-chili-tofu-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Pfanne mit der Soße ablöschen und 1 – 2 Min. köcheln lassen, bis die Soße eindickt und das Gemüse bissfest ist. Hälfte Koriander unterrühren und mit Saft von 2 [3 | 4] Limettenspalten, Salz*, Pfeffer* und Zucker* abschmecken. Reis auf tiefe Teller verteilen. Erdnuss-Curry daneben anrichten. Mit restlichem Koriander und restlichen Limettenspalten garnieren und genießen. Rezepte für mehr Abwechslung beim Kochen Tofu Rezepte",
+      "imageUrl": "/images/hellofresh/pikantes-thai-erdnuss-curry-mit-chili-tofu-step-3.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 750,
     "protein": 30
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -38,5 +70,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 15 Minuten <= 30.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter).",
+    "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:26:38.958Z"
 }

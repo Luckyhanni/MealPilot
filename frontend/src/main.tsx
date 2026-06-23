@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { defaultCategoryThresholds, type CategoryThresholds } from "../../backend/src/categoryThresholds";
 import {
   RefreshCw,
   Printer,
@@ -75,6 +76,9 @@ type AppSettings = {
   shakeKcalMilk: number;
   girlfriendPortionFactor: number;
   avoidRepeatDays: number;
+  fastMaxMinutes: number;
+  highProteinMinProteinPerServing: number;
+  lowCalMaxKcal: number;
 };
 
 type MealSlot = { day: string; mealIndex: 1 | 2; recipe: Recipe };
@@ -419,13 +423,14 @@ function discoveryTextHasTerm(text: string, terms: string[]): boolean {
 function fallbackRecipeMatchesDiscoveryCategory(
   recipe: Recipe,
   categoryKey: DailyDiscoveryCategoryKey,
+  categoryThresholds: CategoryThresholds = defaultCategoryThresholds,
 ): boolean {
   const nutrition = getRecipeNutritionPerServing(recipe);
-  if (categoryKey === "fast") return recipe.durationMinutes <= 30;
+  if (categoryKey === "fast") return recipe.durationMinutes <= categoryThresholds.fastMaxMinutes;
   if (categoryKey === "high-protein") {
-    return nutrition.protein > 60;
+    return nutrition.protein >= categoryThresholds.highProteinMinProteinPerServing;
   }
-  if (categoryKey === "low-cal") return nutrition.kcal > 0 && nutrition.kcal <= 650;
+  if (categoryKey === "low-cal") return nutrition.kcal > 0 && nutrition.kcal <= categoryThresholds.lowCalMaxKcal;
 
   const text = recipeDiscoveryText(recipe);
   const hasIngredients = Array.isArray(recipe.ingredients) && recipe.ingredients.length > 0;
@@ -459,6 +464,7 @@ function sortRecipesForDailyDiscovery(recipes: Recipe[]): Recipe[] {
 function getDailyCategoryRecipes(
   recipes: Recipe[],
   categoryKey: DailyDiscoveryCategoryKey,
+  categoryThresholds: CategoryThresholds = defaultCategoryThresholds,
 ): Recipe[] {
   const sortedRecipes = sortRecipesForDailyDiscovery(recipes);
   if (categoryKey === "all") return sortedRecipes;
@@ -469,7 +475,7 @@ function getDailyCategoryRecipes(
       return recipe.categories.includes(recipeCategory);
     }
 
-    return fallbackRecipeMatchesDiscoveryCategory(recipe, categoryKey);
+    return fallbackRecipeMatchesDiscoveryCategory(recipe, categoryKey, categoryThresholds);
   });
 
   return filtered;
@@ -841,6 +847,15 @@ function App() {
     setSettingsSaved(false);
   }
 
+  function setCategoryThreshold(
+    field: "fastMaxMinutes" | "highProteinMinProteinPerServing" | "lowCalMaxKcal",
+    value: number,
+  ) {
+    const numeric = Math.max(0, Math.round(Number(value) || 0));
+    setSettings((current) => (current ? { ...current, [field]: numeric } : current));
+    setSettingsSaved(false);
+  }
+
   async function saveSettings() {
     if (!settings) return;
     setLoading(true);
@@ -849,7 +864,12 @@ function App() {
     try {
       const next = await api<AppSettings>("/api/settings", {
         method: "PATCH",
-        body: JSON.stringify({ dailyMealCounts: settings.dailyMealCounts }),
+        body: JSON.stringify({
+          dailyMealCounts: settings.dailyMealCounts,
+          fastMaxMinutes: settings.fastMaxMinutes,
+          highProteinMinProteinPerServing: settings.highProteinMinProteinPerServing,
+          lowCalMaxKcal: settings.lowCalMaxKcal,
+        }),
       });
       setSettings(next);
       setSettingsSaved(true);
@@ -1446,6 +1466,7 @@ function App() {
           saved={settingsSaved}
           setDailyMealCount={setDailyMealCount}
           resetDailyMealCounts={resetDailyMealCounts}
+          setCategoryThreshold={setCategoryThreshold}
           saveSettings={saveSettings}
         />
       )}
@@ -1745,7 +1766,15 @@ function ProfileView({
     );
   }
 
-  function updateDraftNumber(field: "targetKcal" | "targetProtein", value: string) {
+  function updateDraftNumber(
+    field:
+      | "targetKcal"
+      | "targetProtein"
+      | "fastMaxMinutes"
+      | "highProteinMinProteinPerServing"
+      | "lowCalMaxKcal",
+    value: string,
+  ) {
     const numeric = Math.max(0, Math.round(Number(value) || 0));
     setSettingsDraft((current) =>
       current ? { ...current, [field]: numeric } : current,
@@ -1764,6 +1793,9 @@ function ProfileView({
           dailyMealCounts: settingsDraft.dailyMealCounts,
           targetKcal: settingsDraft.targetKcal,
           targetProtein: settingsDraft.targetProtein,
+          fastMaxMinutes: settingsDraft.fastMaxMinutes,
+          highProteinMinProteinPerServing: settingsDraft.highProteinMinProteinPerServing,
+          lowCalMaxKcal: settingsDraft.lowCalMaxKcal,
         }),
       });
       setProfileSettings(next);
@@ -1900,6 +1932,46 @@ function ProfileView({
               </label>
             </div>
 
+            <div className="profile-settings-subhead">
+              <h4>Kategorie-Schwellen</h4>
+              <p>Diese Werte steuern neue Fallback-Kategorien in Entdecken.</p>
+            </div>
+
+            <div className="profile-goal-inputs">
+              <label>
+                <span>Schnell bis Minuten</span>
+                <input
+                  type="number"
+                  inputMode="numeric"
+                  min={0}
+                  value={settingsDraft.fastMaxMinutes}
+                  onChange={(e) => updateDraftNumber("fastMaxMinutes", e.target.value)}
+                />
+              </label>
+              <label>
+                <span>Protein Stark ab Gramm Protein</span>
+                <input
+                  type="number"
+                  inputMode="numeric"
+                  min={0}
+                  value={settingsDraft.highProteinMinProteinPerServing}
+                  onChange={(e) =>
+                    updateDraftNumber("highProteinMinProteinPerServing", e.target.value)
+                  }
+                />
+              </label>
+              <label>
+                <span>Low Cal bis kcal</span>
+                <input
+                  type="number"
+                  inputMode="numeric"
+                  min={0}
+                  value={settingsDraft.lowCalMaxKcal}
+                  onChange={(e) => updateDraftNumber("lowCalMaxKcal", e.target.value)}
+                />
+              </label>
+            </div>
+
             <div className="profile-settings-actions">
               <button
                 type="button"
@@ -1969,12 +2041,17 @@ function SettingsView({
   saved,
   setDailyMealCount,
   resetDailyMealCounts,
+  setCategoryThreshold,
   saveSettings,
 }: {
   settings: AppSettings;
   saved: boolean;
   setDailyMealCount: (day: DayKey, count: number) => void;
   resetDailyMealCounts: () => void;
+  setCategoryThreshold: (
+    field: "fastMaxMinutes" | "highProteinMinProteinPerServing" | "lowCalMaxKcal",
+    value: number,
+  ) => void;
   saveSettings: () => void;
 }) {
   const totalMeals = dayKeys.reduce(
@@ -2022,6 +2099,57 @@ function SettingsView({
               </select>
             </label>
           ))}
+        </div>
+
+        <div className="settings-actions">
+          <button className="primary" onClick={saveSettings}>
+            Speichern
+          </button>
+          {saved && <span>Einstellungen gespeichert</span>}
+        </div>
+      </section>
+
+      <section className="settings-section">
+        <div className="settings-section-head">
+          <div>
+            <h2>Kategorie-Schwellen</h2>
+            <p>Für Schnell, Protein Stark und Low Cal in Entdecken.</p>
+          </div>
+        </div>
+
+        <div className="category-threshold-grid">
+          <label className="daily-setting-row">
+            <span>Schnell bis Minuten</span>
+            <input
+              type="number"
+              inputMode="numeric"
+              min={0}
+              value={settings.fastMaxMinutes}
+              onChange={(e) => setCategoryThreshold("fastMaxMinutes", Number(e.target.value))}
+            />
+          </label>
+          <label className="daily-setting-row">
+            <span>Protein Stark ab Gramm Protein</span>
+            <input
+              type="number"
+              inputMode="numeric"
+              min={0}
+              value={settings.highProteinMinProteinPerServing}
+              onChange={(e) =>
+                setCategoryThreshold("highProteinMinProteinPerServing", Number(e.target.value))
+              }
+            />
+          </label>
+          <label className="daily-setting-row">
+            <span>Low Cal bis kcal</span>
+            <input
+              type="number"
+              inputMode="numeric"
+              min={0}
+              value={settings.lowCalMaxKcal}
+              onChange={(e) => setCategoryThreshold("lowCalMaxKcal", Number(e.target.value))}
+            />
+          </label>
         </div>
 
         <div className="settings-actions">
@@ -2106,6 +2234,8 @@ function HomeView({
     useState<DailyDiscoveryCategoryKey>("all");
   const [dateKey, setDateKey] = useState(getLocalDateKey);
   const [sessionOverrides, setSessionOverrides] = useState<Record<string, string>>({});
+  const [categoryThresholds, setCategoryThresholds] =
+    useState<CategoryThresholds>(defaultCategoryThresholds);
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
@@ -2117,12 +2247,31 @@ function HomeView({
     return () => window.clearInterval(intervalId);
   }, []);
 
+  useEffect(() => {
+    let active = true;
+    api<AppSettings>("/api/settings")
+      .then((data) => {
+        if (!active) return;
+        setCategoryThresholds({
+          fastMaxMinutes: data.fastMaxMinutes,
+          highProteinMinProteinPerServing: data.highProteinMinProteinPerServing,
+          lowCalMaxKcal: data.lowCalMaxKcal,
+        });
+      })
+      .catch(() => {
+        if (active) setCategoryThresholds(defaultCategoryThresholds);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
+
   const activeCategory =
     dailyDiscoveryCategories.find((category) => category.key === activeCategoryKey) ||
     dailyDiscoveryCategories[0];
   const candidateRecipes = useMemo(
-    () => getDailyCategoryRecipes(allRecipes, activeCategoryKey),
-    [allRecipes, activeCategoryKey],
+    () => getDailyCategoryRecipes(allRecipes, activeCategoryKey, categoryThresholds),
+    [allRecipes, activeCategoryKey, categoryThresholds],
   );
   const overrideKey = getDailyOverrideStorageKey(dateKey, activeCategoryKey);
   const dailyRecipe = useMemo(

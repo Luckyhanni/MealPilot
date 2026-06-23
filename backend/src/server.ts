@@ -15,6 +15,7 @@ import {
   type DietaryType,
 } from "./recipeClassification.js";
 import { enrichRecipeFromSourceUrl } from "./hellofreshImporter.js";
+import { defaultCategoryThresholds } from "./categoryThresholds.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -139,6 +140,9 @@ type Settings = {
   shakeKcalMilk: number;
   girlfriendPortionFactor: number;
   avoidRepeatDays: number;
+  fastMaxMinutes: number;
+  highProteinMinProteinPerServing: number;
+  lowCalMaxKcal: number;
 };
 
 type MealSlot = { day: string; mealIndex: 1 | 2; recipe: Recipe };
@@ -379,6 +383,10 @@ function settingsFallback(): Settings {
     shakeKcalMilk: 440,
     girlfriendPortionFactor: 0.6,
     avoidRepeatDays: 21,
+    fastMaxMinutes: defaultCategoryThresholds.fastMaxMinutes,
+    highProteinMinProteinPerServing:
+      defaultCategoryThresholds.highProteinMinProteinPerServing,
+    lowCalMaxKcal: defaultCategoryThresholds.lowCalMaxKcal,
   };
 }
 
@@ -2483,6 +2491,9 @@ app.patch("/api/settings", async (req, res) => {
     "shakeKcalMilk",
     "girlfriendPortionFactor",
     "avoidRepeatDays",
+    "fastMaxMinutes",
+    "highProteinMinProteinPerServing",
+    "lowCalMaxKcal",
   ];
 
   for (const field of numericFields) {

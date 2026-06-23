@@ -5,26 +5,67 @@
   "kcal": 938,
   "protein": 26.6,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/beyond-meat-vegan-burger-mit-bbq-zwiebeln-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/beyond-meat-vegan-burger-mit-bbq-zwiebeln-6904ca9d9140c7b54fef930d",
   "tags": [
-    "vegan",
-    "wenig vorbereitung"
+    "wenig vorbereitung",
+    "schnell"
   ],
   "categories": [
-    "schnell",
-    "vegetarisch",
-    "vegan"
+    "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "160 g vegane Brioche Burger Buns",
+    "350 g Ofenkartoffel",
+    "75 g Tomate (Roma)",
+    "1 Stück rote Zwiebel",
+    "40 ml BBQ-Soße",
+    "50 g vegane Mayonnaise",
+    "2 Stück Beyond Meat Vegan Burger Patty",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "1 Teelöffel Balsamicoessig",
+    "3 Esslöffel Öl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Kartoffeln nach Belieben schälen und in 2 cm Spalten schneiden. Zwiebel halbieren und in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/beyond-meat-vegan-burger-mit-bbq-zwiebeln-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Kartoffeln auf einem mit Backpapier belegten Backblech verteilen, dabei etwas Platz für die Burgerbrötchen lassen. Kartoffeln mit 1 EL [1,5 EL | 2 EL] Öl* und etwas Salz* und Pfeffer* vermengen und im vorgeheizten Ofen ca. 25 Min. goldbraun backen. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/beyond-meat-vegan-burger-mit-bbq-zwiebeln-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einem kleinen Topf 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Zwiebelstreifen darin ca. 1 Min. anschwitzen. Topfinhalt mit der Hälfte der BBQ-Sauce, 1 TL [1,5 TL | 2 TL] Balsamicoessig* und 1 EL [1,5 EL | 2 EL] Wasser* ablöschen. Unter gelegentlichem Rühren 4 – 5 Min. köcheln lassen, bis fast die gesamte Flüssigkeit verkocht ist, und die Zwiebeln leicht karamellisiert sind. Topf danach beiseitestellen.",
+      "imageUrl": "/images/hellofresh/beyond-meat-vegan-burger-mit-bbq-zwiebeln-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Tomate in feine Scheiben schneiden und leicht salzen*.",
+      "imageUrl": "/images/hellofresh/beyond-meat-vegan-burger-mit-bbq-zwiebeln-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Vegane Burgerpatties darin 3 – 4 Min. je Seite anbraten. Burgerbrötchen aufschneiden und in den letzten 3 – 4 Min. der Kartoffelbackzeit mit auf das Backblech geben.",
+      "imageUrl": "/images/hellofresh/beyond-meat-vegan-burger-mit-bbq-zwiebeln-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Burgerbrötchen auf einer Seite mit restlicher BBQ-Soße und auf der anderen Seite mit etwas Mayo bestreichen. Unterseite mit Tomaten belegen. Vegane Burgerpatties darauf geben und mit Zwiebelstreifen toppen. Burger schließen und zusammen mit den Kartoffelsticks auf Tellern anrichten. Mit restlicher Mayonnaise genießen.",
+      "imageUrl": "/images/hellofresh/beyond-meat-vegan-burger-mit-bbq-zwiebeln-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 938,
     "protein": 26.6
   },
   "nutritionSource": "per-serving",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -34,5 +75,13 @@
   "sectionNames": [
     "Vegane Burger Rezepte"
   ],
-  "notes": "Proteinwert von der Rezeptseite übernommen."
+  "notes": "Proteinwert von der Rezeptseite übernommen.",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (meat).",
+    "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:25:14.725Z"
 }

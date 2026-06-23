@@ -5,27 +5,74 @@
   "kcal": 916,
   "protein": 24,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/vegan-carnitas-pulled-portobello-tacos-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/vegan-carnitas-pulled-portobello-tacos-692d78891ca49f0d8bd37b23",
   "tags": [
-    "vegan",
     "viel gemüse",
-    "schnell"
+    "schnell",
+    "vegetarisch"
   ],
   "categories": [
     "schnell",
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "200 g Weizentortillas",
+    "2 Stück Portobello-Pilze",
+    "1 Stück Avocado",
+    "50 g vegane Mayonnaise",
+    "1 Stück Limette, vegan",
+    "1 Stück rote Chilischote",
+    "2 g Gewürzmischung „Hello Fiesta“",
+    "120 g Salatherz (Romana)",
+    "1 Stück Tomate",
+    "1 Stück rote Zwiebel",
+    "70 g Tomatenmark",
+    "4 g Gemüsebrühpulver",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Zucker",
+    "3 Esslöffel Öl",
+    "nach Geschmack Salz"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Zwiebel halbieren und in feine Würfel schneiden. Tomate in 1 cm Würfel schneiden. Romanasalat in sehr feine Streifen schneiden. Limette heiß abwaschen, 1 TL [1,5 TL | 2 TL] der Schale fein abreiben. Limette in 4 Spalten schneiden.",
+      "imageUrl": "/images/hellofresh/vegan-carnitas-pulled-portobello-tacos-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Schüssel Saft von 1 [1,5 | 2] Limettenspalte mit 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* zu einem Dressing verrühren. Ein Viertel der Zwiebelwürfel hinzugeben und unterrühren. Dann die Salatstreifen und Tomatenwürfel hinzufügen, aber noch nicht umrühren.",
+      "imageUrl": "/images/hellofresh/vegan-carnitas-pulled-portobello-tacos-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer kleinen Schüssel vegane Mayonnaise mit Limettenabrieb, 1 Prise Zucker*, 1 EL [1,5 EL | 2 EL] Wasser*, Salz* und Pfeffer* zu einem Dip verrühren. Tipp: Wenn der Dip noch zu dickflüssig ist, kannst Du teelöffelweise Wasser* hinzugeben.",
+      "imageUrl": "/images/hellofresh/vegan-carnitas-pulled-portobello-tacos-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Portobello Pilze darin 4 – 5 Min. unter Wenden anbraten. Währenddessen Avocado halbieren, Stein entfernen und das Fruchtfleisch in dünne Streifen schneiden. Chilischote längs halbieren, entkernen (Achtung: scharf!) und in feine Streifen schneiden. Aus Brühepulver und 100 ml [150 ml | 200 ml] Wasser* eine Gemüsebrühe zubereiten. Pilze aus der Pfanne nehmen und mithilfe von zwei Gabeln zerrupfen.",
+      "imageUrl": "/images/hellofresh/vegan-carnitas-pulled-portobello-tacos-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In der großen Pfanne erneut 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Restliche Zwiebeln und gezupfte Portobello Pilze hinzugeben und 2 – 3 Min. scharf anbraten. Tomatenmark, „Hello Fiesta“ und 1 TL [1,5 TL | 2 TL] Zucker* hinzugeben und 1 weitere Min. anbraten. Mit der Gemüsebrühe ablöschen und 1 weitere Min. anbraten, bis die Soße eingedickt ist. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/vegan-carnitas-pulled-portobello-tacos-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Tacos in der Mikrowelle oder in einer Pfanne 30 Sek. erwärmen. Salat mit dem Dressing vermengen. Füllungen und Toppings auf die Tacos verteilen, mit Dip beträufeln und mit restlichen Limettenspalten servieren.",
+      "imageUrl": "/images/hellofresh/vegan-carnitas-pulled-portobello-tacos-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 916,
     "protein": 24
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -39,5 +86,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (mayo, mayonnaise).",
+    "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:27:27.494Z"
 }

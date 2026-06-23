@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/hahnchenfilets-in-sticky-orangen-zwiebelsosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenfilets-in-sticky-orangen-zwiebelsosse-69c25818814691069108fe04",
   "tags": [
-    "schnell"
+    "schnell",
+    "high protein"
   ],
   "ingredients": [
     "250 g Hähncheninnenbrustfilet",
@@ -75,6 +76,7 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 25 Minuten <= 30.",
+    "Protein Stark: 42.5 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
   ],
   "classificationNeedsReview": false,

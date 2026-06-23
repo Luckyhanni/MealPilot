@@ -5,25 +5,74 @@
   "kcal": 726,
   "protein": 24,
   "durationMinutes": 35,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli-692d78301ca49f0d8bd37853",
   "tags": [
-    "vegan",
-    "viel gemüse"
+    "viel gemüse",
+    "vegetarisch"
   ],
   "categories": [
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "100 g Glasnudeln",
+    "50 g Erdnussbutter",
+    "50 g vegane weiße Misopaste",
+    "1 Stück Knoblauchzehe",
+    "1 Stück Frühlingszwiebel",
+    "200 ml Wasser",
+    "10 g Sesam",
+    "20 g geröstete Erdnüsse",
+    "2 Teelöffel Zucker",
+    "1 Stück Brokkoli",
+    "1 Stück rote Spitzpaprika",
+    "150 g Champignons",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Weißweinessig",
+    "2 g milde Chiliflocken",
+    "1 Stück Limette, ungewachst",
+    "1.5 Esslöffel Öl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erdnüsse in den Mixtopf geben, 4 Sek./Stufe 6 zerkleinern und in eine große Pfanne umfüllen. Knoblauch abziehen, in den Mixtopf geben und 3 Sek./Stufe 8 zerkleinern. Die Hälfte in die große Pfanne zu den zerkleinerten Erdnüssen umfüllen und den Rest mit dem Spatel nach unten schieben. Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in feine Ringe schneiden.",
+      "imageUrl": "/images/hellofresh/glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "g [15 g | 20 g] Öl* und weiße Frühlingszwiebelringe in den Mixtopf zugeben und 3 Min./120 °C/Stufe 1 dünsten. Währenddessen Limette vierteln. Erdnussbutter, Miso-Paste, Saft von 2 [3| 4 ] Limettenspalten, 100 g [150 g | 200 g] Wasser*, 1 TL [1,5 TL | 2 TL] Zucker* und 1 TL [1,5 TL | 2 TL] Essig* in den Mixtopf zugeben, 10 Sek./Stufe 5 vermischen und in ein hohes Rührgefäß umfüllen. Mixtopf spülen. Erhitze reichlich Wasser im Wasserkocher.",
+      "imageUrl": "/images/hellofresh/glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Damit genügend Garschlitze frei bleiben, Rühraufsatz in den Varoma-Behälter legen. Champignons in Scheiben schneiden. Kerngehäuse der Spitzpaprika entfernen. Spitzpaprika in ca. 1 cm dicke Streifen schneiden. Champignons und Paprika in den Varoma-Behälter geben. Brokkoli in mundgerechte Röschen brechen oder schneiden, Strunk schälen und in 0,5 cm breite Scheiben schneiden. Brokkoli in den V-Behälter zugeben. Varoma verschließen.",
+      "imageUrl": "/images/hellofresh/glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "g Wasser* in den Mixtopf geben, Varoma aufsetzen und 12 Min. [13 Min. | 14 Min.]/Varoma/Stufe 1 dampfgaren. Währenddessen Glasnudeln in eine große Schüssel geben und mit kochendem Wasser* übergießen. Glasnudeln darin 5 – 6 Min. einweichen, bis sie weich sind. Danach durch den Gareinsatz abgießen, kurz mit kaltem Wasser abspülen und abtropfen lassen. Währenddessen mit der Zubereitung fortfahren.",
+      "imageUrl": "/images/hellofresh/glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "0,5 EL [0,75 EL | 1 EL] Öl*, Sesam und nach Belieben Chiliflocken in die große Pfanne zum zerkleinerten Erdnuss-Knoblauch-Mix geben und erhitzen. 1 TL [1,5 TL | 2 TL] Zucker*, etwas Salz* und Pfeffer* hinzufügen und unter ständigem Rühren für 2 – 3 Min. anbraten. Aus der Pfanne nehmen und in einer kleinen Schüssel beiseitestellen. Vorbereitete Soße in die Pfanne geben, aufkochen und Soße für 3 – 5 Min. einköcheln lassen, bis sie eindickt.",
+      "imageUrl": "/images/hellofresh/glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Brokkoli Rezepte",
+      "imageUrl": "/images/hellofresh/glasnudeln-in-miso-erdnuss-sosse-mit-brokkoli-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 726,
     "protein": 24
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -37,5 +86,12 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter).",
+    "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:25:46.767Z"
 }

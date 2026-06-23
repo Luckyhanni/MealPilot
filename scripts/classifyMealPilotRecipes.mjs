@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -22,6 +23,11 @@ const classificationSourcePath = path.join(
   "src",
   "recipeClassification.ts",
 );
+const categoryThresholdsSourcePath = path.join(
+  backendRoot,
+  "src",
+  "categoryThresholds.ts",
+);
 
 async function writeJson(filePath, value) {
   await fs.writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, "utf8");
@@ -33,15 +39,35 @@ async function loadClassificationModule() {
     paths: [backendRoot, projectRoot],
   });
   const ts = await import(pathToFileURL(typescriptPath).href);
-  const source = await fs.readFile(classificationSourcePath, "utf8");
-  const output = ts.transpileModule(source, {
-    compilerOptions: {
-      target: ts.ScriptTarget.ES2020,
-      module: ts.ModuleKind.ES2022,
-    },
-    fileName: classificationSourcePath,
-  }).outputText;
-  return import(`data:text/javascript;base64,${Buffer.from(output).toString("base64")}`);
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "mealpilot-classify-"));
+  const compilerOptions = {
+    target: ts.ScriptTarget.ES2020,
+    module: ts.ModuleKind.ES2022,
+  };
+  await fs.writeFile(
+    path.join(tempDir, "package.json"),
+    JSON.stringify({ type: "module" }),
+    "utf8",
+  );
+  const files = [
+    ["categoryThresholds.ts", categoryThresholdsSourcePath],
+    ["recipeClassification.ts", classificationSourcePath],
+  ];
+  await Promise.all(
+    files.map(async ([outputName, sourcePath]) => {
+      const source = await fs.readFile(sourcePath, "utf8");
+      const output = ts.transpileModule(source, {
+        compilerOptions,
+        fileName: sourcePath,
+      }).outputText;
+      await fs.writeFile(
+        path.join(tempDir, outputName.replace(/\.ts$/, ".js")),
+        output,
+        "utf8",
+      );
+    }),
+  );
+  return import(pathToFileURL(path.join(tempDir, "recipeClassification.js")).href);
 }
 
 function buildSummary(items) {

@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/lachsfilet-and-chips-mit-remoulade-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/lachsfilet-and-chips-mit-remoulade-69d7d4e1defeabaeea859fee",
   "tags": [
-    "schnell"
+    "schnell",
+    "high protein"
   ],
   "ingredients": [
     "300 g Lachsfilet",
@@ -77,6 +78,7 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 20 Minuten <= 30.",
+    "Protein Stark: 40.3 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs).",
     "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
   ],

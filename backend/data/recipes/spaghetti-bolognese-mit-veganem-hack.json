@@ -5,27 +5,74 @@
   "kcal": 849,
   "protein": 32,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/spaghetti-bolognese-mit-veganem-hack-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/spaghetti-bolognese-mit-veganem-hack-6904cc569140c7b54fef9f4d",
   "tags": [
     "viel gemüse",
     "family",
-    "vegan"
+    "schnell"
   ],
   "categories": [
-    "schnell",
-    "vegetarisch",
-    "vegan"
+    "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "270 g Spaghetti",
+    "1 Stück Karotte",
+    "1 Stück Tomate",
+    "2 Stück Knoblauchzehe",
+    "1 Stück Zwiebel",
+    "10 g Basilikum",
+    "390 g stückige Tomaten",
+    "20 g Sonnenblumenkerne",
+    "25 ml Sojasoße",
+    "2 g Gewürzmischung „Hello Buon Appetito“",
+    "4 g Gemüsebrühpulver",
+    "160 g Hackfleisch auf pflanzlicher Basis",
+    "150 ml Wasser",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "1 Teelöffel Balsamicoessig",
+    "2 Esslöffel Olivenöl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Knoblauch fein hacken. Zwiebel fein würfeln. Karotte längs halbieren und in 0,5 cm Stücke schneiden. Tomaten in 1 cm Würfel schneiden. Basilikumblätter in feine Streifen schneiden, Stiele dabei aufbewahren.",
+      "imageUrl": "/images/hellofresh/spaghetti-bolognese-mit-veganem-hack-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Pfanne ohne Fettzugabe Sonnenblumenkerne 1 – 2 Min. rösten. Herausnehmen. In der Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Karotte darin 2 – 3 Min. farblos anschwitzen.",
+      "imageUrl": "/images/hellofresh/spaghetti-bolognese-mit-veganem-hack-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Veganes Hack dazugeben und 1 – 2 Min. anbraten. Zwiebel und Knoblauch dazugeben und 30 Sek. mit anbraten. Tipp: Falls Du frischen Knoblauch magst, halte etwas für die marinierten Tomaten zurück. Pfanneninhalt mit Sojasoße, stückigen Tomaten, „Hello Buon Appetito“, Gemüsebrühe und 150 ml [225 ml | 300 ml] Wasser* ablöschen und einmal aufkochen lassen. Hitze reduzieren, Basilikumstiele dazugeben und abgedeckt 10 – 12 Min. köcheln lassen.",
+      "imageUrl": "/images/hellofresh/spaghetti-bolognese-mit-veganem-hack-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Reichlich heißes Wasser* in einen großen Topf füllen, salzen* und aufkochen lassen. Spaghetti dazugeben und 8 Min. bissfest kochen. Danach durch ein Sieb abgießen. Dabei 100 ml [150 ml | 200 ml] Kochwasser* auffangen.",
+      "imageUrl": "/images/hellofresh/spaghetti-bolognese-mit-veganem-hack-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Schüssel Tomatenwürfel, Hälfte der Basilikumblätter, nach Belieben Knoblauch, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 TL [1,5 TL | 2 TL] Balsamicoessig*, Salz* und Pfeffer* vermengen und kurz marinieren lassen.",
+      "imageUrl": "/images/hellofresh/spaghetti-bolognese-mit-veganem-hack-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Basilikumstiele aus der Bolognese entfernen. Aufgefangenes Kochwasser zur Soße geben und einmal aufkochen, bis eine sämige Soße entsteht. Mit Pfeffer* abschmecken. Spaghetti auf tiefe Teller verteilen und mit der Bolognese toppen. Marinierte Tomaten darauf anrichten und mit Sonnenblumenkernen und restlichem Basilikum garnieren.",
+      "imageUrl": "/images/hellofresh/spaghetti-bolognese-mit-veganem-hack-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 849,
     "protein": 32
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -39,5 +86,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch).",
+    "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:27:05.526Z"
 }

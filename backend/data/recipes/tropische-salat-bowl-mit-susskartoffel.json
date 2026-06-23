@@ -5,27 +5,73 @@
   "kcal": 808,
   "protein": 19,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/tropische-salat-bowl-mit-susskartoffel-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/tropische-salat-bowl-mit-susskartoffel-6904cc779140c7b54fefa06d",
   "tags": [
-    "vegan",
-    "schnell",
-    "viel gemüse"
+    "viel gemüse",
+    "schnell"
   ],
   "categories": [
-    "schnell",
-    "vegetarisch",
-    "vegan"
+    "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "1 Stück Süßkartoffel",
+    "1 Stück Mango",
+    "1 Stück Avocado",
+    "150 g Salatherz (Romana)",
+    "1 Stück rote Zwiebel",
+    "1 Stück rote Chilischote",
+    "10 g Koriander/Minze",
+    "1 Stück Limette, vegan",
+    "50 g vegane Mayonnaise",
+    "25 g vegane weiße Misopaste",
+    "20 g Erdnüsse, geröstet, gesalzen",
+    "4 g Gewürzmischung „Hello Fiesta“",
+    "250 g Hähnchenbrustfilet in Lake",
+    "nach Geschmack Zucker",
+    "1 Esslöffel Öl",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Süßkartoffel schälen und in 2 cm Würfel schneiden. Zwiebel halbieren und in feine Streifen schneiden. Süßkartoffel und drei Viertel der Zwiebelstreifen auf ein mit Backpapier belegtes Backblech geben. Mit „Hello Fiesta“, 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* vermengen und im Ofen 20 – 25 Min. backen.",
+      "imageUrl": "/images/hellofresh/tropische-salat-bowl-mit-susskartoffel-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Limette heiß waschen und 1 TL [1,5 TL | 2 TL] der Schale fein abreiben. Limette in 6 Spalten schneiden. In einer großen Schüssel vegane Mayonnaise, weiße Misopaste, Limettenabrieb, Saft von 3 [4 | 6] Limettenspalten, 1 EL [1,5 EL | 2 EL] Wasser*, Pfeffer* und eine Prise Zucker* zu einem Dressing verrühren.",
+      "imageUrl": "/images/hellofresh/tropische-salat-bowl-mit-susskartoffel-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Koriander mit Stielen fein hacken. Minzeblätter in feine Streifen schneiden. Koriander und restliche Zwiebelstreifen in die Schüssel mit dem Dressing geben und kurz marinieren lassen.",
+      "imageUrl": "/images/hellofresh/tropische-salat-bowl-mit-susskartoffel-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Mango schälen, vom Kern schneiden und in 1 cm Würfel schneiden. Chili (Achtung: scharf!) nach Belieben entkernen und in feine Ringe schneiden. Avocado halbieren, entkernen und in feine Streifen schneiden. Romanasalat in feine Streifen schneiden. Erdnüsse in der Packung leicht zerdrücken.",
+      "imageUrl": "/images/hellofresh/tropische-salat-bowl-mit-susskartoffel-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Nach der Garzeit Süßkartoffel und gebackene Zwiebelstreifen zusammen mit Mango und Salatstreifen in die Schüssel mit dem Dressing geben und alles gut vermengen. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/tropische-salat-bowl-mit-susskartoffel-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Hähnchenbrust salzen*. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Hähnchenbrustfilets 3 – 4 Min. pro Seite braten, bis das Fleisch innen nicht mehr rosa ist. Salat auf tiefen Tellern anrichten und mit Avocadostreifen toppen. Mit Minze, Chili und Erdnüssen garnieren.",
+      "imageUrl": "/images/hellofresh/tropische-salat-bowl-mit-susskartoffel-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 808,
     "protein": 19
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -39,5 +85,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust).",
+    "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:27:23.115Z"
 }

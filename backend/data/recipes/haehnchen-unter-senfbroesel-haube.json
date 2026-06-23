@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/haehnchen-unter-senfbroesel-haube-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-unter-senfbrosel-haube-6446bdd2973c4790e704cb60",
   "tags": [
-    "hähnchen"
+    "hähnchen",
+    "high protein"
   ],
   "ingredients": [
     "250 g Hähnchenbrustfilet",
@@ -73,6 +74,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 48 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
   ],
   "classificationNeedsReview": false

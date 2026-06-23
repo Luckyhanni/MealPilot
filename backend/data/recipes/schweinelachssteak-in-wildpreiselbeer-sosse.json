@@ -5,21 +5,72 @@
   "kcal": 513,
   "protein": 45,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/schweinelachssteak-in-wildpreiselbeer-sosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/schweinelachssteak-in-wildpreiselbeer-sosse-6655c141d9c97d64003b2145",
   "tags": [
-    "schnell",
     "kalorien im blick",
+    "low carb",
+    "schnell",
     "high protein",
-    "low carb"
+    "low cal"
   ],
   "categories": [
     "schnell",
     "high-protein",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Schweinelachssteaks",
+    "400 g rote Kartoffeln",
+    "125 g Champignons",
+    "1 Stück Zwiebel",
+    "1 Stück Salatherz (Romana)",
+    "10 g Petersilie glatt/Thymian",
+    "25 g Wildpreiselbeerenmarmelade",
+    "10 ml mittelscharfer Senf",
+    "8 ml Worcester Sauce",
+    "4 g Hühnerbrühe",
+    "4 g Maisstärke",
+    "2 Esslöffel Olivenöl",
+    "1 Esslöffel Butter",
+    "1 Teelöffel Honig",
+    "1 Teelöffel Weißweinessig",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "100 ml Wasser"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Reichlich heißes Wasser* in einen großen Topf füllen, salzen* und aufkochen lassen. Kartoffeln nach Belieben schälen und halbieren. Kartoffeln in den großen Topf geben und 18 – 22 Min. weich garen. Danach durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-in-wildpreiselbeer-sosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Champignons je nach Größe vierteln oder halbieren. Zwiebeln grob würfeln. Petersilie grob hacken. Salatherz in mundgerechte Stücke schneiden.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-in-wildpreiselbeer-sosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Schüssel 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 TL [1,5 TL | 2 TL] Essig*, 1 TL [1,5 TL | 2 TL] Honig*, Senf, Salz* und Pfeffer* zu einem Dressing vermengen. Salatherz hinzugeben und noch nicht vermengen.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-in-wildpreiselbeer-sosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einem hohen Rührgefäß 150 ml [225 ml | 300 ml] Wasser*, Maisstärke, Hühnerbrühe, Wildpreiselbeermarmelade und Worcestersauce zu einer Soße verrühren. Schweinesteaks rundum salzen*. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Schweinesteaks darin 3 – 4 Min. je Seite anbraten, bis das Fleisch noch leicht rosa ist. Herausnehmen.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-in-wildpreiselbeer-sosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In derselben Pfanne erneut 1 EL [1,5 EL | 2 EL] Butter* erhitzen. Zwiebeln und Champignons darin 2 – 3 Min. anbraten. Pfanneninhalt mit vorbereiteter Soße ablöschen. Thymianzweig hinzugeben und 1 – 2 Min. köcheln lassen, bis die Soße eindickt. Mit Salz* und Pfeffer* abschmecken. Steaks zurück in die Pfanne geben und aufwärmen.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-in-wildpreiselbeer-sosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Kartoffeln nach Belieben mit etwas Butter* vermengen und kräftig mit Salz* würzen. Kartoffeln auf Teller verteilen. Salat und Schweinesteak mit Wildpreiselbeersoße daneben anrichten und mit Petersilie toppen.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-in-wildpreiselbeer-sosse-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 513,
@@ -27,7 +78,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -36,5 +87,14 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Protein Stark: 45 g Protein pro Portion >= 40 g.",
+    "Low Cal: 513 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:59.159Z"
 }

@@ -5,20 +5,69 @@
   "kcal": 565,
   "protein": 26,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/golf-von-mexico-cannellini-bohnen-und-mais-salad-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/golf-von-mexico-cannellini-bohnen-und-mais-salad-669f7c71180815c79327744f",
   "tags": [
     "kalorien im blick",
     "low carb",
+    "viel gemüse",
     "schnell",
-    "viel gemüse"
+    "low cal"
   ],
   "categories": [
     "schnell",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "150 g Garnelen ohne Schale",
+    "380 g Cannellinibohnen",
+    "150 g Mais",
+    "1 Stück Salatherz (Romana)",
+    "1 Stück kleine Salatgurke",
+    "1 Stück rote Zwiebel",
+    "10 g Petersilie, glatt",
+    "50 ml Buttermilch-Zitronen-Dressing",
+    "20 ml mittelscharfer Senf",
+    "2 g Gewürzmischung „Hello Cajun“",
+    "3 Esslöffel Olivenöl",
+    "1 Esslöffel Butter",
+    "1 Esslöffel Weißweinessig",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "½ Teelöffel Honig"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Zwiebel in sehr feine Streifen schneiden. Gurke längs halbieren und in 0,5 cm Halbmonde schneiden. Kräuter fein hacken. Romanasalat in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/golf-von-mexico-cannellini-bohnen-und-mais-salad-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Cannellinibohnen durch ein Sieb abgießen und mit Wasser abspülen. Mais mithilfe des Deckels abgießen.",
+      "imageUrl": "/images/hellofresh/golf-von-mexico-cannellini-bohnen-und-mais-salad-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Schüssel Buttermilch-Zitronen-Dressing, Senf, die Hälfte der Kräuter, 2 EL [3 EL | 4 EL] Olivenöl*, 1 EL [1,5 EL | 2 EL] Essig*, 0,5 TL [0,75 TL | 1 TL] Honig*, Salz* und Pfeffer* mischen.",
+      "imageUrl": "/images/hellofresh/golf-von-mexico-cannellini-bohnen-und-mais-salad-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Cannellinibohnen und Gurkenhalbmonde unter das Dressing heben. Romanasalat in die Schüssel geben. Am Ende des Rezepts untermischen.",
+      "imageUrl": "/images/hellofresh/golf-von-mexico-cannellini-bohnen-und-mais-salad-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Butter* erhitzen. Mais und Zwiebelstreifen darin 3 – 4 Min. scharf anbraten. Mit Salz* und Pfeffer* würzen. Herausnehmen. In der großen Pfanne erneut 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Garnelen mit „Hello Cajun“ würzen und darin 2 – 3 Min. scharf anbraten, bis sie innen nicht mehr glasig sind.",
+      "imageUrl": "/images/hellofresh/golf-von-mexico-cannellini-bohnen-und-mais-salad-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Salat unter das Dressing heben. Mit Salz* und Pfeffer* abschmecken. Salat auf tiefen Teller anrichten. Mit Zwiebeln, Mais und Garnelen toppen. Mit restlichen Kräutern garnieren.",
+      "imageUrl": "/images/hellofresh/golf-von-mexico-cannellini-bohnen-und-mais-salad-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 565,
@@ -26,11 +75,19 @@
   },
   "nutritionSource": "per-serving",
   "nutritionNeedsReview": false,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
   "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Low Cal: 565 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:49.715Z"
 }

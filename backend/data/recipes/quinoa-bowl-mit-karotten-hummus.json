@@ -5,26 +5,77 @@
   "kcal": 823,
   "protein": 22,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/quinoa-bowl-mit-karotten-hummus-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/quinoa-bowl-mit-karotten-hummus-6904cbbaff7c91e2f5e1590a",
   "tags": [
-    "vegan",
-    "viel gemüse"
+    "viel gemüse",
+    "schnell",
+    "vegetarisch",
+    "vegan"
   ],
   "categories": [
     "schnell",
     "vegetarisch",
     "vegan"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "100 g Quinoa Tricolor",
+    "160 g Hummus",
+    "390 g Kichererbsen",
+    "1 Stück Karotte",
+    "125 g rote Kirschtomaten",
+    "50 g schwarze Oliven ohne Stein",
+    "4 g Gewürzmischung „Hello Harissa“",
+    "1 Stück kleine Salatgurke",
+    "10 g Petersilie glatt/Schnittlauch",
+    "4 g Gemüsebrühpulver",
+    "2 Stück Knoblauchzehe",
+    "1 Stück Zitrone, gewachst",
+    "nach Geschmack Salz",
+    "2 Esslöffel Olivenöl",
+    "200 ml Wasser",
+    "nach Geschmack Pfeffer",
+    "1 Esslöffel Öl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. In einen kleinen Topf mit Deckel Quinoa, Gemüsebrühe und 200 ml [300 ml I 400 ml] Wasser* füllen und aufkochen lassen. Hitze etwas reduzieren und abgedeckt 15 Min. köcheln lassen. Anschließend vom Herd nehmen und 10 Min. quellen lassen.",
+      "imageUrl": "/images/hellofresh/quinoa-bowl-mit-karotten-hummus-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Karotten nach Belieben schälen, in 2 cm Stücke schneiden und auf einem mit Backpapier belegten Backblech verteilen. Mit der Hälfte „Hello Harissa“, 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* vermengen und im Ofen ca. 20 Min. backen, bis die Karotten weich sind. Knoblauch abziehen. Kirschtomaten halbieren und mit dem Knoblauch die letzten 10 Min. mit auf das Backblech legen.",
+      "imageUrl": "/images/hellofresh/quinoa-bowl-mit-karotten-hummus-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Zitrone in 6 Spalten schneiden. Gurke nach Belieben schälen und in 2 cm Würfel schneiden. Oliven halbieren. Petersilie und Schnittlauch grob hacken. In einer großen Schüssel Saft von 1 [1,5 | 2] Zitronenspalte, 1 EL [1,5 EL | 2 EL] Olivenöl*, Salz* und Pfeffer* verrühren. Gurkenwürfel, Oliven und Hälfte der gehackten Kräuter untermischen.",
+      "imageUrl": "/images/hellofresh/quinoa-bowl-mit-karotten-hummus-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Kichererbsen durch ein Sieb abgießen, Flüssigkeit dabei auffangen. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Hälfte der Kichererbsen und restliches „Hello Harissa“ darin 3 – 4 Min. braten. Danach warmhalten.",
+      "imageUrl": "/images/hellofresh/quinoa-bowl-mit-karotten-hummus-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einem hohen Rührgefäß Hälfte der Kichererbsen, Hummus, Knoblauch und Karotten aus dem Ofen und Saft von 1 [1,5 | 2] Zitronenspalte mit dem Mixstab fein pürieren. Dabei nach und nach ca. die Hälfte der Kichererbsenflüssigkeit bis zur gewünschten Cremigkeit zugeben. Mit Salz* und Pfeffer* und evtl. mehr Zitronensaft abschmecken.",
+      "imageUrl": "/images/hellofresh/quinoa-bowl-mit-karotten-hummus-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Nach der Quellzeit Quinoa mit etwas Zitronensaft, Salz* und Pfeffer* abschmecken. Karotten-Hummus in die Mitte der Teller geben. Quinoa, Kichererbsen, Gurkensalat, Kirschtomaten und Oliven rundherum verteilen. Mit restlichen Kräutern bestreuen.",
+      "imageUrl": "/images/hellofresh/quinoa-bowl-mit-karotten-hummus-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 823,
     "protein": 22
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -38,5 +89,12 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegan",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Vegan: keine Fleisch-/Fischbegriffe und keine tierischen Produktbegriffe erkannt."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:44.355Z"
 }

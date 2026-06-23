@@ -5,26 +5,71 @@
   "kcal": 860,
   "protein": 24,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/scharfer-sriracha-blumenkohl-mit-dalsosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/scharfer-sriracha-blumenkohl-mit-dalsosse-695b7f252a2e2effad184c4c",
   "tags": [
     "viel gemüse",
-    "vegan"
+    "schnell",
+    "vegetarisch"
   ],
   "categories": [
     "schnell",
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "1 Stück Blumenkohl",
+    "160 g würzige Dalsoße",
+    "150 g Basmatireis",
+    "180 ml Kokosmilch",
+    "1 Stück Zwiebel",
+    "10 g Mandeln",
+    "8 ml Sriracha Sauce",
+    "4 g Kokosflocken",
+    "4 g Gewürzmischung „Hello Paprika“",
+    "3 Esslöffel Öl",
+    "350 ml Wasser",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Blumenkohl in mundgerechte Röschen aufteilen. In einer großen Schüssel Blumenkohl, 2 EL [3 EL | 4 EL] Öl*, Sriracha, „Hello Paprika“, Salz* und Pfeffer* vermengen, auf ein mit Backpapier belegtes Backblech geben und im oberen Drittel des Ofens 20 – 25 Min. garen, bis der Blumenkohl stark gebräunt ist.",
+      "imageUrl": "/images/hellofresh/scharfer-sriracha-blumenkohl-mit-dalsosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einen kleinen Topf mit Deckel 300 ml [450 ml | 600 ml] heißes Wasser* füllen, salzen* und aufkochen lassen. Reis zugeben und bei niedriger Hitze 10 Min. abgedeckt köcheln lassen. Anschließend vom Herd nehmen und abgedeckt 10 Min. ziehen lassen.",
+      "imageUrl": "/images/hellofresh/scharfer-sriracha-blumenkohl-mit-dalsosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Zwiebel halbieren und in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/scharfer-sriracha-blumenkohl-mit-dalsosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne ohne Fettzugabe Mandeln und Kokosflocken 2 – 3 Min. anrösten, bis sie anfangen zu duften. Aus der Pfanne nehmen und beiseite stellen.",
+      "imageUrl": "/images/hellofresh/scharfer-sriracha-blumenkohl-mit-dalsosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In derselben großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Zwiebelstreifen darin 1 – 2 Min anschwitzen. Pfanneninhalt mit Dalsoße, Kokosmilch und 50 ml [75 ml | 100 ml] Wasser* ablöschen, Hitze reduzieren und bis zum Ende des Rezepts köcheln lassen. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/scharfer-sriracha-blumenkohl-mit-dalsosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Blumenkohl Rezepte Paprika Rezepte",
+      "imageUrl": "/images/hellofresh/scharfer-sriracha-blumenkohl-mit-dalsosse-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 860,
     "protein": 24
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -38,5 +83,12 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (milch)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:49.321Z"
 }

@@ -5,7 +5,7 @@
   "kcal": 804,
   "protein": 27.3,
   "durationMinutes": 20,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/stamppot-bratwurt-auf-kartoffelstampf-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/stamppot-bratwurt-auf-kartoffelstampf-668cf9346b6e4f78720824db",
   "tags": [
     "family",
@@ -15,8 +15,41 @@
   "categories": [
     "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "200 g Thüringer Rostbratwurst",
+    "600 g vorgegarte Kartoffelwürfel",
+    "2 Stück Karotte",
+    "1 Stück Zwiebel",
+    "50 g Blattsalatmischung",
+    "40 g Würziges Zwiebel-Chutney",
+    "50 ml Demi-glace",
+    "12 g Balsamico Creme",
+    "20 ml mittelscharfer Senf",
+    "4 g Hühnerbrühe",
+    "250 ml Milch",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Esslöffel Butter",
+    "1 Esslöffel Öl",
+    "100 ml Wasser"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "In einem großen Topf mit Deckel 250 ml [375 ml | 500 ml] Milch* erhitzen. Karotten grob raspeln. Zwiebel grob würfeln. Karotte, Zwiebel und Hühnerbrühe in den Topf geben und teilweise bedeckt 5 Min. köcheln lassen. Kartoffelwürfel dazugeben und 2 Min. weiterkochen.",
+      "imageUrl": "/images/hellofresh/stamppot-bratwurt-auf-kartoffelstampf-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Bratwürste darin 6 – 8 Min. rundum knusprig braten. Hitze reduzieren und Pfanneninhalt mit Demi-Glace, 100 ml [150 ml | 200 ml] Wasser*, Senf und Zwiebel-Chutney ablöschen.",
+      "imageUrl": "/images/hellofresh/stamppot-bratwurt-auf-kartoffelstampf-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "EL [1,5 EL | 2 EL] Butter* zu dem Gemüse geben und mithilfe eines Kartoffelstampfers zu einem Stampf verarbeiten. Mit Salz* und Pfeffer* abschmecken. Hutspot-Stampf auf Teller verteilen. Bratwurst und Soße darauf anrichten. Salat daneben geben und mit Balsamicocreme beträufeln.",
+      "imageUrl": "/images/hellofresh/stamppot-bratwurt-auf-kartoffelstampf-step-3.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 804,
@@ -24,11 +57,18 @@
   },
   "nutritionSource": "per-serving",
   "nutritionNeedsReview": false,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
   "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 20 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bratwurst, wurst)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:09.412Z"
 }

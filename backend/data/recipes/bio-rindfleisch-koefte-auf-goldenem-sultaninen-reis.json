@@ -10,7 +10,8 @@
   "tags": [
     "rind",
     "reis",
-    "schnell"
+    "schnell",
+    "high protein"
   ],
   "ingredients": [
     "250 g Bio Rinderhackfleischzubereitung",
@@ -80,6 +81,7 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 30 Minuten <= 30.",
+    "Protein Stark: 52 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
   ],
   "classificationNeedsReview": false

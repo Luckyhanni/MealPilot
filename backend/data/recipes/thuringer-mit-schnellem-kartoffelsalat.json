@@ -5,7 +5,7 @@
   "kcal": 1040,
   "protein": 31,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/thuringer-mit-schnellem-kartoffelsalat-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/thuringer-mit-schnellem-kartoffelsalat-67191a62feb5bb81ef3ad50b",
   "tags": [
     "schnell"
@@ -13,8 +13,54 @@
   "categories": [
     "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "200 g Thüringer Rostbratwurst",
+    "600 g vorw. festk. Kartoffeln",
+    "100 g Buschbohnen",
+    "20 g grüne Kresse",
+    "50 g Feigenrelish",
+    "100 g Mayonnaise",
+    "20 g Mandeln blanchiert, gehobelt",
+    "20 ml mittelscharfer Senf",
+    "4 g Gemüsebrühpulver",
+    "1 Esslöffel Weißweinessig",
+    "1 Teelöffel Zucker",
+    "½ Teelöffel Salz",
+    "nach Geschmack Pfeffer",
+    "1 Esslöffel Öl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Kartoffeln schälen, längs halbieren und in 0,5 cm Halbmonde schneiden. In einen großen Topf mit Deckel 1 L heißes Wasser* füllen, Gemüsebrühe hinzufügen und aufkochen lassen. Kartoffeln darin 12 – 14 Min. garen.",
+      "imageUrl": "/images/hellofresh/thuringer-mit-schnellem-kartoffelsalat-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Enden der Buschbohnen entfernen und Bohnen halbieren. Buschbohnen für 9 – 10 Min. mit in den Topf geben. In einer kleinen Schüssel die Hälfte vom Senf mit der Hälfte vom Feigenrelish vermengen.",
+      "imageUrl": "/images/hellofresh/thuringer-mit-schnellem-kartoffelsalat-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Kresse mithilfe einer Schere abschneiden. In einer großen Schüssel Mayonnaise, restliches Feigenrelish, restlichen Senf, die Hälfte der Kresse, 3 EL [4,5 EL | 6 EL] Kochwasser, 1 EL [1,5 EL | 2 EL] Essig*, 1 TL [1,5 TL | 2 TL] Zucker*, 0,5 TL [0,75 TL | 1 TL] Salz* und Pfeffer* zu einem Dressing vermengen.",
+      "imageUrl": "/images/hellofresh/thuringer-mit-schnellem-kartoffelsalat-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne ohne Fettzugabe Mandelblättchen 2 – 3 Min. rösten, bis sie goldbraun sind. Herausnehmen. In derselben Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Thüringer darin rundum 6 – 8 Min. goldbraun braten.",
+      "imageUrl": "/images/hellofresh/thuringer-mit-schnellem-kartoffelsalat-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Kartoffeln und Bohnen nach der Garzeit durch ein Sieb abschütten, vorsichtig mit kaltem Wasser abspülen, in die Schüssel mit dem Dressing geben und für mindestens 5 Min. ziehen lassen. Mit Salz* abschmecken. Tipp: Wenn Du Zeit hast, lass den Kartoffelsalat länger ziehen, so schmeckt er intensiver.",
+      "imageUrl": "/images/hellofresh/thuringer-mit-schnellem-kartoffelsalat-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Kartoffelsalat auf Teller verteilen und mit Mandeln und Kresse toppen. Thüringer daneben anrichten und mit Feigensenf genießen.",
+      "imageUrl": "/images/hellofresh/thuringer-mit-schnellem-kartoffelsalat-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1040,
@@ -22,7 +68,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -31,5 +77,12 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bratwurst, wurst)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:18.511Z"
 }

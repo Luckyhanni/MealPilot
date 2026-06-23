@@ -5,12 +5,13 @@
   "kcal": 731,
   "protein": 21,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/porree-schupfnudel-pfanne-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/porree-schupfnudel-pfanne-692d786a1ca49f0d8bd37a60",
   "tags": [
-    "schnell",
     "viel gemüse",
     "family",
+    "schnell",
+    "vegetarisch",
     "vegan"
   ],
   "categories": [
@@ -18,15 +19,64 @@
     "vegetarisch",
     "vegan"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "1 Stück Porree",
+    "100 g Radieschen",
+    "1 Stück Apfel",
+    "1 Stück Zwiebel",
+    "10 g Dill/Schnittlauch",
+    "250 ml Oatly Bio Cuisine",
+    "8 g Worcester Sauce",
+    "5 g Hefeflocken",
+    "5 g Gewürzmischung „Hello Muskat“",
+    "400 g Schupfnudeln",
+    "1 Esslöffel Öl",
+    "1 Esslöffel Weißweinessig",
+    "1 Teelöffel Zucker",
+    "50 ml Wasser",
+    "nach Geschmack Pfeffer",
+    "2 Esslöffel pflanzliche Margarine",
+    "¼ nach Geschmack Salz"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Zwiebel in feine Streifen schneiden. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Zwiebelstreifen darin 5 Min. anschwitzen. TL [1,5 TL | 2 TL] Zucker* hinzufügen und weitere 5 Min. karamellisieren lassen. Aus der Pfanne nehmen und beiseitestellen.",
+      "imageUrl": "/images/hellofresh/porree-schupfnudel-pfanne-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Währenddessen Porree längs halbieren, gründlich auswaschen und in 0,5 cm Halbmonde schneiden. Radieschen in feine Scheiben hobeln oder schneiden. Apfel entkernen und in 1 cm Würfel schneiden. Dillfähnchen fein hacken. In einer großen Schüssel 2 EL [3 EL | 4 EL] Oatly Bio-Cuisine, 1 EL [1,5 EL | 2 EL] Essig* und gehackten Dill verrühren. Apfel und Radieschen hinzufügen und mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/porree-schupfnudel-pfanne-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einem hohen Rührgefäß restliche Oatly Bio-Cuisine , 50 ml [75 ml | 100 ml] Wasser*, Hefeflocken, „Hello Muskat“ und 0,25 TL [0,3 TL | 0,5 TL] Salz* verrühren.",
+      "imageUrl": "/images/hellofresh/porree-schupfnudel-pfanne-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In der großen Pfanne aus Schritt 1 2 EL [3 EL | 4 EL] pflanzliche Margarine* auf mittlerer bis hoher Stufe erhitzen. Schupfnudeln und Porree hineingeben und 6 – 8 Min. braten, bis beides goldbraun gebraten ist. Dabei gelegentlich umrühren.",
+      "imageUrl": "/images/hellofresh/porree-schupfnudel-pfanne-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Schmelzzwiebeln mit zu den Schupfnudeln in die Pfanne geben und den Pfanneninhalt mit der vorbereiteten Soße ablöschen. Einmal aufkochen lassen, dann die Pfanne von der Hitze nehmen und die Worcester Sauce unterrühren. Schupfnudelpfanne mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/porree-schupfnudel-pfanne-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Schnittlauch in feine Röllchen schneiden. Schupfnudelnpfanne auf Teller verteilen und mit Schnittlauch toppen. Apfel-Radieschen-Salat dazu anrichten.",
+      "imageUrl": "/images/hellofresh/porree-schupfnudel-pfanne-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 731,
     "protein": 21
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -40,5 +90,12 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegan",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Vegan: keine Fleisch-/Fischbegriffe und keine tierischen Produktbegriffe erkannt."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:41.256Z"
 }

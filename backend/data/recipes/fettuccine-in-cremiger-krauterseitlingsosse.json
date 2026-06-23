@@ -5,10 +5,12 @@
   "kcal": 929,
   "protein": 26,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/fettuccine-in-cremiger-krauterseitlingsosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/fettuccine-in-cremiger-krauterseitlingsosse-695b7f15725ffb771e093303",
   "tags": [
     "family",
+    "schnell",
+    "vegetarisch",
     "vegan"
   ],
   "categories": [
@@ -16,15 +18,61 @@
     "vegetarisch",
     "vegan"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "270 g Fettuccine",
+    "150 g Kräuterseitling",
+    "125 g Champignons",
+    "10 g Petersilie glatt/Zitronenthymian",
+    "1 Stück Zwiebel",
+    "2 Stück Knoblauchzehe",
+    "25 g Pankomehl",
+    "10 g Haselnüsse",
+    "200 ml Oatly Bio Cuisine",
+    "25 ml Sojasoße",
+    "25 g Pilzbrühepaste",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "2 Esslöffel Olivenöl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Kräuterseitlinge und Champignons in 0,5 cm Scheiben schneiden. Zwiebel halbieren und fein würfeln. Knoblauch fein hacken. Haselnüsse grob hacken. Zitronenthymian- und Petersilienblätter getrennt voneinander fein hacken.",
+      "imageUrl": "/images/hellofresh/fettuccine-in-cremiger-krauterseitlingsosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Pankomehl, gehackte Haselnüsse und Hälfte des Knoblauchs 2 – 3 Min. goldbraun anbraten. Mit Salz* und Pfeffer* würzen. Pangrattato in eine kleine Schüssel umfüllen und mit Zitronenthymian mischen.",
+      "imageUrl": "/images/hellofresh/fettuccine-in-cremiger-krauterseitlingsosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einen großen Topf reichlich heißes Wasser* füllen, salzen* und einmal aufkochen lassen. Fettuccine hinzugeben und 11 – 12 Min. bissfest garen. Danach durch ein Sieb abgießen. In der Zwischenzeit mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/fettuccine-in-cremiger-krauterseitlingsosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In der großen Pfanne aus Schritt 2 erneut 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Zwiebel, Pilze und restlichen Knoblauch 4 – 5 Min. anbraten.",
+      "imageUrl": "/images/hellofresh/fettuccine-in-cremiger-krauterseitlingsosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Hafer-Cuisine, Sojasoße und Pilz Paste in die Pfanne rühren und 3 – 4 Min. über mittlerer Hitze einkochen lassen. Fettuccine nach der Garzeit in die Pfanne geben und mit gehackter Petersilie, Salz* und kräftig Pfeffer* abschmecken. Nach Bedarf esslöffelweise etwas Wasser* hinzugeben und alles gut vermengen.",
+      "imageUrl": "/images/hellofresh/fettuccine-in-cremiger-krauterseitlingsosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Fettuccine auf Tellern verteilen und mit Pangrattato toppen.",
+      "imageUrl": "/images/hellofresh/fettuccine-in-cremiger-krauterseitlingsosse-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 929,
     "protein": 26
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -39,5 +87,12 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegan",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Vegan: keine Fleisch-/Fischbegriffe und keine tierischen Produktbegriffe erkannt."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:32.872Z"
 }

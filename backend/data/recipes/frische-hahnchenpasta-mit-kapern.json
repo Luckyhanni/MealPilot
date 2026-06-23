@@ -5,17 +5,47 @@
   "kcal": 760,
   "protein": 41,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/frische-hahnchenpasta-mit-kapern-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/frische-hahnchenpasta-mit-kapern-668bdc966b6e4f7872081728",
   "tags": [
-    "schnell"
+    "schnell",
+    "high protein"
   ],
   "categories": [
     "schnell",
     "high-protein"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Hähnchengeschnetzeltes",
+    "250 g frische Linguine",
+    "1 Stück Porree",
+    "390 g stückige Tomaten",
+    "35 g Kapern",
+    "20 g Hartkäse ital. Art, gerieben",
+    "4 g Gewürzmischung „Hello Buon Appetito“",
+    "4 g Hühnerbrühe",
+    "1 Teelöffel Butter",
+    "1 Teelöffel Honig",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. In einen großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen lassen. Porreeenden abschneiden und längs halbieren. Dann unter fließendem, kalten Wasser waschen und anschließend in feine Halbmonde schneiden. Eine Pfanne auf mittelhoher Stufe erhitzen. Hähnchenstreifen, Porree und stückige Tomaten hineingeben und mit Hühnerbrühe und „Hello Buon Appetito“ würzen. Zugedeckt 10 – 12 Min. köcheln lassen.",
+      "imageUrl": "/images/hellofresh/frische-hahnchenpasta-mit-kapern-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Linguine im Topf 3 Min. bissfest kochen. Anschließend 100 ml [150 ml I 200 ml] von dem Kochwasser aufheben und die Pasta in einem Sieb abgießen. Kapern durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/frische-hahnchenpasta-mit-kapern-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Soße mit 1 TL [1,5 TL I 2 TL] Honig*, Salz* und Pfeffer* abschmecken und 1 TL [1,5 TL I 2 TL] kalte Butter* hineinrühren. Esslöffelweise Pastakochwasser hinzugeben, bis die Soße die gewünschte Konsistenz erreicht. Soße mit Pasta vermengen und mit Käse und Kapern toppen.",
+      "imageUrl": "/images/hellofresh/frische-hahnchenpasta-mit-kapern-step-3.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 760,
@@ -23,7 +53,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -32,5 +62,13 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Protein Stark: 41 g Protein pro Portion >= 40 g.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:35.258Z"
 }

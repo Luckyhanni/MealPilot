@@ -9,7 +9,8 @@
   "sourceUrl": "https://www.hellofresh.de/recipes/tomatige-conchiglie-mit-rinderhackfleisch-66388425a1cdc8933c576841",
   "tags": [
     "rind",
-    "hackfleisch"
+    "hackfleisch",
+    "high protein"
   ],
   "ingredients": [
     "200 g Hackfleischzubereitung vom Weiderind",
@@ -73,6 +74,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 52 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
   ],
   "classificationNeedsReview": false

@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/schnitzel-mit-ofenkartoffeln-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/schnitzel-mit-ofenkartoffeln-62d69f0ec939fdc11508de11",
   "tags": [
-    "kartoffeln"
+    "kartoffeln",
+    "high protein"
   ],
   "ingredients": [
     "250 g Schweinelachssteaks",
@@ -74,6 +75,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 50 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
   ],
   "classificationNeedsReview": false

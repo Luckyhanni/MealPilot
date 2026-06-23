@@ -11,7 +11,8 @@
     "rind",
     "hackfleisch",
     "reis",
-    "schnell"
+    "schnell",
+    "high protein"
   ],
   "ingredients": [
     "200 g Hackfleischzubereitung vom Weiderind",
@@ -77,6 +78,7 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 30 Minuten <= 30.",
+    "Protein Stark: 52 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
   ],
   "classificationNeedsReview": false

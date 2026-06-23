@@ -5,7 +5,7 @@
   "kcal": 678,
   "protein": 35.6,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/weihnachtliches-geschnetzeltes-mit-mini-knodel-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/weihnachtliches-geschnetzeltes-mit-mini-knodel-66b23ba41047ce9880457545",
   "tags": [
     "family",
@@ -14,8 +14,54 @@
   "categories": [
     "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Schweineschnitzel",
+    "375 g Mini-Klöße",
+    "1 Stück Porree",
+    "1 Stück Karotte",
+    "5 g Gewürzmischung „Hello Muskat“",
+    "25 g Wildpreiselbeerenmarmelade",
+    "½ g Thymian, gerebelt",
+    "8 ml Worcester Sauce",
+    "150 g Kochsahne",
+    "2 Esslöffel Öl",
+    "1 Teelöffel Balsamicoessig",
+    "150 ml Wasser",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. In einen großen Topf reichlich heißes Wasser* füllen, kräftig salzen* und aufkochen lassen. Karotte längs halbieren und in feine Halbmonde schneiden. Porree halbieren, auswaschen und in feine Halbmonde schneiden. Schweineschnitzel in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/weihnachtliches-geschnetzeltes-mit-mini-knodel-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Mini-Knödel in den großen Topf geben und 12 – 15 Min. garen, bis die Knödel an der Oberfläche schwimmen. Tipp: Du erzielst das beste Ergebnis, wenn das Wasser nur siedet. Mini-Knödel nach der Garzeit durch ein Sieb abgießen und ggf. warm halten.",
+      "imageUrl": "/images/hellofresh/weihnachtliches-geschnetzeltes-mit-mini-knodel-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* stark erhitzen. Schweinestreifen darin 1 – 2 Min. anbraten. Die Hälfte gerebelter Thymian, Salz* und Pfeffer* hinzugeben und 1 weitere Min. anbraten. Aus der Pfanne nehmen.",
+      "imageUrl": "/images/hellofresh/weihnachtliches-geschnetzeltes-mit-mini-knodel-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In derselben Pfanne erneut 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Karotte, Porree und restlichen Thymian darin 2 – 3 Min. anschwitzen. Pfanneninhalt mit Kochsahne, „Hello Muskat“, Worcestersauce, 1 TL [1,5 TL | 2 TL] Balsamicoessig* und 150 ml [225 ml | 300 ml] Wasser* ablöschen. Hitze reduzieren und 5 – 7 Min. garen, bis das Gemüse weich ist.",
+      "imageUrl": "/images/hellofresh/weihnachtliches-geschnetzeltes-mit-mini-knodel-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Schweinestreifen zurück in die Pfanne geben und 1 Min. aufwärmen. Mit Salz* und kräftig Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/weihnachtliches-geschnetzeltes-mit-mini-knodel-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Mini-Knödel und Schweinegeschnetzeltes auf tiefen Tellern anrichten und mit der Wildpreiselbeermarmelade genießen.",
+      "imageUrl": "/images/hellofresh/weihnachtliches-geschnetzeltes-mit-mini-knodel-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 678,
@@ -23,11 +69,18 @@
   },
   "nutritionSource": "per-serving",
   "nutritionNeedsReview": false,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
   "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schnitzel, schwein, schweine)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:47.279Z"
 }

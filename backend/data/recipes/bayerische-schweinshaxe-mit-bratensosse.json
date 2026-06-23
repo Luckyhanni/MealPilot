@@ -81,7 +81,7 @@
   "dietaryType": "vegetarian",
   "classificationReasons": [
     "Schnell: 30 Minuten <= 30.",
-    "High Protein: 113.7 g Protein pro Portion > 60 g.",
+    "Protein Stark: 113.7 g Protein pro Portion >= 40 g.",
     "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter, milch, sahne)."
   ],
   "classificationNeedsReview": false,

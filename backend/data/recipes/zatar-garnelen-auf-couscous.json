@@ -5,19 +5,50 @@
   "kcal": 610,
   "protein": 31,
   "durationMinutes": 15,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/zatar-garnelen-auf-couscous-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/zatar-garnelen-auf-couscous-668e6fdf018283f1f439bfe1",
   "tags": [
     "extra schnell",
     "kalorien im blick",
-    "schnell"
+    "schnell",
+    "low cal"
   ],
   "categories": [
     "schnell",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "150 g Großgarnelen",
+    "150 g Couscous",
+    "125 g rote Kirschtomaten",
+    "75 g Feldsalat",
+    "35 g Kapern",
+    "10 g Dill/Petersilie",
+    "1 Stück Zitrone, gewachst",
+    "6 g Zaatar",
+    "40 g Ravigote Sauce",
+    "4 g Gemüsebrühpulver",
+    "1 Esslöffel Butter",
+    "300 ml Wasser",
+    "2 Esslöffel Olivenöl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 250 ml [375 ml | 500 ml] Wasser im Wasserkocher. In einen kleinen Topf 250 ml [375 ml | 500 ml] Wasser* füllen, leicht salzen* und aufkochen lassen. Couscous, die Hälfte vom Zaatar, Gemüsebrühe und etwas Olivenöl* in den Topf geben, verrühren, vom Herd nehmen und 5 – 8 Min. abgedeckt quellen lassen.",
+      "imageUrl": "/images/hellofresh/zatar-garnelen-auf-couscous-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Zitrone in 6 Spalten schneiden. Kirschtomaten halbieren. Kräuter hacken. Kapern mithilfe des Deckels abgießen. Grob hacken. In einer kleinen Schüssel Ravigote Sauce mit der Hälfte der Kräuter, Saft von 2 [3 | 4] Zitronenspalten, 2 EL [3 EL | 4 EL] Olivenöl*, 0,5 TL [0,75 TL | 1 TL] Salz* und Pfeffer* vermengen.",
+      "imageUrl": "/images/hellofresh/zatar-garnelen-auf-couscous-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Garnelen mit restlichem Zaatar würzen. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Garnelen und Kapern 2 – 3 Min. scharf anbraten, bis sie innen nicht mehr glasig sind. Mit Saft von 1 [1 | 2] Zitronenspalte ablöschen. EL [1,5 EL | 2 EL] Butter* unter den Couscous heben. Couscous neben dem Salat anrichten. Mit Soße beträufeln. Mit Garnelen, Kapern und Kirschtomaten toppen und mit Kräutern garnieren und einer Zitronenspalte genießen.",
+      "imageUrl": "/images/hellofresh/zatar-garnelen-auf-couscous-step-3.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 610,
@@ -25,7 +56,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -34,5 +65,13 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 15 Minuten <= 30.",
+    "Low Cal: 610 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:59.135Z"
 }

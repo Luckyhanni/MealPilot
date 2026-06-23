@@ -5,26 +5,74 @@
   "kcal": 747,
   "protein": 18,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/grunkohl-curry-eintopf-mit-kartoffeln-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/grunkohl-curry-eintopf-mit-kartoffeln-68e530af908d7cf716b7c4a4",
   "tags": [
-    "vegan",
-    "schnell"
+    "schnell",
+    "vegetarisch"
   ],
   "categories": [
     "schnell",
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "400 g vorw. festk. Kartoffeln",
+    "150 g Baby-Grünkohl",
+    "1 Stück Karotte",
+    "1 Stück Zwiebel",
+    "10 g Koriander/Minze",
+    "1 Stück Limette, vegan",
+    "160 g würzige Dalsoße",
+    "180 ml Kokosmilch",
+    "20 g Erdnüsse, geröstet, gesalzen",
+    "2 g Gewürzmischung „Hello Curry“",
+    "4 g Gemüsebrühpulver",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Zucker",
+    "15 g Öl",
+    "30 g Olivenöl",
+    "100 g Wasser"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Limette heiß abwaschen und 1 TL [1,5 TL | 2 TL] der Schale fein abreiben. Limette vierteln. Koriander in grobe Stücke schneiden. Minzblätter abzupfen. Kräuter in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und mit dem Spatel nach unten schieben. Erdnüsse, Limettenschale, Saft von 1 [2 | 2] Limettenviertel, 30 g [45 g | 60 g] Olivenöl*, Salz* und Pfeffer* zugeben und 10 Sek./Stufe 6 vermischen. Gremolata umfüllen.",
+      "imageUrl": "/images/hellofresh/grunkohl-curry-eintopf-mit-kartoffeln-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Kartoffeln schälen und in ca. 2 cm Würfel schneiden. Karotte nach Belieben schälen, längs vierteln und ebenfalls in ca. 2 cm Stücke schneiden Zwiebel halbieren und in 1 cm Spalten schneiden.",
+      "imageUrl": "/images/hellofresh/grunkohl-curry-eintopf-mit-kartoffeln-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "g [15 g | 20 g] Öl*, Zwiebel, Karotte und „Hello Curry“ in den Mixtopf geben und 4 Min./120 °C/Reverse/Stufe 1 dünsten. .",
+      "imageUrl": "/images/hellofresh/grunkohl-curry-eintopf-mit-kartoffeln-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Kartoffeln, Kokosmilch, würzige Dalsoße, Gemüsebrühe, 100 g [150 g | 200 g] Wasser*, 0,5 TL [0,75 TL | 1 TL] Salz*, Pfeffer* und 1 TL [1,5 TL | 2 TL] Zucker* in den Mixtopf zugeben und 25 Min./98 °/Reverse/Stufe 1 kochen.",
+      "imageUrl": "/images/hellofresh/grunkohl-curry-eintopf-mit-kartoffeln-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Grünkohl in eine große Schüssel geben. Curry aus dem Mixtopf zugeben, gut vermischen und Curry mit Saft von 1 [2 | 2] Limettenspalte, Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/grunkohl-curry-eintopf-mit-kartoffeln-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Curry in tiefen Tellern anrichten und mit der Minz-Limetten-Gremolata toppen. Mit restlichen Limettenspalten servieren und genießen.",
+      "imageUrl": "/images/hellofresh/grunkohl-curry-eintopf-mit-kartoffeln-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 747,
     "protein": 18
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -38,5 +86,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (milch).",
+    "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:25:51.967Z"
 }

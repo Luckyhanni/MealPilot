@@ -2205,6 +2205,11 @@ button.tiny {
   gap: 0.65rem;
 }
 
+.category-threshold-grid {
+  display: grid;
+  gap: 0.65rem;
+}
+
 .daily-setting-row {
   display: grid;
   grid-template-columns: 5rem 1fr;
@@ -2231,6 +2236,21 @@ button.tiny {
   padding: 10px 12px;
   background: #fff;
   color: #17351f;
+}
+
+.category-threshold-grid .daily-setting-row {
+  grid-template-columns: 1fr;
+}
+
+.category-threshold-grid .daily-setting-row input {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid #dce8cf;
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: #fff;
+  color: #17351f;
+  font-size: 16px;
 }
 
 .settings-actions {
@@ -4056,6 +4076,21 @@ button.tiny {
 
 .profile-settings-head p {
   margin-top: 3px;
+}
+
+.profile-settings-subhead {
+  display: grid;
+  gap: 3px;
+}
+
+.profile-settings-subhead h4 {
+  margin: 0;
+  color: var(--green-strong);
+  font-size: 1rem;
+}
+
+.profile-settings-subhead p {
+  margin: 0;
 }
 
 .profile-settings-grid {

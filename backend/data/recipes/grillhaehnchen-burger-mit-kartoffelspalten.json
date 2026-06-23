@@ -10,7 +10,8 @@
   "tags": [
     "hähnchen",
     "kartoffeln",
-    "burger"
+    "burger",
+    "high protein"
   ],
   "ingredients": [
     "250 g Hähnchenbrustfilet in Lake",
@@ -72,6 +73,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 60 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
   ],
   "classificationNeedsReview": false

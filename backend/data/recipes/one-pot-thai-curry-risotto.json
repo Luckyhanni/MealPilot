@@ -5,24 +5,70 @@
   "kcal": 743,
   "protein": 20,
   "durationMinutes": 35,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/one-pot-thai-curry-risotto-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/one-pot-thai-curry-risotto-692d774a126207051adca5ca",
   "tags": [
-    "vegan"
+    "vegetarisch"
   ],
   "categories": [
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "225 g Risottoreis",
+    "150 g Kaiserschoten",
+    "125 g Champignons",
+    "25 g Frühlingszwiebel",
+    "1 Stück Zwiebel",
+    "180 ml Kokosmilch",
+    "25 g rote Currypaste",
+    "10 ml Sojasoße",
+    "1 Stück Knoblauchzehe",
+    "6 g Gemüsebrühpulver",
+    "600 ml Wasser",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "2 Esslöffel Öl",
+    "nach Geschmack Weißweinessig"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Kaiserschoten halbieren. Zwiebel fein hacken. Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in feine Ringe schneiden. Knoblauchzehe fein hacken. Champignons vierteln.",
+      "imageUrl": "/images/hellofresh/one-pot-thai-curry-risotto-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einem hohen Rührgefäß Kokosmilch, Brühepulver, Hälfte [drei Viertel | gesamte] Sojasoße, 0,5 TL [0,75 TL | 1 TL] Salz* und 600 ml [900 ml | 1.200 ml] heißes Wasser* verrühren. In einem großen Topf 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Kaiserschoten 2 – 3 Min. rundherum anbraten. Herausnehmen.",
+      "imageUrl": "/images/hellofresh/one-pot-thai-curry-risotto-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In dem großen Topf erneut 1 EL [1,5 EL | 2 EL] Öl* erwärmen. Gehackte Zwiebel, weiße Frühlingszwiebelringe, Knoblauch und Champignons darin 1 – 2 Min. anschwitzen. Currypaste (Achtung: scharf!) und Risottoreis hinzufügen und ca. 1 Min. mit anschwitzen. Dabei alles gut vermengen.",
+      "imageUrl": "/images/hellofresh/one-pot-thai-curry-risotto-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Topfinhalt mit der Kokosmilch-Mischung ablöschen und bei mittlerer Hitze offen unter gelegentlichem Rühren ca. 20 – 25 Min. weiterköcheln lassen, bis die Flüssigkeit vollständig aufgesogen ist und das Risotto eine cremige Konsistenz hat.",
+      "imageUrl": "/images/hellofresh/one-pot-thai-curry-risotto-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Nach Ende der Garzeit Kaiserschoten unterheben, das Risotto mit Salz*, Pfeffer* und nah Belieben etwas Essig* abschmecken. Tipp: Falls Dir der Reis noch zu körnig sein sollte, kannst Du noch etwas Wasser* hinzufügen und das Risotto weitere 2 – 3 Min. köcheln lassen.",
+      "imageUrl": "/images/hellofresh/one-pot-thai-curry-risotto-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Thai-Curry-Risotto auf Teller verteilen. Mit grünen Frühlingszwiebelringen garnieren.",
+      "imageUrl": "/images/hellofresh/one-pot-thai-curry-risotto-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 743,
     "protein": 20
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -36,5 +82,11 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (milch)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:29.962Z"
 }

@@ -5,13 +5,16 @@
   "kcal": 493,
   "protein": 25,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/wurziges-dal-curry-mit-smashed-potatoes-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/wurziges-dal-curry-mit-smashed-potatoes-64bf77225853e2d98809b6be",
   "tags": [
-    "vegan",
     "kalorien im blick",
     "viel gemüse",
-    "kalorienreduziert"
+    "kalorienreduziert",
+    "schnell",
+    "low cal",
+    "vegetarisch",
+    "vegan"
   ],
   "categories": [
     "schnell",
@@ -19,8 +22,56 @@
     "vegetarisch",
     "vegan"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "600 g Kartoffeln (Drillinge)",
+    "4 g Gewürzmischung „Hello Patatas“",
+    "160 g würzige Dalsoße",
+    "4 g Gemüsebrühpulver",
+    "1 Stück Fenchelknolle",
+    "1 Stück Porree",
+    "1 Stück Knoblauchzehe",
+    "1 Stück Karotte",
+    "2 g Madras-Curry-Pulver",
+    "10 g Koriander",
+    "125 g Soja-Kochcrème",
+    "nach Geschmack Zucker",
+    "nach Geschmack Salz",
+    "2 Esslöffel Olivenöl",
+    "nach Geschmack Pfeffer",
+    "400 ml Wasser"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 1000 ml [1500 ml | 2000 ml] Wasser im Wasserkocher. Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. In einen großen Topf mit Deckel 1000 ml [1500 ml | 2000 ml] heißes Wasser* geben, 1 TL [1,5 TL | 2 TL] und aufkochen lassen. Gewaschene Drillinge darin 18 – 22 Min. weich garen. Danach durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/wurziges-dal-curry-mit-smashed-potatoes-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Fenchel vierteln, Strunk entfernen und Fenchel in 1 cm Spalten schneiden. Fenchel auf ein mit Backpapier belegtes Backblech geben, mit 0,5 EL [0,75 EL | 1 EL] Olivenöl*, Salz* und Pfeffer* würzen und im Ofen 15 – 20 Min. rösten.",
+      "imageUrl": "/images/hellofresh/wurziges-dal-curry-mit-smashed-potatoes-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Karotte längs halbieren und in 0,5 cm Halbmonde schneiden. Lauch längs halbieren, auswaschen und in 1 cm Halbmonde schneiden. Knoblauch grob hacken. Koriander grob hacken.",
+      "imageUrl": "/images/hellofresh/wurziges-dal-curry-mit-smashed-potatoes-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne mit Deckel 0,5 EL [0,75 EL | 1 EL] Olivenöl* erhitzen. Karotte und Lauch darin 3 – 4 Min. anbraten. Knoblauch, Gemüsebrühe und Madras Curry hinzugeben und 1 weitere Min. anbraten. Pfanneninhalt mit würziger Dalsoße, Hälfte [drei Viertel | gesamte] Soja Kochcrème, Gemüsebrühe und 50 ml [75 ml | 100 ml] Wasser ablöschen. Hitze reduzieren und bis zum Ende des Rezepts abgedeckt köcheln lassen. Mit Salz*, Pfeffer* und Zucker* abschmecken.",
+      "imageUrl": "/images/hellofresh/wurziges-dal-curry-mit-smashed-potatoes-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Ofen auf die Grillfunktion umstellen. Kartoffeln neben den Fenchel auf das Backblech geben und mithilfe eines Topfdeckels leicht andrücken, sodass sie aufplatzen. Tipp: Wenn du für 3 oder 4 Personen kochst, benutze 2 Backbleche. Smashed Potatoes mit „Hello Patatas“, 1 EL [1,5 EL | 2 EL] Olivenöl*, Salz* und Pfeffer* würzen und im oberen Drittel des Ofens 5 Min. knusprig backen.",
+      "imageUrl": "/images/hellofresh/wurziges-dal-curry-mit-smashed-potatoes-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Smashed Potatoes auf tiefen Tellern anrichten und mit Koriander garnieren. Curry daneben anrichten und mit dem geröstetem Fenchel toppen.",
+      "imageUrl": "/images/hellofresh/wurziges-dal-curry-mit-smashed-potatoes-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 493,
@@ -28,7 +79,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
@@ -37,5 +88,13 @@
   "difficulty": "Mittel",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegan",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Low Cal: 493 kcal <= 650.",
+    "Vegan: keine Fleisch-/Fischbegriffe und keine tierischen Produktbegriffe erkannt."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:53.639Z"
 }

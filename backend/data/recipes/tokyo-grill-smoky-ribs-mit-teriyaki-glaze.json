@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/tokyo-grill-smoky-ribs-mit-teriyaki-glaze-663896f11a88dd466abaae30",
   "tags": [
-    "asiatisch"
+    "asiatisch",
+    "high protein"
   ],
   "ingredients": [
     "500 g Spareribs",
@@ -74,6 +75,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 50 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (spareribs).",
     "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
   ],

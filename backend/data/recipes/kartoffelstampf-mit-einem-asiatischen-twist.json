@@ -5,29 +5,72 @@
   "kcal": 518,
   "protein": 28,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/kartoffelstampf-mit-einem-asiatischen-twist-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/kartoffelstampf-mit-einem-asiatischen-twist-6904cc259140c7b54fef9dbe",
   "tags": [
-    "high protein",
     "kalorien im blick",
-    "vegan",
-    "viel gemüse"
+    "viel gemüse",
+    "schnell",
+    "low cal",
+    "vegetarisch"
   ],
   "categories": [
     "schnell",
     "low-cal",
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "400 g mehligk. Kartoffeln",
+    "1 Stück Spitzkohl",
+    "45 ml Kokosmilch",
+    "1 Stück Zwiebel",
+    "25 g vegane weiße Misopaste",
+    "40 g Ketjap Manis",
+    "160 g Vegane Filetstücke",
+    "nach Geschmack Öl",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack pflanzliche Margarine"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Kartoffeln schälen und vierteln oder halbieren. In einen großen Topf ca. 2 L heißes Wasser* füllen, 1 TL [1,5 TL | 2 TL] Salz* dazugeben und aufkochen lassen. Kartoffeln zugeben und 12 – 15 Min. garen, bis sie weich sind.",
+      "imageUrl": "/images/hellofresh/kartoffelstampf-mit-einem-asiatischen-twist-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Spitzkohl vierteln, Strunk entfernen und Kohl in feine Streifen schneiden. Zwiebel halbieren und in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/kartoffelstampf-mit-einem-asiatischen-twist-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne etwas pflanzliche Margarine* erhitzen. Spitzkohl und Misopaste darin 8 – 10 Min. braten, bis er weich ist.",
+      "imageUrl": "/images/hellofresh/kartoffelstampf-mit-einem-asiatischen-twist-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Kartoffeln durch ein Sieb abgießen und zusammen mit 50 ml [75 ml | 100 ml] Kokosmilch zurück in den Topf geben und mithilfe eines Kartoffelstampfers zu einem Stampf verarbeiten. Spitzkohl dazugeben und unten den Stampf rühren. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/kartoffelstampf-mit-einem-asiatischen-twist-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Pfanne etwas Öl* über mittlerer Temperatur erhitzen. Vegane Filetstücke und Zwiebel darin 5 – 6 Min. rundherum anbraten. Ketjap Manis und 1 EL [1,5 EL | 2 EL] Wasser* dazugeben und vermengen. Tipp: Wenn Du es etwas soßiger magst, gib die restliche Kokosmilch in die Pfanne.",
+      "imageUrl": "/images/hellofresh/kartoffelstampf-mit-einem-asiatischen-twist-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Kartoffel-Miso-Kohl Stampf auf Teller verteilen. Glasierte Filetstücke darauf anrichten.",
+      "imageUrl": "/images/hellofresh/kartoffelstampf-mit-einem-asiatischen-twist-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 518,
     "protein": 28
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -41,5 +84,14 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Low Cal: 518 kcal <= 650.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (milch).",
+    "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:26:12.766Z"
 }

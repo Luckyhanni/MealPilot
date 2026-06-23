@@ -5,20 +5,50 @@
   "kcal": 497,
   "protein": 45,
   "durationMinutes": 15,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/schweinelachssteak-mit-rauchigen-kartoffeln-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/schweinelachssteak-mit-rauchigen-kartoffeln-606c3c5dee79bd729d2690b9",
   "tags": [
-    "schnell",
     "-20% kalorien",
-    "kalorienreduziert"
+    "kalorienreduziert",
+    "schnell",
+    "high protein",
+    "low cal"
   ],
   "categories": [
     "schnell",
     "high-protein",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "300 g Champignons und Lauch, geschnitten",
+    "280 g Schweinelachssteaks",
+    "50 ml Wasser",
+    "2 Esslöffel Öl",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "450 g Geräucherte Kartoffeln",
+    "2 g Gewürzmischung „Hello Paprika“",
+    "200 ml Milch",
+    "6 g Maisstärke",
+    "5 g Gewürzmischung „Hello Muskat“"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "EL [1,5 EL | 2 EL] Öl* in einer großen Pfanne erhitzen. Die rauchigen Kartoffeln in der Pfanne verteilen und ca. 8 - 10 Min. unter gelegentlichem Wenden goldbraun braten. Währenddessen in einem hohen Rührgefäß Milch, Gewürzmischungen „Hello Muskat“ und „Hello Paprika“ und Maisstärke miteinander verrühren.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-mit-rauchigen-kartoffeln-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer zweiten großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen und Schweinelachssteaks bei hoher Hitze je Seite ca. 3 Min. knusprig braten, bis das Fleisch innen noch leicht rosa ist. Mit Salz* und Pfeffer* würzen. Schweinelachssteaks anschließend aus der Pfanne nehmen und in derselben Pfanne erneut 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Champignon-Lauch-Mix darin für 1 – 2 Min. anschwitzen.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-mit-rauchigen-kartoffeln-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Paprika Rezepte",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-mit-rauchigen-kartoffeln-step-3.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 497,
@@ -26,7 +56,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
@@ -35,5 +65,14 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 15 Minuten <= 30.",
+    "Protein Stark: 45 g Protein pro Portion >= 40 g.",
+    "Low Cal: 497 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:00.896Z"
 }

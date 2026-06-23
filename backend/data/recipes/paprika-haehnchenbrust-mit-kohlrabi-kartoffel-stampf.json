@@ -9,7 +9,8 @@
   "sourceUrl": "https://www.hellofresh.de/recipes/paprika-hahnchenbrust-mit-kohlrabi-kartoffel-stampf-669f78a744e4fbb9d21318f5",
   "tags": [
     "hähnchen",
-    "kartoffeln"
+    "kartoffeln",
+    "high protein"
   ],
   "ingredients": [
     "250 g Hähnchenbrustfilet in Lake",
@@ -76,6 +77,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 55 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
   ],
   "classificationNeedsReview": false

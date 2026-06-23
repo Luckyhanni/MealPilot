@@ -9,7 +9,8 @@
   "sourceUrl": "https://www.hellofresh.de/recipes/uberbackene-hahnchenbrust-parmigiana-628b9d63249e4e752606e925",
   "tags": [
     "hähnchen",
-    "käse"
+    "käse",
+    "high protein"
   ],
   "ingredients": [
     "1 Stück Zwiebel",
@@ -73,6 +74,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 58 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
   ],
   "classificationNeedsReview": false

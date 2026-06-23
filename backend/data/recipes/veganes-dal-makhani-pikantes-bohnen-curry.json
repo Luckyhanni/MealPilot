@@ -5,27 +5,74 @@
   "kcal": 749,
   "protein": 28,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/veganes-dal-makhani-pikantes-bohnen-curry-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/veganes-dal-makhani-pikantes-bohnen-curry-6904ca9879e2c370e48f3b7b",
   "tags": [
     "viel gemüse",
-    "vegan",
-    "klassiker"
+    "klassiker",
+    "schnell",
+    "vegetarisch"
   ],
   "categories": [
     "schnell",
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "380 g Bohnen-Mix",
+    "150 g Mini-Fladenbrot",
+    "180 ml Kokosmilch",
+    "160 g würzige Dalsoße",
+    "390 g stückige Tomaten",
+    "1 Stück rote Zwiebel",
+    "3 Stück Knoblauchzehe",
+    "10 g Ingwerpaste (im Kühlbeutel)",
+    "10 g Koriander",
+    "4 g Madras-Curry-Pulver",
+    "4 g Gewürzmischung „Hello Curry“",
+    "4 g Gemüsebrühpulver",
+    "½ Teelöffel Salz",
+    "1 Teelöffel Zucker",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Knoblauch fein reiben. Die Menge von einer Messerspitze beiseitelegen. Zwiebel fein würfeln. Bohnen-Mix durch ein Sieb abgießen und mit Wasser abspülen.",
+      "imageUrl": "/images/hellofresh/veganes-dal-makhani-pikantes-bohnen-curry-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Pfanne 2 EL [3 EL | 4 EL] pflanzliche Margarine* erhitzen. Zwiebeln darin 3 – 4 Min. anschwitzen. Bohnen, Knoblauch, Ingwerpaste, „Hello Curry“, Madras Curry, 0,5 TL [0,75 TL | 1 TL] Salz*, Pfeffer* und 1 TL [1,5 TL | 2 TL] Zucker* in die Pfanne geben und 1 Min. mitbraten. Mit stückigen Tomaten, Dalsoße und Gemüsebrühe ablöschen. Soße 10 – 15 Min. köcheln lassen.",
+      "imageUrl": "/images/hellofresh/veganes-dal-makhani-pikantes-bohnen-curry-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Fladenbrot aus der Packung nehmen, und in Aluminiumfolie wickeln. Im Ofen 5 – 7 Min. aufwärmen lassen. Fladenbrot aus dem Ofen nehmen und in der Aluminiumfolie warmhalten.",
+      "imageUrl": "/images/hellofresh/veganes-dal-makhani-pikantes-bohnen-curry-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Koriander grob hacken. Kokosmilch und die Hälfte des Korianders in die Pfanne geben. Soße bis zum Ende des Rezepts leicht köcheln lassen. Mit Salz*, Pfeffer* und Zucker* abschmecken. In einer kleinen Pfanne 1 EL [1,5 EL | 2 EL] pflanzliche Margarine* und restlichen Knoblauch erhitzen, bis die Margarine* geschmolzen ist.",
+      "imageUrl": "/images/hellofresh/veganes-dal-makhani-pikantes-bohnen-curry-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Fladenbrot aus der Aluminiumfolie nehmen, waagerecht halbieren und mit Knoblauch-Margarine* beträufeln. Mit Salz* würzen.",
+      "imageUrl": "/images/hellofresh/veganes-dal-makhani-pikantes-bohnen-curry-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Dal-Makhani auf tiefe Teller verteilen. Fladenbrot daneben anrichten. Mit restlichem Koriander garnieren.",
+      "imageUrl": "/images/hellofresh/veganes-dal-makhani-pikantes-bohnen-curry-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 749,
     "protein": 28
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -39,5 +86,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (milch).",
+    "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:27:39.511Z"
 }

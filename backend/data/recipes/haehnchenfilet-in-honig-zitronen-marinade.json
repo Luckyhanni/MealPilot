@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/haehnchenfilet-in-honig-zitronen-marinade-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenfilet-in-honig-zitronen-marinade-618a3df9bf4792051764f60a",
   "tags": [
-    "hähnchen"
+    "hähnchen",
+    "high protein"
   ],
   "ingredients": [
     "250 g Hähnchenbrustfilet",
@@ -70,6 +71,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 55 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
   ],
   "classificationNeedsReview": false

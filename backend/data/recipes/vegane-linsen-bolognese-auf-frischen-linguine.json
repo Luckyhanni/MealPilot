@@ -5,12 +5,14 @@
   "kcal": 977,
   "protein": 31,
   "durationMinutes": 15,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/vegane-linsen-bolognese-auf-frischen-linguine-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/vegane-linsen-bolognese-auf-frischen-linguine-695b7f4b5c0be345fe767627",
   "tags": [
     "viel gemüse",
     "family",
     "extra schnell",
+    "schnell",
+    "vegetarisch",
     "vegan"
   ],
   "categories": [
@@ -18,15 +20,48 @@
     "vegetarisch",
     "vegan"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "1 Stück Karotte",
+    "1 Stück Tomate",
+    "2 Stück Knoblauchzehe",
+    "1 Stück Zwiebel",
+    "10 g Basilikum",
+    "4 g Gewürzmischung „Hello Buon Appetito“",
+    "4 g Gemüsebrühpulver",
+    "390 g braune Linsen",
+    "300 g Tomatensugo",
+    "375 g frische Linguine",
+    "20 g Pinienkerne",
+    "150 ml Wasser",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "1 Teelöffel Balsamicoessig",
+    "2 Esslöffel Olivenöl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Zwiebel fein würfeln. Karotte längs halbieren und grob raspeln. Tomaten in 1 cm Würfel schneiden. Basilikumblätter in feine Streifen schneiden. Linsen in ein Sieb gießen und mit Wasser abspülen. In einer großen Pfanne ohne Fettzugabe Pinienkernen 1 – 2 Min. rösten. Aus der Pfanne nehmen und beiseite stellen. In derselben Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Die Hälfte vom Knoblauch darein pressen, zusammen mit Zwiebel und Karotte darin 2 – 3 Min. farblos anschwitzen.",
+      "imageUrl": "/images/hellofresh/vegane-linsen-bolognese-auf-frischen-linguine-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Linsen, Tomatensugo, „Hello Buon Appetito“, Gemüsebrühe dazugeben und 1 – 2 weitere Min. anbraten. Mit 150 ml [225 ml | 300 ml] Wasser* ablöschen und kurz köcheln lassen. Mit Salz* und Pfeffer* abschmecken. In einer großen Schüssel Tomatenwürfel, Hälfte der Basilikumblätter, nach Belieben Knoblauch dazu pressen, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 TL [1,5 TL | 2 TL] Balsamicoessig*, Salz* und Pfeffer* vermengen und kurz marinieren lassen. Tipp: Falls Du keinen frischen Knoblauch magst, halte ihn zurück.",
+      "imageUrl": "/images/hellofresh/vegane-linsen-bolognese-auf-frischen-linguine-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einen großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen lassen. Linguini darin 3 Min. bissfest kochen. Anschließend durch ein Sieb abgießen. Linguine auf tiefe Teller verteilen und mit der Bolognese toppen. Marinierte Tomaten darauf anrichten und mit Pinienkernen garnieren.",
+      "imageUrl": "/images/hellofresh/vegane-linsen-bolognese-auf-frischen-linguine-step-3.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 977,
     "protein": 31
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -41,5 +76,12 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegan",
+  "classificationReasons": [
+    "Schnell: 15 Minuten <= 30.",
+    "Vegan: keine Fleisch-/Fischbegriffe und keine tierischen Produktbegriffe erkannt."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:35.270Z"
 }

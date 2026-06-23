@@ -5,20 +5,66 @@
   "kcal": 560,
   "protein": 43,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/hahnchenbrust-mit-zwiebel-chutney-haube-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/hahnchenbrust-mit-zwiebel-chutney-haube-669f804744e4fbb9d2131a0a",
   "tags": [
     "kalorien im blick",
+    "ohne weizen",
     "schnell",
-    "ohne weizen"
+    "high protein",
+    "low cal"
   ],
   "categories": [
     "schnell",
     "high-protein",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Hähnchenbrustfilet in Lake",
+    "600 g vorw. festk. Kartoffeln",
+    "200 g Buschbohnen",
+    "40 g Würziges Zwiebel-Chutney",
+    "1 Stück Apfel",
+    "1 Stück Zwiebel",
+    "10 g Petersilie, glatt",
+    "75 g Naturjoghurt",
+    "1 Esslöffel Butter",
+    "1 Esslöffel Olivenöl",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. In einen großen Topf reichlich heißes Wasser* füllen und aufkochen. Enden der Buschbohnen entfernen. Buschbohnen in den großen Topf geben und 9 – 10 Min. garen. Danach durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/hahnchenbrust-mit-zwiebel-chutney-haube-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einen zweiten großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen. Kartoffeln halbieren oder vierteln. Kartoffeln in den großen Topf geben und 15 – 17 Min. weich garen. Danach durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/hahnchenbrust-mit-zwiebel-chutney-haube-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Petersilie grob hacken. Apfel vierteln, entkernen und in dünne Streifen schneiden. Zwiebel halbieren und in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/hahnchenbrust-mit-zwiebel-chutney-haube-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In dem großen Topf 0,5 EL [0,75 EL | 1 EL] Öl* erhitzen. Zwiebel, Apfel und Bohnen darin 5 – 6 Min. anbraten. Mit Salz* und Pfeffer* würzen. Ggfs. warm halten. In der Zwischenzeit in einer kleinen Schüssel Joghurt, die Hälfte der Petersilie, Salz* und Pfeffer* zu einem Dressing vermengen.",
+      "imageUrl": "/images/hellofresh/hahnchenbrust-mit-zwiebel-chutney-haube-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Hähnchenbrust waagerecht aufschneiden, aber nicht durchschneiden und wie ein Buch aufklappen. Hähnchenbrust rundum salzen* und pfeffern*. In einer großen Pfanne 0,5 EL [0,75 EL | 1 EL] Öl* erhitzen. Hähnchenbrust darin 2 – 3 Min. auf einer Seite anbraten. Dann wenden, die Oberseite mit Zwiebel-Chutney bestreichen und 2 – 3 weitere Min. anbraten, bis das Fleisch innen nicht mehr rosa ist.",
+      "imageUrl": "/images/hellofresh/hahnchenbrust-mit-zwiebel-chutney-haube-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Kartoffeln nach der Garzeit zusammen mit 1 EL [1,5 EL | 2 EL] Butter* und Salz* zurück in den Topf geben. Kartoffeln, Bohnengemüse und Hähnchenbrust auf Tellern anrichten. Mit restlicher Petersilie toppen und mit dem Dip genießen.",
+      "imageUrl": "/images/hellofresh/hahnchenbrust-mit-zwiebel-chutney-haube-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 560,
@@ -26,7 +72,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -35,5 +81,14 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Protein Stark: 43 g Protein pro Portion >= 40 g.",
+    "Low Cal: 560 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:54.635Z"
 }

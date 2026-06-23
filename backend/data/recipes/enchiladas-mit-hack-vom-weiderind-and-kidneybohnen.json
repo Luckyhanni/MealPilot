@@ -7,7 +7,9 @@
   "durationMinutes": 35,
   "imageUrl": "/images/hellofresh/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/enchiladas-mit-hack-vom-weiderind-and-kidneybohnen-69c257d8814691069108fbab",
-  "tags": [],
+  "tags": [
+    "high protein"
+  ],
   "ingredients": [
     "6 g Gewürzmischung „Hello Fiesta“",
     "75 g junger Gouda, gerieben",
@@ -52,6 +54,7 @@
   "nutritionSource": "per-serving",
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 47.3 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
   ],
   "classificationNeedsReview": false,

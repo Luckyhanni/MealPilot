@@ -9,6 +9,7 @@
   "sourceUrl": "https://www.hellofresh.de/recipes/seelachs-auf-sahnigem-linsengemuse-69c25804814691069108fd16",
   "tags": [
     "schnell",
+    "high protein",
     "low cal"
   ],
   "ingredients": [
@@ -75,6 +76,7 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 15 Minuten <= 30.",
+    "Protein Stark: 43.8 g Protein pro Portion >= 40 g.",
     "Low Cal: 475 kcal <= 650.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
   ],

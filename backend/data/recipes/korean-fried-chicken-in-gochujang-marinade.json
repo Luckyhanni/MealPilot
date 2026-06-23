@@ -9,7 +9,8 @@
   "sourceUrl": "https://www.hellofresh.de/recipes/korean-fried-chicken-in-gochujang-marinade-66222a935c9ad41013c107a4",
   "tags": [
     "hähnchen",
-    "asiatisch"
+    "asiatisch",
+    "high protein"
   ],
   "ingredients": [
     "250 g Hähnchengeschnetzeltes",
@@ -80,6 +81,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 55 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
   ],
   "classificationNeedsReview": false

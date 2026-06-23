@@ -5,27 +5,72 @@
   "kcal": 729,
   "protein": 18,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/sweet-chili-avocado-bowl-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/sweet-chili-avocado-bowl-695b7f6f5c0be345fe7676b1",
   "tags": [
     "viel gemüse",
     "schnell",
-    "vegan"
+    "vegetarisch"
   ],
   "categories": [
     "schnell",
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "1 Stück Porree",
+    "1 Stück Gurke",
+    "10 ml Sesamöl",
+    "20 ml Sojasoße",
+    "50 g Sweet Chili Soße",
+    "10 g Sesamsamen",
+    "150 g Basmatireis",
+    "1 Stück Avocado",
+    "25 g Vegane Mayonnaise mit schwarzem Sesam",
+    "2 Stück Knoblauchzehe",
+    "350 ml Wasser",
+    "nach Geschmack Salz",
+    "1 Esslöffel Öl",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Knoblauch fein hacken. In einem kleinen Topf mit Deckel 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Hälfte Knoblauch darin 1 Min. anschwitzen. Topfinhalt mit 300 ml [450 ml | 600 ml] heißem Wasser* ablöschen. 0,25 TL [0,5 TL | 0,5 TL] Salz* dazugeben und aufkochen lassen. Reis zugeben und bei niedriger Hitze 10 Min. abgedeckt köcheln lassen. Anschließend vom Herd nehmen und abgedeckt 10 Min. ziehen lassen.",
+      "imageUrl": "/images/hellofresh/sweet-chili-avocado-bowl-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Porree längs halbieren und vorsichtig auswaschen. Dann in 1 cm Ringe schneiden. Gurke längs vierteln und in 1 cm Würfel schneiden.",
+      "imageUrl": "/images/hellofresh/sweet-chili-avocado-bowl-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Schüssel Sesamöl, Sojasoße, Sweet-Chili-Soße, restlichen Knoblauch und 50 ml [75 ml | 100 ml] Wasser* zu einem Dressing verrühren. Mit Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/sweet-chili-avocado-bowl-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Porree darin 3 – 4 Min. bei mittlerer Hitze anbraten. Mit 2 EL [3 EL | 4 EL] vom Dressing ablöschen und 1 – 2 Min. glasieren lassen.",
+      "imageUrl": "/images/hellofresh/sweet-chili-avocado-bowl-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Gurkenwürfel und die Hälfte der Sesamsamen unter das Dressing heben und kräftig mit Salz* und Pfeffer* abschmecken. Avocado halbieren, entkernen und in Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/sweet-chili-avocado-bowl-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Knoblauch-Reis auf Teller verteilen. Glasierten Porree, Gurken-Salat und Avocado darauf anrichten. Avocado mit restlichem Sesam toppen. Mit veganer schwarzer Sesam Mayonnaise genießen.",
+      "imageUrl": "/images/hellofresh/sweet-chili-avocado-bowl-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 729,
     "protein": 18
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -39,5 +84,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (mayo, mayonnaise).",
+    "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:27:13.353Z"
 }

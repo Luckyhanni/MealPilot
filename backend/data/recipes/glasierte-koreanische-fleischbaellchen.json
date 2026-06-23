@@ -9,7 +9,8 @@
   "sourceUrl": "https://www.hellofresh.de/recipes/glasierte-koreanische-fleischballchen-65cf727852f6e2fd05cce0e2",
   "tags": [
     "hackfleisch",
-    "asiatisch"
+    "asiatisch",
+    "high protein"
   ],
   "ingredients": [
     "250 g gemischte Hackfleischzubereitung",
@@ -73,6 +74,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 56 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
   ],
   "classificationNeedsReview": false

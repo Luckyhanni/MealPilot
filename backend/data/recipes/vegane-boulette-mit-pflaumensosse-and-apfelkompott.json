@@ -5,26 +5,68 @@
   "kcal": 725,
   "protein": 32,
   "durationMinutes": 35,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/vegane-boulette-mit-pflaumensosse-and-apfelkompott-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/vegane-boulette-mit-pflaumensosse-and-apfelkompott-692d786f1ca49f0d8bd37a9f",
   "tags": [
-    "vegan",
     "family",
     "viel gemüse"
   ],
-  "categories": [
-    "vegetarisch",
-    "vegan"
+  "categories": [],
+  "ingredients": [
+    "2 Stück Beyond Meat Vegan Burger Patty",
+    "600 g mehligk. Kartoffeln",
+    "1 Stück Brokkoli",
+    "1 Stück Apfel",
+    "40 g Pflaumenkonfitüre",
+    "2 Stück Schalotte",
+    "24 g Balsamico Creme",
+    "1 Stück Knoblauchzehe",
+    "25 g Kräftige vegane Gemüsebrühe",
+    "100 ml Wasser",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "1 Esslöffel Öl",
+    "2 Esslöffel pflanzliche Margarine"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. In zwei große Töpfe reichlich heißes Wasser* füllen und aufkochen. Apfel schälen, vierteln und entkernen. Apfelviertel in ca. 1 cm Stücke schneiden. Kartoffeln schälen und in ca. 3 cm Stücke schneiden. Brokkoli in mundgerechte Röschen teilen. Schalotten fein hacken. Knoblauch abziehen.",
+      "imageUrl": "/images/hellofresh/vegane-boulette-mit-pflaumensosse-and-apfelkompott-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Kartoffelstücke, Knoblauchzehe und kräftige vegane Gemüsebrühe in den einen Topf mit kochendem Wasser* geben und ca. 15 Min. kochen, bis die Kartoffeln weich sind. Inzwischen mit dem Rezept fortfahren. In einem hohen Rührgefäß Pflaumenmus, Balsamicocreme und 100 ml [150 ml | 200 ml] Wasser* verrühren.",
+      "imageUrl": "/images/hellofresh/vegane-boulette-mit-pflaumensosse-and-apfelkompott-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einem kleinen Topf mit Deckel Apfelstücke mit 2 EL [3 EL | 4 EL] Wasser* abgedeckt bei mittlerer Hitze ca. 5 – 6 Min. köcheln lassen, bis der Apfel weich gekocht ist. Dabei gelegentlich umrühren. Apfelstücke nach Ende der Kochzeit mithilfe eines Kartoffelstampfers fein zerstampfen und zum Abkühlen beiseitestellen. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/vegane-boulette-mit-pflaumensosse-and-apfelkompott-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Brokkoli in den zweiten Topf mit heißem Wasser geben, salzen* und 4 – 5 Min. bissfest garen. Danach durch ein Sieb abgießen, zurück in den Topf geben und warm halten. Kartoffeln nach Ende der Kochzeit durch ein Sieb abgießen und gleich zurück in den Topf geben. EL [1,5 EL | 2 EL] Margarine* hinzugeben und Kartoffeln samt Knoblauchzehe mithilfe eines Kartoffelstampfers zu einem Stampf verarbeiten. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/vegane-boulette-mit-pflaumensosse-and-apfelkompott-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Vegane Burgerpatties 3 – 4 Min. anbraten. Patties wenden, Schalotten dazugeben und 1 – 2 Min. weiterbraten. Schalotten dabei gelegentlich umrühren, damit sie nicht anbrennen. Pfanneninhalt mit vorbereiteter Soße ablöschen, 1 EL [1,5 EL | 2 EL] Margarine* hinzufügen und ca. 2 – 3 Min. köcheln lassen, bis die Soße dickflüssig ist. Mit Salz und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/vegane-boulette-mit-pflaumensosse-and-apfelkompott-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Burgerpatties mit Soße, Brokkoli und Stampf nebeneinander auf Tellern anrichten. Apfelkompott dazu reichen und genießen.",
+      "imageUrl": "/images/hellofresh/vegane-boulette-mit-pflaumensosse-and-apfelkompott-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 725,
     "protein": 32
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -39,5 +81,12 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (meat).",
+    "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:27:33.093Z"
 }

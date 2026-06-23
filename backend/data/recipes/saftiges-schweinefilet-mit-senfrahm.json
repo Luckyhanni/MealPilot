@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/saftiges-schweinefilet-mit-senfrahm-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/saftiges-schweinefilet-mit-senfrahm-64190895cc96bbe9f40cada7",
   "tags": [
-    "gemischt"
+    "gemischt",
+    "high protein"
   ],
   "ingredients": [
     "250 g Schweinefilet",
@@ -69,6 +70,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 54 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
   ],
   "classificationNeedsReview": false

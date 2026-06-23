@@ -5,18 +5,52 @@
   "kcal": 459,
   "protein": 39,
   "durationMinutes": 15,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/honig-senf-hahnchensalat-mit-avocado-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/honig-senf-hahnchensalat-mit-avocado-64998c1fb65deb94af04dd68",
   "tags": [
+    "kalorienreduziert",
     "schnell",
-    "kalorienreduziert"
+    "low cal"
   ],
   "categories": [
     "schnell",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Hähnchengeschnetzeltes, mariniert",
+    "1 Stück Avocado",
+    "150 g Joghurt",
+    "1 Stück Salatherz (Romana)",
+    "60 g Kräuter-Croûtons",
+    "1 Stück Tomate",
+    "1 Stück rote Zwiebel",
+    "15 ml süßer Senf",
+    "1 Esslöffel Öl",
+    "1 Esslöffel Honig",
+    "1 Teelöffel Essig*",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "17 g körniger Senf",
+    "10 ml mittelscharfer Senf",
+    "1 Esslöffel Olivenöl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Zwiebel halbieren und in feine Streifen schneiden. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Hähnchengeschnetzeltes darin 3 – 4 Min. anbraten. Zwiebelstreifen hinzugeben und für 1 – 2 weitere Min. braten. Mit Salz* und Pfeffer* würzen. Ggf. warm halten. In der Zwischenzeit mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/honig-senf-hahnchensalat-mit-avocado-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Schüssel körnigen Senf, süßen Senf, Joghurt, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 EL [1,5 EL | 2 EL] Honig*, 1 TL [1,5 TL | 2 TL] Essig*, Salz* und Pfeffer* zu einem Dressing vermengen. Tomate halbieren und in feine Halbmonde schneiden. Romanasalat in 2 cm Streifen schneiden. Avocado halbieren, entkernen und in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/honig-senf-hahnchensalat-mit-avocado-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Avocado Rezepte Tomaten Rezepte",
+      "imageUrl": "/images/hellofresh/honig-senf-hahnchensalat-mit-avocado-step-3.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 459,
@@ -24,7 +58,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
@@ -33,5 +67,13 @@
   "difficulty": "Mittel",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 15 Minuten <= 30.",
+    "Low Cal: 459 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:59.484Z"
 }

@@ -5,26 +5,72 @@
   "kcal": 980,
   "protein": 35,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/vegan-winner-winner-crispy-burger-dinner-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/vegan-winner-winner-crispy-burger-dinner-6904ca9d79e2c370e48f3bb1",
   "tags": [
-    "vegan",
-    "wenig vorbereitung"
+    "wenig vorbereitung",
+    "schnell",
+    "vegetarisch"
   ],
   "categories": [
     "schnell",
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "180 g The Vegetarian Butcher Winner Winner Crispy Dinner",
+    "160 g vegane Brioche Burger Buns",
+    "2 Stück Ofenkartoffel",
+    "1 Stück Tomate (Roma)",
+    "1 Stück rote Zwiebel",
+    "60 ml BBQ-Soße",
+    "50 g vegane Mayonnaise",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Esslöffel Olivenöl",
+    "1 Teelöffel Weißweinessig",
+    "1 Esslöffel Wasser",
+    "10 g Olivenöl",
+    "1 Teelöffel Balsamicoessig"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Kartoffel nach Belieben schälen 2 cm Spalten schneiden. Kartoffeln auf einem mit Backpapier belegten Backblech verteilen, etwas Platz für die Burgerbrötchen lassen, mit 1 EL [1,5 EL | 2 EL] Öl* und etwas Salz* vermengen und im vorgeheizten Ofen für ca. 25 Min. goldbraun backen. Währenddessen fortfahren.",
+      "imageUrl": "/images/hellofresh/vegan-winner-winner-crispy-burger-dinner-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Zwiebel abziehen, halbieren und in feine Streifen schneiden. g [15 g | 20 g] Öl* und Zwiebelstreifen in den Mixtopf geben und 10 Min./100 °C/Reverse/Stufe 1 dünsten. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/vegan-winner-winner-crispy-burger-dinner-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Tomate in feine Scheiben schneiden. Leicht salzen*.",
+      "imageUrl": "/images/hellofresh/vegan-winner-winner-crispy-burger-dinner-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Nach der Zwiebel-Dünstzeit 1 TL [1,5 TL | 2 TL] Balsamicoessig*, 1 EL [1,5 EL | 2 EL] Wasser* und die Hälfte der BBQ-Sauce in den Mixtopf zugeben und 5 Min./90 °C/Reverse/Stufe 1 weiter dünsten. Min. vor Ende der Kartoffel-Backzeit mit der Zubereitung fortfahren.",
+      "imageUrl": "/images/hellofresh/vegan-winner-winner-crispy-burger-dinner-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen und die veganen Burger 3 – 4 Min. je Seite anbraten. Burgerbrötchen aufschneiden und in den letzten 3 – 4 Min. der Kartoffelbackzeit mit auf das Backblech geben und aufbacken.",
+      "imageUrl": "/images/hellofresh/vegan-winner-winner-crispy-burger-dinner-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Burgerbrötchen auf eine Seite mit BBQ-Soße und auf die andere Seite mit etwas Mayo bestreichen. Die Unterseite mit den Tomaten belegen. Vegane Burgerpatties auf die Tomaten geben und mit Zwiebelstreifen toppen. Burger schließen und zusammen mit den Kartoffelsticks auf Teller anrichten. Restliche Mayonaise dazureichen und genießen.",
+      "imageUrl": "/images/hellofresh/vegan-winner-winner-crispy-burger-dinner-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 980,
     "protein": 35
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -38,5 +84,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (mayo, mayonnaise).",
+    "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:27:30.295Z"
 }

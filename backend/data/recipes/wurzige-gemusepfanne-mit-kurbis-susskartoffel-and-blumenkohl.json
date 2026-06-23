@@ -5,21 +5,70 @@
   "kcal": 496,
   "protein": 13,
   "durationMinutes": 35,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/wurzige-gemusepfanne-mit-kurbis-susskartoffel-and-blumenkohl-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/wurzige-gemusepfanne-mit-kurbis-susskartoffel-and-blumenkohl-63282e9dd4a75454730b8bca",
   "tags": [
-    "vegetarisch",
     "klimaheld",
     "kalorien im blick",
     "viel gemüse",
-    "kalorienreduziert"
+    "kalorienreduziert",
+    "low cal",
+    "vegetarisch"
   ],
   "categories": [
     "low-cal",
     "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "1 Stück rote Zwiebel",
+    "1 Stück Süßkartoffel",
+    "200 g Hokkaido-Kürbis, geschält und gewürfelt",
+    "1 Stück rote Paprika",
+    "1 Stück Blumenkohl",
+    "2 g gemahlener Kumin",
+    "2 g Cayennepfeffer",
+    "100 g Joghurt",
+    "10 g Koriander/Petersilie glatt",
+    "4 g Gemüsebrühe",
+    "3 Esslöffel Öl",
+    "1 Esslöffel Olivenöl",
+    "100 ml Wasser",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Essig*"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Süßkartoffel schälen und in 2 cm Würfel schneiden. Zwiebel in feine Streifen schneiden. Blumenkohl in mundgerechte Röschen aufteilen und Röschen in 1 cm Scheiben schneiden.",
+      "imageUrl": "/images/hellofresh/wurzige-gemusepfanne-mit-kurbis-susskartoffel-and-blumenkohl-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Pfanne mit Deckel 3 EL [4,5 EL | 6 EL] Öl* erhitzen und darin Süßkartoffel- und Hokkaidowürfel für 3 – 4 Min. rundum anbraten. Drei Viertel der Zwiebelstreifen hinzugeben und für weitere 1 – 2 Min. anbraten. Tipp: Wenn du für 3 oder 4 Personen kochst, benutze 2 Pfannen. Blumenkohl, Kumin und die Hälfte Cayenne Pfeffer hinzugeben und für 1 weitere Min. anbraten.",
+      "imageUrl": "/images/hellofresh/wurzige-gemusepfanne-mit-kurbis-susskartoffel-and-blumenkohl-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Pfanneninhalt mit Gemüsebrühe und 100 ml [150 ml | 200 ml] Wasser* ablöschen und einmal aufkochen lassen. Hitze reduzieren und abgedeckt für 12 – 15 Min. köcheln, bis das Gemüse gar ist. In der Zwischenzeit mit dem Paprikasalat fortfahren. Deckel absetzen und weiter köcheln lassen, bis die gesamte Flüssigkeit verdampft ist. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/wurzige-gemusepfanne-mit-kurbis-susskartoffel-and-blumenkohl-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Paprika halbieren, entkernen und in feine Streifen schneiden. Kräuter zusammen grob hacken.",
+      "imageUrl": "/images/hellofresh/wurzige-gemusepfanne-mit-kurbis-susskartoffel-and-blumenkohl-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Schüssel 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 TL [1,5 TL | 2 TL] Essig*, Salz* und Pfeffer* zu einem Dressing verrühren. Paprikastreifen, die Hälfte der Kräuter und restliche Zwiebelstreifen dazugeben und bis zum Ende des Rezepts marinieren lassen.",
+      "imageUrl": "/images/hellofresh/wurzige-gemusepfanne-mit-kurbis-susskartoffel-and-blumenkohl-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Blumenkohl Rezepte Paprika Rezepte Kürbis Rezepte",
+      "imageUrl": "/images/hellofresh/wurzige-gemusepfanne-mit-kurbis-susskartoffel-and-blumenkohl-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 496,
@@ -27,11 +76,18 @@
   },
   "nutritionSource": "per-serving",
   "nutritionNeedsReview": false,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Low Cal: 496 kcal <= 650.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (joghurt)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:51.762Z"
 }

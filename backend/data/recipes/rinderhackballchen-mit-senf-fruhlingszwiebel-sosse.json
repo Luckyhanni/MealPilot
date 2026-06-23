@@ -5,7 +5,7 @@
   "kcal": 760,
   "protein": 39,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/rinderhackballchen-mit-senf-fruhlingszwiebel-sosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/rinderhackballchen-mit-senf-fruhlingszwiebel-sosse-668e67edda99f37bb7c068c5",
   "tags": [
     "schnell"
@@ -13,8 +13,55 @@
   "categories": [
     "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "200 g Hackfleischzubereitung vom Weiderind",
+    "50 g Senfsoße mit Frühlingszwiebeln",
+    "600 g vorw. festk. Kartoffeln",
+    "50 g Blattsalatmischung",
+    "1 Stück Tomate (Roma)",
+    "25 g Wildpreiselbeerenmarmelade",
+    "20 g Kräuterbutter",
+    "25 g Pankomehl",
+    "10 ml mittelscharfer Senf",
+    "8 ml Worcester Sauce",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Olivenöl",
+    "500 g Wasser",
+    "1 Teelöffel Balsamicoessig"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Kartoffeln schälen, in ca. 2 cm Stücke schneiden und in den Varoma-Behälter geben. Dabei darauf achten, dass genügend Garschlitze frei bleiben. Kartoffeln salzen*.",
+      "imageUrl": "/images/hellofresh/rinderhackballchen-mit-senf-fruhlingszwiebel-sosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Hackfleisch, Pankomehl, Senf, Worcester Sauce, Salz* und Pfeffer* in den Mixtopf geben und 10 Sek./Reverse/Stufe 5 vermengen. Varoma-Einlegeboden so mit Backpapier belegen, dass die seitlichen Garschlitze freibleiben. Aus der Hackmasse 8 [12 | 16] Bällchen formen, auf dem Varoma-Einlegeboden verteilen und diesen in den Varoma-Behälter einsetzen. Varoma verschließen.",
+      "imageUrl": "/images/hellofresh/rinderhackballchen-mit-senf-fruhlingszwiebel-sosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "g Wasser*, 5 g Salz* und 5 g Öl* in den Mixtopf geben, Varoma aufsetzen und 28 Min./Varoma/Stufe 1 garen. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/rinderhackballchen-mit-senf-fruhlingszwiebel-sosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Tomate in 1 cm Würfel schneiden. In einer zweiten großen Schüssel Wildpreiselbeermarmelade, 1 TL [1,5 TL | 2 TL] Balsamicoessig*, 1 EL [1,5 EL | 2 EL] Olivenöl* und 1 EL [1,5 EL | 2 EL] Wasser* vermengen. Mit Salz* und Pfeffer* abschmecken. Salatmischung dazu geben, aber noch nicht unterheben.",
+      "imageUrl": "/images/hellofresh/rinderhackballchen-mit-senf-fruhlingszwiebel-sosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Varoma abnehmen, öffnen (Vorsicht heiß!) und Kartoffeln in eine große Schüssel geben. Kräuterbutter in kleinen Stücken zugeben, unterheben und Kartoffeln mit Salz* und Pfeffer* abschmecken. Salat unter das Dressing heben.",
+      "imageUrl": "/images/hellofresh/rinderhackballchen-mit-senf-fruhlingszwiebel-sosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Hackbällchen, Salat und Kräuter-Kartoffeln auf Teller anrichten. Mit Frühlingszwiebel-Senf-Soße servieren.",
+      "imageUrl": "/images/hellofresh/rinderhackballchen-mit-senf-fruhlingszwiebel-sosse-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 760,
@@ -22,7 +69,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -31,5 +78,12 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:46.861Z"
 }

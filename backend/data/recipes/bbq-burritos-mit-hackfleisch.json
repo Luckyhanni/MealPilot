@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/bbq-burritos-mit-hackfleisch-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/bbq-burritos-mit-hackfleisch-6405c82435f29dadab0c25ea",
   "tags": [
-    "hackfleisch"
+    "hackfleisch",
+    "high protein"
   ],
   "ingredients": [
     "250 g gemischtes Hackfleisch",
@@ -54,6 +55,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 57 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
   ],
   "classificationNeedsReview": false

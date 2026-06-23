@@ -11,7 +11,8 @@
     "hähnchen",
     "reis",
     "asiatisch",
-    "schnell"
+    "schnell",
+    "high protein"
   ],
   "ingredients": [
     "250 g Hähnchenbrustfilet in Lake",
@@ -78,6 +79,7 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 30 Minuten <= 30.",
+    "Protein Stark: 55 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
   ],
   "classificationNeedsReview": false

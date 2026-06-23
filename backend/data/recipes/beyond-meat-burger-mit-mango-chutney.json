@@ -5,26 +5,74 @@
   "kcal": 1186,
   "protein": 39,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-mango-chutney-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/beyond-meat-burger-mit-mango-chutney-692d7723126207051adca477",
   "tags": [
-    "vegan",
-    "viel gemüse"
+    "viel gemüse",
+    "schnell"
   ],
   "categories": [
-    "schnell",
-    "vegetarisch",
-    "vegan"
+    "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "2 Stück Beyond Meat Vegan Burger Patty",
+    "160 g vegane Brioche Burger Buns",
+    "400 g vorw. festk. Kartoffeln",
+    "150 g Salatherz (Romana)",
+    "1 Stück Mango",
+    "1 Stück Tomate",
+    "2 Stück Schalotte",
+    "30 g gehackter Knoblauch & Ingwer in Öl",
+    "16 ml Sriracha Sauce",
+    "75 g vegane Mayonnaise",
+    "4 g Madras-Curry-Pulver",
+    "2 Esslöffel Öl",
+    "nach Geschmack pflanzliche Margarine",
+    "1.5 Esslöffel Zucker",
+    "2 Esslöffel Weißweinessig",
+    "100 ml Wasser",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Kartoffeln halbieren und in 1 cm Spalten schneiden. Kartoffeln auf einem mit Backpapier belegten Backblech verteilen, mit 1 EL [1,5 EL | 2 EL] Öl*, der Hälfte Madras-Curry-Pulver, Salz* und Pfeffer* vermengen und im Backofen 25 – 30 Min. garen, bis sie goldbraun sind.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-mango-chutney-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Mango schälen, Fruchtfleisch vom Kern schneiden und in 1 cm Würfel schneiden. Tomate halbieren, in dünne Scheiben schneiden und salzen*. Salatblätter vom Strunk entfernen und nach Belieben in mundgerechte Stücke schneiden. Schalotte halbieren und in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-mango-chutney-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer kleinen Schüssel vegane Mayonnaise und Sriracha zu einem Dip verrühren. In einer zweiten kleinen Schüssel 100 ml [150 ml | 200 ml] heißes Wasser*, 2 EL [3 EL | 4 EL] Essig*, 1 TL [1,5 TL | 2 TL] Zucker* und Salz* vermengen. Die Hälfte der Schalottenstreifen dazugeben und ziehen lassen.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-mango-chutney-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Einen kleinen Topf erhitzen. Knoblauch & Ingwer in Öl und restliche Schalottestreifen darin 1 – 2 Min. anbraten. Mangowürfel, restliches Madras-Curry-Pulver, 1 EL [1,5 EL | 2 EL] Zucker*, Salz* und Pfeffer* dazugeben und mit 50 ml [75 ml | 100 ml] Wasser* ablöschen. 6 – 7 Min. einköcheln lassen, bis das Chutney eingedickt ist.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-mango-chutney-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Beyond Burger 2 – 3 Min. je Seite darin anbraten. Burgerbrötchen aufschneiden und in den letzten 3 – 4 Min. der Kartoffel-Backzeit mit auf das Backblech geben und aufbacken. Tipp: Burgerbrötchen nach Belieben mit pflanzlicher Margarine* bestreichen. Eingelegte Schalottenstreifen in das Chutney rühren.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-mango-chutney-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Burgerbrötchen auf beiden Seiten mit Sriracha-Dip bestreichen. Unterseite mit Tomatenscheiben und Salat belegen. Beyond Meat Patties darauf geben, mit Mango-Chutney toppen und den Burger schließen. Restliche Tomate, Salat und Mango-Chutney in den Topf vermengen. Burger, Kartoffelspalten und Mango-Salat auf Tellern anrichten. Restlichen Dip dazu servieren und genießen.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-mango-chutney-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1186,
     "protein": 39
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -38,5 +86,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (meat).",
+    "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:25:10.388Z"
 }

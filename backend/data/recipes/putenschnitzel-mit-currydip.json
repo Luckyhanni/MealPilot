@@ -9,6 +9,7 @@
   "sourceUrl": "https://www.hellofresh.de/recipes/putenschnitzel-mit-currydip-69c257fcd795c2c9e4ffd97e",
   "tags": [
     "schnell",
+    "high protein",
     "low cal"
   ],
   "ingredients": [
@@ -77,6 +78,7 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 30 Minuten <= 30.",
+    "Protein Stark: 46.1 g Protein pro Portion >= 40 g.",
     "Low Cal: 628 kcal <= 650.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (pute, putenbrust)."
   ],

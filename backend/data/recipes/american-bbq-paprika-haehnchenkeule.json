@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/american-bbq-paprika-haehnchenkeule-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/american-bbq-paprika-hahnchenkeule-65d48bda6c4f2239898764e6",
   "tags": [
-    "hähnchen"
+    "hähnchen",
+    "high protein"
   ],
   "ingredients": [
     "500 g Hähnchenkeule in Kräutermarinade",
@@ -74,6 +75,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 48 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
   ],
   "classificationNeedsReview": false

@@ -5,25 +5,68 @@
   "kcal": 1009,
   "protein": 38,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-onion-rings-and-tomate-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/beyond-meat-burger-mit-onion-rings-and-tomate-68e5304b311cc828e18d48cc",
   "tags": [
-    "vegan"
+    "schnell"
   ],
   "categories": [
-    "schnell",
-    "vegetarisch",
-    "vegan"
+    "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "2 Stück Beyond Meat Vegan Burger Patty",
+    "160 g vegane Brioche Burger Buns",
+    "3 Stück Ofenkartoffel",
+    "25 g vegane Mayonnaise",
+    "1 Stück Zwiebel",
+    "20 ml mittelscharfer Senf",
+    "1 Stück Tomate (Roma)",
+    "50 g Ketchup",
+    "6 g Gewürzmischung „Hello Paprika“",
+    "2 Esslöffel Mehl",
+    "4 Esslöffel Wasser",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Kartoffeln in 4 oder 6 Spalten schneiden. Kartoffeln auf ein mit Backpapier belegtes Backblech geben, mit 1 EL [1,5 EL | 2 EL] Öl*, die Hälfte „Hello Paprika“, Salz* und Pfeffer* vermengen und im Ofen 25 – 30 Min. goldbraun backen.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-onion-rings-and-tomate-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Tomate in 0,5 cm Scheiben schneiden, salzen*. Zwiebel halbieren und in feine Streifen schneiden. Burger Buns waagerecht aufschneiden. In einer kleinen Schüssel vegane Mayonnaise, Ketchup und Senf zu einem Dip verrühren.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-onion-rings-and-tomate-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Schüssel 2 EL [3 EL | 4 EL] Mehl*, restliche „Hello Paprika“, 50 ml [75 ml | 100 ml] Wasser*, Salz* und Pfeffer* vermischen. Zwiebelstreifen mit der Mehlmischung vermengen.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-onion-rings-and-tomate-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 100 ml Öl* erhitzen. Zwiebelstreifen darin 2 – 3 Min. pro Seite frittieren, bis sie goldbraun sind. Herausnehmen und auf Küchenpapier abtropfen lassen und salzen*. Tipp: Zwiebelstreifen am Anfang voneinander trennen, damit sie wenigst möglich zusammenklumpt.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-onion-rings-and-tomate-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer zweiten großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Beyond Burger 2 – 3 Min. je Seite darin anbraten. Burgerbrötchen in den letzten 3 – 4 Min. der Kartoffel-Backzeit mit auf das Backblech geben und aufbacken. Tipp: Burgerbrötchen nach Belieben mit pflanzlicher Margarine* bestreichen.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-onion-rings-and-tomate-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Burgerbrötchen auf beiden Seiten mit Dip bestreichen. Unterseite mit Tomatenscheiben belegen. Beyond Meat Patties darauf geben, mit Onion Rings toppen und den Burger schließen. Burger und Kartoffelspalten auf Tellern anrichten. Restlichen Dip dazu servieren und genießen.",
+      "imageUrl": "/images/hellofresh/beyond-meat-burger-mit-onion-rings-and-tomate-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1009,
     "protein": 38
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -37,5 +80,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (meat).",
+    "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:25:12.586Z"
 }

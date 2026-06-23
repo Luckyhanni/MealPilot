@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/haehnchengeschnetzeltes-in-tomaten-sahne-sosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/hahnchengeschnetzeltes-in-tomaten-sahne-sosse-64881f9bf39ee0e603098697",
   "tags": [
-    "hähnchen"
+    "hähnchen",
+    "high protein"
   ],
   "ingredients": [
     "250 g Hähnchenbrustfilet",
@@ -71,6 +72,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 52 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
   ],
   "classificationNeedsReview": false

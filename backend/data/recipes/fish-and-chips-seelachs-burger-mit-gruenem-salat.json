@@ -10,7 +10,8 @@
   "tags": [
     "fisch",
     "burger",
-    "salat"
+    "salat",
+    "high protein"
   ],
   "ingredients": [
     "250 g Seelachs ohne Haut",
@@ -73,6 +74,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 47 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
   ],
   "classificationNeedsReview": false

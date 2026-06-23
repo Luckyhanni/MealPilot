@@ -5,17 +5,66 @@
   "kcal": 520,
   "protein": 39,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/karibischer-hahnchensalat-mit-kiwi-chili-dressing-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/karibischer-hahnchensalat-mit-kiwi-chili-dressing-669f72cf44e4fbb9d2131838",
   "tags": [
-    "schnell"
+    "schnell",
+    "low cal"
   ],
   "categories": [
     "schnell",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Hähnchenbrustfilet in Lake",
+    "380 g schwarze Bohnen",
+    "1 Stück Salatherz (Romana)",
+    "125 g rote Kirschtomaten",
+    "2 Stück Kiwi",
+    "1 Stück rote Zwiebel",
+    "½ Stück rote Chilischote",
+    "1 Stück Knoblauchzehe",
+    "10 ml mittelscharfer Senf",
+    "20 g Erdnüsse, geröstet, gesalzen",
+    "4 g Gewürzmischung „Hello Aloha“",
+    "4 Esslöffel Olivenöl",
+    "1 Esslöffel Honig",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Weißweinessig"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Kiwis schälen und vierteln. Chilischote (Achtung: scharf!) halbieren, entkernen und grob würfeln. In einem hohen Rührgefäß Kiwi, Chilischote nach Belieben, Senf, 2 EL [3 EL | 4 EL] Olivenöl*, 1 EL [1,5 EL | 2 EL] Honig*, 1 TL [1,5 TL | 2 TL] Essig*, 1 EL [1,5 EL | 2 EL] Wasser*, Salz* und Pfeffer* mithilfe eines Pürierstabs zu einem Dressing verarbeiten.",
+      "imageUrl": "/images/hellofresh/karibischer-hahnchensalat-mit-kiwi-chili-dressing-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Zwiebel halbieren und in feine Streifen schneiden. Knoblauch fein hacken. Kirschtomaten halbieren. Salatherz in mundgerechte Stücke schneiden. Schwarze Bohnen durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/karibischer-hahnchensalat-mit-kiwi-chili-dressing-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Hähnchenbrust waagerecht aufschneiden, aber nicht durchschneiden und wie ein Buch aufklappen. Hähnchenbrust rundum mit der Hälfte „Hello Aloha“ und Salz* würzen.",
+      "imageUrl": "/images/hellofresh/karibischer-hahnchensalat-mit-kiwi-chili-dressing-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Bohnen, Zwiebel, Knoblauch und restliches „Hello Aloha“ darin 5 – 6 Min. anbraten. Mit Salz* und Pfeffer* abschmecken. In der Zwischenzeit mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/karibischer-hahnchensalat-mit-kiwi-chili-dressing-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer zweiten großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Hähnchen darin 2 – 3 Min. je Seite anbraten, bis das Fleisch innen nicht mehr rosa ist. In einer großen Schüssel Salat, Kirschtomaten und Bohnenpfanne mit der Hälfte des Dressings vermengen.",
+      "imageUrl": "/images/hellofresh/karibischer-hahnchensalat-mit-kiwi-chili-dressing-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Hähnchenbrust nach Belieben in Streifen schneiden. Salat auf tiefe Teller verteilen und die Hähnchenbrust darauf anrichten. Mit Erdnüssen toppen und mit dem restlichen Dressing genießen.",
+      "imageUrl": "/images/hellofresh/karibischer-hahnchensalat-mit-kiwi-chili-dressing-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 520,
@@ -23,7 +72,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -32,5 +81,13 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Low Cal: 520 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:05.373Z"
 }

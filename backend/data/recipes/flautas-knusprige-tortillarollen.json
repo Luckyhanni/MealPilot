@@ -9,6 +9,7 @@
   "sourceUrl": "https://www.hellofresh.de/recipes/flautas-knusprige-tortillarollen-thermomix-64f5a3067048962116ef69fc",
   "tags": [
     "gemischt",
+    "high protein",
     "vegetarisch"
   ],
   "ingredients": [
@@ -76,6 +77,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "vegetarian",
   "classificationReasons": [
+    "Protein Stark: 43 g Protein pro Portion >= 40 g.",
     "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (gouda, sahne)."
   ],
   "classificationNeedsReview": false

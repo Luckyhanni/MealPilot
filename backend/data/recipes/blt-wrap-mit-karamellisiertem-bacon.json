@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/blt-wrap-mit-karamellisiertem-bacon-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/blt-wrap-mit-karamellisiertem-bacon-640ff0d7c1138d186f0ab7c4",
   "tags": [
-    "bacon"
+    "bacon",
+    "high protein"
   ],
   "ingredients": [
     "4 Stück Weizentortillas",
@@ -51,6 +52,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 47 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bacon)."
   ],
   "classificationNeedsReview": false

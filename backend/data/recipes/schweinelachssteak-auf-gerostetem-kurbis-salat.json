@@ -5,21 +5,68 @@
   "kcal": 467,
   "protein": 37.7,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/schweinelachssteak-auf-gerostetem-kurbis-salat-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/schweinelachssteak-auf-gerostetem-kurbis-salat-6633b6ba5811a6c936043e8a",
   "tags": [
-    "high protein",
     "kalorien im blick",
     "ohne weizen",
     "low carb",
-    "kalorienreduziert"
+    "kalorienreduziert",
+    "schnell",
+    "low cal"
   ],
   "categories": [
     "schnell",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Schweinelachssteaks",
+    "1 Stück Hokkaido-Kürbis",
+    "75 g Feldsalat",
+    "1 Stück rote Zwiebel",
+    "100 g Naturjoghurt",
+    "40 g Pflaumenkonfitüre",
+    "40 g körniger Senf",
+    "6 g Gewürzmischung „Hello Harissa“",
+    "4 g Gewürzmischung „Hello Mezze“",
+    "3 Esslöffel Olivenöl",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Esslöffel Wasser",
+    "nach Geschmack Honig"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Kürbis vierteln und mit einem Löffel entkernen. Kürbisviertel in 1 cm Spalten schneiden. Zwiebel halbieren und in Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-auf-gerostetem-kurbis-salat-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Kürbisspalten und Zwiebel auf ein mit Backpapier belegtes Backblech geben und mit 1 EL [1,5 EL | 2 EL] Olivenöl*, „Hello Harissa“, Salz* und Pfeffer* vermengen. Kürbis im Ofen 20 – 25 Min. garen.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-auf-gerostetem-kurbis-salat-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Schüssel Pflaumenkonfitüre, körnigen Senf, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 EL [1,5 EL | 2 EL] Wasser*, Salz* und Pfeffer* vermengen. Mit Honig* abschmecken.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-auf-gerostetem-kurbis-salat-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Min. vor Ende der Ofengarzeit Schweinelachssteaks von beiden Seiten salzen* und mit „Hello Mezze“ einreiben. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Schweinelachssteaks darin 3 – 5 Min. je Seite braten, bis das Fleisch in der Mitte nur noch leicht rosa ist.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-auf-gerostetem-kurbis-salat-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Kürbisgemüse in die große Schüssel geben und vermengen. Salat vorsichtig unterheben. Nach Belieben mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-auf-gerostetem-kurbis-salat-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Schweinelachssteaks nach Belieben in Streifen schneiden. Kürbisspalten und Salat auf tiefe Teller verteilen. Schweinelackssteakstreifen darauf anrichten. Mit Joghurt beträufeln.",
+      "imageUrl": "/images/hellofresh/schweinelachssteak-auf-gerostetem-kurbis-salat-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 467,
@@ -27,11 +74,19 @@
   },
   "nutritionSource": "per-serving",
   "nutritionNeedsReview": false,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
   "sourcePage": "https://www.hellofresh.de/recipes/kalorienreduzierte-rezepte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Low Cal: 467 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, schwein, schweine, schweinelachs, steak)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:56.393Z"
 }

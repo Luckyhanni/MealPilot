@@ -5,26 +5,73 @@
   "kcal": 1082,
   "protein": 24,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/miso-sesame-noodle-bowl-mit-avocado-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/miso-sesame-noodle-bowl-mit-avocado-6904cc98ff7c91e2f5e1620d",
   "tags": [
     "viel gemüse",
-    "vegan"
+    "schnell"
   ],
   "categories": [
-    "schnell",
-    "vegetarisch",
-    "vegan"
+    "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "270 g Spaghetti",
+    "1 Stück Avocado",
+    "25 g vegane weiße Misopaste",
+    "25 g Erdnussbutter",
+    "100 g Radieschen",
+    "20 ml Agavendicksaft",
+    "25 g Frühlingszwiebel",
+    "20 g Erdnüsse, geröstet, gesalzen",
+    "1 Stück Limette, vegan",
+    "1 Stück Knoblauchzehe",
+    "20 ml Sesamöl",
+    "200 g Stir Fry Mix",
+    "250 g Bio Hähnchenbrustfilet",
+    "nach Geschmack Salz",
+    "250 ml Wasser",
+    "1 Esslöffel Öl",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. In einen großen Topf reichlich heißes Wasser* füllen, kräftig salzen* und aufkochen. Pasta hinzugeben und 7 – 8 Min. bissfest garen. Nach der Garzeit durch ein Sieb geben und dabei 150 ml [225 ml | 300 ml] Kochwasser* auffangen.",
+      "imageUrl": "/images/hellofresh/miso-sesame-noodle-bowl-mit-avocado-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Knoblauch fein hacken. Radieschen vierteln. Avocado halbieren, entkernen und in feine Streifen schneiden. Limette vierteln. Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in feine Ringe schneiden.",
+      "imageUrl": "/images/hellofresh/miso-sesame-noodle-bowl-mit-avocado-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Schüssel Radieschen mit Saft von 1 [2 | 2] Limettenspalte und 1 TL [1,5 TL | 2 TL] Sesamöl vermengen. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/miso-sesame-noodle-bowl-mit-avocado-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einem hohen Rührgefäß Kochwasser*, Erdnussbutter, Misopaste, Agavendicksaft, restliches Sesamöl und weißen Teil der Frühlingszwiebel gut vermengen. Mit Pfeffer* würzen.",
+      "imageUrl": "/images/hellofresh/miso-sesame-noodle-bowl-mit-avocado-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Brokkoli und Karotten darin 4 – 5 Min. anschwitzen. Mit 100 ml [150 ml | 200 ml] Wasser* und Knoblauch ablöschen und 3 – 5 Min. köcheln lassen, bis das Wasser verdunstet und das Gemüse weich ist. Währenddessen die vorbereitete Soße zu dem Topf mit Nudeln geben, vermengen bis die Nudeln glasiert sind, ggf. warmhalten.",
+      "imageUrl": "/images/hellofresh/miso-sesame-noodle-bowl-mit-avocado-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Hähnchenbrustfilets rundum salzen*. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* auf mittlerer Temperatur erhitzen. Hähnchenbrustfilets 5 – 8 Min. pro Seite braten, bis das Fleisch innen nicht mehr rosa ist. Miso-Sesam Nudeln auf Teller verteilen und Hähnchen, Gemüse, Radieschen-Salat und Avocadostreifen darauf anrichten. Mit dem grünen Teil der Frühlingszwiebel und Erdnüsse toppen.",
+      "imageUrl": "/images/hellofresh/miso-sesame-noodle-bowl-mit-avocado-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1082,
     "protein": 24
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -38,5 +85,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust).",
+    "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:26:25.676Z"
 }

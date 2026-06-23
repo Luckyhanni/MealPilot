@@ -5,17 +5,66 @@
   "kcal": 630,
   "protein": 30,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/tomatige-creole-garnelen-drillinge-pfanne-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/tomatige-creole-garnelen-drillinge-pfanne-669f7bbb44e4fbb9d2131976",
   "tags": [
-    "schnell"
+    "schnell",
+    "low cal"
   ],
   "categories": [
     "schnell",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "150 g Großgarnelen",
+    "400 g Kartoffeln (Drillinge)",
+    "1 Stück Zwiebel",
+    "250 g rote Kirschtomaten",
+    "1 Stück Karotte",
+    "1 Stück Salatherz (Romana)",
+    "2 Stück Knoblauchzehe",
+    "50 ml Veganes Western Dressing",
+    "4 g Hühnerbrühe",
+    "4 g Gewürzmischung „Hello Cajun“",
+    "2 Esslöffel Öl",
+    "1 Esslöffel Butter",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Balsamicoessig",
+    "100 ml Wasser"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Drillinge vierteln oder halbieren. In einen großen Topf reichlich heißes Wasser* füllen, salzen* und aufkochen lassen. Drillinge zugeben und 10 – 12 Min. garen, bis sie weich sind.",
+      "imageUrl": "/images/hellofresh/tomatige-creole-garnelen-drillinge-pfanne-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Zwiebel halbieren und in feine Streifen schneiden. Kirschtomaten halbieren.",
+      "imageUrl": "/images/hellofresh/tomatige-creole-garnelen-drillinge-pfanne-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne mit Deckel 2 EL [3 EL | 4 EL] Öl* und 1 EL [1,5 EL | 2 EL] Butter* erhitzen. Zwiebel darin 3 – 4 Min. glasig anschwitzen. Kirschtomaten dazugeben und Knoblauch dazu pressen. Mit Hühnerbrühe, „Hello Cajun\", 1 TL [1,5 TL | 2 TL] Balsamicoessig* und 100 ml [150 ml | 200 ml] Wasser* ablöschen. Deckel aufsetzen und 10 Min. köcheln lassen.",
+      "imageUrl": "/images/hellofresh/tomatige-creole-garnelen-drillinge-pfanne-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Salat halbieren, Strunk entfernen und längs in Spalten schneiden. Karotte grob in eine große Schüssel reiben. Western Dressing in die Schüssel geben und vermengen. Salat unterheben und mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/tomatige-creole-garnelen-drillinge-pfanne-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Drillinge und Garnelen in die Pfanne geben und unterrühren. 3 – 4 Min. garen, bis die Garnelen durchgegart sind. Creole-Pfanne mit Salz*, Zucker* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/tomatige-creole-garnelen-drillinge-pfanne-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Salat auf tiefe Teller verteilen. Creole-Shrimp Pfanne daneben anrichten.",
+      "imageUrl": "/images/hellofresh/tomatige-creole-garnelen-drillinge-pfanne-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 630,
@@ -23,7 +72,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -32,5 +81,14 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Low Cal: 630 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen).",
+    "Review: positive vegetarisch/vegan-Hinweise vorhanden, aber Fleisch/Fisch blockiert diese Kategorien."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:27:20.905Z"
 }

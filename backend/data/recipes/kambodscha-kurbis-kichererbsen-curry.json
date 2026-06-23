@@ -5,29 +5,78 @@
   "kcal": 557,
   "protein": 20,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/kambodscha-kurbis-kichererbsen-curry-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/kambodscha-kurbis-kichererbsen-curry-692d7731126207051adca4d1",
   "tags": [
     "viel gemüse",
-    "vegan",
     "kalorien im blick",
-    "low carb"
+    "low carb",
+    "schnell",
+    "low cal",
+    "vegetarisch"
   ],
   "categories": [
     "schnell",
     "low-cal",
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "200 g Hokkaido-Kürbis, geschält und gewürfelt",
+    "390 g Kichererbsen",
+    "180 ml Kokosmilch",
+    "25 g rote Currypaste",
+    "100 g Buschbohnen",
+    "1 Stück Limette, vegan",
+    "10 g Ingwerpaste (im Kühlbeutel)",
+    "20 ml Sojasoße",
+    "10 g Koriander",
+    "2 g Gewürzmischung „Hello Curry“",
+    "1 Stück Knoblauchzehe",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Zucker",
+    "200 g Wasser",
+    "10 g Öl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Enden der Buschbohnen abschneiden und Bohnen dritteln. Koriander in grobe Stücke schneiden, in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und in eine kleine Schüssel umfüllen. Knoblauch abziehen, in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und mit dem Spatel nach unten schieben.",
+      "imageUrl": "/images/hellofresh/kambodscha-kurbis-kichererbsen-curry-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "g [15 g | 20 g] Öl*, Ingwerpaste und „Hello Curry“ in den Mixtopf zugeben und 3 Min./100 °C/Stufe 1 dünsten. Währenddessen Limette heiß waschen und 1 TL [1,5 TL | 2 TL] der Schale fein abreiben. Limette vierteln.",
+      "imageUrl": "/images/hellofresh/kambodscha-kurbis-kichererbsen-curry-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Currypaste (Achtung: scharf!) und Hälfte der Limettenschale in den Mixtopf zugeben und 2 Min./100 °C/Reverse/Stufe 1 dünsten. Währenddessen Kichererbsen durch den Varoma-Behälter abgießen. Varoma verschließen.",
+      "imageUrl": "/images/hellofresh/kambodscha-kurbis-kichererbsen-curry-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Bohnen, Kürbiswürfel, Kokosmilch, Sojasoße, 1 TL [1,5 TL | 2 TL] Zucker* und 200 g [275 g | 350 g] Wasser* in den Mixtopf zugeben, Varoma aufsetzen und 18 Min./Varoma/Reverse/Stufe 1 dampfgaren.",
+      "imageUrl": "/images/hellofresh/kambodscha-kurbis-kichererbsen-curry-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Varoma abnehmen. Kichererbsen und Hälfte des Korianders zum Curry geben, mit dem Spatel untermischen und mit einigen Spritzern Limettensaft, Salz* und Pfeffer* abschmecken. Tipp: Wenn das Curry zu dickflüssig ist, gib' etwas Wasser* dazu.",
+      "imageUrl": "/images/hellofresh/kambodscha-kurbis-kichererbsen-curry-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Curry auf tiefe Teller verteilen, mit restlichem Koriander bestreuen und mit restlichen Limettenspalten genießen.",
+      "imageUrl": "/images/hellofresh/kambodscha-kurbis-kichererbsen-curry-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 557,
     "protein": 20
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -41,5 +90,14 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Low Cal: 557 kcal <= 650.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (milch).",
+    "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:26:01.561Z"
 }

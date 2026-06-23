@@ -5,7 +5,7 @@
   "kcal": 820,
   "protein": 36,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/carnitas-mit-wurziger-kasesalsa-zum-dippen-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/carnitas-mit-wurziger-kasesalsa-zum-dippen-66d98af846b0e9f48d99ed8a",
   "tags": [
     "schnell"
@@ -13,8 +13,55 @@
   "categories": [
     "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Pulled Pork",
+    "200 g Weizentortillas",
+    "4 g Gewürzmischung „Hello Fiesta“",
+    "2 g Gewürzmischung „Hello Patatas“",
+    "1 Stück Karotte",
+    "2 Stück Tomate",
+    "150 g Kochsahne",
+    "50 g junger Gouda, gerieben",
+    "2 Stück rote Zwiebel",
+    "25 g Ketchup",
+    "1 Esslöffel Öl",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Zucker",
+    "nach Geschmack Salz",
+    "2 Esslöffel Weißweinessig"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 100 ml [150 ml | 200 ml] Wasser im Wasserkocher. Zwiebel halbieren und in feine Streifen schneiden. In einen kleinen Topf mit Deckel 100 ml [150 ml | 200 ml] Wasser* füllen, 2 EL [3 EL | 4 EL] Essig*, 1 TL [1,5 TL | 2 TL] Zucker* und Salz* aufkochen. Hälfte der Zwiebelstreifen dazugeben und 5 Min. köcheln lassen, bis die Zwiebeln weich sind. Topfinhalt in eine kleine Schüssel geben.",
+      "imageUrl": "/images/hellofresh/carnitas-mit-wurziger-kasesalsa-zum-dippen-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Karotte grob raspeln. Tomaten fein würfeln.",
+      "imageUrl": "/images/hellofresh/carnitas-mit-wurziger-kasesalsa-zum-dippen-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne ohne Fettzugabe Mini-Tortillas für 1 – 2 Min. erhitzen. Tipp: Wenn Du eine Mikrowelle hast, kannst Du die Mini-Tortillas auch darin für 30 Sek. aufwärmen.",
+      "imageUrl": "/images/hellofresh/carnitas-mit-wurziger-kasesalsa-zum-dippen-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In dem kleinen Topf Kochsahne, 2 EL [3 EL | 4 EL] Wasser*, Gouda, „Hello Patatas“ und Pfeffer* vermengen und bis zum Ende des Rezepts erhitzen, bis der Käse geschmolzen ist. Tipp: Falls die Soße zu dick ist, gib esslöffelweiße Wasser* dazu.",
+      "imageUrl": "/images/hellofresh/carnitas-mit-wurziger-kasesalsa-zum-dippen-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In der großen Pfanne aus Schritt 3 erneut 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Pulled Pork, Karotte und restliche Zwiebeln darin 3 – 5 Min. scharf anbraten. Pfanneninhalt mit Ketchup, „Hello Fiesta“ und 50 ml [75 ml | 100 ml] Wasser* ablöschen und 1 – 2 Min. einköcheln lassen. Mit Salz*, Pfeffer* und Zucker* abschmecken.",
+      "imageUrl": "/images/hellofresh/carnitas-mit-wurziger-kasesalsa-zum-dippen-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Salsa Loca in kleinen Schüsseln anrichten und mit einigen Tomatenwürfeln und eingelegten Zwiebeln toppen. Pulled Pork auf die Tacos aufteilen und mit restlichen Tomatenwürfeln und eingelegten Zwiebeln toppen.",
+      "imageUrl": "/images/hellofresh/carnitas-mit-wurziger-kasesalsa-zum-dippen-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 820,
@@ -22,7 +69,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -31,5 +78,12 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (pork, pulled pork)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:22.213Z"
 }

@@ -5,20 +5,48 @@
   "kcal": 491,
   "protein": 34,
   "durationMinutes": 15,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/schneller-teriyaki-seelachs-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/schneller-teriyaki-seelachs-65afe32b205245479062bc7b",
   "tags": [
-    "high protein",
-    "schnell",
     "kalorien im blick",
-    "kalorienreduziert"
+    "kalorienreduziert",
+    "schnell",
+    "low cal"
   ],
   "categories": [
     "schnell",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Seelachs",
+    "150 g Jasminreis",
+    "200 g Stir Fry Mix",
+    "1 Stück Knoblauchzehe",
+    "100 ml Teriyakisoße",
+    "50 g Babyspinat",
+    "8 ml Sriracha Sauce",
+    "300 ml Wasser",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Weißweinessig"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. In einen großen Topf ca. 1.000 ml [1.500 ml | 2.000 ml] heißes Wasser* füllen. Reis hineinrühren und salzen*. Beides zusammen zum Kochen bringen und ca. 10 Min. abgedeckt kochen, bis der Reis gar ist. Wenn der Reis fertig ist, durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/schneller-teriyaki-seelachs-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Seelachsfilets in 8 gleich große Stücke schneiden. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Stir-Fry-Mix 2 Min. scharf anbraten. Seelachs dazugeben und 1 – 2 Min. mitbraten. Knoblauch dazupressen. Hitze reduzieren. Pfanneninhalt mit Teriyakisoße, Sriracha, 1 TL [1,5 TL | 2 TL] Essig* und 100 ml [150 ml | 200 ml] Wasser* ablöschen und 1 Min. einkochen lassen. Kräftig mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/schneller-teriyaki-seelachs-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Spinat unter den Reis heben und vermengen, bis der Spinat zusammenfallt. Spinat-Reis auf tiefe Teller verteilen. Seelachs-Pfanne daneben anrichten.",
+      "imageUrl": "/images/hellofresh/schneller-teriyaki-seelachs-step-3.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 491,
@@ -26,7 +54,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
@@ -35,5 +63,13 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 15 Minuten <= 30.",
+    "Low Cal: 491 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:51.244Z"
 }

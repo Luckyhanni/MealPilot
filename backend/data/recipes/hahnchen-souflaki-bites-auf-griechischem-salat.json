@@ -9,6 +9,7 @@
   "sourceUrl": "https://www.hellofresh.de/recipes/hahnchen-souflaki-bites-auf-griechischem-salat-69c25822d795c2c9e4ffdb10",
   "tags": [
     "schnell",
+    "high protein",
     "low cal"
   ],
   "ingredients": [
@@ -61,6 +62,7 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 15 Minuten <= 30.",
+    "Protein Stark: 45.2 g Protein pro Portion >= 40 g.",
     "Low Cal: 609 kcal <= 650.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen)."
   ],

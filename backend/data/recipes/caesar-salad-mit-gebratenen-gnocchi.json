@@ -5,19 +5,66 @@
   "kcal": 466,
   "protein": 22,
   "durationMinutes": 35,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/caesar-salad-mit-gebratenen-gnocchi-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/caesar-salad-mit-gebratenen-gnocchi-6088ef6d4df0671436686b8f",
   "tags": [
-    "vegetarisch",
     "-20% kalorien",
-    "kalorienreduziert"
+    "kalorienreduziert",
+    "low cal",
+    "vegetarisch"
   ],
   "categories": [
     "low-cal",
     "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "1 Stück Knoblauchzehe",
+    "17 ml Mayonnaise",
+    "40 g Hartkäse geraspelt",
+    "100 g Joghurt",
+    "2 Stück Salatherz (Romana)",
+    "125 g Kirschtomaten",
+    "4 ml Worcester Sauce",
+    "400 g frische Gnocchi",
+    "10 g Schnittlauch",
+    "12 ml Rotweinessig*",
+    "2 Esslöffel Öl",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "5 ml mittelscharfer Senf"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Knoblauch abziehen. Kirschtomaten in eine große Schüssel geben, Hälfte des Knoblauchs dazupressen und mit 1 EL [1,5 EL | 2 EL] Öl* und 1 Prise Salz* vermischen.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-gebratenen-gnocchi-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Kirschtomaten auf ein mit Backpapier belegtes Backblech geben und im Ofen für 15 Min. backen, bis sie aufgeplatzt und etwas weicher sind. Schüssel für Schritt 3 aufbewahren und mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-gebratenen-gnocchi-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* bei mittlerer Hitze erwärmen, Gnocchi darin 5 – 8 Min. anbraten, gelegentlich umrühren, bis sie knusprig und leicht gebräunt sind. Gnocchi in die große Schüssel umfüllen, kurz beiseitestellen und etwas abkühlen lassen.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-gebratenen-gnocchi-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einem hohen Rührgefäß die Hälfte des geraspelten Käses, Mayonnaise, Joghurt, restlichen Knoblauch, Rotweinessig, Hälfte [drei Viertel | alles] vom Senf und Hälfte [drei Viertel | alles] von der Worcestersoße mit einem Pürierstab fein pürieren. Danach mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-gebratenen-gnocchi-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Salatherz halbieren, Strunk entfernen und Salatherz längs in breite Streifen schneiden. Salatstreifen in die große Schüssel zu den Gnocchi geben und mit dem Dressing vermengen. Schnittlauch in feine Röllchen schneiden.",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-gebratenen-gnocchi-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Schritt 6",
+      "imageUrl": "/images/hellofresh/caesar-salad-mit-gebratenen-gnocchi-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 466,
@@ -25,7 +72,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
@@ -34,5 +81,12 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Low Cal: 466 kcal <= 650.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (hartkaese, joghurt, kaese, mayo, mayonnaise)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:20.024Z"
 }

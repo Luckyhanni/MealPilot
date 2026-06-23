@@ -10,7 +10,8 @@
   "tags": [
     "hähnchen",
     "reis",
-    "curry"
+    "curry",
+    "high protein"
   ],
   "ingredients": [
     "250 g Hähnchenbrustfilet in Lake",
@@ -76,6 +77,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 48 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
   ],
   "classificationNeedsReview": false

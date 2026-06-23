@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/bio-haehnchenbrust-in-salbei-thymian-marinade-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/bio-hahnchenbrust-in-salbei-thymian-marinade-688cbc0fb6ffa7a20c3c928a",
   "tags": [
-    "hähnchen"
+    "hähnchen",
+    "high protein"
   ],
   "ingredients": [
     "250 g Bio Hähnchenbrustfilet",
@@ -73,6 +74,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 55 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
   ],
   "classificationNeedsReview": false

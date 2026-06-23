@@ -5,26 +5,73 @@
   "kcal": 859,
   "protein": 25,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/chilinudel-pfanne-in-kokos-zitronengras-sosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/chilinudel-pfanne-in-kokos-zitronengras-sosse-696f8336384e652ce6a49a0c",
   "tags": [
     "schnell",
-    "vegan"
+    "vegetarisch"
   ],
   "categories": [
     "schnell",
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "200 g Chilinudeln",
+    "1 Stück Karotte",
+    "250 ml Kokosmilch",
+    "1 Stück Knoblauchzehe",
+    "25 ml Sojasoße",
+    "20 ml Sesamöl",
+    "10 g Sesamsamen",
+    "1 Stück rote Chilischote",
+    "1 Stück Limette, vegan",
+    "25 g Frühlingszwiebel",
+    "22 g Knoblauch-Ingwer-Zitronengras Paste",
+    "150 g Kaiserschoten",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "1 Teelöffel Zucker",
+    "50 ml Wasser"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Knoblauch abziehen. Weißen und grünen Teil der Frühlingszwiebel getrennt voneinander in feine Ringe schneiden. Karotte nach Belieben schälen und in 0,5 cm Scheiben schneiden. Kaiserschoten halbieren. Limette heiß waschen und 1 TL [1,5 TL | 2 TL] der Schale fein abreiben. Limette in 6 Spalten schneiden.",
+      "imageUrl": "/images/hellofresh/chilinudel-pfanne-in-kokos-zitronengras-sosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In der Pfanne Sesamöl bei mittlerer Hitze erhitzen. Knoblauch-Ingwer-Zitronengras Paste und weiße Frühlingszwiebelringe dazugeben. Knoblauch hineinpressen und alles ca. 1 Min. anbraten.",
+      "imageUrl": "/images/hellofresh/chilinudel-pfanne-in-kokos-zitronengras-sosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Karotten zufügen und 3 Min. anbraten. Kaiserschoten zufügen und weitere 3 – 4 Min anbraten. Mit Sojasoße, Kokosmilch und 50 ml [75 ml | 100 ml] Wasser* ablöschen. Limettenschale, Saft von 1 [1,5 | 2] Limettenspalte und 1 TL [1,5 TL | 2 TL] Zucker* unterrühren. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/chilinudel-pfanne-in-kokos-zitronengras-sosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Einen großen Topf mit reichlich kochendem Wasser* füllen und kräftig salzen*. Chilinudeln darin ca. 5 Min. gar ziehen lassen. Anschließend in einem Sieb abtropfen lassen. Chili (Achtung: scharf!) längs halbieren, entkernen und in feine Streifen schneiden.",
+      "imageUrl": "/images/hellofresh/chilinudel-pfanne-in-kokos-zitronengras-sosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Nudeln und Hälfte der Chilistreifen (Achtung: scharf!), in die Gemüsepfanne geben, alles gut vermengen und mit Limettensaft, Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/chilinudel-pfanne-in-kokos-zitronengras-sosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Nudeln auf Teller verteilen. Gerösteten Sesam, grüne Frühlingszwiebelringe und restliche Chilistreifen nach Geschmack (Achtung: scharf!) darüberstreuen. Mit restlichen Limettenspalten genießen.",
+      "imageUrl": "/images/hellofresh/chilinudel-pfanne-in-kokos-zitronengras-sosse-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 859,
     "protein": 25
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -38,5 +85,13 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (milch).",
+    "Review: veganer Hinweis vorhanden, aber tierische Produkte blockieren vegan."
+  ],
+  "classificationNeedsReview": true,
+  "importedAt": "2026-06-23T06:25:25.297Z"
 }

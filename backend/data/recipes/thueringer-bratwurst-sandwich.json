@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/thueringer-bratwurst-sandwich-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/thuringer-bratwurst-sandwich-65f867bd473c4f42771ce544",
   "tags": [
-    "gemischt"
+    "gemischt",
+    "high protein"
   ],
   "ingredients": [
     "200 g Thüringer Rostbratwurst",
@@ -71,6 +72,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 55 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bratwurst, wurst)."
   ],
   "classificationNeedsReview": false

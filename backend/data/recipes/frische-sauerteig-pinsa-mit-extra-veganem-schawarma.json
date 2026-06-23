@@ -5,26 +5,75 @@
   "kcal": 1158,
   "protein": 39,
   "durationMinutes": 35,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/frische-sauerteig-pinsa-mit-extra-veganem-schawarma-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/frische-sauerteig-pinsa-mit-extra-veganem-schawarma-6904cc2279e2c370e48f4866",
   "tags": [
-    "vegan",
     "viel gemüse",
-    "family"
+    "family",
+    "vegetarisch",
+    "vegan"
   ],
   "categories": [
     "vegetarisch",
     "vegan"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "450 g frischer Sauerteig",
+    "50 g Blattsalatmischung",
+    "25 g Tomatenpesto",
+    "1 Stück Aubergine",
+    "1 Stück rote Spitzpaprika",
+    "6 g Gewürzmischung „Hello Buon Appetito“",
+    "1 Stück rote Zwiebel",
+    "35 g Tomatenmark",
+    "1 Stück Knoblauchzehe",
+    "8.5 g süßer Senf",
+    "180 g veganes Schawarma",
+    "1 Teelöffel Weißweinessig",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Mehl",
+    "6 Esslöffel Olivenöl",
+    "nach Geschmack Salz"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Zwiebel halbieren und in 0,5 cm Streifen schneiden. Spitzpaprika halbieren, entkernen und in 2 cm Stücke schneiden. Aubergine längs halbieren und in 0,5 cm Halbmonde schneiden. Knoblauch abziehen.",
+      "imageUrl": "/images/hellofresh/frische-sauerteig-pinsa-mit-extra-veganem-schawarma-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer großen Pfanne 2 EL [3 EL | 4 EL] Olivenöl* erhitzen. Zwiebel, Paprika und Aubergine darin 4 – 6 Min. scharf anbraten. „Hello Buon Appetito“ hinzugeben und 30 Sek. weiter anbraten. Mit Salz* und Pfeffer* würzen. In der Zwischenzeit in einer kleinen Schüssel Tomatenmark, Tomatenpesto, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 EL [1,5 EL | 2 EL] Wasser*, Salz* und Pfeffer* zu einem Dip verrühren.",
+      "imageUrl": "/images/hellofresh/frische-sauerteig-pinsa-mit-extra-veganem-schawarma-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Sauerteig vorsichtig aus der Verpackung lösen und auf eine mit Mehl* bestäubte Oberfläche geben. Sauerteig halbieren und jede Hälfte mit Mehl* bestäuben. Beide Hälften auf ein mit Backpapier belegtes Backblech geben und vorsichtig mit den Fingerspitzen zu einem Rechteck formen. Tipp: Achte darauf, den Teig nicht zu sehr zu kneten, da er sonst Luft verliert und fest wird.",
+      "imageUrl": "/images/hellofresh/frische-sauerteig-pinsa-mit-extra-veganem-schawarma-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Tomatendip vorsichtig auf der Pinsa verteilen. Antipasti-Gemüse nach Belieben darüber verteilen, r estliches Gemüse neben die Pinsa auf das Backblech geben und alles i m Ofen 18 – 20 Min. goldbraun backen.",
+      "imageUrl": "/images/hellofresh/frische-sauerteig-pinsa-mit-extra-veganem-schawarma-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In der großen Pfanne aus Schritt 2 erneut 2 EL [3 EL | 4 EL] Olivenöl* erhitzen. Knoblauch in eine kleine Schüssel pressen und mit dem heißen Olivenöl übergießen. In einer großen Schüssel süßen Senf, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 EL [1,5 EL | 2 EL] Wasser*, 1 TL [1,5 TL | 2 TL] Essig*, Salz* und Pfeffer* zu einem Dressing vermengen.",
+      "imageUrl": "/images/hellofresh/frische-sauerteig-pinsa-mit-extra-veganem-schawarma-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Pfanne aus Schritt 5 erneut erhitzen. Veganes Schawarma 5 – 6 Min. goldbraun anbraten. Salat in die große Schüssel mit dem Dressing geben und vermengen. Pinsa nach Belieben in Stücke schneiden und auf Teller verteilen. Mit Schawarma toppen und mit Knoblauch-Öl servieren.",
+      "imageUrl": "/images/hellofresh/frische-sauerteig-pinsa-mit-extra-veganem-schawarma-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1158,
     "protein": 39
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -38,5 +87,11 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegan",
+  "classificationReasons": [
+    "Vegan: keine Fleisch-/Fischbegriffe und keine tierischen Produktbegriffe erkannt."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:39.192Z"
 }

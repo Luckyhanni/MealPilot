@@ -5,25 +5,74 @@
   "kcal": 1110,
   "protein": 18,
   "durationMinutes": 40,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/karibischer-susskartoffel-kokos-eintopf-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/karibischer-susskartoffel-kokos-eintopf-692d76ce114b735a00613985",
   "tags": [
     "viel gemüse",
-    "vegan"
+    "vegetarisch"
   ],
   "categories": [
-    "vegetarisch",
-    "vegan"
+    "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "1 Stück Süßkartoffel",
+    "390 g schwarze Bohnen",
+    "1 Stück Avocado",
+    "390 g stückige Tomaten",
+    "1 Stück rote Chilischote",
+    "1 Stück Zwiebel",
+    "1 Stück Knoblauchzehe",
+    "10 g Petersilie glatt/Schnittlauch",
+    "250 ml Kokosmilch",
+    "4 g Gewürzmischung „Hello Aloha“",
+    "6 g Gemüsebrühpulver",
+    "8 g Maisstärke",
+    "300 g Wasser",
+    "100 g Mehl",
+    "1 Esslöffel Öl",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "15 g Öl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Petersilie in grobe Stücke schneiden, in den Mixtopf geben, 3 Sek./Stufe 8 zerkleinern und in eine kleine Schüssel umfüllen. Chili halbieren, entkernen und in ca. 2 cm lange Stücke schneiden (Achtung: scharf!). Chili in den Mixtopf geben und 3 Sek./Stufe 8 zerkleinern. g [120 g | 160 g] Kokosmilch, 100 g [120 g| 200 g] Wasser*, 100 g [150 g | 200 g] Mehl* , Maisstärke, ein Viertel „Hello Aloha“ und eine Prise Salz* zugeben und 30 Sek./Stufe 5 verquirlen. Teig in eine große Schüssel umfüllen.",
+      "imageUrl": "/images/hellofresh/karibischer-susskartoffel-kokos-eintopf-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Mixtopf spülen und trocknen. Zwiebel und Knoblauch abziehen und Zwiebel halbieren. Süßkartoffel schälen und in ca. 1,5 cm Stücke schneiden. Zwiebel und Knoblauch in den Mixtopf geben, 5 Sek./Stufe 5 zerkleinern und mit dem Spatel nach unten schieben. Süßkartoffeln und 15 g [15 g | 20 g] Öl* zugeben und 5 Min./100 °C/Reverse/Stufe 1 dünsten. Währenddessen Schwarze Bohnen in den Varoma-Behälter geben und mit kaltem Wasser abspülen. Varoma verschließen.",
+      "imageUrl": "/images/hellofresh/karibischer-susskartoffel-kokos-eintopf-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Stückige Tomaten, Gemüsebrühe, restliches „Hello Aloha“, 150 g [200 g | 250 g] Wasser , Salz* und Pfeffer* in den Mixtopf zugeben, Varoma aufsetzen und 15 Min. [16 Min. | 17 Min.]/Varoma/Reverse/Stufe 1 kochen. Währenddessen Avocado halbieren, entkernen und Fruchtfleisch in feine Streifen schneiden. Schnittlauch in feine Röllchen schneiden und unter den Pfannkuchenteig mischen.",
+      "imageUrl": "/images/hellofresh/karibischer-susskartoffel-kokos-eintopf-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* bei mittlerer Hitze erwärmen. Aus dem Teig nacheinander 4 [6 | 8] dünne Pfannkuchen backen. Pfannkuchen dazu je Seite ca. 2 – 3 Min anbraten und warmhalten. Tipp: Pfannkuchen erst wenden, wenn dieser komplett durchgegart ist und anfängt, leicht zu bräunen, so reißt er nicht so leicht.",
+      "imageUrl": "/images/hellofresh/karibischer-susskartoffel-kokos-eintopf-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Varoma abnehmen. Restliche Kokosmilch in den Mixtopf zugeben und 4 Min./95 °C/Reverse/Stufe 1 erwärmen. Bohnen aus dem Varoma zur Suppe zugeben, mit dem Spatel unterheben und mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/karibischer-susskartoffel-kokos-eintopf-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Süßkartoffel-Kokos-Eintopf auf tiefe Teller verteilen und Petersilie darüberstreuen. Mit Avocado toppen. Chili-Pfannkuchen dazu reichen und genießen.",
+      "imageUrl": "/images/hellofresh/karibischer-susskartoffel-kokos-eintopf-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 1110,
     "protein": 18
   },
   "nutritionSource": "estimated",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -37,5 +86,11 @@
   "nutritionNeedsReview": true,
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (milch)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:08.705Z"
 }

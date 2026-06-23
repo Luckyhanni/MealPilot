@@ -5,21 +5,67 @@
   "kcal": 456,
   "protein": 41,
   "durationMinutes": 35,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/aprikosen-hahnchen-mit-bunten-piri-piri-gemusewurfeln-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/aprikosen-hahnchen-mit-bunten-piri-piri-gemusewurfeln-63d8eedb6a79d7247402f0c7",
   "tags": [
-    "high protein",
     "wenig vorbereitung",
     "kalorien im blick",
     "viel gemüse",
-    "kalorienreduziert"
+    "kalorienreduziert",
+    "high protein",
+    "low cal"
   ],
   "categories": [
     "high-protein",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g Hähnchenbrustfilet",
+    "50 g Aprikosenchutney",
+    "1 Stück rote Zwiebel",
+    "1 Stück Blumenkohl",
+    "1 Stück Ofenkartoffel",
+    "1 Stück Karotte",
+    "6 g Gewürzmischung „Hello Piri Piri“",
+    "75 g Joghurt",
+    "1 Stück Knoblauchzehe",
+    "2 g Gewürzmischung „Hello Kokos Curry“",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Salz",
+    "2 Esslöffel Öl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Knoblauch fein hacken. Zwiebel halbieren und in 1 cm dicke Spalten schneiden. Karotte nach Belieben schälen und quer in 1 cm Scheiben schneiden. Gewaschene Kartoffel in 1 cm Würfel schneiden.",
+      "imageUrl": "/images/hellofresh/aprikosen-hahnchen-mit-bunten-piri-piri-gemusewurfeln-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Blumenkohl vierteln, ca. 1 cm vom Strunk entfernen und Blumenkohlviertel quer in 1 cm dicke Scheiben schneiden. Tipp: Es macht nichts, wenn diese auseinanderfallen.",
+      "imageUrl": "/images/hellofresh/aprikosen-hahnchen-mit-bunten-piri-piri-gemusewurfeln-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Zwiebel, Paprika, Karotte, Blumenkohl und Kartoffelwürfel auf ein mit Backpapier belegtes Backblech geben und mit „Hello Piri Piri\", 2 EL [3 EL | 4 EL] Öl*, Salz* und Pfeffer* vermengen. Gemüse im Ofen in 25 – 30 Min. goldbraun backen. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/aprikosen-hahnchen-mit-bunten-piri-piri-gemusewurfeln-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Hühnerbrüste rundherum Salzen* und Pfeffern*. Aprikosenchutney oben auf dem Fleisch verteilen. Hühnerbrüste in den letzten 15 Min. der Gemüsebackzeit mit auf das Blech auf das Gemüse geben und alles zusammen fertig garen.",
+      "imageUrl": "/images/hellofresh/aprikosen-hahnchen-mit-bunten-piri-piri-gemusewurfeln-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer kleinen Schüssel Joghurt zusammen mit der „Hello Kokos Curry“ Gewürzmischung vermengen und mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/aprikosen-hahnchen-mit-bunten-piri-piri-gemusewurfeln-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Blumenkohl Rezepte Karotten Rezepte",
+      "imageUrl": "/images/hellofresh/aprikosen-hahnchen-mit-bunten-piri-piri-gemusewurfeln-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 456,
@@ -27,7 +73,7 @@
   },
   "nutritionSource": "per-serving",
   "nutritionNeedsReview": false,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
@@ -36,5 +82,13 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde aus HelloFresh-Seite übernommen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Protein Stark: 41 g Protein pro Portion >= 40 g.",
+    "Low Cal: 456 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (haehnchen, haehnchenbrust)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:06.178Z"
 }

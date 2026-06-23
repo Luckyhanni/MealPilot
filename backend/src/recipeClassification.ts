@@ -1,3 +1,5 @@
+import { defaultCategoryThresholds } from "./categoryThresholds.js";
+
 export type RecipeCategory =
   | "schnell"
   | "high-protein"
@@ -34,11 +36,7 @@ type RecipeLike = {
   ingredients?: string[];
 };
 
-export const recipeClassificationThresholds = {
-  fastMaxMinutes: 30,
-  highProteinMinProteinPerServingInclusive: 40,
-  lowCalMaxKcal: 650,
-} as const;
+export const recipeClassificationThresholds = defaultCategoryThresholds;
 
 const categoryOrder: RecipeCategory[] = [
   "schnell",
@@ -311,10 +309,10 @@ export function classifyRecipe(recipe: RecipeLike): RecipeClassification {
     );
   }
 
-  if (nutrition.protein >= recipeClassificationThresholds.highProteinMinProteinPerServingInclusive) {
+  if (nutrition.protein >= recipeClassificationThresholds.highProteinMinProteinPerServing) {
     categories.push("high-protein");
     reasons.push(
-      `Protein Stark: ${nutrition.protein} g Protein pro Portion >= ${recipeClassificationThresholds.highProteinMinProteinPerServingInclusive} g.`,
+      `Protein Stark: ${nutrition.protein} g Protein pro Portion >= ${recipeClassificationThresholds.highProteinMinProteinPerServing} g.`,
     );
   }
 

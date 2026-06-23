@@ -9,7 +9,8 @@
   "sourceUrl": "https://www.hellofresh.de/recipes/hackballchen-mit-bio-rinderhack-in-senfsosse-68c139bd9f91a82a63bf0bfa",
   "tags": [
     "rind",
-    "hackfleisch"
+    "hackfleisch",
+    "high protein"
   ],
   "ingredients": [
     "250 g Bio Rinderhackfleischzubereitung",
@@ -76,6 +77,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 52 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hackfleisch, rind, rinder, rinderhack, rinderhackfleisch)."
   ],
   "classificationNeedsReview": false

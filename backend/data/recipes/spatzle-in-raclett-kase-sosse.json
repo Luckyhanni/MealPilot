@@ -5,7 +5,7 @@
   "kcal": 843,
   "protein": 27.8,
   "durationMinutes": 20,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/spatzle-in-raclett-kase-sosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/spatzle-in-raclett-kase-sosse-66b23b80a1293bffe8e01f00",
   "tags": [
     "family",
@@ -16,8 +16,54 @@
     "schnell",
     "vegetarisch"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "100 g Raclette-Käse",
+    "400 g frische Eierspätzle",
+    "150 g Kochsahne",
+    "5 g Gewürzmischung „Hello Muskat“",
+    "1 Stück Porree",
+    "1 Stück Apfel",
+    "1 Stück Zwiebel",
+    "10 g Petersilie, glatt",
+    "2 Esslöffel Butter",
+    "150 ml Wasser",
+    "1 Teelöffel Honig",
+    "1 Teelöffel Balsamicoessig",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Porree längs halbieren, gründlich auswaschen und in 1 cm Halbmonde schneiden. Apfel vierteln, entkernen und in 1 cm Würfel schneiden. Zwiebel grob würfeln. Petersilienblätter grob hacken.",
+      "imageUrl": "/images/hellofresh/spatzle-in-raclett-kase-sosse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einem kleinen Topf 1 EL [1,5 EL | 2 EL] Butter* über mittlerer Temperatur erhitzen. Apfel und Zwiebel darin 6 – 8 Min. farblos anschwitzen. Dabei umrühren. In der Zwischenzeit mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/spatzle-in-raclett-kase-sosse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Butter* erhitzen. Spätzle und Porree darin 8 – 10 Min. anbraten. Dabei umrühren. Raclette-Käse grob würfeln.",
+      "imageUrl": "/images/hellofresh/spatzle-in-raclett-kase-sosse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Topfinhalt mit 1 TL [1,5 TL | 2 TL] Honig* und 1 TL [1,5 TL | 2 TL] Balsamicoessig* ablöschen. Hälfte der Petersilie zugeben und mit Salz* und Pfeffer* abschmecken. Ggf. warm halten.",
+      "imageUrl": "/images/hellofresh/spatzle-in-raclett-kase-sosse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Pfanneninhalt mit Kochsahne, „Hello Muskat“ und 150 ml [225 ml | 300 ml] Wasser* ablöschen. Raclette-Käse unterrühren, bis er geschmolzen ist. Mit Salz* und kräftig Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/spatzle-in-raclett-kase-sosse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Spätzle auf tiefen Tellern anrichten. Balsamico-Apfel-Topping darauf verteilen und mit restlicher Petersilie toppen.",
+      "imageUrl": "/images/hellofresh/spatzle-in-raclett-kase-sosse-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 843,
@@ -25,11 +71,18 @@
   },
   "nutritionSource": "per-serving",
   "nutritionNeedsReview": false,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
   "sourcePage": "https://www.hellofresh.de/recipes/schnelle-gerichte",
   "importStatus": "candidate",
-  "difficulty": "Einfach"
+  "difficulty": "Einfach",
+  "dietaryType": "vegetarian",
+  "classificationReasons": [
+    "Schnell: 20 Minuten <= 30.",
+    "Vegetarisch: keine Fleisch-/Fischbegriffe, aber tierische Produkte erkannt (butter, eier, honig, kaese, kochsahne, sahne)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:07.657Z"
 }

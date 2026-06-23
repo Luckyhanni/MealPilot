@@ -11,6 +11,7 @@
     "garnelen",
     "salat",
     "schnell",
+    "high protein",
     "low cal"
   ],
   "ingredients": [
@@ -65,6 +66,7 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 20 Minuten <= 30.",
+    "Protein Stark: 42 g Protein pro Portion >= 40 g.",
     "Low Cal: 640 kcal <= 650.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
   ],

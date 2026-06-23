@@ -5,20 +5,72 @@
   "kcal": 463,
   "protein": 31,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/garnelen-auf-krauter-pastinakenstampf-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/garnelen-auf-krauter-pastinakenstampf-64ad737df18420f5b30bb360",
   "tags": [
     "viel gemüse",
     "kalorien im blick",
     "low carb",
-    "kalorienreduziert"
+    "kalorienreduziert",
+    "schnell",
+    "low cal"
   ],
   "categories": [
     "schnell",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "150 g Garnelen ohne Schale",
+    "360 g Pastinake",
+    "200 g mehligk. Kartoffeln",
+    "100 g Buschbohnen",
+    "1 Stück Salatherz (Romana)",
+    "1 Stück Schalotte",
+    "1 Stück Knoblauchzehe",
+    "10 g Petersilie glatt/Schnittlauch",
+    "150 g Naturjoghurt",
+    "10 ml mittelscharfer Senf",
+    "8 g Gemüsebrühpulver",
+    "1 Teelöffel Honig",
+    "2 Esslöffel Olivenöl",
+    "1 Esslöffel Butter",
+    "1 Teelöffel Weißweinessig",
+    "400 ml Wasser",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 400 ml [600 ml | 800 ml] Wasser im Wasserkocher. Kartoffeln schälen und in 2 cm Würfel schneiden. Pastinaken schälen und in 2 cm Würfel schneiden. In einen großen Topf 400 ml [600 ml | 800 ml] heißes Wasser* füllen, salzen* und aufkochen lassen. Gemüse hinzugeben und 12 – 14 Min. weich garen. Danach durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/garnelen-auf-krauter-pastinakenstampf-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Petersilie und Schnittlauch fein hacken. In einer kleinen Schüssel Joghurt, Kräuter, Salz* und Pfeffer* zu einem Dip vermengen. Salatherz in mundgerechte Stücke schneiden. In einer großen Schüssel Senf, 1 EL [1,5 EL | 2 EL] Dip, 1 EL [1,5 EL | 2 EL] Olivenöl*, 1 TL [1,5 TL | 2 TL] Honig*, 1 TL [1,5 TL | 2 TL] Essig*, Salz* und Pfeffer* zu einem Dressing vermengen. Salat hinzugeben und noch nicht vermengen.",
+      "imageUrl": "/images/hellofresh/garnelen-auf-krauter-pastinakenstampf-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Schalotte fein würfeln. Knoblauch fein hacken. Enden der Bohnen entfernen und Bohnen halbieren.",
+      "imageUrl": "/images/hellofresh/garnelen-auf-krauter-pastinakenstampf-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Buschbohnen darin 5 – 6 Min. garen. Schalotte, Knoblauch und Garnelen hinzugeben und 3 – 4 weitere Min. garen, bis die Bohnen weich sind. Mit Pfeffer* abschmecken. Ggfs. warm halten.",
+      "imageUrl": "/images/hellofresh/garnelen-auf-krauter-pastinakenstampf-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Kartoffeln und Pastinaken zusammen mit der Hälfte des Dips, Gemüsebrühe, 1 EL [1,5 EL | 2 EL] Butter*, Salz* und Pfeffer* zurück in den Topf geben und mithilfe eines Kartoffelstampfers zu einem Stampf verarbeiten.",
+      "imageUrl": "/images/hellofresh/garnelen-auf-krauter-pastinakenstampf-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Salat mit dem Dressing vermengen. Pastinakenstampf auf Teller verteilen, Garnelen darauf anrichten und mit dem Joghurt toppen. Salat daneben anrichten und genießen.",
+      "imageUrl": "/images/hellofresh/garnelen-auf-krauter-pastinakenstampf-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 463,
@@ -26,7 +78,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
@@ -35,5 +87,13 @@
   "difficulty": "Mittel",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Low Cal: 463 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:43.697Z"
 }

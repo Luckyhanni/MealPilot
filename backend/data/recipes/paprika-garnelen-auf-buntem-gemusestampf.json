@@ -5,22 +5,66 @@
   "kcal": 438,
   "protein": 31,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/paprika-garnelen-auf-buntem-gemusestampf-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/paprika-garnelen-auf-buntem-gemusestampf-6577233cba37c0febace3084",
   "tags": [
-    "high protein",
     "kalorien im blick",
     "family",
     "low carb",
+    "kalorienreduziert",
     "schnell",
-    "kalorienreduziert"
+    "low cal"
   ],
   "categories": [
     "schnell",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "200 g Garnelen ohne Schale",
+    "400 g mehligk. Kartoffeln",
+    "2 Stück Karotte",
+    "100 g Babyspinat",
+    "1 Stück kleine Salatgurke",
+    "50 ml Buttermilch-Zitronen-Dressing",
+    "20 g Kräuterbutter",
+    "1 g Paprikapulver, edelsüß",
+    "4 g Hühnerbrühe",
+    "50 ml Milch",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Kartoffeln schälen und in 2 cm Würfel schneiden. Karotten schälen und in 2 cm Scheiben schneiden.",
+      "imageUrl": "/images/hellofresh/paprika-garnelen-auf-buntem-gemusestampf-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einen großen Topf ca. 2 L heißes Wasser* füllen, 1 TL [1,5 TL | 2 TL] Salz* dazugeben und aufkochen lassen. Kartoffeln und Karotten zugeben und 12 – 15 Min. garen, bis sie weich sind.",
+      "imageUrl": "/images/hellofresh/paprika-garnelen-auf-buntem-gemusestampf-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Gurke längs vierteln und in 1 cm Würfel schneiden. In einer großen Schüssel Babyspinat, Gurkenwürfel und Buttermilch-Zitronen-Dressing vermengen.",
+      "imageUrl": "/images/hellofresh/paprika-garnelen-auf-buntem-gemusestampf-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer großen Pfanne Kräuterbutter erhitzen. Garnelen mit Paprikapulver darin 2 – 3 Min. scharf anbraten, bis sie innen nicht mehr glasig sind. Mit Pfeffer* würzen. Ggfs. warm halten.",
+      "imageUrl": "/images/hellofresh/paprika-garnelen-auf-buntem-gemusestampf-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Wenn das Gemüse gar ist, durch ein Sieb abgießen. Zurück in den Topf geben, 50 ml [75 ml | 100 ml] Milch*, Hühnerbrühe und Pfeffer* dazugeben und mithilfe eines Kartoffelstampfers zu einem Stampf verarbeiten.",
+      "imageUrl": "/images/hellofresh/paprika-garnelen-auf-buntem-gemusestampf-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Gemüsestampf auf Teller verteilen und Garnelen darauf geben. Spinat-Gurken-Salat daneben anrichten.",
+      "imageUrl": "/images/hellofresh/paprika-garnelen-auf-buntem-gemusestampf-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 438,
@@ -28,7 +72,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
@@ -37,5 +81,13 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Low Cal: 438 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (garnele, garnelen)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:32.029Z"
 }

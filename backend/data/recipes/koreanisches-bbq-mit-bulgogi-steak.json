@@ -10,7 +10,8 @@
   "tags": [
     "rind",
     "reis",
-    "asiatisch"
+    "asiatisch",
+    "high protein"
   ],
   "ingredients": [
     "250 g Schweinelachssteaks",
@@ -73,6 +74,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 52 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (bulgogi, lachs, schwein, schweine, schweinelachs, steak)."
   ],
   "classificationNeedsReview": false

@@ -5,7 +5,7 @@
   "kcal": 790,
   "protein": 38,
   "durationMinutes": 30,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/tex-mex-style-hackpfanne-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/tex-mex-style-hackpfanne-668e41bf018283f1f439b4dc",
   "tags": [
     "schnell"
@@ -13,8 +13,39 @@
   "categories": [
     "schnell"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "250 g gemischte Hackfleischzubereitung",
+    "150 g Basmatireis",
+    "200 g Coleslaw-Mix",
+    "1 Stück Zwiebel",
+    "100 g saure Sahne, Bio",
+    "50 g junger Gouda, gerieben",
+    "25 g Ketchup",
+    "4 g Gewürzmischung „Hello Fiesta“",
+    "4 g Hühnerbrühe",
+    "1 Esslöffel Öl",
+    "1 Esslöffel Butter",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "50 ml Wasser"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze 1.000 ml [1.500 ml | 2.000 ml] Wasser im Wasserkocher. In einen großen Topf 1.000 ml [1.500 ml | 2.000 ml] heißes Wasser* füllen. Reis einrühren und leicht salzen*. Beides zusammen zum Kochen bringen und ca. 12 Min. abgedeckt kochen, bis der Reis gar ist. Nach der Garzeit durch ein Sieb abgießen.",
+      "imageUrl": "/images/hellofresh/tex-mex-style-hackpfanne-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Zwiebel in Streifen schneiden. In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen. Hackfleisch und Zwiebelstreifen 4 – 6 Min. darin anbraten. Coleslaw-Mix, „Hello Fiesta“, Hühnerbrühe, Salz* und Pfeffer* dazugeben und weitere 2 – 3 Min. anbraten. Pfanne mit Ketchup und 50 ml [75 ml | 100 ml] Wasser* ablöschen. Mit Käse bedecken und 1 – 2 Min. abgedeckt kochen, bis er geschmolzen ist.",
+      "imageUrl": "/images/hellofresh/tex-mex-style-hackpfanne-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "EL [1,5 EL | 2 EL] Butter*, Salz* und Pfeffer* unter den Reis rühren. Reis auf tiefe Teller verteilen, Tex-Mex-Pfanne darauf anrichten und mit saurer Sahne toppen.",
+      "imageUrl": "/images/hellofresh/tex-mex-style-hackpfanne-step-3.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 790,
@@ -22,7 +53,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -31,5 +62,12 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 30 Minuten <= 30.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, hack, hackfleisch)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:15.976Z"
 }

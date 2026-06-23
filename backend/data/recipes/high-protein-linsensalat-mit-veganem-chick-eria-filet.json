@@ -5,13 +5,15 @@
   "kcal": 527,
   "protein": 28,
   "durationMinutes": 25,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/high-protein-linsensalat-mit-veganem-chick-eria-filet-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/high-protein-linsensalat-mit-veganem-chick-eria-filet-692d767a1ca49f0d8bd36cec",
   "tags": [
     "viel gemüse",
-    "vegan",
     "kalorien im blick",
-    "high protein"
+    "schnell",
+    "low cal",
+    "vegetarisch",
+    "vegan"
   ],
   "categories": [
     "schnell",
@@ -19,15 +21,61 @@
     "vegetarisch",
     "vegan"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "180 g The Vegetarian Butcher Chick-Eria Filets",
+    "390 g braune Linsen",
+    "1 Stück kleine Salatgurke",
+    "1 Stück rote Zwiebel",
+    "10 g Petersilie, glatt",
+    "1 Stück Apfel",
+    "50 ml Veganes Knoblauch Dressing",
+    "2 g Gewürzmischung „Hello Paprika“",
+    "75 g Feldsalat",
+    "1 Esslöffel Öl",
+    "nach Geschmack Weißweinessig",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "nach Geschmack Zucker"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Gurke längs halbieren und in 0.5 cm Halbmonde schneiden. Zwiebel halbieren und in feine Streifen schneiden. Petersilie fein hacken. Apfel vierteln, entkernen und in 0.5 cm Scheiben schneiden. Linsen in ein Sieb giessen und mit Wasser abspülen. In einer kleinen Schüssel Gurke, ein Drittel Petersilie und ein Viertel Zwiebel mit Essig*, Zucker*, Salz*, Pfeffer* und Olivenöl* vermengen.",
+      "imageUrl": "/images/hellofresh/high-protein-linsensalat-mit-veganem-chick-eria-filet-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einer grossen Bratpfanne 1 EL [2 EL] Öl* erhitzen. Linsen, ein Drittel Petersilie, Hälfte „Hello Paprika“, Salz* und Pfeffer* 2 – 3 Min. scharf anbraten. Linsen aus der Bratpfanne nehmen und bis Schritt 4 abkühlen lassen.",
+      "imageUrl": "/images/hellofresh/high-protein-linsensalat-mit-veganem-chick-eria-filet-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Die grosse Bratpfanne ohne Fettzugabe erneut erhitzen. Drei Viertel Zwiebel und Hälfte Apfel in die Bratpfanne geben, mit Zucker*, Salz*, Pfeffer* und Essig* würzen und 2 – 3 Min. scharf anbraten. Topping aus der Bratpfanne nehmen und bis Ende des Rezepts abkühlen lassen.",
+      "imageUrl": "/images/hellofresh/high-protein-linsensalat-mit-veganem-chick-eria-filet-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "In einer kleinen Schüssel veganes Knoblauch-Dressing, restliche Petersilie, Salz* und Pfeffer* vermengen. In einer grossen Schüssel 1 EL Sauce, Essig*, Olivenöl*, Salz* und Pfeffer* mischen. Linsen, restlichen Apfel und Nüsslisalat dazugeben und am Ende des Rezepts untermengen.",
+      "imageUrl": "/images/hellofresh/high-protein-linsensalat-mit-veganem-chick-eria-filet-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Chick-Eria Filets mit restlichem „Hello Paprika“, etwas Öl*, Salz* und Pfeffer* würzen. In der grossen Bratpfanne erneut etwas Öl* erhitzen. Chick-Eria Filets 3 – 4 Min. rundum goldbraun anbraten. Dann mit 2 EL [4 EL] Wasser* ablöschen.",
+      "imageUrl": "/images/hellofresh/high-protein-linsensalat-mit-veganem-chick-eria-filet-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Filets nach Belieben in Scheiben schneiden. Filetscheiben, Zwiebel-Apfel-Topping und Gurkensalat auf Linsensalat auf tiefen Tellern servieren. Mit restlicher Sauce geniessen. En Guete!",
+      "imageUrl": "/images/hellofresh/high-protein-linsensalat-mit-veganem-chick-eria-filet-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 527,
     "protein": 28
   },
   "nutritionSource": "per-serving",
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": false,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "vegane-rezepte",
@@ -41,5 +89,13 @@
   "nutritionNeedsReview": false,
   "nutritionNotes": [
     "Protein wurde aus HelloFresh-Seite übernommen."
-  ]
+  ],
+  "dietaryType": "vegan",
+  "classificationReasons": [
+    "Schnell: 25 Minuten <= 30.",
+    "Low Cal: 527 kcal <= 650.",
+    "Vegan: keine Fleisch-/Fischbegriffe und keine tierischen Produktbegriffe erkannt."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:25:57.271Z"
 }

@@ -5,18 +5,65 @@
   "kcal": 528,
   "protein": 30,
   "durationMinutes": 20,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/wurzige-fischboulette-in-krauterpanade-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/wurzige-fischboulette-in-krauterpanade-671a5392d68888376c8d37aa",
   "tags": [
     "kalorien im blick",
-    "schnell"
+    "schnell",
+    "low cal"
   ],
   "categories": [
     "schnell",
     "low-cal"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "400 g Kartoffeln (Drillinge)",
+    "250 g Seelachs",
+    "1 Stück Salatherz (Romana)",
+    "1 Stück kleine Salatgurke",
+    "1 Stück Zitrone, gewachst",
+    "10 g Dill/Schnittlauch",
+    "25 g Semmelbrösel",
+    "75 g Naturjoghurt",
+    "4 g Hello Umami",
+    "10 ml mittelscharfer Senf",
+    "2 Esslöffel Öl",
+    "1 Teelöffel Salz",
+    "1 Teelöffel Butter",
+    "2 Teelöffel Mehl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Kräuter fein hacken. Zitrone vierteln. Gurke längs halbieren und in dünne Halbmonde schneiden. Romanasalat in 2 cm Streifen schneiden. Auf einem weiteren Schneidebrett Fisch in 1 cm Würfel schneiden.",
+      "imageUrl": "/images/hellofresh/wurzige-fischboulette-in-krauterpanade-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "In einem kleinen Topf ausreichend gesalzenes Wasser zum Kochen bringen. Kartoffeln halbieren und im kochenden Wasser 12 – 15 Min. gar kochen.",
+      "imageUrl": "/images/hellofresh/wurzige-fischboulette-in-krauterpanade-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Schüssel Fischwürfel zusammen mit 2 TL [3 TL I 4 TL] Mehl*, 0,5 TL [0,75 TL I 1 TL] Salz*, Hälfte der Kräuter, Senf, „Hello Umami“ und der Hälfte der Semmelbrösel in eine große Schüssel geben. Fischstücke ca. 1 Min. richtig gut mit den Restliche Semmelbrösel auf einen Teller geben, aus der Masse 2 [3 | 4] flache Bouletten formen und diese in den restlichen Semmelbröseln wälzen und diese andrücken.",
+      "imageUrl": "/images/hellofresh/wurzige-fischboulette-in-krauterpanade-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "EL [1,5 EL I 2 EL] Öl* in einer großen Pfanne bei mittlerer Hitze erhitzen. Frikadellen zugeben und je Seite ca. 4 – 5 Min. goldbraun anbraten, bis sie innen nicht mehr glasig sind.",
+      "imageUrl": "/images/hellofresh/wurzige-fischboulette-in-krauterpanade-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer kleinen Schüssel die Hälfte der restlichen Kräuter mit Dreiviertel vom Joghurt vermischen. Mit Salz* und Pfeffer* abschmecken. Kartoffeln abgießen und im Topf mit den restlichen Kräutern und 1 TL [1,5 TL I 2 TL] Butter vermengen.",
+      "imageUrl": "/images/hellofresh/wurzige-fischboulette-in-krauterpanade-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "In einer großen Schüssel restlichen Joghurt, Saft einer [zwei I zwei] Zitronenspalte, 0,5 TL [0,75 TL I 1 TL] Salz* und Pfeffer* mit dem Salat und den Gurken vermischen. Fischbouletten mit Kartoffeln, Salat und Dip servieren.",
+      "imageUrl": "/images/hellofresh/wurzige-fischboulette-in-krauterpanade-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 528,
@@ -24,7 +71,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "schnelle-gerichte",
@@ -33,5 +80,13 @@
   "difficulty": "Einfach",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "omnivore",
+  "classificationReasons": [
+    "Schnell: 20 Minuten <= 30.",
+    "Low Cal: 528 kcal <= 650.",
+    "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (lachs, seelachs)."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:27:49.458Z"
 }

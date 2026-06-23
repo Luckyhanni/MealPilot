@@ -5,20 +5,72 @@
   "kcal": 487,
   "protein": 22,
   "durationMinutes": 40,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/linsen-pilz-ragout-mit-kartoffel-pastinakenstampf-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/linsen-pilz-ragout-mit-kartoffel-pastinakenstampf-64e3b215a2c417189e0dab00",
   "tags": [
     "kalorien im blick",
-    "vegan",
-    "kalorienreduziert"
+    "kalorienreduziert",
+    "low cal",
+    "vegetarisch",
+    "vegan"
   ],
   "categories": [
     "low-cal",
     "vegetarisch",
     "vegan"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "400 g mehligk. Kartoffeln",
+    "180 g Pastinake",
+    "25 ml Sojasoße",
+    "10 ml mittelscharfer Senf",
+    "35 g Tomatenmark",
+    "1 Stück Knoblauchzehe",
+    "5 g Gewürzmischung „Hello Muskat“",
+    "200 g Champignons",
+    "390 g braune Linsen",
+    "10 g Petersilie glatt/Thymian",
+    "50 g Blattsalatmischung",
+    "12 g Balsamico Creme",
+    "nach Geschmack Pfeffer",
+    "200 ml Wasser",
+    "2 Esslöffel Olivenöl",
+    "nach Geschmack Salz",
+    "1 Teelöffel Balsamicoessig",
+    "1 Teelöffel Zucker"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Erhitze reichlich Wasser im Wasserkocher. Kartoffeln schälen und in 2 cm Würfel schneiden. Pastinake schälen und in 2 cm Würfel schneiden. Kartoffeln und Pastinake in einen großen Topf mit Wasser* geben, salzen*, aufkochen und 12 – 15 Min. garen, bis sie weich sind.",
+      "imageUrl": "/images/hellofresh/linsen-pilz-ragout-mit-kartoffel-pastinakenstampf-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Champignons halbieren oder vierteln. Linsen in ein Sieb gießen und mit Wasser abspülen. Petersilien- und Thymianblätter getrennt voneinander grob hacken.",
+      "imageUrl": "/images/hellofresh/linsen-pilz-ragout-mit-kartoffel-pastinakenstampf-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "In einer großen Pfanne 1 EL [1,5 EL | 2 EL] Margarine* und 1 EL [1,5 EL | 2 EL] Olivenöl* erhitzen. Champignons darin 3 – 4 Min. anbraten, bis sie etwas Farbe bekommen. Linsen und Thymian in die Pfanne geben und Knoblauch dazupressen, weitere 3 – 4 Min. mitbraten.",
+      "imageUrl": "/images/hellofresh/linsen-pilz-ragout-mit-kartoffel-pastinakenstampf-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Pfanneninhalt mit Sojasoße, Senf, Tomatenmark, der Hälfte „Hello Muskat\", 1 TL [1,5 TL | 2 TL] Balsamicoessig*, 1 TL [1,5 TL | 2 TL] Zucker* und 150 ml [225 ml | 300 ml] Wasser* ablöschen. 4 – 5 Min. köcheln, bis die Soße leicht eindickt.",
+      "imageUrl": "/images/hellofresh/linsen-pilz-ragout-mit-kartoffel-pastinakenstampf-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "In einer großen Schüssel Balsamicocreme, 1 EL [1,5 EL | 2 EL] Olivenöl* und 1 EL [1,5 EL | 2 EL] Wasser* zu einem Dressing verrühren. Mit Salz* und Pfeffer* abschmecken. Salat mit Dressing marinieren. Kartoffeln abgießen und dabei ungefähr 50 ml [75 ml | 100 ml] Kochwasser* zurückhalten. Kartoffeln, Kochwasser*, restliche „Hello Muskat\" und 1 EL [1,5 EL | 2 EL] Margarine* mithilfe eines Kartoffelstampfers zu einem Püree verarbeiten, drei Viertel von der Petersilie unterheben. Mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/linsen-pilz-ragout-mit-kartoffel-pastinakenstampf-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Pastinakenstampf auf Teller verteilen. Linsen-Pilz-Ragout und Salat daneben anrichten und mit restlicher Petersilie garnieren.",
+      "imageUrl": "/images/hellofresh/linsen-pilz-ragout-mit-kartoffel-pastinakenstampf-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 487,
@@ -26,7 +78,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
@@ -35,5 +87,12 @@
   "difficulty": "Mittel",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegan",
+  "classificationReasons": [
+    "Low Cal: 487 kcal <= 650.",
+    "Vegan: keine Fleisch-/Fischbegriffe und keine tierischen Produktbegriffe erkannt."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:20.736Z"
 }

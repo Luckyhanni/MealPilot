@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/portobello-stroganoff-mit-extra-bio-schweinestreifen-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/portobello-stroganoff-mit-extra-bio-schweinestreifen-69d8a2026bb16e39e1b7be8f",
   "tags": [
-    "schnell"
+    "schnell",
+    "high protein"
   ],
   "ingredients": [
     "270 g Fusilli",
@@ -79,6 +80,7 @@
   "dietaryType": "omnivore",
   "classificationReasons": [
     "Schnell: 25 Minuten <= 30.",
+    "Protein Stark: 54.1 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (fleisch, schwein, schweine, schweinefleisch)."
   ],
   "classificationNeedsReview": false,

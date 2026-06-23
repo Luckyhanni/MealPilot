@@ -8,7 +8,8 @@
   "imageUrl": "/images/hellofresh/schweinefilet-in-aprikosen-sosse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/schweinefilet-in-aprikosen-sosse-6564689e53b95b70f9991263",
   "tags": [
-    "gemischt"
+    "gemischt",
+    "high protein"
   ],
   "ingredients": [
     "250 g Schweinefilet",
@@ -76,6 +77,7 @@
   "nutritionNeedsReview": false,
   "dietaryType": "omnivore",
   "classificationReasons": [
+    "Protein Stark: 50 g Protein pro Portion >= 40 g.",
     "Omnivor: Fleisch/Fisch/Meeresfruechte erkannt (schwein, schweine, schweinefilet)."
   ],
   "classificationNeedsReview": false

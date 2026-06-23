@@ -5,20 +5,68 @@
   "kcal": 486,
   "protein": 26,
   "durationMinutes": 45,
-  "imageUrl": "",
+  "imageUrl": "/images/hellofresh/korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse-hero.jpg",
   "sourceUrl": "https://www.hellofresh.de/recipes/korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse-609135b3616896797f6021c6",
   "tags": [
-    "vegan",
     "-20% kalorien",
-    "kalorienreduziert"
+    "kalorienreduziert",
+    "low cal",
+    "vegetarisch",
+    "vegan"
   ],
   "categories": [
     "low-cal",
     "vegetarisch",
     "vegan"
   ],
-  "ingredients": [],
-  "instructions": [],
+  "ingredients": [
+    "200 g Kichererbsen-Tofu mit Rauchsalz",
+    "70 g Chana-Masala-Basis-Soße",
+    "1 Stück rote Zwiebel",
+    "1 Esslöffel Tomatenmark",
+    "500 g festk. Kartoffeln",
+    "1 Stück Knoblauchzehe",
+    "1 g gemahlener Kumin",
+    "1 Stück Zitrone, ungewachst",
+    "1 Stück Zucchini",
+    "10 g Petersilie",
+    "100 g veganes cremiges Sojaprodukt",
+    "nach Geschmack Salz",
+    "nach Geschmack Pfeffer",
+    "2 Esslöffel Öl"
+  ],
+  "instructions": [
+    {
+      "title": "Schritt 1",
+      "text": "Heize den Backofen auf 220 °C Ober-/Unterhitze (200 °C Umluft) vor. Erhitze reichlich Wasser im Wasserkocher. Zwiebel halbieren, abziehen und in feine Streifen schneiden. „Kofu“ in 2 cm große Würfel schneiden. In einem hohen Rührgefäß Chana-Masala-Soße, die Hälfte [drei Viertel | alles] vom Tomatenmark und 100 ml [150 ml | 200 ml] Wasser* miteinander vermengen und mit Salz* und Pfeffer* würzen.",
+      "imageUrl": "/images/hellofresh/korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse-step-1.jpg"
+    },
+    {
+      "title": "Schritt 2",
+      "text": "Enden der Zucchini abschneiden, Zucchini längs halbieren und in 1 cm dicke Halbmonde schneiden. Zucchini auf ein mit Backpapier belegtes Backblech geben, dabei etwas Platz für eine Auflaufform lassen. Zucchini mit 1 EL [1,5 EL | 2 EL] Öl*, Salz* und Pfeffer* vermengen. „Kofu“-Würfel, vorbereitete Soße und Zwiebelstreifen in eine Auflaufform geben und zusammen mit der Zucchini im vorgeheizten Ofen für ca. 25 Min. backen. Währenddessen mit dem Rezept fortfahren.",
+      "imageUrl": "/images/hellofresh/korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse-step-2.jpg"
+    },
+    {
+      "title": "Schritt 3",
+      "text": "Kartoffeln schälen und vierteln. Kartoffelstücke in einen großen Topf geben, mit ausreichend heißem Wasser* befüllen, salzen* und aufkochen lassen. Kartoffelstücke für ca. 12 – 14 Min gar kochen. Kartoffeln durch ein Sieb abgießen und kurz mit kaltem Wasser abschrecken.",
+      "imageUrl": "/images/hellofresh/korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse-step-3.jpg"
+    },
+    {
+      "title": "Schritt 4",
+      "text": "Petersilienblätter fein hacken. In einer kleinen Schüssel gehackte Petersilie mit dem cremigen veganen Sojaprodukt vermengen und mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse-step-4.jpg"
+    },
+    {
+      "title": "Schritt 5",
+      "text": "Knoblauch abziehen. Zitrone heiß abwaschen und 1 TL [1,5 TL | 2 TL] Zitronenschale abreiben. In einer großen, beschichteten Pfanne 1 EL [1,5 EL | 2 EL] Öl* erhitzen und Kartoffelwürfel 3 – 4 Min. anbraten. Anschließend Knoblauch dazupressen. Zitronenabrieb und gemahlenen Kumin dazugeben, gut vermengen und 1 – 2 Min weiterbraten. Nach Belieben Kartoffeln mit Salz* und Pfeffer* abschmecken.",
+      "imageUrl": "/images/hellofresh/korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse-step-5.jpg"
+    },
+    {
+      "title": "Schritt 6",
+      "text": "Rezepte für mehr Abwechslung beim Kochen Kichererbsen Rezepte Zucchini Rezepte Tofu Rezepte Zitronen Rezepte",
+      "imageUrl": "/images/hellofresh/korma-curry-mit-kofu-auf-zucchini-kartoffel-gemuse-step-6.jpg"
+    }
+  ],
   "servings": 2,
   "nutritionPerServing": {
     "kcal": 486,
@@ -26,7 +74,7 @@
   },
   "nutritionSource": "estimated",
   "nutritionNeedsReview": true,
-  "needsDetailImport": true,
+  "needsDetailImport": false,
   "needsNutritionImport": true,
   "sourceProvider": "HelloFresh",
   "sourceCollection": "kalorienreduzierte-rezepte",
@@ -35,5 +83,12 @@
   "difficulty": "Mittel",
   "nutritionNotes": [
     "Protein wurde plausibel anhand Gericht/Zutatenart geschätzt; bei erneutem HelloFresh-Import bitte durch Originalwert ersetzen."
-  ]
+  ],
+  "dietaryType": "vegan",
+  "classificationReasons": [
+    "Low Cal: 486 kcal <= 650.",
+    "Vegan: keine Fleisch-/Fischbegriffe und keine tierischen Produktbegriffe erkannt."
+  ],
+  "classificationNeedsReview": false,
+  "importedAt": "2026-06-23T06:26:17.272Z"
 }
