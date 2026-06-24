@@ -156,6 +156,7 @@ type ArchiveEntry = {
 type MealPilotUser = {
   id: string;
   name: string;
+  isDemo?: boolean;
   createdAt?: string;
   settings?: AppSettings;
 };
@@ -547,29 +548,27 @@ function groupShoppingItems(items: ShoppingItem[]) {
 
 const currentUserStorageKey = "mealpilot_current_user_id";
 const currentUserNameStorageKey = "mealpilot_current_user_name";
+const authTokenStorageKey = "mealpilot_auth_token";
 const legacyViewedRecipesStorageKey = "mealpilot_viewed_recipes";
-
-function readCurrentUserId() {
-  if (typeof window === "undefined") return "johannes-sophie";
-  return window.localStorage.getItem(currentUserStorageKey) || "johannes-sophie";
-}
-
-function writeCurrentUserId(userId: string) {
-  if (typeof window === "undefined") return;
-  window.localStorage.setItem(currentUserStorageKey, userId || "johannes-sophie");
-}
-
-function readStoredCurrentUser(): MealPilotUser | null {
-  if (typeof window === "undefined") return null;
-  const id = window.localStorage.getItem(currentUserStorageKey);
-  const name = window.localStorage.getItem(currentUserNameStorageKey);
-  return id && name ? { id, name } : null;
-}
 
 function writeCurrentUser(user: Pick<MealPilotUser, "id" | "name">) {
   if (typeof window === "undefined") return;
   window.localStorage.setItem(currentUserStorageKey, user.id);
   window.localStorage.setItem(currentUserNameStorageKey, user.name);
+}
+
+function readAuthToken() {
+  if (typeof window === "undefined") return "";
+  return window.localStorage.getItem(authTokenStorageKey) || "";
+}
+
+function writeAuthToken(token?: string) {
+  if (typeof window === "undefined") return;
+  if (token) {
+    window.localStorage.setItem(authTokenStorageKey, token);
+  } else {
+    window.localStorage.removeItem(authTokenStorageKey);
+  }
 }
 
 function clearCurrentUserId() {
@@ -607,9 +606,10 @@ async function migrateLegacyViewedRecipes(userId: string) {
 }
 
 async function api<T>(url: string, options?: RequestInit): Promise<T> {
+  const token = readAuthToken();
   const headers = {
     "Content-Type": "application/json",
-    "X-MealPilot-User": readCurrentUserId(),
+    ...(token ? { Authorization: `Bearer ${token}` } : {}),
     ...(options?.headers && !(options.headers instanceof Headers)
       ? (options.headers as Record<string, string>)
       : {}),
@@ -634,6 +634,8 @@ function App() {
   const [authState, setAuthState] = useState<AuthState>("checking");
   const [pinInput, setPinInput] = useState("");
   const [authError, setAuthError] = useState<string | null>(null);
+  const [demoEnabled, setDemoEnabled] = useState(false);
+  const [demoLoading, setDemoLoading] = useState(false);
   const [plan, setPlan] = useState<WeekPlan | null>(null);
   const [view, setView] = useState<View>("home");
   const [loading, setLoading] = useState(false);
@@ -703,29 +705,34 @@ function App() {
 
   async function checkAuthStatus() {
     try {
+      const token = readAuthToken();
       const res = await fetch("/api/auth/check-pin", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
         body: "{}",
       });
+      const data = (await res.json()) as {
+        enabled: boolean;
+        demoEnabled?: boolean;
+        ok: boolean;
+        user?: MealPilotUser;
+        token?: string;
+      };
+      setDemoEnabled(Boolean(data.demoEnabled));
       if (res.status === 401) {
-        const storedUser = readStoredCurrentUser();
-        if (storedUser && localStorage.getItem("mealpilot_pin_ok") === "true") {
-          setCurrentUser(storedUser);
-          setAuthState("open");
-          return;
-        }
+        writeAuthToken();
         clearCurrentUserId();
-        setAuthState(
-          "locked",
-        );
+        setAuthState("locked");
         return;
       }
-      const data = (await res.json()) as { enabled: boolean; ok: boolean; user?: MealPilotUser };
       if (!data.enabled) {
         localStorage.removeItem("mealpilot_pin_ok");
       }
       if (data.ok && data.user) {
+        writeAuthToken(data.token);
         writeCurrentUser(data.user);
         setCurrentUser(data.user);
       }
@@ -749,12 +756,17 @@ function App() {
         setAuthError("PIN ist falsch.");
         return;
       }
-      const data = (await res.json()) as { ok: boolean; user?: MealPilotUser };
+      const data = (await res.json()) as {
+        ok: boolean;
+        user?: MealPilotUser;
+        token?: string;
+      };
       if (!data.ok || !data.user) {
         setAuthError("PIN ist falsch.");
         return;
       }
       localStorage.setItem("mealpilot_pin_ok", "true");
+      writeAuthToken(data.token);
       writeCurrentUser(data.user);
       setCurrentUser(data.user);
       setAuthState("open");
@@ -763,8 +775,39 @@ function App() {
     }
   }
 
+  async function startDemo() {
+    setDemoLoading(true);
+    setAuthError(null);
+    try {
+      const res = await fetch("/api/auth/demo", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: "{}",
+      });
+      const data = (await res.json()) as {
+        ok?: boolean;
+        user?: MealPilotUser;
+        token?: string;
+        error?: string;
+      };
+      if (!res.ok || !data.ok || !data.user || !data.token) {
+        setAuthError(data.error || "Demo konnte nicht gestartet werden.");
+        return;
+      }
+      writeAuthToken(data.token);
+      writeCurrentUser(data.user);
+      setCurrentUser(data.user);
+      setAuthState("open");
+    } catch {
+      setAuthError("Demo konnte nicht gestartet werden.");
+    } finally {
+      setDemoLoading(false);
+    }
+  }
+
   function logout() {
     localStorage.removeItem("mealpilot_pin_ok");
+    writeAuthToken();
     clearCurrentUserId();
     setPinInput("");
     setAuthError(null);
@@ -1333,8 +1376,11 @@ function App() {
         checking={authState === "checking"}
         pin={pinInput}
         error={authError}
+        demoEnabled={demoEnabled}
+        demoLoading={demoLoading}
         onPinChange={setPinInput}
         onSubmit={submitPin}
+        onStartDemo={startDemo}
       />
     );
   }
@@ -1476,6 +1522,7 @@ function App() {
           back={() => setView(recipeBackView === "recipe" ? "plan" : recipeBackView)}
           importRecipe={importRecipe}
           openSingleShopping={openSingleShopping}
+          isDemo={Boolean(currentUser?.isDemo)}
         />
       )}
       {view === "print" && plan && (
@@ -1551,14 +1598,20 @@ function PinGate({
   checking,
   pin,
   error,
+  demoEnabled,
+  demoLoading,
   onPinChange,
   onSubmit,
+  onStartDemo,
 }: {
   checking: boolean;
   pin: string;
   error: string | null;
+  demoEnabled: boolean;
+  demoLoading: boolean;
   onPinChange: (pin: string) => void;
   onSubmit: (e: React.FormEvent) => void;
+  onStartDemo: () => void;
 }) {
   return (
     <main className="pin-screen">
@@ -1584,6 +1637,25 @@ function PinGate({
             <button className="primary" type="submit">
               <LockKeyhole size={18} /> Öffnen
             </button>
+            {demoEnabled && (
+              <>
+                <div className="pin-divider" aria-hidden="true">
+                  <span>oder</span>
+                </div>
+                <button
+                  className="demo-login-button"
+                  type="button"
+                  onClick={onStartDemo}
+                  disabled={demoLoading}
+                >
+                  <Utensils size={18} />
+                  {demoLoading ? "Demo wird vorbereitet..." : "Demo starten"}
+                </button>
+                <p className="demo-login-hint">
+                  Eigener Demo-Bereich mit allen Planungs-, Koch- und Einkaufsfunktionen.
+                </p>
+              </>
+            )}
           </>
         )}
       </form>
@@ -3900,11 +3972,13 @@ function RecipeDetail({
   back,
   importRecipe,
   openSingleShopping,
+  isDemo,
 }: {
   recipe: Recipe;
   back: () => void;
   importRecipe: (recipe: Recipe) => void;
   openSingleShopping: (recipe: Recipe) => void;
+  isDemo: boolean;
 }) {
   const [activeTab, setActiveTab] = useState<RecipeDetailTab>("overview");
   const nutrition = getRecipeNutritionPerServing(recipe);
@@ -4047,7 +4121,7 @@ function RecipeDetail({
                     Original öffnen
                   </a>
                 )}
-                {recipe.sourceUrl && (
+                {recipe.sourceUrl && !isDemo && (
                   <button type="button" className="recipe-secondary-action" onClick={() => importRecipe(recipe)}>
                     <DownloadCloud size={18} /> Neu importieren
                   </button>
@@ -4105,7 +4179,7 @@ function RecipeDetail({
                 <p className="recipe-empty-copy">
                   Für dieses Rezept ist noch keine lokale Schritt-für-Schritt-Anleitung importiert.
                 </p>
-                {recipe.sourceUrl && (
+                {recipe.sourceUrl && !isDemo && (
                   <button type="button" className="primary" onClick={() => importRecipe(recipe)}>
                     <DownloadCloud size={18} /> Von HelloFresh importieren
                   </button>

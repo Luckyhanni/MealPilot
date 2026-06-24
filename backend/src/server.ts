@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import fs from "fs/promises";
 import path from "path";
+import crypto from "crypto";
 import { fileURLToPath } from "url";
 import { nanoid } from "nanoid";
 import { readStore, writeStore } from "./store.js";
@@ -187,7 +188,17 @@ type AccountConfig = {
   pin: string;
 };
 
-type PublicUser = Pick<MealPilotUser, "id" | "name">;
+type PublicUser = Pick<MealPilotUser, "id" | "name"> & {
+  isDemo?: boolean;
+};
+
+type AuthRole = "account" | "demo";
+
+type AuthSession = {
+  userId: string;
+  role: AuthRole;
+  expiresAt: number;
+};
 
 type SingleRecipeHistoryEntry = {
   id: string;
@@ -216,6 +227,8 @@ type PantryStore = PantryState & {
 const days: DayKey[] = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
 const defaultUserId = "johannes-sophie";
 const accountConfigPath = path.resolve(projectRoot, "backend", "data", "users.local.json");
+const requestSessions = new WeakMap<express.Request, AuthSession>();
+const runtimeSessionSecret = crypto.randomBytes(32).toString("hex");
 const defaultDailyMealCounts = Object.fromEntries(
   days.map((day) => [day, 2]),
 ) as Settings["dailyMealCounts"];
@@ -443,12 +456,97 @@ function normalizeUserId(value: unknown) {
 }
 
 function currentUserId(req: express.Request) {
-  const header = req.header("x-mealpilot-user") || req.header("x-mealpilot-user-id");
-  return normalizeUserId(header);
+  return requestSessions.get(req)?.userId || defaultUserId;
 }
 
 function publicUser(user: MealPilotUser): PublicUser {
-  return { id: user.id, name: user.name };
+  return {
+    id: user.id,
+    name: user.name,
+    ...(user.id.startsWith("demo-") ? { isDemo: true } : {}),
+  };
+}
+
+function demoEnabled() {
+  return process.env.MEALPILOT_DEMO_ENABLED?.trim().toLowerCase() === "true";
+}
+
+function sessionSecret() {
+  return process.env.MEALPILOT_SESSION_SECRET?.trim() || runtimeSessionSecret;
+}
+
+function encodeSession(session: AuthSession) {
+  const payload = Buffer.from(JSON.stringify(session)).toString("base64url");
+  const signature = crypto
+    .createHmac("sha256", sessionSecret())
+    .update(payload)
+    .digest("base64url");
+  return `${payload}.${signature}`;
+}
+
+function decodeSession(token: string): AuthSession | null {
+  const [payload, providedSignature] = token.split(".");
+  if (!payload || !providedSignature) return null;
+
+  const expectedSignature = crypto
+    .createHmac("sha256", sessionSecret())
+    .update(payload)
+    .digest();
+  let provided: Buffer;
+  try {
+    provided = Buffer.from(providedSignature, "base64url");
+  } catch {
+    return null;
+  }
+  if (
+    provided.length !== expectedSignature.length ||
+    !crypto.timingSafeEqual(provided, expectedSignature)
+  ) {
+    return null;
+  }
+
+  try {
+    const value = JSON.parse(
+      Buffer.from(payload, "base64url").toString("utf-8"),
+    ) as Partial<AuthSession>;
+    if (
+      typeof value.userId !== "string" ||
+      (value.role !== "account" && value.role !== "demo") ||
+      typeof value.expiresAt !== "number" ||
+      value.expiresAt <= Date.now()
+    ) {
+      return null;
+    }
+    return {
+      userId: normalizeUserId(value.userId),
+      role: value.role,
+      expiresAt: value.expiresAt,
+    };
+  } catch {
+    return null;
+  }
+}
+
+function requestSession(req: express.Request) {
+  const authorization = req.header("authorization") || "";
+  if (!authorization.startsWith("Bearer ")) return null;
+  return decodeSession(authorization.slice("Bearer ".length).trim());
+}
+
+function issueSession(userId: string, role: AuthRole) {
+  const lifetime =
+    role === "demo"
+      ? 24 * 60 * 60 * 1000
+      : 30 * 24 * 60 * 60 * 1000;
+  return encodeSession({
+    userId: normalizeUserId(userId),
+    role,
+    expiresAt: Date.now() + lifetime,
+  });
+}
+
+function isDemoRequest(req: express.Request) {
+  return requestSessions.get(req)?.role === "demo";
 }
 
 function parseAccountConfig(value: unknown): AccountConfig[] {
@@ -522,7 +620,64 @@ async function writeUsers(users: MealPilotUser[]) {
   await writeJson("users.json", users);
 }
 
-async function ensureUser(userId: string): Promise<MealPilotUser> {
+async function cleanupExpiredDemoData() {
+  const users = await readUsers();
+  const cutoff = Date.now() - 48 * 60 * 60 * 1000;
+  const expiredIds = new Set(
+    users
+      .filter(
+        (user) =>
+          user.id.startsWith("demo-") &&
+          new Date(user.createdAt).getTime() < cutoff,
+      )
+      .map((user) => user.id),
+  );
+  if (expiredIds.size === 0) return;
+
+  await writeUsers(users.filter((user) => !expiredIds.has(user.id)));
+
+  const history = await readJson<HistoryEntry[]>("history.json", []);
+  await writeJson(
+    "history.json",
+    history.filter((entry) => !expiredIds.has(normalizeUserId(entry.userId))),
+  );
+
+  const recipeHistory = await readJson<SingleRecipeHistoryEntry[]>(
+    "recipeHistory.json",
+    [],
+  );
+  await writeJson(
+    "recipeHistory.json",
+    recipeHistory.filter(
+      (entry) => !expiredIds.has(normalizeUserId(entry.userId)),
+    ),
+  );
+
+  const pantry = await readPantryStore();
+  await writeJson("pantry.json", {
+    ...pantry,
+    users: Object.fromEntries(
+      Object.entries(pantry.users || {}).filter(
+        ([userId]) => !expiredIds.has(userId),
+      ),
+    ),
+  });
+
+  const shoppingState = await readShoppingState();
+  await writeShoppingState({
+    checked: Object.fromEntries(
+      Object.entries(shoppingState.checked).filter(
+        ([key]) =>
+          ![...expiredIds].some((userId) => key.startsWith(`${userId}:`)),
+      ),
+    ),
+  });
+}
+
+async function ensureUser(
+  userId: string,
+  preferredName?: string,
+): Promise<MealPilotUser> {
   const normalizedId = normalizeUserId(userId);
   const users = await readUsers();
   const account = (await readAccountConfig()).find(
@@ -530,8 +685,9 @@ async function ensureUser(userId: string): Promise<MealPilotUser> {
   );
   const existing = users.find((user) => user.id === normalizedId);
   if (existing) {
-    if (account && existing.name !== account.name) {
-      const updated = { ...existing, name: account.name };
+    const configuredName = preferredName?.trim() || account?.name;
+    if (configuredName && existing.name !== configuredName) {
+      const updated = { ...existing, name: configuredName };
       await writeUsers(
         users.map((user) => (user.id === normalizedId ? updated : user)),
       );
@@ -547,6 +703,7 @@ async function ensureUser(userId: string): Promise<MealPilotUser> {
   const user: MealPilotUser = {
     id: normalizedId,
     name:
+      preferredName?.trim() ||
       account?.name ||
       (normalizedId === defaultUserId ? "Johannes & Sophie" : "MealPilot Profil"),
     createdAt: new Date().toISOString(),
@@ -2243,30 +2400,112 @@ async function importHelloFreshData(recipe: Recipe) {
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
 
 app.post("/api/auth/check-pin", async (req, res) => {
+  const existingSession = requestSession(req);
+  if (existingSession) {
+    const user = await ensureUser(
+      existingSession.userId,
+      existingSession.role === "demo" ? "Demo Account" : undefined,
+    );
+    return res.json({
+      enabled: true,
+      demoEnabled: demoEnabled(),
+      ok: true,
+      user: publicUser(user),
+      token: issueSession(user.id, existingSession.role),
+    });
+  }
+
   const pin = String((req.body as { pin?: unknown })?.pin || "").trim();
   const account = pin ? await accountForPin(pin) : null;
   if (account) {
     const user = await ensureUser(account.id);
-    return res.json({ enabled: true, ok: true, user: publicUser(user) });
+    return res.json({
+      enabled: true,
+      demoEnabled: demoEnabled(),
+      ok: true,
+      user: publicUser(user),
+      token: issueSession(user.id, "account"),
+    });
   }
 
   const accounts = await readAccountConfig();
   if (accounts.length > 0) {
-    return res.status(401).json({ enabled: true, ok: false });
+    return res.status(401).json({
+      enabled: true,
+      demoEnabled: demoEnabled(),
+      ok: false,
+    });
   }
 
   const expectedPin = process.env.MEALPILOT_ADMIN_PIN?.trim();
-  if (!expectedPin) {
+  if (!expectedPin && !demoEnabled()) {
     const user = await ensureUser(defaultUserId);
-    return res.json({ enabled: false, ok: true, user: publicUser(user) });
+    return res.json({
+      enabled: false,
+      demoEnabled: false,
+      ok: true,
+      user: publicUser(user),
+    });
   }
 
   if (pin === expectedPin) {
     const user = await ensureUser(defaultUserId);
-    return res.json({ enabled: true, ok: true, user: publicUser(user) });
+    return res.json({
+      enabled: true,
+      demoEnabled: demoEnabled(),
+      ok: true,
+      user: publicUser(user),
+      token: issueSession(user.id, "account"),
+    });
   }
 
-  return res.status(401).json({ enabled: true, ok: false });
+  return res.status(401).json({
+    enabled: true,
+    demoEnabled: demoEnabled(),
+    ok: false,
+  });
+});
+
+app.post("/api/auth/demo", async (_req, res) => {
+  if (!demoEnabled()) {
+    return res.status(404).json({ error: "Demo-Zugang ist nicht aktiviert." });
+  }
+  await cleanupExpiredDemoData();
+  const user = await ensureUser(`demo-${nanoid(12)}`, "Demo Account");
+  const recipes = await readJson<Recipe[]>("recipes.json", []);
+  const history = await readJson<HistoryEntry[]>("history.json", []);
+  const plan = buildWeekPlan(recipes, [], user.settings);
+  const entry: HistoryEntry = {
+    id: plan.id,
+    userId: user.id,
+    createdAt: plan.createdAt,
+    recipeIds: plan.days.flatMap((day) =>
+      day.meals.map((meal) => meal.recipe.id),
+    ),
+    plan,
+  };
+  await writeJson("history.json", prependHistoryForUser(history, entry, user.id));
+  res.json({
+    ok: true,
+    user: publicUser(user),
+    token: issueSession(user.id, "demo"),
+  });
+});
+
+app.use("/api", async (req, res, next) => {
+  const accounts = await readAccountConfig();
+  const authRequired =
+    accounts.length > 0 ||
+    Boolean(process.env.MEALPILOT_ADMIN_PIN?.trim()) ||
+    demoEnabled();
+  if (!authRequired) return next();
+
+  const session = requestSession(req);
+  if (!session) {
+    return res.status(401).json({ error: "Sitzung fehlt oder ist abgelaufen." });
+  }
+  requestSessions.set(req, session);
+  next();
 });
 
 app.get("/api/users/current", async (req, res) => {
@@ -2432,6 +2671,11 @@ app.get("/api/recipes/:id", async (req, res) => {
 });
 
 app.post("/api/recipes/:id/import-source", async (req, res) => {
+  if (isDemoRequest(req)) {
+    return res.status(403).json({
+      error: "Rezeptimporte sind im Demo-Zugang nicht verfügbar.",
+    });
+  }
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   const index = recipes.findIndex((r) => r.id === req.params.id);
   if (index < 0)
@@ -2451,7 +2695,12 @@ app.post("/api/recipes/:id/import-source", async (req, res) => {
   }
 });
 
-app.post("/api/recipes/import-all", async (_req, res) => {
+app.post("/api/recipes/import-all", async (req, res) => {
+  if (isDemoRequest(req)) {
+    return res.status(403).json({
+      error: "Rezeptimporte sind im Demo-Zugang nicht verfügbar.",
+    });
+  }
   const recipes = await readJson<Recipe[]>("recipes.json", []);
   let imported = 0;
   const errors: { id: string; message: string }[] = [];
