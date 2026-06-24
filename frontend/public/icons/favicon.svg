@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
-  <title>MealPilots</title>
-  <rect width="512" height="512" rx="96" fill="#0b7f43" />
-  <circle cx="392" cy="120" r="44" fill="#8bd24d" opacity="0.95" />
-  <path d="M104 357V155h52l49 93 49-93h52v202h-47V232l-41 77h-26l-41-77v125h-47Zm230 0V155h88c24 0 43 7 57 21 14 13 21 31 21 54s-7 42-21 56c-14 13-33 20-57 20h-41v51h-47Zm47-92h35c11 0 20-3 26-9 6-7 9-15 9-26s-3-19-9-25c-6-6-15-9-26-9h-35v69Z" fill="#ffffff" />
-</svg>
