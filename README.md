@@ -66,7 +66,7 @@ Danach läuft das Express-Backend auf `http://localhost:3001` und liefert das ge
 
 Hinweis: Browser und mobile Homescreen-Verknüpfungen können App-Icons cachen. Nach Icon-Änderungen zum Testen ggf. die Homescreen-Verknüpfung löschen und neu hinzufügen oder den Browser-Cache leeren.
 
-## Online Hosting auf Render + Supabase
+## Online Hosting auf Railway + Supabase
 
 1. Supabase Projekt erstellen.
 2. In Supabase den SQL Editor öffnen.
@@ -82,8 +82,8 @@ npm run migrate --prefix backend
 Dabei müssen `SUPABASE_URL` und `SUPABASE_SERVICE_ROLE_KEY` in deiner Shell gesetzt sein. Keine echten Keys in Dateien committen.
 
 6. GitHub Repo pushen.
-7. In Render einen Web Service für dieses Repo erstellen.
-8. Render Einstellungen:
+7. In Railway einen Service für dieses Repo erstellen.
+8. Railway Einstellungen:
 
 ```txt
 Build Command: npm run build
@@ -99,12 +99,13 @@ NODE_ENV=production
 USE_LOCAL_IMAGE_DOWNLOAD=false
 MEALPILOT_ADMIN_PIN=
 MEALPILOT_DEMO_ENABLED=true
+MEALPILOT_DEMO_PATH=<geheimer-portfolio-pfad>
 MEALPILOT_SESSION_SECRET=<langes-zufaelliges-secret>
 ```
 
 `MEALPILOT_ADMIN_PIN` ist optional. Wenn ein Wert gesetzt ist, zeigt das Frontend eine PIN-Abfrage. Nach erfolgreicher Prüfung verwendet die App eine serverseitig signierte Sitzung. Für Produktion sollte `MEALPILOT_SESSION_SECRET` als langes, zufälliges Secret gesetzt werden.
 
-Mit `MEALPILOT_DEMO_ENABLED=true` erscheint zusätzlich der Button „Demo starten“. Jeder Aufruf erstellt einen eigenen Demo-Bereich mit einem fertigen Wochenplan. Planen, Remixen, Einkauf, Verlauf, Einstellungen und Kochansicht funktionieren normal. Globale Rezeptimporte sind im Demo-Zugang gesperrt, damit Besucher den gemeinsamen Rezeptbestand nicht verändern. Demo-Sitzungen laufen nach 24 Stunden ab; ältere Demo-Daten werden automatisch bereinigt.
+Mit `MEALPILOT_DEMO_ENABLED=true` und `MEALPILOT_DEMO_PATH` wird eine separate, nicht verlinkte Portfolio-Demo aktiviert. Die normale MealPilot-Anmeldung zeigt keinen Demo-Button. Der Portfolio-Link besteht aus der Railway-Domain und dem geheimen Pfad, beispielsweise `https://deine-app.up.railway.app/<geheimer-portfolio-pfad>`. Jeder Aufruf erstellt einen eigenen Demo-Bereich mit einem fertigen Wochenplan. Planen, Remixen, Einkauf, Verlauf, Einstellungen und Kochansicht funktionieren normal. Globale Rezeptimporte sind im Demo-Zugang gesperrt, damit Besucher den gemeinsamen Rezeptbestand nicht verändern. Demo-Sitzungen laufen nach 24 Stunden ab; ältere Demo-Daten werden automatisch bereinigt.
 
 Für mehrere PIN-Profile kann stattdessen `MEALPILOT_USERS_JSON` als Environment Variable beim Hoster gesetzt werden. Echte Werte gehören als Secret/Env-Var in Render oder den jeweiligen Hoster, nicht in committete Dateien und nicht ins Frontend.
 
@@ -121,8 +122,8 @@ Lokale Entwicklung kann weiterhin `backend/data/users.local.json` verwenden. Ein
 
 Hinweise:
 
-- Render Free kann nach Inaktivität schlafen.
-- Lokale Dateiänderungen auf Render Free sind kein dauerhafter Speicher.
+- Railway-Instanzen und Deployments können neu gestartet werden.
+- Lokale Dateiänderungen auf Railway sind kein verlässlicher dauerhafter Speicher.
 - MealPilot speichert Online-Daten deshalb in Supabase.
 - Der Supabase Service Role Key darf niemals ins Frontend oder ins Repository.
 

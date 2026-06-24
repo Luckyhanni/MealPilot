@@ -634,8 +634,6 @@ function App() {
   const [authState, setAuthState] = useState<AuthState>("checking");
   const [pinInput, setPinInput] = useState("");
   const [authError, setAuthError] = useState<string | null>(null);
-  const [demoEnabled, setDemoEnabled] = useState(false);
-  const [demoLoading, setDemoLoading] = useState(false);
   const [plan, setPlan] = useState<WeekPlan | null>(null);
   const [view, setView] = useState<View>("home");
   const [loading, setLoading] = useState(false);
@@ -664,9 +662,18 @@ function App() {
   const [draggingSlot, setDraggingSlot] = useState<{ day: string; mealIndex: 1 | 2 } | null>(null);
   const [currentUser, setCurrentUser] = useState<MealPilotUser | null>(null);
   const [recipeHistory, setRecipeHistory] = useState<SingleRecipeHistoryEntry[]>([]);
+  const demoAccessPath =
+    typeof window === "undefined"
+      ? ""
+      : window.location.pathname.replace(/^\/+|\/+$/g, "");
+  const isDemoRoute = Boolean(demoAccessPath);
 
   useEffect(() => {
-    checkAuthStatus();
+    if (isDemoRoute) {
+      void startDemo(demoAccessPath);
+    } else {
+      void checkAuthStatus();
+    }
   }, []);
 
   useEffect(() => {
@@ -716,12 +723,10 @@ function App() {
       });
       const data = (await res.json()) as {
         enabled: boolean;
-        demoEnabled?: boolean;
         ok: boolean;
         user?: MealPilotUser;
         token?: string;
       };
-      setDemoEnabled(Boolean(data.demoEnabled));
       if (res.status === 401) {
         writeAuthToken();
         clearCurrentUserId();
@@ -775,11 +780,10 @@ function App() {
     }
   }
 
-  async function startDemo() {
-    setDemoLoading(true);
+  async function startDemo(accessPath: string) {
     setAuthError(null);
     try {
-      const res = await fetch("/api/auth/demo", {
+      const res = await fetch(`/api/auth/demo/${encodeURIComponent(accessPath)}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: "{}",
@@ -800,8 +804,7 @@ function App() {
       setAuthState("open");
     } catch {
       setAuthError("Demo konnte nicht gestartet werden.");
-    } finally {
-      setDemoLoading(false);
+      setAuthState("locked");
     }
   }
 
@@ -820,6 +823,9 @@ function App() {
     setChangeTarget(null);
     setView("home");
     setAuthState("locked");
+    if (currentUser?.isDemo) {
+      window.history.replaceState({}, "", "/");
+    }
   }
 
   async function loadRecipes() {
@@ -1371,16 +1377,21 @@ function App() {
   }
 
   if (authState !== "open") {
+    if (isDemoRoute) {
+      return (
+        <DemoGate
+          checking={authState === "checking"}
+          error={authError}
+        />
+      );
+    }
     return (
       <PinGate
         checking={authState === "checking"}
         pin={pinInput}
         error={authError}
-        demoEnabled={demoEnabled}
-        demoLoading={demoLoading}
         onPinChange={setPinInput}
         onSubmit={submitPin}
-        onStartDemo={startDemo}
       />
     );
   }
@@ -1598,20 +1609,14 @@ function PinGate({
   checking,
   pin,
   error,
-  demoEnabled,
-  demoLoading,
   onPinChange,
   onSubmit,
-  onStartDemo,
 }: {
   checking: boolean;
   pin: string;
   error: string | null;
-  demoEnabled: boolean;
-  demoLoading: boolean;
   onPinChange: (pin: string) => void;
   onSubmit: (e: React.FormEvent) => void;
-  onStartDemo: () => void;
 }) {
   return (
     <main className="pin-screen">
@@ -1637,28 +1642,37 @@ function PinGate({
             <button className="primary" type="submit">
               <LockKeyhole size={18} /> Öffnen
             </button>
-            {demoEnabled && (
-              <>
-                <div className="pin-divider" aria-hidden="true">
-                  <span>oder</span>
-                </div>
-                <button
-                  className="demo-login-button"
-                  type="button"
-                  onClick={onStartDemo}
-                  disabled={demoLoading}
-                >
-                  <Utensils size={18} />
-                  {demoLoading ? "Demo wird vorbereitet..." : "Demo starten"}
-                </button>
-                <p className="demo-login-hint">
-                  Eigener Demo-Bereich mit allen Planungs-, Koch- und Einkaufsfunktionen.
-                </p>
-              </>
-            )}
           </>
         )}
       </form>
+    </main>
+  );
+}
+
+function DemoGate({
+  checking,
+  error,
+}: {
+  checking: boolean;
+  error: string | null;
+}) {
+  return (
+    <main className="pin-screen">
+      <section className="pin-panel demo-gate" aria-live="polite">
+        <div className="pin-icon">
+          <Utensils size={28} />
+        </div>
+        <p className="eyebrow">MealPilot Portfolio</p>
+        <h1>{checking ? "Demo wird geöffnet" : "Demo nicht verfügbar"}</h1>
+        <p className={error ? "pin-error" : "hint"}>
+          {error || "Dein persönlicher Demo-Bereich wird vorbereitet..."}
+        </p>
+        {!checking && (
+          <a className="demo-back-link" href="/">
+            Zur MealPilot-Anmeldung
+          </a>
+        )}
+      </section>
     </main>
   );
 }

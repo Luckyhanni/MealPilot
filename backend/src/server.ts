@@ -468,7 +468,26 @@ function publicUser(user: MealPilotUser): PublicUser {
 }
 
 function demoEnabled() {
-  return process.env.MEALPILOT_DEMO_ENABLED?.trim().toLowerCase() === "true";
+  return (
+    process.env.MEALPILOT_DEMO_ENABLED?.trim().toLowerCase() === "true" &&
+    Boolean(demoAccessPath())
+  );
+}
+
+function demoAccessPath() {
+  return (process.env.MEALPILOT_DEMO_PATH || "")
+    .trim()
+    .replace(/^\/+|\/+$/g, "");
+}
+
+function matchesDemoAccessPath(value: string) {
+  const expected = Buffer.from(demoAccessPath());
+  const provided = Buffer.from(value);
+  return (
+    expected.length > 0 &&
+    expected.length === provided.length &&
+    crypto.timingSafeEqual(expected, provided)
+  );
 }
 
 function sessionSecret() {
@@ -2408,7 +2427,6 @@ app.post("/api/auth/check-pin", async (req, res) => {
     );
     return res.json({
       enabled: true,
-      demoEnabled: demoEnabled(),
       ok: true,
       user: publicUser(user),
       token: issueSession(user.id, existingSession.role),
@@ -2421,7 +2439,6 @@ app.post("/api/auth/check-pin", async (req, res) => {
     const user = await ensureUser(account.id);
     return res.json({
       enabled: true,
-      demoEnabled: demoEnabled(),
       ok: true,
       user: publicUser(user),
       token: issueSession(user.id, "account"),
@@ -2432,7 +2449,6 @@ app.post("/api/auth/check-pin", async (req, res) => {
   if (accounts.length > 0) {
     return res.status(401).json({
       enabled: true,
-      demoEnabled: demoEnabled(),
       ok: false,
     });
   }
@@ -2442,7 +2458,6 @@ app.post("/api/auth/check-pin", async (req, res) => {
     const user = await ensureUser(defaultUserId);
     return res.json({
       enabled: false,
-      demoEnabled: false,
       ok: true,
       user: publicUser(user),
     });
@@ -2452,7 +2467,6 @@ app.post("/api/auth/check-pin", async (req, res) => {
     const user = await ensureUser(defaultUserId);
     return res.json({
       enabled: true,
-      demoEnabled: demoEnabled(),
       ok: true,
       user: publicUser(user),
       token: issueSession(user.id, "account"),
@@ -2461,13 +2475,12 @@ app.post("/api/auth/check-pin", async (req, res) => {
 
   return res.status(401).json({
     enabled: true,
-    demoEnabled: demoEnabled(),
     ok: false,
   });
 });
 
-app.post("/api/auth/demo", async (_req, res) => {
-  if (!demoEnabled()) {
+app.post("/api/auth/demo/:accessPath", async (req, res) => {
+  if (!demoEnabled() || !matchesDemoAccessPath(req.params.accessPath)) {
     return res.status(404).json({ error: "Demo-Zugang ist nicht aktiviert." });
   }
   await cleanupExpiredDemoData();
