@@ -31,6 +31,7 @@ import {
   ChevronDown,
   Plus,
   Minus,
+  Crown,
 } from "lucide-react";
 import "./styles.css";
 
@@ -1406,18 +1407,23 @@ function App() {
               <span>MealPilot</span>
             </button>
             <DesktopNavigation
-  plan={plan}
-  openHome={() => setView("home")}
-  openSingleDish={() => openSingleDish()}
-  openShopping={openShoppingTab}
-  openPlan={() => setView("plan")}
-  openHistory={openHistory}
-  openSettings={openSettings}
-  openPrint={() => setView("print")}
-  openProfile={() => setView("profile")}
-/>
+              view={view}
+              openHome={() => setView("home")}
+              openSingleDish={() => openSingleDish()}
+              openShopping={openShoppingTab}
+              openPlan={() => setView("plan")}
+              openProfile={() => setView("profile")}
+            />
             {currentUser && (
-              <span className="header-user-greeting">Hallo {currentUser.name}</span>
+              <button
+                className="header-user-menu"
+                type="button"
+                onClick={() => setView("profile")}
+                aria-label={`Profil von ${currentUser.name} öffnen`}
+              >
+                <span>Hallo {currentUser.name}</span>
+                <ChevronDown size={16} aria-hidden="true" />
+              </button>
             )}
           </header>
           <BottomNavigation
@@ -1678,51 +1684,47 @@ function DemoGate({
 }
 
 function DesktopNavigation({
-  plan,
+  view,
   openHome,
   openSingleDish,
   openShopping,
   openPlan,
-  openHistory,
-  openSettings,
-  openPrint,
   openProfile,
 }: {
-  plan: WeekPlan | null;
+  view: View;
   openHome: () => void;
   openSingleDish: () => void;
   openShopping: () => void;
   openPlan: () => void;
-  openHistory: () => void;
-  openSettings: () => void;
-  openPrint: () => void;
   openProfile: () => void;
 }) {
+  const activeTab =
+    view === "single" || view === "recipe"
+      ? "recipes"
+      : view === "shopping"
+        ? "shopping"
+        : view === "plan" || view === "print"
+          ? "plan"
+          : view === "profile" || view === "settings" || view === "history"
+            ? "profile"
+            : "home";
+
   return (
     <nav className="desktop-nav" aria-label="Hauptnavigation">
-      <button onClick={openHome}>
+      <button className={activeTab === "home" ? "active" : ""} onClick={openHome}>
         <Home size={18} /> Entdecken
       </button>
-      <button onClick={openSingleDish}>
+      <button className={activeTab === "recipes" ? "active" : ""} onClick={openSingleDish}>
         <BookOpen size={18} /> Rezepte
       </button>
-      <button onClick={openShopping}>
+      <button className={activeTab === "shopping" ? "active" : ""} onClick={openShopping}>
         <ShoppingBasket size={18} /> Einkauf
       </button>
-      <button onClick={openPlan}>
-  <CalendarDays size={18} /> Wochenplan
-</button>
-      <button onClick={openHistory}>
-        <History size={18} /> Verlauf
+      <button className={activeTab === "plan" ? "active" : ""} onClick={openPlan}>
+        <CalendarDays size={18} /> Wochenplan
       </button>
-      <button onClick={openProfile}>
-  <UserRound size={18} /> Profil
-</button>
-      <button onClick={openSettings}>
-        <SlidersHorizontal size={18} /> Einstellungen
-      </button>
-      <button disabled={!plan} onClick={openPrint}>
-        <Printer size={18} /> Druckansicht
+      <button className={activeTab === "profile" ? "active" : ""} onClick={openProfile}>
+        <UserRound size={18} /> Profil
       </button>
     </nav>
   );
@@ -2388,6 +2390,11 @@ function HomeView({
 
   return (
     <main className="discover-page">
+      <header className="discover-header">
+        <h1>Entdecke dein nächstes Lieblingsgericht</h1>
+        <p>Frisch, ausgewogen und auf deine Ziele abgestimmt.</p>
+      </header>
+
       <section className="daily-category-tabs" aria-label="Tageskategorien">
         {dailyDiscoveryCategories.map((category) => {
           const isActive = category.key === activeCategory.key;
@@ -2411,13 +2418,12 @@ function HomeView({
         })}
       </section>
 
-      <p className="daily-info">
-        <span aria-hidden="true">i</span>
-        Jede Kategorie hat ihr eigenes zufälliges Gericht des Tages.
-      </p>
-
       {dailyRecipe ? (
-        <DailyRecipeCard recipe={dailyRecipe} openRecipe={openRecipe} />
+        <DailyRecipeCard
+          recipe={dailyRecipe}
+          openRecipe={openRecipe}
+          rerollRecipe={rerollDailyRecipe}
+        />
       ) : (
         <section className="daily-empty">
           {allRecipes.length > 0
@@ -2426,15 +2432,6 @@ function HomeView({
         </section>
       )}
 
-      <button
-        className="reroll-button"
-        type="button"
-        onClick={rerollDailyRecipe}
-        disabled={!dailyRecipe}
-      >
-        <RefreshCw size={18} />
-        Neu würfeln
-      </button>
     </main>
   );
 }
@@ -2442,9 +2439,11 @@ function HomeView({
 function DailyRecipeCard({
   recipe,
   openRecipe,
+  rerollRecipe,
 }: {
   recipe: Recipe;
   openRecipe: (recipe: Recipe) => void;
+  rerollRecipe: () => void;
 }) {
   const nutrition = getRecipeNutritionPerServing(recipe);
   return (
@@ -2452,12 +2451,22 @@ function DailyRecipeCard({
       <div className="daily-recipe-image">
         <img src={recipe.imageUrl} alt={recipe.name} />
         <span className="daily-recipe-badge">
-          <RefreshCw size={18} aria-hidden="true" />
+          <Crown size={18} aria-hidden="true" />
           Gericht des Tages
         </span>
       </div>
       <div className="daily-recipe-body">
-        <p className="daily-recipe-tier">{recipe.tier}</p>
+        <div className="daily-recipe-body-head">
+          <p className="daily-recipe-tier">{recipe.tier}</p>
+          <button
+            className="reroll-button"
+            type="button"
+            onClick={rerollRecipe}
+          >
+            <RefreshCw size={18} />
+            Neu würfeln
+          </button>
+        </div>
         <h2 className="daily-recipe-title">{recipe.name}</h2>
         <p className="daily-recipe-description">{getRecipeSummary(recipe)}</p>
         <RecipeMeta
