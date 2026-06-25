@@ -33,6 +33,11 @@ import {
   Minus,
   Crown,
 } from "lucide-react";
+import {
+  LegalPage,
+  SiteFooter,
+  legalPageFromPath,
+} from "./legal";
 import "./styles.css";
 
 type RecipeStep = { title?: string; text: string; imageUrl?: string };
@@ -663,13 +668,18 @@ function App() {
   const [draggingSlot, setDraggingSlot] = useState<{ day: string; mealIndex: 1 | 2 } | null>(null);
   const [currentUser, setCurrentUser] = useState<MealPilotUser | null>(null);
   const [recipeHistory, setRecipeHistory] = useState<SingleRecipeHistoryEntry[]>([]);
-  const demoAccessPath =
+  const legalPage =
     typeof window === "undefined"
+      ? null
+      : legalPageFromPath(window.location.pathname);
+  const demoAccessPath =
+    typeof window === "undefined" || legalPage
       ? ""
       : window.location.pathname.replace(/^\/+|\/+$/g, "");
   const isDemoRoute = Boolean(demoAccessPath);
 
   useEffect(() => {
+    if (legalPage) return;
     if (isDemoRoute) {
       void startDemo(demoAccessPath);
     } else {
@@ -1377,23 +1387,33 @@ function App() {
     }
   }
 
+  if (legalPage) {
+    return <LegalPage page={legalPage} />;
+  }
+
   if (authState !== "open") {
     if (isDemoRoute) {
       return (
-        <DemoGate
-          checking={authState === "checking"}
-          error={authError}
-        />
+        <div className="gate-shell">
+          <DemoGate
+            checking={authState === "checking"}
+            error={authError}
+          />
+          <SiteFooter />
+        </div>
       );
     }
     return (
-      <PinGate
-        checking={authState === "checking"}
-        pin={pinInput}
-        error={authError}
-        onPinChange={setPinInput}
-        onSubmit={submitPin}
-      />
+      <div className="gate-shell">
+        <PinGate
+          checking={authState === "checking"}
+          pin={pinInput}
+          error={authError}
+          onPinChange={setPinInput}
+          onSubmit={submitPin}
+        />
+        <SiteFooter />
+      </div>
     );
   }
 
@@ -1568,6 +1588,7 @@ function App() {
           }
         />
       )}
+      {view !== "print" && <SiteFooter />}
     </div>
   );
 }
